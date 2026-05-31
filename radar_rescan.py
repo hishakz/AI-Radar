@@ -73,7 +73,7 @@ def run_rescan():
         log(f"  Scanning: {domain_query}")
         try:
             response = client.messages.create(
-                model="claude-haiku-4-5-2025100",
+                model="claude-haiku-4-5-20251001",
                 max_tokens=1000,
                 tools=[{"type": "web_search_20250305", "name": "web_search"}],
                 messages=[{
