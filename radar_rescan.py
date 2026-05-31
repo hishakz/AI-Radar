@@ -1,0 +1,257 @@
+#!/usr/bin/env python3
+"""
+AI Inspection Radar — Daily Auto-Rescan
+Runs every morning at 09:00 KSA (UTC+3 = 06:00 UTC)
+Calls the Anthropic API, scans for new signals, updates the dashboard HTML.
+
+SETUP (one-time):
+  pip install anthropic schedule pytz requests
+
+RUN ONCE (manual):
+  python radar_rescan.py --now
+
+RUN ON A SCHEDULE (keeps running, fires at 09:00 KSA daily):
+  python radar_rescan.py
+
+DEPLOY AS CRON (Linux / Mac — add to crontab with: crontab -e):
+  0 6 * * * /usr/bin/python3 /path/to/radar_rescan.py --now >> /var/log/radar.log 2>&1
+
+DEPLOY ON WINDOWS TASK SCHEDULER:
+  Action: python C:\\path\\to\\radar_rescan.py --now
+  Trigger: Daily at 09:00 (set timezone to Arabian Standard Time)
+
+DEPLOY ON GITHUB ACTIONS (see radar_rescan.yml companion file):
+  Runs in the cloud — no local machine needed.
+"""
+
+import anthropic
+import schedule
+import time
+import sys
+import json
+import re
+import os
+from datetime import datetime
+import pytz
+
+# ─── CONFIG ──────────────────────────────────────────────────────────────────
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "YOUR_KEY_HERE")
+DASHBOARD_PATH    = os.environ.get("DASHBOARD_PATH",    "./ai_radar_bilingual.html")
+KSA_TZ            = pytz.timezone("Asia/Riyadh")
+SCAN_TIME_KSA     = "09:00"
+LOG_FILE          = "./radar_rescan.log"
+
+# Domains to scan — maps to dashboard domain filters
+SCAN_DOMAINS = [
+    "smart city AI inspection continuous monitoring",
+    "AI construction excavation inspection drones robots 2026",
+    "AI food safety restaurant inspection automated 2026",
+    "AI building housing inspection smart technology 2026",
+    "AI inspection policy regulation government 2026",
+    "AI model release Anthropic OpenAI Google May June 2026",
+    "AI security cybersecurity Glasswing vulnerability 2026",
+    "AI investment funding IPO 2026",
+]
+
+# ─── LOGGING ─────────────────────────────────────────────────────────────────
+def log(msg):
+    ts = datetime.now(KSA_TZ).strftime("%Y-%m-%d %H:%M:%S KSA")
+    line = f"[{ts}] {msg}"
+    print(line)
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(line + "\n")
+
+# ─── SCAN ─────────────────────────────────────────────────────────────────────
+def run_rescan():
+    log("═══ DAILY RESCAN STARTED ═══")
+    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+
+    today = datetime.now(KSA_TZ).strftime("%B %d, %Y")
+    all_signals = []
+
+    for domain_query in SCAN_DOMAINS:
+        log(f"  Scanning: {domain_query}")
+        try:
+            response = client.messages.create(
+                model="claude-sonnet-4-6",
+                max_tokens=2000,
+                tools=[{"type": "web_search_20250305", "name": "web_search"}],
+                messages=[{
+                    "role": "user",
+                    "content": f"""Today is {today}. Search the web for the latest news on: {domain_query}
+
+Return a JSON array of up to 3 NEW signals published in the last 7 days.
+Each object must have these exact keys:
+  t: title (string, max 120 chars)
+  s: summary (string, max 300 chars — include specific numbers/dates/names)
+  url: source URL (string)
+  cat: one of: Release | Breakthrough | Policy | Research | Funding | Security
+  d: date string like "Today" or "2 days ago" or "May 28, 2026"
+
+Return ONLY a valid JSON array. No markdown, no preamble."""
+                }]
+            )
+
+            # Extract text content from response
+            text = ""
+            for block in response.content:
+                if hasattr(block, "text"):
+                    text += block.text
+
+            # Parse JSON from response
+            json_match = re.search(r'\[[\s\S]*?\]', text)
+            if json_match:
+                signals = json.loads(json_match.group())
+                for sig in signals:
+                    sig["query"] = domain_query
+                all_signals.extend(signals)
+                log(f"    ✓ {len(signals)} signals found")
+            else:
+                log(f"    ✗ No JSON found in response")
+
+        except Exception as e:
+            log(f"    ✗ Error: {e}")
+        
+        time.sleep(2)  # Rate limit courtesy pause
+
+    log(f"  Total new signals: {len(all_signals)}")
+
+    if all_signals:
+        update_dashboard(all_signals, today)
+        send_summary(all_signals, today)
+    else:
+        log("  No new signals found — dashboard unchanged")
+
+    log("═══ RESCAN COMPLETE ═══\n")
+
+# ─── DOMAIN MAPPER ───────────────────────────────────────────────────────────
+def map_domains(query):
+    q = query.lower()
+    domains = []
+    if "smart city" in q or "continuous monitoring" in q:
+        domains.append("smart-city")
+    if "construction" in q or "excavation" in q or "drones" in q:
+        domains.append("construction")
+    if "food" in q or "restaurant" in q:
+        domains.append("food")
+    if "building" in q or "housing" in q:
+        domains.append("housing")
+    if "policy" in q or "regulation" in q or "government" in q:
+        domains.append("policy")
+    if "security" in q or "cyber" in q or "glasswing" in q:
+        domains.append("security")
+    if "model" in q or "anthropic" in q or "openai" in q or "google" in q:
+        domains.append("ai-models")
+    if "investment" in q or "funding" in q or "ipo" in q:
+        domains.append("funding")
+    if "research" in q:
+        domains.append("research")
+    return domains if domains else ["ai-models"]
+
+# ─── DASHBOARD UPDATER ────────────────────────────────────────────────────────
+def update_dashboard(signals, today):
+    log("  Updating dashboard HTML...")
+    try:
+        with open(DASHBOARD_PATH, "r", encoding="utf-8") as f:
+            html = f.read()
+
+        # Build new signal JS objects for the AI_SIGNALS array
+        new_js_signals = []
+        for sig in signals:
+            url   = sig.get("url", "")
+            cat   = sig.get("cat", "Research")
+            d_str = sig.get("d", "Today")
+            title = sig.get("t", "").replace("'", "\\'")
+            summary = sig.get("s", "").replace("'", "\\'")
+            doms  = json.dumps(map_domains(sig.get("query", "")))
+
+            js = f"""  {{domains:{doms},url:'{url}',
+   en:{{t:'{title}',cat:'{cat}',d:'{d_str} AUTO',s:'{summary}'}},
+   ar:{{t:'{title}',cat:'{cat}',d:'{d_str} تلقائي',s:'{summary}'}}}},"""
+            new_js_signals.append(js)
+
+        # Insert new signals at top of AI_SIGNALS array
+        insertion_block = "\n  // ══ AUTO-RESCAN " + today.upper() + " ══\n"
+        insertion_block += "\n".join(new_js_signals) + "\n"
+
+        html = html.replace(
+            "const AI_SIGNALS=[",
+            "const AI_SIGNALS=[\n" + insertion_block
+        )
+
+        # Update scan date and count
+        date_short = datetime.now(KSA_TZ).strftime("%b %-d, %Y")
+        date_ar    = datetime.now(KSA_TZ).strftime("%-d مايو %Y").replace(
+            "مايو", get_ar_month(datetime.now(KSA_TZ).month)
+        )
+
+        # Count current signals
+        current_count = html.count("en:{t:'") + html.count('en:{t:"')
+        
+        html = re.sub(
+            r"scanDate:'[^']+', sigCount:'[^']+ signals'",
+            f"scanDate:'{date_short}', sigCount:'{current_count} signals'",
+            html
+        )
+        html = re.sub(
+            r"scanDate:'[^']+', sigCount:'[^']+ إشارة'",
+            f"scanDate:'{date_ar}', sigCount:'{current_count} إشارة'",
+            html
+        )
+
+        with open(DASHBOARD_PATH, "w", encoding="utf-8") as f:
+            f.write(html)
+
+        log(f"  ✓ Dashboard updated — {len(signals)} signals injected")
+
+    except Exception as e:
+        log(f"  ✗ Dashboard update failed: {e}")
+
+def get_ar_month(m):
+    months = {1:'يناير',2:'فبراير',3:'مارس',4:'أبريل',5:'مايو',
+              6:'يونيو',7:'يوليو',8:'أغسطس',9:'سبتمبر',10:'أكتوبر',
+              11:'نوفمبر',12:'ديسمبر'}
+    return months.get(m, '')
+
+# ─── SUMMARY PRINTER ─────────────────────────────────────────────────────────
+def send_summary(signals, today):
+    log(f"\n  ┌─── SCAN SUMMARY — {today} ───")
+    for i, sig in enumerate(signals, 1):
+        log(f"  │ {i:02d}. [{sig.get('cat','?')}] {sig.get('t','')[:80]}")
+    log(f"  └─── {len(signals)} total signals ───\n")
+
+# ─── SCHEDULER ────────────────────────────────────────────────────────────────
+def scheduled_job():
+    """Wrapper that converts UTC schedule trigger to KSA check."""
+    now_ksa = datetime.now(KSA_TZ)
+    log(f"Scheduler triggered at {now_ksa.strftime('%H:%M KSA')}")
+    run_rescan()
+
+if __name__ == "__main__":
+    if "--now" in sys.argv:
+        # Run immediately (used by cron / GitHub Actions / manual test)
+        log("Manual run triggered (--now flag)")
+        run_rescan()
+    else:
+        # Keep-alive scheduler — fires at 09:00 KSA every day
+        # Since schedule works in local time, we use UTC 06:00 equivalent
+        log(f"Scheduler started — will rescan daily at {SCAN_TIME_KSA} KSA")
+        log(f"Dashboard: {DASHBOARD_PATH}")
+        log(f"Ctrl+C to stop\n")
+
+        # Schedule at 06:00 UTC (= 09:00 KSA)
+        schedule.every().day.at("06:00").do(scheduled_job)
+
+        # Also run once on startup if not yet scanned today
+        last_run_file = ".last_rescan"
+        today_str = datetime.now(KSA_TZ).strftime("%Y-%m-%d")
+        if not os.path.exists(last_run_file) or \
+           open(last_run_file).read().strip() != today_str:
+            log("No scan yet today — running initial scan...")
+            run_rescan()
+            with open(last_run_file, "w") as f:
+                f.write(today_str)
+
+        while True:
+            schedule.run_pending()
+            time.sleep(60)
