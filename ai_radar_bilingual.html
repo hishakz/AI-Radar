@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Inspection Intelligence — Apr 18, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;600&family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f0f0e;--ink2:#3a3a36;--ink3:#7a7a72;--ink4:#b8b8b0;
+  --paper:#f6f4ef;--paper2:#eeecea;--paper3:#e4e2d8;
+  --teal:#1a7f6e;--teal-lt:#d4f0ea;
+  --amber:#c47a1a;--amber-lt:#fdf0d4;
+  --red:#c0392b;--red-lt:#fde8e6;
+  --blue:#1a5fa8;--blue-lt:#deeaf7;
+  --green:#2a6b3c;--green-lt:#dff2e5;
+  --purple:#6c3fa8;--purple-lt:#ede8f8;
+  --line:rgba(0,0,0,.1);--radius:10px;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --ink:#f0eeea;--ink2:#c8c6be;--ink3:#8a8a82;--ink4:#5a5a52;
+    --paper:#141412;--paper2:#1e1e1a;--paper3:#282824;
+    --teal:#2aad93;--teal-lt:#0a2e28;--amber:#e09030;--amber-lt:#2e1e04;
+    --red:#e05545;--red-lt:#2e0e0a;--blue:#4a8fd0;--blue-lt:#0a1e32;
+    --green:#4a9b62;--green-lt:#0a2016;--purple:#a07de0;--purple-lt:#1e1230;
+    --line:rgba(255,255,255,.1);
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);min-height:100vh}
+[dir="rtl"] body,[dir="rtl"]{font-family:'Cairo',sans-serif}
+
+/* HEADER */
+.hd{background:var(--ink);color:var(--paper);padding:16px 24px;position:sticky;top:0;z-index:200;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.wm{font-family:'DM Serif Display',serif;font-size:20px;letter-spacing:-.4px;line-height:1}
+[dir="rtl"] .wm{font-family:'Cairo',sans-serif;font-weight:900;font-size:18px;letter-spacing:0}
+.wm span{color:var(--teal)}
+.tl{font-size:9px;font-family:'DM Mono',monospace;letter-spacing:.1em;color:var(--ink4);margin-top:2px;text-transform:uppercase}
+[dir="rtl"] .tl{font-family:'Cairo',sans-serif;font-size:10px;letter-spacing:0;text-transform:none}
+.hd-right{display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.hbadge{font-size:9px;font-family:'DM Mono',monospace;padding:3px 9px;border:1px solid rgba(255,255,255,.2);border-radius:20px;color:var(--ink4)}
+[dir="rtl"] .hbadge{font-family:'Cairo',sans-serif;font-size:10px}
+.hbadge.live{border-color:var(--teal);color:var(--teal);display:flex;align-items:center;gap:5px}
+.pulse{width:6px;height:6px;background:var(--teal);border-radius:50%;animation:pl 2s infinite;flex-shrink:0}
+@keyframes pl{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.lang-toggle{display:flex;background:rgba(255,255,255,.1);border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.2)}
+.lang-btn{font-size:10px;font-weight:600;padding:4px 12px;cursor:pointer;background:transparent;border:none;color:var(--ink4);font-family:'DM Mono',monospace}
+.lang-btn.active{background:var(--teal);color:#fff}
+
+/* NAV */
+.nav{background:var(--paper3);border-bottom:1px solid var(--line);padding:0 24px;display:flex;overflow-x:auto;-webkit-overflow-scrolling:touch;position:sticky;top:60px;z-index:190}
+.nav-tab{font-size:10px;font-family:'DM Mono',monospace;font-weight:500;padding:12px 14px;border-bottom:2px solid transparent;cursor:pointer;white-space:nowrap;color:var(--ink3);border:none;background:none;display:flex;align-items:center;gap:5px;letter-spacing:.05em;text-transform:uppercase;transition:all .15s}
+[dir="rtl"] .nav-tab{font-family:'Cairo',sans-serif;font-size:11px;letter-spacing:0;text-transform:none;font-weight:700}
+.nav-tab.active,.nav-tab:hover{color:var(--ink);border-bottom-color:var(--teal)}
+.nav-tab .cnt{font-size:8px;background:var(--paper);padding:1px 5px;border-radius:10px;color:var(--ink3)}
+.nav-tab.active .cnt{background:var(--teal);color:#fff}
+
+/* DOMAIN FILTER BAR */
+.dfbar{background:var(--paper2);border-bottom:1px solid var(--line);padding:8px 24px;display:flex;gap:5px;flex-wrap:wrap;align-items:center;position:sticky;top:106px;z-index:180}
+.dfbar-label{font-size:9px;font-family:'DM Mono',monospace;color:var(--ink3);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;margin-right:4px}
+[dir="rtl"] .dfbar-label{font-family:'Cairo',sans-serif;letter-spacing:0;text-transform:none;font-size:10px;font-weight:700;margin-right:0;margin-left:4px}
+.dfbtn{font-size:9px;font-family:'DM Mono',monospace;padding:3px 9px;border-radius:20px;border:.5px solid var(--line);background:transparent;color:var(--ink3);cursor:pointer;white-space:nowrap;transition:all .15s}
+[dir="rtl"] .dfbtn{font-family:'Cairo',sans-serif;font-size:10px;font-weight:600;letter-spacing:0}
+.dfbtn:hover,.dfbtn.active{color:var(--ink);border-color:var(--teal);background:var(--teal-lt)}
+.dfbtn.active{font-weight:700;background:var(--teal);color:#fff;border-color:var(--teal)}
+.df-count{font-size:8px;margin-inline-start:3px;opacity:.8}
+
+/* LAYOUT */
+.body{display:grid;grid-template-columns:1fr 300px;min-height:calc(100vh - 150px)}
+@media(max-width:860px){.body{grid-template-columns:1fr}}
+.main{padding:20px 24px;border-right:1px solid var(--line)}
+[dir="rtl"] .main{border-right:none;border-left:1px solid var(--line)}
+.sidebar{padding:18px;background:var(--paper2)}
+
+/* SECTION */
+.sec-hd{display:flex;align-items:center;gap:9px;margin-bottom:12px}
+.sec-icon{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.sec-title{font-family:'DM Serif Display',serif;font-size:18px;line-height:1.2}
+[dir="rtl"] .sec-title{font-family:'Cairo',sans-serif;font-weight:700;font-size:17px}
+.sec-sub{font-size:10px;color:var(--ink3);margin-top:1px}
+[dir="rtl"] .sec-sub{font-size:11px}
+.sec-div{height:1px;background:var(--line);margin:20px 0}
+
+/* STATS */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-bottom:18px}
+.stat{background:var(--paper);padding:10px 12px;text-align:center}
+.stat-n{font-family:'DM Serif Display',serif;font-size:20px;color:var(--ink);line-height:1}
+[dir="rtl"] .stat-n{font-family:'Cairo',sans-serif;font-weight:900;font-size:19px}
+.stat-l{font-size:8px;font-family:'DM Mono',monospace;color:var(--ink3);text-transform:uppercase;letter-spacing:.05em;margin-top:2px}
+[dir="rtl"] .stat-l{font-family:'Cairo',sans-serif;font-size:9px;text-transform:none;letter-spacing:0;font-weight:700}
+
+/* CARDS */
+.grid{display:grid;grid-template-columns:1fr;gap:9px;margin-bottom:6px}
+.card{background:var(--paper);border:.5px solid var(--line);border-radius:var(--radius);padding:13px 15px;display:flex;flex-direction:column;transition:border-color .15s,box-shadow .15s}
+.card:hover{border-color:var(--teal);box-shadow:0 2px 12px rgba(0,0,0,.07)}
+.card.p1{border-inline-start:3px solid var(--teal)}
+.card.p2{border-inline-start:3px solid var(--amber)}
+.card.p3{border-inline-start:3px solid var(--blue)}
+.card.pnew{border-inline-start:3px solid #378ADD}
+.card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px}
+.badges{display:flex;gap:4px;flex-wrap:wrap}
+.bdg{font-size:8px;font-family:'DM Mono',monospace;font-weight:500;padding:2px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+[dir="rtl"] .bdg{font-family:'Cairo',sans-serif;font-size:9px;text-transform:none;letter-spacing:0;font-weight:700}
+.bdg-teal{background:var(--teal-lt);color:var(--teal)}.bdg-amber{background:var(--amber-lt);color:var(--amber)}
+.bdg-red{background:var(--red-lt);color:var(--red)}.bdg-blue{background:var(--blue-lt);color:var(--blue)}
+.bdg-green{background:var(--green-lt);color:var(--green)}.bdg-gray{background:var(--paper3);color:var(--ink3)}
+.bdg-purple{background:var(--purple-lt);color:var(--purple)}
+/* domain tag pills on card */
+.card-domains{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:5px}
+.dtag{font-size:8px;font-family:'DM Mono',monospace;padding:1px 6px;border-radius:3px;cursor:pointer;transition:all .12s;border:.5px solid var(--line);color:var(--ink3);background:var(--paper2)}
+[dir="rtl"] .dtag{font-family:'Cairo',sans-serif;font-size:9px;letter-spacing:0}
+.dtag:hover,.dtag.active-domain{background:var(--teal);color:#fff;border-color:var(--teal)}
+.card-title{font-size:12.5px;font-weight:600;line-height:1.45;color:var(--ink);margin-bottom:3px}
+[dir="rtl"] .card-title{font-family:'Cairo',sans-serif;font-size:13px;font-weight:700;line-height:1.5}
+.card-org{font-size:9px;font-family:'DM Mono',monospace;color:var(--ink3);margin-bottom:5px}
+[dir="rtl"] .card-org{font-family:'Cairo',sans-serif;font-size:10px}
+.card-body{font-size:11px;line-height:1.65;color:var(--ink2);flex:1}
+[dir="rtl"] .card-body{font-family:'Cairo',sans-serif;font-size:12px;line-height:1.8}
+
+/* INNOVATION BOX */
+.inno{background:var(--teal-lt);border:1px solid var(--teal);border-radius:7px;padding:10px 12px;margin-top:8px}
+.inno-lbl{font-size:8px;font-family:'DM Mono',monospace;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);margin-bottom:4px;display:flex;align-items:center;gap:4px}
+[dir="rtl"] .inno-lbl{font-family:'Cairo',sans-serif;font-size:10px;text-transform:none;letter-spacing:0;font-weight:700}
+.inno-lbl::before{content:'';width:5px;height:5px;background:var(--teal);border-radius:50%;flex-shrink:0}
+.inno-txt{font-size:11px;line-height:1.6;color:var(--ink2)}
+[dir="rtl"] .inno-txt{font-family:'Cairo',sans-serif;font-size:12px;line-height:1.75}
+.tags{display:flex;flex-wrap:wrap;gap:3px;margin-top:6px}
+.tag{font-size:8px;font-family:'DM Mono',monospace;padding:2px 6px;border-radius:3px;background:rgba(26,127,110,.1);color:var(--teal)}
+[dir="rtl"] .tag{font-family:'Cairo',sans-serif;font-size:9px;font-weight:600}
+
+/* FEASIBILITY */
+.fmat{margin-top:10px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.fmat-hd{background:var(--paper3);padding:7px 12px;display:flex;align-items:center;justify-content:space-between}
+[dir="rtl"] .fmat-hd{flex-direction:row-reverse}
+.fmat-lbl{font-size:8px;font-family:'DM Mono',monospace;color:var(--ink3);letter-spacing:.08em;text-transform:uppercase}
+[dir="rtl"] .fmat-lbl{font-family:'Cairo',sans-serif;font-size:9px;text-transform:none;letter-spacing:0;font-weight:700}
+.verdict{font-size:9px;font-family:'DM Mono',monospace;font-weight:700;padding:3px 9px;border-radius:4px}
+[dir="rtl"] .verdict{font-family:'Cairo',sans-serif;font-size:10px}
+.v-go{background:#2a6b3c;color:#fff}.v-pilot{background:#c47a1a;color:#fff}
+.v-plan{background:#1a5fa8;color:#fff}.v-long{background:#5a5a72;color:#fff}
+.frows{padding:8px 12px;display:grid;gap:5px}
+.frow{display:grid;grid-template-columns:120px 1fr 70px;align-items:center;gap:8px}
+[dir="rtl"] .frow{grid-template-columns:70px 1fr 120px;direction:rtl}
+.frow-lbl{font-size:9px;font-family:'DM Mono',monospace;color:var(--ink3)}
+[dir="rtl"] .frow-lbl{font-family:'Cairo',sans-serif;font-size:10px;font-weight:600;text-align:right;color:var(--ink2)}
+.fbar{height:5px;background:var(--paper3);border-radius:3px;overflow:hidden}
+.fbar-fill{height:100%;border-radius:3px}
+.f1{width:20%;background:var(--green)}.f2{width:40%;background:#6ab04c}
+.f3{width:60%;background:var(--amber)}.f4{width:80%;background:#e07020}.f5{width:100%;background:var(--red)}
+.frow-val{font-size:9px;font-family:'DM Mono',monospace;font-weight:600;text-align:right;color:var(--ink2)}
+[dir="rtl"] .frow-val{font-family:'Cairo',sans-serif;font-size:10px;font-weight:700}
+.fmat-ft{background:var(--paper2);padding:7px 12px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.fft{font-size:10px;line-height:1.55;color:var(--ink2)}
+[dir="rtl"] .fft{font-family:'Cairo',sans-serif;font-size:11px;line-height:1.65}
+.fft strong{font-size:8px;font-family:'DM Mono',monospace;display:block;color:var(--ink3);margin-bottom:2px;text-transform:uppercase;letter-spacing:.06em}
+[dir="rtl"] .fft strong{font-family:'Cairo',sans-serif;font-size:9px;text-transform:none;letter-spacing:0;font-weight:700}
+
+/* CARD FOOTER */
+.cft{display:flex;align-items:center;justify-content:space-between;margin-top:8px;padding-top:7px;border-top:1px solid var(--line)}
+[dir="rtl"] .cft{flex-direction:row-reverse}
+.cft-date{font-size:8px;font-family:'DM Mono',monospace;color:var(--ink4)}
+[dir="rtl"] .cft-date{font-family:'Cairo',sans-serif;font-size:9px}
+.cft-link{font-size:8px;font-family:'DM Mono',monospace;color:var(--ink3);text-decoration:none;display:flex;align-items:center;gap:3px;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cft-link:hover{color:var(--teal)}
+[dir="rtl"] .cft-link{font-family:'Cairo',sans-serif;font-size:9px}
+
+/* DECISION TABLE */
+.dtable{width:100%;border-collapse:collapse;font-size:10px}
+.dtable th{padding:8px 6px;text-align:center;font-size:8px;font-family:'DM Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);border-bottom:1px solid var(--line);background:var(--paper3);font-weight:500}
+[dir="rtl"] .dtable th{font-family:'Cairo',sans-serif;font-size:9px;text-transform:none;letter-spacing:0;font-weight:700}
+.dtable th:first-child{text-align:left;padding-inline-start:12px}
+.dtable td{padding:9px 6px;text-align:center;border-bottom:1px solid var(--line);color:var(--ink2)}
+.dtable td:first-child{text-align:left;padding-inline-start:12px;font-size:10px;font-weight:600;color:var(--ink)}
+[dir="rtl"] .dtable td:first-child{font-family:'Cairo',sans-serif;font-size:11px}
+.dtable tr:last-child td{border-bottom:none}
+
+/* LEGEND BAR */
+.lgd{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px;padding:8px 12px;background:var(--paper2);border-radius:8px;border:.5px solid var(--line)}
+
+/* SIDEBAR */
+.sb-sec{margin-bottom:20px}
+.sb-title{font-size:8px;font-family:'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+[dir="rtl"] .sb-title{font-family:'Cairo',sans-serif;font-size:9px;text-transform:none;letter-spacing:0;font-weight:700}
+.mini{padding:8px 10px;border-radius:7px;background:var(--paper);border:.5px solid var(--line);margin-bottom:5px}
+.mini-t{font-size:11px;font-weight:500;color:var(--ink);line-height:1.4;margin-bottom:2px}
+[dir="rtl"] .mini-t{font-family:'Cairo',sans-serif;font-size:11px;font-weight:700}
+.mini-m{font-size:9px;font-family:'DM Mono',monospace;color:var(--ink3);display:flex;align-items:center;gap:5px}
+[dir="rtl"] .mini-m{font-family:'Cairo',sans-serif;font-size:9px;flex-direction:row-reverse;justify-content:flex-end}
+.mini-bdg{font-size:8px;padding:1px 5px;border-radius:3px;font-family:'DM Mono',monospace}
+[dir="rtl"] .mini-bdg{font-family:'Cairo',sans-serif;font-size:8px;font-weight:600}
+.rm-item{padding-inline-start:12px;border-inline-start:2px solid;margin-bottom:9px}
+.rm-item h4{font-size:11px;font-weight:600}
+[dir="rtl"] .rm-item h4{font-family:'Cairo',sans-serif;font-size:12px}
+.rm-item p{font-size:10px;line-height:1.6;color:var(--ink2);margin-top:2px}
+[dir="rtl"] .rm-item p{font-family:'Cairo',sans-serif;font-size:11px;line-height:1.7}
+
+/* EMPTY STATE */
+.empty-state{padding:40px 24px;text-align:center;color:var(--ink3);font-size:13px}
+.empty-state span{font-size:32px;display:block;margin-bottom:10px}
+
+/* PANEL */
+.panel{display:none}.panel.active{display:block}
+
+/* ── INVESTMENT PANEL ── */
+.inv-fab{position:fixed;bottom:28px;right:28px;z-index:500;background:var(--ink);color:#fff;border:none;border-radius:50px;padding:12px 20px;font-size:13px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:8px;box-shadow:0 4px 20px rgba(0,0,0,.3);transition:transform .2s,box-shadow .2s;font-family:'DM Sans',sans-serif}
+[dir="rtl"] .inv-fab{right:auto;left:28px;font-family:'Cairo',sans-serif}
+.inv-fab:hover{transform:translateY(-2px);box-shadow:0 6px 28px rgba(0,0,0,.35)}
+.inv-fab .pulse-dot{width:8px;height:8px;background:#22c55e;border-radius:50%;animation:pl 2s infinite;flex-shrink:0}
+.inv-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:600;opacity:0;pointer-events:none;transition:opacity .3s}
+.inv-overlay.open{opacity:1;pointer-events:all}
+.inv-drawer{position:fixed;top:0;right:-520px;width:500px;max-width:95vw;height:100vh;background:var(--paper);z-index:700;overflow-y:auto;transition:right .35s cubic-bezier(.4,0,.2,1);box-shadow:-4px 0 32px rgba(0,0,0,.2);display:flex;flex-direction:column}
+[dir="rtl"] .inv-drawer{right:auto;left:-520px;transition:left .35s cubic-bezier(.4,0,.2,1);box-shadow:4px 0 32px rgba(0,0,0,.2)}
+.inv-drawer.open{right:0}
+[dir="rtl"] .inv-drawer.open{left:0;right:auto}
+.inv-header{background:var(--ink);color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+[dir="rtl"] .inv-header{flex-direction:row-reverse}
+.inv-header h2{font-family:'DM Serif Display',serif;font-size:18px;letter-spacing:-.3px}
+[dir="rtl"] .inv-header h2{font-family:'Cairo',sans-serif;font-weight:900;font-size:17px}
+.inv-close{background:rgba(255,255,255,.15);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center}
+.inv-body{padding:18px 20px;flex:1}
+.inv-disclaimer{margin:0 20px 14px;padding:9px 12px;background:var(--amber-lt);border:1px solid var(--amber);border-radius:7px;font-size:10px;font-family:'DM Mono',monospace;color:var(--amber);line-height:1.5}
+[dir="rtl"] .inv-disclaimer{font-family:'Cairo',sans-serif;font-size:11px}
+.inv-sec-title{font-size:9px;font-family:'DM Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);padding-bottom:7px;border-bottom:1px solid var(--line);margin-bottom:10px}
+[dir="rtl"] .inv-sec-title{font-family:'Cairo',sans-serif;font-size:10px;text-transform:none;letter-spacing:0;font-weight:700}
+.inv-block{margin-bottom:22px}
+/* Stock rows */
+.stock-row{display:grid;grid-template-columns:70px 1fr 80px 90px;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:var(--paper2);margin-bottom:5px;border:.5px solid var(--line)}
+[dir="rtl"] .stock-row{direction:rtl}
+.stock-ticker{font-family:'DM Mono',monospace;font-weight:700;font-size:12px;color:var(--ink)}
+.stock-name{font-size:11px;color:var(--ink2);line-height:1.3}
+[dir="rtl"] .stock-name{font-family:'Cairo',sans-serif;font-size:12px}
+.stock-signal{font-size:9px;font-family:'DM Mono',monospace;font-weight:700;padding:2px 8px;border-radius:4px;text-align:center;white-space:nowrap}
+[dir="rtl"] .stock-signal{font-family:'Cairo',sans-serif;font-size:10px}
+.sig-buy{background:#dff2e5;color:#2a6b3c}
+.sig-watch{background:#fdf0d4;color:#c47a1a}
+.sig-caution{background:#fde8e6;color:#c0392b}
+.sig-ipo{background:#ede8f8;color:#6c3fa8}
+.stock-why{font-size:9px;color:var(--ink3);line-height:1.4}
+[dir="rtl"] .stock-why{font-family:'Cairo',sans-serif;font-size:10px}
+/* Opportunity cards */
+.opp-card{border-radius:9px;border:1px solid var(--line);padding:12px 14px;margin-bottom:8px;background:var(--paper)}
+.opp-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px}
+[dir="rtl"] .opp-top{flex-direction:row-reverse}
+.opp-title{font-size:13px;font-weight:600;color:var(--ink)}
+[dir="rtl"] .opp-title{font-family:'Cairo',sans-serif;font-weight:700}
+.opp-horizon{font-size:9px;font-family:'DM Mono',monospace;padding:2px 8px;border-radius:4px;background:var(--paper3);color:var(--ink3)}
+[dir="rtl"] .opp-horizon{font-family:'Cairo',sans-serif;font-size:10px}
+.opp-body{font-size:11px;color:var(--ink2);line-height:1.6;margin-bottom:6px}
+[dir="rtl"] .opp-body{font-family:'Cairo',sans-serif;font-size:12px;line-height:1.75}
+.opp-tickers{display:flex;gap:4px;flex-wrap:wrap}
+.opp-ticker{font-size:9px;font-family:'DM Mono',monospace;padding:2px 7px;border-radius:3px;background:var(--teal-lt);color:var(--teal);font-weight:600}
+/* Risk rows */
+.risk-row{display:flex;align-items:flex-start;gap:10px;padding:8px 10px;border-radius:7px;background:var(--paper2);margin-bottom:6px;border:.5px solid var(--line)}
+[dir="rtl"] .risk-row{flex-direction:row-reverse}
+.risk-icon{font-size:16px;flex-shrink:0;margin-top:1px}
+.risk-text{font-size:11px;color:var(--ink2);line-height:1.55}
+[dir="rtl"] .risk-text{font-family:'Cairo',sans-serif;font-size:12px;line-height:1.7}
+.risk-text strong{font-size:10px;font-family:'DM Mono',monospace;display:block;color:var(--ink);margin-bottom:1px;font-weight:700}
+[dir="rtl"] .risk-text strong{font-family:'Cairo',sans-serif;font-size:11px}
+</style>
+</head>
+<body>
+
+<!-- ══ INVESTMENT PANEL ══ -->
+<div class="inv-overlay" id="inv-overlay" onclick="closeInv()"></div>
+<div class="inv-drawer" id="inv-drawer">
+  <div class="inv-header">
+    <h2 id="inv-title">💹 Investment Intelligence</h2>
+    <button class="inv-close" onclick="closeInv()">✕</button>
+  </div>
+  <div class="inv-disclaimer" id="inv-disclaimer">
+    ⚠ For situational awareness only. Not financial advice. Consult a licensed advisor before making investment decisions. Signal mappings are editorial, not forecasts.
+  </div>
+  <div class="inv-body" id="inv-body"></div>
+</div>
+
+<!-- ══ FLOATING BUTTON ══ -->
+<div class="inv-fab" id="inv-fab" onclick="openInv()">
+  <div class="pulse-dot"></div>
+  <span id="inv-fab-label">💹 Market Intel</span>
+</div>
+
+<div class="hd">
+  <div>
+    <div class="wm" id="wm">Inspection<span>Intelligence</span></div>
+    <div class="tl" id="tl">AI & Emerging Tech Radar — Innovation Domain Brief</div>
+  </div>
+  <div class="hd-right">
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="lang-btn" id="btn-ar" onclick="setLang('ar')">AR عربي</button>
+    </div>
+    <div class="hbadge live"><div class="pulse"></div><span id="scan-date">Apr 18, 2026</span></div>
+    <div class="hbadge" id="sig-count">82 signals</div>
+  </div>
+</div>
+
+<div class="nav" id="nav-tabs"></div>
+<div class="dfbar" id="domain-filter-bar"></div>
+
+<div class="body">
+  <div class="main" id="main-content"></div>
+  <div class="sidebar" id="sidebar-content"></div>
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════════
+// DOMAIN DEFINITIONS
+// ════════════════════════════════════════════════════════════════
+const DOMAINS = [
+  { id:'all',          en:'All Signals',      ar:'جميع الإشارات',     emoji:'🔀' },
+  { id:'smart-city',   en:'Smart City',       ar:'المدن الذكية',      emoji:'🏙️' },
+  { id:'construction', en:'Construction',     ar:'البناء والحفر',      emoji:'🏗️' },
+  { id:'food',         en:'Food Safety',      ar:'سلامة الغذاء',      emoji:'🍽️' },
+  { id:'housing',      en:'Housing & Buildings', ar:'الإسكان والمباني', emoji:'🏘️' },
+  { id:'policy',       en:'Policy & Governance', ar:'السياسات والحوكمة', emoji:'🏛️' },
+  { id:'security',     en:'Security & Cyber', ar:'الأمن السيبراني',   emoji:'🔒' },
+  { id:'ai-models',    en:'AI Models',        ar:'نماذج الذكاء الاصطناعي', emoji:'🤖' },
+  { id:'research',     en:'Research',         ar:'أبحاث',             emoji:'📊' },
+  { id:'funding',      en:'Funding',          ar:'التمويل',           emoji:'💰' },
+];
+
+// ════════════════════════════════════════════════════════════════
+// UI STRINGS
+// ════════════════════════════════════════════════════════════════
+const L = {
+  en:{
+    wm:['Inspection','Intelligence'], tl:'AI & EMERGING TECH RADAR — INNOVATION DOMAIN BRIEF',
+    scanDate:'May 31, 2026', sigCount:'132 signals',
+    tabs:[
+      {id:'inspect',label:'🔍 Smart City & Inspection',count:20},
+      {id:'apply',  label:'⚙️ Innovation Applications',count:5},
+      {id:'ai',     label:'🌐 AI Global Signals',      count:25},
+    ],
+    dfLabel:'Filter by domain:',
+    stats_inspect:['20','9','6','4'], stats_inspect_l:['Inspect Signals','Countries','Verticals','New Today'],
+    stats_apply:['5','1','2','2'],   stats_apply_l:['Vectors','Go Now','Pilot First','Plan/Long Term'],
+    sbPriTitle:'📌 Inspection Signals — Newest First', sbBreakTitle:'⚡ Breaking Today', sbRoadTitle:'🗓️ Innovation Roadmap',
+    innoLabel:'Innovation Application for Your Domain', yourAction:'Your Innovation Action',
+    fmatLabel:'Feasibility Matrix', keyRisk:'Key Risk', keyEnabler:'Key Enabler',
+    dims:['Technical Complexity','Investment / Cost','Human Resources','Time to Value','Change Management'],
+    dimVals:[
+      ['Low','Low-Med','Medium','Med-High','High'],
+      ['Low','Low-Med','Medium','Med-High','High'],
+      ['Low','Low-Med','Medium','Med-High','High'],
+      ['3-6 months','6-12 months','12-24 months','2-4 years','3-5 years'],
+      ['Low','Low-Med','Medium','Very High','High'],
+    ],
+    verdicts:{go:'✅ Go Now',pilot:'🔬 Pilot First',plan:'📋 Plan Strategically',long:'🎯 Long Term'},
+    dtHeaders:['Vector','Complexity','Cost','HR','Time','Change Mgmt','Verdict'],
+    dtNote:'● = 1 point on 5-point scale | More filled = Higher complexity/cost/time',
+    legendLabel:'Feasibility Scale:',
+    legendItems:['Low / Easy','Low-Med','Medium','Med-High','High / Hard'],
+    decisionTitle:'📊 Decision Summary — All 5 Vectors',
+    decisionSub:'For executive briefings and budget discussions',
+    secTitles:{
+      city:       ['🏙️','Smart City Continuous Inspection',    'Replacing periodic cycles with always-on AI sensing'],
+      construction:['🏗️','Construction, Excavation & Underground','Robots & drones replacing dangerous manual inspection'],
+      food:       ['🍽️','Restaurant & Food Safety Inspection', 'AI moving from reactive to predictive compliance'],
+      housing:    ['🏘️','Group Housing & Building Inspection', 'From sampling to AI-powered complete coverage'],
+      vectors:    ['💡','Innovation Vectors — with Feasibility Matrix','5 vectors assessed across 5 dimensions'],
+      global:     ['🌐','AI Global Signals',                  'Frontier models, infrastructure, geopolitics'],
+    },
+    noResults:'No signals match the selected domain filter. Try a different domain or select "All".',
+    refLabel:'↗ source',
+    sbPriorities:[
+      {t:'🥇 Rotterdam digital twin — real-time housing inspection',c:'teal',d:'Today'},
+      {t:'🥇 Kaohsiung: zero manual inspections, 80% faster response',c:'teal',d:'Dec 2025'},
+      {t:'🥇 MARIO multi-robot AI construction inspection',c:'amber',d:'Mar 2026'},
+      {t:'🥇 AI predictive food safety risk scoring (USDA)',c:'green',d:'Ongoing'},
+      {t:'🥈 Siemens: autonomous self-inspecting buildings',c:'teal',d:'Today'},
+      {t:'🥈 Austin mandates human oversight for all city AI',c:'purple',d:'Apr 17 NEW'},
+      {t:'🥈 17 US cities: AI cameras on garbage trucks',c:'teal',d:'Mar 2026'},
+      {t:'🥉 Drone bridge inspection: 94% cost reduction',c:'amber',d:'Ongoing'},
+    ],
+    sbBreaking:[
+      {t:'Musk LOSES OpenAI trial — unanimous jury, under 2 hours, statute of limitations, vows appeal',c:'red',d:'Today NEW'},
+      {t:'Claude Opus 4.8: dynamic workflows orchestrate 100s of agents in background',c:'teal',d:'Today NEW'},
+      {t:'Google I/O: Gemini 3.5 Flash (4x faster, $1.50/M), Spark 24/7 agent, AI Search overhaul',c:'blue',d:'Today NEW'},
+      {t:'OpenAI files S-1 · Anthropic $900M round · SpaceX/xAI trading June 12 — $3.7T wave',c:'amber',d:'Today NEW'},
+      {t:'Glasswing: 10,000+ vulnerabilities in 30 days — IBM joins, bottleneck shifts to remediation',c:'purple',d:'Today NEW'},
+    ],
+    sbRoadmap:[
+      {h:'Now — AI Risk-Scoring Engine',c:'teal',p:'Replace calendar inspections with data-driven risk dispatch using existing violation data'},
+      {h:'6-12 mo — Passive Sensor Network',c:'amber',p:'Mount AI cameras on municipal fleet; integrate city IoT feeds'},
+      {h:'12-24 mo — Remote Robotic Inspection',c:'blue',p:'Deploy drones for hazardous sites; build first inspection digital twins'},
+      {h:'2-3 yr — AI Inspection Authority',c:'ink3',p:'Shift from inspecting assets to certifying AI inspection systems'},
+    ],
+  },
+  ar:{
+    wm:['منصة استخبارات','التفتيش'], tl:'رادار الذكاء الاصطناعي — ملخص الابتكار في مجال التفتيش',
+    scanDate:'31 مايو 2026', sigCount:'132 إشارة',
+    tabs:[
+      {id:'inspect',label:'🔍 المدن الذكية والتفتيش',count:20},
+      {id:'apply',  label:'⚙️ تطبيقات الابتكار',   count:5},
+      {id:'ai',     label:'🌐 إشارات الذكاء الاصطناعي',count:25},
+    ],
+    dfLabel:'تصفية حسب القطاع:',
+    stats_inspect:['20','9','6','4'], stats_inspect_l:['إشارة تفتيش','دول فاعلة','قطاعات','جديد اليوم'],
+    stats_apply:['5','1','2','2'],   stats_apply_l:['محاور ابتكار','تنفيذ الآن','تجريب','تخطيط'],
+    sbPriTitle:'📌 إشارات التفتيش — الأحدث أولاً', sbBreakTitle:'⚡ أبرز الأخبار اليوم', sbRoadTitle:'🗓️ خارطة طريق الابتكار',
+    innoLabel:'تطبيق الابتكار في مجال عملك', yourAction:'إجراءك الابتكاري',
+    fmatLabel:'مصفوفة الجدوى', keyRisk:'المخاطر الرئيسية', keyEnabler:'العوامل المُمكِّنة',
+    dims:['التعقيد التقني','التكلفة / الاستثمار','الموارد البشرية','الوقت حتى القيمة','إدارة التغيير'],
+    dimVals:[
+      ['منخفض','منخفض-متوسط','متوسط','متوسط-عالٍ','عالٍ'],
+      ['منخفض','منخفض-متوسط','متوسط','متوسط-عالٍ','عالٍ'],
+      ['منخفض','منخفض-متوسط','متوسط','متوسط-عالٍ','عالٍ'],
+      ['3-6 أشهر','6-12 شهراً','12-24 شهراً','2-4 سنوات','3-5 سنوات'],
+      ['منخفض','منخفض-متوسط','متوسط','عالٍ جداً','عالٍ'],
+    ],
+    verdicts:{go:'✅ تنفيذ الآن',pilot:'🔬 تجريب أولاً',plan:'📋 تخطيط استراتيجي',long:'🎯 أجل بعيد'},
+    dtHeaders:['المحور','التعقيد','التكلفة','الموارد','الوقت','إدارة التغيير','القرار'],
+    dtNote:'● = نقطة واحدة من مقياس خماسي | كثرة النقاط = تعقيد أو تكلفة أعلى',
+    legendLabel:'مقياس الجدوى:',
+    legendItems:['منخفض / سهل','منخفض-متوسط','متوسط','متوسط-عالٍ','عالٍ / صعب'],
+    decisionTitle:'📊 ملخص القرار — المحاور الخمسة',
+    decisionSub:'للملخصات التنفيذية ونقاشات الميزانية',
+    secTitles:{
+      city:       ['🏙️','التفتيش المستمر في المدن الذكية',    'الانتقال من الجولات الدورية إلى الرصد الآني'],
+      construction:['🏗️','البناء والحفر والأعمال الجوفية',      'الروبوتات والطائرات المسيّرة تحل محل التفتيش الخطر'],
+      food:       ['🍽️','تفتيش المطاعم وسلامة الغذاء',         'من الاستجابة التفاعلية إلى الامتثال الاستباقي'],
+      housing:    ['🏘️','تفتيش الإسكان الجماعي والمباني',       'من أخذ العينات إلى التغطية الشاملة'],
+      vectors:    ['💡','محاور الابتكار — مع مصفوفة الجدوى',   '5 محاور مُقيَّمة عبر 5 أبعاد لدعم القرار'],
+      global:     ['🌐','إشارات الذكاء الاصطناعي العالمية',    'النماذج الحدودية، البنية التحتية، الجيوسياسة'],
+    },
+    noResults:'لا توجد إشارات تتطابق مع القطاع المحدد. جرّب قطاعاً آخر أو اختر "جميع الإشارات".',
+    refLabel:'↗ المصدر',
+    sbPriorities:[
+      {t:'🥇 روتردام: التوأم الرقمي يحل محل التفتيش اليدوي',c:'teal',d:'اليوم'},
+      {t:'🥇 كاوشيونغ: لا تفتيش يدوي — استجابة أسرع بـ 80%',c:'teal',d:'ديسمبر 2025'},
+      {t:'🥇 MARIO: روبوتات متعددة لمواقع بناء متعددة',c:'amber',d:'مارس 2026'},
+      {t:'🥇 تقييم مخاطر الغذاء بالذكاء الاصطناعي',c:'green',d:'مستمر'},
+      {t:'🥈 سيمنز: مباني تفتش نفسها ذاتياً',c:'teal',d:'اليوم'},
+      {t:'🥈 أوستن: إلزامية الرقابة البشرية على كل الذكاء الاصطناعي',c:'purple',d:'جديد اليوم'},
+      {t:'🥈 17 مدينة أمريكية: كاميرات ذكاء اصطناعي على القمامة',c:'teal',d:'مارس 2026'},
+      {t:'🥉 تفتيش الجسور بالطائرات المسيّرة: تخفيض 94%',c:'amber',d:'مستمر'},
+    ],
+    sbBreaking:[
+      {t:'ماسك يخسر محاكمة OpenAI — حكم إجماعي بأقل من ساعتين، تقادم، يتعهد بالاستئناف',c:'red',d:'جديد اليوم'},
+      {t:'Claude Opus 4.8: سير عمل ديناميكية تُنسّق مئات الوكلاء في الخلفية',c:'teal',d:'جديد اليوم'},
+      {t:'Google I/O: Gemini 3.5 Flash (4x أسرع، $1.50/M)، Spark، إعادة تصميم Search',c:'blue',d:'جديد اليوم'},
+      {t:'OpenAI S-1 · Anthropic 900 مليون · SpaceX/xAI يبدأ التداول 12 يونيو — موجة 3.7 تريليون',c:'amber',d:'جديد اليوم'},
+      {t:'Glasswing: +10,000 ثغرة في 30 يوماً — IBM تنضم، الاختناق ينتقل للمعالجة',c:'purple',d:'جديد اليوم'},
+    ],
+    sbRoadmap:[
+      {h:'الآن — محرك تقييم المخاطر',c:'teal',p:'استبدل التفتيش الدوري بالإيفاد المبني على درجة المخاطر'},
+      {h:'6-12 شهراً — شبكة الاستشعار السلبي',c:'amber',p:'ركّب كاميرات ذكاء اصطناعي على المركبات البلدية'},
+      {h:'12-24 شهراً — التفتيش الروبوتي',c:'blue',p:'انشر طائرات مسيّرة للمواقع الخطرة'},
+      {h:'2-3 سنوات — سلطة التفتيش الرقمية',c:'ink3',p:'الانتقال من تفتيش الأصول إلى اعتماد أنظمة الذكاء الاصطناعي'},
+    ],
+  }
+};
+
+// ════════════════════════════════════════════════════════════════
+// INSPECTION CARDS DATA
+// ════════════════════════════════════════════════════════════════
+const INSPECT=[
+  {sec:'city',p:'pnew',domains:['smart-city','ai-models'],
+   url:'https://blog.google/products/gemini/gemini-mac/',
+   en:{badges:[['teal','NEW Today'],['teal','Inspect']],title:'Gemini desktop app for macOS: always-on AI agents for continuous city monitoring at zero marginal cost',org:'Google DeepMind · Global',
+    body:'April 15, 2026: Google released native Gemini desktop app for macOS 15+ globally at gemini.google/mac. Summon with Option+Space, share any window for contextual help. Paired with NVIDIA smart city blueprints, cities can now deploy always-on Gemini agents monitoring video feeds, sensor data, and permit records simultaneously — triggering inspection dispatches automatically.',
+    inno:'Desktop-native AI agents mean inspection authorities can deploy a lightweight Gemini agent that watches city data streams and flags anomalies for human review at near-zero marginal cost. No special infrastructure needed. This is the lowest-cost continuous AI inspection entry point in 2026.',
+    tags:['always-on AI agents','desktop deployment','continuous monitoring','zero marginal cost'],date:'Today'},
+   ar:{badges:[['teal','جديد اليوم'],['teal','تفتيش']],title:'تطبيق Gemini لسطح مكتب macOS: وكلاء ذكاء اصطناعي دائمو التشغيل للمراقبة الحضرية المستمرة',org:'Google DeepMind · عالمي',
+    body:'15 أبريل 2026: أطلقت Google تطبيق Gemini الأصيل لسطح مكتب macOS 15+. استدعاؤه بـ Option+Space ومشاركة أي نافذة للمساعدة السياقية. إلى جانب مخططات NVIDIA للمدن الذكية، تنشر المدن الآن وكلاء Gemini مستمرة تراقب تغذيات الفيديو وبيانات المستشعرات وسجلات التصاريح في آنٍ واحد.',
+    inno:'تطبيقات الذكاء الاصطناعي الأصيلة لسطح المكتب تعني إمكانية نشر وكيل خفيف الوزن يراقب تدفقات بيانات المدينة ويُشير إلى الشذوذات للمراجعة البشرية بتكلفة هامشية تكاد تكون صفرية. نقطة الدخول الأدنى تكلفة للتفتيش المستمر في 2026.',
+    tags:['وكلاء دائمو التشغيل','نشر على سطح المكتب','مراقبة مستمرة','تكلفة هامشية صفرية'],date:'اليوم'}},
+
+  {sec:'city',p:'pnew',domains:['smart-city','policy'],
+   url:'https://www.smartcitiesdive.com/news/ai-city-policies-to-watch/817090/',
+   en:{badges:[['purple','NEW Policy'],['teal','Inspect']],title:'Austin mandates human oversight for ALL city AI decisions — annual public audit, "no displacement without consultation"',org:'Austin City Council · USA',
+    body:'Austin City Council passed an ethical AI resolution (Apr 17) requiring: annual public audits of all city AI, human review for every AI-based decision, prohibition on AI productivity scoring without supervisor verification, and "no displacement without consultation" blocking AI from altering inspector job classifications without prior notice.',
+    inno:'Austin\'s framework is a policy template for your inspection authority. Key clause for your domain: no AI system should replace or alter an inspection outcome without a qualified human inspector reviewing the recommendation. This is both a safety requirement and a political enabler for AI inspection adoption.',
+    tags:['AI governance policy','inspector workforce protection','human-in-the-loop','public audit'],date:'Today — Apr 17'},
+   ar:{badges:[['purple','سياسة جديدة'],['teal','تفتيش']],title:'أوستن: رقابة بشرية إلزامية على جميع قرارات الذكاء الاصطناعي البلدية — تدقيق سنوي عام',org:'مجلس مدينة أوستن · الولايات المتحدة',
+    body:'أصدر مجلس مدينة أوستن قراراً أخلاقياً للذكاء الاصطناعي (17 أبريل) يستلزم: تدقيقات عامة سنوية، ورقابة بشرية لكل قرار مبني على الذكاء الاصطناعي، وحظر تسجيل الإنتاجية دون تحقق المشرف، وسياسة "لا إبعاد دون تشاور" لحماية المفتشين البلديين.',
+    inno:'إطار أوستن هو نموذج سياسة لسلطة التفتيش. البند المحوري: لا ينبغي لأي نظام ذكاء اصطناعي أن يحل محل نتيجة تفتيش أو يعدّلها دون مراجعة مفتش بشري مؤهل.',
+    tags:['سياسة حوكمة الذكاء الاصطناعي','حماية قوة العمل','الإنسان في الحلقة','تدقيق عام'],date:'اليوم — 17 أبريل'}},
+
+  {sec:'city',p:'p1',domains:['smart-city','housing'],
+   url:'https://www.oecd.org/content/dam/oecd/en/about/programmes/cfe/the-oecd-programme-on-smart-cities-and-inclusive-growth/Issues-Note-AI-for-advancing-smart-cities.pdf',
+   en:{badges:[['teal','Inspect'],['blue','OECD Case Study']],title:'Rotterdam digital twin: months of manual inspection → near real-time — plus property tax equity bonus',org:'Rotterdam / OECD · Netherlands',
+    body:'OECD case study: Rotterdam deployed AI monitoring housing developments via digital twin, replacing months of manual inspection with near real-time oversight. Bonus: AI detects unreported structural changes, improving property tax assessment accuracy. Algorithm registry created with Amsterdam and Eurocities for EU AI Act compliance. All AI outputs reviewed by human inspectors before action.',
+    inno:'Rotterdam proves AI inspection creates self-funding value: detecting previously missed structural changes and unreported renovations generates assessment revenue that can cover the AI programme cost. For your domain, every undocumented modification is now findable at scale.',
+    tags:['digital twin','near real-time','tax equity','unreported changes detection'],date:'Today'},
+   ar:{badges:[['teal','تفتيش'],['blue','دراسة حالة OECD']],title:'روتردام: التوأم الرقمي يحوّل أشهر من التفتيش اليدوي إلى رصد شبه آني مع مكافأة عدالة الضريبة',org:'روتردام / منظمة التعاون الاقتصادي والتنمية · هولندا',
+    body:'دراسة حالة OECD: روتردام تنشر ذكاء اصطناعياً لمراقبة التطويرات السكنية عبر التوأم الرقمي. مكتشف إضافي: الذكاء الاصطناعي يكشف التعديلات الهيكلية غير المُبلَّغ عنها، مما يحسّن دقة تقييم الضريبة العقارية. سجل الخوارزميات مُنشأ مع أمستردام للامتثال لقانون الذكاء الاصطناعي الأوروبي.',
+    inno:'يُثبت نموذج روتردام أن التفتيش بالذكاء الاصطناعي يموّل نفسه: اكتشاف التعديلات المفوّتة يولّد إيرادات تقييم تغطي تكلفة البرنامج.',
+    tags:['التوأم الرقمي','رصد شبه آني','عدالة الضريبة','كشف التغييرات غير المُبلَّغ عنها'],date:'اليوم'}},
+
+  {sec:'city',p:'p2',domains:['smart-city'],
+   url:'https://blogs.nvidia.com/blog/smart-city-ai-agents-urban-operations/',
+   en:{badges:[['teal','Inspect']],title:'Kaohsiung eliminates ALL manual city inspections — 80% faster incident response with NVIDIA physical AI',org:'Linker Vision / NVIDIA · Taiwan',
+    body:'Linker Vision\'s physical AI system in Kaohsiung City recognises infrastructure events — damaged streetlights, fallen trees, road encroachment, illegal dumping — eliminating all manual city inspections. Incident response times cut 80%. K2K in Palermo: 1,000+ video streams, 7 billion events/year, NLP alerts to city officials.',
+    inno:'Kaohsiung is the operational proof: no inspection rounds for known infrastructure asset types — AI watches continuously and dispatches on exceptions. Define 5 asset types for continuous AI watch, prove the model in one district, then expand citywide.',
+    tags:['zero manual inspection','proactive dispatch','80% response improvement','city scale proof'],date:'Dec 2025'},
+   ar:{badges:[['teal','تفتيش']],title:'كاوشيونغ تُلغي جميع عمليات التفتيش اليدوي — زمن الاستجابة أسرع بـ 80% مع الذكاء الاصطناعي الفيزيائي',org:'Linker Vision / NVIDIA · تايوان',
+    body:'نظام Linker Vision يتعرف على الأحداث في البنية التحتية ويُلغي جميع عمليات التفتيش اليدوي. أزمنة الاستجابة أسرع بـ 80%. K2K باليرمو: أكثر من 1,000 تدفق فيديو، 7 مليارات حدث سنوياً، تنبيهات طبيعية للمسؤولين.',
+    inno:'كاوشيونغ هي الدليل التشغيلي: لا جولات تفتيش لأنواع الأصول المعروفة — الذكاء الاصطناعي يراقب باستمرار ويُوفَّد عند الاستثناءات. حدد 5 أنواع أصول، أثبت النموذج في حيٍّ واحد، ثم وسّع نطاقه.',
+    tags:['لا تفتيش يدوي','إيفاد استباقي','تحسين الاستجابة 80%','إثبات على مستوى المدينة'],date:'ديسمبر 2025'}},
+
+  {sec:'city',p:'p2',domains:['smart-city','housing'],
+   url:'https://ucstrategies.com/news/17-u-s-cities-are-letting-ai-inspect-neighborhoods-but-nobody-knows-if-it-works/',
+   en:{badges:[['teal','Inspect']],title:'17 US cities: AI cameras on garbage trucks scan streets weekly for code violations and storm damage',org:'City Detect / US Municipalities · USA',
+    body:'City Detect deployed AI cameras on garbage trucks in 17 US cities, processing thousands of building observations weekly vs ~50 for a human inspector. First major stress test: 2026 hurricane season. Critics note no effectiveness baseline has been established.',
+    inno:'The "fleet piggyback" model is the lowest-cost entry point. No new staff, no new routes, no new infrastructure. Data feeds your risk-scoring engine. Pilot with one fleet type and 3 violation categories.',
+    tags:['fleet passive inspection','code enforcement','housing inspection','zero new staff'],date:'Mar 2026'},
+   ar:{badges:[['teal','تفتيش']],title:'17 مدينة أمريكية: كاميرات ذكاء اصطناعي على شاحنات القمامة لمسح انتهاكات البناء أسبوعياً',org:'City Detect · الولايات المتحدة',
+    body:'City Detect نشرت كاميرات ذكاء اصطناعي على شاحنات القمامة في 17 مدينة أمريكية، تعالج آلاف الملاحظات أسبوعياً مقارنةً بنحو 50 للمفتش البشري. أول اختبار ضغط حقيقي: موسم الأعاصير 2026.',
+    inno:'نموذج "الأسطول المُدمج" هو نقطة الدخول الأدنى تكلفة. لا موظفون جدد، لا مسارات جديدة، لا بنية تحتية جديدة.',
+    tags:['تفتيش سلبي على الأسطول','تطبيق القواعد','تفتيش الإسكان','لا موظفين جدد'],date:'مارس 2026'}},
+
+  {sec:'city',p:'p3',domains:['smart-city','construction'],
+   url:'https://www.bpcmag.com/blog/how-smart-infrastructure-is-reshaping-modern-cities/',
+   en:{badges:[['teal','Inspect']],title:'Structural health monitoring: continuous AI sensors in bridges, tunnels and urban infrastructure replace periodic manual inspection',org:'Smart Infrastructure Industry · Global',
+    body:'Structural health monitoring systems embedded in bridges, tunnels, and aging urban infrastructure continuously assess asset conditions. Sensor costs have fallen by orders of magnitude, making broad deployment economically viable across entire road and bridge networks. Connected cities see measurable improvements in maintenance cost and safety outcomes.',
+    inno:'Continuous structural monitoring reframes inspection from "go check" to "receive alert when threshold breached." Embed low-cost sensors now and have assets self-report their condition. The inspector visits only when the sensor signals a problem — this is the inspection digital twin for physical infrastructure.',
+    tags:['structural health monitoring','IoT sensors','threshold-based inspection','infrastructure self-reporting'],date:'Ongoing 2026'},
+   ar:{badges:[['teal','تفتيش']],title:'مراقبة الصحة الهيكلية: مستشعرات ذكاء اصطناعي مستمرة في الجسور والأنفاق تحل محل التفتيش الدوري',org:'قطاع البنية التحتية الذكية · عالمي',
+    body:'أنظمة مراقبة الصحة الهيكلية المدمجة في الجسور والأنفاق والبنية التحتية الحضرية تُقيّم حالة الأصول باستمرار. انخفضت تكاليف المستشعرات بشكل كبير مما يجعل النشر الواسع مجدياً اقتصادياً.',
+    inno:'تُعيد المراقبة الهيكلية المستمرة تعريف التفتيش من "اذهب وتحقق" إلى "تلقّ تنبيهاً عند تجاوز العتبة". أدمج مستشعرات منخفضة التكلفة واجعل الأصل يُبلّغ عن حالته ذاتياً.',
+    tags:['مراقبة الصحة الهيكلية','مستشعرات إنترنت الأشياء','التفتيش المبني على العتبة','تقرير ذاتي'],date:'مستمر 2026'}},
+
+  {sec:'food',p:'pnew',domains:['food','policy'],
+   url:'https://www.food-safety.com/articles/11322-fda-launches-bridge-project-to-modernize-food-facility-inspections',
+   en:{badges:[['teal','NEW'],['green','Food Safety'],['teal','Inspect']],title:'FDA BRIDGE Project: risk-based AI approach to modernise ALL domestic food facility inspections by 2027',org:'US FDA / Human Foods Program · USA',
+    body:'The FDA launched the Better Regulatory Inspections for Dynamic Government Efficiency (BRIDGE) Project — a formal programme to move domestic food facility inspection away from fixed schedules toward data-driven, risk-based approaches. In partnership with state co-regulators, BRIDGE applies AI analytics to optimise inspection frequency, reduce duplication across agencies, and improve coverage. Phase 1 (Jun–Sep 2025): planning. Phase 2 (Oct 2025–Dec 2027): live proof-of-process testing with selected state partners.',
+    inno:'BRIDGE is the US government\'s official pivot to the inspection model your domain already advocates: risk-based dispatch, not calendar-based coverage. For your innovation programme, this is the regulatory signal that changes the conversation from "experimental" to "where the whole sector is heading." Saudi Arabia and other regulators can follow this framework to redesign their own inspection programmes with federal-grade credibility.',
+    tags:['FDA risk-based inspection','BRIDGE project','federal AI inspection','state partnership'],date:'Apr 28, 2026'},
+   ar:{badges:[['teal','جديد'],['green','سلامة غذائية'],['teal','تفتيش']],title:'مشروع BRIDGE من FDA: نهج ذكاء اصطناعي قائم على المخاطر لتحديث جميع عمليات تفتيش المنشآت الغذائية الأمريكية بحلول 2027',org:'FDA الأمريكية / برنامج الأغذية البشرية · الولايات المتحدة',
+    body:'أطلقت FDA مشروع BRIDGE — برنامج رسمي للتحول من جداول تفتيش المنشآت الغذائية الثابتة نحو نهج مدفوع بالبيانات ومبني على المخاطر. بالشراكة مع الجهات التنظيمية الولائية، يطبّق BRIDGE تحليلات الذكاء الاصطناعي لتحسين تكرار التفتيش، وتقليل التكرار بين الجهات، وتحسين التغطية. المرحلة 1 (يونيو–سبتمبر 2025): التخطيط. المرحلة 2 (أكتوبر 2025–ديسمبر 2027): اختبار حي للعمليات.',
+    inno:'BRIDGE هو التحول الرسمي للحكومة الأمريكية نحو نموذج التفتيش الذي يدعو إليه مجالك: الإيفاد القائم على المخاطر، لا التغطية التقويمية. لبرنامج الابتكار الخاص بك، هذه هي الإشارة التنظيمية التي تُحوّل النقاش من "تجريبي" إلى "الاتجاه الذي يسير نحوه القطاع بأكمله".',
+    tags:['تفتيش FDA القائم على المخاطر','مشروع BRIDGE','تفتيش فيدرالي بالذكاء الاصطناعي','الشراكة مع الولايات'],date:'28 أبريل 2026'}},
+
+  {sec:'construction',p:'pnew',domains:['construction'],
+   url:'https://www.constructionequipment.com/technology/article/55373232/construction-equipment-safety-tech-ai-cameras-e-stops-and-smart-machines',
+   en:{badges:[['teal','NEW'],['amber','Construction'],['teal','Inspect']],title:'Conexpo 2026: AI cameras auto-stop excavators within 6 feet of workers — safety from passive checklist to active AI partner',org:'Construction Equipment Industry · Conexpo-Con/Agg 2026 · USA',
+    body:'At Conexpo-Con/Agg 2026 (industry\'s largest trade show), live demonstrations showed AI safety systems stopping a working excavator automatically when a person entered within 6 feet. Smart Around View Monitor (SAVM) systems with 6 high-resolution cameras and radar sensors provide 360-degree real-time awareness. Human Detection Systems flag proximity hazards before accidents occur. AI is moving construction safety from "passive checklist after the fact" to "active intelligent partner that stops the machine before harm."',
+    inno:'This is exactly the technology needed to modernise excavation and construction site inspection. Instead of an inspector walking a hazardous site to observe safety conditions, AI cameras on every machine continuously monitor the entire site — and physically stop equipment when unsafe conditions are detected. For your inspection domain: mandate AI proximity detection as a site safety certification requirement, not just a voluntary technology adoption.',
+    tags:['AI excavator safety','proximity detection','auto-stop','active construction inspection'],date:'Apr 2026 Conexpo'},
+   ar:{badges:[['teal','جديد'],['amber','بناء'],['teal','تفتيش']],title:'Conexpo 2026: كاميرات ذكاء اصطناعي توقف الحفارات تلقائياً في نطاق 6 أقدام من العمال',org:'قطاع معدات البناء · Conexpo-Con/Agg 2026 · الولايات المتحدة',
+    body:'في Conexpo-Con/Agg 2026 (أكبر معرض صناعي)، أظهرت تجارب حية أنظمة سلامة بالذكاء الاصطناعي توقف حفارة نشطة تلقائياً عند اقتراب شخص في نطاق 6 أقدام. أنظمة SAVM مع 6 كاميرات عالية الدقة ومستشعرات رادارية توفر رؤية 360 درجة في الوقت الفعلي. الذكاء الاصطناعي يتحول في سلامة البناء من "قائمة مراجعة سلبية بعد الحدث" إلى "شريك ذكي نشط يوقف الآلة قبل وقوع الضرر".',
+    inno:'هذه هي التقنية المطلوبة بالضبط لتحديث تفتيش مواقع الحفر والبناء. بدلاً من مفتش يجوب موقعاً خطراً لمراقبة ظروف السلامة، تراقب كاميرات الذكاء الاصطناعي الموقع بأكمله باستمرار وتوقف المعدات فعلياً عند اكتشاف ظروف غير آمنة. لمجالك: اشترط كشف القرب بالذكاء الاصطناعي كمتطلب شهادة سلامة الموقع.',
+    tags:['سلامة الحفارات بالذكاء الاصطناعي','كشف القرب','إيقاف تلقائي','تفتيش بناء نشط'],date:'أبريل 2026 Conexpo'}},
+
+  {sec:'construction',p:'p1',domains:['construction'],
+   url:'https://news.vt.edu/articles/2026/03/eng-mlsoc-robots-and-ai-tackling-construction-challenges-mario.html',
+   en:{badges:[['amber','Construction'],['teal','Inspect']],title:'MARIO: multi-robot AI for continuous construction inspection — 1 operator supervises multiple sites simultaneously',org:'Virginia Tech / Procon Consulting · USA',
+    body:'Coordinated ground robots and drones with AI sensing and computer vision for continuous real-time construction monitoring. One remote inspector supervises multiple robots across multiple sites. Identifies defects, sequencing problems, and coordination issues early. Robots enter hazardous areas instead of human inspectors, addressing both the inspector shortage and safety risk.',
+    inno:'MARIO solves two core innovation challenges simultaneously: inspector shortage (one expert covers multiple sites) and inspector safety (robots enter hazardous zones). For excavation inspection specifically, this transforms a high-risk, high-travel role into a remote monitoring function. Saudi Arabia\'s construction boom makes this immediately relevant.',
+    tags:['multi-site supervision','excavation inspection','inspector shortage solution','hazardous environments'],date:'Mar 2026'},
+   ar:{badges:[['amber','بناء'],['teal','تفتيش']],title:'MARIO: نظام الروبوت متعدد العوامل للمراقبة المستمرة لمواقع البناء — مشغّل واحد لمواقع متعددة',org:'Virginia Tech / Procon · الولايات المتحدة',
+    body:'فرق منسقة من الروبوتات الأرضية والطائرات المسيّرة مع الاستشعار بالذكاء الاصطناعي والرؤية الحاسوبية للمراقبة الميدانية في الوقت الفعلي. مفتش واحد عن بُعد يشرف على روبوتات متعددة عبر مواقع متعددة. الروبوتات تدخل المناطق الخطرة بدلاً من المفتشين البشريين.',
+    inno:'يحل MARIO تحديَي الابتكار الجوهريَّين معاً: نقص المفتشين وسلامتهم. الطفرة العمرانية في المملكة العربية السعودية تجعل هذا ذا صلة فورية.',
+    tags:['إشراف متعدد المواقع','تفتيش الحفريات','حل نقص المفتشين','البيئات الخطرة'],date:'مارس 2026'}},
+
+  {sec:'construction',p:'p2',domains:['construction'],
+   url:'https://candrone.com/blogs/news/flying-blind-the-new-era-of-underground-inspections-with-drone-based-slam-lidar',
+   en:{badges:[['amber','Excavation'],['teal','Inspect']],title:'SLAM-LiDAR drones map GPS-denied underground excavations autonomously — gas detection, digital twin generation',org:'Exyn Technologies / Hovermap · Global',
+    body:'SLAM-based LiDAR drones map tunnels, stopes, and mine shafts in GPS-denied underground environments. Mount Isa Mines: stope surveys from 4 hours to minutes. Detects methane/CO gas pockets, unstable terrain, ground support degradation. Full digital twin generated from drone data — no human entry required into hazardous zones.',
+    inno:'Apply to utility trench inspection, basement inspection, and deep excavation safety checks — all scenarios where current methods put inspectors at risk. Mandate AI-based subsurface mapping as a formal pre-construction inspection deliverable.',
+    tags:['GPS-denied mapping','excavation safety','gas detection','digital twin generation'],date:'Ongoing 2026'},
+   ar:{badges:[['amber','حفريات'],['teal','تفتيش']],title:'طائرات SLAM-LiDAR ترسم خرائط الحفريات الجوفية بدون GPS — كشف الغاز وتوليد التوأم الرقمي',org:'Exyn Technologies / Hovermap · عالمي',
+    body:'طائرات LiDAR مسيّرة مبنية على SLAM ترسم خرائط الأنفاق والحفريات الجوفية في بيئات محرومة من GPS. اكتشاف جيوب الغاز (الميثان وأول أكسيد الكربون) والتربة غير المستقرة. توليد توأم رقمي كامل دون حاجة للدخول البشري.',
+    inno:'طبّق على تفتيش خنادق المرافق والطوابق السفلية والحفر العميق. فرض رسم الخرائط الجوفية بالذكاء الاصطناعي كمتطلب تفتيش ما قبل البناء.',
+    tags:['رسم خرائط بدون GPS','سلامة الحفريات','كشف الغاز','توليد التوأم الرقمي'],date:'مستمر 2026'}},
+
+  {sec:'construction',p:'p3',domains:['construction'],
+   url:'https://www.dslrpros.com/blogs/drone-trends/drone-infrastructure-inspection-for-bridges-roads-and-buildings',
+   en:{badges:[['amber','Infrastructure'],['teal','Inspect']],title:'Drone bridge inspection: $250 vs $4,600 traditional — 94% cost reduction benchmark (Michigan DOT)',org:'Michigan DOT / Union Pacific · USA',
+    body:'Michigan DOT analysis: drone-assisted bridge inspection costs $250 vs $4,600 traditional — $4,350 savings per inspection. Union Pacific deploys across 32,000-mile rail network. Construction AI adoption doubled: 38% of contractors now report measurable impact vs 17% a year ago.',
+    inno:'The 94% cost reduction is your ROI case for any drone programme. Calculate your jurisdiction\'s annual bridge inspection budget at $4,600 per bridge — then show the same number at $250. The $4,375 per bridge saving funds your entire AI inspection programme.',
+    tags:['94% cost reduction','ROI benchmark','drone deployment','infrastructure inspection'],date:'Ongoing 2026'},
+   ar:{badges:[['amber','بنية تحتية'],['teal','تفتيش']],title:'تفتيش الجسور بالطائرات المسيّرة: 250 دولاراً مقابل 4,600 — تخفيض 94% (معيار وزارة نقل ميشيغان)',org:'Michigan DOT / Union Pacific · الولايات المتحدة',
+    body:'تحليل وزارة النقل: تكلفة التفتيش بالطائرات المسيّرة 250 دولاراً مقابل 4,600 تقليدياً — وفر 4,350 دولاراً لكل عملية. Union Pacific تنشر الطائرات المسيّرة على شبكة سككها البالغة 32,000 ميل.',
+    inno:'تخفيض 94% هو حجتك لجدوى الاستثمار. احسب ميزانية تفتيش الجسور السنوية في نطاقك بـ 4,600 دولار للجسر، ثم أظهر الرقم ذاته بـ 250 دولاراً. الوفر يُموّل برنامج التفتيش بالذكاء الاصطناعي بالكامل.',
+    tags:['تخفيض 94%','معيار العائد على الاستثمار','نشر الطائرات المسيّرة','تفتيش البنية التحتية'],date:'مستمر 2026'}},
+
+  {sec:'food',p:'p1',domains:['food'],
+   url:'https://smartfoodsafe.com/role-of-ai-in-food-safety/',
+   en:{badges:[['green','Food Safety'],['teal','Inspect']],title:'AI predictive food safety: risk-based inspection scheduling replaces periodic restaurant visits',org:'USDA-FSIS / SmartFoodSafe · USA',
+    body:'AI platforms ingest historical violation data, weather, supply chain events, and seasonal patterns to forecast where food safety problems will occur next. Enables risk-prioritised scheduling instead of routine calendar visits. NLP automates documentation, audit preparation, and compliance reporting. Tyson Foods using computer vision to track individual meat pieces through processing.',
+    inno:'The "inspection as analytics" model: rank which restaurants need inspection this week based on violation history, season, event density, supply chain signals. Same headcount, 4x better targeting of actual violations.',
+    tags:['risk-based scheduling','predictive violations','restaurant inspection','NLP compliance'],date:'Ongoing 2026'},
+   ar:{badges:[['green','سلامة غذائية'],['teal','تفتيش']],title:'تقييم مخاطر سلامة الغذاء بالذكاء الاصطناعي — الجدولة القائمة على المخاطر تحل محل الزيارات الدورية',org:'USDA-FSIS / SmartFoodSafe · الولايات المتحدة',
+    body:'منصات ذكاء اصطناعي تستوعب البيانات التاريخية للمخالفات والطقس وأحداث سلسلة الإمداد للتنبؤ بمكان مشاكل سلامة الغذاء التالية. NLP يُؤتمت التوثيق وإعداد التدقيق.',
+    inno:'نموذج "التفتيش كتحليلات": يصنّف المطاعم الأعلى خطورة هذا الأسبوع. نفس عدد المفتشين مع استهداف أفضل بـ 4 أضعاف للمخاطر الفعلية.',
+    tags:['الجدولة القائمة على المخاطر','توقع المخالفات','تفتيش المطاعم','امتثال NLP'],date:'مستمر 2026'}},
+
+  {sec:'food',p:'p2',domains:['food'],
+   url:'https://ifactoryapp.com/industries/food-manufacturing/ai-computer-vision-food-quality-inspection-detecting-defects',
+   en:{badges:[['green','Food Safety'],['teal','Inspect']],title:'AI computer vision food inspection: 99% accuracy at production speed — FSMA 204 full compliance',org:'Averroes AI / Industry · USA',
+    body:'Deep learning + high-res cameras detect contamination, foreign objects (glass, metal, plastic), colour anomalies in under 10ms per frame. X-ray + hyperspectral + NIR imaging combined. Every unit inspected, not sampled. Pneumatic rejection triggered in real time with full traceability logging for FSMA 204 compliance.',
+    inno:'99% accuracy at 10ms makes AI food inspection commercially viable at scale. For inspection authorities: your role shifts from "inspect the product" to "certify the AI inspection system" — requiring new accreditation frameworks. Policy innovation as much as technical innovation.',
+    tags:['AI system accreditation','food safety automation','100% product coverage','regulatory framework'],date:'Ongoing 2026'},
+   ar:{badges:[['green','سلامة غذائية'],['teal','تفتيش']],title:'فحص الغذاء بالرؤية الحاسوبية: دقة 99% بسرعة الإنتاج — متوافق بالكامل مع FSMA 204',org:'Averroes AI / Industry · الولايات المتحدة',
+    body:'التعلم العميق وكاميرات عالية الدقة ترصد التلوث والأجسام الغريبة (الزجاج والمعادن والبلاستيك) في أقل من 10 ملي ثانية. كل وحدة مفحوصة — لا عينات فحسب. رفض تلقائي فوري مع تسجيل كامل.',
+    inno:'دقة 99% عند 10 ملي ثانية تجعل التفتيش مجدياً تجارياً. لسلطات التفتيش: دورك ينتقل من "تفتيش المنتج" إلى "اعتماد نظام التفتيش" — مما يستلزم أطر اعتماد جديدة.',
+    tags:['اعتماد نظام الذكاء الاصطناعي','أتمتة سلامة الغذاء','تغطية 100%','إطار تنظيمي'],date:'مستمر 2026'}},
+
+  {sec:'housing',p:'pnew',domains:['housing','smart-city'],
+   url:'https://press.siemens.com/global/en/pressrelease/siemens-showcases-journey-smart-autonomous-buildings-light-building-2026',
+   en:{badges:[['teal','NEW Today'],['blue','Buildings']],title:'Siemens at Light+Building 2026: smart → autonomous buildings — AI manages energy, safety and maintenance continuously',org:'Siemens · Germany',
+    body:'Siemens demonstrated Industrial AI transforming buildings from smart to human-centric autonomous infrastructure at Light+Building Frankfurt. AI enables adaptive energy management, safety monitoring, and predictive maintenance without constant human oversight. Addresses workforce challenges, outdated planning, and building emissions compliance simultaneously.',
+    inno:'Autonomous buildings are self-inspecting buildings. When a building\'s AI detects a deviation from safety norms, it flags it and logs it for the inspection authority. Your domain evolution: inspection authorities shift from "go inspect" to "receive building self-report and verify." The most transformational shift in the inspection authority\'s role — from field operator to standards certifier.',
+    tags:['self-inspecting buildings','autonomous monitoring','predictive maintenance','inspection authority evolution'],date:'Today (Mar 2026 event)'},
+   ar:{badges:[['teal','جديد اليوم'],['blue','مباني']],title:'سيمنز في Light+Building 2026: المباني الذكية إلى المستقلة — الذكاء الاصطناعي يدير الطاقة والسلامة باستمرار',org:'سيمنز · ألمانيا',
+    body:'أظهرت سيمنز الذكاء الاصطناعي الصناعي يُحوّل المباني من ذكية إلى بنية تحتية مستقلة تتمحور حول الإنسان. إدارة الطاقة التكيفية ومراقبة السلامة والصيانة التنبؤية دون إشراف بشري مستمر.',
+    inno:'المباني المستقلة هي مباني تفتش نفسها. دورك ينتقل من "اذهب وافحص" إلى "استقبل تقرير المبنى الذاتي وتحقق منه". أعمق تحوّل في دور سلطة التفتيش: من مشغّل ميداني إلى مُصادق على المعايير.',
+    tags:['المباني التفتيشية الذاتية','المراقبة المستقلة','الصيانة التنبؤية','تطور سلطة التفتيش'],date:'اليوم (حدث مارس 2026)'}},
+
+  {sec:'housing',p:'p2',domains:['housing','smart-city'],
+   url:'https://engineering.nyu.edu/news/pushing-envelope-building-inspections-ai-and-robotics',
+   en:{badges:[['blue','Buildings'],['teal','Inspect']],title:'NYU + NYC: autonomous robots and thermal drones inspect building envelopes — $1M NSF award, NYC Smart City Testbed',org:'NYU Tandon / NYC OTI · USA',
+    body:'$1M NSF CIVIC award for autonomous robot + thermal drone system inspecting building envelopes for moisture, thermal irregularities, and structural defects using GPR + LiDAR + thermal cameras. AI generates detailed condition reports without physical visits. Startup Building Diagnostic Robotics is commercialising the technology.',
+    inno:'Directly applicable to group housing inspection: dense residential buildings externally scanned by drones in a fraction of manual inspection time. Thermal imaging finds moisture and insulation failures invisible to human inspectors. For 100+ unit complexes, this is the only path to 100% coverage within budget.',
+    tags:['group housing inspection','thermal drone scanning','100% coverage','emissions compliance'],date:'Ongoing'},
+   ar:{badges:[['blue','مباني'],['teal','تفتيش']],title:'NYU + نيويورك: روبوتات مستقلة وطائرات مسيّرة حرارية لتفتيش مغلفات المباني — منحة NSF مليون دولار',org:'NYU Tandon / NYC OTI · الولايات المتحدة',
+    body:'منحة NSF CIVIC بقيمة مليون دولار لنظام روبوتي مستقل وطائرة مسيّرة حرارية لفحص مغلفات المباني باستخدام GPR وLiDAR. يولّد الذكاء الاصطناعي تقارير مفصّلة دون زيارات فعلية.',
+    inno:'قابل للتطبيق مباشرة على تفتيش الإسكان الجماعي: مسح خارجي بالطائرات المسيّرة في جزء من وقت التفتيش اليدوي. التصوير الحراري يكشف عيوب الرطوبة والعزل غير المرئية.',
+    tags:['تفتيش الإسكان الجماعي','مسح الطائرات المسيّرة الحرارية','تغطية 100%','امتثال انبعاثات المباني'],date:'مستمر'}},
+
+  {sec:'city',p:'pnew',domains:['smart-city','construction'],
+   url:'https://www.mastercard.com/global/en/news-and-trends/stories/2025/in-tech-ai-smart-cities.html',
+   en:{badges:[['teal','NEW'],['teal','Inspect']],title:'NYC: AI turns crowdsourced dashcam footage into city-wide crosswalk inspection — tracks individual paint lines over time',org:'AI Startup / NYC · USA',
+    body:'An AI company in New York City is using crowdsourced dashcam imagery from vehicles already on the road to inspect crosswalk conditions. The AI analyses individual paint lines, tracks their degradation over time, and schedules proactive maintenance before safety incidents occur. This extends the passive fleet inspection model beyond dedicated garbage trucks to every connected vehicle — taxis, delivery vans, Uber — that traverses city streets.',
+    inno:'This is the inspection model that scales without budget. Every vehicle already on the road becomes a sensor. For your domain: partner with city ride-share and delivery operators to access dashcam feeds under a data-sharing agreement. You gain continuous city-wide infrastructure monitoring at near-zero incremental cost. Applicable to road markings, sidewalk conditions, construction perimeter compliance, and streetlight status.',
+    tags:['crowdsourced inspection','dashcam AI','passive city monitoring','road marking compliance'],date:'Today NEW'},
+   ar:{badges:[['teal','جديد'],['teal','تفتيش']],title:'نيويورك: الذكاء الاصطناعي يحوّل لقطات الكاميرات الأمامية المُجمَّعة إلى تفتيش شامل لممرات المشاة عبر المدينة',org:'شركة ذكاء اصطناعي / نيويورك · الولايات المتحدة',
+    body:'شركة ذكاء اصطناعي في نيويورك تستخدم صور الكاميرات الأمامية المُجمَّعة من المركبات لتفتيش ممرات المشاة. الذكاء الاصطناعي يحلّل خطوط الطلاء الفردية، يتتبع تدهورها مع الوقت، ويجدول الصيانة الاستباقية قبل وقوع حوادث سلامة. يُوسّع نموذج التفتيش السلبي ليشمل كل مركبة متصلة — سيارات الأجرة وشاحنات التوصيل وUber.',
+    inno:'هذا هو نموذج التفتيش الذي يتوسع دون ميزانية إضافية. كل مركبة على الطريق تصبح مستشعراً. لمجالك: شارك مشغلي المشاركة في المركبات والتوصيل للوصول إلى تغذيات الكاميرا الأمامية بموجب اتفاقية مشاركة بيانات. تحصل على مراقبة مستمرة للبنية التحتية بتكلفة هامشية شبه صفرية.',
+    tags:['تفتيش مُجمَّع','ذكاء اصطناعي الكاميرا الأمامية','مراقبة حضرية سلبية','امتثال علامات الطرق'],date:'جديد اليوم'}},
+
+  {sec:'housing',p:'pnew',domains:['housing','smart-city'],
+   url:'https://www.theaiconsultingnetwork.com/blog/ai-automated-zoning-compliance-permitting-cre-2026',
+   en:{badges:[['teal','NEW'],['blue','Buildings'],['teal','Inspect']],title:'Honolulu cuts building permit wait from 6 months to days with AI — LA, Seattle, Austin, California all deploying 2026',org:'US Municipalities · USA',
+    body:'Honolulu\'s Department of Planning and Permitting deployed AI prescreening that eliminated the traditional submission-rejection-revision cycle, compressing wait times from 6 months to days. AI scans plans against zoning ordinances, overlay districts, and building regulations in minutes. LA City Planning auto-checks developers\' plans against zoning. Seattle PACT Team full rollout in 2026. California Governor Newsom launched AI pilot cutting wildfire rebuild permits from months to days.',
+    inno:'AI permitting is the upstream inspection fix. If AI catches compliance problems at the permit stage, fewer non-compliant structures reach the construction and occupancy inspection stage. For your innovation programme: design the AI permitting tool as the first node in an end-to-end compliance chain — permit AI feeds construction inspection, which feeds occupancy inspection, which feeds ongoing monitoring. The whole chain becomes integrated, data-driven, and self-reinforcing.',
+    tags:['AI permitting','compliance upstream','permit-to-inspection chain','housing compliance'],date:'Today NEW'},
+   ar:{badges:[['teal','جديد'],['blue','مباني'],['teal','تفتيش']],title:'هونولولو تُقلّص انتظار تصاريح البناء من 6 أشهر إلى أيام بالذكاء الاصطناعي — لوس أنجلوس وسياتل وأوستن وكاليفورنيا تنشر في 2026',org:'البلديات الأمريكية · الولايات المتحدة',
+    body:'دائرة التخطيط والتصاريح في هونولولو نشرت فحصاً مسبقاً بالذكاء الاصطناعي أزال دورة التقديم-الرفض-المراجعة التقليدية، مما ضغط أوقات الانتظار من 6 أشهر إلى أيام. الذكاء الاصطناعي يفحص المخططات مقابل قواعد تقسيم المناطق وأنظمة البناء في دقائق. كاليفورنيا أطلقت تجربة ذكاء اصطناعي لتسريع تصاريح إعادة بناء مناطق الحرائق.',
+    inno:'تصاريح الذكاء الاصطناعي هي إصلاح التفتيش من المنبع. إذا اكتشف الذكاء الاصطناعي مشاكل الامتثال في مرحلة التصريح، وصلت هياكل غير ممتثلة أقل إلى مرحلتَي تفتيش البناء والإشغال. لبرنامج ابتكارك: صمّم أداة تصاريح الذكاء الاصطناعي كأول عقدة في سلسلة امتثال متكاملة من البداية إلى النهاية.',
+    tags:['تصاريح ذكاء اصطناعي','الامتثال المبكر','سلسلة التصريح للتفتيش','امتثال الإسكان'],date:'جديد اليوم'}},
+];
+
+// ════════════════════════════════════════════════════════════════
+const VECTORS=[
+  {key:'v1',verdict:'go',domains:['smart-city','food','construction','housing'],
+   en:{title:'AI Risk-Scoring Engine: shift from calendar-based to triggered inspection by AI risk score',org:'Strategy · Cross-sector: restaurants, buildings, construction, housing',
+    body:'Replace fixed inspection rotations with a live AI risk-ranking engine ingesting historical violation data, complaint signals, weather, seasonal patterns, and supply chain events. Score every regulated entity weekly. Dispatch inspectors only to the top risk quartile. Same inspector headcount, 4x better targeting.',
+    inno:'Build or procure a risk-ranking platform. Pilot in restaurants first — richest historical data. Define a risk threshold above which inspection is triggered automatically. Highest-ROI operational change available today using mature, commercially available technology.',
+    tags:['risk scoring','predictive inspection','dispatcher tool','immediate deployment'],date:'Ready Now — 3-6 months',
+    fRows:[2,2,1,1,2],risk:'Data quality — historical violation records must be clean and complete. Missing data degrades scoring accuracy.',enabler:'Most authorities already hold the data needed. Primarily an analytics/integration project, not a new technology build.'},
+   ar:{title:'محرك تقييم المخاطر بالذكاء الاصطناعي: الانتقال من التفتيش الدوري إلى الإيفاد القائم على المخاطر',org:'استراتيجية · متعدد القطاعات: المطاعم، المباني، البناء، الإسكان',
+    body:'استبدال جولات التفتيش الثابتة بمحرك تصنيف مخاطر حي يعمل بالذكاء الاصطناعي. يستوعب البيانات التاريخية للمخالفات وإشارات الشكاوى والطقس والأنماط الموسمية. يُوفَّد المفتشون فقط للربع الأعلى خطورة. نفس الطاقة الاستيعابية مع استهداف أفضل بـ 4 أضعاف.',
+    inno:'قم ببناء أو اقتناء منصة تصنيف مخاطر. جرّب في المطاعم أولاً — أغنى بيانات تاريخية. هذا التغيير التشغيلي الأعلى عائداً على الاستثمار المتاح اليوم.',
+    tags:['تصنيف المخاطر','التفتيش التنبؤي','أداة الإيفاد','نشر فوري'],date:'جاهز الآن — 3-6 أشهر',
+    fRows:[2,2,1,1,2],risk:'جودة البيانات — يجب أن تكون سجلات المخالفات نظيفة ومكتملة.',enabler:'معظم السلطات تمتلك البيانات اللازمة بالفعل. هذا مشروع تحليلات بيانات وتكامل أنظمة في جوهره.'}},
+
+  {key:'v2',verdict:'pilot',domains:['smart-city','housing'],
+   en:{title:'Passive Inspection Sensor Network: turn existing city fleet into a continuous inspection layer',org:'Strategy · Housing, code enforcement, road & street infrastructure',
+    body:'Cameras on garbage trucks, utility vans, and street sweepers passively collect building facade and compliance data at city-wide scale during normal routes — no new inspection staff. Computer vision flags violations, storm damage, and structural defects between scheduled inspections.',
+    inno:'Pilot with waste trucks (broadest route coverage). Define 3 violation categories initially. Data feeds your Vector 1 risk-scoring engine. No new staff — this is a coverage multiplier for your existing team.',
+    tags:['passive sensing','fleet camera pilot','smart city integration','coverage multiplier'],date:'6-12 months — start with 1 fleet',
+    fRows:[3,3,2,2,2],risk:'Cross-agency coordination. Camera installation on municipal fleet requires agreement from transport/sanitation authority — a separate organisation in most cities.',enabler:'Privacy regulations clear for public space monitoring. Technology commercially available (City Detect already live in 17 cities).'},
+   ar:{title:'شبكة الاستشعار السلبي: تحويل أسطول المدينة الموجود إلى طبقة تفتيش مستمرة',org:'استراتيجية · الإسكان، تطبيق قواعد البناء، البنية التحتية',
+    body:'كاميرات على شاحنات القمامة وسيارات المرافق تجمع بيانات التفتيش سلبياً أثناء مساراتها الاعتيادية. الرؤية الحاسوبية تمييز المخالفات والأضرار والعيوب.',
+    inno:'ابدأ بشاحنات النفايات (أوسع تغطية). حدد 3 فئات مخالفات ابتداءً. تُغذّي البيانات محرك تقييم المخاطر في المحور 1. لا موظفون جدد مطلوبون.',
+    tags:['استشعار سلبي','تجريب الأسطول','تكامل مدينة ذكية','مضاعف التغطية'],date:'6-12 شهراً — ابدأ بأسطول واحد',
+    fRows:[3,3,2,2,2],risk:'التنسيق بين الجهات. تركيب الكاميرات على الأسطول البلدي يستلزم الاتفاق مع إدارة النقل أو النظافة.',enabler:'لوائح الخصوصية واضحة لمراقبة الفضاء العام. التقنية متاحة تجارياً.'}},
+
+  {key:'v3',verdict:'pilot',domains:['construction','housing'],
+   en:{title:'Remote Robotic Inspection: drones and robots for ALL hazardous and inaccessible inspection sites',org:'Strategy · Excavation, construction, underground, building envelopes, bridges',
+    body:'Replace human inspection visits to sites with safety risk or access constraints with drones and ground robots. SLAM drones map underground excavations. Thermal drones inspect building envelopes. MARIO robots monitor active construction. One remote inspector supervises multiple robots across multiple sites.',
+    inno:'Map inspection tasks by (a) human safety risk and (b) physical access difficulty. Prioritise top 10 most dangerous types for drone/robot replacement. Position as inspector fatality risk elimination. 94% cost reduction (Michigan DOT) makes ROI unarguable.',
+    tags:['hazardous site elimination','drone programme','excavation inspection','94% cost reduction'],date:'12-24 months — regulatory + procurement',
+    fRows:[4,4,3,3,3],risk:'Aviation regulatory clearance for drone flights over active construction and urban areas. BVLOS rules still being finalised in several jurisdictions.',enabler:'Business case is overwhelming (94% cost reduction, inspector safety). Start with one drone for one site type.'},
+   ar:{title:'التفتيش الروبوتي عن بُعد: طائرات مسيّرة وروبوتات لجميع المواقع الخطرة وعسيرة الوصول',org:'استراتيجية · الحفريات، البناء، الأعمال الجوفية، مغلفات المباني، الجسور',
+    body:'استبدال جميع زيارات التفتيش البشرية للمواقع ذات مخاطر سلامة بطائرات مسيّرة وروبوتات. طائرات SLAM للحفريات الجوفية. طائرات مسيّرة حرارية لمغلفات المباني. روبوتات MARIO لمواقع البناء.',
+    inno:'حصر مهام التفتيش حسب (أ) مخاطر السلامة و(ب) صعوبة الوصول. قدّمه على أنه "القضاء على مخاطر إصابات المفتشين". تخفيض 94% يكفي وحده لإقناع صانعي القرار.',
+    tags:['القضاء على المواقع الخطرة','برنامج الطائرات المسيّرة','تفتيش الحفريات','تخفيض 94%'],date:'12-24 شهراً — مرحلة التنظيم والمشتريات',
+    fRows:[4,4,3,3,3],risk:'التصاريح التنظيمية لرحلات الطائرات المسيّرة فوق مناطق البناء.',enabler:'حجة الجدوى ساحقة. ابدأ بطائرة مسيّرة واحدة لنوع موقع واحد.'}},
+
+  {key:'v4',verdict:'plan',domains:['policy','food','housing','construction'],
+   en:{title:'Inspection Authority Transformation: from inspecting assets to certifying AI inspection systems',org:'Strategy · All inspection domains — regulatory and policy role',
+    body:'When AI food inspection achieves 99% accuracy, buildings self-report via sensors, and construction drones document everything in 3D — the inspection authority\'s fundamental role changes. You certify that the AI vision system meets your standards, rather than sending an inspector to check.',
+    inno:'Draft an "AI Inspection System Accreditation Framework" — performance standards, audit requirements, and certification criteria. Being first to publish this positions you as the global reference. EU AI Act and South Korea AI Basic Act are creating demand for exactly this.',
+    tags:['AI accreditation standards','authority evolution','global standard-setting','EU AI Act alignment'],date:'Start now (framework paper) → 2-4 years full adoption',
+    fRows:[2,1,2,4,5],risk:'Legislative cycle time. Defining AI inspection standards requires legal change, inter-agency alignment, and industry consultation — each adding 12-18 months.',enabler:'Extremely low cost. Publishing a draft framework paper positions your organisation as thought leader immediately.'},
+   ar:{title:'تحول سلطة التفتيش: من تفتيش الأصول إلى اعتماد أنظمة التفتيش بالذكاء الاصطناعي',org:'استراتيجية · جميع قطاعات التفتيش — الدور التنظيمي والسياساتي',
+    body:'عندما يحقق تفتيش الغذاء بالذكاء الاصطناعي دقة 99%، وعندما تُبلّغ المباني عن نفسها بالمستشعرات — يتغير الدور الجوهري لسلطة التفتيش. تصبح معتمِد أنظمة التفتيش لا مشغّلها.',
+    inno:'ضع مسودة "إطار اعتماد أنظمة التفتيش بالذكاء الاصطناعي". كونك أول من ينشر هذا يجعلك المرجع العالمي. قانون الذكاء الاصطناعي الأوروبي والكوري يخلقان الطلب على هذا بالضبط.',
+    tags:['إطار الاعتماد','تطور سلطة التفتيش','وضع المعايير العالمية','التوافق مع قانون الذكاء الاصطناعي الأوروبي'],date:'ابدأ الآن (ورقة الإطار) ← 2-4 سنوات',
+    fRows:[2,1,2,4,5],risk:'دورة التشريع والتنظيم. وضع المعايير يستلزم تغييراً قانونياً وتوافقاً بين الجهات.',enabler:'تكلفة زهيدة. نشر ورقة إطار مسودة يضع مؤسستك كقائدة فكرية فورياً.'}},
+
+  {key:'v5',verdict:'long',domains:['smart-city','housing','construction'],
+   en:{title:'Inspection Digital Twin Registry: live 3D model of every regulated asset, updated by sensors not visits',org:'Strategy · All domains — long-term infrastructure vision',
+    body:'City-scale digital twins (Rotterdam, Kaohsiung, Singapore) replace paper inspection records with live, 3D, sensor-updated asset representations. Each restaurant, building, construction site has a continuous compliance score. Inspectors dispatched when scores fall below threshold — not on fixed calendars.',
+    inno:'Don\'t build from scratch. (1) Define the data model. (2) Identify which existing city systems can contribute. (3) Pilot one asset class in one district. Secure this as a chapter within your city\'s smart city strategy — not a standalone inspection project.',
+    tags:['digital twin registry','live compliance score','sensor-updated records','smart city chapter'],date:'3-5 years — embed in smart city strategy now',
+    fRows:[5,5,4,5,4],risk:'Scope creep and platform complexity. City-scale digital twins fail most often when they try to be everything at once. Budget overruns and multi-year delays are common.',enabler:'Embed within the city\'s existing smart city strategy. Rotterdam and Kaohsiung succeeded by making inspection a module of a broader urban intelligence platform.'},
+   ar:{title:'سجل التوأم الرقمي للتفتيش: نموذج ثلاثي الأبعاد حي لكل أصل خاضع للرقابة محدَّث بالمستشعرات',org:'استراتيجية · جميع القطاعات — رؤية البنية التحتية على المدى البعيد',
+    body:'توائم رقمية على مستوى المدينة تستبدل سجلات التفتيش الورقية بتمثيل ثلاثي الأبعاد حي. كل مطعم ومبنى وموقع بناء له درجة امتثال مستمرة. المفتشون يُوفَدون عند انخفاض الدرجات دون العتبة.',
+    inno:'لا تبنِ من الصفر. (1) حدّد نموذج البيانات. (2) حدّد الأنظمة الموجودة. (3) جرّب لفئة أصول واحدة. أدرجه ضمن استراتيجية المدينة الذكية الأشمل.',
+    tags:['سجل التوأم الرقمي','درجة الامتثال الحية','سجل محدَّث بالمستشعرات','فصل المدينة الذكية'],date:'3-5 سنوات — أدرج في استراتيجية المدينة الذكية الآن',
+    fRows:[5,5,4,5,4],risk:'تضخم النطاق. التوائم الرقمية تفشل غالباً لمحاولتها أن تكون كل شيء دفعة واحدة.',enabler:'أدرج ضمن استراتيجية المدينة الذكية الموجودة. روتردام وكاوشيونغ نجحتا بجعل التفتيش وحدة ضمن منصة أشمل.'}},
+];
+
+// Decision table rows
+const DT_ROWS=[
+  {en:'V1 · AI Risk-Scoring Engine',ar:'م1 · محرك تقييم المخاطر',dims:[2,2,1,1,2],verdict:'go'},
+  {en:'V2 · Passive Sensor Network',ar:'م2 · شبكة الاستشعار السلبي',dims:[3,3,2,2,2],verdict:'pilot'},
+  {en:'V3 · Remote Robotic Inspection',ar:'م3 · التفتيش الروبوتي',dims:[4,4,3,3,3],verdict:'pilot'},
+  {en:'V4 · Certify AI Systems',ar:'م4 · اعتماد أنظمة الذكاء الاصطناعي',dims:[2,1,2,4,5],verdict:'plan'},
+  {en:'V5 · Inspection Digital Twin',ar:'م5 · التوأم الرقمي للتفتيش',dims:[5,5,4,5,4],verdict:'long'},
+];
+
+// ════════════════════════════════════════════════════════════════
+// AI GLOBAL SIGNALS
+// ════════════════════════════════════════════════════════════════
+const AI_SIGNALS=[
+  {domains:['policy','security'],url:'https://www.axios.com/2026/04/29/trump-anthropic-pentagon-ai-executive-order-gov',
+   en:{t:'White House 180°: drafting guidance to bypass Anthropic\'s Pentagon blacklist and unlock Mythos for all federal agencies',cat:'Policy',d:'Today NEW',s:'OMB is setting up protections allowing Cabinet agencies to begin using Mythos. NSA already integrated Mythos into analytical systems. White House COS Susie Wiles and Treasury Sec Scott Bessent met Dario Amodei in "productive introductory meeting." White House described effort as a way to "save face and bring em back in." Pentagon blacklisted Anthropic earlier this year after it refused to ease restrictions on domestic surveillance and fully autonomous weapons. OpenAI and Google have both signed "all lawful purposes" agreements for classified settings.'},
+   ar:{t:'البيت الأبيض يتراجع 180°: يُعدّ توجيهات لتجاوز حظر بنتاغون على Anthropic وفتح Mythos لجميع الوكالات الفيدرالية',cat:'سياسة',d:'جديد اليوم',s:'مكتب الإدارة والميزانية (OMB) يُعدّ حمايات تتيح للوكالات الحكومية استخدام Mythos. وكالة الأمن القومي (NSA) دمجت Mythos في أنظمة تحليلية بالفعل. رئيسة الديوان سوزي وايلز ووزير الخزانة سكوت بيسنت اجتمعا مع داريو أموديي في "لقاء تمهيدي منتج". البيت الأبيض وصف الجهود بأنها طريقة لـ"حفظ ماء الوجه وإعادتهم". حظر البنتاغون على Anthropic جاء بعد رفضها تخفيف قيود على المراقبة المحلية والأسلحة المستقلة.'}},
+
+  {domains:['policy'],url:'https://asanify.com/blog/news/regulated-vertical-ai-april-30-2026/',
+   en:{t:'EU AI Act August 2, 2026 deadline CONFIRMED UNCHANGED — April 28 trilogue collapsed without Omnibus deal',cat:'Policy',d:'Today NEW',s:'European Commission, Council and Parliament walked out of a 12-hour Strasbourg trilogue on April 28 with no deal. The sticking point: conformity-assessment relationship between the AI Act and existing sectoral rules (Annex I products like medical devices and machinery). Next round ~May 13. The August 2, 2026 high-risk deadline is legally unchanged. AI used in recruitment, screening, performance and termination sits squarely inside Annex III. Penalties reach EUR 35M or 7% of worldwide turnover.'},
+   ar:{t:'الموعد النهائي لقانون الذكاء الاصطناعي الأوروبي 2 أغسطس 2026 مؤكَّد دون تغيير — انهيار مفاوضات 28 أبريل',cat:'سياسة',d:'جديد اليوم',s:'المفوضية الأوروبية والمجلس والبرلمان انسحبوا من مفاوضات مدتها 12 ساعة في ستراسبورغ في 28 أبريل دون اتفاق. العقبة: العلاقة بين تقييم المطابقة وقانون الذكاء الاصطناعي (منتجات المرفق الأول كالأجهزة الطبية والآلات). موعد 2 أغسطس 2026 للمخاطر العالية لم يتغيّر قانونياً. الذكاء الاصطناعي في التوظيف والتأديب يقع ضمن المرفق الثالث. الغرامات تصل إلى 35 مليون يورو أو 7% من المبيعات العالمية.'}},
+
+  {domains:['ai-models','funding'],url:'https://www.crescendo.ai/news/latest-ai-news-and-updates',
+   en:{t:'OpenAI acquires media company TBPN for ~$100M — first media acquisition, shapes narrative ahead of IPO',cat:'Policy',d:'Today NEW',s:'OpenAI acquired TBPN (Technology Business Programming Network), a daily Silicon Valley talk show on track for $30M revenue this year. Deal in the "low hundreds of millions." TBPN keeps editorial independence under OpenAI\'s strategy org. Widely interpreted as an attempt to shape public AI narrative ahead of OpenAI\'s anticipated IPO. Draws comparisons to Musk/X and Bezos/Washington Post. OpenAI also surpassed $25B annualized revenue; Anthropic approaching $19B.'},
+   ar:{t:'OpenAI تستحوذ على شركة إعلام TBPN بـ ~100 مليون دولار — أول استحواذ إعلامي، لتشكيل الرواية قبيل الاكتتاب',cat:'سياسة',d:'جديد اليوم',s:'استحوذت OpenAI على TBPN (شبكة برمجة أعمال التكنولوجيا)، برنامج حواري يومي في وادي السيليكون في طريقه لتحقيق 30 مليون دولار إيرادات هذا العام. الصفقة في "مئات الملايين المنخفضة". يُفسَّر على نطاق واسع بأنه محاولة لتشكيل الرواية العامة حول الذكاء الاصطناعي قبيل الاكتتاب المتوقع لـ OpenAI. OpenAI تجاوزت 25 مليار دولار إيرادات سنوية؛ Anthropic تقترب من 19 مليار.'}},
+
+  {domains:['policy','security'],url:'https://www.cryptointegrat.com/p/ai-news-april-28-2026',
+   en:{t:'China blocks Meta\'s $2B acquisition of Manus AI — regulators review whether deal violated Beijing\'s investment rules',cat:'Policy',d:'2 days ago',s:'Chinese regulators blocked Meta\'s planned $2 billion acquisition of AI platform Manus after reviewing whether the deal violated Beijing\'s investment rules. Significant because it is one of the first AI acquisition blocks by China targeting a US-Chinese AI company. Meta separately announced partnerships with Overview Energy (1GW space solar) and Noon Energy (1GW/100GWh storage) to power its AI data centers.'},
+   ar:{t:'الصين تحجب استحواذ Meta على Manus AI بـ 2 مليار دولار — المنظمون يراجعون انتهاك قواعد الاستثمار',cat:'سياسة',d:'يومان',s:'حجب المنظمون الصينيون خطة Meta للاستحواذ على منصة الذكاء الاصطناعي Manus بملياري دولار بعد مراجعة احتمال انتهاك الصفقة لقواعد الاستثمار في بكين. يُعدّ هذا من أوائل حجوبات الاستحواذ الصينية على شركة ذكاء اصطناعي صينية-أمريكية. Meta أعلنت منفصلاً عن شراكات لطاقة تشغيل مراكز البيانات.'}},
+
+  {domains:['policy','research'],url:'https://www.axios.com/2026/04/29/ai-models-speed-warning',
+   en:{t:'Axios "We\'ve Been Warned": $2T software stock wipeout — Anthropic fastest revenue growth in US business history',cat:'Research',d:'2 days ago',s:'AI\'s "great software rout" erased $2 trillion in value. Anthropic grew from $1B annualized revenue (end 2024) → $9B (end 2025) → $30B (April 2026) — no company at this base has scaled organic revenue this fast in US history. 1,000+ companies spend over $1M/year on Claude; that number doubled in under 2 months. Foundation Model Transparency Index dropped from 58 to 40 — "The most capable models are now the least transparent." Stanford says.'},
+   ar:{t:'Axios "لقد حُذِّرنا": 2 تريليون دولار مسح من أسهم البرمجيات — Anthropic الأسرع نمواً في تاريخ الأعمال الأمريكية',cat:'بحث',d:'يومان',s:'"الهزيمة الكبرى للبرمجيات" بالذكاء الاصطناعي محت 2 تريليون دولار. Anthropic نمت من 1 مليار دولار إيرادات سنوية (نهاية 2024) إلى 9 مليارات (نهاية 2025) إلى 30 مليار (أبريل 2026) — لا شركة في هذا الحجم حققت هذه السرعة في نمو الإيرادات العضوية في التاريخ الأمريكي. مؤشر شفافية نماذج AI انخفض من 58 إلى 40: "النماذج الأكثر قدرةً هي الأقل شفافية الآن".'}},
+
+  {domains:['funding'],url:'https://asanify.com/blog/news/regulated-vertical-ai-april-30-2026/',
+   en:{t:'Rogo $160M Series D (Kleiner Perkins) — agentic AI for investment banking proves vertical AI beats horizontal copilots in regulated industries',cat:'Funding',d:'Today NEW',s:'Rogo closed $160M Series D on April 29. Total funding now >$300M. 35,000+ finance professionals use its agent Felix, which runs deal screening, CIM generation, buyer outreach, and data room diligence. Customers: Rothschild, Jefferies, Lazard, Moelis, Nomura. Aidoc also raised $150M Series E for hospital diagnosis. Pattern: compliance teams cannot audit a general model on Tuesday and trust it on Friday — vertical AI with auditable domain-specific workflows is winning regulated sectors.'},
+   ar:{t:'Rogo يجمع 160 مليون دولار (Kleiner Perkins) — الذكاء الاصطناعي الوكيل للبنوك الاستثمارية يُثبت تفوّق التخصص الرأسي على المساعدين الأفقيين في القطاعات المُنظَّمة',cat:'تمويل',d:'جديد اليوم',s:'أغلق Rogo جولة Series D بـ 160 مليون دولار في 29 أبريل. التمويل الإجمالي الآن أكثر من 300 مليون. 35,000+ محترف مالي يستخدم وكيله Felix. النمط: فرق الامتثال لا تستطيع تدقيق نموذج عام الثلاثاء والثقة به الجمعة — الذكاء الاصطناعي الرأسي مع سير عمل قابلة للتدقيق يفوز في القطاعات المُنظَّمة.'}},
+
+  {domains:['research'],url:'https://www.nature.com/articles/d41586-026-00820-5',
+   en:{t:'Nature: "World models" are AI\'s latest sensation — physics-aware AI for robotics and real-world inspection',cat:'Research',d:'2 days ago',s:'Nature April 28: World models trained on physics data about real-world environments are showing transformative potential for robotics. NVIDIA Cosmos is one key system. Unlike LLMs that generate text, world models simulate physical outcomes. Implications for inspection: a world model can predict structural failure modes, simulate gas dispersion in excavations, or forecast building envelope deterioration — before sensors detect the problem.'},
+   ar:{t:'Nature: "النماذج العالمية" هي أحدث ظاهرة في الذكاء الاصطناعي — ذكاء اصطناعي مدرك للفيزياء للروبوتات والتفتيش الحقيقي',cat:'بحث',d:'يومان',s:'Nature في 28 أبريل: النماذج العالمية المدرَّبة على بيانات فيزياء البيئات الحقيقية تُظهر إمكانات تحويلية للروبوتات. NVIDIA Cosmos إحدى الأنظمة الرئيسية. للتفتيش: النموذج العالمي يمكنه توقع أنماط فشل هيكلي، ومحاكاة انتشار الغاز في الحفريات، والتنبؤ بتدهور مغلف المبنى — قبل أن ترصد المستشعرات المشكلة.'}},
+
+  {domains:['policy','security'],url:'https://www.axios.com/2026/04/28/openai-anthropic-congress-cyber-briefings',
+   en:{t:'OpenAI + Anthropic brief House Homeland Security in classified sessions — China "industrial-scale" AI model distillation flagged',cat:'Policy',d:'2 days ago',s:'OpenAI and Anthropic held separate classified briefings with House Homeland Security staffers on April 28. Topics: frontier model capabilities, critical infrastructure cybersecurity implications. White House memo accused China of "industrial-scale" campaigns to distill and copy American AI models. House Homeland Security Chair hosting ongoing private roundtables with tech/AI executives. Rep. Jay Obernolte introduced a bill laying out a federal framework for AI this week.'},
+   ar:{t:'OpenAI وAnthropic يُقدّمان إحاطات سرية لأمن الوطن الداخلي الأمريكي — تصنيف الصين بـ"الحملات الصناعية الواسعة" لاستخلاص نماذج AI',cat:'سياسة',d:'يومان',s:'OpenAI وAnthropic قدّمتا إحاطات سرية منفصلة لمسؤولي لجنة الأمن الداخلي بمجلس النواب في 28 أبريل. المواضيع: قدرات النماذج الحدودية، انعكاسات الأمن السيبراني على البنية التحتية الحيوية. مذكرة البيت الأبيض وصفت الصين بأنها تنفّذ "حملات على نطاق صناعي" لاستخلاص نسخ من نماذج AI الأمريكية.'}},
+  {domains:['ai-models'],url:'https://openai.com/index/introducing-gpt-5-5/',
+   en:{t:'GPT-5.5 "Spud" launched April 23 — agentic coding, 82.7% Terminal-Bench, rated "High" cyber risk',cat:'Release',d:'1 week ago',s:'OpenAI released GPT-5.5 (codename Spud) to paid users on April 23. Plans its own steps, catches its own mistakes, finishes multi-part tasks with less guidance. 82.7% Terminal-Bench 2.0, 84.9% GDPval. Rated "High" cyber risk internally. API access April 24 with additional safeguards. GPT-5.5 Pro variant also available. More token-efficient than 5.4 despite 2x higher API price. 900M weekly ChatGPT users, 9M paying businesses.'},
+   ar:{t:'إطلاق GPT-5.5 "Spud" في 23 أبريل — برمجة وكيلة، 82.7% على Terminal-Bench، مُصنَّف خطراً "عالياً"',cat:'إطلاق',d:'منذ أسبوع',s:'أطلقت OpenAI نموذج GPT-5.5 للمشتركين المدفوعين في 23 أبريل. يخطط خطواته بنفسه ويُصحّح أخطاءه. 82.7% على Terminal-Bench 2.0. مُصنَّف "عالي" سيبرانياً داخلياً. وصول API في 24 أبريل. 900 مليون مستخدم أسبوعي لـ ChatGPT، 9 مليون شركة مدفوعة.'}},
+  {domains:['ai-models'],url:'https://www.anthropic.com/news/claude-opus-4-7',
+   en:{t:'Claude Opus 4.7 GA — best agentic coding, high-res vision, task budgets, cyber-capability reduced vs Mythos',cat:'Release',d:'Today NEW',s:'Anthropic released Claude Opus 4.7 on April 16. Wins 12 of 14 benchmarks vs Opus 4.6 at same $5/$25 price. New: high-res image support (2576px / 3.75MP), task budgets for agentic loops, adaptive thinking by default. Anthropic deliberately reduced cyber capabilities vs Mythos during training. Security professionals can apply to Cyber Verification Program for penetration testing use. Available on Claude.ai, API, Bedrock, Vertex AI, Microsoft Foundry, GitHub Copilot Pro+.'},
+   ar:{t:'Claude Opus 4.7 متاح عاماً — أفضل برمجة وكيلة، رؤية عالية الدقة، ميزانيات المهام، قُلِّلت قدرات الأمن السيبراني مقارنةً بـ Mythos',cat:'إطلاق',d:'جديد اليوم',s:'أطلقت Anthropic Claude Opus 4.7 في 16 أبريل. يفوز بـ 12 من أصل 14 معيار قياس مقارنةً بـ Opus 4.6 بنفس السعر $5/$25. جديد: دعم الصور عالية الدقة (2576px / 3.75MP)، ميزانيات المهام للحلقات الوكيلية، تفكير تكيّفي افتراضي. Anthropic قلّصت عمداً قدرات الأمن السيبراني مقارنةً بـ Mythos أثناء التدريب.'}},
+  {domains:['ai-models'],url:'https://www.bloomberg.com/news/articles/2026-04-24/deepseek-unveils-newest-flagship-a-year-after-ai-breakthrough',
+   en:{t:'DeepSeek V4 Flash & Pro: Hybrid Attention Architecture, 1M context, top coding benchmarks — a year after V3 shock',cat:'Breakthrough',d:'Today NEW',s:'DeepSeek released V4 Flash and V4 Pro preview on April 24, calling it "most powerful open-source platform." Key innovations: Hybrid Attention Architecture improves memory across long conversations, 1M token context window (entire codebases in one prompt), top-tier performance on coding benchmarks, big advances in reasoning and agentic tasks. Runs on Huawei Ascend chips — Nvidia still shut out. Arrives exactly one year after DeepSeek R1 triggered a $1 trillion US tech stock crash.'},
+   ar:{t:'DeepSeek V4 Flash وPro: بنية انتباه هجينة، سياق مليون رمز، أعلى معايير البرمجة — بعد عام من صدمة V3',cat:'اختراق',d:'جديد اليوم',s:'أطلقت DeepSeek V4 Flash وV4 Pro كمعاينة في 24 أبريل، مُسمّيةً إياه "أقوى منصة مفتوحة المصدر". ابتكارات رئيسية: بنية الانتباه الهجينة تحسّن الذاكرة عبر المحادثات الطويلة، نافذة سياق مليون رمز، أداء متصدر في معايير البرمجة. يعمل على رقائق Huawei Ascend — Nvidia لا تزال مُستبعَدة.'}},
+  {domains:['funding','ai-models'],url:'https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs',
+   en:{t:'SpaceX acquires xAI for $250B — Tesla converts stake into combined entity; "galactic AI" via Starlink + robotics',cat:'Funding',d:'2 days ago',s:'SpaceX acquired xAI in a $250B deal creating a $1.25 trillion combined entity. Tesla has converted its interests into a stake in the combined entity. SpaceX positions itself as "AI-first" ahead of potential IPO. Goal: leverage Starlink\'s satellite network for low-latency global AI distribution and Tesla\'s robotics for physical AI deployment. Called a "galactic AI" entity by analysts.'},
+   ar:{t:'SpaceX تستحوذ على xAI بـ 250 مليار دولار — Tesla تُحوّل حصتها في الكيان المدمج؛ "الذكاء الاصطناعي المجري" عبر Starlink',cat:'تمويل',d:'يومان',s:'استحوذت SpaceX على xAI في صفقة بـ 250 مليار دولار مكوّنةً كياناً مدمجاً بقيمة 1.25 تريليون دولار. هدف: الاستفادة من شبكة Starlink لتوزيع الذكاء الاصطناعي العالمي منخفض التأخير وروبوتات Tesla للنشر المادي.'}},
+  {domains:['policy','funding'],url:'https://medium.com/@stephen.stanley777/ai-daily-update-april-25-2026-bd7544cc2758',
+   en:{t:'Meta cuts 8,000 jobs + Microsoft thousands — AI investment surge directly reshaping workforce structures',cat:'Policy',d:'2 days ago',s:'Meta plans to cut ~8,000 roles as part of a broader efficiency drive. Microsoft cutting thousands. Cost savings from workforce reductions being redirected into compute, data centres, and AI development. Snap also laid off ~1,000 employees (25% of headcount) — AI now generates 65%+ of Snap\'s new code. Clear structural shift: human headcount reduced, AI investment increased.'},
+   ar:{t:'Meta تُقلّص 8,000 وظيفة + Microsoft الآلاف — موجة استثمار الذكاء الاصطناعي تُعيد تشكيل هياكل القوى العاملة',cat:'سياسة',d:'يومان',s:'Meta تخطط لخفض ~8,000 دور. Microsoft تُقلّص الآلاف. Snap أنهت عقود ~1,000 موظف (25% من القوى العاملة) — الذكاء الاصطناعي يولّد الآن أكثر من 65% من الأكواد الجديدة. تحوّل هيكلي واضح: تخفيض القوى البشرية، زيادة استثمار الذكاء الاصطناعي.'}},
+  {domains:['policy'],url:'https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs',
+   en:{t:'EU AI Act August 2, 2026 enforcement deadline — massive investment wave in Explainable AI and autonomous governance',cat:'Policy',d:'Ongoing — 3 months away',s:'EU AI Act general application date is August 2, 2026 — now less than 3 months away. Driving massive investment into Explainable AI (XAI) and autonomous governance modules. Gartner: by 2028, XAI will drive 50% of investments in LLM observability. Companies that provide transparent, auditable agentic workflows will be primary winners in enterprise. European regulators also warn of faster, more complex AI-driven cyber attacks.'},
+   ar:{t:'الموعد النهائي لتطبيق قانون الذكاء الاصطناعي الأوروبي: 2 أغسطس 2026 — موجة استثمار ضخمة في الذكاء الاصطناعي القابل للتفسير',cat:'سياسة',d:'مستمر — 3 أشهر متبقية',s:'الموعد النهائي لتطبيق قانون الذكاء الاصطناعي الأوروبي في 2 أغسطس 2026 — أقل من 3 أشهر. يدفع نحو استثمار ضخم في الذكاء الاصطناعي القابل للتفسير وحوكمة مستقلة. Gartner: بحلول 2028، سيدفع XAI 50% من استثمارات مراقبة نماذج اللغة. المنظمون الأوروبيون يُحذّرون من هجمات سيبرانية أسرع وأكثر تعقيداً بالذكاء الاصطناعي.'}},
+  {domains:['ai-models','funding'],url:'https://www.cryptointegrat.com/p/ai-news-april-25-2026',
+   en:{t:'Anthropic Project Deal: Claude agents negotiated 186 real deals totalling $4,000+ across 69 employees — Opus beats Haiku',cat:'Research',d:'2 days ago',s:'Anthropic ran Project Deal — a real marketplace in its SF office where Claude agents negotiated deals on behalf of employees buying and selling items. Claude Opus models secured substantially better deals than Haiku models. 186 deals totalling over $4,000 across 69 employees. First real-world test of agentic negotiation at scale.'},
+   ar:{t:'مشروع Deal من Anthropic: وكلاء Claude يتفاوضون على 186 صفقة حقيقية بقيمة +4,000 دولار عبر 69 موظفاً — Opus يتفوق على Haiku',cat:'بحث',d:'يومان',s:'أجرت Anthropic مشروع Deal — سوقاً حقيقية في مكتبها بسان فرانسيسكو حيث تفاوض وكلاء Claude نيابةً عن الموظفين. نماذج Opus ضمنت صفقات أفضل بكثير من Haiku. 186 صفقة بمجموع أكثر من 4,000 دولار عبر 69 موظفاً. أول اختبار حقيقي للتفاوض الوكيلي على نطاق واسع.'}},
+  {domains:['ai-models'],url:'https://www.theaimarketers.ai/042526/',
+   en:{t:'OpenAI Workspace Agents — teams build shared AI helpers without code; saves 5-6 hrs/rep/week at Rippling',cat:'Release',d:'2 days ago',s:'OpenAI released Workspace Agents: describe a workflow to ChatGPT, it spins up a Codex-powered agent deployable in Slack or shared across the company. At Rippling, one sales consultant\'s agent researches accounts, summarises Gong calls, and drafts deal briefs — saving each rep 5-6 hours weekly. Also released: ChatGPT Images 2 for higher quality image generation with correct text spelling.'},
+   ar:{t:'وكلاء Workspace من OpenAI — الفرق تبني مساعدات ذكاء اصطناعي مشتركة بدون كود؛ توفّر 5-6 ساعات/مندوب/أسبوع',cat:'إطلاق',d:'يومان',s:'أطلقت OpenAI وكلاء Workspace: صِف سير عمل لـ ChatGPT، يُشغّل وكيلاً مدعوماً بـ Codex قابلاً للنشر في Slack أو المشاركة مع الشركة. في Rippling، وكيل مستشار مبيعات يبحث عن الحسابات ويلخّص مكالمات Gong ويُعدّ ملخصات الصفقات — يوفّر 5-6 ساعات أسبوعياً لكل مندوب.'}},
+
+  {domains:['ai-models'],url:'https://www.neuralbuddies.com/p/ai-news-recap-april-17-2026',
+   en:{t:'Apple Siri to run on Gemini inside iOS 26.4 — Apple Private Cloud Compute preserves privacy',cat:'Breakthrough',d:'Today NEW',s:'January 2026 confirmation: Apple plans to power Siri with Gemini via Apple\'s Private Cloud Compute. Expected with iOS 26.4 in March 2026. Would put Google\'s AI model inside hundreds of millions of Apple devices — a remarkable consolidation of AI infrastructure.'},
+   ar:{t:'سيري ستعمل بمحرك Gemini في iOS 26.4 — على حوسبة السحابة الخاصة من Apple',cat:'اختراق',d:'جديد اليوم',s:'تأكيد يناير 2026: Apple تخطط لتشغيل Siri بمحرك Gemini عبر Apple Private Cloud Compute للحفاظ على الخصوصية. يضع نموذج Google داخل مئات الملايين من أجهزة Apple.'}},
+  {domains:['policy','smart-city'],url:'https://www.smartcitiesdive.com/news/ai-city-policies-to-watch/817090/',
+   en:{t:'Austin AI ethics resolution: human oversight required for ALL city AI — annual public audit, no displacement without consultation',cat:'Policy',d:'Today NEW',s:'Austin City Council passed resolution requiring annual public audits of all city AI, human review for every AI decision, prohibition on AI productivity scoring without supervisor verification, and "no displacement without consultation" for municipal workers. First major US city governance template for AI inspection.'},
+   ar:{t:'قرار أخلاقيات الذكاء الاصطناعي في أوستن: رقابة بشرية إلزامية — تدقيق سنوي، لا إبعاد دون تشاور',cat:'سياسة',d:'جديد اليوم',s:'مجلس مدينة أوستن أصدر قراراً يستلزم تدقيقات عامة سنوية، ورقابة بشرية لكل قرار، وحظر تسجيل إنتاجية الذكاء الاصطناعي دون تحقق المشرف، وسياسة "لا إبعاد دون تشاور". أول نموذج حوكمة أمريكي رئيسي لذكاء اصطناعي التفتيش.'}},
+  {domains:['research'],url:'https://www.pwc.com/gx/en/news-room/press-releases/2026/pwc-2026-ai-performance-study.html',
+   en:{t:'PwC 2026 AI Performance Study: 74% of AI value captured by 20% of companies — 7.2x performance gap',cat:'Research',d:'2 days ago',s:'1,217 executives across 25 sectors. Top 20% generate 7.2x more AI-driven value. Key differentiator: AI for growth and industry convergence, not cost-cutting. Leaders make 2.8x more decisions without human intervention. Most firms stuck in pilot mode.'},
+   ar:{t:'PwC 2026: 74% من قيمة الذكاء الاصطناعي يلتهمه 20% من الشركات — فجوة أداء 7.2 ضعف',cat:'بحث',d:'يومان',s:'1,217 تنفيذياً عبر 25 قطاعاً. أعلى 20% تحقق أداءً أفضل بـ 7.2 مرة. المُميِّز الرئيسي: الذكاء الاصطناعي للنمو وتقاطع الصناعات. معظم الشركات عالقة في وضع التجريب.'}},
+  {domains:['research'],url:'https://fortune.com/2026/04/16/stanford-study-how-has-china-gained-on-us-ai-war/',
+   en:{t:'Stanford AI Index 2026: US leads China by just 39 Arena points — down from 300+ in May 2023',cat:'Research',d:'3 days ago',s:'China has nearly erased the US AI lead. Arena score gap: 300+ points in 2023 → just 39 points in March 2026. China beats US in AI research citations (20.6% vs 12.6%), patents, and robot deployment. US still leads in top model count. Talent "one-way knowledge transfer" to China flagged as structural challenge.'},
+   ar:{t:'مؤشر ستانفورد 2026: أمريكا تتقدم على الصين بـ 39 نقطة Arena فقط',cat:'بحث',d:'3 أيام',s:'الصين كادت تمحو تقدم أمريكا. فجوة Arena: أكثر من 300 نقطة في 2023 مقابل 39 في مارس 2026. الصين تتفوق في اقتباسات الأبحاث (20.6% مقابل 12.6%) وبراءات الاختراع ونشر الروبوتات.'}},
+  {domains:['ai-models','security'],url:'https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/',
+   en:{t:'Claude Mythos Preview: 93.9% SWE-bench, 72.4% autonomous exploit rate — withheld from public release',cat:'Breakthrough',d:'9 days ago',s:'Most capable AI model ever documented. Found thousands of zero-days in every major OS and browser. 97.6% USAMO 2026, 83.1% CyberGym. Anthropic declared it too dangerous for general release — only 50 organisations under Project Glasswing get gated access.'},
+   ar:{t:'Claude Mythos Preview: 93.9% على SWE-bench، معدل 72.4% لاستغلال الثغرات — محجوب عن العموم',cat:'اختراق',d:'9 أيام',s:'أكثر النماذج قدرةً الموثقة علنياً. اكتشف آلاف الثغرات في جميع أنظمة التشغيل والمتصفحات الكبرى. أُعلن أنه خطير جداً للإطلاق العام.'}},
+  {domains:['policy','security'],url:'https://venturebeat.com/technology/anthropic-says-its-most-powerful-ai-cyber-model-is-too-dangerous-to-release',
+   en:{t:'Project Glasswing: $100M Mythos deployment for critical infrastructure defence — 12 major tech partners',cat:'Policy',d:'9 days ago',s:'12 partner orgs (Amazon, Apple, Broadcom, Cisco, CrowdStrike, Google, JPMorgan Chase, Linux Foundation, Microsoft, Nvidia, Palo Alto Networks) + 40 total. $100M usage credits + $4M to open-source security. Anthropic briefed CISA.'},
+   ar:{t:'مشروع Glasswing: نشر Mythos بـ 100 مليون دولار لحماية البنية التحتية الحيوية',cat:'سياسة',d:'9 أيام',s:'12 شريكاً (Amazon وApple وGoogle وMicrosoft وNvidia وCisco...) + 40 منظمة إجمالاً. 100 مليون دولار ائتمان استخدام + 4 ملايين للأمن المفتوح المصدر. أطلعت Anthropic مكتب CISA.'}},
+  {domains:['security','policy'],url:'https://www.cnbc.com/2026/04/13/sam-altman-openai-ai-arson.html',
+   en:{t:'Altman attacker charged with attempted murder (domestic terrorism) — linked to PauseAI Discord',cat:'Security',d:'8 days ago',s:'Daniel Moreno-Gama, 20, faces attempted murder + attempted arson (domestic terrorism). Threw Molotov cocktail at Altman\'s SF home 4am, then threatened to burn OpenAI HQ. Faces both state and federal charges. Indiana official also shot at with "No data centers" note.'},
+   ar:{t:'مهاجم ألتمان يواجه تهمة الشروع في القتل (إرهاب محلي) — مرتبط بمجموعة PauseAI',cat:'أمن',d:'8 أيام',s:'دانييل مورينو-غاما، 20 عاماً، يواجه تهمتَي الشروع في القتل والحرق العمد (إرهاب محلي). رمى قنبلة حارقة على منزل ألتمان، ثم هدد بإحراق مقر OpenAI.'}},
+  {domains:['ai-models'],url:'https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/',
+   en:{t:'Meta Muse Spark — first proprietary Meta AI model, rebuilt entire stack in 9 months with Alexandr Wang',cat:'Release',d:'10 days ago',s:'First model from Meta Superintelligence Labs after $14.3B Scale AI deal. First closed-source Meta model. Scored 52 on Artificial Analysis Intelligence Index — competitive but not top-tier. Powers Facebook, Instagram, WhatsApp, Ray-Ban glasses. 2026 capex: $115B–$135B.'},
+   ar:{t:'Meta Muse Spark — أول نموذج Meta تجاري، يُعيد بناء كامل مجموعة الذكاء الاصطناعي في 9 أشهر',cat:'إطلاق',d:'10 أيام',s:'أول نموذج من Meta Superintelligence Labs. أول نموذج Meta مغلق المصدر. يُشغّل Facebook وInstagram وWhatsApp ونظارات Ray-Ban. الإنفاق الرأسمالي 2026: 115-135 مليار دولار.'}},
+  {domains:['funding'],url:'https://investors.coreweave.com/news/news-details/2026/CoreWeave-Announces-Multi-Year-Agreement-With-Anthropic/default.aspx',
+   en:{t:'CoreWeave $6.8B multi-year deal with Anthropic — stock +12%, serves 9 of 10 top AI providers',cat:'Funding',d:'10 days ago',s:'Multi-year Nvidia GPU capacity deal for Claude production scale. CoreWeave stock +12%. Serves 9 of 10 top AI model providers. Backlog exceeds $66.8B. Anthropic also exploring own custom AI processors. Annualized revenue surpassed $30B.'},
+   ar:{t:'CoreWeave تبرم صفقة 6.8 مليار دولار متعددة السنوات مع Anthropic — السهم يرتفع 12%',cat:'تمويل',d:'10 أيام',s:'عقد متعدد السنوات لبنى GPU من Nvidia لتشغيل Claude. CoreWeave تخدم 9 من أصل 10 مزودي نماذج الذكاء الاصطناعي الكبار. المتأخرات تتجاوز 66.8 مليار دولار.'}},
+  {domains:['funding','research'],url:'https://fortune.com/2026/04/16/stanford-study-how-has-china-gained-on-us-ai-war/',
+   en:{t:'TSMC Q1 2026 revenue +35% YoY — Stanford flags as global AI infrastructure single point of failure',cat:'Funding',d:'5 days ago',s:'Q1 2026 revenue jumped 35% driven by AI chip demand. Stanford AI Index flagged TSMC as the single-point-of-failure for global AI infrastructure — almost every leading AI chip is manufactured by TSMC. OpenAI partnering with Broadcom to develop 10GW of custom chips.'},
+   ar:{t:'إيرادات TSMC الربع الأول 2026: +35% — ستانفورد تُشير إليها كنقطة فشل واحدة حرجة',cat:'تمويل',d:'5 أيام',s:'قفز الإيراد 35% بفعل الطلب على رقائق الذكاء الاصطناعي. مؤشر ستانفورد يُشير إلى TSMC كنقطة فشل واحدة للبنية التحتية العالمية للذكاء الاصطناعي.'}},
+  {domains:['ai-models','research'],url:'https://www.buildfastwithai.com/blogs/latest-ai-models-april-2026',
+   en:{t:'MiniMax M2.5 matches closed-source at 80.2% SWE-bench — open source has closed the frontier gap',cat:'Breakthrough',d:'3 weeks ago',s:'Open-weight MiniMax M2.5 hits 80.2% SWE-bench Verified, essentially matching the best closed models. GLM-5.1 reaches 94.6% of Claude Opus 4.6\'s coding performance under MIT license. Llama 4 Scout ships with unprecedented 10M token context window. The open-source/proprietary capability gap has nearly closed.'},
+   ar:{t:'MiniMax M2.5 يجاري النماذج المغلقة بـ 80.2% — المصدر المفتوح يُغلق الفجوة',cat:'اختراق',d:'3 أسابيع',s:'نموذج MiniMax M2.5 مفتوح الأوزان يحقق 80.2% على SWE-bench، ليجاري أفضل النماذج المغلقة. GLM-5.1 يصل إلى 94.6% من أداء Claude Opus 4.6 في البرمجة تحت رخصة MIT. الفجوة بين المصدر المفتوح والمغلق كادت تختفي.'}},
+  {domains:['security'],url:'https://www.infosectoday.io/285-million-drift-hack-traced-to-six-month-dprk-social-engineering-operation/',
+   en:{t:'DPRK $285M Drift Protocol hack — 6-month AI-assisted social engineering, drained in 12 minutes',cat:'Security',d:'2 weeks ago',s:'UNC4736 spent 6 months building credibility, depositing $1M+. Planted fake CarbonVote token to manipulate oracles, drained $285M in 12 minutes. 18th DPRK crypto theft of 2026. Lifetime DPRK crypto theft exceeds $6.5B.'},
+   ar:{t:'كوريا الشمالية تسرق 285 مليون دولار من Drift Protocol — 6 أشهر هندسة اجتماعية',cat:'أمن',d:'أسبوعان',s:'أمضت مجموعة UNC4736 6 أشهر في بناء المصداقية بإيداع أكثر من مليون دولار. زرعت رمزاً مزيفاً للتلاعب بالأوراكل، واستنزفت 285 مليون دولار في 12 دقيقة.'}},
+  {domains:['security','policy'],url:'https://gizmodo.com/amazon-facilities-in-bahrain-hit-again-as-iran-follows-through-on-threat-report-says-2000741089',
+   en:{t:'Iran strikes AWS & Oracle data centers — first military attack on hyperscalers, Trump suspends operations',cat:'Security',d:'2 weeks ago',s:'IRGC struck 3 AWS facilities in UAE/Bahrain and Oracle in Dubai — first confirmed military strikes on cloud infrastructure. Nvidia fell 9%. Trump suspended Iran operations for 2 weeks (Apr 8), markets rallied.'},
+   ar:{t:'إيران تضرب مراكز بيانات AWS وOracle — أول ضربة عسكرية على البنية السحابية',cat:'أمن',d:'أسبوعان',s:'ضربات الحرس الثوري الإيراني على 3 منشآت AWS في الإمارات والبحرين وOracle في دبي. أول ضربات عسكرية مؤكدة على البنية السحابية. Nvidia انخفضت 9%.'}},
+  {domains:['ai-models','funding'],url:'https://openai.com/index/next-phase-of-enterprise-ai/',
+   en:{t:'OpenAI enterprise: 40% of revenue, Codex 3M weekly users, 15B tokens/min — "past experimentation phase"',cat:'Breakthrough',d:'10 days ago',s:'Enterprise now 40%+ of OpenAI revenue, on track to match consumer by end of 2026. Codex: 3M weekly active users. 15B tokens/min via APIs. New enterprise: Goldman Sachs, Philips, State Farm.'},
+   ar:{t:'OpenAI للمؤسسات: 40% من الإيرادات، Codex بـ 3 ملايين مستخدم أسبوعي — "تجاوزنا التجريب"',cat:'اختراق',d:'10 أيام',s:'الشركات تُشكّل الآن أكثر من 40% من الإيرادات. Codex: 3 ملايين مستخدم نشط أسبوعياً. عملاء جدد: Goldman Sachs وPhilips وState Farm.'}},
+  {domains:['ai-models'],url:'https://the-decoder.com/deepseek-v4-will-reportedly-run-entirely-on-huawei-chips-in-a-major-win-for-chinas-ai-independence-push/',
+   en:{t:'DeepSeek V4 on Huawei chips only — Nvidia shut out, ~$5.2M training cost vs $100M+ for US equivalents',cat:'Breakthrough',d:'3 weeks ago',s:'~1T parameter MoE, multimodal, 1M context, Engram memory architecture. Alibaba, ByteDance, Tencent ordering hundreds of thousands of Huawei Ascend 950PR. Training cost ~$5.2M. China\'s most significant AI hardware sovereignty milestone.'},
+   ar:{t:'DeepSeek V4 على رقائق Huawei حصراً — Nvidia مُستبعَد، تكلفة ~5.2 مليون دولار',cat:'اختراق',d:'3 أسابيع',s:'نموذج MoE بتريليون معامل، متعدد الوسائط، بنية ذاكرة Engram. تكلفة التدريب ~5.2 مليون دولار مقابل +100 مليون للنماذج الأمريكية. أهم إنجاز للسيادة في رقائق الذكاء الاصطناعي الصيني.'}},
+  {domains:['funding','policy','smart-city'],url:'https://news.fundsforngos.org/2026/04/03/eic-funds-e118m-for-30-breakthrough-research-projects/',
+   en:{t:'Saudi Arabia $100B AI investment — EU EIC EUR 118M — UAE Stargate 5GW — NEOM deepest smart city AI globally',cat:'Funding',d:'3 weeks ago',s:'Saudi Arabia: $100B to become global AI data exporter by 2030. EU EIC: EUR 118M to 30 breakthrough projects. UAE Stargate 5GW campus underway with OpenAI. NEOM AI integration now deepest in any smart city project globally.'},
+   ar:{t:'100 مليار دولار سعودية + 118 مليون يورو EIC — واجهة Stargate 5GW — NEOM أعمق مدينة ذكية عالمياً',cat:'تمويل',d:'3 أسابيع',s:'المملكة العربية السعودية: 100 مليار دولار لتصبح مُصدِّراً عالمياً بحلول 2030. EIC الأوروبي: 118 مليون يورو. NEOM: أعمق تكامل للذكاء الاصطناعي في أي مشروع مدينة ذكية عالمياً.'}},
+  {domains:['ai-models','research'],url:'https://www.fool.com/investing/2026/04/03/googles-newest-ai-development-surprise-winner/',
+   en:{t:'Google TurboQuant at ICLR 2026: 6x less KV cache memory, 8x attention speedup — Apple is the big winner',cat:'Research',d:'3 weeks ago',s:'3-bit KV quantisation with zero accuracy loss at ICLR 2026. Apple identified as the surprise winner: unlocks on-device AI for ~1 billion iPhones that lack the memory for current models.'},
+   ar:{t:'Google TurboQuant في ICLR 2026: ذاكرة KV أقل بـ 6 مرات — Apple الفائز الحقيقي',cat:'بحث',d:'3 أسابيع',s:'تكميم 3-بت للمفاتيح والقيم مع صفر فقدان في الدقة. Apple الفائز المفاجئ: يفتح ذكاء اصطناعياً محلياً لنحو مليار iPhone.'}},
+  {domains:['ai-models'],url:'https://blog.mean.ceo/new-ai-model-releases-news-april-2026/',
+   en:{t:'MCP crosses 97M installs — becomes default agentic infrastructure, Linux Foundation Agentic AI Foundation',cat:'Breakthrough',d:'3 weeks ago',s:'MCP is the default protocol for connecting agents to external tools, APIs, and data. Combined with OpenAI AGENTS.md and Block Goose under Linux Foundation Agentic AI Foundation. Transition from experimental standard to foundational infrastructure complete.'},
+   ar:{t:'MCP يتجاوز 97 مليون تثبيت — يصبح البروتوكول الافتراضي للعملاء الذكيين',cat:'اختراق',d:'3 أسابيع',s:'MCP البروتوكول الافتراضي لربط العملاء بالأدوات والواجهات البرمجية والبيانات. الانتقال من معيار تجريبي إلى بنية تحتية أساسية اكتمل.'}},
+  {domains:['research'],url:'https://arcprize.org/',
+   en:{t:'ARC-AGI-3: every frontier model under 1% — $2M prize unclaimed, hardest benchmark ever created',cat:'Research',d:'4 weeks ago',s:'Released March 26 with $2M prize. GPT-5.4, Claude Opus 4.6, Gemini 3.1 Pro all below 1%. Stanford: "We generally lack measures of how well a system needs to function in a particular real-world setting."'},
+   ar:{t:'ARC-AGI-3: كل النماذج الحدودية تسجل أقل من 1% — 2 مليون دولار غير مطالَب بها',cat:'بحث',d:'4 أسابيع',s:'أُطلق في 26 مارس بجائزة قيمتها 2 مليون دولار. GPT-5.4 وClaude Opus 4.6 وGemini 3.1 Pro كلها دون 1%. أصعب اختبار قياس أُنشئ على الإطلاق.'}},
+  {domains:['security','ai-models'],url:'https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know',
+   en:{t:'Claude Code source leaked — KAIROS autonomous agent + critical permission vulnerability, trojanised forks on GitHub',cat:'Security',d:'3 weeks ago',s:'512K TypeScript lines leaked via npm error. Revealed KAIROS autonomous background agent, 3-layer self-healing memory, ULTRAPLAN cloud offload. Critical permission vulnerability found. Trojanised forks spreading malware on GitHub.'},
+   ar:{t:'تسريب شفرة مصدر Claude Code — الوكيل المستقل KAIROS + ثغرة صلاحيات حرجة',cat:'أمن',d:'3 أسابيع',s:'512,000 سطر TypeScript تسرّبت عبر خطأ في npm. كشفت عن وكيل KAIROS المستقل وذاكرة ذاتية الإصلاح. وجدت ثغرة حرجة. فروع مُخترَقة تنشر برمجيات خبيثة على GitHub.'}},
+  {domains:['funding'],url:'https://siliconangle.com/2026/04/03/anthropic-reportedly-acquires-medical-ai-startup-coefficient-bio-400m/',
+   en:{t:'Anthropic acquires Coefficient Bio for $400M — third acquisition in 6 months, AI drug discovery pipeline',cat:'Funding',d:'3 weeks ago',s:'8-month-old biotech startup. Third acquisition in 6 months. Pairs with Operon biology workspace. Multiple AI-designed drug candidates now in Phase 2/3 human clinical trials globally.'},
+   ar:{t:'Anthropic تستحوذ على Coefficient Bio بـ 400 مليون دولار — ثالث استحواذ في 6 أشهر',cat:'تمويل',d:'3 أسابيع',s:'شركة ناشئة في مجال التكنولوجيا الحيوية عمرها 8 أشهر. الاستحواذ الثالث في 6 أشهر. مرشحات أدوية مصمَّمة بالذكاء الاصطناعي في المرحلتين 2 و3 من التجارب السريرية.'}},
+  {domains:['policy'],url:'https://gdprlocal.com/ai-regulations-around-the-world/',
+   en:{t:'South Korea AI Basic Act active + EU AI Act enforcement paused to 2027-28 — 72 countries with active AI policy',cat:'Policy',d:'3 months ago',s:'South Korea AI Basic Act active since Jan 22. EU Digital Omnibus suspends August 2026 deadline. Japan light-touch. 72 countries have active AI policy initiatives. Stanford: only 31% of US citizens trust government to regulate AI (Singapore tops at 81%).'},
+   ar:{t:'قانون الذكاء الاصطناعي الكوري ساري + تعليق تطبيق القانون الأوروبي حتى 2027-28',cat:'سياسة',d:'3 أشهر',s:'قانون الذكاء الاصطناعي الكوري الجنوبي ساري منذ 22 يناير. EU تُعلّق الموعد النهائي لأغسطس 2026. 72 دولة لديها مبادرات سياسة فاعلة. 31% فقط من الأمريكيين يثقون بحكومتهم لتنظيم الذكاء الاصطناعي.'}},
+  {domains:['ai-models'],url:'https://renovateqr.com/blog/ai-models-april-2026',
+   en:{t:'GPT-5.4 Thinking: 75% OSWorld (human-level computer use) — GPT-5.5 Spud pretraining complete, Q2 release',cat:'Breakthrough',d:'6 weeks ago',s:'27.7-point jump over GPT-5.2. First model achieving human-level autonomous OS-level navigation. GPT-5.5 Spud completed pretraining around March 24, Q2 release expected. OpenAI IPO tracking Q4 2026 at $852B valuation.'},
+   ar:{t:'GPT-5.4 Thinking: 75% على OSWorld — استخدام الحاسوب على مستوى الإنسان — إتمام التدريب المسبق لـ GPT-5.5',cat:'اختراق',d:'6 أسابيع',s:'قفزة 27.7 نقطة. أول نموذج يحقق أداءً على مستوى الإنسان في التنقل المستقل. أتمّ GPT-5.5 Spud تدريبه المسبق، إطلاق الربع الثاني متوقع.'}},
+
+  // ══ MAY 2026 NEW SIGNALS ══════════════════════════════════════
+  {domains:['policy','security'],url:'https://www.cnbc.com/2026/04/28/openai-trial-elon-musk-sam-altman-live-updates.html',
+   en:{t:'Musk v. Altman trial LIVE in Oakland federal court — $130B+ lawsuit over OpenAI nonprofit-to-profit conversion',cat:'Policy',d:'Today NEW',s:'Trial opened Apr 27 before Judge Yvonne Gonzalez Rogers. Musk seeks $130B+ damages, unwinding of OpenAI\'s Oct 2025 conversion to public benefit corporation, and disgorging of gains from Microsoft partnership. Day 3: heated cross-examination — judge reprimanded both Musk and OpenAI\'s attorney. Musk testified: "Without me, OpenAI wouldn\'t exist!" OpenAI attorney: "We are here because Mr. Musk didn\'t get his way." Jury advisory; judge issues binding ruling. Verdict expected mid-May 2026.'},
+   ar:{t:'محاكمة Musk ضد Altman مباشرةً في محكمة أوكلاند الفيدرالية — دعوى بـ 130+ مليار دولار بشأن تحويل OpenAI من غير ربحي إلى ربحي',cat:'سياسة',d:'جديد اليوم',s:'بدأت المحاكمة في 27 أبريل أمام القاضية إيفون غونزاليز روجرز. يطالب ماسك بـ 130+ مليار دولار تعويضات وإلغاء تحويل OpenAI. اليوم 3: استجواب متوتر — وبّخت القاضية كلاً من ماسك ومحامي OpenAI. ماسك شهد: "بدوني لما كانت OpenAI موجودة!" محامي OpenAI: "نحن هنا لأن ماسك لم يحصل على ما أراد." الحكم متوقع منتصف مايو 2026.'}},
+
+  {domains:['smart-city','ai-models'],url:'https://coaio.com/news/2026/05/breaking-tech-news-on-may-1-2026-ai-innovations-privacy-battles-and-2okc/',
+   en:{t:'Gemini AI integrates into millions of vehicles — always-on in-car AI assistant reaches mass deployment',cat:'Breakthrough',d:'Today NEW',s:'Google confirmed Gemini AI is now integrating into millions of vehicles, offering advanced conversational capabilities that enhance the driving experience. This marks the transition from experimental in-car AI to mass deployment at scale. Inspection relevance: AI-in-vehicle infrastructure creates a natural passive inspection layer — vehicles already traversing city streets can simultaneously report infrastructure conditions, road defects, and compliance anomalies.'},
+   ar:{t:'Gemini AI يتكامل مع ملايين المركبات — مساعد السيارة الذكي الدائم التشغيل يصل إلى النشر الجماعي',cat:'اختراق',d:'جديد اليوم',s:'أكدت Google أن Gemini AI يتكامل الآن مع ملايين المركبات بقدرات حوارية متقدمة. أهمية التفتيش: تنشئ البنية التحتية للذكاء الاصطناعي في المركبات طبقة تفتيش سلبية طبيعية — المركبات التي تجتاز شوارع المدينة يمكنها في آنٍ واحد الإبلاغ عن أحوال البنية التحتية وعيوب الطرق والشذوذات.'}},
+
+  {domains:['policy'],url:'https://llm-stats.com/ai-news',
+   en:{t:'Chinese court rules companies CANNOT fire workers to replace them with AI — landmark labour protection',cat:'Policy',d:'Today NEW',s:'A Chinese court ruled that companies cannot terminate staff simply to replace them with AI, following a similar ruling by another Chinese court in December 2025. The ruling establishes that AI-driven workforce reduction requires independent justification beyond cost savings. Directly relevant for inspection authorities planning AI adoption: sets precedent that AI augments inspectors, it doesn\'t automatically justify eliminating inspector roles.'},
+   ar:{t:'محكمة صينية تحكم بأن الشركات لا يمكنها فصل العمال لاستبدالهم بالذكاء الاصطناعي — حماية عمالية تاريخية',cat:'سياسة',d:'جديد اليوم',s:'حكمت محكمة صينية بأن الشركات لا يمكنها إنهاء عقود الموظفين لمجرد استبدالهم بالذكاء الاصطناعي، عقب حكم مماثل لمحكمة صينية أخرى في ديسمبر 2025. الحكم يُرسي أن التخفيض القائم على الذكاء الاصطناعي يستلزم مبرراً مستقلاً. ذو صلة مباشرة بسلطات التفتيش: الذكاء الاصطناعي يعزز المفتشين، لا يُسوّغ تلقائياً إلغاء أدوارهم.'}},
+
+  {domains:['ai-models'],url:'https://llm-stats.com/ai-news',
+   en:{t:'Mistral AI: new 128B flagship model + async cloud coding sessions + Le Chat agentic Work mode',cat:'Release',d:'Today NEW',s:'Mistral AI\'s latest release brings async cloud-based coding sessions, a new 128B flagship model (Mistral Large 3), and an agentic Work mode to Le Chat. Meaningful step for developers building with AI agents. France\'s flagship AI lab continues to position itself as the leading European sovereign AI alternative.'},
+   ar:{t:'Mistral AI: نموذج رائد جديد بـ 128B + جلسات برمجة سحابية غير متزامنة + وضع العمل الوكيلي في Le Chat',cat:'إطلاق',d:'جديد اليوم',s:'أحدث إصدار من Mistral AI يجلب جلسات برمجة سحابية غير متزامنة، ونموذجاً رائداً جديداً بـ 128 مليار معامل (Mistral Large 3)، ووضع عمل وكيلي في Le Chat. مختبر AI الأوروبي الفرنسي الرائد يُعزز موقعه كبديل سيادي.'}},
+
+  {domains:['policy','ai-models'],url:'https://opentools.ai/news',
+   en:{t:'OpenAI flips switch: free ChatGPT users now tracked for ads by default — first ad model for an AI lab',cat:'Policy',d:'Today NEW',s:'OpenAI announced free ChatGPT users will now be tracked for advertising by default as EU expansion begins. First major AI lab to introduce an advertising model. Simultaneously, OpenAI wired Claude into 9 creative apps including Autodesk Fusion and Blender, expanding Anthropic\'s reach into design and engineering workflows. OpenAI also added advanced account security via Yubico hardware key partnership.'},
+   ar:{t:'OpenAI تفتح تتبع المستخدمين المجانيين للإعلانات افتراضياً — أول نموذج إعلاني لمختبر ذكاء اصطناعي',cat:'سياسة',d:'جديد اليوم',s:'أعلنت OpenAI أن المستخدمين المجانيين سيُتتبَّعون للإعلانات افتراضياً مع بدء التوسع الأوروبي. أول مختبر AI كبير يُدخل نموذج إعلانات. في آنٍ واحد، أطلقت OpenAI ربط Anthropic بـ 9 تطبيقات إبداعية من بينها Autodesk Fusion وBlender، مما يوسع انتشار Anthropic في سير عمل التصميم والهندسة.'}},
+
+  {domains:['research','ai-models'],url:'https://www.crescendo.ai/news/latest-ai-news-and-updates',
+   en:{t:'NVIDIA Ising: world\'s first open-source AI for quantum computing — 2.5x faster error correction',cat:'Breakthrough',d:'3 days ago',s:'NVIDIA unveiled Ising, the first family of open-source AI models purpose-built to accelerate quantum computing. Targets the two biggest barriers: quantum error correction and processor calibration. Delivers 2.5x faster and 3x more accurate error-correction decoding vs traditional approaches. Adopters: Harvard, Fermi National Accelerator Laboratory, Lawrence Berkeley National Lab, IQM Quantum Computers. Marks significant convergence of AI and quantum computing.'},
+   ar:{t:'NVIDIA Ising: أول ذكاء اصطناعي مفتوح المصدر للحوسبة الكمية في العالم — تصحيح أخطاء أسرع بـ 2.5 ضعف',cat:'اختراق',d:'3 أيام',s:'أطلقت NVIDIA Ising، أول عائلة نماذج ذكاء اصطناعي مفتوح المصدر مصممة خصيصاً لتسريع الحوسبة الكمية. تستهدف أكبر عائقَين: تصحيح أخطاء الكم ومعايرة المعالجات. تُقدّم تصحيح أخطاء أسرع بـ 2.5 ضعف وأدق بـ 3 أضعاف. المعتمدون: هارفارد ومختبر فيرمي الوطني ومختبر لورنس بيركلي.'}},
+
+  {domains:['funding','ai-models'],url:'https://www.crescendo.ai/news/latest-ai-news-and-updates',
+   en:{t:'Novo Nordisk + OpenAI full strategic partnership — AI across drug discovery, clinical trials, manufacturing, supply chain',cat:'Funding',d:'3 days ago',s:'Danish pharmaceutical giant Novo Nordisk announced a strategic partnership with OpenAI to integrate AI across its entire business — drug discovery, clinical trials, manufacturing, supply chains, and commercial operations — with full deployment planned by end of 2026. One of the largest AI-pharma integrations ever announced. Signals AI is moving from point tool to operating infrastructure across heavily regulated industries.'},
+   ar:{t:'شراكة استراتيجية كاملة بين Novo Nordisk وOpenAI — الذكاء الاصطناعي عبر اكتشاف الأدوية والتصنيع وسلاسل الإمداد',cat:'تمويل',d:'3 أيام',s:'أعلنت Novo Nordisk الدنماركية عملاقة الأدوية عن شراكة استراتيجية مع OpenAI لدمج الذكاء الاصطناعي في كامل أعمالها — اكتشاف الأدوية والتجارب السريرية والتصنيع وسلاسل الإمداد — مع نشر كامل مخطط له بنهاية 2026. إحدى أكبر تكاملات الذكاء الاصطناعي والصناعات الدوائية على الإطلاق.'}},
+
+  {domains:['policy','ai-models'],url:'https://www.marketingprofs.com/opinions/2026/54640/ai-update-may-1-2026-ai-news-and-views-from-the-past-week',
+   en:{t:'Salesforce goes headless: entire platform exposed via APIs for AI agents — signals agent-native software economy',cat:'Breakthrough',d:'3 days ago',s:'Salesforce announced a headless architecture exposing its entire platform via APIs so AI agents can directly access data, workflows, and tasks without traditional user interfaces. The model suggests outcome-based pricing, reduced reliance on implementation services, and new competitive advantages tied to distribution and domain expertise. Signals: enterprise software is becoming back-end infrastructure for AI agents. Directly relevant for inspection software vendors — inspection platforms must expose APIs for AI agent consumption.'},
+   ar:{t:'Salesforce تتبنى البنية الرأسية: المنصة بأكملها مكشوفة عبر APIs للوكلاء الذكيين — إشارة إلى اقتصاد البرمجيات الوكيلي',cat:'اختراق',d:'3 أيام',s:'أعلنت Salesforce عن بنية رأسية تكشف منصتها بأكملها عبر APIs ليتمكن وكلاء الذكاء الاصطناعي من الوصول المباشر للبيانات وسير العمل والمهام دون واجهات مستخدم تقليدية. البنية تُشير إلى تسعير قائم على النتائج وتراجع في الاعتماد على خدمات التطبيق. ذو صلة مباشرة لموردي برامج التفتيش — منصات التفتيش يجب أن تكشف APIs للاستهلاك بالوكلاء الذكيين.'}},
+
+  // ══ MAY 5 NEW SIGNALS ════════════════════════════════════════
+  {domains:['policy','security'],url:'https://www.cnn.com/2026/05/01/tech/pentagon-ai-anthropic',
+   en:{t:'Pentagon clears 8 AI firms for classified networks — Anthropic explicitly excluded, cuts out Claude from military',cat:'Policy',d:'Today NEW',s:'DoD signed classified AI deployment agreements with AWS, Google, Microsoft, OpenAI, SpaceX, NVIDIA, Oracle, and Reflection. Anthropic excluded — labeled a "supply-chain risk" after refusing to allow Claude for "all lawful purposes" including autonomous weapons and mass surveillance. NSA reportedly still using Anthropic\'s Mythos despite the ban. Defense Secretary Hegseth called Anthropic CEO Dario Amodei an "ideological lunatic." Anthropic is contesting the supply-chain risk designation in federal court. White House separately reopening dialogue with Anthropic after Mythos announcements.'},
+   ar:{t:'البنتاغون يُقرّ 8 شركات ذكاء اصطناعي للشبكات السرية — Anthropic مُستبعَدة صراحةً، Claude يُقطع عن الجيش',cat:'سياسة',d:'جديد اليوم',s:'وقّعت وزارة الدفاع اتفاقيات نشر ذكاء اصطناعي سري مع AWS وGoogle وMicrosoft وOpenAI وSpaceX وNVIDIA وOracle وReflection. Anthropic مُستبعَدة — صُنِّفت "خطراً في سلسلة التوريد" بعد رفضها السماح باستخدام Claude لـ"جميع الأغراض القانونية" بما في ذلك الأسلحة المستقلة والمراقبة الجماعية. وزير الدفاع وصف الرئيس التنفيذي لـ Anthropic بـ"الأيديولوجي المجنون". Anthropic تطعن في التصنيف أمام المحاكم الفيدرالية.'}},
+
+  {domains:['funding','ai-models'],url:'https://llm-stats.com/ai-news',
+   en:{t:'OpenAI raises $4B at $10B valuation for "The Deployment Company" — new JV to embed ChatGPT across enterprise',cat:'Funding',d:'Today NEW',s:'OpenAI raised over $4B at a $10B pre-money valuation for The Deployment Company, a new joint venture to help businesses adopt OpenAI tools at scale. Separate from OpenAI\'s main entity. Signals OpenAI\'s shift from model provider to enterprise deployment partner — embedding ChatGPT into workflows, software stacks, and business processes directly. Oracle confirmed GPT-5.5 is driving accelerating demand across its cloud capacity partnership.'},
+   ar:{t:'OpenAI تجمع 4 مليارات دولار بتقييم 10 مليارات لـ "شركة النشر" — مشروع مشترك جديد لتضمين ChatGPT في المؤسسات',cat:'تمويل',d:'جديد اليوم',s:'جمعت OpenAI أكثر من 4 مليارات دولار بتقييم مسبق للاكتتاب بـ 10 مليارات لـ "The Deployment Company"، مشروع مشترك جديد لمساعدة الشركات على تبني أدوات OpenAI على نطاق واسع. إشارة إلى تحول OpenAI من مزود نماذج إلى شريك نشر مؤسسي — تضمين ChatGPT في سير العمل والأكوار البرمجية والعمليات التجارية مباشرة.'}},
+
+  {domains:['smart-city','housing'],url:'https://www.theaiconsultingnetwork.com/blog/ai-automated-zoning-compliance-permitting-cre-2026',
+   en:{t:'Honolulu AI permitting: wait times from 6 months to DAYS — Los Angeles, Seattle, Austin all deploying in 2026',cat:'Breakthrough',d:'Today NEW',s:'Honolulu\'s AI prescreening tool cut building permit wait times from 6 months to days by eliminating the back-and-forth submission cycle. The AI scans plans against zoning codes, overlay districts, and building regulations in minutes. Los Angeles City Planning experimentally reads developers\' plans automatically checking against zoning. Seattle PACT Team full rollout in 2026. California Governor Newsom launched AI pilot cutting wildfire rebuild permits from months to days. Pattern: dozens of major US cities now deploying AI permitting tools.'},
+   ar:{t:'تصاريح البناء في هونولولو بالذكاء الاصطناعي: من 6 أشهر إلى أيام — لوس أنجلوس وسياتل وأوستن جميعها تنشر في 2026',cat:'اختراق',d:'جديد اليوم',s:'أداة الفحص المسبق بالذكاء الاصطناعي في هونولولو قلّصت أوقات انتظار تصاريح البناء من 6 أشهر إلى أيام. يفحص الذكاء الاصطناعي المخططات مقابل قواعد تقسيم المناطق وأنظمة البناء في دقائق. نمط: عشرات المدن الأمريكية الكبرى تنشر أدوات تصاريح ذكاء اصطناعي الآن. حاكم كاليفورنيا نيوسوم أطلق تجربة ذكاء اصطناعي لتسريع تصاريح إعادة بناء مناطق الحرائق من أشهر إلى أيام.'}},
+
+  {domains:['smart-city','construction'],url:'https://www.mastercard.com/global/en/news-and-trends/stories/2025/in-tech-ai-smart-cities.html',
+   en:{t:'NYC: AI analyzes crowdsourced dashcam images for crosswalk condition inspection — individual paint line tracking over time',cat:'Breakthrough',d:'2 days ago',s:'An AI company in New York City is using crowdsourced dashcam imagery to inspect crosswalks — analyzing conditions of individual paint lines and tracking degradation over time. Enables proactive maintenance scheduling before safety incidents occur. Extends the passive fleet inspection model beyond garbage trucks to any connected vehicle with a dashcam — turning every Uber, taxi, and delivery van into an inspection sensor.'},
+   ar:{t:'نيويورك: ذكاء اصطناعي يحلّل صور الكاميرات الأمامية المُجمَّعة لتفتيش ممرات المشاة — تتبع خطوط الطلاء الفردية مع الوقت',cat:'اختراق',d:'يومان',s:'شركة ذكاء اصطناعي في نيويورك تستخدم صور الكاميرات الأمامية المُجمَّعة لتفتيش ممرات المشاة — تحليل حالة خطوط الطلاء الفردية وتتبع التدهور مع الوقت. يُمكّن جدولة الصيانة الاستباقية قبل وقوع حوادث السلامة. يُوسّع نموذج التفتيش السلبي على الأسطول ليشمل أي مركبة متصلة بكاميرا أمامية — تحويل كل سيارة أجرة وشاحنة توصيل إلى مستشعر تفتيش.'}},
+
+  {domains:['smart-city'],url:'https://fptsoftware.com/newsroom/news-and-press-releases/news/fpt-partners-with-nvidia-to-revolutionize-smart-city-inspections-with-advanced-ai',
+   en:{t:'FPT + NVIDIA Metropolis: Intelligent Inspection Solution (I2) for smart city multi-domain AI surveillance and compliance',cat:'Breakthrough',d:'2 days ago',s:'FPT Software enhanced its Intelligent Inspection Solution (I2) — an AI-powered system for smart city applications — using NVIDIA Metropolis framework and NVIDIA AI Blueprint for video search and summarization. I2 covers multi-domain inspection: traffic violation detection, construction site monitoring, building facade inspection, waste management compliance, and environmental monitoring. The system produces natural-language summaries of inspection events for city officials, replacing manual video review.'},
+   ar:{t:'FPT + NVIDIA Metropolis: حل التفتيش الذكي (I2) لمراقبة وامتثال المدن الذكية متعدد المجالات',cat:'اختراق',d:'يومان',s:'عزّزت FPT Software حلها للتفتيش الذكي (I2) — نظام مدعوم بالذكاء الاصطناعي لتطبيقات المدن الذكية — باستخدام إطار NVIDIA Metropolis. يغطي I2 التفتيش متعدد المجالات: كشف مخالفات المرور، ومراقبة مواقع البناء، وتفتيش واجهات المباني، وامتثال إدارة النفايات، والمراقبة البيئية. النظام ينتج ملخصات بلغة طبيعية عن أحداث التفتيش للمسؤولين.'}},
+
+  {domains:['policy','security'],url:'https://breakingdefense.com/2026/05/pentagon-clears-7-tech-firms-to-deploy-their-ai-on-its-classified-networks/',
+   en:{t:'Musk settles with Brockman days before trial — texts revealed: "You will be the most hated men in America"',cat:'Security',d:'2 days ago',s:'Court filing revealed Elon Musk texted Greg Brockman trying to settle just days before trial. When denied, Musk said Brockman and Altman "will be the most hated men in America." Trial is proceeding — Week 1 judge shut down Musk 7 times, calling out improper behavior. OpenAI attorney: "We are here because Mr. Musk didn\'t get his way." Microsoft named as co-defendant. Judge\'s binding ruling expected mid-May 2026.'},
+   ar:{t:'ماسك يحاول التسوية مع Brockman قبل أيام من المحاكمة — رسائل مكشوفة: "ستكونان أكثر الرجال كُرهاً في أمريكا"',cat:'أمن',d:'يومان',s:'كشفت وثيقة قضائية أن ماسك أرسل رسائل نصية لـ Brockman محاولاً التسوية قبل أيام من المحاكمة. بعد الرفض قال إن Brockman وAltman "سيكونان أكثر الرجال كُرهاً في أمريكا". المحاكمة جارية — الأسبوع 1: القاضية أوقفت ماسك 7 مرات. الحكم الملزم للقاضية متوقع منتصف مايو 2026.'}},
+
+  {domains:['research','smart-city'],url:'https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/how-ai-native-public-infrastructure-changes-how-cities-operate',
+   en:{t:'McKinsey March 2026: AI-native cities run as computing platforms — control loops from monthly reviews to continuous execution',cat:'Research',d:'2 months ago',s:'McKinsey March 6, 2026: A definitive framework for AI-native public infrastructure. Cities are transitioning from periodic inspections and manual reporting to continuous automated sensing and response. Air quality, water turbidity, road strain, energy frequency, waste levels, and equipment temperature monitored continuously. Computer vision detects road encroachment and illegal dumping before accidents. Edge processing ensures anomaly detection even without cloud connectivity. Copenhagen and Amsterdam cited as benchmark deployments.'},
+   ar:{t:'ماكنزي مارس 2026: المدن الذكية بالذكاء الاصطناعي تعمل كمنصات حوسبة — حلقات تحكم من مراجعات شهرية إلى تنفيذ مستمر',cat:'بحث',d:'شهران',s:'ماكنزي 6 مارس 2026: إطار معياري للبنية التحتية العامة الأصيلة بالذكاء الاصطناعي. جودة الهواء والماء وإجهاد الطرق والطاقة ومستويات النفايات ودرجات حرارة المعدات تُراقَب باستمرار. الرؤية الحاسوبية ترصد التعدي وإلقاء المخلفات قبل الحوادث. المعالجة على الحافة تضمن كشف الشذوذات حتى بدون اتصال سحابي. كوبنهاغن وأمستردام كنماذج مرجعية.'}},
+
+  // ══ MAY 12 NEW SIGNALS ═══════════════════════════════════════
+  {domains:['ai-models'],url:'https://beginnersinai.org/whats-new-claude-2026/',
+   en:{t:'Claude Managed Agents + "Dreaming" — agents now review past sessions to self-improve memory and find patterns',cat:'Breakthrough',d:'Today NEW',s:'Anthropic\'s May 2026 wave — biggest Claude update of the year. Claude Managed Agents launch with three new features, headlined by Dreaming (research preview): agents review their own past sessions to find patterns and self-improve memory over time. First step toward genuinely persistent, self-improving AI agents. Also: Claude Opus 4.7 upgraded to 87.6% SWE-Bench Verified (up 13 points from 4.6). Claude Security in public beta — code vulnerability scanning with Opus 4.7. Claude in creative tools: native connectors into Photoshop, Blender, Ableton, Splice, Adobe Creative Cloud, Autodesk Fusion.'},
+   ar:{t:'وكلاء Claude المُدارة + "Dreaming" — الوكلاء يراجعون الجلسات السابقة لتحسين ذاكرتهم ذاتياً واكتشاف الأنماط',cat:'اختراق',d:'جديد اليوم',s:'موجة مايو 2026 من Anthropic — أكبر تحديث لـ Claude في 2026. إطلاق وكلاء Claude المُدارة مع ثلاث ميزات جديدة، أبرزها Dreaming (معاينة بحثية): الوكلاء يراجعون جلساتهم السابقة لاكتشاف الأنماط وتحسين ذاكرتهم ذاتياً مع مرور الوقت. الخطوة الأولى نحو وكلاء ذكاء اصطناعي مستمرة وتحسين ذاتي حقيقي. أيضاً: Claude Opus 4.7 يصل إلى 87.6% على SWE-Bench. Claude Security في بيتا العامة — مسح ثغرات الكود بـ Opus 4.7.'}},
+
+  {domains:['ai-models'],url:'https://www.anthropic.com/news/claude-sonnet-4-5',
+   en:{t:'Claude Haiku 4.5 released — fastest, most cost-efficient; matches Sonnet 4 performance on coding and computer use',cat:'Release',d:'Today NEW',s:'Anthropic released Claude Haiku 4.5 as their fastest and most cost-efficient model. Matches Sonnet 4\'s performance on coding, computer use, and agent tasks. Now powers Claude in Chrome by default for faster, more responsive experience. Claude Cowork now generally available on macOS and Windows with organization controls: role-based access, group spend limits, expanded telemetry, and Zoom connector support.'},
+   ar:{t:'إطلاق Claude Haiku 4.5 — الأسرع والأكثر كفاءة من حيث التكلفة؛ يوازي أداء Sonnet 4 في البرمجة واستخدام الحاسوب',cat:'إطلاق',d:'جديد اليوم',s:'أطلقت Anthropic Claude Haiku 4.5 كنموذجها الأسرع والأكثر كفاءة من حيث التكلفة. يوازي أداء Sonnet 4 في البرمجة واستخدام الحاسوب والمهام الوكيلية. يُشغّل الآن Claude in Chrome بشكل افتراضي. Claude Cowork متاح عاماً على macOS وWindows مع ضوابط المؤسسة: وصول قائم على الأدوار وحدود الإنفاق الجماعي.'}},
+
+  {domains:['ai-models','smart-city'],url:'https://www.androidauthority.com/what-to-expect-from-google-io-2026-3664979/',
+   en:{t:'Google I/O 2026 — May 19: Gemini 4 (10M+ context), Android 17 "Adaptive Everywhere", Aluminium OS, XR glasses',cat:'Breakthrough',d:'Today NEW — 7 days away',s:'Google I/O 2026 keynote May 19 at 10am PT. Confirmed: Gemini 4 with 10M+ token context window and native multimodal (no transcription preprocessing) — direct response to Claude Code and OpenAI Codex. Android 17 "Adaptive Everywhere": merges Android, ChromeOS, and XR into a single platform — biggest Android developer change since Material Design. Aluminium OS (merged Android+ChromeOS) launch. Android XR smart glasses updates. Today May 12: "The Android Show | I/O Edition" streams at 10am PT — first consumer-facing Android 17 signals.'},
+   ar:{t:'Google I/O 2026 — 19 مايو: Gemini 4 (10M+ رمز سياق)، Android 17 "Adaptive Everywhere"، Aluminium OS، نظارات XR',cat:'اختراق',d:'جديد اليوم — بعد 7 أيام',s:'مؤتمر Google I/O 2026 في 19 مايو. مؤكّد: Gemini 4 بنافذة سياق +10 ملايين رمز ومتعدد الوسائط الأصيل. Android 17 "Adaptive Everywhere": يدمج Android وChromeoOS وXR في منصة واحدة — أكبر تغيير لمطوري Android منذ Material Design. إطلاق Aluminium OS. اليوم 12 مايو: "The Android Show | I/O Edition" يبث مباشرة.'}},
+
+  {domains:['ai-models'],url:'https://www.nxcode.io/resources/news/claude-sonnet-4-8-release-date-features-what-to-expect-2026',
+   en:{t:'Claude Sonnet 4.8 imminent (no Sonnet 4.7 — version skips) — Claude 5 priced for June-July 2026 by Polymarket',cat:'Research',d:'Today NEW',s:'Next Sonnet is 4.8, not 4.7 — confirmed by leaked Claude Code references. Expected May 2026 (2-4 weeks after Opus 4.7\'s April 16 launch). Improvements: vision upgrades (Opus 4.7 hit 98.5% visual-acuity), better coding benchmarks, higher-res image support, improved instruction following. Also: KAIROS persistent agents and Undercover Mode leaked. Claude 5 prediction markets price June-July 2026 as most likely window at 32%. Anthropic shipping every 4-8 weeks — fastest cascade in AI industry.'},
+   ar:{t:'Claude Sonnet 4.8 وشيك الإطلاق (لا Sonnet 4.7 — تخطٍّ في الإصدار) — Polymarket يُسعّر Claude 5 في يونيو-يوليو 2026',cat:'بحث',d:'جديد اليوم',s:'Sonnet التالي هو 4.8، وليس 4.7 — مؤكَّد من مراجع Claude Code المُسرَّبة. متوقع في مايو 2026 (2-4 أسابيع بعد Opus 4.7). تحسينات: ترقيات الرؤية، معايير برمجة أفضل، دعم صور عالية الدقة. أسواق تنبؤ Claude 5 تُسعّر يونيو-يوليو 2026 كأرجح نافذة بنسبة 32%. Anthropic تشحن كل 4-8 أسابيع.'}},
+
+  {domains:['policy','security'],url:'https://localnewsmatters.org/2026/05/09/musk-v-altman-week-2-analysis-openai-targets-musks-motives-as-trial-hits-midpoint/',
+   en:{t:'Musk v. Altman Week 2: Satya Nadella + Ilya Sutskever testify — jury deliberates May 18, verdict mid-May',cat:'Policy',d:'Today NEW',s:'Trial hits midpoint. OpenAI strategy: keep focus on Musk\'s credibility and motives rather than the contract claims. Satya Nadella (Microsoft) and Ilya Sutskever (OpenAI co-founder) testifying next week. Witness testimony finishes May 13, closing arguments May 14. Jury deliberates from May 18. Judge has said she will likely follow the jury\'s advisory verdict. Most legal analysts: Musk\'s case is weak and he is likely to lose. Microsoft named as co-defendant — the Musk-Microsoft angle is central.'},
+   ar:{t:'Musk ضد Altman الأسبوع 2: Satya Nadella + Ilya Sutskever يشهدان — المداولة 18 مايو، الحكم منتصف مايو',cat:'سياسة',d:'جديد اليوم',s:'المحاكمة تصل منتصفها. استراتيجية OpenAI: التركيز على مصداقية ماسك ودوافعه. Satya Nadella (Microsoft) وIlya Sutskever يشهدان الأسبوع القادم. شهادات الشهود تنتهي 13 مايو، المرافعات الختامية 14 مايو. مداولة هيئة المحلفين من 18 مايو. معظم المحللين القانونيين: قضية ماسك ضعيفة ومن المرجح أن يخسر.'}},
+
+  {domains:['ai-models'],url:'https://releasebot.io/updates/anthropic/claude',
+   en:{t:'Claude Design launched April 17 — natural language → designs, prototypes, slides, exports to Canva / PDF / PPTX',cat:'Release',d:'3 weeks ago',s:'Anthropic Labs released Claude Design on April 17 — a collaborative visual creation tool that lets users generate designs, prototypes, slides, and marketing materials through natural-language prompts. Powered by Claude Opus 4.7. Can pull brand systems from codebase or design files. Iterate via inline comments, direct edits, and sliders. Export to Canva, PDF, PPTX, HTML, or folders. Handoff path to Claude Code for development. Included with Pro, Max, Team, and Enterprise plans.'},
+   ar:{t:'إطلاق Claude Design في 17 أبريل — لغة طبيعية → تصاميم، نماذج أولية، شرائح، تصدير إلى Canva / PDF / PPTX',cat:'إطلاق',d:'3 أسابيع',s:'أطلقت Anthropic Labs Claude Design في 17 أبريل — أداة إبداع بصري تعاونية تتيح للمستخدمين توليد التصاميم والنماذج الأولية والشرائح ومواد التسويق عبر موجهات اللغة الطبيعية. مدعومة بـ Claude Opus 4.7. يمكنها سحب أنظمة العلامات التجارية من قاعدة الكود أو ملفات التصميم. تصدير إلى Canva وPDF وPPTX وHTML.'}},
+
+  {domains:['research','ai-models'],url:'https://fortune.com/2026/05/05/musk-court-fight-openai/',
+   en:{t:'AI scientists not as capable as hyped — LLMs produce superficially valid but evidence-free scientific results',cat:'Research',d:'1 week ago',s:'Researchers from Friedrich Schiller University Jena and IIT Delhi tested GPT-4o, GPT-OSS, and Claude Sonnet 4.5 as AI scientists. Finding: models produce scientific results that seem superficially valid but actually lack key evidence and reasoning steps. "The results are actually pretty abysmal." Important counter-signal to AI-scientist hype. Models not specifically trained to act as AI scientists perform poorly in that role without task-specific fine-tuning.'},
+   ar:{t:'علماء الذكاء الاصطناعي ليسوا بقدر المبالغة — النماذج الكبيرة تُنتج نتائج علمية صحيحة الشكل لكن بلا أدلة',cat:'بحث',d:'أسبوع',s:'باحثون من جامعة فريدريش شيلر ومعهد IIT دلهي اختبروا GPT-4o وGPT-OSS وClaude Sonnet 4.5 كعلماء ذكاء اصطناعي. النتيجة: النماذج تُنتج نتائج علمية تبدو صحيحة الشكل لكنها تفتقر إلى الأدلة وخطوات الاستدلال الرئيسية. "النتائج في الواقع سيئة للغاية." إشارة معاكسة مهمة لضجيج العلماء بالذكاء الاصطناعي.'}},
+
+  {domains:['ai-models','funding'],url:'https://www.geeky-gadgets.com/claude-sonic-4-8-leaks/',
+   en:{t:'Claude Jupiter in testing — cybersecurity-focused model; OpenAI GPT-5.5 Cyber outperforms Mythos on some security tasks',cat:'Research',d:'4 days ago',s:'Anthropic developing Claude Jupiter — undergoing rigorous red-team testing, likely focused on cybersecurity applications or as an evolution of existing LLMs. Industry speculation: successor or complement to Mythos. Meanwhile, OpenAI\'s GPT-5.5 Cyber model emerges as standout for cybersecurity — outperforming competitors on some critical metrics, completing complex cybersecurity tasks more efficiently and at lower cost than human experts. Positions GPT-5.5 as enterprise security AI tool.'},
+   ar:{t:'Claude Jupiter قيد الاختبار — نموذج موجّه للأمن السيبراني؛ GPT-5.5 Cyber من OpenAI يتفوق على Mythos في بعض مهام الأمن',cat:'بحث',d:'4 أيام',s:'Anthropic تطور Claude Jupiter — يخضع لاختبار فرق حمراء مكثف، ومن المرجح أن يكون موجهاً لتطبيقات الأمن السيبراني أو تطوراً لنماذج LLM الموجودة. في الوقت ذاته، يبرز نموذج GPT-5.5 Cyber من OpenAI في الأمن السيبراني — يُنجز مهام أمن معقدة بكفاءة أعلى وتكلفة أقل من الخبراء البشريين.'}},
+
+  // ══ MAY 31 NEW SIGNALS ═══════════════════════════════════════
+  {domains:['policy','security'],url:'https://www.cnbc.com/2026/05/18/musk-altman-openai-trial-verdict.html',
+   en:{t:'Musk LOSES OpenAI trial — unanimous jury verdict in under 2 hours, statute of limitations, vows to appeal',cat:'Policy',d:'Today NEW',s:'May 18: A unanimous federal jury in Oakland ruled against Elon Musk in under 2 hours, finding all claims against OpenAI, Sam Altman, Greg Brockman and Microsoft were filed outside the statute of limitations. Judge Gonzalez Rogers immediately adopted the advisory verdict. OpenAI attorney: "a hypocritical attempt to sabotage a competitor." Musk: "a calendar technicality" — vows to appeal. Case did not reach the merits of whether Altman and Brockman violated charitable trust. OpenAI\'s $852B valuation and IPO path remain clear. Musk filed S-1 for SpaceX/xAI entity; starts trading June 12.'},
+   ar:{t:'ماسك يخسر محاكمة OpenAI — حكم إجماعي بأقل من ساعتين، تقادم دعوى، يتعهد بالاستئناف',cat:'سياسة',d:'جديد اليوم',s:'18 مايو: هيئة محلفين فيدرالية إجماعية في أوكلاند حكمت ضد ماسك في أقل من ساعتين، وجدت أن جميع ادعاءاته ضد OpenAI وAlnam وBrockman وMicrosoft تجاوزت قانون التقادم. القاضية Gonzalez Rogers اعتمدت الحكم الاستشاري فوراً. محامي OpenAI: "محاولة رياء لتخريب منافس." ماسك: "خطأ تقني في التقويم" — يتعهد بالاستئناف. المسار نحو IPO بتقييم 852 مليار دولار واضح.'}},
+
+  {domains:['ai-models'],url:'https://releasebot.io/updates/anthropic',
+   en:{t:'Claude Opus 4.8 ships — dynamic workflows orchestrate hundreds of parallel agents, Fast mode 2.5x speed at 2x cost',cat:'Release',d:'Today NEW',s:'Anthropic shipped Claude Opus 4.8 in Claude Code. Major agentic upgrade: Dynamic Workflows let you ask Claude to orchestrate tens to hundreds of agents working in the background on complex tasks (/workflows to view runs). Fast mode on Opus 4.8 now available at 2x standard rate for 2.5x the speed. Defaults to high effort. /effort xhigh for hardest tasks. Lean system prompt now default for all models except older ones. Broader agent, browser, plugin and MCP support. Multiple bug fixes across background sessions, VS Code, Windows.'},
+   ar:{t:'Claude Opus 4.8 يُطلق — سير عمل ديناميكية تُنسّق مئات الوكلاء المتوازيين، Fast mode بسرعة 2.5x بتكلفة 2x',cat:'إطلاق',d:'جديد اليوم',s:'أطلقت Anthropic Claude Opus 4.8 في Claude Code. ترقية وكيلة ضخمة: سير العمل الديناميكية تتيح لك طلب من Claude تنسيق عشرات إلى مئات الوكلاء يعملون في الخلفية على مهام معقدة (/workflows لعرض التشغيلات). Fast mode على Opus 4.8 بمعدل 2x مقابل سرعة 2.5x. يُعيَّن على الجهد العالي افتراضياً.'}},
+
+  {domains:['ai-models'],url:'https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/',
+   en:{t:'Google I/O 2026: Gemini 3.5 Flash — 4x faster, $1.50/$9 per M tokens, 76.2% Terminal-Bench 2.1, beats GPT-5.5 on speed',cat:'Release',d:'Today NEW',s:'Google I/O (May 19-20): Gemini 3.5 Flash is the new flagship — 4x faster than competing frontier models, $1.50/$9 per million tokens (less than half competitors), 76.2% Terminal-Bench 2.1, 83.6% MCP Atlas, 1656 GDPval-AA Elo. Now the default model in the Gemini app and AI Mode in Google Search. Available today (May 21) via Gemini API, Google AI Studio, and Antigravity. Google calls it "the first model combining frontier intelligence with action."'},
+   ar:{t:'Google I/O 2026: Gemini 3.5 Flash — أسرع 4x، 1.50/9 دولار لكل مليون رمز، 76.2% على Terminal-Bench 2.1',cat:'إطلاق',d:'جديد اليوم',s:'Google I/O (19-20 مايو): Gemini 3.5 Flash هو النموذج الرائد الجديد — أسرع 4x من النماذج المنافسة، 1.50/9 دولار لكل مليون رمز (أقل من نصف تكلفة المنافسين)، 76.2% على Terminal-Bench 2.1، 83.6% على MCP Atlas. النموذج الافتراضي الآن في تطبيق Gemini وAI Mode في Google Search. Google تُسمّيه "أول نموذج يجمع الذكاء الحدودي مع الفعل".'}},
+
+  {domains:['ai-models','smart-city'],url:'https://techjournal.org/google-io-2026-everything-announced',
+   en:{t:'Google Gemini Spark — 24/7 personal AI agent runs on cloud VMs while your devices are off, $100/month AI Ultra',cat:'Breakthrough',d:'Today NEW',s:'Gemini Spark is a persistent AI agent that runs 24/7 on Google Cloud virtual machines. It can access Gmail, Calendar, Docs, and complete multi-step tasks autonomously — even when your phone is off. Available to Google AI Ultra subscribers ($100/month, includes 30TB storage and all Gemini models). Android Halo brings Spark intelligence to your status bar. Works with Chrome later summer. Inspection domain relevance: this is the "always-on agent" model applied to city monitoring — AI that watches your data streams continuously without a human needing to be present.'},
+   ar:{t:'Google Gemini Spark — وكيل ذكاء اصطناعي شخصي 24/7 يعمل على السحابة حتى وأجهزتك مُغلَقة، 100 دولار/شهر AI Ultra',cat:'اختراق',d:'جديد اليوم',s:'Gemini Spark وكيل ذكاء اصطناعي مستمر يعمل 24/7 على الأجهزة الافتراضية من Google Cloud. يمكنه الوصول إلى Gmail والتقويم والمستندات وإنجاز المهام متعددة الخطوات باستقلالية — حتى وهاتفك مُغلَق. متاح لمشتركي Google AI Ultra (100 دولار/شهر، يشمل 30TB تخزين). الصلة بمجال التفتيش: هذا نموذج "الوكيل الدائم التشغيل" مُطبَّق على مراقبة المدن — ذكاء اصطناعي يراقب تدفقات البيانات باستمرار دون حاجة لحضور بشري.'}},
+
+  {domains:['ai-models'],url:'https://www.ai.cc/blogs/google-io-2026/',
+   en:{t:'Google Antigravity 2.0 — orchestrates 93 parallel sub-agents, 12x faster with Gemini 3.5; AI builds entire OS on stage',cat:'Breakthrough',d:'Today NEW',s:'Google Antigravity 2.0 is the agent-first development platform that now orchestrates up to 93 parallel sub-agents, running 12x faster with Gemini 3.5 Flash. At I/O, Google live-demoed an AI building an entire operating system on stage. Antigravity also powers Generative UI in Google Search — creating custom tools, trackers, widgets, and dashboards on-demand. Available globally for free. Signals: multi-agent orchestration is now a commodity, not a differentiator. The question shifts to domain expertise and data access.'},
+   ar:{t:'Google Antigravity 2.0 — ينسّق 93 وكيلاً فرعياً متوازياً، أسرع 12x مع Gemini 3.5؛ ذكاء اصطناعي يبني نظام تشغيل كامل على المسرح',cat:'اختراق',d:'جديد اليوم',s:'Google Antigravity 2.0 هي منصة التطوير الوكيلية أولاً التي تنسّق الآن ما يصل إلى 93 وكيلاً فرعياً متوازياً، تعمل أسرع 12x مع Gemini 3.5 Flash. في I/O، Google عرضت ذكاءً اصطناعياً يبني نظام تشغيل كاملاً على المسرح مباشرة. Antigravity تُشغّل أيضاً واجهة المستخدم التوليدية في Google Search.'}},
+
+  {domains:['policy','security'],url:'https://www.buildfastwithai.com/blogs/ai-news-today-may-30-2026',
+   en:{t:'Project Glasswing May 22 update: 10,000+ vulnerabilities in 30 days — IBM joins, Korea in pipeline, bottleneck shifts to remediation',cat:'Security',d:'Today NEW',s:'Glasswing update (May 22): Claude Mythos has found 10,000+ vulnerabilities in 30 days across partner deployments. Bottleneck has shifted from vulnerability discovery to remediation — organizations can\'t fix them fast enough. IBM Research joins as new partner. Korea in pipeline. Mozilla reports 10x improvement in security scanning speed. Cloudflare found 400 critical vulnerabilities using Mythos. Both companies effectively published marketing materials for Anthropic by publishing their discovery metrics.'},
+   ar:{t:'تحديث Glasswing 22 مايو: +10,000 ثغرة في 30 يوماً — IBM تنضم، كوريا في الأفق، الاختناق ينتقل إلى المعالجة',cat:'أمن',d:'جديد اليوم',s:'تحديث Glasswing (22 مايو): اكتشف Claude Mythos أكثر من 10,000 ثغرة في 30 يوماً عبر عمليات نشر الشركاء. انتقل الاختناق من اكتشاف الثغرات إلى معالجتها — المنظمات لا تستطيع إصلاحها بسرعة كافية. IBM Research تنضم كشريك جديد. كوريا في الأفق. Mozilla تُبلّغ عن تحسين 10x في سرعة مسح الأمان.'}},
+
+  {domains:['funding','ai-models'],url:'https://www.buildfastwithai.com/blogs/ai-news-today-may-30-2026',
+   en:{t:'OpenAI files confidential S-1 for IPO — Anthropic closes $900M round — SpaceX/xAI starts trading June 12 — $3.7T wave',cat:'Funding',d:'Today NEW',s:'The IPO wave is real. Three filings/closings in one week (May 20-22): OpenAI files confidential S-1 (IPO process officially begins at $852B valuation). Anthropic closes $900M round (approaching $10B+ raise YTD). SpaceX files S-1 for public listing; xAI entity included; starts trading June 12 at $1.75T target valuation. Analysts calling the combined three-company $3.7T wave one of the most significant capital market events in AI history.'},
+   ar:{t:'OpenAI تُقدّم S-1 سري للاكتتاب — Anthropic تُغلق جولة 900 مليون — SpaceX/xAI يبدأ التداول 12 يونيو — موجة 3.7 تريليون',cat:'تمويل',d:'جديد اليوم',s:'موجة الاكتتابات حقيقية. ثلاثة إيداعات/إغلاقات في أسبوع واحد (20-22 مايو): OpenAI تُقدّم S-1 سري (تبدأ عملية الاكتتاب رسمياً بتقييم 852 مليار دولار). Anthropic تُغلق جولة 900 مليون دولار. SpaceX تُقدّم S-1؛ كيان xAI مُدرَج؛ يبدأ التداول 12 يونيو بتقييم مستهدف 1.75 تريليون. المحللون يُسمّون الموجة الثلاثية بقيمة 3.7 تريليون من أبرز أحداث أسواق رأس المال في تاريخ الذكاء الاصطناعي.'}},
+
+  {domains:['ai-models'],url:'https://codersera.com/blog/claude-sonnet-4-8-release-date-whats-new-2026/',
+   en:{t:'Claude Sonnet 4.8 still unannounced as of May 30 — Polymarket closed at 3% for May, now pricing July 2026',cat:'Research',d:'Today NEW',s:'As of May 30: No Anthropic announcement, no API ID, no benchmarks for Claude Sonnet 4.8. The entire evidence base remains a single string "sonnet-4-8" in an accidentally leaked Claude Code source map from March 31. Polymarket May deadline closed at 3%. New prediction markets now price July 2026 as most likely window. Sonnet 4.6 remains the current Sonnet model — "70% more token-efficient than Sonnet 4.5 on filesystem benchmarks with 38% accuracy improvement." DeepSeek V4-Flash and Gemini 3.5 Flash are now applying competitive pressure at the mid-tier.'},
+   ar:{t:'Claude Sonnet 4.8 لا يزال غير مُعلَن حتى 30 مايو — Polymarket أغلق عند 3% لمايو، يُسعّر الآن يوليو 2026',cat:'بحث',d:'جديد اليوم',s:'حتى 30 مايو: لا إعلان من Anthropic ولا معرّف API ولا معايير لـ Claude Sonnet 4.8. قاعدة الأدلة بأكملها تبقى سلسلة واحدة "sonnet-4-8" في خريطة مصدر Claude Code تسرّبت عن طريق الخطأ في 31 مارس. موعد Polymarket لمايو أُغلق عند 3%. أسواق التنبؤ الجديدة تُسعّر يوليو 2026 كأرجح نافذة.'}},
+
+  {domains:['policy'],url:'https://blog.mean.ceo/ai-news-may-2026/',
+   en:{t:'US government mandates pre-release AI testing — Microsoft and xAI agree to provide early model access to regulators',cat:'Policy',d:'Today NEW',s:'One of the biggest May 2026 policy shifts: the US government is aggressively pushing to test AI models before public release. Microsoft and xAI have reportedly agreed to provide early access of their models to regulators. Signals the transition from "move fast and break things" to a regulated era comparable to finance or pharmaceuticals. Directly relevant for inspection authorities: the same principle — AI systems must be certified before deployment — is what you are proposing for inspection AI.'},
+   ar:{t:'الحكومة الأمريكية تُلزم باختبار الذكاء الاصطناعي قبل الإطلاق — Microsoft وxAI توافقان على منح المنظمين وصولاً مبكراً',cat:'سياسة',d:'جديد اليوم',s:'أحد أكبر التحولات في السياسات لمايو 2026: الحكومة الأمريكية تدفع بقوة نحو اختبار نماذج الذكاء الاصطناعي قبل الإطلاق العام. Microsoft وxAI وافقتا على منح المنظمين وصولاً مبكراً. يُشير إلى الانتقال من "تحرك بسرعة واكسر الأشياء" إلى حقبة منظَّمة مماثلة للمالية أو الأدوية. ذو صلة مباشرة بسلطات التفتيش: نفس المبدأ — يجب اعتماد أنظمة الذكاء الاصطناعي قبل النشر — هو ما تقترحه لذكاء اصطناعي التفتيش.'}},
+
+  {domains:['ai-models','research'],url:'https://techjournal.org/google-io-2026-everything-announced',
+   en:{t:'Google Search biggest redesign in 27 years — "Google Search is AI Search" — creates tools, trackers, dashboards on demand',cat:'Breakthrough',d:'Today NEW',s:'At Google I/O, Google declared "Google Search is AI Search." AI Search can now create custom tools, trackers, widgets, and dashboards on demand using Gemini 3.5 Flash and Antigravity. Generative UI in Search rolling out summer 2026 for free. Universal Cart launches — AI-powered shopping cart working across Gmail, YouTube, and web. The redesign is Google\'s most significant since 2000. Sundar Pichai: "AI should not be a destination you visit — it should be the infrastructure you live inside."'},
+   ar:{t:'Google Search: أكبر إعادة تصميم منذ 27 عاماً — "البحث من Google هو البحث بالذكاء الاصطناعي" — ينشئ أدوات ولوحات بيانات عند الطلب',cat:'اختراق',d:'جديد اليوم',s:'في Google I/O أعلنت Google أن "Google Search هو AI Search." يمكن لـ AI Search الآن إنشاء أدوات وتتبّعات وأدوات وإجات ولوحات بيانات مخصصة عند الطلب باستخدام Gemini 3.5 Flash وAntigravity. واجهة المستخدم التوليدية في Search ستُطرح صيف 2026 مجاناً. يُعدّ إعادة التصميم الأضخم في تاريخ Google منذ عام 2000.'}},
+];
+
+// ════════════════════════════════════════════════════════════════
+// STATE
+// ════════════════════════════════════════════════════════════════
+let LANG='en', ACTIVE_TAB='inspect', ACTIVE_DOMAIN='all', SORT_MODE='date';
+
+// ════════════════════════════════════════════════════════════════
+// HELPERS
+// ════════════════════════════════════════════════════════════════
+const FILL_COLORS=['var(--green)','#6ab04c','var(--amber)','#e07020','var(--red)'];
+const FILL_WIDTHS=[20,40,60,80,100];
+
+// Date parsing for sort — maps common date strings to sortable numbers
+function parseDateNum(d){
+  if(!d) return 0;
+  const s=d.toLowerCase();
+  if(s.includes('today')||s.includes('اليوم')) return 20260512;
+  if(s.includes('may 12')||s.includes('12 مايو')) return 20260512;
+  if(s.includes('may 5')||s.includes('5 مايو')) return 20260505;
+  if(s.includes('may 3')||s.includes('3 مايو')) return 20260503;
+  if(s.includes('may')||s.includes('مايو')) return 20260501;
+  if(s.includes('apr 30')||s.includes('30 أبريل')) return 20260430;
+  if(s.includes('apr 28')||s.includes('28 أبريل')) return 20260428;
+  if(s.includes('apr 26')||s.includes('26 أبريل')) return 20260426;
+  if(s.includes('apr 23')||s.includes('23 أبريل')) return 20260423;
+  if(s.includes('apr 18')||s.includes('18 أبريل')) return 20260418;
+  if(s.includes('apr 17')||s.includes('17 أبريل')) return 20260417;
+  if(s.includes('apr 16')||s.includes('16 أبريل')) return 20260416;
+  if(s.includes('apr')) return 20260401;
+  if(s.includes('أبريل')) return 20260401;
+  if(s.includes('2 week')||s.includes('أسبوعان')) return 20260428;
+  if(s.includes('3 week')||s.includes('3 أسابيع')) return 20260421;
+  if(s.includes('4 week')||s.includes('4 أسابيع')) return 20260414;
+  if(s.includes('6 week')||s.includes('6 أسابيع')) return 20260401;
+  if(s.includes('1 week')||s.includes('week ago')||s.includes('أسبوع')) return 20260505;
+  if(s.includes('2 day')||s.includes('يومان')) return 20260510;
+  if(s.includes('3 day')||s.includes('3 أيام')) return 20260509;
+  if(s.includes('4 day')||s.includes('4 أيام')) return 20260508;
+  if(s.includes('5 day')||s.includes('5 أيام')) return 20260507;
+  if(s.includes('6 day')||s.includes('6 أيام')) return 20260506;
+  if(s.includes('8 day')||s.includes('8 أيام')) return 20260504;
+  if(s.includes('9 day')||s.includes('9 أيام')) return 20260503;
+  if(s.includes('10 day')||s.includes('10 أيام')) return 20260502;
+  if(s.includes('month')||s.includes('شهر')) return 20260412;
+  if(s.includes('mar 2026')||s.includes('مارس 2026')) return 20260301;
+  if(s.includes('mar')||s.includes('مارس')) return 20260301;
+  if(s.includes('feb')||s.includes('فبراير')) return 20260201;
+  if(s.includes('jan')||s.includes('يناير')) return 20260101;
+  if(s.includes('dec 2025')||s.includes('ديسمبر 2025')) return 20251201;
+  if(s.includes('nov')||s.includes('نوفمبر')) return 20251101;
+  if(s.includes('2025-2026')) return 20260101;
+  if(s.includes('2026')) return 20260101;
+  if(s.includes('ongoing')||s.includes('مستمر')) return 20260101;
+  if(s.includes('ready now')||s.includes('جاهز الآن')) return 20260512;
+  return 0;
+}
+
+function sortCards(cards){
+  if(SORT_MODE==='date'){
+    return [...cards].sort((a,b)=>{
+      const da=parseDateNum((a[LANG]||a.en)?.date||'');
+      const db=parseDateNum((b[LANG]||b.en)?.date||'');
+      return db-da;
+    });
+  }
+  return cards; // 'priority' = original order
+}
+function fillBar(n){return`<div class="fbar"><div class="fbar-fill" style="width:${FILL_WIDTHS[n-1]}%;background:${FILL_COLORS[n-1]}"></div></div>`}
+
+function domainMatch(item){
+  if(ACTIVE_DOMAIN==='all') return true;
+  return (item.domains||[]).includes(ACTIVE_DOMAIN);
+}
+
+function domainName(id,lang){
+  const d=DOMAINS.find(x=>x.id===id);
+  if(!d) return id;
+  return d.emoji+' '+(lang==='ar'?d.ar:d.en);
+}
+
+function sourceLink(url,label){
+  if(!url) return '';
+  const host=url.replace(/https?:\/\/(www\.)?/,'').split('/')[0];
+  return`<a class="cft-link" href="${url}" target="_blank" rel="noopener">↗ ${host}</a>`;
+}
+
+function buildCard(c,lang){
+  const d=c[lang];
+  if(!d) return '';
+  const badges=d.badges.map(([cl,lb])=>`<span class="bdg bdg-${cl}">${lb}</span>`).join('');
+  const domTags=(c.domains||[]).map(id=>`<span class="dtag ${id===ACTIVE_DOMAIN?'active-domain':''}" onclick="setDomain('${id}')">${domainName(id,lang)}</span>`).join('');
+  const tags=(d.tags||[]).map(t=>`<span class="tag">${t}</span>`).join('');
+  const il=L[lang].innoLabel;
+  const lnk=sourceLink(c.url,L[lang].refLabel);
+  return`<div class="card ${c.p||''}">
+    <div class="card-top"><div class="badges">${badges}</div></div>
+    <div class="card-domains">${domTags}</div>
+    <div class="card-title">${d.title}</div>
+    <div class="card-org">${d.org}</div>
+    <div class="card-body">${d.body}</div>
+    <div class="inno"><div class="inno-lbl">${il}</div><div class="inno-txt">${d.inno}</div><div class="tags">${tags}</div></div>
+    <div class="cft"><span class="cft-date">${d.date}</span>${lnk}</div>
+  </div>`;
+}
+
+function buildVectorCard(v,lang){
+  const d=v[lang];
+  const l=L[lang];
+  if(!d) return '';
+  if(ACTIVE_DOMAIN!=='all' && !(v.domains||[]).includes(ACTIVE_DOMAIN)) return '';
+  const vt=l.verdicts[v.verdict];
+  const vCls={go:'v-go',pilot:'v-pilot',plan:'v-plan',long:'v-long'}[v.verdict];
+  const domTags=(v.domains||[]).map(id=>`<span class="dtag ${id===ACTIVE_DOMAIN?'active-domain':''}" onclick="setDomain('${id}')">${domainName(id,lang)}</span>`).join('');
+  const tags=d.tags.map(t=>`<span class="tag">${t}</span>`).join('');
+  const rows=l.dims.map((dim,i)=>{
+    const n=d.fRows[i]||1;
+    return`<div class="frow"><span class="frow-lbl">${dim}</span>${fillBar(n)}<span class="frow-val" style="color:${FILL_COLORS[n-1]}">${l.dimVals[i][n-1]}</span></div>`;
+  }).join('');
+  return`<div class="card p1">
+    <div class="card-top"><div></div></div>
+    <div class="card-domains">${domTags}</div>
+    <div class="card-title">${d.title}</div>
+    <div class="card-org">${d.org}</div>
+    <div class="card-body">${d.body}</div>
+    <div class="inno"><div class="inno-lbl">${l.yourAction}</div><div class="inno-txt">${d.inno}</div><div class="tags">${tags}</div></div>
+    <div class="fmat">
+      <div class="fmat-hd"><span class="fmat-lbl">${l.fmatLabel}</span><span class="verdict ${vCls}">${vt}</span></div>
+      <div class="frows">${rows}</div>
+      <div class="fmat-ft"><div class="fft"><strong>${l.keyRisk}</strong>${d.risk}</div><div class="fft"><strong>${l.keyEnabler}</strong>${d.enabler}</div></div>
+    </div>
+    <div class="cft"><span class="cft-date">${d.date}</span></div>
+  </div>`;
+}
+
+function buildAISignal(s,lang){
+  const d=s[lang];
+  if(!d) return '';
+  if(ACTIVE_DOMAIN!=='all' && !(s.domains||[]).includes(ACTIVE_DOMAIN)) return '';
+  const catMap={Release:'bdg-green',Breakthrough:'bdg-blue',Policy:'bdg-amber',Security:'bdg-red',Funding:'bdg-teal',Research:'bdg-gray',
+    'إطلاق':'bdg-green','اختراق':'bdg-blue','سياسة':'bdg-amber','أمن':'bdg-red','تمويل':'bdg-teal','بحث':'bdg-gray'};
+  const domTags=(s.domains||[]).map(id=>`<span class="dtag ${id===ACTIVE_DOMAIN?'active-domain':''}" onclick="setDomain('${id}')">${domainName(id,lang)}</span>`).join('');
+  const lnk=sourceLink(s.url,L[lang].refLabel);
+  return`<div class="card">
+    <div class="card-top"><div></div><div class="badges"><span class="bdg ${catMap[d.cat]||'bdg-gray'}">${d.cat}</span></div></div>
+    <div class="card-domains">${domTags}</div>
+    <div class="card-title">${d.t}</div>
+    <div class="card-body" style="margin-top:3px">${d.s}</div>
+    <div class="cft"><span class="cft-date">${d.d}</span>${lnk}</div>
+  </div>`;
+}
+
+function sectionBlock(key,lang,cards){
+  const l=L[lang];
+  const filtered=sortCards(cards.filter(c=>c.sec===key && domainMatch(c)));
+  if(!filtered.length) return '';
+  const [icon,title,sub]=l.secTitles[key];
+  const bgs={city:'var(--teal-lt)',construction:'var(--amber-lt)',food:'var(--green-lt)',housing:'var(--blue-lt)'};
+  return`<div class="sec-hd"><div class="sec-icon" style="background:${bgs[key]||'var(--paper3)'}">${icon}</div><div><div class="sec-title">${title}</div><div class="sec-sub">${sub}</div></div></div>
+    <div class="grid">${filtered.map(c=>buildCard(c,lang)).join('')}</div><div class="sec-div"></div>`;
+}
+
+function buildStats(ns,ls){
+  return`<div class="stats">${ns.map((n,i)=>`<div class="stat"><div class="stat-n">${n}</div><div class="stat-l">${ls[i]}</div></div>`).join('')}</div>`;
+}
+
+function buildLegend(lang){
+  const l=L[lang];
+  const items=l.legendItems.map((lb,i)=>`<span style="display:flex;align-items:center;gap:4px;font-size:10px;color:var(--ink2)"><span style="display:inline-block;width:22px;height:5px;border-radius:2px;background:${FILL_COLORS[i]}"></span>${lb}</span>`).join('');
+  const vts=Object.entries(l.verdicts).map(([k,v])=>`<span class="verdict ${{go:'v-go',pilot:'v-pilot',plan:'v-plan',long:'v-long'}[k]}" style="font-size:8px">${v}</span>`).join('');
+  return`<div class="lgd" style="gap:10px;font-size:10px"><span style="color:var(--ink3);font-weight:600">${l.legendLabel}</span>${items}<span style="margin-inline-start:auto;display:flex;gap:4px;flex-wrap:wrap">${vts}</span></div>`;
+}
+
+function buildDecisionTable(lang){
+  const l=L[lang];
+  const dots=n=>'●'.repeat(n)+'○'.repeat(5-n);
+  const vCls={go:'v-go',pilot:'v-pilot',plan:'v-plan',long:'v-long'};
+  const rows=DT_ROWS.map(r=>{
+    const nm=lang==='en'?r.en:r.ar;
+    const dc=r.dims.map((n,i)=>`<td><span style="color:${FILL_COLORS[n-1]};font-weight:700">${dots(n)}</span></td>`).join('');
+    return`<tr><td>${nm}</td>${dc}<td><span class="verdict ${vCls[r.verdict]}" style="font-size:8px">${l.verdicts[r.verdict]}</span></td></tr>`;
+  }).join('');
+  const ths=l.dtHeaders.map(h=>`<th>${h}</th>`).join('');
+  return`<div class="sec-hd"><div class="sec-icon" style="background:var(--paper3)">📊</div><div><div class="sec-title">${l.decisionTitle}</div><div class="sec-sub">${l.decisionSub}</div></div></div>
+    <div style="overflow-x:auto"><table class="dtable"><thead><tr>${ths}</tr></thead><tbody>${rows}</tbody></table></div>
+    <div style="margin-top:7px;padding:7px 11px;background:var(--paper2);border-radius:7px;border:.5px solid var(--line);font-size:9px;color:var(--ink3)">${l.dtNote}</div>`;
+}
+
+function buildSidebar(lang){
+  const l=L[lang];
+  const bc={teal:'teal-lt',amber:'amber-lt',blue:'blue-lt',green:'green-lt',purple:'purple-lt',gray:'paper3'};
+  const tc={teal:'teal',amber:'amber',blue:'blue',green:'green',purple:'purple',gray:'ink3'};
+  // Sort priorities by date newest first
+  const sortedPris=[...l.sbPriorities].sort((a,b)=>parseDateNum(b.d)-parseDateNum(a.d));
+  const pris=sortedPris.map(p=>`<div class="mini"><div class="mini-t">${p.t}</div><div class="mini-m"><span class="mini-bdg" style="background:var(--${bc[p.c]||'paper3'});color:var(--${tc[p.c]||'ink3'})">${p.d}</span></div></div>`).join('');
+  const brk=l.sbBreaking.map(p=>`<div class="mini"><div class="mini-t">${p.t}</div><div class="mini-m"><span class="mini-bdg" style="background:var(--${bc[p.c]||'paper3'});color:var(--${tc[p.c]||'ink3'})">${p.d}</span></div></div>`).join('');
+  const rc={teal:'var(--teal)',amber:'var(--amber)',blue:'var(--blue)',ink3:'var(--ink3)'};
+  const rm=l.sbRoadmap.map(r=>`<div class="rm-item" style="border-color:${rc[r.c]||'var(--paper3)'}"><h4 style="color:${rc[r.c]||'var(--ink3)'}">${r.h}</h4><p>${r.p}</p></div>`).join('');
+  return`<div class="sb-sec"><div class="sb-title">${l.sbPriTitle}</div>${pris}</div><div class="sb-sec"><div class="sb-title">${l.sbBreakTitle}</div>${brk}</div><div class="sb-sec"><div class="sb-title">${l.sbRoadTitle}</div>${rm}</div>`;
+}
+
+// ════════════════════════════════════════════════════════════════
+// COUNT signals per domain for filter bar
+// ════════════════════════════════════════════════════════════════
+function countForDomain(domId,tabId){
+  if(domId==='all') return null; // shows total
+  let total=0;
+  if(tabId==='inspect'){
+    total+=INSPECT.filter(c=>(c.domains||[]).includes(domId)).length;
+  } else if(tabId==='apply'){
+    total+=VECTORS.filter(v=>(v.domains||[]).includes(domId)).length;
+  } else if(tabId==='ai'){
+    total+=AI_SIGNALS.filter(s=>(s.domains||[]).includes(domId)).length;
+  }
+  return total;
+}
+
+// ════════════════════════════════════════════════════════════════
+// RENDER
+// ════════════════════════════════════════════════════════════════
+function renderNav(lang){
+  const l=L[lang];
+  return l.tabs.map(t=>`<button class="nav-tab ${t.id===ACTIVE_TAB?'active':''}" onclick="switchTab('${t.id}')">${t.label}<span class="cnt">${t.count}</span></button>`).join('');
+}
+
+function renderDomainBar(lang){
+  const l=L[lang];
+  const btns=DOMAINS.map(d=>{
+    const cnt=countForDomain(d.id,ACTIVE_TAB);
+    const badge=cnt!==null?`<span class="df-count">${cnt}</span>`:'';
+    const label=lang==='ar'?d.ar:d.en;
+    return`<button class="dfbtn ${ACTIVE_DOMAIN===d.id?'active':''}" onclick="setDomain('${d.id}')">${d.emoji} ${label}${badge}</button>`;
+  }).join('');
+  const sortLabel=lang==='ar'?'ترتيب:':'Sort:';
+  const byDateLabel=lang==='ar'?'📅 حسب التاريخ':'📅 Date';
+  const byPriLabel=lang==='ar'?'⭐ حسب الأهمية':'⭐ Priority';
+  const sortBtns=`<span style="margin-inline-start:auto;display:flex;gap:4px;align-items:center;flex-shrink:0">
+    <span class="dfbar-label">${sortLabel}</span>
+    <button class="dfbtn ${SORT_MODE==='date'?'active':''}" onclick="setSort('date')">${byDateLabel}</button>
+    <button class="dfbtn ${SORT_MODE==='priority'?'active':''}" onclick="setSort('priority')">${byPriLabel}</button>
+  </span>`;
+  return`<span class="dfbar-label">${l.dfLabel}</span>${btns}${sortBtns}`;
+}
+
+function renderTab(tabId,lang){
+  const l=L[lang];
+  const noRes=`<div class="empty-state"><span>🔍</span>${l.noResults}</div>`;
+
+  if(tabId==='inspect'){
+    const secs=['city','construction','food','housing'];
+    const html=buildStats(l.stats_inspect,l.stats_inspect_l)+secs.map(s=>sectionBlock(s,lang,INSPECT)).join('');
+    const hasContent=secs.some(s=>INSPECT.filter(c=>c.sec===s&&domainMatch(c)).length>0);
+    return html+(hasContent?'':noRes);
+  }
+  if(tabId==='apply'){
+    const [icon,title,sub]=l.secTitles.vectors;
+    const cards=VECTORS.map(v=>buildVectorCard(v,lang)).filter(Boolean).join('');
+    const hasContent=VECTORS.some(v=>ACTIVE_DOMAIN==='all'||(v.domains||[]).includes(ACTIVE_DOMAIN));
+    return buildStats(l.stats_apply,l.stats_apply_l)+buildLegend(lang)+
+      `<div class="sec-hd"><div class="sec-icon" style="background:var(--teal-lt)">${icon}</div><div><div class="sec-title">${title}</div><div class="sec-sub">${sub}</div></div></div>`+
+      `<div class="grid">${cards}</div><div class="sec-div"></div>`+buildDecisionTable(lang);
+  }
+  if(tabId==='ai'){
+    const [icon,title,sub]=l.secTitles.global;
+    const sorted=SORT_MODE==='date'
+      ? [...AI_SIGNALS.filter(s=>domainMatch(s))].sort((a,b)=>parseDateNum((b[LANG]||b.en)?.d||'')-parseDateNum((a[LANG]||a.en)?.d||''))
+      : AI_SIGNALS.filter(s=>domainMatch(s));
+    const cards=sorted.map(s=>buildAISignal(s,lang)).filter(Boolean).join('');
+    const hasContent=AI_SIGNALS.some(s=>domainMatch(s));
+    return`<div class="sec-hd"><div class="sec-icon" style="background:var(--paper3)">${icon}</div><div><div class="sec-title">${title}</div><div class="sec-sub">${sub}</div></div></div>`+
+      `<div class="grid">${cards}</div>`+(hasContent?'':noRes);
+  }
+  return '';
+}
+
+function render(lang){
+  const l=L[lang];
+  const root=document.getElementById('root');
+  root.setAttribute('lang',lang);
+  root.setAttribute('dir',lang==='ar'?'rtl':'ltr');
+  document.getElementById('wm').innerHTML=lang==='ar'?`${l.wm[0]}<span>${l.wm[1]}</span>`:`${l.wm[0]}<span>${l.wm[1]}</span>`;
+  document.getElementById('tl').textContent=l.tl;
+  document.getElementById('scan-date').textContent=l.scanDate;
+  document.getElementById('sig-count').textContent=l.sigCount;
+  document.getElementById('nav-tabs').innerHTML=renderNav(lang);
+  document.getElementById('domain-filter-bar').innerHTML=renderDomainBar(lang);
+  document.getElementById('main-content').innerHTML=renderTab(ACTIVE_TAB,lang);
+  document.getElementById('sidebar-content').innerHTML=buildSidebar(lang);
+}
+
+function setSort(mode){
+  SORT_MODE=mode;
+  render(LANG);
+}
+
+function setLang(l){
+  LANG=l;
+  document.getElementById('btn-en').classList.toggle('active',l==='en');
+  document.getElementById('btn-ar').classList.toggle('active',l==='ar');
+  render(l);
+}
+
+function switchTab(tabId){
+  ACTIVE_TAB=tabId;
+  render(LANG);
+}
+
+function setDomain(domId){
+  ACTIVE_DOMAIN=domId;
+  render(LANG);
+}
+
+// ════════════════════════════════════════════════════════════════
+// INVESTMENT INTELLIGENCE DATA
+// ════════════════════════════════════════════════════════════════
+const INV = {
+  en: {
+    title: '💹 Investment Intelligence',
+    fab: '💹 Market Intel',
+    disclaimer: '⚠ For situational awareness only — not financial advice. Consult a licensed advisor before making investment decisions. All signal mappings are editorial interpretations, not forecasts.',
+    stocksTitle: '📊 Stock Impact — Signals from This Scan',
+    oppsTitle: '🚀 Investment Opportunity Vectors',
+    risksTitle: '⚠️ Risk Signals to Watch',
+    stocks: [
+      { ticker:'GOOG', name:'Alphabet / Google', signal:'buy', why:'Gemini 3.5 Flash (4x faster, half cost) + Spark 24/7 agent + AI Search overhaul = major market share catalyst. AI Ultra $100/mo subscription revenue stream.' },
+      { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'Every AI model release, smart city deployment, and agentic expansion requires more compute. TSMC dependency noted as risk by Stanford AI Index, but near-term demand unabated.' },
+      { ticker:'TSM', name:'TSMC', signal:'buy', why:'+35% Q1 YoY revenue. Stanford AI Index flags as critical infrastructure. OpenAI + Broadcom 10GW custom chip deal signals sustained long-term demand.' },
+      { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'Project Glasswing partner. 10,000+ vulnerabilities found in 30 days shifts enterprise cybersecurity from optional to urgent. Glasswing validates AI-driven threat discovery at scale.' },
+      { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'Glasswing ripple effect: enterprise AI vulnerability discovery backlog creates structural demand for AI-native security remediation platforms.' },
+      { ticker:'IBM', name:'IBM', signal:'watch', why:'Just joined Project Glasswing (May 22). IBM Research identifies/remediates vulnerabilities. AI security credibility boost, but execution risk remains. Watch Q2 AI segment.' },
+      { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'$6.8B Anthropic deal + 9 of 10 top AI providers as clients. Backlog $66.8B. High conviction GPU infrastructure play. Newly public — vol risk.' },
+      { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'Glasswing partner, Anthropic investor, Claude on Bedrock. Iran strikes on AWS data centers in April were geopolitical tail risk. Net positive on AI cloud demand.' },
+      { ticker:'MSFT', name:'Microsoft', signal:'watch', why:'OpenAI S-1 filed — Microsoft\'s stake in OpenAI has IPO optionality. Pentagon cleared for classified AI (unlike Anthropic). Satya Nadella testified in Musk trial — headline risk resolved.' },
+      { ticker:'META', name:'Meta Platforms', signal:'caution', why:'2026 capex $115B-$135B + 8,000 job cuts. AI ROI not yet proven at scale. Muse Spark competitive but not top-tier. Market may reprice AI capex burn.' },
+      { ticker:'TSLA', name:'Tesla', signal:'caution', why:'SpaceX/xAI files S-1 separately — signals further separation from Tesla. Musk time allocation risk. SpaceX starts trading June 12 as competing investment vehicle.' },
+      { ticker:'OPENAI', name:'OpenAI (Pre-IPO)', signal:'ipo', why:'Confidential S-1 filed. $852B valuation. 900M weekly ChatGPT users, $30B annualized revenue. Enterprise 40%+ of revenue. IPO likely Q4 2026. Watch lock-up period.' },
+      { ticker:'SPACEX', name:'SpaceX / xAI', signal:'ipo', why:'S-1 filed. xAI entity included. Starts trading June 12. $1.75T target valuation. Starlink + AI distribution + xAI Grok = "galactic AI" thesis. Watch pricing mechanics.' },
+    ],
+    opps: [
+      { title:'AI Inference Infrastructure', horizon:'12-18 months', tickers:['NVDA','TSM','CRWV','AMZN','GOOG'], body:'Every new model release (Gemini 3.5 Flash, Claude Opus 4.8, GPT-5.5, DeepSeek V4) requires more inference compute. Agentic multi-worker architectures (Anthropic dynamic workflows, Google Antigravity 2.0 with 93 agents) multiply compute demand. The floor for GPU demand is rising, not falling.' },
+      { title:'AI Cybersecurity & Vulnerability Remediation', horizon:'6-12 months', tickers:['CRWD','PANW','ZS','IBM'], body:'Project Glasswing found 10,000+ vulnerabilities in 30 days and the bottleneck has shifted from discovery to remediation. EU AI Act compliance deadline Aug 2, 2026 forces organizations to audit AI systems. US government mandating pre-release AI testing. Creates a structural demand wave for AI-native security and compliance platforms.' },
+      { title:'Agentic AI Platforms & Orchestration', horizon:'Now-12 months', tickers:['GOOG','MSFT','AMZN','SFDC'], body:'Claude Opus 4.8 dynamic workflows, Google Antigravity 2.0 (93 parallel agents), Gemini Spark (24/7 cloud agent), OpenAI Workspace Agents. The enterprise shift from "AI copilot" to "AI workforce" is the defining infrastructure bet of 2026. Platforms that own agent orchestration own the enterprise margin.' },
+      { title:'Smart City & AI Inspection Technology', horizon:'2-4 years', tickers:['NVDA','MSFT','GOOG'], body:'Kaohsiung eliminated all manual inspections. Rotterdam digital twin replaced months of work. 17 US cities deploying AI inspection cameras. FDA mandating risk-based AI inspection (BRIDGE Project). No pure-play public company exists yet — this is a venture/government contract opportunity window. Watch NVIDIA Metropolis partner ecosystem (FPT, Linker Vision, K2K) for IPO signals.' },
+      { title:'AI IPO Pipeline — 2026 Wave', horizon:'Now-9 months', tickers:['OPENAI','SPACEX','ANTH'], body:'The largest AI IPO wave in history: SpaceX/xAI starts June 12. OpenAI S-1 confidential filing. Anthropic approaching IPO readiness ($900M May close). CoreWeave already public. Pre-IPO secondary markets for OpenAI and Anthropic are active. The $3.7T combined valuation wave reshapes AI index weights.' },
+      { title:'EU AI Act Compliance Vendors', horizon:'Now-6 months', tickers:['IBM','MSFT','ORCL'], body:'EU AI Act enforcement August 2, 2026 — 3 months away. Gartner: XAI (Explainable AI) will drive 50% of LLM observability investment by 2028. Companies providing transparent, auditable agentic workflows are the compliance infrastructure winners. Watch: IBM OpenPages, Microsoft Responsible AI tooling, emerging XAI pure-plays.' },
+    ],
+    risks: [
+      { icon:'⏰', title:'EU AI Act Aug 2, 2026 — 3 months away', body:'High-risk AI system operators face penalties up to €35M or 7% of global turnover. Compliance costs hit AI-heavy enterprise deployments. Tailwind for compliance vendors, headwind for non-prepared operators.' },
+      { icon:'💸', title:'Google price war — margin compression across AI APIs', body:'Gemini 3.5 Flash at $1.50/$9 per million tokens is less than half OpenAI and Anthropic pricing. Google willing to lose money on AI services for market share. This compresses revenue expectations for all AI API providers, including Anthropic (private) and OpenAI (pre-IPO).' },
+      { icon:'🏗️', title:'AI capex bubble risk — Meta $115-135B, Microsoft, Google', body:'Meta is cutting 8,000 jobs while maintaining $115-135B capex. Microsoft cutting thousands. The market is not yet penalizing AI capex burns. If enterprise AI ROI fails to materialize in H2 2026, multiple compression risk across the sector.' },
+      { icon:'🌍', title:'Geopolitical tail risk — Iran struck AWS, TSMC concentration', body:'Iran struck AWS and Oracle data centers in April. TSMC flagged by Stanford AI Index as a single point of failure for global AI infrastructure. A Taiwan conflict scenario would be an extreme tail risk for the entire AI investment thesis.' },
+      { icon:'⚖️', title:'Musk appeals OpenAI verdict — appellate uncertainty', body:'Musk vowed to appeal the May 18 statute of limitations ruling. Appellate courts have reversed similar SoL decisions. If reversed, a merits trial on whether Altman/Brockman violated charitable trust could resurface. Tail risk on OpenAI IPO timeline.' },
+    ]
+  },
+  ar: {
+    title: '💹 استخبارات الاستثمار',
+    fab: '💹 إشارات السوق',
+    disclaimer: '⚠ للتوعية الظرفية فقط — ليست نصيحة مالية. استشر مستشاراً مرخصاً قبل اتخاذ قرارات استثمارية. جميع ارتباطات الإشارات تفسيرات تحريرية، وليست توقعات.',
+    stocksTitle: '📊 تأثير الإشارات على الأسهم',
+    oppsTitle: '🚀 محاور فرص الاستثمار',
+    risksTitle: '⚠️ إشارات المخاطر للمراقبة',
+    stocks: [
+      { ticker:'GOOG', name:'Alphabet / Google', signal:'buy', why:'Gemini 3.5 Flash (4x أسرع، نصف التكلفة) + Spark وكيل 24/7 + إعادة تصميم Search = محفّز رئيسي لحصة السوق. تدفق إيرادات اشتراك AI Ultra بـ 100 دولار/شهر.' },
+      { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'كل إطلاق لنموذج جديد ونشر مدينة ذكية وتوسع وكيلي يستلزم مزيداً من الحوسبة. الطلب على وحدات معالجة الرسوميات لا يخف.' },
+      { ticker:'TSM', name:'TSMC', signal:'buy', why:'+35% إيرادات الربع الأول سنوياً. مؤشر ستانفورد يُشير إليها كبنية تحتية حيوية. صفقة OpenAI + Broadcom بـ 10 جيجاواط تُشير إلى طلب طويل الأجل.' },
+      { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'شريك في Glasswing. 10,000+ ثغرة في 30 يوماً تُحوّل الأمن السيبراني من اختياري إلى ملح. Glasswing يُثبت اكتشاف التهديدات بالذكاء الاصطناعي على نطاق واسع.' },
+      { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'أثر Glasswing: تراكم ثغرات الذكاء الاصطناعي للمؤسسات يخلق طلباً هيكلياً على منصات معالجة الأمن الأصيلة بالذكاء الاصطناعي.' },
+      { ticker:'IBM', name:'IBM', signal:'watch', why:'انضمت للتو إلى Glasswing (22 مايو). IBM Research تُحدد الثغرات وتعالجها. تعزيز مصداقية في أمن الذكاء الاصطناعي. راقب قطاع الذكاء الاصطناعي في Q2.' },
+      { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'صفقة 6.8 مليار مع Anthropic + 9 من 10 مزودي نماذج كبرى كعملاء. المتأخرات 66.8 مليار. شركة حديثة الإدراج — مخاطر تذبذب.' },
+      { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'شريك Glasswing ومستثمر في Anthropic وClaude على Bedrock. ضربات إيران على مراكز AWS في أبريل كانت مخاطر جيوسياسية ذيلية. إيجابي صافياً على الطلب السحابي.' },
+      { ticker:'MSFT', name:'Microsoft', signal:'watch', why:'S-1 لـ OpenAI يفتح قيمة الخيار على حصة Microsoft. تم إقرار البنتاغون للذكاء الاصطناعي السري. Satya Nadella شهد في محاكمة ماسك — خطر العناوين حُلّ.' },
+      { ticker:'META', name:'Meta Platforms', signal:'caution', why:'إنفاق رأسمالي 2026: 115-135 مليار + 8,000 إقالة. عائد الاستثمار في الذكاء الاصطناعي غير مُثبَت على نطاق واسع. Muse Spark تنافسي لكن ليس في القمة.' },
+      { ticker:'TSLA', name:'Tesla', signal:'caution', why:'SpaceX/xAI يُقدّم S-1 بشكل منفصل — يُشير إلى مزيد من الفصل عن Tesla. مخاطر توزيع وقت ماسك. SpaceX يبدأ التداول 12 يونيو كمركبة استثمار منافسة.' },
+      { ticker:'OPENAI', name:'OpenAI (ما قبل الاكتتاب)', signal:'ipo', why:'S-1 سري مُقدَّم. تقييم 852 مليار. 900 مليون مستخدم أسبوعي، 30 مليار إيرادات سنوية. الاكتتاب مرجح Q4 2026. راقب فترة الحظر.' },
+      { ticker:'SPACEX', name:'SpaceX / xAI', signal:'ipo', why:'S-1 مُقدَّم. يبدأ التداول 12 يونيو. تقييم مستهدف 1.75 تريليون. Starlink + توزيع الذكاء الاصطناعي + xAI Grok = أطروحة "الذكاء الاصطناعي المجري".' },
+    ],
+    opps: [
+      { title:'البنية التحتية للاستدلال بالذكاء الاصطناعي', horizon:'12-18 شهراً', tickers:['NVDA','TSM','CRWV','AMZN','GOOG'], body:'كل إصدار نموذج جديد (Gemini 3.5 Flash وClaude Opus 4.8 وGPT-5.5 وDeepSeek V4) يستلزم مزيداً من حوسبة الاستدلال. البنى الوكيلية متعددة العمال (سير عمل Anthropic الديناميكية وAntigravity 2.0 من Google مع 93 وكيلاً) تُضاعف الطلب على الحوسبة. أرضية الطلب على وحدات معالجة الرسوميات ترتفع لا تنخفض.' },
+      { title:'الأمن السيبراني بالذكاء الاصطناعي ومعالجة الثغرات', horizon:'6-12 شهراً', tickers:['CRWD','PANW','ZS','IBM'], body:'اكتشف Glasswing أكثر من 10,000 ثغرة في 30 يوماً وانتقل الاختناق إلى المعالجة. الموعد النهائي لقانون الذكاء الاصطناعي الأوروبي 2 أغسطس 2026 يُلزم المنظمات بتدقيق أنظمة الذكاء الاصطناعي. الحكومة الأمريكية تُلزم باختبار ما قبل الإطلاق. يخلق موجة طلب هيكلية على منصات الأمن والامتثال.' },
+      { title:'منصات الذكاء الاصطناعي الوكيلي والتنسيق', horizon:'الآن-12 شهراً', tickers:['GOOG','MSFT','AMZN','SFDC'], body:'سير عمل Claude Opus 4.8 الديناميكية، Antigravity 2.0 (93 وكيلاً متوازياً)، Gemini Spark (وكيل سحابي 24/7)، وكلاء OpenAI Workspace. الانتقال المؤسسي من "مساعد ذكاء اصطناعي" إلى "قوى عاملة من الذكاء الاصطناعي" هو الرهان البنيوي المحدد لعام 2026.' },
+      { title:'تقنية المدن الذكية والتفتيش بالذكاء الاصطناعي', horizon:'2-4 سنوات', tickers:['NVDA','MSFT','GOOG'], body:'كاوشيونغ ألغت جميع عمليات التفتيش اليدوي. روتردام استبدلت أشهراً من العمل بتوأم رقمي. 17 مدينة أمريكية تنشر كاميرات تفتيش. FDA تُلزم بالتفتيش القائم على المخاطر (مشروع BRIDGE). لا توجد شركة عامة متخصصة بعد — هذه نافذة فرصة رأس المال المخاطر وعقود حكومية.' },
+      { title:'موجة اكتتابات الذكاء الاصطناعي 2026', horizon:'الآن-9 أشهر', tickers:['OPENAI','SPACEX','ANTH'], body:'أكبر موجة اكتتابات في تاريخ الذكاء الاصطناعي: SpaceX/xAI يبدأ 12 يونيو. OpenAI S-1 سري مُقدَّم. Anthropic تقترب من جاهزية الاكتتاب (900 مليون مايو). CoreWeave عام بالفعل. أسواق ما قبل الاكتتاب الثانوية لـ OpenAI وAnthropic نشطة.' },
+      { title:'موردو امتثال قانون الذكاء الاصطناعي الأوروبي', horizon:'الآن-6 أشهر', tickers:['IBM','MSFT','ORCL'], body:'تطبيق قانون الذكاء الاصطناعي الأوروبي في 2 أغسطس 2026 — 3 أشهر متبقية. Gartner: الذكاء الاصطناعي القابل للتفسير (XAI) سيقود 50% من استثمارات مراقبة النماذج بحلول 2028. الشركات التي توفر سير عمل وكيلية شفافة وقابلة للتدقيق هي الفائزون في البنية التحتية للامتثال.' },
+    ],
+    risks: [
+      { icon:'⏰', title:'قانون الذكاء الاصطناعي الأوروبي 2 أغسطس 2026 — 3 أشهر متبقية', body:'مشغلو أنظمة الذكاء الاصطناعي عالية المخاطر يواجهون غرامات تصل إلى 35 مليون يورو أو 7% من الإيرادات العالمية. تكاليف الامتثال تضرب النشر المكثف للذكاء الاصطناعي. رياح خلفية لموردي الامتثال، رياح معاكسة للمشغلين غير المستعدين.' },
+      { icon:'💸', title:'حرب أسعار Google — ضغط على الهوامش عبر واجهات برمجة الذكاء الاصطناعي', body:'Gemini 3.5 Flash بـ 1.50/9 دولار لكل مليون رمز أقل من نصف أسعار OpenAI وAnthropic. Google مستعدة لخسارة المال على خدمات الذكاء الاصطناعي للحصول على حصة سوقية. يضغط على توقعات إيرادات جميع مزودي واجهات برمجة الذكاء الاصطناعي.' },
+      { icon:'🏗️', title:'مخاطر فقاعة الإنفاق الرأسمالي — Meta 115-135 مليار، Microsoft، Google', body:'Meta تُقلّص 8,000 وظيفة مع الحفاظ على إنفاق رأسمالي 115-135 مليار. Microsoft تُقلّص الآلاف. إذا فشل عائد الاستثمار في الذكاء الاصطناعي في التحقق خلال النصف الثاني من 2026، يوجد خطر ضغط مضاعف القطاع.' },
+      { icon:'🌍', title:'مخاطر جيوسياسية ذيلية — إيران ضربت AWS، تركيز TSMC', body:'إيران ضربت مراكز بيانات AWS وOracle في أبريل. TSMC كنقطة فشل واحدة حيوية للبنية التحتية العالمية للذكاء الاصطناعي. سيناريو نزاع تايوان سيكون خطراً ذيلياً متطرفاً على أطروحة الاستثمار في الذكاء الاصطناعي بأكملها.' },
+      { icon:'⚖️', title:'ماسك يستأنف حكم OpenAI — عدم يقين الاستئناف', body:'تعهد ماسك باستئناف حكم 18 مايو. محاكم الاستئناف عكست قرارات تقادم مماثلة. إذا انعكس الحكم، يمكن أن تعود المحاكمة على الأسس الموضوعية. مخاطر ذيلية على جدول IPO لـ OpenAI.' },
+    ]
+  }
+};
+
+const SIG_LABELS = {
+  buy:{en:'BUY / ACCUMULATE',ar:'شراء / تجميع'},
+  watch:{en:'WATCH / HOLD',ar:'مراقبة / احتفاظ'},
+  caution:{en:'CAUTION / REDUCE',ar:'حذر / تخفيض'},
+  ipo:{en:'IPO / PRE-IPO',ar:'اكتتاب / ما قبله'},
+};
+
+function buildInvPanel(lang){
+  const d=INV[lang];
+  const sl=SIG_LABELS;
+  const stocks=d.stocks.map(s=>`<div class="stock-row">
+    <div class="stock-ticker">${s.ticker}</div>
+    <div class="stock-name">${s.name}</div>
+    <div class="stock-signal sig-${s.signal}">${sl[s.signal][lang]}</div>
+    <div class="stock-why">${s.why}</div>
+  </div>`).join('');
+  const opps=d.opps.map(o=>`<div class="opp-card">
+    <div class="opp-top"><div class="opp-title">${o.title}</div><span class="opp-horizon">${o.horizon}</span></div>
+    <div class="opp-body">${o.body}</div>
+    <div class="opp-tickers">${o.tickers.map(t=>`<span class="opp-ticker">${t}</span>`).join('')}</div>
+  </div>`).join('');
+  const risks=d.risks.map(r=>`<div class="risk-row">
+    <div class="risk-icon">${r.icon}</div>
+    <div class="risk-text"><strong>${r.title}</strong>${r.body}</div>
+  </div>`).join('');
+  return `<div class="inv-block"><div class="inv-sec-title">${d.stocksTitle}</div>${stocks}</div>
+    <div class="inv-block"><div class="inv-sec-title">${d.oppsTitle}</div>${opps}</div>
+    <div class="inv-block"><div class="inv-sec-title">${d.risksTitle}</div>${risks}</div>`;
+}
+
+function openInv(){
+  document.getElementById('inv-overlay').classList.add('open');
+  document.getElementById('inv-drawer').classList.add('open');
+  document.getElementById('inv-title').textContent=INV[LANG].title;
+  document.getElementById('inv-disclaimer').textContent=INV[LANG].disclaimer;
+  document.getElementById('inv-body').innerHTML=buildInvPanel(LANG);
+}
+function closeInv(){
+  document.getElementById('inv-overlay').classList.remove('open');
+  document.getElementById('inv-drawer').classList.remove('open');
+}
+
+// Update fab label and drawer when language changes
+const _origSetLang=setLang;
+function setLang(l){
+  _origSetLang(l);
+  document.getElementById('inv-fab-label').textContent=INV[l].fab;
+  // re-render panel content if open
+  if(document.getElementById('inv-drawer').classList.contains('open')){
+    document.getElementById('inv-title').textContent=INV[l].title;
+    document.getElementById('inv-disclaimer').textContent=INV[l].disclaimer;
+    document.getElementById('inv-body').innerHTML=buildInvPanel(l);
+  }
+}
+
+render('en');
+</script>
+</body>
+</html>
