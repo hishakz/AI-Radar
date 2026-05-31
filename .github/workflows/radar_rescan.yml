@@ -1,0 +1,69 @@
+name: 🔍 AI Inspection Radar — Daily Rescan
+
+on:
+  # Runs at 06:00 UTC = 09:00 KSA (Arabia Standard Time, UTC+3)
+  schedule:
+    - cron: '0 6 * * *'
+
+  # Also allow manual trigger from GitHub UI
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Reason for manual rescan'
+        required: false
+        default: 'Manual trigger'
+
+jobs:
+  rescan:
+    name: Daily AI Radar Rescan
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install anthropic schedule pytz requests
+
+      - name: Log scan time
+        run: |
+          echo "Rescan triggered at $(date -u '+%Y-%m-%d %H:%M UTC') = $(TZ='Asia/Riyadh' date '+%Y-%m-%d %H:%M KSA')"
+
+      - name: Run rescan
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DASHBOARD_PATH: ./ai_radar_bilingual.html
+        run: |
+          python radar_rescan.py --now
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet ai_radar_bilingual.html && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push updated dashboard
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name  "Radar Bot 🤖"
+          git config user.email "radar-bot@noreply.github.com"
+          git add ai_radar_bilingual.html radar_rescan.log
+          git commit -m "🔍 Auto-rescan $(TZ='Asia/Riyadh' date '+%Y-%m-%d %H:%M KSA')"
+          git push
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dashboard-${{ github.run_id }}
+          path: ai_radar_bilingual.html
+          retention-days: 7
+
+      - name: No new signals
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "No new signals found — dashboard unchanged."
