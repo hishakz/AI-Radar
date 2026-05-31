@@ -327,7 +327,7 @@ const DOMAINS = [
 const L = {
   en:{
     wm:['Inspection','Intelligence'], tl:'AI & EMERGING TECH RADAR — INNOVATION DOMAIN BRIEF',
-    scanDate:'May 31, 2026', sigCount:'93 signals',
+    scanDate:'May 31, 2026', sigCount:'132 signals',
     tabs:[
       {id:'inspect',label:'🔍 Smart City & Inspection',count:20},
       {id:'apply',  label:'⚙️ Innovation Applications',count:5},
@@ -336,7 +336,7 @@ const L = {
     dfLabel:'Filter by domain:',
     stats_inspect:['20','9','6','4'], stats_inspect_l:['Inspect Signals','Countries','Verticals','New Today'],
     stats_apply:['5','1','2','2'],   stats_apply_l:['Vectors','Go Now','Pilot First','Plan/Long Term'],
-    sbPriTitle:'📌 Inspection Signals — Newest First', sbBreakTitle:'⚡ Breaking Today', sbRoadTitle:'🗓️ Innovation Roadmap',
+    sbPriTitle:'📌 Latest Inspection Signals — Live', sbBreakTitle:'⚡ Breaking Today', sbRoadTitle:'🗓️ Innovation Roadmap',
     innoLabel:'Innovation Application for Your Domain', yourAction:'Your Innovation Action',
     fmatLabel:'Feasibility Matrix', keyRisk:'Key Risk', keyEnabler:'Key Enabler',
     dims:['Technical Complexity','Investment / Cost','Human Resources','Time to Value','Change Management'],
@@ -390,7 +390,7 @@ const L = {
   },
   ar:{
     wm:['منصة استخبارات','التفتيش'], tl:'رادار الذكاء الاصطناعي — ملخص الابتكار في مجال التفتيش',
-    scanDate:'31 مايو 2026', sigCount:'93 إشارة',
+    scanDate:'31 مايو 2026', sigCount:'132 إشارة',
     tabs:[
       {id:'inspect',label:'🔍 المدن الذكية والتفتيش',count:20},
       {id:'apply',  label:'⚙️ تطبيقات الابتكار',   count:5},
@@ -399,7 +399,7 @@ const L = {
     dfLabel:'تصفية حسب القطاع:',
     stats_inspect:['20','9','6','4'], stats_inspect_l:['إشارة تفتيش','دول فاعلة','قطاعات','جديد اليوم'],
     stats_apply:['5','1','2','2'],   stats_apply_l:['محاور ابتكار','تنفيذ الآن','تجريب','تخطيط'],
-    sbPriTitle:'📌 إشارات التفتيش — الأحدث أولاً', sbBreakTitle:'⚡ أبرز الأخبار اليوم', sbRoadTitle:'🗓️ خارطة طريق الابتكار',
+    sbPriTitle:'📌 أحدث إشارات التفتيش — مباشر', sbBreakTitle:'⚡ أبرز الأخبار اليوم', sbRoadTitle:'🗓️ خارطة طريق الابتكار',
     innoLabel:'تطبيق الابتكار في مجال عملك', yourAction:'إجراءك الابتكاري',
     fmatLabel:'مصفوفة الجدوى', keyRisk:'المخاطر الرئيسية', keyEnabler:'العوامل المُمكِّنة',
     dims:['التعقيد التقني','التكلفة / الاستثمار','الموارد البشرية','الوقت حتى القيمة','إدارة التغيير'],
@@ -721,72 +721,6 @@ const DT_ROWS=[
 // AI GLOBAL SIGNALS
 // ════════════════════════════════════════════════════════════════
 const AI_SIGNALS=[
-
-  // ══ AUTO-RESCAN MAY 31, 2026 ══
-  {domains:["smart-city"],url:'https://www.trendhunter.com/amp/trends/transit-tech-lab',
-   en:{t:'NYC Transit Tech Lab Launches 18-Company AI Infrastructure Cohort',cat:'Release',d:'May 22, 2026 AUTO',s:'Transit Tech Lab unveiled 18-company cohort on May 22, 2026 focused on modernizing NYC transit through AI, sensors, and predictive maintenance. Startups like Cyvl, Delphisonic, Ontra Mobility and Viatec deploy tools using cameras and motion sensing to detect potholes, monitor railcar health, and replace manual inspections with machine learning integration and real-time diagnostics.'},
-   ar:{t:'NYC Transit Tech Lab Launches 18-Company AI Infrastructure Cohort',cat:'Release',d:'May 22, 2026 تلقائي',s:'Transit Tech Lab unveiled 18-company cohort on May 22, 2026 focused on modernizing NYC transit through AI, sensors, and predictive maintenance. Startups like Cyvl, Delphisonic, Ontra Mobility and Viatec deploy tools using cameras and motion sensing to detect potholes, monitor railcar health, and replace manual inspections with machine learning integration and real-time diagnostics.'}},
-  {domains:["smart-city"],url:'https://news.un.org/en/story/2026/05/1167564',
-   en:{t:'UN World Urban Forum Highlights Shanghai Metro AI Continuous Monitoring System',cat:'Breakthrough',d:'May 24, 2026 AUTO',s:'At WUF13 in Baku (1 week ago), Shanghai Metro showcased AI-driven monitoring of 800+ km network with 400+ stations. AI systems monitor tunnels for cracks, water leaks and structural weaknesses while analyzing passenger data in real time to prevent disruptions across the network.'},
-   ar:{t:'UN World Urban Forum Highlights Shanghai Metro AI Continuous Monitoring System',cat:'Breakthrough',d:'May 24, 2026 تلقائي',s:'At WUF13 in Baku (1 week ago), Shanghai Metro showcased AI-driven monitoring of 800+ km network with 400+ stations. AI systems monitor tunnels for cracks, water leaks and structural weaknesses while analyzing passenger data in real time to prevent disruptions across the network.'}},
-  {domains:["smart-city"],url:'https://iottechnews.com/news/scaling-3d-physical-ai-infrastructure-inspections/',
-   en:{t:'Spexi Partners with Niantic for Drone-to-3D Physical AI Infrastructure Pipeline',cat:'Breakthrough',d:'May 27, 2026 AUTO',s:'Spexi and Niantic Spatial announced partnership (4 days ago) delivering drone-to-3D pipeline for physical AI infrastructure inspections. Transition from periodic manual inspections to continuous, on-demand AI processing across utility provider infrastructure, enabling scalable maintenance operations.'},
-   ar:{t:'Spexi Partners with Niantic for Drone-to-3D Physical AI Infrastructure Pipeline',cat:'Breakthrough',d:'May 27, 2026 تلقائي',s:'Spexi and Niantic Spatial announced partnership (4 days ago) delivering drone-to-3D pipeline for physical AI infrastructure inspections. Transition from periodic manual inspections to continuous, on-demand AI processing across utility provider infrastructure, enabling scalable maintenance operations.'}},
-  {domains:["construction"],url:'https://www.azobuild.com/news.aspx?newsID=23906',
-   en:{t:'Intelligent Inspection Robots Reshape Structural Health Monitoring in Construction',cat:'Research',d:'May 27, 2026 AUTO',s:'New review in SmartBot journal highlights major advances in robotic inspection systems for bridges, tunnels, high-rises. AI-driven analytics with onboard sensors now automating assessments faster and safer than manual inspections, reducing maintenance costs across critical infrastructure.'},
-   ar:{t:'Intelligent Inspection Robots Reshape Structural Health Monitoring in Construction',cat:'Research',d:'May 27, 2026 تلقائي',s:'New review in SmartBot journal highlights major advances in robotic inspection systems for bridges, tunnels, high-rises. AI-driven analytics with onboard sensors now automating assessments faster and safer than manual inspections, reducing maintenance costs across critical infrastructure.'}},
-  {domains:["construction"],url:'https://www.equipmentjournal.com/tech-news/gravis-robotics-brings-physical-ai-to-earthmoving/',
-   en:{t:'Gravis Robotics Launches Physical AI Copilot for Autonomous Excavation at ConExpo 2026',cat:'Breakthrough',d:'1 month ago AUTO',s:'Gravis Copilot system demonstrated on 13-ton Hitachi ZX135US-7 excavators with real-time terrain sensing, LiDAR, cameras. Platform fuses sensor data for autonomous trenching; first 60-mile autonomous pipeline project with Techint deploying 36-ton excavators in Argentina.'},
-   ar:{t:'Gravis Robotics Launches Physical AI Copilot for Autonomous Excavation at ConExpo 2026',cat:'Breakthrough',d:'1 month ago تلقائي',s:'Gravis Copilot system demonstrated on 13-ton Hitachi ZX135US-7 excavators with real-time terrain sensing, LiDAR, cameras. Platform fuses sensor data for autonomous trenching; first 60-mile autonomous pipeline project with Techint deploying 36-ton excavators in Argentina.'}},
-  {domains:["construction"],url:'https://www.coherentmarketinsights.com/market-insight/construction-drone-market-4536',
-   en:{t:'Construction Drone Market Valued at $21.9M in 2026, Expected to Reach $57.6M by 2033',cat:'Release',d:'May 28, 2026 AUTO',s:'Market research shows 14.8% CAGR growth. Skydio partnered with India\'s Aeroarc under INDUS-X for AI-powered autonomous drones tailored to Indo-Pacific industrial/construction inspections. U.S. DOT reports drones reduce project costs by 15% through minimized labor.'},
-   ar:{t:'Construction Drone Market Valued at $21.9M in 2026, Expected to Reach $57.6M by 2033',cat:'Release',d:'May 28, 2026 تلقائي',s:'Market research shows 14.8% CAGR growth. Skydio partnered with India\'s Aeroarc under INDUS-X for AI-powered autonomous drones tailored to Indo-Pacific industrial/construction inspections. U.S. DOT reports drones reduce project costs by 15% through minimized labor.'}},
-  {domains:["food"],url:'https://foodindustryexecutive.com/2026/05/ai-food-manufacturing-plant-floor-applications-limits/',
-   en:{t:'AI Food Manufacturing Plant Floor Delivery Achieves 99.86% Inspection Accuracy',cat:'Breakthrough',d:'2 weeks ago AUTO',s:'Food Industry Executive reports AI vision systems hitting 99.86% inspection accuracy in testing, exploring why many food manufacturers remain in pilot phase despite strong technical performance metrics in May 2026.'},
-   ar:{t:'AI Food Manufacturing Plant Floor Delivery Achieves 99.86% Inspection Accuracy',cat:'Breakthrough',d:'2 weeks ago تلقائي',s:'Food Industry Executive reports AI vision systems hitting 99.86% inspection accuracy in testing, exploring why many food manufacturers remain in pilot phase despite strong technical performance metrics in May 2026.'}},
-  {domains:["food"],url:'https://ifactoryapp.com/industries/fmcg/ai-quality-control-prevents-contamination-food-processing',
-   en:{t:'iFactory AI Vision Inspection Delivers 99.5%+ Contamination Detection at Full Line Speed',cat:'Breakthrough',d:'May 12, 2026 AUTO',s:'iFactory releases AI Vision Inspection platform achieving 99.5%+ defect detection accuracy while maintaining full production speed. Claims global food contamination events cost $10 billion annually in recalls and regulatory fines.'},
-   ar:{t:'iFactory AI Vision Inspection Delivers 99.5%+ Contamination Detection at Full Line Speed',cat:'Breakthrough',d:'May 12, 2026 تلقائي',s:'iFactory releases AI Vision Inspection platform achieving 99.5%+ defect detection accuracy while maintaining full production speed. Claims global food contamination events cost $10 billion annually in recalls and regulatory fines.'}},
-  {domains:["food"],url:'https://www.grocerydive.com/news/albertsons-ai-powered-produce-inspection-tool-supply-chain/820135/',
-   en:{t:'Albertsons Launches AI-Powered Produce Inspection Tool with Google Cloud',cat:'Release',d:'May 15, 2026 AUTO',s:'Albertsons announced Intelligent Quality Control tool using Google Cloud\'s Gemini Enterprise and Vision AI for produce inspection. System measures quality of strawberries and grapes in select warehouses as of May 15, 2026.'},
-   ar:{t:'Albertsons Launches AI-Powered Produce Inspection Tool with Google Cloud',cat:'Release',d:'May 15, 2026 تلقائي',s:'Albertsons announced Intelligent Quality Control tool using Google Cloud\'s Gemini Enterprise and Vision AI for produce inspection. System measures quality of strawberries and grapes in select warehouses as of May 15, 2026.'}},
-  {domains:["policy"],url:'https://fortune.com/2026/05/06/trump-administration-embraces-ai-oversight-policies-it-once-rejected-anthropic-mythos-caisi/',
-   en:{t:'Trump Administration Considers AI Oversight for Advanced Models Over Cybersecurity Risks',cat:'Policy',d:'May 24, 2026 AUTO',s:'Trump administration reportedly considering oversight for advanced AI models, particularly Anthropic\'s \'Mythos\' model, due to national security concerns about its ability to identify and exploit cybersecurity vulnerabilities. Congress approved $55M for NIST AI research in January 2026.'},
-   ar:{t:'Trump Administration Considers AI Oversight for Advanced Models Over Cybersecurity Risks',cat:'Policy',d:'May 24, 2026 تلقائي',s:'Trump administration reportedly considering oversight for advanced AI models, particularly Anthropic\'s \'Mythos\' model, due to national security concerns about its ability to identify and exploit cybersecurity vulnerabilities. Congress approved $55M for NIST AI research in January 2026.'}},
-  {domains:["policy"],url:'https://www.globalpolicywatch.com/2026/05/eu-ai-act-update-timeline-relief-targeted-simplification-and-new-prohibitions/',
-   en:{t:'EU AI Act Amendments: High-Risk Systems Compliance Deferred to December 2027',cat:'Policy',d:'May 21, 2026 AUTO',s:'EU Council and Parliament reached provisional agreement on Digital Omnibus on AI on May 7, 2026, deferring high-risk AI obligations from August 2026 to December 2027. New prohibitions on non-consensual intimate content generation take effect December 2, 2026.'},
-   ar:{t:'EU AI Act Amendments: High-Risk Systems Compliance Deferred to December 2027',cat:'Policy',d:'May 21, 2026 تلقائي',s:'EU Council and Parliament reached provisional agreement on Digital Omnibus on AI on May 7, 2026, deferring high-risk AI obligations from August 2026 to December 2027. New prohibitions on non-consensual intimate content generation take effect December 2, 2026.'}},
-  {domains:["policy"],url:'https://www.dlapiper.com/en-us/insights/publications/2026/05/unpacking-connecticuts-new-ai-law',
-   en:{t:'Connecticut Passes Bipartisan AI Law SB5 with Chatbot and Transparency Requirements',cat:'Policy',d:'May 17, 2026 AUTO',s:'Connecticut legislature passed bipartisan SB5 on May 1, 2026, establishing AI regulatory sandbox, chatbot safety requirements particularly for minors, synthetic content transparency obligations, and employment discrimination provisions effective October 1, 2026.'},
-   ar:{t:'Connecticut Passes Bipartisan AI Law SB5 with Chatbot and Transparency Requirements',cat:'Policy',d:'May 17, 2026 تلقائي',s:'Connecticut legislature passed bipartisan SB5 on May 1, 2026, establishing AI regulatory sandbox, chatbot safety requirements particularly for minors, synthetic content transparency obligations, and employment discrimination provisions effective October 1, 2026.'}},
-  {domains:["ai-models"],url:'https://www.anthropic.com/news/series-h',
-   en:{t:'Anthropic raises $65B Series H at $965B valuation, surpassing OpenAI; launches Claude Opus 4.8',cat:'Funding',d:'3 days ago AUTO',s:'Anthropic announced May 28, 2026 a $65 billion Series H funding round led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia, valuing the company at $965 billion post-money and leapfrogging OpenAI\'s $852B March valuation. Same day, Anthropic released Claude Opus 4.8 with lower deception rates. Run-rate revenue hit $47 billion.'},
-   ar:{t:'Anthropic raises $65B Series H at $965B valuation, surpassing OpenAI; launches Claude Opus 4.8',cat:'Funding',d:'3 days ago تلقائي',s:'Anthropic announced May 28, 2026 a $65 billion Series H funding round led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia, valuing the company at $965 billion post-money and leapfrogging OpenAI\'s $852B March valuation. Same day, Anthropic released Claude Opus 4.8 with lower deception rates. Run-rate revenue hit $47 billion.'}},
-  {domains:["ai-models"],url:'https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/',
-   en:{t:'Google launches Gemini 3.5 Flash and Gemini Spark agent at I/O 2026',cat:'Release',d:'2 days ago AUTO',s:'Google announced May 29, 2026 at I/O 2026 the Gemini 3.5 Flash model available today via Gemini API and Google AI Studio, outperforming Gemini 3.1 Pro on coding benchmarks. Also unveiled Gemini Spark, a 24/7 autonomous AI agent running on Google Cloud for email, workspace, and web tasks.'},
-   ar:{t:'Google launches Gemini 3.5 Flash and Gemini Spark agent at I/O 2026',cat:'Release',d:'2 days ago تلقائي',s:'Google announced May 29, 2026 at I/O 2026 the Gemini 3.5 Flash model available today via Gemini API and Google AI Studio, outperforming Gemini 3.1 Pro on coding benchmarks. Also unveiled Gemini Spark, a 24/7 autonomous AI agent running on Google Cloud for email, workspace, and web tasks.'}},
-  {domains:["ai-models"],url:'https://openai.com/news/',
-   en:{t:'OpenAI named Gartner Leader in enterprise coding agents; advances content provenance research',cat:'Breakthrough',d:'4 days ago AUTO',s:'OpenAI announced May 27, 2026 recognition as a Gartner Leader in enterprise coding agents. On May 22, 2026, an OpenAI model disproved a central conjecture in discrete geometry. On May 20, 2026, OpenAI advanced content provenance work for safer, transparent AI.'},
-   ar:{t:'OpenAI named Gartner Leader in enterprise coding agents; advances content provenance research',cat:'Breakthrough',d:'4 days ago تلقائي',s:'OpenAI announced May 27, 2026 recognition as a Gartner Leader in enterprise coding agents. On May 22, 2026, an OpenAI model disproved a central conjecture in discrete geometry. On May 20, 2026, OpenAI advanced content provenance work for safer, transparent AI.'}},
-  {domains:["security"],url:'https://cryptobriefing.com/project-glasswing-10000-critical-vulnerabilities/',
-   en:{t:'Project Glasswing Uncovers Over 10,000 Critical Vulnerabilities in One Month',cat:'Security',d:'1 week ago AUTO',s:'Anthropic\'s Claude Mythos Preview AI discovered 10,000+ high/critical-severity vulnerabilities in May 2026, including a 27-year-old bug in OpenBSD and 16-year-old flaw in FFmpeg. Fewer than 100 patches deployed so far despite thousands of zero-day findings.'},
-   ar:{t:'Project Glasswing Uncovers Over 10,000 Critical Vulnerabilities in One Month',cat:'Security',d:'1 week ago تلقائي',s:'Anthropic\'s Claude Mythos Preview AI discovered 10,000+ high/critical-severity vulnerabilities in May 2026, including a 27-year-old bug in OpenBSD and 16-year-old flaw in FFmpeg. Fewer than 100 patches deployed so far despite thousands of zero-day findings.'}},
-  {domains:["security"],url:'https://cryptobriefing.com/anthropic-glasswing-software-vulnerabilities/',
-   en:{t:'IBM Joins Project Glasswing Partnership on May 19, 2026',cat:'Security',d:'2 weeks ago AUTO',s:'IBM became the newest partner in Anthropic\'s Project Glasswing cybersecurity coalition. Anthropic allocated $100 million in compute credits and $4 million in grants for open-source security groups to address discovered vulnerabilities.'},
-   ar:{t:'IBM Joins Project Glasswing Partnership on May 19, 2026',cat:'Security',d:'2 weeks ago تلقائي',s:'IBM became the newest partner in Anthropic\'s Project Glasswing cybersecurity coalition. Anthropic allocated $100 million in compute credits and $4 million in grants for open-source security groups to address discovered vulnerabilities.'}},
-  {domains:["security"],url:'https://www.startuphub.ai/ai-news/ai-research/2026/project-glasswing-ai-s-first-findings-revealed',
-   en:{t:'Specialized AI Agents Critical for Project Glasswing Vulnerability Discovery Success',cat:'Research',d:'3 days ago AUTO',s:'Recent analysis shows Project Glasswing\'s effectiveness relies on specialized AI agents for specific security tasks rather than general-purpose models. Expert consensus emphasizes layered approaches over monolithic AI applications in vulnerability discovery.'},
-   ar:{t:'Specialized AI Agents Critical for Project Glasswing Vulnerability Discovery Success',cat:'Research',d:'3 days ago تلقائي',s:'Recent analysis shows Project Glasswing\'s effectiveness relies on specialized AI agents for specific security tasks rather than general-purpose models. Expert consensus emphasizes layered approaches over monolithic AI applications in vulnerability discovery.'}},
-  {domains:["funding"],url:'https://theaiinsider.tech/2026/05/27/ai-funding-in-2026-where-venture-capital-is-going/',
-   en:{t:'AI Funding in 2026: Where Venture Capital Is Going',cat:'Funding',d:'2 days ago AUTO',s:'Q1 2026 set all-time record with $300B in global VC, AI accounting for 80%. OpenAI closed $122B at $852B valuation targeting $1T IPO Q4 2026. Anthropic raised $30.6B, xAI $20B, Waymo $16B.'},
-   ar:{t:'AI Funding in 2026: Where Venture Capital Is Going',cat:'Funding',d:'2 days ago تلقائي',s:'Q1 2026 set all-time record with $300B in global VC, AI accounting for 80%. OpenAI closed $122B at $852B valuation targeting $1T IPO Q4 2026. Anthropic raised $30.6B, xAI $20B, Waymo $16B.'}},
-  {domains:["funding"],url:'https://builtin.com/articles/top-tech-ipos-2026',
-   en:{t:'SpaceX IPO Filing: $75B Offering Planned for July 2026',cat:'Release',d:'2 weeks ago AUTO',s:'SpaceX has filed with SEC for public offering as early as July 2026. xAI merged interests with SpaceX; SpaceX IPO expected mid-to-late 2026 will serve as primary vehicle for public access to xAI foundational models.'},
-   ar:{t:'SpaceX IPO Filing: $75B Offering Planned for July 2026',cat:'Release',d:'2 weeks ago تلقائي',s:'SpaceX has filed with SEC for public offering as early as July 2026. xAI merged interests with SpaceX; SpaceX IPO expected mid-to-late 2026 will serve as primary vehicle for public access to xAI foundational models.'}},
-  {domains:["funding"],url:'https://aifundingtracker.com/ai-ipo-tracker/',
-   en:{t:'Databricks Closes $5B Series L, Largest Private Software Round',cat:'Funding',d:'May 28, 2026 AUTO',s:'Databricks raised $5B Series L at $134B valuation in December 2025. Company confirmed $5.4B annualized revenue run-rate Feb 2026. Analysts expect S-1 filing Q3 2026, public listing late 2026 or early 2027.'},
-   ar:{t:'Databricks Closes $5B Series L, Largest Private Software Round',cat:'Funding',d:'May 28, 2026 تلقائي',s:'Databricks raised $5B Series L at $134B valuation in December 2025. Company confirmed $5.4B annualized revenue run-rate Feb 2026. Analysts expect S-1 filing Q3 2026, public listing late 2026 or early 2027.'}},
-
   {domains:['policy','security'],url:'https://www.axios.com/2026/04/29/trump-anthropic-pentagon-ai-executive-order-gov',
    en:{t:'White House 180°: drafting guidance to bypass Anthropic\'s Pentagon blacklist and unlock Mythos for all federal agencies',cat:'Policy',d:'Apr 26, 2026',s:'OMB is setting up protections allowing Cabinet agencies to begin using Mythos. NSA already integrated Mythos into analytical systems. White House COS Susie Wiles and Treasury Sec Scott Bessent met Dario Amodei in "productive introductory meeting." White House described effort as a way to "save face and bring em back in." Pentagon blacklisted Anthropic earlier this year after it refused to ease restrictions on domestic surveillance and fully autonomous weapons. OpenAI and Google have both signed "all lawful purposes" agreements for classified settings.'},
    ar:{t:'البيت الأبيض يتراجع 180°: يُعدّ توجيهات لتجاوز حظر بنتاغون على Anthropic وفتح Mythos لجميع الوكالات الفيدرالية',cat:'سياسة',d:'جديد اليوم',s:'مكتب الإدارة والميزانية (OMB) يُعدّ حمايات تتيح للوكالات الحكومية استخدام Mythos. وكالة الأمن القومي (NSA) دمجت Mythos في أنظمة تحليلية بالفعل. رئيسة الديوان سوزي وايلز ووزير الخزانة سكوت بيسنت اجتمعا مع داريو أموديي في "لقاء تمهيدي منتج". البيت الأبيض وصف الجهود بأنها طريقة لـ"حفظ ماء الوجه وإعادتهم". حظر البنتاغون على Anthropic جاء بعد رفضها تخفيف قيود على المراقبة المحلية والأسلحة المستقلة.'}},
@@ -1064,45 +998,47 @@ const FILL_WIDTHS=[20,40,60,80,100];
 // Date parsing for sort — maps common date strings to sortable numbers
 function parseDateNum(d){
   if(!d) return 0;
-  const s=d.toLowerCase();
-  if(s.includes('today')||s.includes('اليوم')) return 20260512;
-  if(s.includes('may 12')||s.includes('12 مايو')) return 20260512;
-  if(s.includes('may 5')||s.includes('5 مايو')) return 20260505;
-  if(s.includes('may 3')||s.includes('3 مايو')) return 20260503;
+  const s=d.toLowerCase().replace(' auto','').replace(' تلقائي','').trim();
+  // Full date format: "May 31, 2026" or "31 مايو 2026"
+  const fullMatch = s.match(/(\w+)\s+(\d{1,2}),?\s+(\d{4})/);
+  if(fullMatch){
+    const months={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
+    const m=months[fullMatch[1].toLowerCase()];
+    if(m) return parseInt(fullMatch[3])*10000 + m*100 + parseInt(fullMatch[2]);
+  }
+  // Arabic months
+  const arMonths={يناير:1,فبراير:2,مارس:3,أبريل:4,مايو:5,يونيو:6,يوليو:7,أغسطس:8,سبتمبر:9,أكتوبر:10,نوفمبر:11,ديسمبر:12};
+  for(const [ar,num] of Object.entries(arMonths)){
+    if(s.includes(ar)){
+      const dayMatch=s.match(/(\d{1,2})/);
+      const yearMatch=s.match(/(\d{4})/);
+      if(dayMatch&&yearMatch) return parseInt(yearMatch[1])*10000+num*100+parseInt(dayMatch[1]);
+      if(yearMatch) return parseInt(yearMatch[1])*10000+num*100;
+    }
+  }
+  if(s.includes('today')||s.includes('اليوم')) return 20260531;
   if(s.includes('may')||s.includes('مايو')) return 20260501;
-  if(s.includes('apr 30')||s.includes('30 أبريل')) return 20260430;
-  if(s.includes('apr 28')||s.includes('28 أبريل')) return 20260428;
-  if(s.includes('apr 26')||s.includes('26 أبريل')) return 20260426;
-  if(s.includes('apr 23')||s.includes('23 أبريل')) return 20260423;
-  if(s.includes('apr 18')||s.includes('18 أبريل')) return 20260418;
-  if(s.includes('apr 17')||s.includes('17 أبريل')) return 20260417;
-  if(s.includes('apr 16')||s.includes('16 أبريل')) return 20260416;
-  if(s.includes('apr')) return 20260401;
-  if(s.includes('أبريل')) return 20260401;
-  if(s.includes('2 week')||s.includes('أسبوعان')) return 20260428;
-  if(s.includes('3 week')||s.includes('3 أسابيع')) return 20260421;
-  if(s.includes('4 week')||s.includes('4 أسابيع')) return 20260414;
-  if(s.includes('6 week')||s.includes('6 أسابيع')) return 20260401;
-  if(s.includes('1 week')||s.includes('week ago')||s.includes('أسبوع')) return 20260505;
-  if(s.includes('2 day')||s.includes('يومان')) return 20260510;
-  if(s.includes('3 day')||s.includes('3 أيام')) return 20260509;
-  if(s.includes('4 day')||s.includes('4 أيام')) return 20260508;
-  if(s.includes('5 day')||s.includes('5 أيام')) return 20260507;
-  if(s.includes('6 day')||s.includes('6 أيام')) return 20260506;
-  if(s.includes('8 day')||s.includes('8 أيام')) return 20260504;
-  if(s.includes('9 day')||s.includes('9 أيام')) return 20260503;
-  if(s.includes('10 day')||s.includes('10 أيام')) return 20260502;
-  if(s.includes('month')||s.includes('شهر')) return 20260412;
-  if(s.includes('mar 2026')||s.includes('مارس 2026')) return 20260301;
-  if(s.includes('mar')||s.includes('مارس')) return 20260301;
-  if(s.includes('feb')||s.includes('فبراير')) return 20260201;
-  if(s.includes('jan')||s.includes('يناير')) return 20260101;
-  if(s.includes('dec 2025')||s.includes('ديسمبر 2025')) return 20251201;
-  if(s.includes('nov')||s.includes('نوفمبر')) return 20251101;
-  if(s.includes('2025-2026')) return 20260101;
-  if(s.includes('2026')) return 20260101;
+  if(s.includes('2 week')||s.includes('أسبوعان')) return 20260517;
+  if(s.includes('3 week')||s.includes('3 أسابيع')) return 20260510;
+  if(s.includes('4 week')||s.includes('4 أسابيع')) return 20260503;
+  if(s.includes('6 week')||s.includes('6 أسابيع')) return 20260419;
+  if(s.includes('1 week')||s.includes('week ago')||s.includes('أسبوع')) return 20260524;
+  if(s.includes('2 day')||s.includes('يومان')) return 20260529;
+  if(s.includes('3 day')||s.includes('3 أيام')) return 20260528;
+  if(s.includes('4 day')||s.includes('4 أيام')) return 20260527;
+  if(s.includes('5 day')||s.includes('5 أيام')) return 20260526;
+  if(s.includes('8 day')||s.includes('8 أيام')) return 20260523;
+  if(s.includes('9 day')||s.includes('9 أيام')) return 20260522;
+  if(s.includes('10 day')||s.includes('10 أيام')) return 20260521;
+  if(s.includes('month')||s.includes('شهر')) return 20260430;
+  if(s.includes('apr')||s.includes('أبريل')) return 20260415;
+  if(s.includes('mar')||s.includes('مارس')) return 20260315;
+  if(s.includes('feb')||s.includes('فبراير')) return 20260215;
+  if(s.includes('jan')||s.includes('يناير')) return 20260115;
+  if(s.includes('dec 2025')||s.includes('ديسمبر 2025')) return 20251215;
+  if(s.includes('2025-2026')||s.includes('2026')) return 20260101;
   if(s.includes('ongoing')||s.includes('مستمر')) return 20260101;
-  if(s.includes('ready now')||s.includes('جاهز الآن')) return 20260512;
+  if(s.includes('ready now')||s.includes('جاهز الآن')) return 20260531;
   return 0;
 }
 
@@ -1240,13 +1176,54 @@ function buildSidebar(lang){
   const l=L[lang];
   const bc={teal:'teal-lt',amber:'amber-lt',blue:'blue-lt',green:'green-lt',purple:'purple-lt',gray:'paper3'};
   const tc={teal:'teal',amber:'amber',blue:'blue',green:'green',purple:'purple',gray:'ink3'};
-  // Sort priorities by date newest first
-  const sortedPris=[...l.sbPriorities].sort((a,b)=>parseDateNum(b.d)-parseDateNum(a.d));
-  const pris=sortedPris.map(p=>`<div class="mini"><div class="mini-t">${p.t}</div><div class="mini-m"><span class="mini-bdg" style="background:var(--${bc[p.c]||'paper3'});color:var(--${tc[p.c]||'ink3'})">${p.d}</span></div></div>`).join('');
-  const brk=l.sbBreaking.map(p=>`<div class="mini"><div class="mini-t">${p.t}</div><div class="mini-m"><span class="mini-bdg" style="background:var(--${bc[p.c]||'paper3'});color:var(--${tc[p.c]||'ink3'})">${p.d}</span></div></div>`).join('');
+
+  // ── AUTO-POPULATE from live INSPECT cards (newest 8) ──────────────
+  const domainColor = {
+    'smart-city':'teal','construction':'amber','food':'green',
+    'housing':'blue','policy':'purple','security':'red'
+  };
+  const livePris = [...INSPECT]
+    .sort((a,b) => parseDateNum((b[lang]||b.en)?.date||'') - parseDateNum((a[lang]||a.en)?.date||''))
+    .slice(0, 8)
+    .map(c => {
+      const d = c[lang] || c.en;
+      const domClr = domainColor[c.domains?.[0]] || 'gray';
+      const dateStr = d?.date || '';
+      const titleStr = d?.title || '';
+      // Truncate title to ~55 chars
+      const shortTitle = titleStr.length > 55 ? titleStr.slice(0,55)+'…' : titleStr;
+      return `<div class="mini">
+        <div class="mini-t">${shortTitle}</div>
+        <div class="mini-m">
+          <span class="mini-bdg" style="background:var(--${bc[domClr]||'paper3'});color:var(--${tc[domClr]||'ink3'})">${dateStr}</span>
+        </div>
+      </div>`;
+    }).join('');
+
+  // ── AUTO-POPULATE Breaking from live AI_SIGNALS (newest 5) ──────────
+  const catClr={'Release':'teal','Breakthrough':'teal','Policy':'amber','Security':'red','Funding':'green','Research':'gray',
+    'إطلاق':'teal','اختراق':'teal','سياسة':'amber','أمن':'red','تمويل':'green','بحث':'gray'};
+  const brk=[...AI_SIGNALS]
+    .sort((a,b)=>parseDateNum((b[lang]||b.en)?.d||'')-parseDateNum((a[lang]||a.en)?.d||''))
+    .slice(0,5)
+    .map(s=>{
+      const d=s[lang]||s.en;
+      const clr=catClr[d?.cat]||'gray';
+      const title=(d?.t||'').slice(0,55)+((d?.t||'').length>55?'…':'');
+      return `<div class="mini"><div class="mini-t">${title}</div><div class="mini-m"><span class="mini-bdg" style="background:var(--${bc[clr]||'paper3'});color:var(--${tc[clr]||'ink3'})">${d?.d||''}</span></div></div>`;
+    }).join('');
+
   const rc={teal:'var(--teal)',amber:'var(--amber)',blue:'var(--blue)',ink3:'var(--ink3)'};
-  const rm=l.sbRoadmap.map(r=>`<div class="rm-item" style="border-color:${rc[r.c]||'var(--paper3)'}"><h4 style="color:${rc[r.c]||'var(--ink3)'}">${r.h}</h4><p>${r.p}</p></div>`).join('');
-  return`<div class="sb-sec"><div class="sb-title">${l.sbPriTitle}</div>${pris}</div><div class="sb-sec"><div class="sb-title">${l.sbBreakTitle}</div>${brk}</div><div class="sb-sec"><div class="sb-title">${l.sbRoadTitle}</div>${rm}</div>`;
+  const reviewedLabel = lang==='ar'
+    ? `آخر مراجعة: ${computeNewestDate(lang)}`
+    : `Last reviewed: ${computeNewestDate(lang)}`;
+  const rm = l.sbRoadmap.map(r =>
+    `<div class="rm-item" style="border-color:${rc[r.c]||'var(--paper3)'}"><h4 style="color:${rc[r.c]||'var(--ink3)'}">${r.h}</h4><p>${r.p}</p></div>`
+  ).join('') + `<div style="font-size:9px;font-family:'DM Mono',monospace;color:var(--ink4);margin-top:6px">${reviewedLabel}</div>`;
+
+  return `<div class="sb-sec"><div class="sb-title">${l.sbPriTitle}</div>${livePris}</div>` +
+         `<div class="sb-sec"><div class="sb-title">${l.sbBreakTitle}</div>${brk}</div>` +
+         `<div class="sb-sec"><div class="sb-title">${l.sbRoadTitle}</div>${rm}</div>`;
 }
 
 // ════════════════════════════════════════════════════════════════
@@ -1323,6 +1300,31 @@ function renderTab(tabId,lang){
   return '';
 }
 
+// ── DYNAMIC HELPERS ──────────────────────────────────────────────────────────
+
+// Compute the date of the newest signal across all data
+function computeNewestDate(lang){
+  let maxNum=0;
+  [...INSPECT,...AI_SIGNALS].forEach(s=>{
+    const d=s[lang]||s.en;
+    const n=parseDateNum(d?.date||d?.d||'');
+    if(n>maxNum) maxNum=n;
+  });
+  if(!maxNum) return lang==='ar'?'غير معروف':'Unknown';
+  const yr=Math.floor(maxNum/10000);
+  const mo=Math.floor((maxNum%10000)/100);
+  const dy=maxNum%100;
+  if(lang==='ar'){
+    const m=['','يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+    return `${dy} ${m[mo]} ${yr}`;
+  }
+  const m=['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return `${m[mo]} ${dy}, ${yr}`;
+}
+
+// Total live signal count
+function totalSignals(){ return INSPECT.length + AI_SIGNALS.length; }
+
 function render(lang){
   const l=L[lang];
   const root=document.getElementById('root');
@@ -1330,8 +1332,9 @@ function render(lang){
   root.setAttribute('dir',lang==='ar'?'rtl':'ltr');
   document.getElementById('wm').innerHTML=lang==='ar'?`${l.wm[0]}<span>${l.wm[1]}</span>`:`${l.wm[0]}<span>${l.wm[1]}</span>`;
   document.getElementById('tl').textContent=l.tl;
-  document.getElementById('scan-date').textContent=l.scanDate;
-  document.getElementById('sig-count').textContent=l.sigCount;
+  // Dynamic — always reflect actual newest signal date and live count
+  document.getElementById('scan-date').textContent=computeNewestDate(lang);
+  document.getElementById('sig-count').textContent=totalSignals()+(lang==='ar'?' إشارة':' signals');
   document.getElementById('nav-tabs').innerHTML=renderNav(lang);
   document.getElementById('domain-filter-bar').innerHTML=renderDomainBar(lang);
   document.getElementById('main-content').innerHTML=renderTab(ACTIVE_TAB,lang);
@@ -1452,6 +1455,27 @@ const SIG_LABELS = {
 function buildInvPanel(lang){
   const d=INV[lang];
   const sl=SIG_LABELS;
+  const newestDate=computeNewestDate(lang);
+
+  // Staleness check — warn if investment data is >14 days older than newest signal
+  const invDataDate=20260531; // hardcoded May 31 — update when you manually refresh the panel
+  const newestNum=computeNewestDate('en'); // get the raw number via a helper
+  const isStale=parseDateNum(computeNewestDate('en'))>invDataDate+14;
+
+  const timestampLabel=lang==='ar'
+    ?`📅 بيانات الاستثمار من: 31 مايو 2026 · أحدث الإشارات: ${newestDate}`
+    :`📅 Investment data as of: May 31, 2026 · Newest signals: ${newestDate}`;
+  const staleWarning=isStale
+    ?(lang==='ar'
+      ?'⚠️ بيانات الاستثمار قد تكون قديمة — يُنصح بمراجعة يدوية'
+      :'⚠️ Investment ratings may be stale — manual review recommended')
+    :'';
+
+  const timestampHtml=`<div style="margin-bottom:14px;padding:9px 12px;background:var(--paper2);border-radius:7px;border:.5px solid var(--line)">
+    <div style="font-size:10px;font-family:'DM Mono',monospace;color:var(--ink3)">${timestampLabel}</div>
+    ${staleWarning?`<div style="margin-top:5px;font-size:10px;font-family:'DM Mono',monospace;color:var(--amber)">${staleWarning}</div>`:''}
+  </div>`;
+
   const stocks=d.stocks.map(s=>`<div class="stock-row">
     <div class="stock-ticker">${s.ticker}</div>
     <div class="stock-name">${s.name}</div>
@@ -1467,7 +1491,8 @@ function buildInvPanel(lang){
     <div class="risk-icon">${r.icon}</div>
     <div class="risk-text"><strong>${r.title}</strong>${r.body}</div>
   </div>`).join('');
-  return `<div class="inv-block"><div class="inv-sec-title">${d.stocksTitle}</div>${stocks}</div>
+  return timestampHtml+
+    `<div class="inv-block"><div class="inv-sec-title">${d.stocksTitle}</div>${stocks}</div>
     <div class="inv-block"><div class="inv-sec-title">${d.oppsTitle}</div>${opps}</div>
     <div class="inv-block"><div class="inv-sec-title">${d.risksTitle}</div>${risks}</div>`;
 }
