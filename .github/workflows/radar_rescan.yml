@@ -3,7 +3,7 @@ name: 🔍 AI Inspection Radar — Daily Rescan
 on:
   # Runs at 06:00 UTC = 09:00 KSA (Arabia Standard Time, UTC+3)
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * 0,2,4'
 
   # Also allow manual trigger from GitHub UI
   workflow_dispatch:
