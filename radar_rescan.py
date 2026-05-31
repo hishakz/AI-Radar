@@ -73,8 +73,8 @@ def run_rescan():
         log(f"  Scanning: {domain_query}")
         try:
             response = client.messages.create(
-                model="claude-haiku-4-5-20251001",
-                max_tokens=1000,
+                model="claude-sonnet-4-6",
+                max_tokens=2000,
                 tools=[{"type": "web_search_20250305", "name": "web_search"}],
                 messages=[{
                     "role": "user",
@@ -120,9 +120,31 @@ Return ONLY a valid JSON array. No markdown, no preamble."""
         update_dashboard(all_signals, today)
         send_summary(all_signals, today)
     else:
-        log("  No new signals found — dashboard unchanged")
+        log("  No new signals found — updating scan timestamp only")
+        update_scan_timestamp(today)
 
     log("═══ RESCAN COMPLETE ═══\n")
+
+# ─── TIMESTAMP-ONLY UPDATE (when 0 new signals) ───────────────────────────────
+def update_scan_timestamp(today):
+    """Update only the scan date comment in the HTML — no signal injection."""
+    try:
+        with open(DASHBOARD_PATH, "r", encoding="utf-8") as f:
+            html = f.read()
+        # Inject a comment marker so the file changes (triggers git commit)
+        marker = f"// Last rescan: {today} (0 new signals)"
+        old_marker_pat = r"// Last rescan: [^\n]+"
+        import re
+        if re.search(old_marker_pat, html):
+            html = re.sub(old_marker_pat, marker, html)
+        else:
+            html = html.replace("// ════════════════════════════════════════════════════════════════\n// STATE",
+                                f"{marker}\n// ════════════════════════════════════════════════════════════════\n// STATE")
+        with open(DASHBOARD_PATH, "w", encoding="utf-8") as f:
+            f.write(html)
+        log(f"  ✓ Timestamp updated: {today}")
+    except Exception as e:
+        log(f"  ✗ Timestamp update failed: {e}")
 
 # ─── DOMAIN MAPPER ───────────────────────────────────────────────────────────
 def map_domains(query):
