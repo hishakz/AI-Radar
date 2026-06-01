@@ -41,16 +41,23 @@ KSA_TZ            = pytz.timezone("Asia/Riyadh")
 SCAN_TIME_KSA     = "09:00"
 LOG_FILE          = "./radar_rescan.log"
 
-# Domains to scan — maps to dashboard domain filters
+# ─── DYNAMIC YEAR CONFIG ─────────────────────────────────────────────────────
+_NOW        = datetime.now()
+CURRENT_YEAR = _NOW.year
+NEXT_YEAR    = _NOW.year + 1
+
+# Domains to scan — uses current and next year automatically
+# Includes a predictions/outlook domain so 2027 signals surface before Jan 1
 SCAN_DOMAINS = [
-    "smart city AI inspection continuous monitoring",
-    "AI construction excavation inspection drones robots 2026",
-    "AI food safety restaurant inspection automated 2026",
-    "AI building housing inspection smart technology 2026",
-    "AI inspection policy regulation government 2026",
-    "AI model release Anthropic OpenAI Google May June 2026",
-    "AI security cybersecurity Glasswing vulnerability 2026",
-    "AI investment funding IPO 2026",
+    f"smart city AI inspection continuous monitoring autonomous {CURRENT_YEAR}",
+    f"AI construction excavation inspection drones robots {CURRENT_YEAR}",
+    f"AI food safety restaurant inspection automated {CURRENT_YEAR}",
+    f"AI building housing inspection smart technology {CURRENT_YEAR}",
+    f"AI inspection policy regulation government {CURRENT_YEAR}",
+    f"AI model release Anthropic OpenAI Google {CURRENT_YEAR}",
+    f"AI security cybersecurity vulnerability {CURRENT_YEAR}",
+    f"AI investment funding IPO {CURRENT_YEAR}",
+    f"AI predictions outlook {NEXT_YEAR} forecast trends inspection smart city",
 ]
 
 # ─── LOGGING ─────────────────────────────────────────────────────────────────
@@ -86,7 +93,7 @@ Each object must have these exact keys:
   s: summary (string, max 300 chars — include specific numbers/dates/names)
   url: source URL (string)
   cat: one of: Release | Breakthrough | Policy | Research | Funding | Security
-  d: date string like "Today" or "2 days ago" or "May 28, 2026"
+  d: use exact date like "{today}" or "2 days ago" or real date like "June 3, {CURRENT_YEAR}" — never hardcode a year
 
 Return ONLY a valid JSON array. No markdown, no preamble."""
                 }]
@@ -171,60 +178,77 @@ def map_domains(query):
     return domains if domains else ["ai-models"]
 
 # ─── DASHBOARD UPDATER ────────────────────────────────────────────────────────
+# ─── DASHBOARD UPDATER ────────────────────────────────────────────────────────
 def update_dashboard(signals, today):
     log("  Updating dashboard HTML...")
     try:
         with open(DASHBOARD_PATH, "r", encoding="utf-8") as f:
             html = f.read()
 
-        # Build new signal JS objects for the AI_SIGNALS array
-        new_js_signals = []
-        for sig in signals:
-            url   = sig.get("url", "")
-            cat   = sig.get("cat", "Research")
-            d_str = sig.get("d", "Today")
-            title = sig.get("t", "").replace("'", "\\'")
-            summary = sig.get("s", "").replace("'", "\\'")
-            doms  = json.dumps(map_domains(sig.get("query", "")))
+        # ── DEDUPLICATION: skip signals already in the file ────────────
+        existing_urls   = set(re.findall(r"url:'([^']{10,})'", html))
+        existing_titles = [t.lower() for t in re.findall(r"en:\{t:'([^']{10,80})'", html)]
 
-            js = f"""  {{domains:{doms},url:'{url}',
-   en:{{t:'{title}',cat:'{cat}',d:'{d_str} AUTO',s:'{summary}'}},
-   ar:{{t:'{title}',cat:'{cat}',d:'{d_str} تلقائي',s:'{summary}'}}}},"""
+        def is_duplicate(sig):
+            url   = sig.get("url", "").strip()
+            title = sig.get("t", "").strip().lower()
+            if url and url in existing_urls:
+                return True
+            # Check 6-word phrase overlap with existing titles
+            words = title.split()
+            for i in range(max(0, len(words) - 5)):
+                phrase = " ".join(words[i:i+6])
+                if any(phrase in et for et in existing_titles):
+                    return True
+            return False
+
+        fresh, skipped = [], 0
+        for sig in signals:
+            if is_duplicate(sig):
+                skipped += 1
+            else:
+                fresh.append(sig)
+
+        if skipped:
+            log(f"  ↩ {skipped} duplicate(s) skipped — already in dashboard")
+        if not fresh:
+            log("  All signals already exist — nothing new to inject")
+            update_scan_timestamp(today)
+            return
+        log(f"  ✚ {len(fresh)} genuinely new signals to inject")
+
+        # Build new signal JS objects
+        new_js_signals = []
+        for sig in fresh:
+            url     = sig.get("url", "")
+            cat     = sig.get("cat", "Research")
+            d_str   = sig.get("d", "Today")
+            title   = sig.get("t", "").replace("'", "\\'").replace("`", "'")
+            summary = sig.get("s", "").replace("'", "\\'").replace("`", "'")
+            doms    = json.dumps(map_domains(sig.get("query", "")))
+            js = (f"  {{domains:{doms},url:\'{url}\',"
+                  f"\n   en:{{t:\'{title}\',cat:\'{cat}\',d:\'{d_str} AUTO\',s:\'{summary}\'}},"
+                  f"\n   ar:{{t:\'{title}\',cat:\'{cat}\',d:\'{d_str} تلقائي\',s:\'{summary}\'}}}},")
             new_js_signals.append(js)
 
-        # Insert new signals at top of AI_SIGNALS array
-        insertion_block = "\n  // ══ AUTO-RESCAN " + today.upper() + " ══\n"
-        insertion_block += "\n".join(new_js_signals) + "\n"
+        # Prepend to AI_SIGNALS — ALL previous signals preserved below
+        block = "\n  // ══ AUTO-RESCAN " + today.upper() + " ══\n"
+        block += "\n".join(new_js_signals) + "\n"
+        html = html.replace("const AI_SIGNALS=[", "const AI_SIGNALS=[\n" + block)
 
-        html = html.replace(
-            "const AI_SIGNALS=[",
-            "const AI_SIGNALS=[\n" + insertion_block
-        )
-
-        # Update scan date and count
-        date_short = datetime.now(KSA_TZ).strftime("%b %-d, %Y")
-        date_ar    = datetime.now(KSA_TZ).strftime("%-d مايو %Y").replace(
-            "مايو", get_ar_month(datetime.now(KSA_TZ).month)
-        )
-
-        # Count current signals
-        current_count = html.count("en:{t:'") + html.count('en:{t:"')
-        
-        html = re.sub(
-            r"scanDate:'[^']+', sigCount:'[^']+ signals'",
-            f"scanDate:'{date_short}', sigCount:'{current_count} signals'",
-            html
-        )
-        html = re.sub(
-            r"scanDate:'[^']+', sigCount:'[^']+ إشارة'",
-            f"scanDate:'{date_ar}', sigCount:'{current_count} إشارة'",
-            html
-        )
+        # Update scan date
+        now        = datetime.now(KSA_TZ)
+        date_short = now.strftime("%b %-d, %Y")
+        date_ar    = f"{now.day} {get_ar_month(now.month)} {now.year}"
+        count      = html.count("en:{t:'")
+        html = re.sub(r"scanDate:'[^']+', sigCount:'[^']+ signals'",
+                      f"scanDate:\'{date_short}\', sigCount:\'{count} signals\'", html)
+        html = re.sub(r"scanDate:'[^']+', sigCount:'[^']+ إشارة'",
+                      f"scanDate:\'{date_ar}\', sigCount:\'{count} إشارة\'", html)
 
         with open(DASHBOARD_PATH, "w", encoding="utf-8") as f:
             f.write(html)
-
-        log(f"  ✓ Dashboard updated — {len(signals)} signals injected")
+        log(f"  ✓ Done — {len(fresh)} added, {skipped} duplicates skipped, {count} total signals")
 
     except Exception as e:
         log(f"  ✗ Dashboard update failed: {e}")
