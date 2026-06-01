@@ -998,50 +998,81 @@ let LANG='en', ACTIVE_TAB='inspect', ACTIVE_DOMAIN='all', SORT_MODE='date';
 const FILL_COLORS=['var(--green)','#6ab04c','var(--amber)','#e07020','var(--red)'];
 const FILL_WIDTHS=[20,40,60,80,100];
 
-// Date parsing for sort — maps common date strings to sortable numbers
+// Date parsing — fully dynamic, year-agnostic, works in 2026, 2027, 2028+
 function parseDateNum(d){
   if(!d) return 0;
-  const s=d.toLowerCase().replace(' auto','').replace(' تلقائي','').trim();
-  // Full date format: "May 31, 2026" or "31 مايو 2026"
-  const fullMatch = s.match(/(\w+)\s+(\d{1,2}),?\s+(\d{4})/);
-  if(fullMatch){
-    const months={january:1,february:2,march:3,april:4,may:5,june:6,july:7,august:8,september:9,october:10,november:11,december:12};
-    const m=months[fullMatch[1].toLowerCase()];
-    if(m) return parseInt(fullMatch[3])*10000 + m*100 + parseInt(fullMatch[2]);
-  }
-  // Arabic months
-  const arMonths={يناير:1,فبراير:2,مارس:3,أبريل:4,مايو:5,يونيو:6,يوليو:7,أغسطس:8,سبتمبر:9,أكتوبر:10,نوفمبر:11,ديسمبر:12};
-  for(const [ar,num] of Object.entries(arMonths)){
+  const s=d.toLowerCase().replace(/ auto$/,'').replace(/ تلقائي$/,'').trim();
+
+  // Helper: convert a JS Date to sortable YYYYMMDD integer
+  const toN = dt => dt.getFullYear()*10000 + (dt.getMonth()+1)*100 + dt.getDate();
+  const now  = new Date();
+  const ago  = n => { const x=new Date(now); x.setDate(x.getDate()-n); return toN(x); };
+  const wAgo = n => ago(n*7);
+  const mAgo = n => { const x=new Date(now); x.setMonth(x.getMonth()-n); return toN(x); };
+
+  // ── Full named-date: "May 31, 2026" / "31 May 2026" / "June 1, 2027" ──
+  const EN_MONTHS = {january:1,february:2,march:3,april:4,may:5,june:6,
+                     july:7,august:8,september:9,october:10,november:11,december:12};
+  // "Month DD, YYYY" or "Month DD YYYY"
+  const m1 = s.match(/([a-z]+)\s+(\d{1,2}),?\s+(\d{4})/);
+  if(m1 && EN_MONTHS[m1[1]]) return parseInt(m1[3])*10000 + EN_MONTHS[m1[1]]*100 + parseInt(m1[2]);
+  // "DD Month YYYY"
+  const m2 = s.match(/(\d{1,2})\s+([a-z]+)\s+(\d{4})/);
+  if(m2 && EN_MONTHS[m2[2]]) return parseInt(m2[3])*10000 + EN_MONTHS[m2[2]]*100 + parseInt(m2[1]);
+
+  // ── Arabic full date: "31 مايو 2026" ──
+  const AR = {يناير:1,فبراير:2,مارس:3,أبريل:4,مايو:5,يونيو:6,
+              يوليو:7,أغسطس:8,سبتمبر:9,أكتوبر:10,نوفمبر:11,ديسمبر:12};
+  for(const [ar,mn] of Object.entries(AR)){
     if(s.includes(ar)){
-      const dayMatch=s.match(/(\d{1,2})/);
-      const yearMatch=s.match(/(\d{4})/);
-      if(dayMatch&&yearMatch) return parseInt(yearMatch[1])*10000+num*100+parseInt(dayMatch[1]);
-      if(yearMatch) return parseInt(yearMatch[1])*10000+num*100;
+      const dy = s.match(/(\d{1,2})/);
+      const yr = s.match(/(\d{4})/);
+      if(dy && yr) return parseInt(yr[1])*10000 + mn*100 + parseInt(dy[1]);
+      if(yr)       return parseInt(yr[1])*10000 + mn*100;
     }
   }
-  if(s.includes('today')||s.includes('اليوم')) return 20260531;
-  if(s.includes('may')||s.includes('مايو')) return 20260501;
-  if(s.includes('2 week')||s.includes('أسبوعان')) return 20260517;
-  if(s.includes('3 week')||s.includes('3 أسابيع')) return 20260510;
-  if(s.includes('4 week')||s.includes('4 أسابيع')) return 20260503;
-  if(s.includes('6 week')||s.includes('6 أسابيع')) return 20260419;
-  if(s.includes('1 week')||s.includes('week ago')||s.includes('أسبوع')) return 20260524;
-  if(s.includes('2 day')||s.includes('يومان')) return 20260529;
-  if(s.includes('3 day')||s.includes('3 أيام')) return 20260528;
-  if(s.includes('4 day')||s.includes('4 أيام')) return 20260527;
-  if(s.includes('5 day')||s.includes('5 أيام')) return 20260526;
-  if(s.includes('8 day')||s.includes('8 أيام')) return 20260523;
-  if(s.includes('9 day')||s.includes('9 أيام')) return 20260522;
-  if(s.includes('10 day')||s.includes('10 أيام')) return 20260521;
-  if(s.includes('month')||s.includes('شهر')) return 20260430;
-  if(s.includes('apr')||s.includes('أبريل')) return 20260415;
-  if(s.includes('mar')||s.includes('مارس')) return 20260315;
-  if(s.includes('feb')||s.includes('فبراير')) return 20260215;
-  if(s.includes('jan')||s.includes('يناير')) return 20260115;
-  if(s.includes('dec 2025')||s.includes('ديسمبر 2025')) return 20251215;
-  if(s.includes('2025-2026')||s.includes('2026')) return 20260101;
-  if(s.includes('ongoing')||s.includes('مستمر')) return 20260101;
-  if(s.includes('ready now')||s.includes('جاهز الآن')) return 20260531;
+
+  // ── Partial named month (no year given — assume current or previous year) ──
+  const thisYear = now.getFullYear();
+  const thisMonth = now.getMonth()+1;
+  const EN_ABBR = {jan:1,feb:2,mar:3,apr:4,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
+  // "Apr 17" or "apr 17, 2026 new" style (already caught above if year present)
+  for(const [abbr,mn] of Object.entries(EN_ABBR)){
+    if(s.startsWith(abbr)||s.includes(' '+abbr)){
+      const dy = s.match(/(\d{1,2})/);
+      const yr = mn <= thisMonth ? thisYear : thisYear - 1; // don't jump to future
+      return yr*10000 + mn*100 + (dy ? parseInt(dy[1]) : 15);
+    }
+  }
+  // May is both a month and a word — handle carefully
+  if((s.startsWith('may ')||s.includes(' may ')||s==='may')&&!s.match(/\d{4}/)){
+    const dy=s.match(/(\d{1,2})/);
+    const yr=5<=thisMonth?thisYear:thisYear-1;
+    return yr*10000+5*100+(dy?parseInt(dy[1]):15);
+  }
+
+  // ── Relative dates — computed from today ──
+  if(s.includes('today')||s.includes('اليوم')||s.includes('now')) return toN(now);
+  const dayN = s.match(/(\d+)\s*day/);   if(dayN) return ago(parseInt(dayN[1]));
+  const wkN  = s.match(/(\d+)\s*week/);  if(wkN)  return wAgo(parseInt(wkN[1]));
+  const moN  = s.match(/(\d+)\s*month/); if(moN)  return mAgo(parseInt(moN[1]));
+  // Arabic relative
+  if(s.includes('يومان'))                return ago(2);
+  if(s.match(/(\d+)\s*أيام/))           return ago(parseInt(s.match(/(\d+)/)[1]));
+  if(s.match(/(\d+)\s*أسابيع/))         return wAgo(parseInt(s.match(/(\d+)/)[1]));
+  if(s.includes('أسبوع'))               return wAgo(1);
+  if(s.includes('شهر'))                 return mAgo(1);
+  if(s.match(/(\d+)\s*شهر/))            return mAgo(parseInt(s.match(/(\d+)/)[1]));
+  if(s.includes('week ago')||s.includes('week')) return wAgo(1);
+  if(s.includes('month'))               return mAgo(1);
+
+  // ── Year-only or range ──
+  const yrOnly = s.match(/\b(20\d\d)\b/);
+  if(yrOnly) return parseInt(yrOnly[1])*10000 + 101; // Jan 1 of that year
+
+  // ── Fallbacks ──
+  if(s.includes('ongoing')||s.includes('مستمر')) return toN(now)-365;
+  if(s.includes('ready')||s.includes('جاهز'))   return toN(now);
   return 0;
 }
 
