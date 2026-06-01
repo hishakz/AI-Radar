@@ -148,3 +148,52 @@
 
 [2026-05-31 16:43:51 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-01 09:16:20 KSA] Manual run triggered (--now flag)
+[2026-06-01 09:16:20 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-01 09:16:20 KSA]   Scanning: smart city AI inspection continuous monitoring
+[2026-06-01 09:16:30 KSA]     ✓ 3 signals found
+[2026-06-01 09:16:32 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-01 09:16:40 KSA]     ✓ 1 signals found
+[2026-06-01 09:16:42 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-01 09:16:48 KSA]     ✓ 3 signals found
+[2026-06-01 09:16:50 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-01 09:16:59 KSA]     ✓ 3 signals found
+[2026-06-01 09:17:01 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-01 09:17:15 KSA]     ✓ 3 signals found
+[2026-06-01 09:17:17 KSA]   Scanning: AI model release Anthropic OpenAI Google May June 2026
+[2026-06-01 09:17:24 KSA]     ✓ 3 signals found
+[2026-06-01 09:17:26 KSA]   Scanning: AI security cybersecurity Glasswing vulnerability 2026
+[2026-06-01 09:17:34 KSA]     ✓ 3 signals found
+[2026-06-01 09:17:36 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-01 09:17:43 KSA]     ✓ 3 signals found
+[2026-06-01 09:17:45 KSA]   Total new signals: 22
+[2026-06-01 09:17:45 KSA]   Updating dashboard HTML...
+[2026-06-01 09:17:45 KSA]   ✓ Dashboard updated — 22 signals injected
+[2026-06-01 09:17:45 KSA] 
+  ┌─── SCAN SUMMARY — June 01, 2026 ───
+[2026-06-01 09:17:45 KSA]   │ 01. [Release] AI-Powered Predictive Maintenance Platform Deployed for Smart City Infrastructur
+[2026-06-01 09:17:45 KSA]   │ 02. [Release] NYC Transit Tech Lab Launches 18-Company AI Cohort for Infrastructure Inspection
+[2026-06-01 09:17:45 KSA]   │ 03. [Breakthrough] Niantic and Spexi Scale 3D Physical AI for City-Scale Infrastructure Inspections
+[2026-06-01 09:17:45 KSA]   │ 04. [Funding] AI Datacenter Construction Boom Ignites Massive Growth for Drone-as-a-Service
+[2026-06-01 09:17:45 KSA]   │ 05. [Policy] USDA Launches AI Initiative to Modernize Food Safety Across Supply Chain
+[2026-06-01 09:17:45 KSA]   │ 06. [Breakthrough] AI Computer Vision Systems Achieve 99%+ Detection Accuracy in Food Quality Inspe
+[2026-06-01 09:17:45 KSA]   │ 07. [Research] Chicago Health Department Applies Generative AI to Process Food Safety Inspectio
+[2026-06-01 09:17:45 KSA]   │ 08. [Policy] Denver Launches AI Platform to Speed Up Housing Permits
+[2026-06-01 09:17:45 KSA]   │ 09. [Release] Colorado's Alpine Intelligence AI Tool Predicts Home Issues Before Inspection
+[2026-06-01 09:17:45 KSA]   │ 10. [Research] Future of Home Inspections: 190M Homes to Use Smart Technology by 2029
+[2026-06-01 09:17:45 KSA]   │ 11. [Policy] EU AI Act transparency rules take effect August 2026 after Digital Omnibus deal
+[2026-06-01 09:17:45 KSA]   │ 12. [Policy] Trump administration shifts stance, considers AI model oversight after Anthropic
+[2026-06-01 09:17:45 KSA]   │ 13. [Policy] Colorado AI Act enforcement begins June 30, 2026 after February delay
+[2026-06-01 09:17:45 KSA]   │ 14. [Funding] Anthropic raises $65 billion, launches Claude Opus 4.8, plans Mythos release
+[2026-06-01 09:17:45 KSA]   │ 15. [Release] Google retires Gemini 2.0, launches Gemini 3.5 Flash at I/O 2026
+[2026-06-01 09:17:45 KSA]   │ 16. [Release] OpenAI grants EU access to GPT-5.5-Cyber model for cybersecurity teams
+[2026-06-01 09:17:45 KSA]   │ 17. [Breakthrough] Anthropic Project Glasswing update reveals 10000+ vulnerabilities found by Claud
+[2026-06-01 09:17:45 KSA]   │ 18. [Research] State of AI Cybersecurity 2026: 92% of security pros concerned about AI agents
+[2026-06-01 09:17:45 KSA]   │ 19. [Release] OpenAI releases GPT-5.5-Cyber for verified defenders in limited preview
+[2026-06-01 09:17:45 KSA]   │ 20. [Funding] OpenAI Targets $1 Trillion IPO in Q4 2026 Following $122B Record Funding Round
+[2026-06-01 09:17:45 KSA]   │ 21. [Release] SpaceX Files Confidentially for IPO With $1.75 Trillion Valuation Target, Expect
+[2026-06-01 09:17:45 KSA]   │ 22. [Funding] Q1 2026 Shatters Records With $300B Global Venture Investment, AI Capturing 80% 
+[2026-06-01 09:17:45 KSA]   └─── 22 total signals ───
+
+[2026-06-01 09:17:45 KSA] ═══ RESCAN COMPLETE ═══
+
