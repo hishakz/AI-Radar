@@ -301,3 +301,54 @@
 
 [2026-06-01 11:53:28 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-02 09:20:55 KSA] Manual run triggered (--now flag)
+[2026-06-02 09:20:55 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-02 09:20:55 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-02 09:21:06 KSA]     ✓ 3 signals found
+[2026-06-02 09:21:08 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-02 09:21:27 KSA]     ✓ 3 signals found
+[2026-06-02 09:21:29 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-02 09:21:39 KSA]     ✓ 0 signals found
+[2026-06-02 09:21:41 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-02 09:21:53 KSA]     ✓ 1 signals found
+[2026-06-02 09:21:55 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-02 09:22:02 KSA]     ✓ 3 signals found
+[2026-06-02 09:22:04 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-02 09:22:15 KSA]     ✓ 3 signals found
+[2026-06-02 09:22:17 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-02 09:22:30 KSA]     ✓ 3 signals found
+[2026-06-02 09:22:32 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-02 09:22:40 KSA]     ✓ 3 signals found
+[2026-06-02 09:22:42 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-02 09:22:54 KSA]     ✓ 1 signals found
+[2026-06-02 09:22:56 KSA]   Total new signals: 20
+[2026-06-02 09:22:56 KSA]   Updating dashboard HTML...
+[2026-06-02 09:22:56 KSA]   ↩ 6 duplicate(s) skipped — already in dashboard
+[2026-06-02 09:22:56 KSA]   ✚ 14 genuinely new signals to inject
+[2026-06-02 09:22:56 KSA]   ✓ Done — 14 added, 6 duplicates skipped, 125 total signals
+[2026-06-02 09:22:56 KSA] 
+  ┌─── SCAN SUMMARY — June 02, 2026 ───
+[2026-06-02 09:22:56 KSA]   │ 01. [Breakthrough] NTT Group and Mitsubishi Chemical achieve remote robotic inspection breakthrough
+[2026-06-02 09:22:56 KSA]   │ 02. [Release] Niantic Spatial and Spexi partner for city-scale 3D physical AI infrastructure i
+[2026-06-02 09:22:56 KSA]   │ 03. [Research] McKinsey analysis reveals AI-native cities require continuous environmental moni
+[2026-06-02 09:22:56 KSA]   │ 04. [Breakthrough] AI Datacenter Construction Boom Ignites Drone-as-a-Service Growth Opportunity
+[2026-06-02 09:22:56 KSA]   │ 05. [Release] Ouster Launches Rev8 LiDAR Sensors with Double Range and Resolution for Construc
+[2026-06-02 09:22:56 KSA]   │ 06. [Breakthrough] Wayve Launches Wayve Labs for Embodied AI Research Beyond Autonomous Vehicles
+[2026-06-02 09:22:56 KSA]   │ 07. [Breakthrough] AI Is Quietly Reshaping Home Inspection Workflows in 2026
+[2026-06-02 09:22:56 KSA]   │ 08. [Policy] EU AI Act transparency rules take effect August 2026
+[2026-06-02 09:22:56 KSA]   │ 09. [Policy] Colorado AI Act takes effect June 30, 2026
+[2026-06-02 09:22:56 KSA]   │ 10. [Policy] White House Framework recommends federal AI preemption of state laws
+[2026-06-02 09:22:56 KSA]   │ 11. [Release] Anthropic Releases Claude Opus 4.8 with Improved Coding and Honesty
+[2026-06-02 09:22:56 KSA]   │ 12. [Funding] Anthropic Announces $65 Billion Funding Round at $965 Billion Valuation
+[2026-06-02 09:22:56 KSA]   │ 13. [Release] Google Launches Gemini 3.5 Flash at Google I/O with Advanced Agentic Capabilitie
+[2026-06-02 09:22:56 KSA]   │ 14. [Security] Malicious npm Package codexui-android Exfiltrates OpenAI Codex Tokens
+[2026-06-02 09:22:56 KSA]   │ 15. [Breakthrough] OpenAI Daybreak Initiative Launches GPT-5.5-Cyber with Enhanced Security Control
+[2026-06-02 09:22:56 KSA]   │ 16. [Security] OpenAI Updates Mac Apps After Mini Shai-Hulud Supply Chain Attack Exposes Signin
+[2026-06-02 09:22:56 KSA]   │ 17. [Funding] Anthropic confidentially files for IPO with $65B Series H funding round, 965B va
+[2026-06-02 09:22:56 KSA]   │ 18. [Funding] AI venture funding hits $255.5B in Q1 2026, surpassing entire 2025 annual total
+[2026-06-02 09:22:56 KSA]   │ 19. [Release] SpaceX files for July 2026 IPO targeting $75B valuation amid xAI merger
+[2026-06-02 09:22:56 KSA]   │ 20. [Funding] Broadcom AI Revenue to Exceed $100B in 2027, Driving Stock Upside
+[2026-06-02 09:22:56 KSA]   └─── 20 total signals ───
+
+[2026-06-02 09:22:56 KSA] ═══ RESCAN COMPLETE ═══
+
