@@ -352,3 +352,55 @@
 
 [2026-06-02 09:22:56 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-03 10:37:49 KSA] Manual run triggered (--now flag)
+[2026-06-03 10:37:49 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-03 10:37:49 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-03 10:38:03 KSA]     ✓ 3 signals found
+[2026-06-03 10:38:05 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-03 10:38:21 KSA]     ✓ 3 signals found
+[2026-06-03 10:38:23 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-03 10:38:32 KSA]     ✓ 3 signals found
+[2026-06-03 10:38:34 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-03 10:38:45 KSA]     ✓ 0 signals found
+[2026-06-03 10:38:47 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-03 10:39:01 KSA]     ✓ 3 signals found
+[2026-06-03 10:39:03 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-03 10:39:10 KSA]     ✓ 3 signals found
+[2026-06-03 10:39:12 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-03 10:39:26 KSA]     ✓ 3 signals found
+[2026-06-03 10:39:28 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-03 10:39:34 KSA]     ✓ 3 signals found
+[2026-06-03 10:39:36 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-03 10:39:41 KSA]     ✓ 0 signals found
+[2026-06-03 10:39:43 KSA]   Total new signals: 21
+[2026-06-03 10:39:43 KSA]   Updating dashboard HTML...
+[2026-06-03 10:39:43 KSA]   ↩ 8 duplicate(s) skipped — already in dashboard
+[2026-06-03 10:39:43 KSA]   ✚ 13 genuinely new signals to inject
+[2026-06-03 10:39:43 KSA]   ✓ Done — 13 added, 8 duplicates skipped, 138 total signals
+[2026-06-03 10:39:43 KSA] 
+  ┌─── SCAN SUMMARY — June 03, 2026 ───
+[2026-06-03 10:39:43 KSA]   │ 01. [Release] Infrastructure AI Expands Galaxy Agentic Operating System for Global Facilities 
+[2026-06-03 10:39:43 KSA]   │ 02. [Release] NVIDIA Jetson Brings Agentic AI to Physical Infrastructure Inspection and Roboti
+[2026-06-03 10:39:43 KSA]   │ 03. [Breakthrough] Niantic and Spexi Combine Drone Networks with Physical AI for Infrastructure Ins
+[2026-06-03 10:39:43 KSA]   │ 04. [Breakthrough] DroneDeploy Surpasses 20 Trillion Sq Ft Visual Data; Robotic Missions Up 160% Yo
+[2026-06-03 10:39:43 KSA]   │ 05. [Release] Built Robotics Expands AI-Driven Excavation Systems for Complex Soil Navigation
+[2026-06-03 10:39:43 KSA]   │ 06. [Research] MIT Develops MILAbots Robotic Assembly System; Reduces Embodied Carbon by 82 Per
+[2026-06-03 10:39:43 KSA]   │ 07. [Policy] USDA Modernizes Food Safety with AI and Digital Technologies Initiative
+[2026-06-03 10:39:43 KSA]   │ 08. [Breakthrough] AI Computer Vision Now Baseline for Food Quality Inspection in 2026
+[2026-06-03 10:39:43 KSA]   │ 09. [Research] AI Food Safety Training and GFSI Requirements Webinar Series
+[2026-06-03 10:39:43 KSA]   │ 10. [Policy] EU reaches political agreement on AI Act amendments extending compliance deadlin
+[2026-06-03 10:39:43 KSA]   │ 11. [Policy] Connecticut approves comprehensive AI legislation amid wave of state AI bills in
+[2026-06-03 10:39:43 KSA]   │ 12. [Policy] Colorado AI Act enforcement date confirmed for June 30, 2026 with potential amen
+[2026-06-03 10:39:43 KSA]   │ 13. [Funding] Anthropic files for US IPO as Claude AI chatbot continues growth
+[2026-06-03 10:39:43 KSA]   │ 14. [Release] Microsoft launches new AI models MAI-Code-1-Flash and MAI-Thinking-1 at Build 20
+[2026-06-03 10:39:43 KSA]   │ 15. [Policy] Trump AI executive order requests voluntary model access for cybersecurity testi
+[2026-06-03 10:39:43 KSA]   │ 16. [Security] Google June 2026 Android Update Patches 124 Flaws, One Actively Exploited
+[2026-06-03 10:39:43 KSA]   │ 17. [Research] CSA Releases 2026 State of Modern Application & AI Security Report
+[2026-06-03 10:39:43 KSA]   │ 18. [Security] Palo Alto Networks PAN-OS GlobalProtect Authentication Bypass Under Exploitation
+[2026-06-03 10:39:43 KSA]   │ 19. [Release] Anthropic confidentially files IPO prospectus with SEC
+[2026-06-03 10:39:43 KSA]   │ 20. [Funding] Anthropic raises $65 billion, surpasses OpenAI as most valuable AI startup
+[2026-06-03 10:39:43 KSA]   │ 21. [Release] SpaceX prepares for IPO launch targeting $1.75 trillion valuation
+[2026-06-03 10:39:43 KSA]   └─── 21 total signals ───
+
+[2026-06-03 10:39:43 KSA] ═══ RESCAN COMPLETE ═══
+
