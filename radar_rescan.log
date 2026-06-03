@@ -404,3 +404,55 @@
 
 [2026-06-03 10:39:43 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-03 23:00:30 KSA] Manual run triggered (--now flag)
+[2026-06-03 23:00:30 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-03 23:00:30 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-03 23:00:39 KSA]     ✓ 3 signals found
+[2026-06-03 23:00:41 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-03 23:00:56 KSA]     ✓ 0 signals found
+[2026-06-03 23:00:58 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-03 23:01:15 KSA]     ✓ 0 signals found
+[2026-06-03 23:01:17 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-03 23:01:28 KSA]     ✓ 3 signals found
+[2026-06-03 23:01:30 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-03 23:01:44 KSA]     ✓ 3 signals found
+[2026-06-03 23:01:46 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-03 23:01:53 KSA]     ✓ 3 signals found
+[2026-06-03 23:01:55 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-03 23:02:05 KSA]     ✓ 3 signals found
+[2026-06-03 23:02:07 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-03 23:02:15 KSA]     ✓ 3 signals found
+[2026-06-03 23:02:17 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-03 23:02:25 KSA]     ✓ 3 signals found
+[2026-06-03 23:02:27 KSA]   Total new signals: 21
+[2026-06-03 23:02:27 KSA]   Updating dashboard HTML...
+[2026-06-03 23:02:27 KSA]   ↩ 8 duplicate(s) skipped — already in dashboard
+[2026-06-03 23:02:27 KSA]   ✚ 13 genuinely new signals to inject
+[2026-06-03 23:02:27 KSA]   ✓ Done — 13 added, 8 duplicates skipped, 151 total signals
+[2026-06-03 23:02:27 KSA] 
+  ┌─── SCAN SUMMARY — June 03, 2026 ───
+[2026-06-03 23:02:27 KSA]   │ 01. [Release] Infrastructure AI Announces Galaxy Agentic OS for Smart City Operations
+[2026-06-03 23:02:27 KSA]   │ 02. [Breakthrough] Niantic and Spexi Partner on 3D Physical AI for Autonomous Infrastructure Inspec
+[2026-06-03 23:02:27 KSA]   │ 03. [Breakthrough] Taiwan's AI Mobility Ecosystem Integrates Hardware and Smart City Infrastructure
+[2026-06-03 23:02:27 KSA]   │ 04. [Breakthrough] Virginia Tech Develops MARIO: AI-Powered Robot Team for Construction Site Monito
+[2026-06-03 23:02:27 KSA]   │ 05. [Release] BetaQuick Releases AI Voice Inspection Scheduling for Building Departments
+[2026-06-03 23:02:27 KSA]   │ 06. [Breakthrough] AI Home Inspection Adoption Rising as Platforms Transform Real Estate Workflows
+[2026-06-03 23:02:27 KSA]   │ 07. [Policy] Trump Exec Order: Voluntary AI Review Process for Frontier Models
+[2026-06-03 23:02:27 KSA]   │ 08. [Policy] EU Unveils Tech Sovereignty Package with Cloud and AI Development Act
+[2026-06-03 23:02:27 KSA]   │ 09. [Policy] EU AI Act Enforcement Gets Independent Expert Support
+[2026-06-03 23:02:27 KSA]   │ 10. [Release] Microsoft Releases MAI-Code-1-Flash Model at Build 2026 Conference
+[2026-06-03 23:02:27 KSA]   │ 11. [Funding] Anthropic Files Confidential S-1 for IPO, Eyes October Listing at $965B Valuatio
+[2026-06-03 23:02:27 KSA]   │ 12. [Policy] Trump Administration Orders Early AI Model Access for Security Testing
+[2026-06-03 23:02:27 KSA]   │ 13. [Policy] White House Promotes AI Innovation with Cybersecurity Directive
+[2026-06-03 23:02:27 KSA]   │ 14. [Research] Verizon's 2026 Data Breach Report Shows AI Cuts Exploit Time to Hours
+[2026-06-03 23:02:27 KSA]   │ 15. [Release] Google Patches 124 Android Vulnerabilities Including Active Exploitation Flaw
+[2026-06-03 23:02:27 KSA]   │ 16. [Funding] Anthropic raises $65B at $965B valuation, largest private AI company
+[2026-06-03 23:02:27 KSA]   │ 17. [Funding] Parallel reaches $2B valuation with $230M in funding for AI agent infrastructure
+[2026-06-03 23:02:27 KSA]   │ 18. [Release] SpaceX files for IPO targeting July 2026 listing after xAI merger
+[2026-06-03 23:02:27 KSA]   │ 19. [Research] IDC FutureScape: 65% of cities deploy AI agents by 2027
+[2026-06-03 23:02:27 KSA]   │ 20. [Research] AI 2027 Forecast: 2026 Progress at 65% of predicted pace
+[2026-06-03 23:02:27 KSA]   │ 21. [Research] Smart traffic management market to reach $20B by 2027
+[2026-06-03 23:02:27 KSA]   └─── 21 total signals ───
+
+[2026-06-03 23:02:27 KSA] ═══ RESCAN COMPLETE ═══
+
