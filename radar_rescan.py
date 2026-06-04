@@ -178,7 +178,6 @@ def map_domains(query):
     return domains if domains else ["ai-models"]
 
 # ─── DASHBOARD UPDATER ────────────────────────────────────────────────────────
-# ─── DASHBOARD UPDATER ────────────────────────────────────────────────────────
 def update_dashboard(signals, today):
     log("  Updating dashboard HTML...")
     try:
