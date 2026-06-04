@@ -1,20 +1,18 @@
 name: 🔍 AI Inspection Radar — Daily Rescan
 
 on:
-  # Runs at 06:00 UTC = 09:00 KSA (Arabia Standard Time, UTC+3)
   schedule:
-    - cron: '0 6 * * *'
-
-  # Also allow manual trigger from GitHub UI
+    - cron: '0 6 * * *'   # 06:00 UTC = 09:30 KSA, every day
   workflow_dispatch:
     inputs:
       reason:
         description: 'Reason for manual rescan'
         required: false
         default: 'Manual trigger'
+
 permissions:
   contents: write
-  
+
 jobs:
   rescan:
     name: Daily AI Radar Rescan
@@ -31,8 +29,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install anthropic schedule pytz requests
+        run: pip install anthropic schedule pytz requests
 
       - name: Log scan time
         run: |
@@ -42,8 +39,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           DASHBOARD_PATH: ./ai_radar_bilingual.html
-        run: |
-          python radar_rescan.py --now
+        run: python radar_rescan.py --now
 
       - name: Check for changes
         id: changes
@@ -55,7 +51,7 @@ jobs:
         run: |
           git config user.name  "Radar Bot 🤖"
           git config user.email "radar-bot@noreply.github.com"
-          git add ai_radar_bilingual.html radar_rescan.log
+          git add -A
           git commit -m "🔍 Auto-rescan $(TZ='Asia/Riyadh' date '+%Y-%m-%d %H:%M KSA')"
           git push
 
@@ -64,7 +60,7 @@ jobs:
         with:
           name: dashboard-${{ github.run_id }}
           path: ai_radar_bilingual.html
-          retention-days: 7
+          retention-days: 30
 
       - name: No new signals
         if: steps.changes.outputs.changed == 'false'
