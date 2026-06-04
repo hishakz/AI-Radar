@@ -2,7 +2,7 @@ name: 🔍 AI Inspection Radar — Daily Rescan
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # 06:00 UTC = 09:30 KSA, every day
+    - cron: '30 6 * * *'   # 06:30 UTC = 09:30 KSA, every day
   workflow_dispatch:
     inputs:
       reason:
