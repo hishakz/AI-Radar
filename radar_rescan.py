@@ -14,7 +14,7 @@ RUN ON A SCHEDULE (keeps running, fires at 09:30 KSA daily):
   python radar_rescan.py
 
 DEPLOY AS CRON (Linux / Mac — add to crontab with: crontab -e):
-  0 6 * * * /usr/bin/python3 /path/to/radar_rescan.py --now >> /var/log/radar.log 2>&1
+  30 6 * * * /usr/bin/python3 /path/to/radar_rescan.py --now >> /var/log/radar.log 2>&1
 
 DEPLOY ON WINDOWS TASK SCHEDULER:
   Action: python C:\\path\\to\\radar_rescan.py --now
