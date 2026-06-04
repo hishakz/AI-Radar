@@ -456,3 +456,55 @@
 
 [2026-06-03 23:02:27 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-04 09:45:08 KSA] Manual run triggered (--now flag)
+[2026-06-04 09:45:08 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-04 09:45:08 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-04 09:45:17 KSA]     ✓ 3 signals found
+[2026-06-04 09:45:19 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-04 09:45:27 KSA]     ✓ 1 signals found
+[2026-06-04 09:45:29 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-04 09:45:39 KSA]     ✓ 2 signals found
+[2026-06-04 09:45:41 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-04 09:45:49 KSA]     ✓ 0 signals found
+[2026-06-04 09:45:51 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-04 09:45:59 KSA]     ✓ 3 signals found
+[2026-06-04 09:46:01 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-04 09:46:06 KSA]     ✓ 3 signals found
+[2026-06-04 09:46:08 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-04 09:46:14 KSA]     ✓ 3 signals found
+[2026-06-04 09:46:16 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-04 09:46:22 KSA]     ✓ 3 signals found
+[2026-06-04 09:46:24 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-04 09:46:36 KSA]     ✓ 3 signals found
+[2026-06-04 09:46:38 KSA]   Total new signals: 21
+[2026-06-04 09:46:38 KSA]   Updating dashboard HTML...
+[2026-06-04 09:46:38 KSA]   ↩ 8 duplicate(s) skipped — already in dashboard
+[2026-06-04 09:46:38 KSA]   ✚ 13 genuinely new signals to inject
+[2026-06-04 09:46:38 KSA]   ✓ Done — 13 added, 8 duplicates skipped, 164 total signals
+[2026-06-04 09:46:38 KSA] 
+  ┌─── SCAN SUMMARY — June 04, 2026 ───
+[2026-06-04 09:46:38 KSA]   │ 01. [Release] Infrastructure AI Expands Galaxy Agentic Operating System for Global Facilities 
+[2026-06-04 09:46:38 KSA]   │ 02. [Breakthrough] Niantic and Spexi Partner on 3D Physical AI for Autonomous Infrastructure Inspec
+[2026-06-04 09:46:38 KSA]   │ 03. [Release] FPT Elevates AI-Based Intelligent Inspection for Smart City Asset Assessment wit
+[2026-06-04 09:46:38 KSA]   │ 04. [Breakthrough] Drone Surveys Transform Construction with Real-Time Visual Intelligence
+[2026-06-04 09:46:38 KSA]   │ 05. [Research] AI May Flag Risk, But Humans Make Final Food Safety Calls
+[2026-06-04 09:46:38 KSA]   │ 06. [Policy] USDA Evaluating AI, Advanced Sensing, Remote Visual Inspection Technologies
+[2026-06-04 09:46:38 KSA]   │ 07. [Policy] Trump Issues AI Innovation and Security Executive Order
+[2026-06-04 09:46:38 KSA]   │ 08. [Policy] EU Commission Proposes Tech Sovereignty Package
+[2026-06-04 09:46:38 KSA]   │ 09. [Policy] Trump Administration Backs Voluntary AI Safety Review Framework
+[2026-06-04 09:46:38 KSA]   │ 10. [Release] Microsoft unveils MAI-Code-1-Flash and MAI-Thinking-1 AI models at Build 2026
+[2026-06-04 09:46:38 KSA]   │ 11. [Funding] Anthropic confidentially files for IPO on June 1, 2026 at $965B valuation
+[2026-06-04 09:46:38 KSA]   │ 12. [Release] Anthropic expands Project Glasswing with new Services Track and Partner Hub
+[2026-06-04 09:46:38 KSA]   │ 13. [Security] 6 AI Security Incidents: Full Attack Path Analysis (April 2026)
+[2026-06-04 09:46:38 KSA]   │ 14. [Security] GitHub Copilot Remote Code Execution via Prompt Injection (CVE-2025-53773)
+[2026-06-04 09:46:38 KSA]   │ 15. [Security] Malicious Model Weights with Embedded Backdoors Discovered on Hugging Face
+[2026-06-04 09:46:38 KSA]   │ 16. [Release] Anthropic confidentially files IPO prospectus with SEC
+[2026-06-04 09:46:38 KSA]   │ 17. [Funding] Anthropic raises $65 billion at $965 billion valuation, surpassing OpenAI
+[2026-06-04 09:46:38 KSA]   │ 18. [Release] Cerebras IPO completes at $49 billion valuation; AI funding surge continues
+[2026-06-04 09:46:38 KSA]   │ 19. [Release] LITEON Technology Showcases End-to-End AI Infrastructure at COMPUTEX 2026
+[2026-06-04 09:46:38 KSA]   │ 20. [Release] Dell Technologies Highlights AI-Driven Smart City Development in Philippines
+[2026-06-04 09:46:38 KSA]   │ 21. [Release] Broadcom Reiterates $100B+ AI Semiconductor Revenue Target for 2027
+[2026-06-04 09:46:38 KSA]   └─── 21 total signals ───
+
+[2026-06-04 09:46:38 KSA] ═══ RESCAN COMPLETE ═══
+
