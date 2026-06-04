@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 AI Inspection Radar — Daily Auto-Rescan
-Runs every morning at 09:00 KSA (UTC+3 = 06:00 UTC)
+Runs every morning at 09:30 KSA (UTC+3 = 06:30 UTC)
 Calls the Anthropic API, scans for new signals, updates the dashboard HTML.
 
 SETUP (one-time):
@@ -10,7 +10,7 @@ SETUP (one-time):
 RUN ONCE (manual):
   python radar_rescan.py --now
 
-RUN ON A SCHEDULE (keeps running, fires at 09:00 KSA daily):
+RUN ON A SCHEDULE (keeps running, fires at 09:30 KSA daily):
   python radar_rescan.py
 
 DEPLOY AS CRON (Linux / Mac — add to crontab with: crontab -e):
@@ -18,7 +18,7 @@ DEPLOY AS CRON (Linux / Mac — add to crontab with: crontab -e):
 
 DEPLOY ON WINDOWS TASK SCHEDULER:
   Action: python C:\\path\\to\\radar_rescan.py --now
-  Trigger: Daily at 09:00 (set timezone to Arabian Standard Time)
+  Trigger: Daily at 09:30 (set timezone to Arabian Standard Time)
 
 DEPLOY ON GITHUB ACTIONS (see radar_rescan.yml companion file):
   Runs in the cloud — no local machine needed.
@@ -38,7 +38,7 @@ import pytz
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "YOUR_KEY_HERE")
 DASHBOARD_PATH    = os.environ.get("DASHBOARD_PATH",    "./ai_radar_bilingual.html")
 KSA_TZ            = pytz.timezone("Asia/Riyadh")
-SCAN_TIME_KSA     = "09:00"
+SCAN_TIME_KSA     = "09:30"
 LOG_FILE          = "./radar_rescan.log"
 
 # ─── DYNAMIC YEAR CONFIG ─────────────────────────────────────────────────────
@@ -278,14 +278,14 @@ if __name__ == "__main__":
         log("Manual run triggered (--now flag)")
         run_rescan()
     else:
-        # Keep-alive scheduler — fires at 09:00 KSA every day
-        # Since schedule works in local time, we use UTC 06:00 equivalent
+        # Keep-alive scheduler — fires at 09:30 KSA every day
+        # Since schedule works in local time, we use UTC 06:30 equivalent
         log(f"Scheduler started — will rescan daily at {SCAN_TIME_KSA} KSA")
         log(f"Dashboard: {DASHBOARD_PATH}")
         log(f"Ctrl+C to stop\n")
 
-        # Schedule at 06:00 UTC (= 09:00 KSA)
-        schedule.every().day.at("06:00").do(scheduled_job)
+        # Schedule at 06:30 UTC (= 09:30 KSA)
+        schedule.every().day.at("06:30").do(scheduled_job)
 
         # Also run once on startup if not yet scanned today
         last_run_file = ".last_rescan"
