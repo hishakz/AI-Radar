@@ -565,3 +565,58 @@
 
 [2026-06-04 20:36:44 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-05 19:19:26 KSA] Manual run triggered (--now flag)
+[2026-06-05 19:19:26 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-05 19:19:26 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-05 19:19:37 KSA]     ✓ 3 signals found
+[2026-06-05 19:19:39 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-05 19:19:51 KSA]     ✓ 3 signals found
+[2026-06-05 19:19:53 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-05 19:20:02 KSA]     ✓ 0 signals found
+[2026-06-05 19:20:04 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-05 19:20:13 KSA]     ✓ 3 signals found
+[2026-06-05 19:20:15 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-05 19:20:21 KSA]     ✓ 3 signals found
+[2026-06-05 19:20:23 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-05 19:20:32 KSA]     ✓ 3 signals found
+[2026-06-05 19:20:34 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-05 19:20:43 KSA]     ✓ 3 signals found
+[2026-06-05 19:20:45 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-05 19:20:52 KSA]     ✓ 3 signals found
+[2026-06-05 19:20:54 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-05 19:21:03 KSA]     ✓ 3 signals found
+[2026-06-05 19:21:05 KSA]   Total new signals: 24
+[2026-06-05 19:21:05 KSA]   Updating dashboard HTML...
+[2026-06-05 19:21:05 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-05 19:21:05 KSA]   ✚ 11 genuinely new signals to inject
+[2026-06-05 19:21:05 KSA]   ✓ Done — 11 added, 13 duplicates skipped, 190 total signals
+[2026-06-05 19:21:05 KSA] 
+  ┌─── SCAN SUMMARY — June 05, 2026 ───
+[2026-06-05 19:21:05 KSA]   │ 01. [Breakthrough] Infrastructure AI Unveils Agentic Security Framework for GAOS
+[2026-06-05 19:21:05 KSA]   │ 02. [Release] Infrastructure AI Expands Galaxy Agentic Operating System Across Smart Cities
+[2026-06-05 19:21:05 KSA]   │ 03. [Breakthrough] Niantic & Spexi Deploy 3D Physical AI for Autonomous Infrastructure Inspections
+[2026-06-05 19:21:05 KSA]   │ 04. [Breakthrough] Drones-as-a-Service Market Surges to $8.2B in 2026
+[2026-06-05 19:21:05 KSA]   │ 05. [Breakthrough] Humanoid Robots Transform Construction: First Wave Through 2030
+[2026-06-05 19:21:05 KSA]   │ 06. [Research] MIT Robotics Study: Voxel Assembly Could Cut Carbon 82%
+[2026-06-05 19:21:05 KSA]   │ 07. [Breakthrough] Insurers Using AI & Drones Instead of Humans for Home Inspections
+[2026-06-05 19:21:05 KSA]   │ 08. [Research] AI Housing Inspection Software Market Projected to Reach $478M by 2035
+[2026-06-05 19:21:05 KSA]   │ 09. [Release] Alpine Intelligence: Colorado Company Releases Free ChatGPT-Powered Inspection T
+[2026-06-05 19:21:05 KSA]   │ 10. [Policy] NIST Announces Artificial Intelligence Consortium
+[2026-06-05 19:21:05 KSA]   │ 11. [Policy] White House Releases National AI Policy Framework with Federal Preemption Plan
+[2026-06-05 19:21:05 KSA]   │ 12. [Policy] Colorado AI Act Takes Effect June 30, 2026
+[2026-06-05 19:21:05 KSA]   │ 13. [Release] Microsoft Announces MAI-Code-1-Flash and MAI-Thinking-1 AI Models
+[2026-06-05 19:21:05 KSA]   │ 14. [Security] Anthropic Expands Project Glasswing Security Initiative to 150 Organizations
+[2026-06-05 19:21:05 KSA]   │ 15. [Release] Google Releases Gemini 3.5 Flash GA with Advanced Agentic Capabilities
+[2026-06-05 19:21:05 KSA]   │ 16. [Policy] Trump Administration Signs AI Security Executive Order with Cybersecurity Cleari
+[2026-06-05 19:21:05 KSA]   │ 17. [Security] Critical CVE-2026-48710 'BadHost' Vulnerability Exploited by Autonomous LLM Agen
+[2026-06-05 19:21:05 KSA]   │ 18. [Research] Post-Mythos Era Vulnerabilities: 82% of Organizations Lack Runtime Visibility
+[2026-06-05 19:21:05 KSA]   │ 19. [Funding] Anthropic Confidentially Files for IPO, $965B Valuation Surpasses OpenAI
+[2026-06-05 19:21:05 KSA]   │ 20. [Release] Cerebras IPO Surges 68% First Day, $95B Market Cap; SpaceX Roadshow Launches
+[2026-06-05 19:21:05 KSA]   │ 21. [Funding] AI Startup Funding Hits $72B in May 2026, 79% of Total VC Investment
+[2026-06-05 19:21:05 KSA]   │ 22. [Research] AI 2027 2025 Predictions Graded: Progress at 65% Pace, Superhuman Coders by 2028
+[2026-06-05 19:21:05 KSA]   │ 23. [Research] AI 2027 Scenario One Year Later: Predictions Still Valid, Superhuman Coders to 2
+[2026-06-05 19:21:05 KSA]   │ 24. [Breakthrough] Smart City IoT Deployment Surges: 122M Connections by 2027, AI Traffic Cuts Cong
+[2026-06-05 19:21:05 KSA]   └─── 24 total signals ───
+
+[2026-06-05 19:21:05 KSA] ═══ RESCAN COMPLETE ═══
+
