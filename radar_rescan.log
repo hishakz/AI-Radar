@@ -678,3 +678,54 @@
 
 [2026-06-06 14:52:25 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-07 15:11:46 KSA] Manual run triggered (--now flag)
+[2026-06-07 15:11:46 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-07 15:11:46 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-07 15:11:56 KSA]     ✓ 3 signals found
+[2026-06-07 15:11:58 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-07 15:12:06 KSA]     ✓ 2 signals found
+[2026-06-07 15:12:08 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-07 15:12:13 KSA]     ✓ 0 signals found
+[2026-06-07 15:12:15 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-07 15:12:23 KSA]     ✓ 0 signals found
+[2026-06-07 15:12:25 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-07 15:12:37 KSA]     ✓ 3 signals found
+[2026-06-07 15:12:39 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-07 15:12:51 KSA]     ✓ 3 signals found
+[2026-06-07 15:12:53 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-07 15:13:00 KSA]     ✓ 3 signals found
+[2026-06-07 15:13:02 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-07 15:13:07 KSA]     ✓ 3 signals found
+[2026-06-07 15:13:09 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-07 15:13:18 KSA]     ✓ 3 signals found
+[2026-06-07 15:13:20 KSA]   Total new signals: 20
+[2026-06-07 15:13:20 KSA]   Updating dashboard HTML...
+[2026-06-07 15:13:20 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-07 15:13:20 KSA]   ✚ 7 genuinely new signals to inject
+[2026-06-07 15:13:20 KSA]   ✓ Done — 7 added, 13 duplicates skipped, 209 total signals
+[2026-06-07 15:13:20 KSA] 
+  ┌─── SCAN SUMMARY — June 07, 2026 ───
+[2026-06-07 15:13:20 KSA]   │ 01. [Release] Infrastructure AI Expands Galaxy Agentic OS for Smart City Facilities Management
+[2026-06-07 15:13:20 KSA]   │ 02. [Policy] Autonomous Cities Transform Urban Governance with Real-Time AI Decision Making
+[2026-06-07 15:13:20 KSA]   │ 03. [Release] Smart City Summit 2026 Showcases AI Infrastructure and Autonomous Inspection Rob
+[2026-06-07 15:13:20 KSA]   │ 04. [Breakthrough] DroneDeploy surpasses 20 trillion sq ft visual data, 160% robotic mission growth
+[2026-06-07 15:13:20 KSA]   │ 05. [Release] Skydio X10 autonomous drone launches with AI obstacle avoidance for construction
+[2026-06-07 15:13:20 KSA]   │ 06. [Policy] Trump Issues Executive Order on AI Security and Innovation
+[2026-06-07 15:13:20 KSA]   │ 07. [Policy] EU Simplifies AI Act with Political Agreement on May 7
+[2026-06-07 15:13:20 KSA]   │ 08. [Policy] Colorado AI Act Enforcement Set for June 30, 2026
+[2026-06-07 15:13:20 KSA]   │ 09. [Release] Anthropic Adds Services Track to Claude Partner Network
+[2026-06-07 15:13:20 KSA]   │ 10. [Release] Claude Opus 4.1 Deprecation Announced for August 5, 2026
+[2026-06-07 15:13:20 KSA]   │ 11. [Release] Gemini 3.5 Flash Becomes Default in Enterprise Apps June 8-9
+[2026-06-07 15:13:20 KSA]   │ 12. [Policy] White House Issues AI Executive Order with Cybersecurity Focus
+[2026-06-07 15:13:20 KSA]   │ 13. [Policy] AI Vulnerability Discovery Acceleration Raises EOL Software Exposure Risks
+[2026-06-07 15:13:20 KSA]   │ 14. [Security] Anthropic Claude Mythos Model Prompts AI Security Evaluation Framework
+[2026-06-07 15:13:20 KSA]   │ 15. [Funding] Anthropic Files Confidential IPO, Raises $65B Series H to $965B Valuation
+[2026-06-07 15:13:20 KSA]   │ 16. [Release] SpaceX IPO Roadshow Begins June 8, Targeting $1.75 Trillion Debut
+[2026-06-07 15:13:20 KSA]   │ 17. [Release] Cerebras IPO Soars 68% on First Day, Raising $5.55B at $95B Market Cap
+[2026-06-07 15:13:20 KSA]   │ 18. [Research] AI 2027 Scenario Updates: Progress at 65% Predicted Pace Through 2026
+[2026-06-07 15:13:20 KSA]   │ 19. [Research] Smart City Market Valued at USD 90 Billion in 2026, Projected to Hit USD 340 Bil
+[2026-06-07 15:13:20 KSA]   │ 20. [Research] IoT Smart City Connections Surge: 122 Million Links Projected by 2027 with 5G Ex
+[2026-06-07 15:13:20 KSA]   └─── 20 total signals ───
+
+[2026-06-07 15:13:20 KSA] ═══ RESCAN COMPLETE ═══
+
