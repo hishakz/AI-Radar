@@ -784,3 +784,58 @@
 
 [2026-06-08 20:41:06 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-09 19:22:40 KSA] Manual run triggered (--now flag)
+[2026-06-09 19:22:40 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-09 19:22:40 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-09 19:22:51 KSA]     ✓ 3 signals found
+[2026-06-09 19:22:53 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-09 19:23:05 KSA]     ✓ 0 signals found
+[2026-06-09 19:23:07 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-09 19:23:18 KSA]     ✓ 3 signals found
+[2026-06-09 19:23:20 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-09 19:23:32 KSA]     ✓ 3 signals found
+[2026-06-09 19:23:34 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-09 19:23:39 KSA]     ✓ 3 signals found
+[2026-06-09 19:23:41 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-09 19:23:50 KSA]     ✓ 3 signals found
+[2026-06-09 19:23:52 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-09 19:24:00 KSA]     ✓ 3 signals found
+[2026-06-09 19:24:02 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-09 19:24:09 KSA]     ✓ 3 signals found
+[2026-06-09 19:24:11 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-09 19:24:19 KSA]     ✓ 3 signals found
+[2026-06-09 19:24:21 KSA]   Total new signals: 24
+[2026-06-09 19:24:21 KSA]   Updating dashboard HTML...
+[2026-06-09 19:24:21 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-09 19:24:21 KSA]   ✚ 11 genuinely new signals to inject
+[2026-06-09 19:24:21 KSA]   ✓ Done — 11 added, 13 duplicates skipped, 224 total signals
+[2026-06-09 19:24:21 KSA] 
+  ┌─── SCAN SUMMARY — June 09, 2026 ───
+[2026-06-09 19:24:21 KSA]   │ 01. [Release] Infrastructure AI Expands Galaxy Agentic Operating System for Smart Cities
+[2026-06-09 19:24:21 KSA]   │ 02. [Breakthrough] Infrastructure AI Unveils Agentic Security Strategy for Autonomous Infrastructur
+[2026-06-09 19:24:21 KSA]   │ 03. [Release] GDU Technology Showcases AI-Powered UAV Inspection at Drone World Congress 2026
+[2026-06-09 19:24:21 KSA]   │ 04. [Research] IFT Trends: AI Reshaping Food Safety with Expert Insights
+[2026-06-09 19:24:21 KSA]   │ 05. [Policy] EU Launches TraceMap AI Platform for Food Safety Crisis Response
+[2026-06-09 19:24:21 KSA]   │ 06. [Research] Food Engineering Review: AI Transformation in Food Processing (2026)
+[2026-06-09 19:24:21 KSA]   │ 07. [Release] Alpine Intelligence AI Tool Released for Home Inspection Forecasting
+[2026-06-09 19:24:21 KSA]   │ 08. [Research] Global Home Inspection Software Market Projected to Grow 10% Through 2035
+[2026-06-09 19:24:21 KSA]   │ 09. [Breakthrough] AI Transforms Home Inspection Industry with Automated Reporting
+[2026-06-09 19:24:21 KSA]   │ 10. [Policy] EU AI Act transparency rules take effect in August 2026
+[2026-06-09 19:24:21 KSA]   │ 11. [Policy] Colorado AI Act enforcement begins June 30, 2026 with high-risk system requireme
+[2026-06-09 19:24:21 KSA]   │ 12. [Policy] FDA publishes new guidance in 2026 reducing AI regulatory oversight
+[2026-06-09 19:24:21 KSA]   │ 13. [Release] Anthropic releases Claude Fable 5 public launch today
+[2026-06-09 19:24:21 KSA]   │ 14. [Release] Anthropic announces Claude Partner Network Services Track expansion
+[2026-06-09 19:24:21 KSA]   │ 15. [Release] OpenAI releases updated GPT-Rosalind for life sciences research
+[2026-06-09 19:24:21 KSA]   │ 16. [Policy] Trump Signs Executive Order on AI Cybersecurity, Establishes Testing Framework
+[2026-06-09 19:24:21 KSA]   │ 17. [Security] Microsoft Discovers 16 New Windows Vulnerabilities Using AI Security System MDAS
+[2026-06-09 19:24:21 KSA]   │ 18. [Research] Mandiant Report: 28.3% of CVEs Exploited Within 24 Hours, Time-to-Exploit Now Ne
+[2026-06-09 19:24:21 KSA]   │ 19. [Funding] OpenAI files confidential IPO targeting $850B valuation with September 2026 debu
+[2026-06-09 19:24:21 KSA]   │ 20. [Release] OpenAI files for IPO as AI investment race intensifies
+[2026-06-09 19:24:21 KSA]   │ 21. [Funding] Anthropic raises $65B in Series H, files confidential IPO at $965B valuation
+[2026-06-09 19:24:21 KSA]   │ 22. [Research] AI 2027 One Year Later: Forecasts Tracking at 65% Predicted Pace
+[2026-06-09 19:24:21 KSA]   │ 23. [Breakthrough] Arixolve Deploys AI Infrastructure Inspection Platform for Smart Cities
+[2026-06-09 19:24:21 KSA]   │ 24. [Release] San José Cuts AI Translation Costs 80%, Boosts Public Meeting Participation
+[2026-06-09 19:24:21 KSA]   └─── 24 total signals ───
+
+[2026-06-09 19:24:21 KSA] ═══ RESCAN COMPLETE ═══
+
