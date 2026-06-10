@@ -839,3 +839,56 @@
 
 [2026-06-09 19:24:21 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-10 20:46:47 KSA] Manual run triggered (--now flag)
+[2026-06-10 20:46:47 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-10 20:46:47 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-10 20:46:59 KSA]     ✓ 3 signals found
+[2026-06-10 20:47:01 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-10 20:47:11 KSA]     ✓ 0 signals found
+[2026-06-10 20:47:13 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-10 20:47:27 KSA]     ✓ 3 signals found
+[2026-06-10 20:47:29 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-10 20:47:43 KSA]     ✓ 1 signals found
+[2026-06-10 20:47:45 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-10 20:47:56 KSA]     ✓ 3 signals found
+[2026-06-10 20:47:58 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-10 20:48:07 KSA]     ✓ 3 signals found
+[2026-06-10 20:48:09 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-10 20:48:15 KSA]     ✓ 3 signals found
+[2026-06-10 20:48:17 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-10 20:48:26 KSA]     ✓ 3 signals found
+[2026-06-10 20:48:28 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-10 20:48:37 KSA]     ✓ 3 signals found
+[2026-06-10 20:48:39 KSA]   Total new signals: 22
+[2026-06-10 20:48:39 KSA]   Updating dashboard HTML...
+[2026-06-10 20:48:39 KSA]   ↩ 15 duplicate(s) skipped — already in dashboard
+[2026-06-10 20:48:39 KSA]   ✚ 7 genuinely new signals to inject
+[2026-06-10 20:48:39 KSA]   ✓ Done — 7 added, 15 duplicates skipped, 231 total signals
+[2026-06-10 20:48:39 KSA] 
+  ┌─── SCAN SUMMARY — June 10, 2026 ───
+[2026-06-10 20:48:39 KSA]   │ 01. [Release] Infrastructure AI Expands Galaxy Agentic Operating System for Smart Cities
+[2026-06-10 20:48:39 KSA]   │ 02. [Research] From Smart to Autonomous: Cities Transform with AI Real-Time Decision-Making
+[2026-06-10 20:48:39 KSA]   │ 03. [Release] NVIDIA Jetson Enables Agentic AI Inspection and Edge Processing
+[2026-06-10 20:48:39 KSA]   │ 04. [Security] AI Security Risks in Food Safety Systems Emerging Challenge
+[2026-06-10 20:48:39 KSA]   │ 05. [Research] Restaurant Inspection Data Could Prevent Foodborne Illness Outbreaks
+[2026-06-10 20:48:39 KSA]   │ 06. [Policy] FDA BRIDGE Project Modernizes Food Facility Inspections Phase 2 Ongoing
+[2026-06-10 20:48:39 KSA]   │ 07. [Funding] HUD Seeks Data on Robotics & AI for Housing Construction
+[2026-06-10 20:48:39 KSA]   │ 08. [Policy] White House Orders AI Innovation & Security Push; Issues June 2 Executive Order
+[2026-06-10 20:48:39 KSA]   │ 09. [Policy] EU Commission Publishes Code of Practice for AI-Generated Content Labeling
+[2026-06-10 20:48:39 KSA]   │ 10. [Policy] AI Regulation Now Daily Operating Issue for Global Startups & Companies
+[2026-06-10 20:48:39 KSA]   │ 11. [Release] Claude Fable 5: Anthropic releases creative storytelling model
+[2026-06-10 20:48:39 KSA]   │ 12. [Release] Anthropic expands Project Glasswing with 150 new orgs for AI security
+[2026-06-10 20:48:39 KSA]   │ 13. [Release] Microsoft announces seven MAI models including coding and transcription
+[2026-06-10 20:48:39 KSA]   │ 14. [Policy] Trump Administration Signs AI Executive Order on June 2, 2026
+[2026-06-10 20:48:39 KSA]   │ 15. [Security] Microsoft GitHub Repositories Compromised with Information Stealer on June 9, 20
+[2026-06-10 20:48:39 KSA]   │ 16. [Release] Veeam Backup Software Critical Vulnerability CVE-2026-44963 Released on June 10,
+[2026-06-10 20:48:39 KSA]   │ 17. [Release] SpaceX targets largest IPO ever: $1.75T valuation, $135/share, June 12 listing
+[2026-06-10 20:48:39 KSA]   │ 18. [Release] Anthropic files confidential S-1 IPO at $965B valuation after $65B Series H
+[2026-06-10 20:48:39 KSA]   │ 19. [Release] OpenAI files confidential S-1 for IPO, targeting $1T valuation by September 2026
+[2026-06-10 20:48:39 KSA]   │ 20. [Research] AI 2027 Predictions at 65% Pace—Superhuman Coders Expected Mid-2028
+[2026-06-10 20:48:39 KSA]   │ 21. [Research] Smart Cities Market Reaches $1.96T in 2026; 122M IoT Connections by 2027
+[2026-06-10 20:48:39 KSA]   │ 22. [Research] AI 2027 Scenario's Hacking & Sandbox Escape Predictions Now "Front Page News"
+[2026-06-10 20:48:39 KSA]   └─── 22 total signals ───
+
+[2026-06-10 20:48:39 KSA] ═══ RESCAN COMPLETE ═══
+
