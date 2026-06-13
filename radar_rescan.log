@@ -999,3 +999,56 @@
 
 [2026-06-12 20:26:46 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-13 15:15:21 KSA] Manual run triggered (--now flag)
+[2026-06-13 15:15:21 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-13 15:15:21 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-13 15:15:35 KSA]     ✓ 3 signals found
+[2026-06-13 15:15:37 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-13 15:15:48 KSA]     ✓ 3 signals found
+[2026-06-13 15:15:50 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-13 15:16:04 KSA]     ✓ 2 signals found
+[2026-06-13 15:16:06 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-13 15:16:14 KSA]     ✓ 1 signals found
+[2026-06-13 15:16:16 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-13 15:16:25 KSA]     ✓ 3 signals found
+[2026-06-13 15:16:27 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-13 15:16:33 KSA]     ✓ 3 signals found
+[2026-06-13 15:16:35 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-13 15:16:52 KSA]     ✓ 3 signals found
+[2026-06-13 15:16:54 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-13 15:17:04 KSA]     ✓ 3 signals found
+[2026-06-13 15:17:06 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-13 15:17:11 KSA]     ✓ 1 signals found
+[2026-06-13 15:17:13 KSA]   Total new signals: 22
+[2026-06-13 15:17:13 KSA]   Updating dashboard HTML...
+[2026-06-13 15:17:13 KSA]   ↩ 14 duplicate(s) skipped — already in dashboard
+[2026-06-13 15:17:13 KSA]   ✚ 8 genuinely new signals to inject
+[2026-06-13 15:17:13 KSA]   ✓ Done — 8 added, 14 duplicates skipped, 256 total signals
+[2026-06-13 15:17:13 KSA] 
+  ┌─── SCAN SUMMARY — June 13, 2026 ───
+[2026-06-13 15:17:13 KSA]   │ 01. [Breakthrough] WEF 2026 Technology Pioneers: 100 companies in AI and autonomous systems
+[2026-06-13 15:17:13 KSA]   │ 02. [Breakthrough] Niantic and Spexi combine drone networks with 3D AI for infrastructure inspectio
+[2026-06-13 15:17:13 KSA]   │ 03. [Funding] AI funding for autonomous systems hits $20 billion in Q2 2026
+[2026-06-13 15:17:13 KSA]   │ 04. [Breakthrough] DroneDeploy Surpasses 20 Trillion Sq Ft of Visual Data, 160% Increase in Robotic
+[2026-06-13 15:17:13 KSA]   │ 05. [Release] DroneDeploy Launches Three AI Agents for Construction: Safety, Progress, Inspect
+[2026-06-13 15:17:13 KSA]   │ 06. [Breakthrough] Bedrock Robotics Autonomous Excavators: Machine Learning Retrofit for Heavy Equi
+[2026-06-13 15:17:13 KSA]   │ 07. [Research] AI Versus Rule-Based Vision Systems: What's Right for Your Food Operation?
+[2026-06-13 15:17:13 KSA]   │ 08. [Release] Food Safety Magazine Webinar: Spoilage Root Causes and Data-Driven Prevention
+[2026-06-13 15:17:13 KSA]   │ 09. [Breakthrough] Russia Uses Drones and AI to Inspect Housing Renovation Quality on Sakhalin
+[2026-06-13 15:17:13 KSA]   │ 10. [Policy] Great American Artificial Intelligence Act of 2026 Discussion Draft Released
+[2026-06-13 15:17:13 KSA]   │ 11. [Policy] White House Executive Order on AI Innovation and Security
+[2026-06-13 15:17:13 KSA]   │ 12. [Policy] Colorado AI Act Enforcement Begins June 30, 2026
+[2026-06-13 15:17:13 KSA]   │ 13. [Release] Anthropic launches Claude Fable 5 with stronger coding and vision capabilities
+[2026-06-13 15:17:13 KSA]   │ 14. [Release] Microsoft announces MAI-Code-1-Flash model at Build developer conference
+[2026-06-13 15:17:13 KSA]   │ 15. [Release] Apple integrates Gemini in Siri and Claude as iPhone AI option
+[2026-06-13 15:17:13 KSA]   │ 16. [Policy] Trump Signs AI Executive Order on Frontier Models and Cybersecurity Vulnerabilit
+[2026-06-13 15:17:13 KSA]   │ 17. [Security] Palo Alto Networks: Frontier AI Models Finding Critical Vulnerabilities at Scale
+[2026-06-13 15:17:13 KSA]   │ 18. [Security] AI Security: CVE-2025-53773 Exposes Hidden Prompt Injection Vulnerability in Git
+[2026-06-13 15:17:13 KSA]   │ 19. [Release] OpenAI Files for IPO as AI Investment Race Intensifies
+[2026-06-13 15:17:13 KSA]   │ 20. [Release] Anthropic Confidentially Files S-1 IPO Registration with SEC
+[2026-06-13 15:17:13 KSA]   │ 21. [Funding] Databricks Raising New Round at $165-175B Valuation
+[2026-06-13 15:17:13 KSA]   │ 22. [Research] AI 2027 Forecast Accuracy Update: 65% Prediction Pace Tracked in 2026
+[2026-06-13 15:17:13 KSA]   └─── 22 total signals ───
+
+[2026-06-13 15:17:13 KSA] ═══ RESCAN COMPLETE ═══
+
