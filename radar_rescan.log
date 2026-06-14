@@ -1052,3 +1052,53 @@
 
 [2026-06-13 15:17:13 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-14 16:10:18 KSA] Manual run triggered (--now flag)
+[2026-06-14 16:10:18 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-14 16:10:18 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-14 16:10:32 KSA]     ✗ No JSON found in response
+[2026-06-14 16:10:34 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-14 16:10:46 KSA]     ✓ 0 signals found
+[2026-06-14 16:10:48 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-14 16:10:58 KSA]     ✓ 3 signals found
+[2026-06-14 16:11:00 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-14 16:11:10 KSA]     ✓ 1 signals found
+[2026-06-14 16:11:12 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-14 16:11:26 KSA]     ✓ 3 signals found
+[2026-06-14 16:11:28 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-14 16:11:34 KSA]     ✓ 3 signals found
+[2026-06-14 16:11:36 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-14 16:11:42 KSA]     ✓ 3 signals found
+[2026-06-14 16:11:44 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-14 16:11:55 KSA]     ✓ 3 signals found
+[2026-06-14 16:11:57 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-14 16:12:12 KSA]     ✓ 3 signals found
+[2026-06-14 16:12:14 KSA]   Total new signals: 19
+[2026-06-14 16:12:14 KSA]   Updating dashboard HTML...
+[2026-06-14 16:12:14 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-14 16:12:14 KSA]   ✚ 6 genuinely new signals to inject
+[2026-06-14 16:12:14 KSA]   ✓ Done — 6 added, 13 duplicates skipped, 262 total signals
+[2026-06-14 16:12:14 KSA] 
+  ┌─── SCAN SUMMARY — June 14, 2026 ───
+[2026-06-14 16:12:14 KSA]   │ 01. [Research] Food Technology Magazine: How AI Is Reshaping Food Safety
+[2026-06-14 16:12:14 KSA]   │ 02. [Research] AI in Food & Beverage Market Reaches $9.68B in 2025, Projected for $42.3B by 203
+[2026-06-14 16:12:14 KSA]   │ 03. [Research] IFT AI and Food Safety: Trends and Risks Publication Series
+[2026-06-14 16:12:14 KSA]   │ 04. [Release] Spectora Launches New AI Tools To Streamline Home Inspection Workflow, Cuts Repo
+[2026-06-14 16:12:14 KSA]   │ 05. [Policy] EU Commission publishes AI Code of Practice on marking and labeling AI-generated
+[2026-06-14 16:12:14 KSA]   │ 06. [Policy] Colorado AI Act enforcement deadline imminent with federal preemption bill stall
+[2026-06-14 16:12:14 KSA]   │ 07. [Policy] EU Parliament and Council reach provisional agreement on AI Act compliance timel
+[2026-06-14 16:12:14 KSA]   │ 08. [Release] Anthropic launches Claude Fable 5 with stronger coding and knowledge work capabi
+[2026-06-14 16:12:14 KSA]   │ 09. [Release] Apple announces Gemini-powered Siri and Claude iPhone integration at developer e
+[2026-06-14 16:12:14 KSA]   │ 10. [Release] Microsoft announces MAI-Code-1-Flash model at Build conference to compete with O
+[2026-06-14 16:12:14 KSA]   │ 11. [Policy] Trump AI Executive Order Addresses Frontier Models and Cybersecurity Vulnerabili
+[2026-06-14 16:12:14 KSA]   │ 12. [Security] Palo Alto Networks Discovers 26 CVEs Using Frontier AI Models in May Patch Wedne
+[2026-06-14 16:12:14 KSA]   │ 13. [Release] OpenAI Launches Daybreak for AI-Powered Vulnerability Detection and Patch Valida
+[2026-06-14 16:12:14 KSA]   │ 14. [Breakthrough] SpaceX raises record $75B in IPO debut on Nasdaq at $1.77T valuation
+[2026-06-14 16:12:14 KSA]   │ 15. [Release] OpenAI files confidential IPO paperwork targeting $1T+ valuation with Goldman Sa
+[2026-06-14 16:12:14 KSA]   │ 16. [Funding] Anthropic raises $65B Series H at $965B valuation, files for IPO
+[2026-06-14 16:12:14 KSA]   │ 17. [Research] AI Video Analytics for Smart Cities Market Projects $28.76B by 2030
+[2026-06-14 16:12:14 KSA]   │ 18. [Research] Smart City Platforms Market to Reach $337B by 2033, Growing 23.7% Annually
+[2026-06-14 16:12:14 KSA]   │ 19. [Breakthrough] NVIDIA: Smart City AI Agents Transform Urban Operations with Digital Twins
+[2026-06-14 16:12:14 KSA]   └─── 19 total signals ───
+
+[2026-06-14 16:12:14 KSA] ═══ RESCAN COMPLETE ═══
+
