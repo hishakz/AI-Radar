@@ -1102,3 +1102,58 @@
 
 [2026-06-14 16:12:14 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-15 23:05:48 KSA] Manual run triggered (--now flag)
+[2026-06-15 23:05:48 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-15 23:05:48 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-15 23:05:59 KSA]     ✓ 3 signals found
+[2026-06-15 23:06:01 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-15 23:06:14 KSA]     ✓ 3 signals found
+[2026-06-15 23:06:16 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-15 23:06:25 KSA]     ✓ 3 signals found
+[2026-06-15 23:06:27 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-15 23:06:35 KSA]     ✓ 0 signals found
+[2026-06-15 23:06:37 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-15 23:06:49 KSA]     ✓ 3 signals found
+[2026-06-15 23:06:51 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-15 23:06:57 KSA]     ✓ 3 signals found
+[2026-06-15 23:06:59 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-15 23:07:09 KSA]     ✓ 3 signals found
+[2026-06-15 23:07:11 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-15 23:07:17 KSA]     ✓ 3 signals found
+[2026-06-15 23:07:19 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-15 23:07:29 KSA]     ✓ 3 signals found
+[2026-06-15 23:07:31 KSA]   Total new signals: 24
+[2026-06-15 23:07:31 KSA]   Updating dashboard HTML...
+[2026-06-15 23:07:31 KSA]   ↩ 18 duplicate(s) skipped — already in dashboard
+[2026-06-15 23:07:31 KSA]   ✚ 6 genuinely new signals to inject
+[2026-06-15 23:07:31 KSA]   ✓ Done — 6 added, 18 duplicates skipped, 268 total signals
+[2026-06-15 23:07:31 KSA] 
+  ┌─── SCAN SUMMARY — June 15, 2026 ───
+[2026-06-15 23:07:31 KSA]   │ 01. [Release] Infrastructure AI Expands Galaxy Agentic Operating System for Autonomous Facilit
+[2026-06-15 23:07:31 KSA]   │ 02. [Release] Infrastructure AI Unveils Agentic Security Strategy for Autonomous Facilities Op
+[2026-06-15 23:07:31 KSA]   │ 03. [Breakthrough] WEF Announces 2026 Technology Pioneers Focused on Autonomous AI Infrastructure
+[2026-06-15 23:07:31 KSA]   │ 04. [Breakthrough] DroneDeploy Surpasses 20 Trillion Square Feet of Visual Data
+[2026-06-15 23:07:31 KSA]   │ 05. [Release] Built Robotics Expands AI-Driven Excavation Systems
+[2026-06-15 23:07:31 KSA]   │ 06. [Research] Construction Automation Market Reaches $5.2B at 33% YoY Growth
+[2026-06-15 23:07:31 KSA]   │ 07. [Policy] USDA Pushes AI Adoption for Food Safety Modernization Initiative
+[2026-06-15 23:07:31 KSA]   │ 08. [Release] Restaurant Inspection Apps Leverage AI for Compliance: FoodDocs, Lumiform Lead M
+[2026-06-15 23:07:31 KSA]   │ 09. [Breakthrough] AI Food Inspection Systems Now Achieve 99% Defect Detection Accuracy in 2026
+[2026-06-15 23:07:31 KSA]   │ 10. [Policy] European Commission Releases Code of Practice for AI-Generated Content Marking
+[2026-06-15 23:07:31 KSA]   │ 11. [Policy] Great American AI Act Discussion Draft Released by Bipartisan Congressional Lead
+[2026-06-15 23:07:31 KSA]   │ 12. [Policy] White House Issues Executive Order on AI Innovation and Cybersecurity
+[2026-06-15 23:07:31 KSA]   │ 13. [Release] Anthropic Launches Claude Fable 5 and Claude Mythos 5
+[2026-06-15 23:07:31 KSA]   │ 14. [Release] Microsoft Launches MAI-Code-1-Flash at Build Conference
+[2026-06-15 23:07:31 KSA]   │ 15. [Funding] OpenAI Launches Partner Network with $150M Investment
+[2026-06-15 23:07:31 KSA]   │ 16. [Security] Google Pursues Legal Action Against Chinese Cybercrime Network Using Gemini AI f
+[2026-06-15 23:07:31 KSA]   │ 17. [Policy] White House AI Executive Order Establishes Cybersecurity Clearinghouse and Defen
+[2026-06-15 23:07:31 KSA]   │ 18. [Policy] Global Policy Analysis: AI Executive Order Addresses Frontier Models and Cyberse
+[2026-06-15 23:07:31 KSA]   │ 19. [Release] OpenAI Files for IPO as AI Investment Race Intensifies
+[2026-06-15 23:07:31 KSA]   │ 20. [Funding] Databricks Seeks $165B-$175B Valuation in New Funding Round
+[2026-06-15 23:07:31 KSA]   │ 21. [Funding] Q1 2026 Sets All-Time Venture Funding Record With $300B Investment
+[2026-06-15 23:07:31 KSA]   │ 22. [Research] Smart City Platforms Market to Reach USD 337 Billion by 2033
+[2026-06-15 23:07:31 KSA]   │ 23. [Release] Miami-Dade Tests Air Traffic Management System for Air Taxi Operations
+[2026-06-15 23:07:31 KSA]   │ 24. [Research] AI 2027 Forecast Predicts Superhuman Coding by Early 2027, Superintelligence by 
+[2026-06-15 23:07:31 KSA]   └─── 24 total signals ───
+
+[2026-06-15 23:07:31 KSA] ═══ RESCAN COMPLETE ═══
+
