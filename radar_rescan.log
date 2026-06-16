@@ -1157,3 +1157,61 @@
 
 [2026-06-15 23:07:31 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-16 22:55:14 KSA] Manual run triggered (--now flag)
+[2026-06-16 22:55:14 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-16 22:55:14 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-16 22:55:21 KSA]     ✓ 3 signals found
+[2026-06-16 22:55:23 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-16 22:56:00 KSA]     ✓ 3 signals found
+[2026-06-16 22:56:02 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-16 22:56:14 KSA]     ✓ 3 signals found
+[2026-06-16 22:56:16 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-16 22:56:28 KSA]     ✓ 3 signals found
+[2026-06-16 22:56:30 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-16 22:56:53 KSA]     ✓ 3 signals found
+[2026-06-16 22:56:55 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-16 22:57:02 KSA]     ✓ 3 signals found
+[2026-06-16 22:57:04 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-16 22:57:13 KSA]     ✓ 3 signals found
+[2026-06-16 22:57:15 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-16 22:57:23 KSA]     ✓ 3 signals found
+[2026-06-16 22:57:25 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-16 22:57:33 KSA]     ✓ 3 signals found
+[2026-06-16 22:57:35 KSA]   Total new signals: 27
+[2026-06-16 22:57:35 KSA]   Updating dashboard HTML...
+[2026-06-16 22:57:35 KSA]   ↩ 20 duplicate(s) skipped — already in dashboard
+[2026-06-16 22:57:35 KSA]   ✚ 7 genuinely new signals to inject
+[2026-06-16 22:57:35 KSA]   ✓ Done — 7 added, 20 duplicates skipped, 275 total signals
+[2026-06-16 22:57:35 KSA] 
+  ┌─── SCAN SUMMARY — June 16, 2026 ───
+[2026-06-16 22:57:35 KSA]   │ 01. [Release] Smart City Summit 2026: AI Robotics Pavilion Showcases Autonomous Inspection Sys
+[2026-06-16 22:57:35 KSA]   │ 02. [Breakthrough] NVIDIA: Smart City AI Agents Transform Urban Operations with Real-Time Monitorin
+[2026-06-16 22:57:35 KSA]   │ 03. [Release] ASUS AI City Solution Goes Global: Sovereign AI for Smart City Governance 2026
+[2026-06-16 22:57:35 KSA]   │ 04. [Funding] Dusty Robotics raises $45M Series B for construction layout robots
+[2026-06-16 22:57:35 KSA]   │ 05. [Breakthrough] DroneDeploy surpasses 20 trillion square feet of construction visual data
+[2026-06-16 22:57:35 KSA]   │ 06. [Release] Skygauge Robotics appoints Richard Shatilla as CEO for global expansion
+[2026-06-16 22:57:35 KSA]   │ 07. [Policy] EU Launches TraceMap AI Tool to Strengthen Food Safety and Detect Fraud
+[2026-06-16 22:57:35 KSA]   │ 08. [Research] AI Market for Food Safety Reaches $2.7-3.1 Billion, Projected to Hit $13.7 Billi
+[2026-06-16 22:57:35 KSA]   │ 09. [Breakthrough] AI and Machine Vision Transform Food Inspection with 99% Accuracy Systems
+[2026-06-16 22:57:35 KSA]   │ 10. [Breakthrough] Drones and AI Begin Inspecting Housing Renovation Quality on Sakhalin
+[2026-06-16 22:57:35 KSA]   │ 11. [Release] iListing AI Launches Inspecti: Vertical AI Agent for Property Inspections
+[2026-06-16 22:57:35 KSA]   │ 12. [Research] Global Home Inspection Software Market Projected to Grow 10% Annually Through 20
+[2026-06-16 22:57:35 KSA]   │ 13. [Policy] Colorado AI Act set to enforce June 30; Great American AI Act proposes 3-year fe
+[2026-06-16 22:57:35 KSA]   │ 14. [Policy] UK Government announces AI as central focus of 'Regulating for Growth Bill' in K
+[2026-06-16 22:57:35 KSA]   │ 15. [Policy] EU lawmakers reach provisional agreement on AI Act amendments aimed at simplific
+[2026-06-16 22:57:35 KSA]   │ 16. [Release] Anthropic launches Claude Fable 5 with state-of-the-art capabilities
+[2026-06-16 22:57:35 KSA]   │ 17. [Release] Microsoft unveils MAI-Code-1-Flash model at Build conference
+[2026-06-16 22:57:35 KSA]   │ 18. [Funding] Anthropic launches Claude Partner Hub with $100M enterprise program
+[2026-06-16 22:57:35 KSA]   │ 19. [Research] AI vulnerability discovery pushing 2026 CVEs toward 66,000
+[2026-06-16 22:57:35 KSA]   │ 20. [Policy] White House AI Executive Order establishes cybersecurity clearinghouse
+[2026-06-16 22:57:35 KSA]   │ 21. [Security] GitHub Copilot prompt injection vulnerability enables remote code execution
+[2026-06-16 22:57:35 KSA]   │ 22. [Release] OpenAI files for IPO as AI investment race intensifies
+[2026-06-16 22:57:35 KSA]   │ 23. [Funding] Databricks discusses new funding at $165B-$175B valuation
+[2026-06-16 22:57:35 KSA]   │ 24. [Funding] Q1 2026 Venture Funding Reaches Record $300 Billion Globally
+[2026-06-16 22:57:35 KSA]   │ 25. [Research] AI 2027: Former OpenAI Researcher Daniel Kokotajlo Forecasts Superhuman AI by Ea
+[2026-06-16 22:57:35 KSA]   │ 26. [Breakthrough] Smart City AI Deployment Accelerating: 65% of Cities to Deploy AI Agents by 2027
+[2026-06-16 22:57:35 KSA]   │ 27. [Research] Smart City Infrastructure Market Growth Accelerates: IoT-Smart-Cities Segment $7
+[2026-06-16 22:57:35 KSA]   └─── 27 total signals ───
+
+[2026-06-16 22:57:35 KSA] ═══ RESCAN COMPLETE ═══
+

@@ -330,7 +330,7 @@ const DOMAINS = [
 const L = {
   en:{
     wm:['Inspection','Intelligence'], tl:'AI & EMERGING TECH RADAR — INNOVATION DOMAIN BRIEF',
-    scanDate:'Jun 15, 2026', sigCount:'268 signals',
+    scanDate:'Jun 16, 2026', sigCount:'275 signals',
     tabs:[
       {id:'inspect',label:'🔍 Smart City & Inspection',count:20},
       {id:'apply',  label:'⚙️ Innovation Applications',count:5},
@@ -393,7 +393,7 @@ const L = {
   },
   ar:{
     wm:['منصة استخبارات','التفتيش'], tl:'رادار الذكاء الاصطناعي — ملخص الابتكار في مجال التفتيش',
-    scanDate:'15 يونيو 2026', sigCount:'268 إشارة',
+    scanDate:'16 يونيو 2026', sigCount:'275 إشارة',
     tabs:[
       {id:'inspect',label:'🔍 المدن الذكية والتفتيش',count:20},
       {id:'apply',  label:'⚙️ تطبيقات الابتكار',   count:5},
@@ -724,6 +724,30 @@ const DT_ROWS=[
 // AI GLOBAL SIGNALS
 // ════════════════════════════════════════════════════════════════
 const AI_SIGNALS=[
+
+  // ══ AUTO-RESCAN JUNE 16, 2026 ══
+  {domains:["construction"],url:'https://techcrunch.com/?p=2319099',
+   en:{t:'Dusty Robotics raises $45M Series B for construction layout robots',cat:'Funding',d:'June 9, 2026 AUTO',s:'Bay Area firm Dusty Robotics announced a $45 million Series B led by Scale Venture Partners, bringing total funding to ~$69M at $250M valuation. Funds support FieldPrinter robot deployment scaling.'},
+   ar:{t:'Dusty Robotics raises $45M Series B for construction layout robots',cat:'Funding',d:'June 9, 2026 تلقائي',s:'Bay Area firm Dusty Robotics announced a $45 million Series B led by Scale Venture Partners, bringing total funding to ~$69M at $250M valuation. Funds support FieldPrinter robot deployment scaling.'}},
+  {domains:["construction"],url:'https://www.globenewswire.com/en/search/tag/robotics',
+   en:{t:'Skygauge Robotics appoints Richard Shatilla as CEO for global expansion',cat:'Release',d:'December 12, 2025 AUTO',s:'Skygauge Robotics, provider of contact-based AI-driven industrial drone inspection platform, appointed tech veteran Richard Shatilla as CEO to drive global commercial expansion and adoption.'},
+   ar:{t:'Skygauge Robotics appoints Richard Shatilla as CEO for global expansion',cat:'Release',d:'December 12, 2025 تلقائي',s:'Skygauge Robotics, provider of contact-based AI-driven industrial drone inspection platform, appointed tech veteran Richard Shatilla as CEO to drive global commercial expansion and adoption.'}},
+  {domains:["food"],url:'https://www.openaccessgovernment.org/eu-launches-ai-tool-to-strengthen-food-safety-and-fight-fraud/206441/',
+   en:{t:'EU Launches TraceMap AI Tool to Strengthen Food Safety and Detect Fraud',cat:'Policy',d:'March 16, 2026 AUTO',s:'European Commission introduces AI platform for food safety monitoring across EU Member States. TraceMap helps regulators identify high-risk operators and suspicious trading patterns, enabling more targeted inspections without additional resources.'},
+   ar:{t:'EU Launches TraceMap AI Tool to Strengthen Food Safety and Detect Fraud',cat:'Policy',d:'March 16, 2026 تلقائي',s:'European Commission introduces AI platform for food safety monitoring across EU Member States. TraceMap helps regulators identify high-risk operators and suspicious trading patterns, enabling more targeted inspections without additional resources.'}},
+  {domains:["food"],url:'https://ioni.ai/post/how-ai-is-transforming-food-safety',
+   en:{t:'AI Market for Food Safety Reaches $2.7-3.1 Billion, Projected to Hit $13.7 Billion by 2030',cat:'Research',d:'April 25, 2026 AUTO',s:'70% of food businesses report AI implementation or planning for 2025. Over 60% of AI adoption concentrated in real-time quality inspection and contamination detection, with compound annual growth rate of 30.9%.'},
+   ar:{t:'AI Market for Food Safety Reaches $2.7-3.1 Billion, Projected to Hit $13.7 Billion by 2030',cat:'Research',d:'April 25, 2026 تلقائي',s:'70% of food businesses report AI implementation or planning for 2025. Over 60% of AI adoption concentrated in real-time quality inspection and contamination detection, with compound annual growth rate of 30.9%.'}},
+  {domains:["housing"],url:'https://getlatka.com/companies/industries/i-home-inspection-software',
+   en:{t:'iListing AI Launches Inspecti: Vertical AI Agent for Property Inspections',cat:'Release',d:'June 2026 AUTO',s:'iListing AI released Inspecti, an AI agent designed specifically for inventory clerks to streamline property inspections and reporting. The tool aims to help users save time, increase productivity, and enhance accuracy in inspection workflows.'},
+   ar:{t:'iListing AI Launches Inspecti: Vertical AI Agent for Property Inspections',cat:'Release',d:'June 2026 تلقائي',s:'iListing AI released Inspecti, an AI agent designed specifically for inventory clerks to streamline property inspections and reporting. The tool aims to help users save time, increase productivity, and enhance accuracy in inspection workflows.'}},
+  {domains:["security"],url:'https://www.helpnetsecurity.com/2026/06/15/first-2026-cve-forecast/',
+   en:{t:'AI vulnerability discovery pushing 2026 CVEs toward 66,000',cat:'Research',d:'June 15, 2026 AUTO',s:'The Forum of Incident Response and Security Teams (FIRST) now expects 2026 to reach near 66,000 CVEs as AI tools have started hunting for software flaws. AI can surface more flaws than analysts can verify and patch.'},
+   ar:{t:'AI vulnerability discovery pushing 2026 CVEs toward 66,000',cat:'Research',d:'June 15, 2026 تلقائي',s:'The Forum of Incident Response and Security Teams (FIRST) now expects 2026 to reach near 66,000 CVEs as AI tools have started hunting for software flaws. AI can surface more flaws than analysts can verify and patch.'}},
+  {domains:["smart-city"],url:'https://ajsai.substack.com/p/the-2027-ai-prediction-thats-too',
+   en:{t:'AI 2027: Former OpenAI Researcher Daniel Kokotajlo Forecasts Superhuman AI by Early 2027',cat:'Research',d:'May 7, 2026 AUTO',s:'Daniel Kokotajlo predicts AIs trained with 1000x more compute than GPT-4, superhuman coding by early 2027, autonomous AI researchers by mid-2027, and superintelligence by early 2028. Stock market could gain 30% in 2026 driven by AI agent integration.'},
+   ar:{t:'AI 2027: Former OpenAI Researcher Daniel Kokotajlo Forecasts Superhuman AI by Early 2027',cat:'Research',d:'May 7, 2026 تلقائي',s:'Daniel Kokotajlo predicts AIs trained with 1000x more compute than GPT-4, superhuman coding by early 2027, autonomous AI researchers by mid-2027, and superintelligence by early 2028. Stock market could gain 30% in 2026 driven by AI agent integration.'}},
+
 
   // ══ AUTO-RESCAN JUNE 15, 2026 ══
   {domains:["smart-city"],url:'https://www.travelfoundation.org/global-travel-news/new-technology-pioneers-are-building-the-infrastructure-for-the-next-era-of-ai/',
