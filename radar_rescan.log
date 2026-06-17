@@ -1215,3 +1215,50 @@
 
 [2026-06-16 22:57:35 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-17 20:39:45 KSA] Manual run triggered (--now flag)
+[2026-06-17 20:39:45 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-17 20:39:45 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-17 20:39:54 KSA]     ✓ 1 signals found
+[2026-06-17 20:39:56 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-17 20:40:05 KSA]     ✓ 0 signals found
+[2026-06-17 20:40:07 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-17 20:40:24 KSA]     ✗ No JSON found in response
+[2026-06-17 20:40:26 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-17 20:40:36 KSA]     ✓ 0 signals found
+[2026-06-17 20:40:38 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-17 20:40:47 KSA]     ✓ 3 signals found
+[2026-06-17 20:40:49 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-17 20:40:55 KSA]     ✓ 3 signals found
+[2026-06-17 20:40:57 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-17 20:41:05 KSA]     ✓ 3 signals found
+[2026-06-17 20:41:07 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-17 20:41:14 KSA]     ✓ 3 signals found
+[2026-06-17 20:41:16 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-17 20:41:29 KSA]     ✓ 3 signals found
+[2026-06-17 20:41:31 KSA]   Total new signals: 16
+[2026-06-17 20:41:31 KSA]   Updating dashboard HTML...
+[2026-06-17 20:41:31 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-17 20:41:31 KSA]   ✚ 3 genuinely new signals to inject
+[2026-06-17 20:41:31 KSA]   ✓ Done — 3 added, 13 duplicates skipped, 278 total signals
+[2026-06-17 20:41:31 KSA] 
+  ┌─── SCAN SUMMARY — June 17, 2026 ───
+[2026-06-17 20:41:31 KSA]   │ 01. [Policy] South Korea Launches 2026 Smart City Initiative with AI and Autonomous Systems
+[2026-06-17 20:41:31 KSA]   │ 02. [Policy] White House Releases Executive Order on AI Innovation and Security
+[2026-06-17 20:41:31 KSA]   │ 03. [Policy] Bipartisan Great American AI Act Discussion Draft Released
+[2026-06-17 20:41:31 KSA]   │ 04. [Policy] Colorado AI Act Set to Take Effect June 30, 2026
+[2026-06-17 20:41:31 KSA]   │ 05. [Release] OpenAI introduces Deployment Simulation feature
+[2026-06-17 20:41:31 KSA]   │ 06. [Release] Anthropic launches Claude Fable 5 and Claude Mythos 5 models
+[2026-06-17 20:41:31 KSA]   │ 07. [Release] Claude Code updates with nested sub-agents and safe mode
+[2026-06-17 20:41:31 KSA]   │ 08. [Security] FIRST Projects 2026 CVE Count to Hit 66,000 via AI
+[2026-06-17 20:41:31 KSA]   │ 09. [Policy] Trump Signs Executive Order on AI Security and Frontier Model Vulnerabilities
+[2026-06-17 20:41:31 KSA]   │ 10. [Release] OpenAI Launches Daybreak for AI-Powered Vulnerability Detection
+[2026-06-17 20:41:31 KSA]   │ 11. [Release] SpaceX IPO Prices at $135 Per Share, Raises Record $75B
+[2026-06-17 20:41:31 KSA]   │ 12. [Funding] Q1 2026 AI Venture Funding Reaches $242B, Four Companies Absorb 65%
+[2026-06-17 20:41:31 KSA]   │ 13. [Funding] Anduril Industries Raises $5B Series H, Doubles Valuation to $61B
+[2026-06-17 20:41:31 KSA]   │ 14. [Research] AI Video Analytics for Smart Cities Market to Reach $28.76B by 2030
+[2026-06-17 20:41:31 KSA]   │ 15. [Research] Smart City Platforms Market to Reach $337 Billion by 2033
+[2026-06-17 20:41:31 KSA]   │ 16. [Release] Apple Integrates Gemini and Claude AI into iOS 27 at WWDC 2026
+[2026-06-17 20:41:31 KSA]   └─── 16 total signals ───
+
+[2026-06-17 20:41:31 KSA] ═══ RESCAN COMPLETE ═══
+
