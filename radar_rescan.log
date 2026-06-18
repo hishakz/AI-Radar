@@ -1262,3 +1262,56 @@
 
 [2026-06-17 20:41:31 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-18 21:10:33 KSA] Manual run triggered (--now flag)
+[2026-06-18 21:10:33 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-18 21:10:33 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-18 21:10:45 KSA]     ✓ 3 signals found
+[2026-06-18 21:10:47 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-18 21:10:57 KSA]     ✓ 3 signals found
+[2026-06-18 21:10:59 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-18 21:11:09 KSA]     ✓ 0 signals found
+[2026-06-18 21:11:11 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-18 21:11:24 KSA]     ✓ 1 signals found
+[2026-06-18 21:11:26 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-18 21:11:35 KSA]     ✓ 3 signals found
+[2026-06-18 21:11:37 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-18 21:11:49 KSA]     ✓ 3 signals found
+[2026-06-18 21:11:51 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-18 21:12:03 KSA]     ✓ 3 signals found
+[2026-06-18 21:12:05 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-18 21:12:12 KSA]     ✓ 3 signals found
+[2026-06-18 21:12:14 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-18 21:12:23 KSA]     ✓ 3 signals found
+[2026-06-18 21:12:25 KSA]   Total new signals: 22
+[2026-06-18 21:12:25 KSA]   Updating dashboard HTML...
+[2026-06-18 21:12:25 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-18 21:12:25 KSA]   ✚ 9 genuinely new signals to inject
+[2026-06-18 21:12:25 KSA]   ✓ Done — 9 added, 13 duplicates skipped, 287 total signals
+[2026-06-18 21:12:25 KSA] 
+  ┌─── SCAN SUMMARY — June 18, 2026 ───
+[2026-06-18 21:12:25 KSA]   │ 01. [Research] Inspection Drones Market Analysis: IdeaForge PowerRay vs Skydio Autonomous Infra
+[2026-06-18 21:12:25 KSA]   │ 02. [Release] AI Autonomous Smart City Hackathon 2026 Invites Global Innovators
+[2026-06-18 21:12:25 KSA]   │ 03. [Research] Global Inspection Drones Market Valued at USD 14.23B in 2026, Projected USD 37.0
+[2026-06-18 21:12:25 KSA]   │ 04. [Breakthrough] DroneDeploy Surpasses 20 Trillion Sq Ft Visual Data, 160% YoY Robotic Mission Gr
+[2026-06-18 21:12:25 KSA]   │ 05. [Release] DroneDeploy Autonomous Ground Robots Enter Beta June 2026 with Safety AI Detecti
+[2026-06-18 21:12:25 KSA]   │ 06. [Research] Virginia Tech MARIO System: Multi-Robot Remote Construction Site Monitoring Plat
+[2026-06-18 21:12:25 KSA]   │ 07. [Research] BuildSafe: Generative AI Framework for Construction Safety and Building Inspecti
+[2026-06-18 21:12:25 KSA]   │ 08. [Policy] Trump signs executive order for voluntary AI model review and security testing
+[2026-06-18 21:12:25 KSA]   │ 09. [Policy] Obernolte-Trahan introduce Great American Artificial Intelligence Act of 2026
+[2026-06-18 21:12:25 KSA]   │ 10. [Policy] Colorado repeals SB 205 with narrower replacement AI law effective January 2027
+[2026-06-18 21:12:25 KSA]   │ 11. [Security] Anthropic Suspends Claude Fable 5 and Mythos 5 Access Over Export Controls
+[2026-06-18 21:12:25 KSA]   │ 12. [Release] Anthropic Launches Claude Fable 5 with Safety Classifiers
+[2026-06-18 21:12:25 KSA]   │ 13. [Release] OpenAI Retires GPT-5.2 Models, Transitions Chats to GPT-5.5
+[2026-06-18 21:12:25 KSA]   │ 14. [Security] Anthropic Disables Advanced AI Models After Government Jailbreak Discovery
+[2026-06-18 21:12:25 KSA]   │ 15. [Research] University of Toronto Demonstrates Autonomous AI Worm Using Open-Source LLM
+[2026-06-18 21:12:25 KSA]   │ 16. [Research] NIST Mathematical Proof: AI Guardrails Cannot Defend Against All Adversarial Pro
+[2026-06-18 21:12:25 KSA]   │ 17. [Release] SpaceX IPO Launches: Largest Public Offering in History at $1.75T Valuation
+[2026-06-18 21:12:25 KSA]   │ 18. [Release] Anthropic IPO Filing at $965B Valuation Ahead of OpenAI, Eyeing $1T Debut
+[2026-06-18 21:12:25 KSA]   │ 19. [Release] OpenAI Confidential IPO Filing on June 8: $852B Valuation, Q4 2026 Targeting
+[2026-06-18 21:12:25 KSA]   │ 20. [Research] AI 2027 Updates: Superhuman Coder Timelines Revised Downward but Still On Track
+[2026-06-18 21:12:25 KSA]   │ 21. [Breakthrough] FPT Expands Smart City AI Inspections Using NVIDIA Metropolis Framework
+[2026-06-18 21:12:25 KSA]   │ 22. [Breakthrough] Niantic and Spexi Partner for Drone-Based 3D Physical AI Infrastructure Inspecti
+[2026-06-18 21:12:25 KSA]   └─── 22 total signals ───
+
+[2026-06-18 21:12:25 KSA] ═══ RESCAN COMPLETE ═══
+
