@@ -1315,3 +1315,52 @@
 
 [2026-06-18 21:12:25 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-19 19:24:40 KSA] Manual run triggered (--now flag)
+[2026-06-19 19:24:40 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-19 19:24:40 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-19 19:25:01 KSA]     ✓ 3 signals found
+[2026-06-19 19:25:03 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-19 19:25:21 KSA]     ✓ 0 signals found
+[2026-06-19 19:25:23 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-19 19:25:38 KSA]     ✓ 3 signals found
+[2026-06-19 19:25:40 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-19 19:25:47 KSA]     ✓ 0 signals found
+[2026-06-19 19:25:49 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-19 19:26:01 KSA]     ✓ 3 signals found
+[2026-06-19 19:26:03 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-19 19:26:09 KSA]     ✓ 0 signals found
+[2026-06-19 19:26:11 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-19 19:26:27 KSA]     ✓ 3 signals found
+[2026-06-19 19:26:29 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-19 19:26:41 KSA]     ✓ 3 signals found
+[2026-06-19 19:26:43 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-19 19:26:54 KSA]     ✓ 3 signals found
+[2026-06-19 19:26:56 KSA]   Total new signals: 18
+[2026-06-19 19:26:56 KSA]   Updating dashboard HTML...
+[2026-06-19 19:26:56 KSA]   ↩ 8 duplicate(s) skipped — already in dashboard
+[2026-06-19 19:26:56 KSA]   ✚ 10 genuinely new signals to inject
+[2026-06-19 19:26:56 KSA]   ✓ Done — 10 added, 8 duplicates skipped, 297 total signals
+[2026-06-19 19:26:56 KSA] 
+  ┌─── SCAN SUMMARY — June 19, 2026 ───
+[2026-06-19 19:26:56 KSA]   │ 01. [Breakthrough] Drone SaaS Market Accelerates as AI Powers Fully Autonomous Infrastructure Inspe
+[2026-06-19 19:26:56 KSA]   │ 02. [Breakthrough] Docked Autonomous Drone Systems Transform Utility Grid Monitoring and Continuous
+[2026-06-19 19:26:56 KSA]   │ 03. [Research] AI-Driven Smart Concrete Enables Continuous Infrastructure Health Monitoring in 
+[2026-06-19 19:26:56 KSA]   │ 04. [Research] New Research Shows How AI Could Transform Food Safety Detection
+[2026-06-19 19:26:56 KSA]   │ 05. [Research] Cornell Experts Explain AI Contamination Prediction Limits and Data Quality
+[2026-06-19 19:26:56 KSA]   │ 06. [Research] AI Food Safety Legal Risks: Liability When Early Warnings Ignored
+[2026-06-19 19:26:56 KSA]   │ 07. [Policy] EU Code of Practice on AI-Generated Content Marking Published June 10
+[2026-06-19 19:26:56 KSA]   │ 08. [Policy] Trump Executive Order on AI Security and Innovation June 2
+[2026-06-19 19:26:56 KSA]   │ 09. [Policy] Colorado AI Act Implementation Deadline Approaches June 30
+[2026-06-19 19:26:56 KSA]   │ 10. [Research] FIRST Vulnerability Forecast: 2026 CVE Projection Reaches ~66K Due to AI-Assiste
+[2026-06-19 19:26:56 KSA]   │ 11. [Security] LangGraph Framework Flaws Expose AI Agents to Critical Remote Code Execution
+[2026-06-19 19:26:56 KSA]   │ 12. [Security] Agentjacking Attack Exploits AI Coding Agents to Execute Malicious Code
+[2026-06-19 19:26:56 KSA]   │ 13. [Release] SpaceX Completes Largest IPO in History at $135 per Share
+[2026-06-19 19:26:56 KSA]   │ 14. [Release] Anthropic Confidentially Files S-1 for IPO at $965B Valuation
+[2026-06-19 19:26:56 KSA]   │ 15. [Release] OpenAI Files Confidential IPO Paperwork with SEC in June
+[2026-06-19 19:26:56 KSA]   │ 16. [Release] Anthropic Publishes First Public Record on Claude's Real-World Impact
+[2026-06-19 19:26:56 KSA]   │ 17. [Breakthrough] Ames Laboratory Breakthrough: Physics-Trained AI Model DuctGPT Discovers Rare-Ea
+[2026-06-19 19:26:56 KSA]   │ 18. [Breakthrough] MiniMax M3 Model Achieves 9x Faster Processing with Sparse Attention Architectur
+[2026-06-19 19:26:56 KSA]   └─── 18 total signals ───
+
+[2026-06-19 19:26:56 KSA] ═══ RESCAN COMPLETE ═══
+
