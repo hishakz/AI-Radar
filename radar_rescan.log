@@ -1364,3 +1364,54 @@
 
 [2026-06-19 19:26:56 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-20 15:19:54 KSA] Manual run triggered (--now flag)
+[2026-06-20 15:19:54 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-20 15:19:54 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-20 15:20:10 KSA]     ✓ 3 signals found
+[2026-06-20 15:20:12 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-20 15:20:36 KSA]     ✓ 0 signals found
+[2026-06-20 15:20:38 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-20 15:20:49 KSA]     ✓ 0 signals found
+[2026-06-20 15:20:51 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-20 15:21:01 KSA]     ✓ 3 signals found
+[2026-06-20 15:21:03 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-20 15:21:18 KSA]     ✓ 2 signals found
+[2026-06-20 15:21:20 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-20 15:21:31 KSA]     ✓ 3 signals found
+[2026-06-20 15:21:33 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-20 15:21:41 KSA]     ✓ 3 signals found
+[2026-06-20 15:21:43 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-20 15:21:58 KSA]     ✓ 3 signals found
+[2026-06-20 15:22:00 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-20 15:22:08 KSA]     ✓ 3 signals found
+[2026-06-20 15:22:10 KSA]   Total new signals: 20
+[2026-06-20 15:22:10 KSA]   Updating dashboard HTML...
+[2026-06-20 15:22:10 KSA]   ↩ 10 duplicate(s) skipped — already in dashboard
+[2026-06-20 15:22:10 KSA]   ✚ 10 genuinely new signals to inject
+[2026-06-20 15:22:10 KSA]   ✓ Done — 10 added, 10 duplicates skipped, 307 total signals
+[2026-06-20 15:22:10 KSA] 
+  ┌─── SCAN SUMMARY — June 20, 2026 ───
+[2026-06-20 15:22:10 KSA]   │ 01. [Release] JOUAV & Guangxi Power Supply Bureau launch China's first autonomous inspection s
+[2026-06-20 15:22:10 KSA]   │ 02. [Release] Turin Bridge Monitoring System integrates sensors, AI, and drones for structural
+[2026-06-20 15:22:10 KSA]   │ 03. [Breakthrough] Linker Vision physical AI recognizes infrastructure events in Kaohsiung City sma
+[2026-06-20 15:22:10 KSA]   │ 04. [Release] Spectora Launches 3 AI Tools for Home Inspectors
+[2026-06-20 15:22:10 KSA]   │ 05. [Release] Alpine Building Performance Releases Free AI Inspection Forecaster
+[2026-06-20 15:22:10 KSA]   │ 06. [Research] Global Home Inspection Software Market Projected to Reach $478M by 2035
+[2026-06-20 15:22:10 KSA]   │ 07. [Policy] EU Commission Publishes Code of Practice on AI-Generated Content Marking and Lab
+[2026-06-20 15:22:10 KSA]   │ 08. [Policy] EU AI Act Article 50 Transparency Rules Take Effect August 2, 2026 with Mandator
+[2026-06-20 15:22:10 KSA]   │ 09. [Release] Anthropic Releases Claude Fable (Claude Mythos) on June 9, 2026
+[2026-06-20 15:22:10 KSA]   │ 10. [Policy] Anthropic Receives US Export-Control Directive Suspending Claude Fable 5 on June
+[2026-06-20 15:22:10 KSA]   │ 11. [Release] Claude Code Updates Include Auto Mode Safety Improvements (June 18-19, 2026)
+[2026-06-20 15:22:10 KSA]   │ 12. [Policy] Trump Signs AI Executive Order Addressing Frontier Models and Cybersecurity Vuln
+[2026-06-20 15:22:10 KSA]   │ 13. [Release] OpenAI Launches Daybreak for AI-Powered Vulnerability Detection and Patch Valida
+[2026-06-20 15:22:10 KSA]   │ 14. [Research] Frontier AI Models Showing Extraordinary Capability for Finding Vulnerabilities 
+[2026-06-20 15:22:10 KSA]   │ 15. [Release] SpaceX debuts on Nasdaq at $160.95, gaining 19% on IPO day
+[2026-06-20 15:22:10 KSA]   │ 16. [Release] Anthropic confidentially files S-1 with SEC, targeting $965B IPO valuation
+[2026-06-20 15:22:10 KSA]   │ 17. [Release] OpenAI files confidential S-1 with SEC one week after Anthropic
+[2026-06-20 15:22:10 KSA]   │ 18. [Research] AI 2027 Research Grading: Progress at 65% of Predicted Pace
+[2026-06-20 15:22:10 KSA]   │ 19. [Forecast] Smart City IoT Connections to Exceed 122M by 2027
+[2026-06-20 15:22:10 KSA]   │ 20. [Research] AI 2027: Superhuman Coding and Superintelligence by 2027-2028
+[2026-06-20 15:22:10 KSA]   └─── 20 total signals ───
+
+[2026-06-20 15:22:10 KSA] ═══ RESCAN COMPLETE ═══
+
