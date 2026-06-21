@@ -1415,3 +1415,57 @@
 
 [2026-06-20 15:22:10 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-21 16:24:11 KSA] Manual run triggered (--now flag)
+[2026-06-21 16:24:11 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-21 16:24:11 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-21 16:24:24 KSA]     ✓ 3 signals found
+[2026-06-21 16:24:26 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-21 16:24:37 KSA]     ✓ 0 signals found
+[2026-06-21 16:24:39 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-21 16:24:52 KSA]     ✓ 2 signals found
+[2026-06-21 16:24:54 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-21 16:25:02 KSA]     ✓ 3 signals found
+[2026-06-21 16:25:04 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-21 16:25:13 KSA]     ✓ 3 signals found
+[2026-06-21 16:25:15 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-21 16:25:24 KSA]     ✓ 3 signals found
+[2026-06-21 16:25:26 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-21 16:25:36 KSA]     ✓ 3 signals found
+[2026-06-21 16:25:38 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-21 16:25:46 KSA]     ✓ 3 signals found
+[2026-06-21 16:25:48 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-21 16:25:55 KSA]     ✓ 3 signals found
+[2026-06-21 16:25:57 KSA]   Total new signals: 23
+[2026-06-21 16:25:57 KSA]   Updating dashboard HTML...
+[2026-06-21 16:25:57 KSA]   ↩ 12 duplicate(s) skipped — already in dashboard
+[2026-06-21 16:25:57 KSA]   ✚ 11 genuinely new signals to inject
+[2026-06-21 16:25:57 KSA]   ✓ Done — 11 added, 12 duplicates skipped, 318 total signals
+[2026-06-21 16:25:57 KSA] 
+  ┌─── SCAN SUMMARY — June 21, 2026 ───
+[2026-06-21 16:25:57 KSA]   │ 01. [Breakthrough] NVIDIA Brings Physical AI & Smart City Tech to Dublin, Ho Chi Minh City, Raleigh
+[2026-06-21 16:25:57 KSA]   │ 02. [Release] Boston Dynamics & Google DeepMind Partner for Industrial AI Inspection
+[2026-06-21 16:25:57 KSA]   │ 03. [Breakthrough] NVIDIA Metropolis Skills Enable Visual Inspection with Synthetic Data Generation
+[2026-06-21 16:25:57 KSA]   │ 04. [Breakthrough] iFactory AI Vision Achieves 99% Accuracy in Automated Food Inspection
+[2026-06-21 16:25:57 KSA]   │ 05. [Research] IFT Publishes Multi-Expert Analysis on AI Food Safety Limits and Liabilities
+[2026-06-21 16:25:57 KSA]   │ 06. [Breakthrough] DroneDeploy Launches AI Inspection Agents with Safety AI Identifying 90,000+ Saf
+[2026-06-21 16:25:57 KSA]   │ 07. [Release] iListing AI Launches Inspecti Vertical AI Agent for Property Inspection Automati
+[2026-06-21 16:25:57 KSA]   │ 08. [Research] Global Home Inspection Software Market Projected to Grow from $149M to $478M by 
+[2026-06-21 16:25:57 KSA]   │ 09. [Policy] EU AI Act transparency rules take effect August 2026
+[2026-06-21 16:25:57 KSA]   │ 10. [Policy] Trump issues June 2 executive order on AI innovation and national security
+[2026-06-21 16:25:57 KSA]   │ 11. [Policy] Colorado replaces AI Act with narrower ADMT law effective January 2027
+[2026-06-21 16:25:57 KSA]   │ 12. [Policy] Anthropic Suspends Claude Fable 5 and Mythos 5 Following US Export Directive
+[2026-06-21 16:25:57 KSA]   │ 13. [Release] Anthropic Launches Claude Opus 4.8 with 1M Token Context Window
+[2026-06-21 16:25:57 KSA]   │ 14. [Release] Gemini 3.5 Pro Still Pending GA as June 2026 Deadline Approaches
+[2026-06-21 16:25:57 KSA]   │ 15. [Policy] U.S. Government Orders Anthropic to Suspend Fable 5 and Mythos 5 for Foreign Nat
+[2026-06-21 16:25:57 KSA]   │ 16. [Security] AI Agent Security Risks Proliferate: MCP Exposure, Supply Chain Vulnerabilities 
+[2026-06-21 16:25:57 KSA]   │ 17. [Breakthrough] Record-Breaking June 2026 Patch Tuesday: 26 CVEs from AI-Powered Vulnerability D
+[2026-06-21 16:25:57 KSA]   │ 18. [Policy] Florida sues OpenAI alleging ChatGPT caused substantial harms
+[2026-06-21 16:25:57 KSA]   │ 19. [Release] Anthropic confidentially files S-1 with $965B valuation ahead of Nasdaq listing
+[2026-06-21 16:25:57 KSA]   │ 20. [Release] OpenAI files confidential IPO registration targeting $1T+ valuation in Q4
+[2026-06-21 16:25:57 KSA]   │ 21. [Breakthrough] Niantic & Spexi Partner on City-Scale 3D AI Infrastructure Inspections
+[2026-06-21 16:25:57 KSA]   │ 22. [Release] SewerAI Launches Smart Project Builder for Automated Infrastructure Planning
+[2026-06-21 16:25:57 KSA]   │ 23. [Research] AI 2027 Predictions Report Revised: Superhuman Coders Timeline Extended to 2028-
+[2026-06-21 16:25:57 KSA]   └─── 23 total signals ───
+
+[2026-06-21 16:25:57 KSA] ═══ RESCAN COMPLETE ═══
+

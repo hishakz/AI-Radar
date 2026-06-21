@@ -330,7 +330,7 @@ const DOMAINS = [
 const L = {
   en:{
     wm:['Inspection','Intelligence'], tl:'AI & EMERGING TECH RADAR — INNOVATION DOMAIN BRIEF',
-    scanDate:'Jun 20, 2026', sigCount:'307 signals',
+    scanDate:'Jun 21, 2026', sigCount:'318 signals',
     tabs:[
       {id:'inspect',label:'🔍 Smart City & Inspection',count:20},
       {id:'apply',  label:'⚙️ Innovation Applications',count:5},
@@ -393,7 +393,7 @@ const L = {
   },
   ar:{
     wm:['منصة استخبارات','التفتيش'], tl:'رادار الذكاء الاصطناعي — ملخص الابتكار في مجال التفتيش',
-    scanDate:'20 يونيو 2026', sigCount:'307 إشارة',
+    scanDate:'21 يونيو 2026', sigCount:'318 إشارة',
     tabs:[
       {id:'inspect',label:'🔍 المدن الذكية والتفتيش',count:20},
       {id:'apply',  label:'⚙️ تطبيقات الابتكار',   count:5},
@@ -724,6 +724,42 @@ const DT_ROWS=[
 // AI GLOBAL SIGNALS
 // ════════════════════════════════════════════════════════════════
 const AI_SIGNALS=[
+
+  // ══ AUTO-RESCAN JUNE 21, 2026 ══
+  {domains:["smart-city"],url:'https://dentro.de/ai/news/',
+   en:{t:'Boston Dynamics & Google DeepMind Partner for Industrial AI Inspection',cat:'Release',d:'June 2026 AUTO',s:'Boston Dynamics partnered with Google Cloud & DeepMind to integrate Gemini Robotics-ER 1.6 into Spot robot and Orbit AI visual inspection platform. Enhanced spatial reasoning, autonomous decision-making & continuous learning for complex industrial environments.'},
+   ar:{t:'Boston Dynamics & Google DeepMind Partner for Industrial AI Inspection',cat:'Release',d:'June 2026 تلقائي',s:'Boston Dynamics partnered with Google Cloud & DeepMind to integrate Gemini Robotics-ER 1.6 into Spot robot and Orbit AI visual inspection platform. Enhanced spatial reasoning, autonomous decision-making & continuous learning for complex industrial environments.'}},
+  {domains:["smart-city"],url:'https://blogs.nvidia.com/blog/cvpr-physical-ai-research-agent-skills/',
+   en:{t:'NVIDIA Metropolis Skills Enable Visual Inspection with Synthetic Data Generation',cat:'Breakthrough',d:'June 18, 2026 AUTO',s:'New NVIDIA Metropolis skills generate synthetic visual scenarios including anomalies for inspection tasks. Uses Cosmos 3 mixture-of-transformers for creating rare defect examples across surfaces. Researchers can assess model accuracy on generated rare cases.'},
+   ar:{t:'NVIDIA Metropolis Skills Enable Visual Inspection with Synthetic Data Generation',cat:'Breakthrough',d:'June 18, 2026 تلقائي',s:'New NVIDIA Metropolis skills generate synthetic visual scenarios including anomalies for inspection tasks. Uses Cosmos 3 mixture-of-transformers for creating rare defect examples across surfaces. Researchers can assess model accuracy on generated rare cases.'}},
+  {domains:["food"],url:'https://ifactoryapp.com/blog/ai-quality-inspection-food-beverage',
+   en:{t:'iFactory AI Vision Achieves 99% Accuracy in Automated Food Inspection',cat:'Breakthrough',d:'June 15, 2026 AUTO',s:'iFactory published on June 15, 2026 detailed how AI vision can inspect 100% of units at full line speed with consistent accuracy, detecting foreign material, label defects, seal failures, and allergen mismatches. Human cap-seal detection drops from 82% to 70% over time; AI maintains accuracy throughout production with predictive drift detection to prevent contamination events before they occur.'},
+   ar:{t:'iFactory AI Vision Achieves 99% Accuracy in Automated Food Inspection',cat:'Breakthrough',d:'June 15, 2026 تلقائي',s:'iFactory published on June 15, 2026 detailed how AI vision can inspect 100% of units at full line speed with consistent accuracy, detecting foreign material, label defects, seal failures, and allergen mismatches. Human cap-seal detection drops from 82% to 70% over time; AI maintains accuracy throughout production with predictive drift detection to prevent contamination events before they occur.'}},
+  {domains:["ai-models"],url:'https://releasebot.io/updates/anthropic/claude-developer-platform',
+   en:{t:'Anthropic Launches Claude Opus 4.8 with 1M Token Context Window',cat:'Release',d:'6 days ago AUTO',s:'Claude Opus 4.8 released May 28, 2026 as the most capable generally available model, supporting 1M token context window by default on Claude API, Amazon Bedrock, and Vertex AI, with 128k max output tokens.'},
+   ar:{t:'Anthropic Launches Claude Opus 4.8 with 1M Token Context Window',cat:'Release',d:'6 days ago تلقائي',s:'Claude Opus 4.8 released May 28, 2026 as the most capable generally available model, supporting 1M token context window by default on Claude API, Amazon Bedrock, and Vertex AI, with 128k max output tokens.'}},
+  {domains:["ai-models"],url:'https://growwingassistant.com/ai-news/gemini-3-5-pro-release-date-june-2026-every-confirmed-spec-pricing-when-it-drops/',
+   en:{t:'Gemini 3.5 Pro Still Pending GA as June 2026 Deadline Approaches',cat:'Release',d:'3 days ago AUTO',s:'As of June 19, 2026, Gemini 3.5 Pro remains in limited preview despite Google\'s May 19 announcement targeting June GA. The model features 2M-token context, Deep Think reasoning, ~$15/$60 per 1M tokens pricing.'},
+   ar:{t:'Gemini 3.5 Pro Still Pending GA as June 2026 Deadline Approaches',cat:'Release',d:'3 days ago تلقائي',s:'As of June 19, 2026, Gemini 3.5 Pro remains in limited preview despite Google\'s May 19 announcement targeting June GA. The model features 2M-token context, Deep Think reasoning, ~$15/$60 per 1M tokens pricing.'}},
+  {domains:["security"],url:'https://techcrunch.com/2026/06/15/the-us-governments-anthropic-models-ban-was-never-about-an-ai-jailbreak/',
+   en:{t:'U.S. Government Orders Anthropic to Suspend Fable 5 and Mythos 5 for Foreign Nationals',cat:'Policy',d:'5 days ago AUTO',s:'On June 15, 2026, the U.S. Commerce Department sent Anthropic an enforcement letter invoking export control directives that banned non-Americans, including Anthropic employees, from accessing Fable 5 and Mythos 5 models, citing unspecified national security concerns. Anthropic shut down both models to all customers to ensure compliance.'},
+   ar:{t:'U.S. Government Orders Anthropic to Suspend Fable 5 and Mythos 5 for Foreign Nationals',cat:'Policy',d:'5 days ago تلقائي',s:'On June 15, 2026, the U.S. Commerce Department sent Anthropic an enforcement letter invoking export control directives that banned non-Americans, including Anthropic employees, from accessing Fable 5 and Mythos 5 models, citing unspecified national security concerns. Anthropic shut down both models to all customers to ensure compliance.'}},
+  {domains:["security"],url:'https://blog.cyberdesserts.com/ai-agent-security-risks/',
+   en:{t:'AI Agent Security Risks Proliferate: MCP Exposure, Supply Chain Vulnerabilities Documented',cat:'Security',d:'17 hours ago AUTO',s:'A comprehensive analysis identifies 1,184 malicious AI skills across ClawHub, 492 MCP servers with no authentication or encryption, and major vulnerabilities including CVE-2026-32211 (CVSS 9.1) in Microsoft Azure DevOps MCP. Issues span agent goal hijack, supply chain exploitation, and prompt injection attacks creating full system compromise vectors.'},
+   ar:{t:'AI Agent Security Risks Proliferate: MCP Exposure, Supply Chain Vulnerabilities Documented',cat:'Security',d:'17 hours ago تلقائي',s:'A comprehensive analysis identifies 1,184 malicious AI skills across ClawHub, 492 MCP servers with no authentication or encryption, and major vulnerabilities including CVE-2026-32211 (CVSS 9.1) in Microsoft Azure DevOps MCP. Issues span agent goal hijack, supply chain exploitation, and prompt injection attacks creating full system compromise vectors.'}},
+  {domains:["security"],url:'https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/',
+   en:{t:'Record-Breaking June 2026 Patch Tuesday: 26 CVEs from AI-Powered Vulnerability Discovery',cat:'Breakthrough',d:'2 weeks ago AUTO',s:'Palo Alto Networks reported its largest monthly security advisory with 26 CVEs (75 issues) in June 2026 Patch Tuesday, marking the first time frontier AI models discovered the majority of findings. OpenAI\'s Codex reported CVE-2026-49160, a denial-of-service affecting Microsoft IIS and multiple web servers.'},
+   ar:{t:'Record-Breaking June 2026 Patch Tuesday: 26 CVEs from AI-Powered Vulnerability Discovery',cat:'Breakthrough',d:'2 weeks ago تلقائي',s:'Palo Alto Networks reported its largest monthly security advisory with 26 CVEs (75 issues) in June 2026 Patch Tuesday, marking the first time frontier AI models discovered the majority of findings. OpenAI\'s Codex reported CVE-2026-49160, a denial-of-service affecting Microsoft IIS and multiple web servers.'}},
+  {domains:["funding"],url:'https://informedclearly.com/en/ai/56291/ai-industry-lawsuits-ipos-buildout-2026',
+   en:{t:'Florida sues OpenAI alleging ChatGPT caused substantial harms',cat:'Policy',d:'June 1, 2026 AUTO',s:'Florida Attorney General filed lawsuit June 1, 2026 against OpenAI and CEO Sam Altman, claiming ChatGPT harms \'are substantial and outweigh any benefits.\' First state-level legal action against the AI giant, seeking personal liability for Altman.'},
+   ar:{t:'Florida sues OpenAI alleging ChatGPT caused substantial harms',cat:'Policy',d:'June 1, 2026 تلقائي',s:'Florida Attorney General filed lawsuit June 1, 2026 against OpenAI and CEO Sam Altman, claiming ChatGPT harms \'are substantial and outweigh any benefits.\' First state-level legal action against the AI giant, seeking personal liability for Altman.'}},
+  {domains:["funding"],url:'https://informedclearly.com/en/ai/56291/ai-industry-lawsuits-ipos-buildout-2026',
+   en:{t:'Anthropic confidentially files S-1 with $965B valuation ahead of Nasdaq listing',cat:'Release',d:'June 1, 2026 AUTO',s:'Anthropic filed S-1 on June 1, 2026 after raising $65 billion Series H, valuation $965B (surpassing OpenAI\'s $852B). Revenue run-rate jumped to $47B in May; IPO targeting October 2026 with projected $60B+ proceeds.'},
+   ar:{t:'Anthropic confidentially files S-1 with $965B valuation ahead of Nasdaq listing',cat:'Release',d:'June 1, 2026 تلقائي',s:'Anthropic filed S-1 on June 1, 2026 after raising $65 billion Series H, valuation $965B (surpassing OpenAI\'s $852B). Revenue run-rate jumped to $47B in May; IPO targeting October 2026 with projected $60B+ proceeds.'}},
+  {domains:["smart-city"],url:'https://www.sewerai.com/resources/smart-project-builder-launch',
+   en:{t:'SewerAI Launches Smart Project Builder for Automated Infrastructure Planning',cat:'Release',d:'February 11, 2026 AUTO',s:'SewerAI released Smart Project Builder on February 10, 2026, transforming CCTV inspection data into risk-prioritized rehabilitation plans in minutes instead of months, with utilities reporting 3-6 month cycles reduced to 3 weeks.'},
+   ar:{t:'SewerAI Launches Smart Project Builder for Automated Infrastructure Planning',cat:'Release',d:'February 11, 2026 تلقائي',s:'SewerAI released Smart Project Builder on February 10, 2026, transforming CCTV inspection data into risk-prioritized rehabilitation plans in minutes instead of months, with utilities reporting 3-6 month cycles reduced to 3 weeks.'}},
+
 
   // ══ AUTO-RESCAN JUNE 20, 2026 ══
   {domains:["smart-city"],url:'https://uavcoach.com/security-drones/',
