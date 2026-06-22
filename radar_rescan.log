@@ -1469,3 +1469,52 @@
 
 [2026-06-21 16:25:57 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-22 22:00:27 KSA] Manual run triggered (--now flag)
+[2026-06-22 22:00:27 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-22 22:00:27 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-22 22:00:38 KSA]     ✓ 3 signals found
+[2026-06-22 22:00:40 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-22 22:00:51 KSA]     ✗ No JSON found in response
+[2026-06-22 22:00:53 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-22 22:01:05 KSA]     ✓ 3 signals found
+[2026-06-22 22:01:07 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-22 22:01:18 KSA]     ✓ 0 signals found
+[2026-06-22 22:01:20 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-22 22:01:28 KSA]     ✓ 3 signals found
+[2026-06-22 22:01:30 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-22 22:01:41 KSA]     ✓ 3 signals found
+[2026-06-22 22:01:43 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-22 22:01:53 KSA]     ✓ 3 signals found
+[2026-06-22 22:01:55 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-22 22:02:02 KSA]     ✓ 3 signals found
+[2026-06-22 22:02:04 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-22 22:02:09 KSA]     ✓ 0 signals found
+[2026-06-22 22:02:11 KSA]   Total new signals: 18
+[2026-06-22 22:02:11 KSA]   Updating dashboard HTML...
+[2026-06-22 22:02:11 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-22 22:02:11 KSA]   ✚ 5 genuinely new signals to inject
+[2026-06-22 22:02:11 KSA]   ✓ Done — 5 added, 13 duplicates skipped, 323 total signals
+[2026-06-22 22:02:11 KSA] 
+  ┌─── SCAN SUMMARY — June 22, 2026 ───
+[2026-06-22 22:02:11 KSA]   │ 01. [Release] NVIDIA Launches Halos for Robotics Safety Platform for Physical AI
+[2026-06-22 22:02:11 KSA]   │ 02. [Release] Infrastructure AI Expands Galaxy Agentic Operating System for Smart Cities
+[2026-06-22 22:02:11 KSA]   │ 03. [Research] McKinsey Report: AI-Native Public Infrastructure Enables Continuous City Monitor
+[2026-06-22 22:02:11 KSA]   │ 04. [Breakthrough] iFactory AI Vision Food Inspection Advances Container Defect Detection
+[2026-06-22 22:02:11 KSA]   │ 05. [Research] Food Technology Magazine Reports AI Shifting Food Safety from Reaction to Predic
+[2026-06-22 22:02:11 KSA]   │ 06. [Policy] EU Launches TraceMap AI Platform for Food Safety Monitoring and Fraud Detection
+[2026-06-22 22:02:11 KSA]   │ 07. [Policy] EU Commission Publishes Code of Practice on AI-Generated Content Marking
+[2026-06-22 22:02:11 KSA]   │ 08. [Policy] India's Supreme Court Proposes AI Guardrails to Preserve Human Control in Justic
+[2026-06-22 22:02:11 KSA]   │ 09. [Policy] US House Proposes Three-Year AI Development Preemption Framework
+[2026-06-22 22:02:11 KSA]   │ 10. [Release] Anthropic Opens Seoul Office, Announces Korean AI Partnerships
+[2026-06-22 22:02:11 KSA]   │ 11. [Release] OpenAI Releases GPT-5.5 Instant Updates with Improved Response Quality
+[2026-06-22 22:02:11 KSA]   │ 12. [Release] OpenAI Introduces Partner Network and New Academy Courses
+[2026-06-22 22:02:11 KSA]   │ 13. [Security] LiteLLM Vulnerability Chain Lets Low-Privilege Users Take Over AI Gateway Server
+[2026-06-22 22:02:11 KSA]   │ 14. [Security] Hugging Face Transformers Vulnerability Enables Remote Code Execution via Model 
+[2026-06-22 22:02:11 KSA]   │ 15. [Security] Malicious JetBrains Plugins Steal AI API Keys in Coordinated Campaign
+[2026-06-22 22:02:11 KSA]   │ 16. [Funding] OpenAI Files for IPO as ChatGPT Maker Targets September 2026 Listing
+[2026-06-22 22:02:11 KSA]   │ 17. [Release] SpaceX Successfully Debuts on Nasdaq at $150/Share, Raising Capital for xAI Infr
+[2026-06-22 22:02:11 KSA]   │ 18. [Funding] Anthropic's $965B Series H Valuation Surpasses OpenAI, Setting Stage for IPO
+[2026-06-22 22:02:11 KSA]   └─── 18 total signals ───
+
+[2026-06-22 22:02:11 KSA] ═══ RESCAN COMPLETE ═══
+
