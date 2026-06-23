@@ -1518,3 +1518,57 @@
 
 [2026-06-22 22:02:11 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-23 19:13:52 KSA] Manual run triggered (--now flag)
+[2026-06-23 19:13:52 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-23 19:13:52 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-23 19:14:09 KSA]     ✓ 2 signals found
+[2026-06-23 19:14:11 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-23 19:14:29 KSA]     ✓ 3 signals found
+[2026-06-23 19:14:31 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-23 19:14:42 KSA]     ✓ 0 signals found
+[2026-06-23 19:14:44 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-23 19:14:54 KSA]     ✓ 3 signals found
+[2026-06-23 19:14:56 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-23 19:15:12 KSA]     ✓ 3 signals found
+[2026-06-23 19:15:14 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-23 19:15:22 KSA]     ✓ 3 signals found
+[2026-06-23 19:15:24 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-23 19:15:34 KSA]     ✓ 3 signals found
+[2026-06-23 19:15:36 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-23 19:15:44 KSA]     ✓ 3 signals found
+[2026-06-23 19:15:46 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-23 19:16:13 KSA]     ✓ 3 signals found
+[2026-06-23 19:16:15 KSA]   Total new signals: 23
+[2026-06-23 19:16:15 KSA]   Updating dashboard HTML...
+[2026-06-23 19:16:15 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-23 19:16:15 KSA]   ✚ 10 genuinely new signals to inject
+[2026-06-23 19:16:15 KSA]   ✓ Done — 10 added, 13 duplicates skipped, 333 total signals
+[2026-06-23 19:16:15 KSA] 
+  ┌─── SCAN SUMMARY — June 23, 2026 ───
+[2026-06-23 19:16:15 KSA]   │ 01. [Release] Flir and Styra Partner on AI-Driven Grid Inspection Webinar
+[2026-06-23 19:16:15 KSA]   │ 02. [Breakthrough] ASYS Unveils AISPECTURE AOI World's First Unsupervised AI Inspection System
+[2026-06-23 19:16:15 KSA]   │ 03. [Research] Virginia Tech Showcases Boston Dynamics Spot Robot for Construction Safety
+[2026-06-23 19:16:15 KSA]   │ 04. [Breakthrough] DroneDeploy Ground Robots Enter Beta with Embodied AI in 2026
+[2026-06-23 19:16:15 KSA]   │ 05. [Release] Construction Robotics Market Reaches $5.2 Billion with 33% Growth in 2026
+[2026-06-23 19:16:15 KSA]   │ 06. [Release] Colorado-born AI tool Alpine Intelligence predicts home issues before inspection
+[2026-06-23 19:16:15 KSA]   │ 07. [Research] Global home inspection software market projected at $478M by 2035 with 10% CAGR
+[2026-06-23 19:16:15 KSA]   │ 08. [Breakthrough] AI property condition assessment achieves 92-96% accuracy for building defect de
+[2026-06-23 19:16:15 KSA]   │ 09. [Policy] White House Issues Executive Order on Promoting Advanced AI Innovation and Secur
+[2026-06-23 19:16:15 KSA]   │ 10. [Policy] European Commission Publishes Code of Practice on Marking and Labelling AI-Gener
+[2026-06-23 19:16:15 KSA]   │ 11. [Policy] EU AI Act Digital Omnibus Amendments Finalize Compliance Timeline Changes
+[2026-06-23 19:16:15 KSA]   │ 12. [Release] Google Releases Gemini 2.5 Pro with Deep Think Reasoning
+[2026-06-23 19:16:15 KSA]   │ 13. [Release] Anthropic Releases Claude Fable 5 with New Safety Classifiers
+[2026-06-23 19:16:15 KSA]   │ 14. [Funding] Micron-Anthropic Strategic Agreement on AI Infrastructure
+[2026-06-23 19:16:15 KSA]   │ 15. [Policy] Trump Executive Order on AI Security: Frontier Models & Cybersecurity Framework
+[2026-06-23 19:16:15 KSA]   │ 16. [Security] Palo Alto Networks: Frontier AI Finds 26 CVEs in May Security Scan
+[2026-06-23 19:16:15 KSA]   │ 17. [Security] CVE-2025-53773: Hidden Prompt Injection in GitHub Copilot RCE Vulnerability
+[2026-06-23 19:16:15 KSA]   │ 18. [Funding] Anthropic Files for IPO, Valued at $965B After Record Series H
+[2026-06-23 19:16:15 KSA]   │ 19. [Funding] OpenAI Confidentially Files IPO, Targets Q4 2026 or Later
+[2026-06-23 19:16:15 KSA]   │ 20. [Release] SpaceX Launches IPO June 12, Priced at $135/share on Nasdaq
+[2026-06-23 19:16:15 KSA]   │ 21. [Funding] Gorilla Technology Secures $2.5B AI GPU Contract with Full Delivery Expected H1 
+[2026-06-23 19:16:15 KSA]   │ 22. [Research] Dario Amodei Predicts AGI Within Few Years at 2026 World Economic Forum
+[2026-06-23 19:16:15 KSA]   │ 23. [Breakthrough] Smart Traffic Management Market Projected at $20B by 2027 with Physical AI Deplo
+[2026-06-23 19:16:15 KSA]   └─── 23 total signals ───
+
+[2026-06-23 19:16:15 KSA] ═══ RESCAN COMPLETE ═══
+
