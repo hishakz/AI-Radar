@@ -1572,3 +1572,51 @@
 
 [2026-06-23 19:16:15 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-24 18:39:12 KSA] Manual run triggered (--now flag)
+[2026-06-24 18:39:12 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-24 18:39:12 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-24 18:39:23 KSA]     ✓ 1 signals found
+[2026-06-24 18:39:25 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-24 18:39:35 KSA]     ✓ 0 signals found
+[2026-06-24 18:39:37 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-24 18:39:46 KSA]     ✓ 0 signals found
+[2026-06-24 18:39:48 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-24 18:40:02 KSA]     ✓ 1 signals found
+[2026-06-24 18:40:04 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-24 18:40:17 KSA]     ✓ 3 signals found
+[2026-06-24 18:40:19 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-24 18:40:31 KSA]     ✓ 3 signals found
+[2026-06-24 18:40:33 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-24 18:40:45 KSA]     ✓ 3 signals found
+[2026-06-24 18:40:47 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-24 18:40:57 KSA]     ✓ 3 signals found
+[2026-06-24 18:40:59 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-24 18:41:09 KSA]     ✓ 3 signals found
+[2026-06-24 18:41:11 KSA]   Total new signals: 17
+[2026-06-24 18:41:11 KSA]   Updating dashboard HTML...
+[2026-06-24 18:41:11 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-24 18:41:11 KSA]   ✚ 4 genuinely new signals to inject
+[2026-06-24 18:41:11 KSA]   ✓ Done — 4 added, 13 duplicates skipped, 337 total signals
+[2026-06-24 18:41:11 KSA] 
+  ┌─── SCAN SUMMARY — June 24, 2026 ───
+[2026-06-24 18:41:11 KSA]   │ 01. [Breakthrough] ISABHEL: AI Bridge Monitoring System Deployed in Turin with Real-time Sensor Ana
+[2026-06-24 18:41:11 KSA]   │ 02. [Breakthrough] Drones and AI Begin Inspecting Housing Renovation Quality on Sakhalin
+[2026-06-24 18:41:11 KSA]   │ 03. [Policy] Trump Administration Issues Executive Order on AI Innovation and Cybersecurity
+[2026-06-24 18:41:11 KSA]   │ 04. [Policy] EU Commission Publishes Code of Practice on AI-Generated Content Marking
+[2026-06-24 18:41:11 KSA]   │ 05. [Breakthrough] EU Selects EUROPA Consortium for Frontier AI Grand Challenge
+[2026-06-24 18:41:11 KSA]   │ 06. [Release] Anthropic Claude Fable 5 Suspended After US Export Directive
+[2026-06-24 18:41:11 KSA]   │ 07. [Release] Google Gemini 2.5 Pro with Deep Think Launches June 22
+[2026-06-24 18:41:11 KSA]   │ 08. [Release] Gemini 3.5 Pro Delays Past June, Slips Release Window
+[2026-06-24 18:41:11 KSA]   │ 09. [Breakthrough] OpenAI Expands Daybreak With GPT-5.5-Cyber to Help Defenders Patch Security Flaw
+[2026-06-24 18:41:11 KSA]   │ 10. [Policy] White House Establishes AI Cybersecurity Clearinghouse Under New Executive Order
+[2026-06-24 18:41:11 KSA]   │ 11. [Security] Novo Nordisk Confirms Breach Exposing AI Models, Clinical Trial Data, and Patien
+[2026-06-24 18:41:11 KSA]   │ 12. [Release] SpaceX IPO surges 23% post-debut; $2.43T market cap on June 12 listing
+[2026-06-24 18:41:11 KSA]   │ 13. [Funding] Anthropic files confidential S-1 on June 1 after $65B Series H at $965B valuatio
+[2026-06-24 18:41:11 KSA]   │ 14. [Release] OpenAI files confidential S-1 on June 8; delays public listing despite $122B fun
+[2026-06-24 18:41:11 KSA]   │ 15. [Funding] Qualcomm Acquires Tenstorrent for $8-10B to Challenge NVIDIA in AI Chips
+[2026-06-24 18:41:11 KSA]   │ 16. [Policy] Five-Nation Cybersecurity Alliance Issues Agentic AI Security Guidance for Criti
+[2026-06-24 18:41:11 KSA]   │ 17. [Research] Ames Lab Develops Physics-Trained AI to Discover Rare-Earth-Free Permanent Magne
+[2026-06-24 18:41:11 KSA]   └─── 17 total signals ───
+
+[2026-06-24 18:41:11 KSA] ═══ RESCAN COMPLETE ═══
+
