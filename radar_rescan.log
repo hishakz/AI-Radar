@@ -1786,3 +1786,53 @@
 
 [2026-06-27 14:53:07 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-28 15:07:01 KSA] Manual run triggered (--now flag)
+[2026-06-28 15:07:01 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-28 15:07:01 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-28 15:07:10 KSA]     ✓ 3 signals found
+[2026-06-28 15:07:12 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-28 15:07:22 KSA]     ✓ 0 signals found
+[2026-06-28 15:07:24 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-28 15:07:33 KSA]     ✓ 0 signals found
+[2026-06-28 15:07:35 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-28 15:07:45 KSA]     ✓ 1 signals found
+[2026-06-28 15:07:47 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-28 15:07:56 KSA]     ✓ 3 signals found
+[2026-06-28 15:07:58 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-28 15:08:04 KSA]     ✓ 3 signals found
+[2026-06-28 15:08:06 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-28 15:08:15 KSA]     ✓ 3 signals found
+[2026-06-28 15:08:17 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-28 15:08:26 KSA]     ✓ 3 signals found
+[2026-06-28 15:08:28 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-28 15:08:40 KSA]     ✓ 3 signals found
+[2026-06-28 15:08:42 KSA]   Total new signals: 19
+[2026-06-28 15:08:42 KSA]   Updating dashboard HTML...
+[2026-06-28 15:08:42 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-28 15:08:42 KSA]   ✚ 6 genuinely new signals to inject
+[2026-06-28 15:08:42 KSA]   ✓ Done — 6 added, 13 duplicates skipped, 376 total signals
+[2026-06-28 15:08:42 KSA] 
+  ┌─── SCAN SUMMARY — June 28, 2026 ───
+[2026-06-28 15:08:42 KSA]   │ 01. [Research] From Smart to Autonomous: Self-Managing Cities as the Next Urban Frontier
+[2026-06-28 15:08:42 KSA]   │ 02. [Research] Building Smart City: Promise, Pitfalls and the People at Its Heart
+[2026-06-28 15:08:42 KSA]   │ 03. [Research] Physical AI and IoT Trends 2026: AI Enters Sensorimotor Phase for Urban Operatio
+[2026-06-28 15:08:42 KSA]   │ 04. [Breakthrough] AI gives building inspection photos the location data they were missing
+[2026-06-28 15:08:42 KSA]   │ 05. [Policy] EU Parliament Approves AI Act Amendments with High-Risk System Deadline Extensio
+[2026-06-28 15:08:42 KSA]   │ 06. [Policy] Trump Issues Executive Order on AI Security with Voluntary Model Sharing Require
+[2026-06-28 15:08:42 KSA]   │ 07. [Policy] Bipartisan Great American AI Act Discussion Draft Released with Frontier AI Gove
+[2026-06-28 15:08:42 KSA]   │ 08. [Policy] US Government Authorizes Anthropic's Mythos 5 for 100+ Organizations
+[2026-06-28 15:08:42 KSA]   │ 09. [Policy] OpenAI Previews GPT-5.6 Sol to Government-Approved Partners
+[2026-06-28 15:08:42 KSA]   │ 10. [Release] Anthropic Opens Seoul Office with Korean AI Partnerships
+[2026-06-28 15:08:42 KSA]   │ 11. [Policy] Five Eyes Intelligence Alliance Warns AI Cyberattacks Could Breach Defenses With
+[2026-06-28 15:08:42 KSA]   │ 12. [Release] OpenAI Releases GPT-5.6 Sol with Robust Cybersecurity Capabilities
+[2026-06-28 15:08:42 KSA]   │ 13. [Release] OpenAI Patch the Planet Initiative Launches AI-Driven Vulnerability Discovery Pr
+[2026-06-28 15:08:42 KSA]   │ 14. [Release] SpaceX IPO trading at $153.23, up 19% from $135 IPO price on June 12 debut
+[2026-06-28 15:08:42 KSA]   │ 15. [Release] OpenAI confidentially files S-1 for IPO, targeting Q4 2026 with ~$1T valuation
+[2026-06-28 15:08:42 KSA]   │ 16. [Funding] Anthropic files S-1 on June 1 after closing $65B Series H at $965B valuation
+[2026-06-28 15:08:42 KSA]   │ 17. [Research] AI 2027 Scenario Tracker Validates Predictions: 65% Progress on Quantitative Mea
+[2026-06-28 15:08:42 KSA]   │ 18. [Breakthrough] Smart Cities Deploy AI Agents: 65% Worldwide Adoption Expected by 2027
+[2026-06-28 15:08:42 KSA]   │ 19. [Research] McKinsey: AI-Native Urban Infrastructure Transforms City Operations in Real Time
+[2026-06-28 15:08:42 KSA]   └─── 19 total signals ───
+
+[2026-06-28 15:08:42 KSA] ═══ RESCAN COMPLETE ═══
+
