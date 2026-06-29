@@ -1836,3 +1836,56 @@
 
 [2026-06-28 15:08:42 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-29 20:17:00 KSA] Manual run triggered (--now flag)
+[2026-06-29 20:17:00 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-29 20:17:00 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-29 20:17:10 KSA]     ✓ 3 signals found
+[2026-06-29 20:17:12 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-29 20:17:23 KSA]     ✓ 3 signals found
+[2026-06-29 20:17:25 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-29 20:17:33 KSA]     ✓ 1 signals found
+[2026-06-29 20:17:35 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-29 20:17:45 KSA]     ✓ 0 signals found
+[2026-06-29 20:17:47 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-29 20:17:56 KSA]     ✓ 3 signals found
+[2026-06-29 20:17:58 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-29 20:18:04 KSA]     ✓ 3 signals found
+[2026-06-29 20:18:06 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-29 20:18:13 KSA]     ✓ 3 signals found
+[2026-06-29 20:18:15 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-29 20:18:21 KSA]     ✓ 3 signals found
+[2026-06-29 20:18:23 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-29 20:18:31 KSA]     ✓ 3 signals found
+[2026-06-29 20:18:33 KSA]   Total new signals: 22
+[2026-06-29 20:18:33 KSA]   Updating dashboard HTML...
+[2026-06-29 20:18:33 KSA]   ↩ 16 duplicate(s) skipped — already in dashboard
+[2026-06-29 20:18:33 KSA]   ✚ 6 genuinely new signals to inject
+[2026-06-29 20:18:33 KSA]   ✓ Done — 6 added, 16 duplicates skipped, 382 total signals
+[2026-06-29 20:18:33 KSA] 
+  ┌─── SCAN SUMMARY — June 29, 2026 ───
+[2026-06-29 20:18:33 KSA]   │ 01. [Research] Tomorrow.city: From Smart to Autonomous Self-Managing Cities
+[2026-06-29 20:18:33 KSA]   │ 02. [Research] Highways.today: When Infrastructure Starts Listening
+[2026-06-29 20:18:33 KSA]   │ 03. [Breakthrough] Intel Community: Edge AI for Smart Cities at Embedded World 2026
+[2026-06-29 20:18:33 KSA]   │ 04. [Breakthrough] Underground Robotics 2026: Autonomous Systems & Coordinated Multi-Robot Control
+[2026-06-29 20:18:33 KSA]   │ 05. [Breakthrough] MIT Digital Construction Platform Builds Igloo-Shaped Structure Autonomously
+[2026-06-29 20:18:33 KSA]   │ 06. [Release] DroneDeploy Launches Ground Robot Beta and AI Inspection Agents
+[2026-06-29 20:18:33 KSA]   │ 07. [Breakthrough] How AI is Changing Food Safety Inspections: Smarter Compliance
+[2026-06-29 20:18:33 KSA]   │ 08. [Policy] EU Parliament Approves AI Act Amendments Delaying High-Risk Systems Compliance
+[2026-06-29 20:18:33 KSA]   │ 09. [Policy] New York Passes Five AI Bills Including Chatbot Safety and Training Data Transpa
+[2026-06-29 20:18:33 KSA]   │ 10. [Policy] Bipartisan Great American AI Act Discussion Draft Released for Public Comment
+[2026-06-29 20:18:33 KSA]   │ 11. [Policy] OpenAI GPT-5.6 Sol gated preview authorized by US government
+[2026-06-29 20:18:33 KSA]   │ 12. [Policy] Anthropic Mythos 5 re-authorized for 100+ US organizations after suspension
+[2026-06-29 20:18:33 KSA]   │ 13. [Funding] Anthropic opens Seoul office and announces Korea AI ecosystem partnerships
+[2026-06-29 20:18:33 KSA]   │ 14. [Security] 6 AI Security Incidents: Full Attack Path Analysis (April 2026)
+[2026-06-29 20:18:33 KSA]   │ 15. [Security] CVE-2025-53773: Hidden Prompt Injection in GitHub Copilot Enables RCE
+[2026-06-29 20:18:33 KSA]   │ 16. [Security] Malicious Model Weights with Backdoors Discovered on Hugging Face
+[2026-06-29 20:18:33 KSA]   │ 17. [Release] SpaceX IPO Debuts on Nasdaq at $150/share, Reaching $2.1T Market Cap
+[2026-06-29 20:18:33 KSA]   │ 18. [Funding] Anthropic Achieves $965B Valuation in $65B Series H Funding Round
+[2026-06-29 20:18:33 KSA]   │ 19. [Release] OpenAI Files Confidential S-1 Registration for IPO; Valuation at $852B
+[2026-06-29 20:18:33 KSA]   │ 20. [Funding] AI Investment Drives 40% of S&P 500 Growth; Goldman Sachs Forecasts 7,600 Year-E
+[2026-06-29 20:18:33 KSA]   │ 21. [Breakthrough] Agentic AI Dominates 2026 Trends: AI Shifts from Tool to Workflow Partner
+[2026-06-29 20:18:33 KSA]   │ 22. [Research] Stanford AI Index: US Released 50 Notable Models in 2025; China Closing AI Gap
+[2026-06-29 20:18:33 KSA]   └─── 22 total signals ───
+
+[2026-06-29 20:18:33 KSA] ═══ RESCAN COMPLETE ═══
+
