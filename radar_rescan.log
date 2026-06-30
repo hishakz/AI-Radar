@@ -1889,3 +1889,53 @@
 
 [2026-06-29 20:18:33 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-06-30 16:27:58 KSA] Manual run triggered (--now flag)
+[2026-06-30 16:27:58 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-06-30 16:27:58 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-06-30 16:28:09 KSA]     ✓ 1 signals found
+[2026-06-30 16:28:11 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-06-30 16:28:20 KSA]     ✓ 0 signals found
+[2026-06-30 16:28:22 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-06-30 16:28:37 KSA]     ✓ 2 signals found
+[2026-06-30 16:28:39 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-06-30 16:28:51 KSA]     ✓ 1 signals found
+[2026-06-30 16:28:53 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-06-30 16:29:02 KSA]     ✓ 3 signals found
+[2026-06-30 16:29:04 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-06-30 16:29:16 KSA]     ✓ 3 signals found
+[2026-06-30 16:29:18 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-06-30 16:29:26 KSA]     ✓ 3 signals found
+[2026-06-30 16:29:28 KSA]   Scanning: AI investment funding IPO 2026
+[2026-06-30 16:29:35 KSA]     ✓ 3 signals found
+[2026-06-30 16:29:37 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-06-30 16:29:45 KSA]     ✓ 3 signals found
+[2026-06-30 16:29:47 KSA]   Total new signals: 19
+[2026-06-30 16:29:47 KSA]   Updating dashboard HTML...
+[2026-06-30 16:29:47 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-06-30 16:29:47 KSA]   ✚ 6 genuinely new signals to inject
+[2026-06-30 16:29:47 KSA]   ✓ Done — 6 added, 13 duplicates skipped, 388 total signals
+[2026-06-30 16:29:47 KSA] 
+  ┌─── SCAN SUMMARY — June 30, 2026 ───
+[2026-06-30 16:29:47 KSA]   │ 01. [Release] Nexaryon Launches Enterprise AI Platform & Expands to Latin America
+[2026-06-30 16:29:47 KSA]   │ 02. [Breakthrough] PTZOptics and Detect-It Showcase Industrial AI Inspection Solutions at Automate 
+[2026-06-30 16:29:47 KSA]   │ 03. [Breakthrough] AI Food Safety Inspections Adoption Growing Across Industry
+[2026-06-30 16:29:47 KSA]   │ 04. [Research] AI gives building inspection photos the location data they were missing
+[2026-06-30 16:29:47 KSA]   │ 05. [Policy] EU AI Act transparency rules take effect August 2026
+[2026-06-30 16:29:47 KSA]   │ 06. [Policy] White House releases National Policy Framework for AI on March 20, 2026
+[2026-06-30 16:29:47 KSA]   │ 07. [Policy] Colorado AI Act enforcement begins June 30, 2026
+[2026-06-30 16:29:47 KSA]   │ 08. [Release] OpenAI Updates GPT-5.5 Instant for Better Decision-Making
+[2026-06-30 16:29:47 KSA]   │ 09. [Release] OpenAI Retires GPT-4.5 from ChatGPT After June 26 Deprecation
+[2026-06-30 16:29:47 KSA]   │ 10. [Release] Anthropic Opens Seoul Office with Major Korean Enterprise Deployments
+[2026-06-30 16:29:47 KSA]   │ 11. [Policy] White House Issues Executive Order on AI Cybersecurity
+[2026-06-30 16:29:47 KSA]   │ 12. [Release] OpenAI Launches Daybreak for AI-Powered Vulnerability Detection
+[2026-06-30 16:29:47 KSA]   │ 13. [Security] AI-Enabled Cybersecurity Attacks Surge 89% with Autonomous Breaches
+[2026-06-30 16:29:47 KSA]   │ 14. [Funding] Anthropic Raises $65B Series H at $965B Valuation, Filed Draft S-1 June 1
+[2026-06-30 16:29:47 KSA]   │ 15. [Release] SpaceX IPO Launches June 12 at $150/Share, Raising Capital for xAI Ambitions
+[2026-06-30 16:29:47 KSA]   │ 16. [Funding] OpenAI Files Confidential S-1 on June 9, $852B Valuation, $122B Record Funding
+[2026-06-30 16:29:47 KSA]   │ 17. [Research] McKinsey: AI-Native Cities Moving from Dashboards to Real-Time Decision Automati
+[2026-06-30 16:29:47 KSA]   │ 18. [Research] IDC Report: 65% of Cities Deploying AI Agents for Workflow Orchestration by 2027
+[2026-06-30 16:29:47 KSA]   │ 19. [Research] iFactory: Global Smart City Market Reaches $952B in 2025, Projected to Hit $6.3T
+[2026-06-30 16:29:47 KSA]   └─── 19 total signals ───
+
+[2026-06-30 16:29:47 KSA] ═══ RESCAN COMPLETE ═══
+
