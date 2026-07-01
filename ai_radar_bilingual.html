@@ -330,7 +330,7 @@ const DOMAINS = [
 const L = {
   en:{
     wm:['Inspection','Intelligence'], tl:'AI & EMERGING TECH RADAR — INNOVATION DOMAIN BRIEF',
-    scanDate:'Jun 30, 2026', sigCount:'388 signals',
+    scanDate:'Jul 1, 2026', sigCount:'397 signals',
     tabs:[
       {id:'inspect',label:'🔍 Smart City & Inspection',count:20},
       {id:'apply',  label:'⚙️ Innovation Applications',count:5},
@@ -393,7 +393,7 @@ const L = {
   },
   ar:{
     wm:['منصة استخبارات','التفتيش'], tl:'رادار الذكاء الاصطناعي — ملخص الابتكار في مجال التفتيش',
-    scanDate:'30 يونيو 2026', sigCount:'388 إشارة',
+    scanDate:'1 يوليو 2026', sigCount:'397 إشارة',
     tabs:[
       {id:'inspect',label:'🔍 المدن الذكية والتفتيش',count:20},
       {id:'apply',  label:'⚙️ تطبيقات الابتكار',   count:5},
@@ -724,6 +724,36 @@ const DT_ROWS=[
 // AI GLOBAL SIGNALS
 // ════════════════════════════════════════════════════════════════
 const AI_SIGNALS=[
+
+  // ══ AUTO-RESCAN JULY 01, 2026 ══
+  {domains:["smart-city"],url:'https://www.marketscale.com/industries/industrial-iot/automation-industry-roundup-sensors-software-and-ai-drive-june-2026-product-wave',
+   en:{t:'Automation Industry Unveils Sensor, AI, and Vision Inspection Innovations',cat:'Release',d:'2 days ago AUTO',s:'In late June 2026, Aaronn Electronic and Advantech introduced industrial architecture for local sensor data processing; Beckhoff expanded VUI Vision Unit with 16 new inspection models; Rockwell Automation launched FactoryTalk Orchestration platform for production coordination.'},
+   ar:{t:'Automation Industry Unveils Sensor, AI, and Vision Inspection Innovations',cat:'Release',d:'2 days ago تلقائي',s:'In late June 2026, Aaronn Electronic and Advantech introduced industrial architecture for local sensor data processing; Beckhoff expanded VUI Vision Unit with 16 new inspection models; Rockwell Automation launched FactoryTalk Orchestration platform for production coordination.'}},
+  {domains:["smart-city"],url:'https://www.therobotreport.com/gft-technologies-ai-powered-robots-move-from-inspection-to-action-automakers/',
+   en:{t:'Boston Dynamics Integrates Gemini AI into Spot Robot for Industrial Inspection',cat:'Breakthrough',d:'April 15, 2026 AUTO',s:'Boston Dynamics partnered with Google DeepMind to integrate Gemini Robotics-ER 1.6 into Spot, enabling autonomous hazard detection, gauge reading, and environmental interpretation for complex industrial facility monitoring deployments at scale.'},
+   ar:{t:'Boston Dynamics Integrates Gemini AI into Spot Robot for Industrial Inspection',cat:'Breakthrough',d:'April 15, 2026 تلقائي',s:'Boston Dynamics partnered with Google DeepMind to integrate Gemini Robotics-ER 1.6 into Spot, enabling autonomous hazard detection, gauge reading, and environmental interpretation for complex industrial facility monitoring deployments at scale.'}},
+  {domains:["smart-city"],url:'https://www.therobotreport.com/gft-technologies-ai-powered-robots-move-from-inspection-to-action-automakers/',
+   en:{t:'GFT Technologies Launches AI Robotic Arms for Automotive Defect Detection and Removal',cat:'Release',d:'April 29, 2026 AUTO',s:'GFT Technologies deployed AI-driven robotic arms that detect visual defects and physically remove defective parts from production lines, integrating vision, marking, and removal systems with root-cause analysis AI agents powered by Google models.'},
+   ar:{t:'GFT Technologies Launches AI Robotic Arms for Automotive Defect Detection and Removal',cat:'Release',d:'April 29, 2026 تلقائي',s:'GFT Technologies deployed AI-driven robotic arms that detect visual defects and physically remove defective parts from production lines, integrating vision, marking, and removal systems with root-cause analysis AI agents powered by Google models.'}},
+  {domains:["food"],url:'https://civileats.com/2025/05/27/fda-expanding-use-of-ai-in-food-safety-inspection/',
+   en:{t:'FDA Expands Generative AI Platform for Food Safety Inspection by June 30',cat:'Policy',d:'June 30, 2026 AUTO',s:'FDA spokesperson confirmed all FDA centers will be operating on secure, unified generative AI platform integrated with internal data systems by June 30, 2026. The system accelerates protocol reviews, shortens scientific evaluations, and identifies high-priority inspection targets.'},
+   ar:{t:'FDA Expands Generative AI Platform for Food Safety Inspection by June 30',cat:'Policy',d:'June 30, 2026 تلقائي',s:'FDA spokesperson confirmed all FDA centers will be operating on secure, unified generative AI platform integrated with internal data systems by June 30, 2026. The system accelerates protocol reviews, shortens scientific evaluations, and identifies high-priority inspection targets.'}},
+  {domains:["policy"],url:'https://www.riskinfo.ai/post/regulatory-updates-newsletter-june-2026',
+   en:{t:'FSB Consultation on Sound Practices for Responsible AI Adoption',cat:'Policy',d:'1 day ago AUTO',s:'Financial Stability Board issued global consultation on 12 voluntary AI risk-management practices for financial institutions. Covers governance, model development, data, vendor oversight and cyber resilience. Not intended as international standard but guides firm strategies.'},
+   ar:{t:'FSB Consultation on Sound Practices for Responsible AI Adoption',cat:'Policy',d:'1 day ago تلقائي',s:'Financial Stability Board issued global consultation on 12 voluntary AI risk-management practices for financial institutions. Covers governance, model development, data, vendor oversight and cyber resilience. Not intended as international standard but guides firm strategies.'}},
+  {domains:["ai-models"],url:'https://www.anthropic.com/news/claude-sonnet-5',
+   en:{t:'Claude Sonnet 5 launches with agentic capabilities and lower costs',cat:'Release',d:'June 30, 2026 AUTO',s:'Anthropic released Claude Sonnet 5 on June 30, 2026, as the new default for Free and Pro plans. The model brings near-Opus agentic performance at significantly lower API costs: $2 per million input tokens and $10 per million output tokens through August 31, then $3 and $15 respectively.'},
+   ar:{t:'Claude Sonnet 5 launches with agentic capabilities and lower costs',cat:'Release',d:'June 30, 2026 تلقائي',s:'Anthropic released Claude Sonnet 5 on June 30, 2026, as the new default for Free and Pro plans. The model brings near-Opus agentic performance at significantly lower API costs: $2 per million input tokens and $10 per million output tokens through August 31, then $3 and $15 respectively.'}},
+  {domains:["ai-models"],url:'https://openai.com/index/previewing-gpt-5-6-sol/',
+   en:{t:'OpenAI previews GPT-5.6 series in limited release under government restrictions',cat:'Release',d:'June 26, 2026 AUTO',s:'OpenAI announced GPT-5.6 on June 26, 2026, launching three models: Sol (flagship), Terra (balanced, half GPT-5.5 cost), and Luna (fast/affordable). Initial rollout limited to ~20 government-approved partners at Trump administration\'s request; public release planned for coming weeks.'},
+   ar:{t:'OpenAI previews GPT-5.6 series in limited release under government restrictions',cat:'Release',d:'June 26, 2026 تلقائي',s:'OpenAI announced GPT-5.6 on June 26, 2026, launching three models: Sol (flagship), Terra (balanced, half GPT-5.5 cost), and Luna (fast/affordable). Initial rollout limited to ~20 government-approved partners at Trump administration\'s request; public release planned for coming weeks.'}},
+  {domains:["ai-models"],url:'https://www.techtimes.com/articles/319409/20260701/claude-sonnet-5-ships-anthropic-default-agentic-performance-closes-opus-gap.htm',
+   en:{t:'Anthropic launches Claude Science desktop app for research automation',cat:'Release',d:'June 30, 2026 AUTO',s:'Anthropic released Claude Science on June 30, 2026—a desktop application for scientific research integrating tools for genomics, single-cell analysis, proteomics, and cheminformatics. The app consolidates research tooling into one environment with auditable research artifacts.'},
+   ar:{t:'Anthropic launches Claude Science desktop app for research automation',cat:'Release',d:'June 30, 2026 تلقائي',s:'Anthropic released Claude Science on June 30, 2026—a desktop application for scientific research integrating tools for genomics, single-cell analysis, proteomics, and cheminformatics. The app consolidates research tooling into one environment with auditable research artifacts.'}},
+  {domains:["smart-city"],url:'https://www.precedenceresearch.com/ai-in-smart-cities-market',
+   en:{t:'Precedence Research: Global AI Smart Cities Market Grows to $64.71B by 2026, Forecast $460.47B by 2034',cat:'Research',d:'June 11, 2026 AUTO',s:'Market analysis (November 20, 2025) projects AI in smart cities market expanding from $64.71 billion in 2026 to $460.47 billion by 2034 (27.80% CAGR). Infrastructure management segment forecasted as fastest-growing application. North America leads 2025-2034 deployment; Asia-Pacific shows fastest CAGR. Computer vision and on-premises deployment mode each forecast fastest growth in their categories.'},
+   ar:{t:'Precedence Research: Global AI Smart Cities Market Grows to $64.71B by 2026, Forecast $460.47B by 2034',cat:'Research',d:'June 11, 2026 تلقائي',s:'Market analysis (November 20, 2025) projects AI in smart cities market expanding from $64.71 billion in 2026 to $460.47 billion by 2034 (27.80% CAGR). Infrastructure management segment forecasted as fastest-growing application. North America leads 2025-2034 deployment; Asia-Pacific shows fastest CAGR. Computer vision and on-premises deployment mode each forecast fastest growth in their categories.'}},
+
 
   // ══ AUTO-RESCAN JUNE 30, 2026 ══
   {domains:["smart-city"],url:'https://www.globenewswire.com/news-release/2026/06/30/3319405/0/en/Nexaryon-Launches-Enterprise-AI-Platform-Expands-to-Latin-America.html',

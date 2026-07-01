@@ -1939,3 +1939,56 @@
 
 [2026-06-30 16:29:47 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-01 13:30:24 KSA] Manual run triggered (--now flag)
+[2026-07-01 13:30:24 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-01 13:30:24 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-01 13:30:37 KSA]     ✓ 3 signals found
+[2026-07-01 13:30:39 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-01 13:30:51 KSA]     ✓ 1 signals found
+[2026-07-01 13:30:53 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-01 13:31:08 KSA]     ✓ 3 signals found
+[2026-07-01 13:31:10 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-01 13:31:20 KSA]     ✓ 0 signals found
+[2026-07-01 13:31:22 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-01 13:31:34 KSA]     ✓ 3 signals found
+[2026-07-01 13:31:36 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-01 13:31:51 KSA]     ✓ 3 signals found
+[2026-07-01 13:31:53 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-01 13:32:00 KSA]     ✓ 3 signals found
+[2026-07-01 13:32:02 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-01 13:32:09 KSA]     ✓ 3 signals found
+[2026-07-01 13:32:11 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-01 13:32:21 KSA]     ✓ 3 signals found
+[2026-07-01 13:32:23 KSA]   Total new signals: 22
+[2026-07-01 13:32:23 KSA]   Updating dashboard HTML...
+[2026-07-01 13:32:23 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-07-01 13:32:23 KSA]   ✚ 9 genuinely new signals to inject
+[2026-07-01 13:32:23 KSA]   ✓ Done — 9 added, 13 duplicates skipped, 397 total signals
+[2026-07-01 13:32:23 KSA] 
+  ┌─── SCAN SUMMARY — July 01, 2026 ───
+[2026-07-01 13:32:23 KSA]   │ 01. [Release] Automation Industry Unveils Sensor, AI, and Vision Inspection Innovations
+[2026-07-01 13:32:23 KSA]   │ 02. [Breakthrough] Boston Dynamics Integrates Gemini AI into Spot Robot for Industrial Inspection
+[2026-07-01 13:32:23 KSA]   │ 03. [Release] GFT Technologies Launches AI Robotic Arms for Automotive Defect Detection and Re
+[2026-07-01 13:32:23 KSA]   │ 04. [Release] Mitie Rolls Out 24 AI-Powered Robotic Mowers for Construction Site Grounds Manag
+[2026-07-01 13:32:23 KSA]   │ 05. [Breakthrough] iFactory AI Vision System Detects Defects at Full Line Speed
+[2026-07-01 13:32:23 KSA]   │ 06. [Research] Afya Food Safety: AI Improving Restaurant Compliance and Risk Detection
+[2026-07-01 13:32:23 KSA]   │ 07. [Policy] FDA Expands Generative AI Platform for Food Safety Inspection by June 30
+[2026-07-01 13:32:23 KSA]   │ 08. [Policy] FSB Consultation on Sound Practices for Responsible AI Adoption
+[2026-07-01 13:32:23 KSA]   │ 09. [Policy] California Bill AB 2148 Sent to Governor for AI Teacher Ban Signature
+[2026-07-01 13:32:23 KSA]   │ 10. [Policy] Trump Executive Order on AI Innovation and Security Signed
+[2026-07-01 13:32:23 KSA]   │ 11. [Release] Claude Sonnet 5 launches with agentic capabilities and lower costs
+[2026-07-01 13:32:23 KSA]   │ 12. [Release] OpenAI previews GPT-5.6 series in limited release under government restrictions
+[2026-07-01 13:32:23 KSA]   │ 13. [Release] Anthropic launches Claude Science desktop app for research automation
+[2026-07-01 13:32:23 KSA]   │ 14. [Policy] White House Issues AI Security Executive Order Directing Federal Agencies to Str
+[2026-07-01 13:32:23 KSA]   │ 15. [Release] OpenAI Launches Patch the Planet Initiative for AI-Driven Vulnerability Detectio
+[2026-07-01 13:32:23 KSA]   │ 16. [Security] Critical GitHub Copilot Vulnerability CVE-2025-53773 Enables Remote Code Executi
+[2026-07-01 13:32:23 KSA]   │ 17. [Release] SpaceX IPO Launches at $150/share on Nasdaq
+[2026-07-01 13:32:23 KSA]   │ 18. [Release] Anthropic Files S-1 with $965B Valuation After $65B Series H
+[2026-07-01 13:32:23 KSA]   │ 19. [Release] OpenAI Files Confidential S-1 for IPO at $852B Valuation
+[2026-07-01 13:32:23 KSA]   │ 20. [Research] AI 2027 Tracker: Mixed Progress on AGI Predictions—65% of Pace on Quantitative M
+[2026-07-01 13:32:23 KSA]   │ 21. [Breakthrough] McKinsey: AI-Native Infrastructure Transforms Smart Cities—Real-Time Adaptation 
+[2026-07-01 13:32:23 KSA]   │ 22. [Research] Precedence Research: Global AI Smart Cities Market Grows to $64.71B by 2026, For
+[2026-07-01 13:32:23 KSA]   └─── 22 total signals ───
+
+[2026-07-01 13:32:23 KSA] ═══ RESCAN COMPLETE ═══
+
