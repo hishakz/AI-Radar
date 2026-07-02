@@ -1992,3 +1992,58 @@
 
 [2026-07-01 13:32:23 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-02 12:43:51 KSA] Manual run triggered (--now flag)
+[2026-07-02 12:43:51 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-02 12:43:51 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-02 12:44:04 KSA]     ✓ 3 signals found
+[2026-07-02 12:44:06 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-02 12:44:21 KSA]     ✓ 3 signals found
+[2026-07-02 12:44:23 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-02 12:44:43 KSA]     ✓ 3 signals found
+[2026-07-02 12:44:45 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-02 12:44:53 KSA]     ✓ 0 signals found
+[2026-07-02 12:44:55 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-02 12:45:02 KSA]     ✓ 3 signals found
+[2026-07-02 12:45:04 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-02 12:45:12 KSA]     ✓ 3 signals found
+[2026-07-02 12:45:14 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-02 12:45:23 KSA]     ✓ 3 signals found
+[2026-07-02 12:45:25 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-02 12:45:32 KSA]     ✓ 3 signals found
+[2026-07-02 12:45:34 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-02 12:45:48 KSA]     ✓ 3 signals found
+[2026-07-02 12:45:50 KSA]   Total new signals: 24
+[2026-07-02 12:45:50 KSA]   Updating dashboard HTML...
+[2026-07-02 12:45:50 KSA]   ↩ 13 duplicate(s) skipped — already in dashboard
+[2026-07-02 12:45:50 KSA]   ✚ 11 genuinely new signals to inject
+[2026-07-02 12:45:50 KSA]   ✓ Done — 11 added, 13 duplicates skipped, 408 total signals
+[2026-07-02 12:45:50 KSA] 
+  ┌─── SCAN SUMMARY — July 02, 2026 ───
+[2026-07-02 12:45:50 KSA]   │ 01. [Breakthrough] Linker Vision Expands Kaohsiung AI Infrastructure for Autonomous City Monitoring
+[2026-07-02 12:45:50 KSA]   │ 02. [Breakthrough] Niantic Spatial and Spexi Partner for City-Scale Drone-to-3D Infrastructure AI P
+[2026-07-02 12:45:50 KSA]   │ 03. [Research] Smart City Micro Aerial Vehicles Achieve Autonomous Underground Inspection at Sc
+[2026-07-02 12:45:50 KSA]   │ 04. [Research] MIT Research: Robotic Voxel Assembly Reduces Construction Carbon by 82%
+[2026-07-02 12:45:50 KSA]   │ 05. [Breakthrough] DroneDeploy Reports 160% YoY Growth in Robotic Missions, Surpasses 20 Trillion S
+[2026-07-02 12:45:50 KSA]   │ 06. [Release] Rebar-Tying Robot TyBOT Now Available for Direct Purchase; 40% Injury Rate Reduc
+[2026-07-02 12:45:50 KSA]   │ 07. [Release] FoodChain ID Expands AI Strategy with Connected Decision-Making Platform
+[2026-07-02 12:45:50 KSA]   │ 08. [Research] AI and Food Safety Liability: Legal Expert Analysis
+[2026-07-02 12:45:50 KSA]   │ 09. [Breakthrough] IFT FIRST Conference Features Food Safety and AI Innovation Keynotes
+[2026-07-02 12:45:50 KSA]   │ 10. [Policy] OECD publishes working paper on AI-powered regulatory inspections
+[2026-07-02 12:45:50 KSA]   │ 11. [Policy] Trump Administration issues Executive Order on AI security benchmarking
+[2026-07-02 12:45:50 KSA]   │ 12. [Policy] EU AI Act transparency rules take effect in August 2026
+[2026-07-02 12:45:50 KSA]   │ 13. [Release] Anthropic Redeploys Claude Fable 5 After US Export Controls Lifted
+[2026-07-02 12:45:50 KSA]   │ 14. [Policy] UN Global Dialogue on AI Governance Begins July 6, 2026
+[2026-07-02 12:45:50 KSA]   │ 15. [Breakthrough] Claude Opus 4.8 Achieves #1 on Artificial Analysis Intelligence Index
+[2026-07-02 12:45:50 KSA]   │ 16. [Breakthrough] OpenAI Launches Patch the Planet Initiative for AI-Driven Vulnerability Detectio
+[2026-07-02 12:45:50 KSA]   │ 17. [Security] Instagram AI Account Recovery System Vulnerability Patched
+[2026-07-02 12:45:50 KSA]   │ 18. [Security] JFrog Reports 451% Surge in Malicious AI Supply Chain Attacks
+[2026-07-02 12:45:50 KSA]   │ 19. [Funding] Anthropic Series H funding: $65B at $965B valuation in June 2026
+[2026-07-02 12:45:50 KSA]   │ 20. [Release] OpenAI files confidential S-1 with $852B valuation; targets Q4 2026 or later IPO
+[2026-07-02 12:45:50 KSA]   │ 21. [Release] SpaceX IPO launches June 12, 2026 at $150/share; includes xAI integration
+[2026-07-02 12:45:50 KSA]   │ 22. [Research] AI 2027 Tracker: Mixed Progress on AI Predictions vs Reality
+[2026-07-02 12:45:50 KSA]   │ 23. [Funding] IDC 2026 Forecast: 65% of Cities to Deploy AI Agents by 2027
+[2026-07-02 12:45:50 KSA]   │ 24. [Release] NVIDIA Smart City Blueprint: Physical AI Ecosystem at World Congress
+[2026-07-02 12:45:50 KSA]   └─── 24 total signals ───
+
+[2026-07-02 12:45:50 KSA] ═══ RESCAN COMPLETE ═══
+
