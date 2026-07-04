@@ -2104,3 +2104,59 @@
 
 [2026-07-03 12:44:58 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-04 12:05:43 KSA] Manual run triggered (--now flag)
+[2026-07-04 12:05:43 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-04 12:05:43 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-04 12:05:54 KSA]     ✓ 3 signals found
+[2026-07-04 12:05:56 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-04 12:06:04 KSA]     ✓ 3 signals found
+[2026-07-04 12:06:06 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-04 12:06:15 KSA]     ✓ 3 signals found
+[2026-07-04 12:06:17 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-04 12:06:31 KSA]     ✓ 1 signals found
+[2026-07-04 12:06:33 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-04 12:06:40 KSA]     ✓ 3 signals found
+[2026-07-04 12:06:42 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-04 12:06:51 KSA]     ✓ 3 signals found
+[2026-07-04 12:06:53 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-04 12:07:04 KSA]     ✓ 3 signals found
+[2026-07-04 12:07:06 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-04 12:07:16 KSA]     ✓ 3 signals found
+[2026-07-04 12:07:18 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-04 12:07:37 KSA]     ✓ 3 signals found
+[2026-07-04 12:07:39 KSA]   Total new signals: 25
+[2026-07-04 12:07:39 KSA]   Updating dashboard HTML...
+[2026-07-04 12:07:39 KSA]   ↩ 18 duplicate(s) skipped — already in dashboard
+[2026-07-04 12:07:39 KSA]   ✚ 7 genuinely new signals to inject
+[2026-07-04 12:07:39 KSA]   ✓ Done — 7 added, 18 duplicates skipped, 425 total signals
+[2026-07-04 12:07:39 KSA] 
+  ┌─── SCAN SUMMARY — July 04, 2026 ───
+[2026-07-04 12:07:39 KSA]   │ 01. [Research] Interpretable AI for Smart City Cloud Security with Real-Time IoT Threat Detecti
+[2026-07-04 12:07:39 KSA]   │ 02. [Release] Root Cause Suggestion AI Market Surges to $2.53B in 2026
+[2026-07-04 12:07:39 KSA]   │ 03. [Release] Percepto Launches Next-Gen Autonomous Inspection Platform for Energy Infrastruct
+[2026-07-04 12:07:39 KSA]   │ 04. [Funding] Bedrock Robotics Closes $270M Series B for Autonomous Excavation & Site Prep
+[2026-07-04 12:07:39 KSA]   │ 05. [Breakthrough] DroneDeploy Surpasses 20 Trillion Square Feet of Construction Visual Data
+[2026-07-04 12:07:39 KSA]   │ 06. [Research] AI Vision Systems Transform Construction Site Inspection & Defect Detection
+[2026-07-04 12:07:39 KSA]   │ 07. [Breakthrough] AI Food Safety Inspections: Industry Embraces Automation for Better Compliance
+[2026-07-04 12:07:39 KSA]   │ 08. [Policy] USDA Initiative Drives AI Adoption in Food Safety Modernization
+[2026-07-04 12:07:39 KSA]   │ 09. [Research] AI Reshaping Food Safety: Real-Time Adaptation Over Full Automation
+[2026-07-04 12:07:39 KSA]   │ 10. [Breakthrough] Drones and AI Begin Inspecting Housing Renovation Quality on Sakhalin
+[2026-07-04 12:07:39 KSA]   │ 11. [Policy] OECD publishes working paper on AI-powered regulatory inspections
+[2026-07-04 12:07:39 KSA]   │ 12. [Policy] EU AI Act transparency rules take effect in August 2026
+[2026-07-04 12:07:39 KSA]   │ 13. [Policy] White House releases National AI Legislative Framework on March 20, 2026
+[2026-07-04 12:07:39 KSA]   │ 14. [Release] Claude Sonnet 5 Launches as Default for All Free and Pro Users
+[2026-07-04 12:07:39 KSA]   │ 15. [Policy] Anthropic's Fable 5 Returns After 19-Day Export Control Suspension
+[2026-07-04 12:07:39 KSA]   │ 16. [Release] Google Releases Gemini 3.1 Flash and Pro Image Models on June 30
+[2026-07-04 12:07:39 KSA]   │ 17. [Security] BioShocking: New Prompt Injection Exploit Manipulates AI Browsers
+[2026-07-04 12:07:39 KSA]   │ 18. [Release] Google DeepMind Launches AI Agent Guardrails with Access Restrictions
+[2026-07-04 12:07:39 KSA]   │ 19. [Breakthrough] OpenAI Launches Patch the Planet Initiative with AI-Driven Vulnerability Detecti
+[2026-07-04 12:07:39 KSA]   │ 20. [Policy] Global Finance Weekly Roundup: AI Boom Continues; BIS Warns of Investment Bubble
+[2026-07-04 12:07:39 KSA]   │ 21. [Funding] Flourish Raises $500M Seed Funding; Brain-Inspired AI Model Attracts Jeff Bezos,
+[2026-07-04 12:07:39 KSA]   │ 22. [Funding] Cyera Reaches $12 Billion Valuation; Raises $600M Series D for Enterprise AI Gov
+[2026-07-04 12:07:39 KSA]   │ 23. [Policy] UN Global Dialogue on AI Governance Begins July 6: Framework for Managing Techno
+[2026-07-04 12:07:39 KSA]   │ 24. [Release] Anthropic Launches Claude Sonnet 5 with Agentic Capabilities at Scale
+[2026-07-04 12:07:39 KSA]   │ 25. [Research] JPMorgan Raises AI Capex Forecast to $5.5 Trillion Through 2030
+[2026-07-04 12:07:39 KSA]   └─── 25 total signals ───
+
+[2026-07-04 12:07:39 KSA] ═══ RESCAN COMPLETE ═══
+
