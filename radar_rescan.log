@@ -2160,3 +2160,58 @@
 
 [2026-07-04 12:07:39 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-05 12:27:41 KSA] Manual run triggered (--now flag)
+[2026-07-05 12:27:41 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-05 12:27:41 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-05 12:27:54 KSA]     ✗ No JSON found in response
+[2026-07-05 12:27:56 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-05 12:28:14 KSA]     ✓ 3 signals found
+[2026-07-05 12:28:16 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-05 12:28:30 KSA]     ✓ 3 signals found
+[2026-07-05 12:28:32 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-05 12:28:40 KSA]     ✓ 3 signals found
+[2026-07-05 12:28:42 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-05 12:28:51 KSA]     ✓ 3 signals found
+[2026-07-05 12:28:53 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-05 12:29:02 KSA]     ✓ 3 signals found
+[2026-07-05 12:29:04 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-05 12:29:13 KSA]     ✓ 3 signals found
+[2026-07-05 12:29:15 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-05 12:29:22 KSA]     ✓ 3 signals found
+[2026-07-05 12:29:24 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-05 12:29:32 KSA]     ✓ 3 signals found
+[2026-07-05 12:29:34 KSA]   Total new signals: 24
+[2026-07-05 12:29:34 KSA]   Updating dashboard HTML...
+[2026-07-05 12:29:34 KSA]   ↩ 19 duplicate(s) skipped — already in dashboard
+[2026-07-05 12:29:34 KSA]   ✚ 5 genuinely new signals to inject
+[2026-07-05 12:29:34 KSA]   ✓ Done — 5 added, 19 duplicates skipped, 430 total signals
+[2026-07-05 12:29:34 KSA] 
+  ┌─── SCAN SUMMARY — July 05, 2026 ───
+[2026-07-05 12:29:34 KSA]   │ 01. [Breakthrough] Autonomous Construction Equipment Market to Reach $18.16B by End of 2026
+[2026-07-05 12:29:34 KSA]   │ 02. [Research] Robotics News: Construction Inspection Workflows Shift to Autonomous Operations
+[2026-07-05 12:29:34 KSA]   │ 03. [Breakthrough] DroneDeploy Safety AI Identifies 90,000+ Safety Risks with 95% Accuracy
+[2026-07-05 12:29:34 KSA]   │ 04. [Research] AI Food Safety Survey: Gap Between Policy and Practice in Food Industry
+[2026-07-05 12:29:34 KSA]   │ 05. [Research] ProFood World: AI Moving from Pilot to Practical Food Inspection Applications
+[2026-07-05 12:29:34 KSA]   │ 06. [Policy] FDA Announces Elsa 4.0 and HALO Data Platform for Food Safety Compliance
+[2026-07-05 12:29:34 KSA]   │ 07. [Breakthrough] AI Vision Systems Transforming Building Inspections with Deep Learning Detection
+[2026-07-05 12:29:34 KSA]   │ 08. [Release] DroneDeploy Launches AI Agents for Construction Site Safety and Progress Trackin
+[2026-07-05 12:29:34 KSA]   │ 09. [Release] iListing AI Launches Inspecti: Vertical AI Agent for Property Inspection Automat
+[2026-07-05 12:29:34 KSA]   │ 10. [Policy] OECD Publishes Working Paper on AI-Powered Regulatory Inspections
+[2026-07-05 12:29:34 KSA]   │ 11. [Policy] Trump Administration Signs Executive Order on AI Innovation and Security
+[2026-07-05 12:29:34 KSA]   │ 12. [Policy] EU AI Act Transparency Rules Take Effect August 2026
+[2026-07-05 12:29:34 KSA]   │ 13. [Release] Anthropic Releases Claude Fable 5 After US Export Ban Lifted
+[2026-07-05 12:29:34 KSA]   │ 14. [Release] Anthropic Makes Claude Sonnet 5 Default Model with Strong Coding Benchmarks
+[2026-07-05 12:29:34 KSA]   │ 15. [Release] OpenAI Previews GPT-5.6 Family Behind Government Access Gate
+[2026-07-05 12:29:34 KSA]   │ 16. [Security] Apple Releases Emergency iOS 26.5.2 Update with 30 Security Patches
+[2026-07-05 12:29:34 KSA]   │ 17. [Research] BioShocking Attack Tricks AI Browsers into Leaking User Credentials
+[2026-07-05 12:29:34 KSA]   │ 18. [Security] CISA Adds SharePoint RCE CVE-2026-45659 to Exploited Vulnerabilities List
+[2026-07-05 12:29:34 KSA]   │ 19. [Release] OpenAI Files Confidential S-1 IPO Registration; Eyes 2027 Timeline
+[2026-07-05 12:29:34 KSA]   │ 20. [Release] SpaceX Launches IPO at $150 Per Share on Nasdaq as SPCX
+[2026-07-05 12:29:34 KSA]   │ 21. [Funding] Anthropic Raises $65 Billion Series H at $965 Billion Valuation
+[2026-07-05 12:29:34 KSA]   │ 22. [Research] AI 2027 Tracker Updates Predictions Against Reality With 65% Progress Rate
+[2026-07-05 12:29:34 KSA]   │ 23. [Breakthrough] Smart City AI Traffic Management Market Projected to Reach $20 Billion by 2027
+[2026-07-05 12:29:34 KSA]   │ 24. [Breakthrough] 65% of Global Cities Expected to Deploy AI Agents for Workflow Automation by 202
+[2026-07-05 12:29:34 KSA]   └─── 24 total signals ───
+
+[2026-07-05 12:29:34 KSA] ═══ RESCAN COMPLETE ═══
+
