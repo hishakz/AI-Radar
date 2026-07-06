@@ -2215,3 +2215,53 @@
 
 [2026-07-05 12:29:34 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-06 14:13:15 KSA] Manual run triggered (--now flag)
+[2026-07-06 14:13:15 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-06 14:13:15 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-06 14:13:32 KSA]     ✓ 1 signals found
+[2026-07-06 14:13:34 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-06 14:13:42 KSA]     ✓ 3 signals found
+[2026-07-06 14:13:44 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-06 14:13:56 KSA]     ✓ 0 signals found
+[2026-07-06 14:13:58 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-06 14:14:06 KSA]     ✓ 0 signals found
+[2026-07-06 14:14:08 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-06 14:14:15 KSA]     ✓ 3 signals found
+[2026-07-06 14:14:17 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-06 14:14:29 KSA]     ✓ 3 signals found
+[2026-07-06 14:14:31 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-06 14:14:38 KSA]     ✓ 3 signals found
+[2026-07-06 14:14:40 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-06 14:14:48 KSA]     ✓ 3 signals found
+[2026-07-06 14:14:50 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-06 14:14:58 KSA]     ✓ 3 signals found
+[2026-07-06 14:15:00 KSA]   Total new signals: 19
+[2026-07-06 14:15:00 KSA]   Updating dashboard HTML...
+[2026-07-06 14:15:00 KSA]   ↩ 14 duplicate(s) skipped — already in dashboard
+[2026-07-06 14:15:00 KSA]   ✚ 5 genuinely new signals to inject
+[2026-07-06 14:15:00 KSA]   ✓ Done — 5 added, 14 duplicates skipped, 435 total signals
+[2026-07-06 14:15:00 KSA] 
+  ┌─── SCAN SUMMARY — July 06, 2026 ───
+[2026-07-06 14:15:00 KSA]   │ 01. [Research] Root Cause AI Market Surges with Smart Infrastructure Focus
+[2026-07-06 14:15:00 KSA]   │ 02. [Funding] Bedrock Robotics Closes $270M Series B for Autonomous Excavation and Demolition
+[2026-07-06 14:15:00 KSA]   │ 03. [Policy] FAA Part 108 Takes Effect June 1: Commercial Drone Corridors and Night Operation
+[2026-07-06 14:15:00 KSA]   │ 04. [Release] DJI Enterprise Launches Drone Onboard AI Challenge 2026 for Construction Applica
+[2026-07-06 14:15:00 KSA]   │ 05. [Policy] OECD publishes working paper on AI-powered regulatory inspections
+[2026-07-06 14:15:00 KSA]   │ 06. [Policy] Connecticut enacts AI Safety, Transparency and Consumer Protection Act
+[2026-07-06 14:15:00 KSA]   │ 07. [Policy] EU AI Act transparency rules effective August 2026; political agreement on simpl
+[2026-07-06 14:15:00 KSA]   │ 08. [Release] Anthropic launches Claude Sonnet 5 and restores Fable 5 after export control rev
+[2026-07-06 14:15:00 KSA]   │ 09. [Release] OpenAI begins limited preview of GPT-5.6 series (Sol, Terra, Luna) with governme
+[2026-07-06 14:15:00 KSA]   │ 10. [Release] Google targets July 2026 general availability for Gemini 3.5 Pro with 2M token c
+[2026-07-06 14:15:00 KSA]   │ 11. [Research] Check Point Releases 2026 Exposure Gap Report: Critical Vulnerabilities More Tha
+[2026-07-06 14:15:00 KSA]   │ 12. [Policy] White House Executive Order: AI Cybersecurity Clearinghouse Established June 202
+[2026-07-06 14:15:00 KSA]   │ 13. [Release] OpenAI Launches Daybreak Cybersecurity Initiative for AI-Powered Vulnerability D
+[2026-07-06 14:15:00 KSA]   │ 14. [Funding] H1 2026 AI funding hits record $510B as OpenAI, Anthropic command 43% of capital
+[2026-07-06 14:15:00 KSA]   │ 15. [Funding] Anthropic files S-1 after $65B Series H at $965B valuation; joins OpenAI in IPO 
+[2026-07-06 14:15:00 KSA]   │ 16. [Funding] SpaceX achieves largest venture-backed IPO ever at $1.77T valuation, raises $75B
+[2026-07-06 14:15:00 KSA]   │ 17. [Research] AI 2027 Tracker: Predictions vs Reality - Updated Progress Report
+[2026-07-06 14:15:00 KSA]   │ 18. [Research] FutureSearch Forecasters Update AI Timelines - One Year Later Analysis
+[2026-07-06 14:15:00 KSA]   │ 19. [Research] StartUs Insights: 10 Emerging Smart City Trends 2026 Report Published
+[2026-07-06 14:15:00 KSA]   └─── 19 total signals ───
+
+[2026-07-06 14:15:00 KSA] ═══ RESCAN COMPLETE ═══
+
