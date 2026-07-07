@@ -2265,3 +2265,55 @@
 
 [2026-07-06 14:15:00 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-07 13:06:35 KSA] Manual run triggered (--now flag)
+[2026-07-07 13:06:35 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-07 13:06:35 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-07 13:06:44 KSA]     ✓ 3 signals found
+[2026-07-07 13:06:46 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-07 13:06:56 KSA]     ✓ 0 signals found
+[2026-07-07 13:06:58 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-07 13:07:09 KSA]     ✓ 3 signals found
+[2026-07-07 13:07:11 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-07 13:07:21 KSA]     ✓ 0 signals found
+[2026-07-07 13:07:23 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-07 13:07:29 KSA]     ✓ 3 signals found
+[2026-07-07 13:07:31 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-07 13:07:42 KSA]     ✓ 3 signals found
+[2026-07-07 13:07:44 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-07 13:07:52 KSA]     ✓ 3 signals found
+[2026-07-07 13:07:54 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-07 13:08:03 KSA]     ✓ 3 signals found
+[2026-07-07 13:08:05 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-07 13:08:14 KSA]     ✓ 3 signals found
+[2026-07-07 13:08:16 KSA]   Total new signals: 21
+[2026-07-07 13:08:16 KSA]   Updating dashboard HTML...
+[2026-07-07 13:08:16 KSA]   ↩ 16 duplicate(s) skipped — already in dashboard
+[2026-07-07 13:08:16 KSA]   ✚ 5 genuinely new signals to inject
+[2026-07-07 13:08:16 KSA]   ✓ Done — 5 added, 16 duplicates skipped, 440 total signals
+[2026-07-07 13:08:16 KSA] 
+  ┌─── SCAN SUMMARY — July 07, 2026 ───
+[2026-07-07 13:08:16 KSA]   │ 01. [Release] ASUS joins Foxconn for turnkey AI City solution deployment
+[2026-07-07 13:08:16 KSA]   │ 02. [Release] Smart City Summit & Expo 2026 showcases AI City Pavilion with full-stack solutio
+[2026-07-07 13:08:16 KSA]   │ 03. [Research] McKinsey: AI-native cities enable continuous autonomous infrastructure monitorin
+[2026-07-07 13:08:16 KSA]   │ 04. [Breakthrough] AI Food Safety Market Report: $16 billion valuation in 2025, 39% growth rate
+[2026-07-07 13:08:16 KSA]   │ 05. [Policy] FDA Expands AI Capabilities for Inspection and Compliance Operations
+[2026-07-07 13:08:16 KSA]   │ 06. [Research] Blockchain and AIoT Traceability Systems Show Cost Benefits in Mid-June Study
+[2026-07-07 13:08:16 KSA]   │ 07. [Policy] FTC Proposes Policy Statement on AI Accuracy and Deceptive Practices
+[2026-07-07 13:08:16 KSA]   │ 08. [Research] OECD Publishes Working Paper on AI-Powered Regulatory Inspections
+[2026-07-07 13:08:16 KSA]   │ 09. [Policy] EU AI Act Transparency Rules Take Effect August 2026
+[2026-07-07 13:08:16 KSA]   │ 10. [Release] Anthropic Fable 5 Returns After US Government Lifts Export Ban
+[2026-07-07 13:08:16 KSA]   │ 11. [Release] Google Launches Gemini Spark 24/7 Cloud AI Agent
+[2026-07-07 13:08:16 KSA]   │ 12. [Breakthrough] Anthropic Expands Compute Partnership With Google and Broadcom
+[2026-07-07 13:08:16 KSA]   │ 13. [Security] AI Security Incidents Report: 6 Major Breaches in April 2026
+[2026-07-07 13:08:16 KSA]   │ 14. [Security] GitHub Copilot Vulnerability CVE-2025-53773: CVSS 9.6 Critical Severity
+[2026-07-07 13:08:16 KSA]   │ 15. [Security] Malicious Model Weights Discovered on Hugging Face with Embedded Backdoors
+[2026-07-07 13:08:16 KSA]   │ 16. [Release] SpaceX IPO launches at $1.77T valuation, raises $75B in largest venture-backed o
+[2026-07-07 13:08:16 KSA]   │ 17. [Funding] Global venture funding hits record $510B in H1 2026, OpenAI and Anthropic captur
+[2026-07-07 13:08:16 KSA]   │ 18. [Funding] Anthropic overtakes OpenAI with $965B valuation after $65B Series H funding roun
+[2026-07-07 13:08:16 KSA]   │ 19. [Research] AI 2027 Tracker: Mixed Progress on 2027 Predictions vs Reality
+[2026-07-07 13:08:16 KSA]   │ 20. [Release] FPT & NVIDIA Partner on Intelligent Inspection Solution for Smart Cities
+[2026-07-07 13:08:16 KSA]   │ 21. [Research] McKinsey: AI-Native Public Infrastructure Transforms City Operations
+[2026-07-07 13:08:16 KSA]   └─── 21 total signals ───
+
+[2026-07-07 13:08:16 KSA] ═══ RESCAN COMPLETE ═══
+
