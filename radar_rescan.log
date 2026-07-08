@@ -2317,3 +2317,56 @@
 
 [2026-07-07 13:08:16 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-08 12:07:26 KSA] Manual run triggered (--now flag)
+[2026-07-08 12:07:26 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-08 12:07:26 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-08 12:07:37 KSA]     ✓ 3 signals found
+[2026-07-08 12:07:39 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-08 12:07:46 KSA]     ✓ 1 signals found
+[2026-07-08 12:07:48 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-08 12:08:00 KSA]     ✓ 3 signals found
+[2026-07-08 12:08:02 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-08 12:08:12 KSA]     ✓ 0 signals found
+[2026-07-08 12:08:14 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-08 12:08:23 KSA]     ✓ 3 signals found
+[2026-07-08 12:08:25 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-08 12:08:34 KSA]     ✓ 3 signals found
+[2026-07-08 12:08:36 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-08 12:08:44 KSA]     ✓ 3 signals found
+[2026-07-08 12:08:46 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-08 12:08:58 KSA]     ✓ 3 signals found
+[2026-07-08 12:09:00 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-08 12:09:07 KSA]     ✓ 3 signals found
+[2026-07-08 12:09:09 KSA]   Total new signals: 22
+[2026-07-08 12:09:09 KSA]   Updating dashboard HTML...
+[2026-07-08 12:09:09 KSA]   ↩ 14 duplicate(s) skipped — already in dashboard
+[2026-07-08 12:09:09 KSA]   ✚ 8 genuinely new signals to inject
+[2026-07-08 12:09:09 KSA]   ✓ Done — 8 added, 14 duplicates skipped, 448 total signals
+[2026-07-08 12:09:09 KSA] 
+  ┌─── SCAN SUMMARY — July 08, 2026 ───
+[2026-07-08 12:09:09 KSA]   │ 01. [Release] ExRobotics launches UL-certified inspection robot for hazardous industrial sites
+[2026-07-08 12:09:09 KSA]   │ 02. [Research] Robotics News July 2026: Inspection robots for infrastructure gaining startup mo
+[2026-07-08 12:09:09 KSA]   │ 03. [Policy] UN Global Dialogue on AI Governance convenes in Geneva with focus on AI safety
+[2026-07-08 12:09:09 KSA]   │ 04. [Research] Construction Robotics Steps Up a Gear as Berlin Prepares to Host Robotics-2027
+[2026-07-08 12:09:09 KSA]   │ 05. [Research] AI Food Safety News from June 2026: Outbreak Detection & Blockchain Traceability
+[2026-07-08 12:09:09 KSA]   │ 06. [Policy] FDA Launches AI-Informed Inspection Pilot for Lower-Risk Food Facilities
+[2026-07-08 12:09:09 KSA]   │ 07. [Breakthrough] ProFood World: AI Reshaping Food Safety with Faster Pathogen Detection and Smart
+[2026-07-08 12:09:09 KSA]   │ 08. [Policy] Illinois Governor Pritzker Signs AI Safety Measures Act Into Law
+[2026-07-08 12:09:09 KSA]   │ 09. [Policy] UN Global Dialogue on AI Governance Convenes July 6-7 2026
+[2026-07-08 12:09:09 KSA]   │ 10. [Policy] FTC Seeks Public Comment on AI Accuracy Policy Statement
+[2026-07-08 12:09:09 KSA]   │ 11. [Release] Google Delays Gemini 3.5 Pro to July 17, Rebuilds Architecture for Improved Reas
+[2026-07-08 12:09:09 KSA]   │ 12. [Release] Anthropic Redeploys Claude Fable 5 Globally with Enhanced Cybersecurity Safeguar
+[2026-07-08 12:09:09 KSA]   │ 13. [Release] OpenAI Releases GPT-Realtime 2.1 with 25% Lower Latency for Voice and Multimodal
+[2026-07-08 12:09:09 KSA]   │ 14. [Security] The AI Cyber Attacks Explosion in 2026: Emerging Threats
+[2026-07-08 12:09:09 KSA]   │ 15. [Policy] Executive Order on AI Innovation and Security Establishes Cybersecurity Clearing
+[2026-07-08 12:09:09 KSA]   │ 16. [Release] OpenAI Launches Daybreak for AI-Powered Vulnerability Detection
+[2026-07-08 12:09:09 KSA]   │ 17. [Funding] Global venture funding hits record $510B in H1 2026, driven by AI megarounds
+[2026-07-08 12:09:09 KSA]   │ 18. [Funding] Anthropic reaches $965B valuation with $65B Series H funding round
+[2026-07-08 12:09:09 KSA]   │ 19. [Release] OpenAI confidentially files S-1 registration statement, targets Q4 2026 IPO
+[2026-07-08 12:09:09 KSA]   │ 20. [Research] AI 2027 Tracker: Predictions vs Reality Mid-Year Review
+[2026-07-08 12:09:09 KSA]   │ 21. [Research] Smart City IoT Cellular Connections Forecast: 122M Links by 2027
+[2026-07-08 12:09:09 KSA]   │ 22. [Research] AI Smart Cities Market to Reach $340B by 2033 — 23% CAGR
+[2026-07-08 12:09:09 KSA]   └─── 22 total signals ───
+
+[2026-07-08 12:09:09 KSA] ═══ RESCAN COMPLETE ═══
+
