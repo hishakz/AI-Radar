@@ -2420,3 +2420,61 @@
 
 [2026-07-09 13:06:07 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-10 13:00:41 KSA] Manual run triggered (--now flag)
+[2026-07-10 13:00:41 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-10 13:00:41 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-10 13:00:55 KSA]     ✓ 3 signals found
+[2026-07-10 13:00:57 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-10 13:01:12 KSA]     ✓ 3 signals found
+[2026-07-10 13:01:14 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-10 13:01:24 KSA]     ✓ 3 signals found
+[2026-07-10 13:01:26 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-10 13:01:38 KSA]     ✓ 3 signals found
+[2026-07-10 13:01:40 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-10 13:01:48 KSA]     ✓ 3 signals found
+[2026-07-10 13:01:50 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-10 13:02:05 KSA]     ✓ 3 signals found
+[2026-07-10 13:02:07 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-10 13:02:22 KSA]     ✓ 3 signals found
+[2026-07-10 13:02:24 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-10 13:02:31 KSA]     ✓ 3 signals found
+[2026-07-10 13:02:33 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-10 13:02:42 KSA]     ✓ 3 signals found
+[2026-07-10 13:02:44 KSA]   Total new signals: 27
+[2026-07-10 13:02:44 KSA]   Updating dashboard HTML...
+[2026-07-10 13:02:44 KSA]   ↩ 15 duplicate(s) skipped — already in dashboard
+[2026-07-10 13:02:44 KSA]   ✚ 12 genuinely new signals to inject
+[2026-07-10 13:02:44 KSA]   ✓ Done — 12 added, 15 duplicates skipped, 471 total signals
+[2026-07-10 13:02:44 KSA] 
+  ┌─── SCAN SUMMARY — July 10, 2026 ───
+[2026-07-10 13:02:44 KSA]   │ 01. [Research] Forbes: Robotics, Drones & AI For Monitoring Energy Infrastructure
+[2026-07-10 13:02:44 KSA]   │ 02. [Release] Percepto Unveils AI-Powered Inspection Intelligence Platform for Energy Infrastr
+[2026-07-10 13:02:44 KSA]   │ 03. [Research] McKinsey: AI-Native Public Infrastructure for Smart Cities
+[2026-07-10 13:02:44 KSA]   │ 04. [Research] Robotics in Underground 2026: Advanced synchronized multi-robot systems for cons
+[2026-07-10 13:02:44 KSA]   │ 05. [Breakthrough] The Rise of AI-Enabled Construction Equipment: Smart excavators, dozers, and hau
+[2026-07-10 13:02:44 KSA]   │ 06. [Breakthrough] Top Autonomous Construction Equipment Trends: Caterpillar's five-machine autonom
+[2026-07-10 13:02:44 KSA]   │ 07. [Breakthrough] AI-Powered Vision Systems in Food Inspection Advance to High-Speed Production
+[2026-07-10 13:02:44 KSA]   │ 08. [Breakthrough] AI Vision Inspection Systems Expand Across Food Industries Globally
+[2026-07-10 13:02:44 KSA]   │ 09. [Policy] FDA Expands Generative AI Platform for Food Inspections and Compliance Reviews
+[2026-07-10 13:02:44 KSA]   │ 10. [Release] BuildwellAI Platform Launches for UK Construction Industry with AI Inspection Fe
+[2026-07-10 13:02:44 KSA]   │ 11. [Research] PropTech Market Expands to $44.59 Billion in 2026 with AI-Driven Inspection Grow
+[2026-07-10 13:02:44 KSA]   │ 12. [Breakthrough] AI Property Valuation Reaches 90% Accuracy with Instant Processing; Inspection T
+[2026-07-10 13:02:44 KSA]   │ 13. [Policy] FTC Seeks Public Comment on AI Accuracy Policy Statement
+[2026-07-10 13:02:44 KSA]   │ 14. [Policy] Connecticut Enacts AI Safety and Consumer Protection Law
+[2026-07-10 13:02:44 KSA]   │ 15. [Policy] Trump Signs Executive Order on Advanced AI Innovation and Security
+[2026-07-10 13:02:44 KSA]   │ 16. [Release] OpenAI releases GPT-5.6 Sol, Terra, Luna models publicly after government pause
+[2026-07-10 13:02:44 KSA]   │ 17. [Release] Anthropic restores Fable 5 and Mythos 5 models globally after export control lif
+[2026-07-10 13:02:44 KSA]   │ 18. [Funding] Anthropic expands Google partnership for multiple gigawatts of next-gen compute
+[2026-07-10 13:02:44 KSA]   │ 19. [Security] Writer AI Platform Patched: Critical Session Isolation Vulnerability (WriteOut)
+[2026-07-10 13:02:44 KSA]   │ 20. [Research] LayerX Uncovers BioShocking Prompt Injection Attack Against AI Browsers
+[2026-07-10 13:02:44 KSA]   │ 21. [Security] AI Agent Poisoning via SEO and Hidden HTML Prompt Injection Emerges
+[2026-07-10 13:02:44 KSA]   │ 22. [Funding] Global AI Investment Boom: $510B in H1 2026, SpaceX IPO Record, Anthropic Nears 
+[2026-07-10 13:02:44 KSA]   │ 23. [Funding] Together AI Closes $800M Series C for Enterprise AI Model Operations Platform
+[2026-07-10 13:02:44 KSA]   │ 24. [Release] Anthropic Files for IPO After $65B Series H Round, Targets $965B Valuation
+[2026-07-10 13:02:44 KSA]   │ 25. [Research] AI 2027 Tracker Updated: AGI Predictions vs Reality at 65% Pace
+[2026-07-10 13:02:44 KSA]   │ 26. [Breakthrough] FPT Enhances Smart City Inspection with NVIDIA AI for Real-Time Infrastructure M
+[2026-07-10 13:02:44 KSA]   │ 27. [Release] SewerAI Launches Smart Project Builder for Municipal Infrastructure Inspection P
+[2026-07-10 13:02:44 KSA]   └─── 27 total signals ───
+
+[2026-07-10 13:02:44 KSA] ═══ RESCAN COMPLETE ═══
+
