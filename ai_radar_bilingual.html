@@ -330,7 +330,7 @@ const DOMAINS = [
 const L = {
   en:{
     wm:['Inspection','Intelligence'], tl:'AI & EMERGING TECH RADAR — INNOVATION DOMAIN BRIEF',
-    scanDate:'Jul 11, 2026', sigCount:'478 signals',
+    scanDate:'', sigCount:'',
     tabs:[
       {id:'inspect',label:'🔍 Smart City & Inspection',count:20},
       {id:'apply',  label:'⚙️ Innovation Applications',count:5},
@@ -393,7 +393,7 @@ const L = {
   },
   ar:{
     wm:['منصة استخبارات','التفتيش'], tl:'رادار الذكاء الاصطناعي — ملخص الابتكار في مجال التفتيش',
-    scanDate:'11 يوليو 2026', sigCount:'478 إشارة',
+    scanDate:'', sigCount:'',
     tabs:[
       {id:'inspect',label:'🔍 المدن الذكية والتفتيش',count:20},
       {id:'apply',  label:'⚙️ تطبيقات الابتكار',   count:5},
@@ -2628,7 +2628,9 @@ function countForDomain(domId,tabId){
 // ════════════════════════════════════════════════════════════════
 function renderNav(lang){
   const l=L[lang];
-  return l.tabs.map(t=>`<button class="nav-tab ${t.id===ACTIVE_TAB?'active':''}" onclick="switchTab('${t.id}')">${t.label}<span class="cnt">${t.count}</span></button>`).join('');
+  // Live counts — always reflect actual array sizes, not hardcoded L values
+  const liveCounts={inspect:INSPECT.length, apply:VECTORS.length, ai:AI_SIGNALS.length};
+  return l.tabs.map(t=>`<button class="nav-tab ${t.id===ACTIVE_TAB?'active':''}" onclick="switchTab('${t.id}')">${t.label}<span class="cnt">${liveCounts[t.id]??t.count}</span></button>`).join('');
 }
 
 function renderDomainBar(lang){
@@ -2656,7 +2658,9 @@ function renderTab(tabId,lang){
 
   if(tabId==='inspect'){
     const secs=['city','construction','food','housing'];
-    const html=buildStats(l.stats_inspect,l.stats_inspect_l)+secs.map(s=>sectionBlock(s,lang,INSPECT)).join('');
+    // Override count with live INSPECT.length; other stats remain editorial
+    const liveStats=[String(INSPECT.length),...l.stats_inspect.slice(1)];
+    const html=buildStats(liveStats,l.stats_inspect_l)+secs.map(s=>sectionBlock(s,lang,INSPECT)).join('');
     const hasContent=secs.some(s=>INSPECT.filter(c=>c.sec===s&&domainMatch(c)).length>0);
     return html+(hasContent?'':noRes);
   }
@@ -2675,7 +2679,8 @@ function renderTab(tabId,lang){
       : AI_SIGNALS.filter(s=>domainMatch(s));
     const cards=sorted.map(s=>buildAISignal(s,lang)).filter(Boolean).join('');
     const hasContent=AI_SIGNALS.some(s=>domainMatch(s));
-    return`<div class="sec-hd"><div class="sec-icon" style="background:var(--paper3)">${icon}</div><div><div class="sec-title">${title}</div><div class="sec-sub">${sub}</div></div></div>`+
+    const liveSub=lang==='ar'?`${AI_SIGNALS.length} إشارة — نماذج حدودية، بنية تحتية، جيوسياسة`:`${AI_SIGNALS.length} signals — frontier models, infrastructure, geopolitics`;
+    return`<div class="sec-hd"><div class="sec-icon" style="background:var(--paper3)">${icon}</div><div><div class="sec-title">${title}</div><div class="sec-sub">${liveSub}</div></div></div>`+
       `<div class="grid">${cards}</div>`+(hasContent?'':noRes);
   }
   return '';
@@ -2714,7 +2719,9 @@ function render(lang){
   document.getElementById('wm').innerHTML=lang==='ar'?`${l.wm[0]}<span>${l.wm[1]}</span>`:`${l.wm[0]}<span>${l.wm[1]}</span>`;
   document.getElementById('tl').textContent=l.tl;
   // Dynamic — always reflect actual newest signal date and live count
-  document.getElementById('scan-date').textContent=computeNewestDate(lang);
+  // Header date = today's actual date from browser clock
+  const todayDate=(()=>{const n=new Date();if(lang==='ar'){const m=['','يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];return n.getDate()+' '+m[n.getMonth()+1]+' '+n.getFullYear();}return n.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});})();
+  document.getElementById('scan-date').textContent=todayDate;
   document.getElementById('sig-count').textContent=totalSignals()+(lang==='ar'?' إشارة':' signals');
   document.getElementById('nav-tabs').innerHTML=renderNav(lang);
   document.getElementById('domain-filter-bar').innerHTML=renderDomainBar(lang);
@@ -2887,7 +2894,9 @@ function buildInvPanel(lang){
   const newestDate=computeNewestDate(lang);
 
   // Staleness check — warn if investment data is >14 days older than newest signal
-  const invDataDate=20260531; // hardcoded May 31 — update when you manually refresh the panel
+  // ══ INV-DATA-DATE ══
+  const invDataDate=20260531;
+  // ══ /INV-DATA-DATE ══
   const newestNum=computeNewestDate('en'); // get the raw number via a helper
   const isStale=parseDateNum(computeNewestDate('en'))>invDataDate+14;
 
