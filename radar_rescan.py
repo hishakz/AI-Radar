@@ -354,9 +354,14 @@ Return ONLY valid JSON array. No markdown, no preamble."""
     html = _replace_marker(html, "INV-STOCKS-EN", f"let INV_STOCKS_EN = [\n" + ",\n".join(en_items) + "\n];")
     html = _replace_marker(html, "INV-STOCKS-AR", f"let INV_STOCKS_AR = [\n" + ",\n".join(ar_items) + "\n];")
 
+    # Auto-update invDataDate staleness check to today
+    import re as _re2
+    today_num = int(datetime.now(KSA_TZ).strftime("%Y%m%d"))
+    html = _re2.sub(r'const invDataDate=\d+;', f'const invDataDate={today_num};', html)
+
     with open(DASHBOARD_PATH, "w", encoding="utf-8") as f:
         f.write(html)
-    log(f"  ✓ Stock signals updated ({len(why_map)} tickers refreshed)")
+    log(f"  ✓ Stock signals updated ({len(why_map)} tickers, invDataDate → {today_num})")
 
 # ─── MARKET INTEL UPDATER 3: OPPORTUNITY VECTORS (weekly) ────────────────────
 def update_inv_opps(client, today):
