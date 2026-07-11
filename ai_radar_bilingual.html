@@ -2755,15 +2755,22 @@ function setDomain(domId){
 // ════════════════════════════════════════════════════════════════
 // INVESTMENT INTELLIGENCE DATA
 // ════════════════════════════════════════════════════════════════
-const INV = {
-  en: {
-    title: '💹 Investment Intelligence',
-    fab: '💹 Market Intel',
-    disclaimer: '⚠ For situational awareness only — not financial advice. Consult a licensed advisor before making investment decisions. All signal mappings are editorial interpretations, not forecasts.',
-    stocksTitle: '📊 Stock Impact — Signals from This Scan',
-    oppsTitle: '🚀 Investment Opportunity Vectors',
-    risksTitle: '⚠️ Risk Signals to Watch',
-    stocks: [
+// ════════════════════════════════════════════════════════════════════════════
+// MARKET INTEL — Auto-Refresh Architecture
+// DAILY  → AI Global Signals (news), Stock why-text, Risk signals
+// WEEKLY → Opportunity vector body (Sunday KSA)
+// MANUAL → Stock ratings (BUY/WATCH/CAUTION), INSPECT, VECTORS
+// ════════════════════════════════════════════════════════════════════════════
+// MARKET INTEL — Auto-Refresh Architecture
+// ────────────────────────────────────────────────────────────────────────────
+// ✅ DAILY  → INV_STOCKS_EN/AR (stock "why" text), INV_RISKS_EN/AR (5 risks)
+// ✅ WEEKLY → INV_OPPS_EN/AR  (opportunity vectors, runs Sunday KSA)
+// ❌ MANUAL → signal ratings (BUY/WATCH/CAUTION), tickers, INSPECT, VECTORS
+// ════════════════════════════════════════════════════════════════════════════
+
+// ── STOCK SIGNALS (why text auto-updated daily; ratings are editorial) ──────
+// ══ INV-STOCKS-EN-START ══
+let INV_STOCKS_EN = [
       { ticker:'GOOG', name:'Alphabet / Google', signal:'buy', why:'Gemini 3.5 Flash (4x faster, half cost) + Spark 24/7 agent + AI Search overhaul = major market share catalyst. AI Ultra $100/mo subscription revenue stream.' },
       { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'Every AI model release, smart city deployment, and agentic expansion requires more compute. TSMC dependency noted as risk by Stanford AI Index, but near-term demand unabated.' },
       { ticker:'TSM', name:'TSMC', signal:'buy', why:'+35% Q1 YoY revenue. Stanford AI Index flags as critical infrastructure. OpenAI + Broadcom 10GW custom chip deal signals sustained long-term demand.' },
@@ -2777,31 +2784,11 @@ const INV = {
       { ticker:'TSLA', name:'Tesla', signal:'caution', why:'SpaceX/xAI files S-1 separately — signals further separation from Tesla. Musk time allocation risk. SpaceX starts trading June 12 as competing investment vehicle.' },
       { ticker:'OPENAI', name:'OpenAI (Pre-IPO)', signal:'ipo', why:'Confidential S-1 filed. $852B valuation. 900M weekly ChatGPT users, $30B annualized revenue. Enterprise 40%+ of revenue. IPO likely Q4 2026. Watch lock-up period.' },
       { ticker:'SPACEX', name:'SpaceX / xAI', signal:'ipo', why:'S-1 filed. xAI entity included. Starts trading June 12. $1.75T target valuation. Starlink + AI distribution + xAI Grok = "galactic AI" thesis. Watch pricing mechanics.' },
-    ],
-    opps: [
-      { title:'AI Inference Infrastructure', horizon:'12-18 months', tickers:['NVDA','TSM','CRWV','AMZN','GOOG'], body:'Every new model release (Gemini 3.5 Flash, Claude Opus 4.8, GPT-5.5, DeepSeek V4) requires more inference compute. Agentic multi-worker architectures (Anthropic dynamic workflows, Google Antigravity 2.0 with 93 agents) multiply compute demand. The floor for GPU demand is rising, not falling.' },
-      { title:'AI Cybersecurity & Vulnerability Remediation', horizon:'6-12 months', tickers:['CRWD','PANW','ZS','IBM'], body:'Project Glasswing found 10,000+ vulnerabilities in 30 days and the bottleneck has shifted from discovery to remediation. EU AI Act compliance deadline Aug 2, 2026 forces organizations to audit AI systems. US government mandating pre-release AI testing. Creates a structural demand wave for AI-native security and compliance platforms.' },
-      { title:'Agentic AI Platforms & Orchestration', horizon:'Now-12 months', tickers:['GOOG','MSFT','AMZN','SFDC'], body:'Claude Opus 4.8 dynamic workflows, Google Antigravity 2.0 (93 parallel agents), Gemini Spark (24/7 cloud agent), OpenAI Workspace Agents. The enterprise shift from "AI copilot" to "AI workforce" is the defining infrastructure bet of 2026. Platforms that own agent orchestration own the enterprise margin.' },
-      { title:'Smart City & AI Inspection Technology', horizon:'2-4 years', tickers:['NVDA','MSFT','GOOG'], body:'Kaohsiung eliminated all manual inspections. Rotterdam digital twin replaced months of work. 17 US cities deploying AI inspection cameras. FDA mandating risk-based AI inspection (BRIDGE Project). No pure-play public company exists yet — this is a venture/government contract opportunity window. Watch NVIDIA Metropolis partner ecosystem (FPT, Linker Vision, K2K) for IPO signals.' },
-      { title:'AI IPO Pipeline — 2026 Wave', horizon:'Now-9 months', tickers:['OPENAI','SPACEX','ANTH'], body:'The largest AI IPO wave in history: SpaceX/xAI starts June 12. OpenAI S-1 confidential filing. Anthropic approaching IPO readiness ($900M May close). CoreWeave already public. Pre-IPO secondary markets for OpenAI and Anthropic are active. The $3.7T combined valuation wave reshapes AI index weights.' },
-      { title:'EU AI Act Compliance Vendors', horizon:'Now-6 months', tickers:['IBM','MSFT','ORCL'], body:'EU AI Act enforcement August 2, 2026 — 3 months away. Gartner: XAI (Explainable AI) will drive 50% of LLM observability investment by 2028. Companies providing transparent, auditable agentic workflows are the compliance infrastructure winners. Watch: IBM OpenPages, Microsoft Responsible AI tooling, emerging XAI pure-plays.' },
-    ],
-    risks: [
-      { icon:'⏰', title:'EU AI Act Aug 2, 2026 — 3 months away', body:'High-risk AI system operators face penalties up to €35M or 7% of global turnover. Compliance costs hit AI-heavy enterprise deployments. Tailwind for compliance vendors, headwind for non-prepared operators.' },
-      { icon:'💸', title:'Google price war — margin compression across AI APIs', body:'Gemini 3.5 Flash at $1.50/$9 per million tokens is less than half OpenAI and Anthropic pricing. Google willing to lose money on AI services for market share. This compresses revenue expectations for all AI API providers, including Anthropic (private) and OpenAI (pre-IPO).' },
-      { icon:'🏗️', title:'AI capex bubble risk — Meta $115-135B, Microsoft, Google', body:'Meta is cutting 8,000 jobs while maintaining $115-135B capex. Microsoft cutting thousands. The market is not yet penalizing AI capex burns. If enterprise AI ROI fails to materialize in H2 2026, multiple compression risk across the sector.' },
-      { icon:'🌍', title:'Geopolitical tail risk — Iran struck AWS, TSMC concentration', body:'Iran struck AWS and Oracle data centers in April. TSMC flagged by Stanford AI Index as a single point of failure for global AI infrastructure. A Taiwan conflict scenario would be an extreme tail risk for the entire AI investment thesis.' },
-      { icon:'⚖️', title:'Musk appeals OpenAI verdict — appellate uncertainty', body:'Musk vowed to appeal the May 18 statute of limitations ruling. Appellate courts have reversed similar SoL decisions. If reversed, a merits trial on whether Altman/Brockman violated charitable trust could resurface. Tail risk on OpenAI IPO timeline.' },
-    ]
-  },
-  ar: {
-    title: '💹 استخبارات الاستثمار',
-    fab: '💹 إشارات السوق',
-    disclaimer: '⚠ للتوعية الظرفية فقط — ليست نصيحة مالية. استشر مستشاراً مرخصاً قبل اتخاذ قرارات استثمارية. جميع ارتباطات الإشارات تفسيرات تحريرية، وليست توقعات.',
-    stocksTitle: '📊 تأثير الإشارات على الأسهم',
-    oppsTitle: '🚀 محاور فرص الاستثمار',
-    risksTitle: '⚠️ إشارات المخاطر للمراقبة',
-    stocks: [
+    ];
+// ══ INV-STOCKS-EN-END ══
+
+// ══ INV-STOCKS-AR-START ══
+let INV_STOCKS_AR = [
       { ticker:'GOOG', name:'Alphabet / Google', signal:'buy', why:'Gemini 3.5 Flash (4x أسرع، نصف التكلفة) + Spark وكيل 24/7 + إعادة تصميم Search = محفّز رئيسي لحصة السوق. تدفق إيرادات اشتراك AI Ultra بـ 100 دولار/شهر.' },
       { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'كل إطلاق لنموذج جديد ونشر مدينة ذكية وتوسع وكيلي يستلزم مزيداً من الحوسبة. الطلب على وحدات معالجة الرسوميات لا يخف.' },
       { ticker:'TSM', name:'TSMC', signal:'buy', why:'+35% إيرادات الربع الأول سنوياً. مؤشر ستانفورد يُشير إليها كبنية تحتية حيوية. صفقة OpenAI + Broadcom بـ 10 جيجاواط تُشير إلى طلب طويل الأجل.' },
@@ -2815,22 +2802,75 @@ const INV = {
       { ticker:'TSLA', name:'Tesla', signal:'caution', why:'SpaceX/xAI يُقدّم S-1 بشكل منفصل — يُشير إلى مزيد من الفصل عن Tesla. مخاطر توزيع وقت ماسك. SpaceX يبدأ التداول 12 يونيو كمركبة استثمار منافسة.' },
       { ticker:'OPENAI', name:'OpenAI (ما قبل الاكتتاب)', signal:'ipo', why:'S-1 سري مُقدَّم. تقييم 852 مليار. 900 مليون مستخدم أسبوعي، 30 مليار إيرادات سنوية. الاكتتاب مرجح Q4 2026. راقب فترة الحظر.' },
       { ticker:'SPACEX', name:'SpaceX / xAI', signal:'ipo', why:'S-1 مُقدَّم. يبدأ التداول 12 يونيو. تقييم مستهدف 1.75 تريليون. Starlink + توزيع الذكاء الاصطناعي + xAI Grok = أطروحة "الذكاء الاصطناعي المجري".' },
-    ],
-    opps: [
+    ];
+// ══ INV-STOCKS-AR-END ══
+
+// ── OPPORTUNITY VECTORS (body text auto-updated weekly on Sunday KSA) ───────
+// ══ INV-OPPS-EN-START ══
+let INV_OPPS_EN = [
+      { title:'AI Inference Infrastructure', horizon:'12-18 months', tickers:['NVDA','TSM','CRWV','AMZN','GOOG'], body:'Every new model release (Gemini 3.5 Flash, Claude Opus 4.8, GPT-5.5, DeepSeek V4) requires more inference compute. Agentic multi-worker architectures (Anthropic dynamic workflows, Google Antigravity 2.0 with 93 agents) multiply compute demand. The floor for GPU demand is rising, not falling.' },
+      { title:'AI Cybersecurity & Vulnerability Remediation', horizon:'6-12 months', tickers:['CRWD','PANW','ZS','IBM'], body:'Project Glasswing found 10,000+ vulnerabilities in 30 days and the bottleneck has shifted from discovery to remediation. EU AI Act compliance deadline Aug 2, 2026 forces organizations to audit AI systems. US government mandating pre-release AI testing. Creates a structural demand wave for AI-native security and compliance platforms.' },
+      { title:'Agentic AI Platforms & Orchestration', horizon:'Now-12 months', tickers:['GOOG','MSFT','AMZN','SFDC'], body:'Claude Opus 4.8 dynamic workflows, Google Antigravity 2.0 (93 parallel agents), Gemini Spark (24/7 cloud agent), OpenAI Workspace Agents. The enterprise shift from "AI copilot" to "AI workforce" is the defining infrastructure bet of 2026. Platforms that own agent orchestration own the enterprise margin.' },
+      { title:'Smart City & AI Inspection Technology', horizon:'2-4 years', tickers:['NVDA','MSFT','GOOG'], body:'Kaohsiung eliminated all manual inspections. Rotterdam digital twin replaced months of work. 17 US cities deploying AI inspection cameras. FDA mandating risk-based AI inspection (BRIDGE Project). No pure-play public company exists yet — this is a venture/government contract opportunity window. Watch NVIDIA Metropolis partner ecosystem (FPT, Linker Vision, K2K) for IPO signals.' },
+      { title:'AI IPO Pipeline — 2026 Wave', horizon:'Now-9 months', tickers:['OPENAI','SPACEX','ANTH'], body:'The largest AI IPO wave in history: SpaceX/xAI starts June 12. OpenAI S-1 confidential filing. Anthropic approaching IPO readiness ($900M May close). CoreWeave already public. Pre-IPO secondary markets for OpenAI and Anthropic are active. The $3.7T combined valuation wave reshapes AI index weights.' },
+      { title:'EU AI Act Compliance Vendors', horizon:'Now-6 months', tickers:['IBM','MSFT','ORCL'], body:'EU AI Act enforcement August 2, 2026 — 3 months away. Gartner: XAI (Explainable AI) will drive 50% of LLM observability investment by 2028. Companies providing transparent, auditable agentic workflows are the compliance infrastructure winners. Watch: IBM OpenPages, Microsoft Responsible AI tooling, emerging XAI pure-plays.' },
+    ];
+// ══ INV-OPPS-EN-END ══
+
+// ══ INV-OPPS-AR-START ══
+let INV_OPPS_AR = [
       { title:'البنية التحتية للاستدلال بالذكاء الاصطناعي', horizon:'12-18 شهراً', tickers:['NVDA','TSM','CRWV','AMZN','GOOG'], body:'كل إصدار نموذج جديد (Gemini 3.5 Flash وClaude Opus 4.8 وGPT-5.5 وDeepSeek V4) يستلزم مزيداً من حوسبة الاستدلال. البنى الوكيلية متعددة العمال (سير عمل Anthropic الديناميكية وAntigravity 2.0 من Google مع 93 وكيلاً) تُضاعف الطلب على الحوسبة. أرضية الطلب على وحدات معالجة الرسوميات ترتفع لا تنخفض.' },
       { title:'الأمن السيبراني بالذكاء الاصطناعي ومعالجة الثغرات', horizon:'6-12 شهراً', tickers:['CRWD','PANW','ZS','IBM'], body:'اكتشف Glasswing أكثر من 10,000 ثغرة في 30 يوماً وانتقل الاختناق إلى المعالجة. الموعد النهائي لقانون الذكاء الاصطناعي الأوروبي 2 أغسطس 2026 يُلزم المنظمات بتدقيق أنظمة الذكاء الاصطناعي. الحكومة الأمريكية تُلزم باختبار ما قبل الإطلاق. يخلق موجة طلب هيكلية على منصات الأمن والامتثال.' },
       { title:'منصات الذكاء الاصطناعي الوكيلي والتنسيق', horizon:'الآن-12 شهراً', tickers:['GOOG','MSFT','AMZN','SFDC'], body:'سير عمل Claude Opus 4.8 الديناميكية، Antigravity 2.0 (93 وكيلاً متوازياً)، Gemini Spark (وكيل سحابي 24/7)، وكلاء OpenAI Workspace. الانتقال المؤسسي من "مساعد ذكاء اصطناعي" إلى "قوى عاملة من الذكاء الاصطناعي" هو الرهان البنيوي المحدد لعام 2026.' },
       { title:'تقنية المدن الذكية والتفتيش بالذكاء الاصطناعي', horizon:'2-4 سنوات', tickers:['NVDA','MSFT','GOOG'], body:'كاوشيونغ ألغت جميع عمليات التفتيش اليدوي. روتردام استبدلت أشهراً من العمل بتوأم رقمي. 17 مدينة أمريكية تنشر كاميرات تفتيش. FDA تُلزم بالتفتيش القائم على المخاطر (مشروع BRIDGE). لا توجد شركة عامة متخصصة بعد — هذه نافذة فرصة رأس المال المخاطر وعقود حكومية.' },
       { title:'موجة اكتتابات الذكاء الاصطناعي 2026', horizon:'الآن-9 أشهر', tickers:['OPENAI','SPACEX','ANTH'], body:'أكبر موجة اكتتابات في تاريخ الذكاء الاصطناعي: SpaceX/xAI يبدأ 12 يونيو. OpenAI S-1 سري مُقدَّم. Anthropic تقترب من جاهزية الاكتتاب (900 مليون مايو). CoreWeave عام بالفعل. أسواق ما قبل الاكتتاب الثانوية لـ OpenAI وAnthropic نشطة.' },
       { title:'موردو امتثال قانون الذكاء الاصطناعي الأوروبي', horizon:'الآن-6 أشهر', tickers:['IBM','MSFT','ORCL'], body:'تطبيق قانون الذكاء الاصطناعي الأوروبي في 2 أغسطس 2026 — 3 أشهر متبقية. Gartner: الذكاء الاصطناعي القابل للتفسير (XAI) سيقود 50% من استثمارات مراقبة النماذج بحلول 2028. الشركات التي توفر سير عمل وكيلية شفافة وقابلة للتدقيق هي الفائزون في البنية التحتية للامتثال.' },
-    ],
-    risks: [
+    ];
+// ══ INV-OPPS-AR-END ══
+
+// ── RISK SIGNALS (auto-updated daily) ───────────────────────────────────────
+// ══ INV-RISKS-EN-START ══
+let INV_RISKS_EN = [
+      { icon:'⏰', title:'EU AI Act Aug 2, 2026 — 3 months away', body:'High-risk AI system operators face penalties up to €35M or 7% of global turnover. Compliance costs hit AI-heavy enterprise deployments. Tailwind for compliance vendors, headwind for non-prepared operators.' },
+      { icon:'💸', title:'Google price war — margin compression across AI APIs', body:'Gemini 3.5 Flash at $1.50/$9 per million tokens is less than half OpenAI and Anthropic pricing. Google willing to lose money on AI services for market share. This compresses revenue expectations for all AI API providers, including Anthropic (private) and OpenAI (pre-IPO).' },
+      { icon:'🏗️', title:'AI capex bubble risk — Meta $115-135B, Microsoft, Google', body:'Meta is cutting 8,000 jobs while maintaining $115-135B capex. Microsoft cutting thousands. The market is not yet penalizing AI capex burns. If enterprise AI ROI fails to materialize in H2 2026, multiple compression risk across the sector.' },
+      { icon:'🌍', title:'Geopolitical tail risk — Iran struck AWS, TSMC concentration', body:'Iran struck AWS and Oracle data centers in April. TSMC flagged by Stanford AI Index as a single point of failure for global AI infrastructure. A Taiwan conflict scenario would be an extreme tail risk for the entire AI investment thesis.' },
+      { icon:'⚖️', title:'Musk appeals OpenAI verdict — appellate uncertainty', body:'Musk vowed to appeal the May 18 statute of limitations ruling. Appellate courts have reversed similar SoL decisions. If reversed, a merits trial on whether Altman/Brockman violated charitable trust could resurface. Tail risk on OpenAI IPO timeline.' },
+    ];
+// ══ INV-RISKS-EN-END ══
+
+// ══ INV-RISKS-AR-START ══
+let INV_RISKS_AR = [
       { icon:'⏰', title:'قانون الذكاء الاصطناعي الأوروبي 2 أغسطس 2026 — 3 أشهر متبقية', body:'مشغلو أنظمة الذكاء الاصطناعي عالية المخاطر يواجهون غرامات تصل إلى 35 مليون يورو أو 7% من الإيرادات العالمية. تكاليف الامتثال تضرب النشر المكثف للذكاء الاصطناعي. رياح خلفية لموردي الامتثال، رياح معاكسة للمشغلين غير المستعدين.' },
       { icon:'💸', title:'حرب أسعار Google — ضغط على الهوامش عبر واجهات برمجة الذكاء الاصطناعي', body:'Gemini 3.5 Flash بـ 1.50/9 دولار لكل مليون رمز أقل من نصف أسعار OpenAI وAnthropic. Google مستعدة لخسارة المال على خدمات الذكاء الاصطناعي للحصول على حصة سوقية. يضغط على توقعات إيرادات جميع مزودي واجهات برمجة الذكاء الاصطناعي.' },
       { icon:'🏗️', title:'مخاطر فقاعة الإنفاق الرأسمالي — Meta 115-135 مليار، Microsoft، Google', body:'Meta تُقلّص 8,000 وظيفة مع الحفاظ على إنفاق رأسمالي 115-135 مليار. Microsoft تُقلّص الآلاف. إذا فشل عائد الاستثمار في الذكاء الاصطناعي في التحقق خلال النصف الثاني من 2026، يوجد خطر ضغط مضاعف القطاع.' },
       { icon:'🌍', title:'مخاطر جيوسياسية ذيلية — إيران ضربت AWS، تركيز TSMC', body:'إيران ضربت مراكز بيانات AWS وOracle في أبريل. TSMC كنقطة فشل واحدة حيوية للبنية التحتية العالمية للذكاء الاصطناعي. سيناريو نزاع تايوان سيكون خطراً ذيلياً متطرفاً على أطروحة الاستثمار في الذكاء الاصطناعي بأكملها.' },
       { icon:'⚖️', title:'ماسك يستأنف حكم OpenAI — عدم يقين الاستئناف', body:'تعهد ماسك باستئناف حكم 18 مايو. محاكم الاستئناف عكست قرارات تقادم مماثلة. إذا انعكس الحكم، يمكن أن تعود المحاكمة على الأسس الموضوعية. مخاطر ذيلية على جدول IPO لـ OpenAI.' },
-    ]
+    ];
+// ══ INV-RISKS-AR-END ══
+
+const INV = {
+  en: {
+    title: '💹 Investment Intelligence',
+    fab: '💹 Market Intel',
+    disclaimer: '⚠ For situational awareness only — not financial advice. Consult a licensed advisor before making investment decisions. All signal mappings are editorial interpretations, not forecasts.',
+    stocksTitle: '📊 Stock Signals — Auto-updated Daily',
+    oppsTitle: '🚀 Investment Opportunity Vectors — Auto-updated Weekly',
+    risksTitle: '⚠️ Risk Signals — Auto-updated Daily',
+    stocks: INV_STOCKS_EN,
+    opps:   INV_OPPS_EN,
+    risks:  INV_RISKS_EN,
+  },
+  ar: {
+    title: '💹 استخبارات الاستثمار',
+    fab: '💹 إشارات السوق',
+    disclaimer: '⚠ للتوعية الظرفية فقط — ليست نصيحة مالية. استشر مستشاراً مرخصاً قبل اتخاذ قرارات استثمارية. جميع ارتباطات الإشارات تفسيرات تحريرية، وليست توقعات.',
+    stocksTitle: '📊 إشارات الأسهم — تُحدَّث يومياً تلقائياً',
+    oppsTitle: '🚀 محاور الفرص الاستثمارية — تُحدَّث أسبوعياً تلقائياً',
+    risksTitle: '⚠️ إشارات المخاطر — تُحدَّث يومياً تلقائياً',
+    stocks: INV_STOCKS_AR,
+    opps:   INV_OPPS_AR,
+    risks:  INV_RISKS_AR,
   }
 };
 
