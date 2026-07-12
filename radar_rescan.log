@@ -2533,3 +2533,67 @@
 
 [2026-07-11 11:22:04 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-12 11:39:28 KSA] Manual run triggered (--now flag)
+[2026-07-12 11:39:28 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-12 11:39:29 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-12 11:39:34 KSA]     ✓ 2 signals found
+[2026-07-12 11:39:36 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-12 11:39:47 KSA]     ✓ 3 signals found
+[2026-07-12 11:39:49 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-12 11:40:01 KSA]     ✓ 3 signals found
+[2026-07-12 11:40:03 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-12 11:40:15 KSA]     ✓ 1 signals found
+[2026-07-12 11:40:17 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-12 11:40:25 KSA]     ✓ 3 signals found
+[2026-07-12 11:40:27 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-12 11:40:35 KSA]     ✓ 3 signals found
+[2026-07-12 11:40:37 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-12 11:40:44 KSA]     ✓ 3 signals found
+[2026-07-12 11:40:46 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-12 11:40:53 KSA]     ✓ 3 signals found
+[2026-07-12 11:40:55 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-12 11:41:03 KSA]     ✓ 3 signals found
+[2026-07-12 11:41:05 KSA]   Total new signals: 24
+[2026-07-12 11:41:05 KSA]   Updating dashboard HTML...
+[2026-07-12 11:41:05 KSA]   ↩ 15 duplicate(s) skipped
+[2026-07-12 11:41:05 KSA]   ✚ 9 new signals to inject
+[2026-07-12 11:41:05 KSA]   ✓ 9 added, 15 skipped, 487 total signals
+[2026-07-12 11:41:05 KSA] 
+  ┌─── SCAN SUMMARY — July 12, 2026 ───
+[2026-07-12 11:41:05 KSA]   │ 01. [Research] AI-Native Public Infrastructure for Smart Cities Released by McKinsey
+[2026-07-12 11:41:05 KSA]   │ 02. [Release] Smart City AI Inspection Continuous Monitoring Checklist Released April 2026
+[2026-07-12 11:41:05 KSA]   │ 03. [Breakthrough] The Intelligent Machine Has Arrived: AI Excavators and Autonomous Equipment on L
+[2026-07-12 11:41:05 KSA]   │ 04. [Breakthrough] Autonomous Construction Equipment Moves From Trade Show to Working Jobsites in 2
+[2026-07-12 11:41:05 KSA]   │ 05. [Research] Construction Robotics Market Reaches $5.2B in 2026, Growing 33% Year-Over-Year
+[2026-07-12 11:41:05 KSA]   │ 06. [Release] FDA Announces Elsa 4.0 and HALO Platform for Food Safety
+[2026-07-12 11:41:05 KSA]   │ 07. [Breakthrough] AI Vision Systems Detect Defects with 99% Accuracy in Food Inspection
+[2026-07-12 11:41:05 KSA]   │ 08. [Policy] FDA Expands Agentic AI for Inspections and Compliance Tasks
+[2026-07-12 11:41:05 KSA]   │ 09. [Release] BuildwellAI Launches Compliance Intelligence Platform for UK Construction
+[2026-07-12 11:41:05 KSA]   │ 10. [Policy] Illinois Governor Signs AI Safety Measures Act into Law
+[2026-07-12 11:41:05 KSA]   │ 11. [Policy] FTC Seeks Public Comment on AI Accuracy Policy Statement
+[2026-07-12 11:41:05 KSA]   │ 12. [Policy] UN Global Dialogue on AI Governance Convenes in Geneva
+[2026-07-12 11:41:05 KSA]   │ 13. [Release] OpenAI releases GPT-5.6 family (Sol, Terra, Luna) to general availability
+[2026-07-12 11:41:05 KSA]   │ 14. [Release] Anthropic restores Claude Fable 5 globally after export-control lift
+[2026-07-12 11:41:05 KSA]   │ 15. [Release] xAI launches Grok 4.5 as cost-effective coding model
+[2026-07-12 11:41:05 KSA]   │ 16. [Security] Cursor IDE Zero-Click RCE Vulnerabilities Found in AI Coding Assistant
+[2026-07-12 11:41:05 KSA]   │ 17. [Research] 2026 Enterprise AI Security Index Released by UpGuard
+[2026-07-12 11:41:05 KSA]   │ 18. [Security] Bad Epoll Linux Kernel Bug and AI Agent Evasion Techniques Highlighted
+[2026-07-12 11:41:05 KSA]   │ 19. [Funding] Global Venture Funding Hits Record $510B in H1 2026 as AI Boom Accelerates
+[2026-07-12 11:41:05 KSA]   │ 20. [Funding] Anthropic Raises $65 Billion Series H at $965 Billion Valuation in June 2026
+[2026-07-12 11:41:05 KSA]   │ 21. [Funding] ElevenLabs Raises $500M Series D, Valued at $11 Billion
+[2026-07-12 11:41:05 KSA]   │ 22. [Breakthrough] Taiwan 2026 Smart City Summit highlights AI robotics for urban inspection and di
+[2026-07-12 11:41:05 KSA]   │ 23. [Funding] Five tech giants on track to spend $1.1 trillion on AI infrastructure in 2027, e
+[2026-07-12 11:41:05 KSA]   │ 24. [Research] Ex-OpenAI researcher behind AI 2027 scenario releases new 'AI 2040: Plan A' reco
+[2026-07-12 11:41:05 KSA]   └─── 24 total signals ───
+
+[2026-07-12 11:41:05 KSA]   [Market Intel] Updating risk signals...
+[2026-07-12 11:41:19 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-12 11:41:19 KSA]   [Market Intel] Updating stock signals...
+[2026-07-12 11:41:34 KSA]   ✗ No JSON in batch 1
+[2026-07-12 11:41:49 KSA]   ✗ No JSON in batch 2
+[2026-07-12 11:41:49 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-07-12 11:41:49 KSA]   Sunday: running weekly opportunity vector update...
+[2026-07-12 11:41:49 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-07-12 11:42:04 KSA]   ✗ No JSON in opps response — keeping existing
+[2026-07-12 11:42:04 KSA] ═══ RESCAN COMPLETE ═══
+
