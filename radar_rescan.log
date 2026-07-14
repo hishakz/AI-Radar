@@ -2658,3 +2658,62 @@
 [2026-07-13 12:57:16 KSA]   Today is Mon — opportunity update runs on Sunday only
 [2026-07-13 12:57:16 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-14 11:36:38 KSA] Manual run triggered (--now flag)
+[2026-07-14 11:36:38 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-14 11:36:38 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-14 11:36:48 KSA]     ✓ 1 signals found
+[2026-07-14 11:36:50 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-14 11:36:59 KSA]     ✓ 0 signals found
+[2026-07-14 11:37:01 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-14 11:37:08 KSA]     ✓ 3 signals found
+[2026-07-14 11:37:10 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-14 11:37:18 KSA]     ✓ 2 signals found
+[2026-07-14 11:37:20 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-14 11:37:29 KSA]     ✓ 3 signals found
+[2026-07-14 11:37:31 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-14 11:37:39 KSA]     ✓ 3 signals found
+[2026-07-14 11:37:41 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-14 11:37:49 KSA]     ✓ 3 signals found
+[2026-07-14 11:37:51 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-14 11:38:00 KSA]     ✓ 3 signals found
+[2026-07-14 11:38:02 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-14 11:38:13 KSA]     ✓ 3 signals found
+[2026-07-14 11:38:15 KSA]   Total new signals: 21
+[2026-07-14 11:38:15 KSA]   Updating dashboard HTML...
+[2026-07-14 11:38:15 KSA]   ↩ 14 duplicate(s) skipped
+[2026-07-14 11:38:15 KSA]   ✚ 7 new signals to inject
+[2026-07-14 11:38:15 KSA]   ✓ 7 added, 14 skipped, 497 total signals
+[2026-07-14 11:38:15 KSA] 
+  ┌─── SCAN SUMMARY — July 14, 2026 ───
+[2026-07-14 11:38:15 KSA]   │ 01. [Research] African Cities Need Operational Intelligence for Smart Infrastructure
+[2026-07-14 11:38:15 KSA]   │ 02. [Policy] FDA Announces Elsa 4.0 AI System and HALO Data Platform for Food Safety
+[2026-07-14 11:38:15 KSA]   │ 03. [Breakthrough] AI Computer Vision for Food Quality Inspection Reaches 99%+ Accuracy Standard
+[2026-07-14 11:38:15 KSA]   │ 04. [Policy] USDA Pushes AI Adoption Initiative for Modernized Food Safety Supply Chain
+[2026-07-14 11:38:15 KSA]   │ 05. [Breakthrough] AI Gives Building Inspection Photos Location Data They Were Missing
+[2026-07-14 11:38:15 KSA]   │ 06. [Breakthrough] AI Vision Systems Transforming Building Inspections with Deep Learning
+[2026-07-14 11:38:15 KSA]   │ 07. [Policy] EU Council Approves AI Act Simplification with Nudifier Ban
+[2026-07-14 11:38:15 KSA]   │ 08. [Policy] President Trump Signs Executive Order on AI Innovation and Security
+[2026-07-14 11:38:15 KSA]   │ 09. [Policy] Illinois Governor Signs Landmark AI Safety Measures Act into Law
+[2026-07-14 11:38:15 KSA]   │ 10. [Release] GPT-5.6 family released with Sol, Terra, Luna tiers on July 9
+[2026-07-14 11:38:15 KSA]   │ 11. [Release] Meta launches Muse Spark 1.1 agentic model at $1.25/$4.25 per 1M tokens
+[2026-07-14 11:38:15 KSA]   │ 12. [Release] Grok 4.5 released by xAI on July 8 as coding-focused model
+[2026-07-14 11:38:15 KSA]   │ 13. [Research] 99.9% of AI Vulnerability Alerts Remain Unpatched: Orca Security Report
+[2026-07-14 11:38:15 KSA]   │ 14. [Security] Cursor IDE Exposed: Two Zero-Click Remote Code Execution Vulnerabilities
+[2026-07-14 11:38:15 KSA]   │ 15. [Policy] EU Launches Plan to Address AI Cybersecurity Risks and Opportunities
+[2026-07-14 11:38:15 KSA]   │ 16. [Funding] Mega-Cap AI IPO Wave 2026: SpaceX, OpenAI & Anthropic $3T Market Impact
+[2026-07-14 11:38:15 KSA]   │ 17. [Funding] Global Venture Funding Hits Record $510B in H1 2026 as AI Boom Accelerates
+[2026-07-14 11:38:15 KSA]   │ 18. [Funding] OpenAI $122B Funding Round Closes at $852B Valuation, IPO Targeted Q4 2026
+[2026-07-14 11:38:15 KSA]   │ 19. [Research] AI Futures Project publishes 'AI 2040: Plan A' roadmap to prevent AGI doomsday s
+[2026-07-14 11:38:15 KSA]   │ 20. [Policy] Five nations issue joint security guidance on agentic AI risks for critical infr
+[2026-07-14 11:38:15 KSA]   │ 21. [Funding] Root cause AI market expands 25.7% to $2.53 billion in 2026, driven by smart inf
+[2026-07-14 11:38:15 KSA]   └─── 21 total signals ───
+
+[2026-07-14 11:38:15 KSA]   [Market Intel] Updating risk signals...
+[2026-07-14 11:38:33 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-14 11:38:33 KSA]   [Market Intel] Updating stock signals...
+[2026-07-14 11:38:47 KSA]   ✓ Batch 1: 8 stocks updated
+[2026-07-14 11:39:04 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-07-14 11:39:06 KSA]   ✓ Stock signals updated (15 tickers, invDataDate → 20260714)
+[2026-07-14 11:39:06 KSA]   Today is Tue — opportunity update runs on Sunday only
+[2026-07-14 11:39:06 KSA] ═══ RESCAN COMPLETE ═══
+
