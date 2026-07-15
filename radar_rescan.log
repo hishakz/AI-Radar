@@ -2717,3 +2717,68 @@
 [2026-07-14 11:39:06 KSA]   Today is Tue — opportunity update runs on Sunday only
 [2026-07-14 11:39:06 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-15 11:54:56 KSA] Manual run triggered (--now flag)
+[2026-07-15 11:54:56 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-15 11:54:56 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-15 11:55:07 KSA]     ✓ 3 signals found
+[2026-07-15 11:55:09 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-15 11:55:17 KSA]     ✓ 3 signals found
+[2026-07-15 11:55:19 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-15 11:55:48 KSA]     ✓ 3 signals found
+[2026-07-15 11:55:50 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-15 11:55:57 KSA]     ✓ 3 signals found
+[2026-07-15 11:55:59 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-15 11:56:13 KSA]     ✓ 3 signals found
+[2026-07-15 11:56:15 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-15 11:56:23 KSA]     ✓ 3 signals found
+[2026-07-15 11:56:25 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-15 11:56:34 KSA]     ✓ 3 signals found
+[2026-07-15 11:56:36 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-15 11:56:47 KSA]     ✓ 3 signals found
+[2026-07-15 11:56:49 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-15 11:56:57 KSA]     ✓ 3 signals found
+[2026-07-15 11:56:59 KSA]   Total new signals: 27
+[2026-07-15 11:56:59 KSA]   Updating dashboard HTML...
+[2026-07-15 11:56:59 KSA]   ↩ 18 duplicate(s) skipped
+[2026-07-15 11:56:59 KSA]   ✚ 9 new signals to inject
+[2026-07-15 11:56:59 KSA]   ✓ 9 added, 18 skipped, 506 total signals
+[2026-07-15 11:56:59 KSA] 
+  ┌─── SCAN SUMMARY — July 15, 2026 ───
+[2026-07-15 11:56:59 KSA]   │ 01. [Release] Percepto Launches Next-Gen AI Inspection Platform for Energy Infrastructure
+[2026-07-15 11:56:59 KSA]   │ 02. [Breakthrough] Inspeq AI Platform Demonstrates Remote Global Equipment Inspections Across Three
+[2026-07-15 11:56:59 KSA]   │ 03. [Release] Asylon Robotics MARIA System Moves to Operational Deployment at US Air Force Bas
+[2026-07-15 11:56:59 KSA]   │ 04. [Breakthrough] DroneDeploy Unveils Embodied AI Ground Robots Entering Beta in 2026
+[2026-07-15 11:56:59 KSA]   │ 05. [Research] Virginia Tech MARIO System Combines Drones and Ground Robots for Remote Construc
+[2026-07-15 11:56:59 KSA]   │ 06. [Release] Construction Automation Market Grows 33% YoY to $5.2B as Drones Lead 41% of Depl
+[2026-07-15 11:56:59 KSA]   │ 07. [Research] Inspection to Prediction: How AI Is Redefining Food Quality Control
+[2026-07-15 11:56:59 KSA]   │ 08. [Breakthrough] National Restaurant Association Show Highlights AI as Game-Changer for Foodservi
+[2026-07-15 11:56:59 KSA]   │ 09. [Release] Restaurant365 Announces Transform 2026 Conference on AI-Driven Profitability
+[2026-07-15 11:56:59 KSA]   │ 10. [Breakthrough] AI Vision Systems Transforming Building Inspections
+[2026-07-15 11:56:59 KSA]   │ 11. [Research] Home Inspection Software Market Projected to Grow 10% Annually Through 2035
+[2026-07-15 11:56:59 KSA]   │ 12. [Research] 190 Million European and North American Homes to Use Smart Technology by 2029
+[2026-07-15 11:56:59 KSA]   │ 13. [Policy] Illinois Gov. Pritzker Signs AI Safety Measures Act into Law
+[2026-07-15 11:56:59 KSA]   │ 14. [Policy] FTC Seeks Public Comment on AI Accuracy Policy Statement
+[2026-07-15 11:56:59 KSA]   │ 15. [Policy] EU Commission Presents Cybersecurity and AI Action Plan
+[2026-07-15 11:56:59 KSA]   │ 16. [Release] OpenAI releases GPT-5.6 with Sol, Terra, Luna models
+[2026-07-15 11:56:59 KSA]   │ 17. [Release] Meta launches Muse Spark 1.1 with native agentic capabilities
+[2026-07-15 11:56:59 KSA]   │ 18. [Release] Anthropic launches Claude for Teachers education program
+[2026-07-15 11:56:59 KSA]   │ 19. [Security] Cursor IDE Contains Zero-Click RCE Vulnerabilities in AI Coding Assistant
+[2026-07-15 11:56:59 KSA]   │ 20. [Security] Writer AI Platform Patches Critical Session Isolation Flaw (WriteOut) Leaking To
+[2026-07-15 11:56:59 KSA]   │ 21. [Research] Microsoft Demonstrates AutoJack Vulnerability: Malicious Webpages Control AI Age
+[2026-07-15 11:56:59 KSA]   │ 22. [Funding] DeepSeek Plots $71B IPO in Chinese Listing Push
+[2026-07-15 11:56:59 KSA]   │ 23. [Release] Mega-Cap AI IPO Wave 2026: SpaceX, OpenAI & Anthropic Reshape Capital Markets
+[2026-07-15 11:56:59 KSA]   │ 24. [Release] H1 2026 AI Funding Hits Record $510B as IPO and M&A Markets Accelerate
+[2026-07-15 11:56:59 KSA]   │ 25. [Research] AI 2027 Tracker: 19 of 53 AI predictions confirmed or ahead of schedule as of Ju
+[2026-07-15 11:56:59 KSA]   │ 26. [Breakthrough] Smart City Kiosks with AI voice recognition shipping in 2026 with multilingual s
+[2026-07-15 11:56:59 KSA]   │ 27. [Release] ASUS partners with Foxconn to deploy sovereign AI City solution globally in 2026
+[2026-07-15 11:56:59 KSA]   └─── 27 total signals ───
+
+[2026-07-15 11:56:59 KSA]   [Market Intel] Updating risk signals...
+[2026-07-15 11:57:15 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-15 11:57:15 KSA]   [Market Intel] Updating stock signals...
+[2026-07-15 11:57:30 KSA]   ✗ No JSON in batch 1
+[2026-07-15 11:57:46 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-07-15 11:57:48 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260715)
+[2026-07-15 11:57:48 KSA]   Today is Wed — opportunity update runs on Sunday only
+[2026-07-15 11:57:48 KSA] ═══ RESCAN COMPLETE ═══
+
