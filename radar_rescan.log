@@ -2843,3 +2843,68 @@
 [2026-07-16 11:43:55 KSA]   Today is Thu — opportunity update runs on Sunday only
 [2026-07-16 11:43:55 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-17 11:36:04 KSA] Manual run triggered (--now flag)
+[2026-07-17 11:36:04 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-17 11:36:04 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-17 11:36:17 KSA]     ✓ 3 signals found
+[2026-07-17 11:36:19 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-17 11:36:30 KSA]     ✓ 3 signals found
+[2026-07-17 11:36:32 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-17 11:36:51 KSA]     ✓ 3 signals found
+[2026-07-17 11:36:53 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-17 11:37:04 KSA]     ✓ 3 signals found
+[2026-07-17 11:37:06 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-17 11:37:17 KSA]     ✓ 3 signals found
+[2026-07-17 11:37:19 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-17 11:37:28 KSA]     ✓ 3 signals found
+[2026-07-17 11:37:30 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-17 11:37:36 KSA]     ✓ 3 signals found
+[2026-07-17 11:37:38 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-17 11:37:48 KSA]     ✓ 3 signals found
+[2026-07-17 11:37:50 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-17 11:37:59 KSA]     ✓ 3 signals found
+[2026-07-17 11:38:01 KSA]   Total new signals: 27
+[2026-07-17 11:38:01 KSA]   Updating dashboard HTML...
+[2026-07-17 11:38:01 KSA]   ↩ 19 duplicate(s) skipped
+[2026-07-17 11:38:01 KSA]   ✚ 8 new signals to inject
+[2026-07-17 11:38:01 KSA]   ✓ 8 added, 19 skipped, 519 total signals
+[2026-07-17 11:38:01 KSA] 
+  ┌─── SCAN SUMMARY — July 17, 2026 ───
+[2026-07-17 11:38:01 KSA]   │ 01. [Breakthrough] Infrastructure AI Announces Autonomous Triple-Ledger Architecture for Smart Citi
+[2026-07-17 11:38:01 KSA]   │ 02. [Policy] Smart City Deployments Shift to ROI-Driven Infrastructure with AI Monitoring
+[2026-07-17 11:38:01 KSA]   │ 03. [Research] Smart City Monitoring Platforms Expand with AI-Driven Anomaly Detection
+[2026-07-17 11:38:01 KSA]   │ 04. [Funding] Monumental Raises $32M Series B for Autonomous Bricklaying Robots U.S. Launch
+[2026-07-17 11:38:01 KSA]   │ 05. [Release] DEWALT Launches DALE: World's First Fleet-Capable Downward Drilling Robot
+[2026-07-17 11:38:01 KSA]   │ 06. [Research] Construction Robotics Steps Up a Gear as Berlin Prepares for Robotics-2027 Confe
+[2026-07-17 11:38:01 KSA]   │ 07. [Release] FDA Announces Elsa 4.0 and HALO Data Platform for Food Safety AI
+[2026-07-17 11:38:01 KSA]   │ 08. [Breakthrough] IFT FIRST Conference Highlights AI in Food Safety from July 12-15
+[2026-07-17 11:38:01 KSA]   │ 09. [Policy] IAFP Annual Meeting to Feature AI Pathogen Detection and Recall Management July 
+[2026-07-17 11:38:01 KSA]   │ 10. [Funding] HUD Grants $3M for AI-Enabled Building Code Systems
+[2026-07-17 11:38:01 KSA]   │ 11. [Release] AI-Powered Real Estate Platform Homa Expands With Lower Commission Model
+[2026-07-17 11:38:01 KSA]   │ 12. [Breakthrough] Drones and AI Deploy for Housing Renovation Inspections in Russia
+[2026-07-17 11:38:01 KSA]   │ 13. [Policy] EU Commission launches Cybersecurity-AI Action Plan to address frontier model ri
+[2026-07-17 11:38:01 KSA]   │ 14. [Policy] FTC seeks public comment on AI accuracy policy statement through July 31
+[2026-07-17 11:38:01 KSA]   │ 15. [Policy] States enacted 109 AI laws by July 1, 2026; EU deepfake ban takes effect Decembe
+[2026-07-17 11:38:01 KSA]   │ 16. [Release] OpenAI releases GPT-5.6 family (Sol, Terra, Luna) to general availability July 9
+[2026-07-17 11:38:01 KSA]   │ 17. [Release] Meta launches Muse Spark 1.1 with 1M-token context on July 9, 2026
+[2026-07-17 11:38:01 KSA]   │ 18. [Release] Anthropic's Claude Fable 5 returns July 1 after 19-day export-control pause
+[2026-07-17 11:38:01 KSA]   │ 19. [Security] The AI Cyber Attacks Explosion in 2026: Emerging Threats
+[2026-07-17 11:38:01 KSA]   │ 20. [Research] Cisco State of AI Security 2026 Report: Prompt Injection and Supply Chain Vulner
+[2026-07-17 11:38:01 KSA]   │ 21. [Security] Critical GitHub Copilot Vulnerability CVE-2025-53773: Remote Code Execution via 
+[2026-07-17 11:38:01 KSA]   │ 22. [Release] Anthropic Advances Mega-IPO with Investor Meetings as October Target Looms
+[2026-07-17 11:38:01 KSA]   │ 23. [Funding] AI Mega-Cap Funding Boom: $510B in H1 2026 with Record IPO Activity
+[2026-07-17 11:38:01 KSA]   │ 24. [Funding] AI Infrastructure Startups Secure Billions in July Funding Wave
+[2026-07-17 11:38:01 KSA]   │ 25. [Research] AI 2027 Predictions Tracker Reports 36% Confirmation Rate as of July 2026
+[2026-07-17 11:38:01 KSA]   │ 26. [Breakthrough] FPT Enhances Smart City Inspection Solution with NVIDIA AI Blueprints
+[2026-07-17 11:38:01 KSA]   │ 27. [Release] SewerAI Launches Smart Project Builder for Infrastructure Inspection Data
+[2026-07-17 11:38:01 KSA]   └─── 27 total signals ───
+
+[2026-07-17 11:38:01 KSA]   [Market Intel] Updating risk signals...
+[2026-07-17 11:38:19 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-17 11:38:19 KSA]   [Market Intel] Updating stock signals...
+[2026-07-17 11:38:38 KSA]   ✗ No JSON in batch 1
+[2026-07-17 11:38:54 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-07-17 11:38:56 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260717)
+[2026-07-17 11:38:56 KSA]   Today is Fri — opportunity update runs on Sunday only
+[2026-07-17 11:38:56 KSA] ═══ RESCAN COMPLETE ═══
+
