@@ -2908,3 +2908,62 @@
 [2026-07-17 11:38:56 KSA]   Today is Fri — opportunity update runs on Sunday only
 [2026-07-17 11:38:56 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-18 11:21:23 KSA] Manual run triggered (--now flag)
+[2026-07-18 11:21:23 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-18 11:21:23 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-18 11:21:34 KSA]     ✓ 1 signals found
+[2026-07-18 11:21:36 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-18 11:21:50 KSA]     ✓ 3 signals found
+[2026-07-18 11:21:52 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-18 11:21:56 KSA]     ✓ 1 signals found
+[2026-07-18 11:21:58 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-18 11:22:09 KSA]     ✓ 1 signals found
+[2026-07-18 11:22:11 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-18 11:22:20 KSA]     ✓ 3 signals found
+[2026-07-18 11:22:22 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-18 11:22:29 KSA]     ✓ 3 signals found
+[2026-07-18 11:22:31 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-18 11:22:39 KSA]     ✓ 3 signals found
+[2026-07-18 11:22:41 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-18 11:22:48 KSA]     ✓ 3 signals found
+[2026-07-18 11:22:50 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-18 11:23:02 KSA]     ✓ 3 signals found
+[2026-07-18 11:23:04 KSA]   Total new signals: 21
+[2026-07-18 11:23:04 KSA]   Updating dashboard HTML...
+[2026-07-18 11:23:04 KSA]   ↩ 17 duplicate(s) skipped
+[2026-07-18 11:23:04 KSA]   ✚ 4 new signals to inject
+[2026-07-18 11:23:04 KSA]   ✓ 4 added, 17 skipped, 523 total signals
+[2026-07-18 11:23:04 KSA] 
+  ┌─── SCAN SUMMARY — July 18, 2026 ───
+[2026-07-18 11:23:04 KSA]   │ 01. [Policy] Garbage Truck AI Spying on Neighborhoods Raises Privacy Concerns
+[2026-07-18 11:23:04 KSA]   │ 02. [Funding] TerraFirma Raises $115M for Semi-Autonomous Construction Robotics
+[2026-07-18 11:23:04 KSA]   │ 03. [Breakthrough] Intelligent Machines Arrive: AI-Driven Excavators Deploy at Scale
+[2026-07-18 11:23:04 KSA]   │ 04. [Breakthrough] DroneDeploy Ground Robots Beta in 2026 with 100+ Docked Drones Active
+[2026-07-18 11:23:04 KSA]   │ 05. [Release] 8 Best Food Safety Software for Businesses in 2026
+[2026-07-18 11:23:04 KSA]   │ 06. [Breakthrough] AI-powered real estate services promise homebuyers savings, but experts warn aga
+[2026-07-18 11:23:04 KSA]   │ 07. [Policy] Illinois Governor Signs AI Safety Measures Act into Law
+[2026-07-18 11:23:04 KSA]   │ 08. [Policy] China AI Agent Rules Take Effect; Illinois Mandates Third-Party Safety Audits
+[2026-07-18 11:23:04 KSA]   │ 09. [Policy] EU Commission Presents Action Plan on Cybersecurity and AI with Mandatory Model 
+[2026-07-18 11:23:04 KSA]   │ 10. [Release] OpenAI GPT-5.6 Family (Sol, Terra, Luna) Rollout Begins
+[2026-07-18 11:23:04 KSA]   │ 11. [Release] Meta Launches Muse Spark 1.1 with 1M Token Context and Computer Use
+[2026-07-18 11:23:04 KSA]   │ 12. [Release] Kimi K3 by Moonshot AI Released
+[2026-07-18 11:23:04 KSA]   │ 13. [Security] The AI Cyber Attacks Explosion in 2026: Emerging Threats
+[2026-07-18 11:23:04 KSA]   │ 14. [Research] 87% of security professionals are seeing more AI-driven threats, but few feel pr
+[2026-07-18 11:23:04 KSA]   │ 15. [Security] 6 AI Security Incidents: Full Attack Path Analysis (April 2026)
+[2026-07-18 11:23:04 KSA]   │ 16. [Funding] Mega-Cap AI IPO Wave 2026: SpaceX, OpenAI & Anthropic $3T Market Impact
+[2026-07-18 11:23:04 KSA]   │ 17. [Breakthrough] Global Venture Funding Hits Record $510B in H1 2026 as AI Boom Accelerates IPOs
+[2026-07-18 11:23:04 KSA]   │ 18. [Release] OpenAI Confidentially Files S-1 for Historic IPO Targeting Q4 2026 Launch
+[2026-07-18 11:23:04 KSA]   │ 19. [Research] AI 2040: Plan A published proposing aversion strategies for AI 2027 doomsday sce
+[2026-07-18 11:23:04 KSA]   │ 20. [Research] AI 2027 Tracker confirms 19 of 53 predictions verified by July 2026
+[2026-07-18 11:23:04 KSA]   │ 21. [Breakthrough] IDC forecasts 65% of cities will deploy AI agents by 2027 for workflow orchestra
+[2026-07-18 11:23:04 KSA]   └─── 21 total signals ───
+
+[2026-07-18 11:23:04 KSA]   [Market Intel] Updating risk signals...
+[2026-07-18 11:23:16 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-18 11:23:16 KSA]   [Market Intel] Updating stock signals...
+[2026-07-18 11:23:31 KSA]   ✓ Batch 1: 8 stocks updated
+[2026-07-18 11:23:52 KSA]   ✗ No JSON in batch 2
+[2026-07-18 11:23:52 KSA]   ✓ Stock signals updated (8 tickers, invDataDate → 20260718)
+[2026-07-18 11:23:52 KSA]   Today is Sat — opportunity update runs on Sunday only
+[2026-07-18 11:23:52 KSA] ═══ RESCAN COMPLETE ═══
+
