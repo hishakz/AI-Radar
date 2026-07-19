@@ -2967,3 +2967,65 @@
 [2026-07-18 11:23:52 KSA]   Today is Sat — opportunity update runs on Sunday only
 [2026-07-18 11:23:52 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-19 11:53:51 KSA] Manual run triggered (--now flag)
+[2026-07-19 11:53:51 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-19 11:53:51 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-19 11:54:05 KSA]     ✓ 3 signals found
+[2026-07-19 11:54:07 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-19 11:54:15 KSA]     ✓ 0 signals found
+[2026-07-19 11:54:17 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-19 11:54:28 KSA]     ✓ 2 signals found
+[2026-07-19 11:54:30 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-19 11:54:40 KSA]     ✓ 2 signals found
+[2026-07-19 11:54:42 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-19 11:54:51 KSA]     ✓ 3 signals found
+[2026-07-19 11:54:53 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-19 11:55:03 KSA]     ✓ 3 signals found
+[2026-07-19 11:55:05 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-19 11:55:15 KSA]     ✓ 3 signals found
+[2026-07-19 11:55:17 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-19 11:55:27 KSA]     ✓ 3 signals found
+[2026-07-19 11:55:29 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-19 11:55:38 KSA]     ✓ 3 signals found
+[2026-07-19 11:55:40 KSA]   Total new signals: 22
+[2026-07-19 11:55:40 KSA]   Updating dashboard HTML...
+[2026-07-19 11:55:40 KSA]   ↩ 12 duplicate(s) skipped
+[2026-07-19 11:55:40 KSA]   ✚ 10 new signals to inject
+[2026-07-19 11:55:40 KSA]   ✓ 10 added, 12 skipped, 533 total signals
+[2026-07-19 11:55:40 KSA] 
+  ┌─── SCAN SUMMARY — July 19, 2026 ───
+[2026-07-19 11:55:40 KSA]   │ 01. [Breakthrough] Drones-as-a-Service Market Reaches $39B in 2026, AI-Powered Infrastructure Inspe
+[2026-07-19 11:55:40 KSA]   │ 02. [Breakthrough] Infrastructure AI Launches Autonomous Triple-Ledger Architecture for Machine-Spe
+[2026-07-19 11:55:40 KSA]   │ 03. [Release] Percepto Launches AI-Powered Inspection Intelligence Platform for Energy Infrast
+[2026-07-19 11:55:40 KSA]   │ 04. [Policy] FDA Shifts Food Inspections to States, Uses AI for High-Risk Targeting
+[2026-07-19 11:55:40 KSA]   │ 05. [Policy] Taiwan Tightens Food Safety Regulations with Digital Traceability System
+[2026-07-19 11:55:40 KSA]   │ 06. [Release] AI-Powered Real Estate Services Promise Homebuyers Savings, but Experts Warn Aga
+[2026-07-19 11:55:40 KSA]   │ 07. [Policy] HUD Launches $3 Million Grant Program for AI-Enabled Building Code Systems
+[2026-07-19 11:55:40 KSA]   │ 08. [Policy] Illinois Enacts AI Safety Measures Act Requiring Frontier Model Developer Audits
+[2026-07-19 11:55:40 KSA]   │ 09. [Policy] China AI Agent Rules & Illinois Safety Audits Create Dual Compliance Deadlines
+[2026-07-19 11:55:40 KSA]   │ 10. [Policy] FTC Seeks Comment on AI Accuracy Policy Statement Through July 31, 2026
+[2026-07-19 11:55:40 KSA]   │ 11. [Breakthrough] Google Delays Gemini 3.5 Pro Release After Coding Performance Falls Short
+[2026-07-19 11:55:40 KSA]   │ 12. [Release] Moonshot AI Releases Kimi K3, Challenges Leading US AI Models on Coding Benchmar
+[2026-07-19 11:55:40 KSA]   │ 13. [Release] OpenAI's GPT-5.6 Family Goes Public with Sol, Terra, Luna Models and Multi-Agent
+[2026-07-19 11:55:40 KSA]   │ 14. [Security] Hugging Face Discloses Autonomous Agent Attack Via Malicious Dataset
+[2026-07-19 11:55:40 KSA]   │ 15. [Research] Orca Report: 99.9% of Fixable AI Vulnerabilities Remain Unpatched
+[2026-07-19 11:55:40 KSA]   │ 16. [Security] Cursor IDE Contains Two Zero-Click RCE Vulnerabilities
+[2026-07-19 11:55:40 KSA]   │ 17. [Policy] Anthropic IPO: Investor Meetings Underway as $965B Listing Nears
+[2026-07-19 11:55:40 KSA]   │ 18. [Funding] Fireworks AI Closes $1.5B Series D, Enterprise AI Funding Accelerates
+[2026-07-19 11:55:40 KSA]   │ 19. [Funding] AIsphere and Chai Discovery Close Major Series C Rounds
+[2026-07-19 11:55:40 KSA]   │ 20. [Research] AI Futures Project releases 'AI 2040: Plan A' to avert doomsday scenarios
+[2026-07-19 11:55:40 KSA]   │ 21. [Policy] Three major AI trends colliding: capability growth, regulatory activation, and e
+[2026-07-19 11:55:40 KSA]   │ 22. [Research] Forrester: 80% of business leaders plan to increase 2027 budgets amid AI adoptio
+[2026-07-19 11:55:40 KSA]   └─── 22 total signals ───
+
+[2026-07-19 11:55:40 KSA]   [Market Intel] Updating risk signals...
+[2026-07-19 11:55:54 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-19 11:55:54 KSA]   [Market Intel] Updating stock signals...
+[2026-07-19 11:56:10 KSA]   ✗ No JSON in batch 1
+[2026-07-19 11:56:24 KSA]   ✗ No JSON in batch 2
+[2026-07-19 11:56:24 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-07-19 11:56:24 KSA]   Sunday: running weekly opportunity vector update...
+[2026-07-19 11:56:24 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-07-19 11:56:44 KSA]   ✗ No JSON in opps response — keeping existing
+[2026-07-19 11:56:44 KSA] ═══ RESCAN COMPLETE ═══
+
