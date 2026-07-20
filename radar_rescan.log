@@ -3029,3 +3029,63 @@
 [2026-07-19 11:56:44 KSA]   ✗ No JSON in opps response — keeping existing
 [2026-07-19 11:56:44 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-20 12:42:12 KSA] Manual run triggered (--now flag)
+[2026-07-20 12:42:12 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-20 12:42:12 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-20 12:42:22 KSA]     ✓ 1 signals found
+[2026-07-20 12:42:24 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-20 12:42:37 KSA]     ✓ 3 signals found
+[2026-07-20 12:42:39 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-20 12:42:54 KSA]     ✓ 3 signals found
+[2026-07-20 12:42:56 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-20 12:43:11 KSA]     ✓ 3 signals found
+[2026-07-20 12:43:13 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-20 12:43:24 KSA]     ✓ 3 signals found
+[2026-07-20 12:43:26 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-20 12:43:33 KSA]     ✓ 3 signals found
+[2026-07-20 12:43:35 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-20 12:43:45 KSA]     ✓ 3 signals found
+[2026-07-20 12:43:47 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-20 12:43:56 KSA]     ✓ 3 signals found
+[2026-07-20 12:43:58 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-20 12:44:03 KSA]     ✓ 0 signals found
+[2026-07-20 12:44:05 KSA]   Total new signals: 22
+[2026-07-20 12:44:05 KSA]   Updating dashboard HTML...
+[2026-07-20 12:44:05 KSA]   ↩ 16 duplicate(s) skipped
+[2026-07-20 12:44:05 KSA]   ✚ 6 new signals to inject
+[2026-07-20 12:44:05 KSA]   ✓ 6 added, 16 skipped, 539 total signals
+[2026-07-20 12:44:05 KSA] 
+  ┌─── SCAN SUMMARY — July 20, 2026 ───
+[2026-07-20 12:44:05 KSA]   │ 01. [Research] AI Video Analytics for Smart Cities Market Growth Accelerates to 28.6% CAGR
+[2026-07-20 12:44:05 KSA]   │ 02. [Breakthrough] Physical AI Integration Transforms Construction Robotics Deployments in July 202
+[2026-07-20 12:44:05 KSA]   │ 03. [Release] Subscription-Based Autonomous Equipment Democratizes Construction Robotics Acces
+[2026-07-20 12:44:05 KSA]   │ 04. [Breakthrough] Advanced Construction Robotics TyBot Achieves 65+ Field Deployments Milestone
+[2026-07-20 12:44:05 KSA]   │ 05. [Policy] FDA Shifts Inspection Model to Risk-Based AI: Routine inspections to move to sta
+[2026-07-20 12:44:05 KSA]   │ 06. [Security] AI Food Fraud Crisis Hits UK Restaurants: 34M AI images daily fuel refund scams
+[2026-07-20 12:44:05 KSA]   │ 07. [Release] iFactory AI Vision Camera Platform Delivers Real-Time Inspection Accuracy
+[2026-07-20 12:44:05 KSA]   │ 08. [Research] 71% of Home Inspectors Adopting AI in Workflows; 2026 Industry Report Shows Grow
+[2026-07-20 12:44:05 KSA]   │ 09. [Breakthrough] AI Vision Systems Transforming Building Inspections with Predictive Maintenance 
+[2026-07-20 12:44:05 KSA]   │ 10. [Research] Global Home Inspection Software Market Projected to Reach $478M by 2035 with AI 
+[2026-07-20 12:44:05 KSA]   │ 11. [Policy] Illinois Mandates Third-Party Safety Audits for AI Developers
+[2026-07-20 12:44:05 KSA]   │ 12. [Policy] China's AI Agent Rules Become Enforceable with Three-Tier Framework
+[2026-07-20 12:44:05 KSA]   │ 13. [Policy] EU AI Act Transparency Rules Take Effect August 2026
+[2026-07-20 12:44:05 KSA]   │ 14. [Release] Moonshot AI Releases Kimi K3 Open-Weight Model
+[2026-07-20 12:44:05 KSA]   │ 15. [Breakthrough] Google Delays Gemini 3.5 Pro Release by Several Months
+[2026-07-20 12:44:05 KSA]   │ 16. [Release] Meta Ships Muse Spark 1.1 with New Paid Developer API
+[2026-07-20 12:44:05 KSA]   │ 17. [Security] Hugging Face confirms autonomous AI agent intrusion via malicious dataset
+[2026-07-20 12:44:05 KSA]   │ 18. [Release] Microsoft patches record 570 vulnerabilities in July 2026 Patch Tuesday
+[2026-07-20 12:44:05 KSA]   │ 19. [Security] JadePuffer ransomware autonomously exploits Langflow AI framework vulnerability
+[2026-07-20 12:44:05 KSA]   │ 20. [Funding] Anthropic IPO Roadshow: $965B AI Company Schedules Investor Meetings for October
+[2026-07-20 12:44:05 KSA]   │ 21. [Funding] Global Venture Funding Hits Record $510B in H1 2026 as AI Boom Accelerates IPOs 
+[2026-07-20 12:44:05 KSA]   │ 22. [Funding] OpenAI Confidential IPO Filing: $852B Valuation, $2B Monthly Revenue, Q4 2026 Ta
+[2026-07-20 12:44:05 KSA]   └─── 22 total signals ───
+
+[2026-07-20 12:44:05 KSA]   [Market Intel] Updating risk signals...
+[2026-07-20 12:44:19 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-20 12:44:19 KSA]   [Market Intel] Updating stock signals...
+[2026-07-20 12:44:37 KSA]   ✗ No JSON in batch 1
+[2026-07-20 12:44:51 KSA]   ✗ No JSON in batch 2
+[2026-07-20 12:44:51 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-07-20 12:44:51 KSA]   Today is Mon — opportunity update runs on Sunday only
+[2026-07-20 12:44:51 KSA] ═══ RESCAN COMPLETE ═══
+
