@@ -3089,3 +3089,65 @@
 [2026-07-20 12:44:51 KSA]   Today is Mon — opportunity update runs on Sunday only
 [2026-07-20 12:44:51 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-21 12:10:29 KSA] Manual run triggered (--now flag)
+[2026-07-21 12:10:29 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-21 12:10:29 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-21 12:11:15 KSA]     ✓ 3 signals found
+[2026-07-21 12:11:17 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-21 12:11:29 KSA]     ✓ 1 signals found
+[2026-07-21 12:11:31 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-21 12:11:45 KSA]     ✓ 2 signals found
+[2026-07-21 12:11:47 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-21 12:11:56 KSA]     ✓ 3 signals found
+[2026-07-21 12:11:58 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-21 12:12:12 KSA]     ✓ 3 signals found
+[2026-07-21 12:12:14 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-21 12:12:24 KSA]     ✓ 3 signals found
+[2026-07-21 12:12:26 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-21 12:12:33 KSA]     ✓ 3 signals found
+[2026-07-21 12:12:35 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-21 12:12:43 KSA]     ✓ 3 signals found
+[2026-07-21 12:12:45 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-21 12:12:54 KSA]     ✓ 3 signals found
+[2026-07-21 12:12:56 KSA]   Total new signals: 24
+[2026-07-21 12:12:56 KSA]   Updating dashboard HTML...
+[2026-07-21 12:12:56 KSA]   ↩ 16 duplicate(s) skipped
+[2026-07-21 12:12:56 KSA]   ✚ 8 new signals to inject
+[2026-07-21 12:12:56 KSA]   ✓ 8 added, 16 skipped, 547 total signals
+[2026-07-21 12:12:56 KSA] 
+  ┌─── SCAN SUMMARY — July 21, 2026 ───
+[2026-07-21 12:12:56 KSA]   │ 01. [Breakthrough] Mistral AI Launches Robostral Navigate: Robot Navigation with Single RGB Camera
+[2026-07-21 12:12:56 KSA]   │ 02. [Funding] Hyperion Robotics Secures €6.4M for AI-Powered Infrastructure Manufacturing
+[2026-07-21 12:12:56 KSA]   │ 03. [Policy] EU Commission Launches July 2026 Cybersecurity and AI Action Plan for Smart Infr
+[2026-07-21 12:12:56 KSA]   │ 04. [Breakthrough] Drones-as-a-Service Market Reaches Tipping Point at $39B Valuation
+[2026-07-21 12:12:56 KSA]   │ 05. [Breakthrough] AI Vision Systems Redefine Food Quality Control with Predictive Analytics
+[2026-07-21 12:12:56 KSA]   │ 06. [Research] Restaurant AI in 2026: Industry Report on Automation Wins and Failures
+[2026-07-21 12:12:56 KSA]   │ 07. [Release] Nasser Centre & CMEC Launch AI-Powered Building Inspection Platform
+[2026-07-21 12:12:56 KSA]   │ 08. [Release] BuildwellAI Launches UK Construction Compliance Intelligence Platform
+[2026-07-21 12:12:56 KSA]   │ 09. [Breakthrough] Smart Building Insight: AI Framework & Building OpTech Innovation Update
+[2026-07-21 12:12:56 KSA]   │ 10. [Policy] New York Halts Large Data Center Approvals Under AI Expansion Pressure
+[2026-07-21 12:12:56 KSA]   │ 11. [Policy] Congress Advances 35+ AI Bills in Q2 2026 Spanning Chatbots, Imagery, Standards
+[2026-07-21 12:12:56 KSA]   │ 12. [Policy] EU AI Act Transparency Requirements Take Effect August 2, 2026
+[2026-07-21 12:12:56 KSA]   │ 13. [Release] Moonshot AI Releases Kimi K3, Challenging US AI Models
+[2026-07-21 12:12:56 KSA]   │ 14. [Release] Google Delays Gemini 3.5 Pro Broader Release by Months
+[2026-07-21 12:12:56 KSA]   │ 15. [Release] OpenAI Expands GPT-5.6 Family to General Availability
+[2026-07-21 12:12:56 KSA]   │ 16. [Security] The AI Cyber Attacks Explosion in 2026: Emerging Threats
+[2026-07-21 12:12:56 KSA]   │ 17. [Research] Top AI Security Threats Every Cybersecurity Team Must Prepare for in 2026
+[2026-07-21 12:12:56 KSA]   │ 18. [Security] Top AI Security Vulnerabilities to Watch out for in 2026 - Cycode
+[2026-07-21 12:12:56 KSA]   │ 19. [Funding] Anthropic IPO Roadshow Begins; Company Targets Q4 2026 Debut
+[2026-07-21 12:12:56 KSA]   │ 20. [Funding] Global Startup Investment Hits Record $510B in H1 2026 Amid AI Boom
+[2026-07-21 12:12:56 KSA]   │ 21. [Funding] OpenAI Closes $122B Funding Round; Plans IPO Targeting $852B Valuation
+[2026-07-21 12:12:56 KSA]   │ 22. [Research] AI Futures Project Releases AI 2040: Plan A with Governance Recommendations
+[2026-07-21 12:12:56 KSA]   │ 23. [Research] AI 2027 Prediction Tracker: 19 of 53 Predictions Confirmed as of July 2026
+[2026-07-21 12:12:56 KSA]   │ 24. [Breakthrough] Smart Cities Deploy AI Agents for Workflow Orchestration by 2027
+[2026-07-21 12:12:56 KSA]   └─── 24 total signals ───
+
+[2026-07-21 12:12:56 KSA]   [Market Intel] Updating risk signals...
+[2026-07-21 12:13:08 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-21 12:13:08 KSA]   [Market Intel] Updating stock signals...
+[2026-07-21 12:13:25 KSA]   ✗ No JSON in batch 1
+[2026-07-21 12:13:41 KSA]   ✗ No JSON in batch 2
+[2026-07-21 12:13:41 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-07-21 12:13:41 KSA]   Today is Tue — opportunity update runs on Sunday only
+[2026-07-21 12:13:41 KSA] ═══ RESCAN COMPLETE ═══
+
