@@ -3215,3 +3215,61 @@
 [2026-07-22 12:12:46 KSA]   Today is Wed — opportunity update runs on Sunday only
 [2026-07-22 12:12:46 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-23 12:08:29 KSA] Manual run triggered (--now flag)
+[2026-07-23 12:08:29 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-23 12:08:29 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-23 12:08:42 KSA]     ✓ 2 signals found
+[2026-07-23 12:08:44 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-23 12:08:58 KSA]     ✓ 0 signals found
+[2026-07-23 12:09:00 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-23 12:09:10 KSA]     ✓ 0 signals found
+[2026-07-23 12:09:12 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-23 12:09:19 KSA]     ✓ 3 signals found
+[2026-07-23 12:09:21 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-23 12:09:32 KSA]     ✓ 3 signals found
+[2026-07-23 12:09:34 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-23 12:09:40 KSA]     ✓ 3 signals found
+[2026-07-23 12:09:42 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-23 12:09:50 KSA]     ✓ 3 signals found
+[2026-07-23 12:09:52 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-23 12:10:01 KSA]     ✓ 3 signals found
+[2026-07-23 12:10:03 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-23 12:10:11 KSA]     ✓ 3 signals found
+[2026-07-23 12:10:13 KSA]   Total new signals: 20
+[2026-07-23 12:10:13 KSA]   Updating dashboard HTML...
+[2026-07-23 12:10:13 KSA]   ↩ 14 duplicate(s) skipped
+[2026-07-23 12:10:13 KSA]   ✚ 6 new signals to inject
+[2026-07-23 12:10:13 KSA]   ✓ 6 added, 14 skipped, 560 total signals
+[2026-07-23 12:10:13 KSA] 
+  ┌─── SCAN SUMMARY — July 23, 2026 ───
+[2026-07-23 12:10:13 KSA]   │ 01. [Breakthrough] Paar Autonomy Pioneers AI Perception Layer for Unmanned Inspection Systems
+[2026-07-23 12:10:13 KSA]   │ 02. [Funding] Asylon Secures Contract for Autonomous Aircraft Inspection System
+[2026-07-23 12:10:13 KSA]   │ 03. [Research] Home Inspection Software Market to Reach $478.19M by 2035
+[2026-07-23 12:10:13 KSA]   │ 04. [Breakthrough] AI Property Managers Adoption Growing: 21% Already Using, 28% Planning
+[2026-07-23 12:10:13 KSA]   │ 05. [Research] 190M European/North American Smart Homes by 2029: Berg Insight
+[2026-07-23 12:10:13 KSA]   │ 06. [Policy] EU Council Gives Final Approval to Streamline AI Rules; High-Risk System Deadlin
+[2026-07-23 12:10:13 KSA]   │ 07. [Policy] EU Commission Releases Cybersecurity and AI Action Plan; Launches AI Model Evalu
+[2026-07-23 12:10:13 KSA]   │ 08. [Policy] FTC Proposes Policy on AI Accuracy and State Law Preemption; Opens Public Commen
+[2026-07-23 12:10:13 KSA]   │ 09. [Release] Google Releases Gemini 3.6 Flash
+[2026-07-23 12:10:13 KSA]   │ 10. [Breakthrough] Google Delays Gemini 3.5 Pro Broader Release
+[2026-07-23 12:10:13 KSA]   │ 11. [Release] OpenAI GPT-5.6 Family Released to General Availability
+[2026-07-23 12:10:13 KSA]   │ 12. [Security] OpenAI's AI Agent Escapes Controls and Hacks Tech Company
+[2026-07-23 12:10:13 KSA]   │ 13. [Security] Hugging Face Discloses Autonomous AI Attack in July 2026 Security Incident
+[2026-07-23 12:10:13 KSA]   │ 14. [Release] July 2026 Patch Tuesday: Microsoft Addresses 622 Vulnerabilities Including Criti
+[2026-07-23 12:10:13 KSA]   │ 15. [Release] Anthropic IPO Roadshow Begins as $965B AI Company Moves Toward October Debut
+[2026-07-23 12:10:13 KSA]   │ 16. [Funding] Multiple AI Companies Secure Record Funding: Chai Discovery $400M, AIsphere $439
+[2026-07-23 12:10:13 KSA]   │ 17. [Funding] OpenAI Closes Record $122B Funding Round at $852B Valuation with Amazon Partners
+[2026-07-23 12:10:13 KSA]   │ 18. [Research] AI 2040: AI Futures Project releases stress-test forecasts for decade-long AI sc
+[2026-07-23 12:10:13 KSA]   │ 19. [Funding] South Korea announces $880 billion decade-long AI and semiconductor investment p
+[2026-07-23 12:10:13 KSA]   │ 20. [Policy] EU orders Google to open Android to AI rivals; search data sharing begins Januar
+[2026-07-23 12:10:13 KSA]   └─── 20 total signals ───
+
+[2026-07-23 12:10:13 KSA]   [Market Intel] Updating risk signals...
+[2026-07-23 12:10:27 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-23 12:10:27 KSA]   [Market Intel] Updating stock signals...
+[2026-07-23 12:10:42 KSA]   ✗ No JSON in batch 1
+[2026-07-23 12:10:58 KSA]   ✗ No JSON in batch 2
+[2026-07-23 12:10:58 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-07-23 12:10:58 KSA]   Today is Thu — opportunity update runs on Sunday only
+[2026-07-23 12:10:58 KSA] ═══ RESCAN COMPLETE ═══
+
