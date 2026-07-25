@@ -3336,3 +3336,63 @@
 [2026-07-24 12:06:28 KSA]   Today is Fri — opportunity update runs on Sunday only
 [2026-07-24 12:06:28 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-25 11:30:39 KSA] Manual run triggered (--now flag)
+[2026-07-25 11:30:39 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-25 11:30:39 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-25 11:30:58 KSA]     ✓ 2 signals found
+[2026-07-25 11:31:00 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-25 11:31:11 KSA]     ✓ 3 signals found
+[2026-07-25 11:31:13 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-25 11:31:19 KSA]     ✓ 0 signals found
+[2026-07-25 11:31:21 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-25 11:31:37 KSA]     ✓ 2 signals found
+[2026-07-25 11:31:39 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-25 11:31:47 KSA]     ✓ 3 signals found
+[2026-07-25 11:31:49 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-25 11:31:55 KSA]     ✓ 3 signals found
+[2026-07-25 11:31:57 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-25 11:32:05 KSA]     ✓ 3 signals found
+[2026-07-25 11:32:07 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-25 11:32:16 KSA]     ✓ 3 signals found
+[2026-07-25 11:32:18 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-25 11:32:27 KSA]     ✓ 3 signals found
+[2026-07-25 11:32:29 KSA]   Total new signals: 22
+[2026-07-25 11:32:29 KSA]   Updating dashboard HTML...
+[2026-07-25 11:32:29 KSA]   ↩ 9 duplicate(s) skipped
+[2026-07-25 11:32:29 KSA]   ✚ 13 new signals to inject
+[2026-07-25 11:32:29 KSA]   ✓ 13 added, 9 skipped, 581 total signals
+[2026-07-25 11:32:29 KSA] 
+  ┌─── SCAN SUMMARY — July 25, 2026 ───
+[2026-07-25 11:32:29 KSA]   │ 01. [Release] Percepto Unveils AI-Powered Inspection Intelligence Platform for Energy Infrastr
+[2026-07-25 11:32:29 KSA]   │ 02. [Breakthrough] Intel Webinar: Agentic Smart City Systems for Real-Time Traffic Orchestration
+[2026-07-25 11:32:29 KSA]   │ 03. [Funding] TerraFirma Closes $115M Series A for Autonomous Construction Robot Crews
+[2026-07-25 11:32:29 KSA]   │ 04. [Release] XTEND and JFB Construction Holdings Merge to Form $1.5B XTEND AI Robotics
+[2026-07-25 11:32:29 KSA]   │ 05. [Funding] Physical AI Robotics Funding Surge: $350M in Construction Automation Week
+[2026-07-25 11:32:29 KSA]   │ 06. [Breakthrough] Core AI Holdings Advances HomeGPT as AI-Powered Residential Decision Layer
+[2026-07-25 11:32:29 KSA]   │ 07. [Release] AffordableHousing.com Launches AI Housing Navigator for Affordable Housing
+[2026-07-25 11:32:29 KSA]   │ 08. [Policy] EU Cybersecurity-AI Action Plan Released
+[2026-07-25 11:32:29 KSA]   │ 09. [Policy] China Enforces Companion AI Regulation
+[2026-07-25 11:32:29 KSA]   │ 10. [Security] DHS-CISA Releases Mandatory AI Security Framework
+[2026-07-25 11:32:29 KSA]   │ 11. [Release] Google Releases Gemini 3.6 Flash
+[2026-07-25 11:32:29 KSA]   │ 12. [Release] OpenAI GPT-5.6 Family Goes Public on July 9
+[2026-07-25 11:32:29 KSA]   │ 13. [Release] Anthropic Releases Claude Sonnet 5
+[2026-07-25 11:32:29 KSA]   │ 14. [Security] OpenAI's AI Models Breach Hugging Face Networks
+[2026-07-25 11:32:29 KSA]   │ 15. [Security] AgentForger: Critical ChatGPT Workspace Vulnerability Disclosed
+[2026-07-25 11:32:29 KSA]   │ 16. [Security] GitHub Copilot Prompt Injection Enables Remote Code Execution
+[2026-07-25 11:32:29 KSA]   │ 17. [Funding] 01.ai Plans Hong Kong IPO in 2027 with Pre-IPO Funding Round
+[2026-07-25 11:32:29 KSA]   │ 18. [Policy] OpenAI IPO Timeline Delayed to 2027 Amid CFO Skepticism
+[2026-07-25 11:32:29 KSA]   │ 19. [Funding] Gritt Raises $32.4M Pre-Seed and Series A for AI-Powered Infrastructure Robotics
+[2026-07-25 11:32:29 KSA]   │ 20. [Research] AI 2027 Trends: Autonomous Workforce Shifts & Synthetic Media Risks Emerge
+[2026-07-25 11:32:29 KSA]   │ 21. [Research] Smart City IoT Connectivity Expected to Exceed 122 Million Links by 2027
+[2026-07-25 11:32:29 KSA]   │ 22. [Research] Digital Twin Adoption in Smart Cities Moves to Networked City Asset Portfolios 2
+[2026-07-25 11:32:29 KSA]   └─── 22 total signals ───
+
+[2026-07-25 11:32:29 KSA]   [Market Intel] Updating risk signals...
+[2026-07-25 11:32:44 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-25 11:32:44 KSA]   [Market Intel] Updating stock signals...
+[2026-07-25 11:32:58 KSA]   ✗ No JSON in batch 1
+[2026-07-25 11:33:11 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-07-25 11:33:13 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260725)
+[2026-07-25 11:33:13 KSA]   Today is Sat — opportunity update runs on Sunday only
+[2026-07-25 11:33:13 KSA] ═══ RESCAN COMPLETE ═══
+
