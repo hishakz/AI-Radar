@@ -3396,3 +3396,67 @@
 [2026-07-25 11:33:13 KSA]   Today is Sat — opportunity update runs on Sunday only
 [2026-07-25 11:33:13 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-26 11:57:33 KSA] Manual run triggered (--now flag)
+[2026-07-26 11:57:33 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-26 11:57:33 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-26 11:58:00 KSA]     ✓ 3 signals found
+[2026-07-26 11:58:02 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-26 11:58:24 KSA]     ✓ 3 signals found
+[2026-07-26 11:58:26 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-26 11:58:38 KSA]     ✓ 3 signals found
+[2026-07-26 11:58:40 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-26 11:58:53 KSA]     ✓ 0 signals found
+[2026-07-26 11:58:55 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-26 11:59:12 KSA]     ✓ 3 signals found
+[2026-07-26 11:59:14 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-26 11:59:23 KSA]     ✓ 3 signals found
+[2026-07-26 11:59:25 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-26 11:59:32 KSA]     ✓ 3 signals found
+[2026-07-26 11:59:34 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-26 11:59:40 KSA]     ✓ 3 signals found
+[2026-07-26 11:59:42 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-26 11:59:51 KSA]     ✓ 3 signals found
+[2026-07-26 11:59:53 KSA]   Total new signals: 24
+[2026-07-26 11:59:53 KSA]   Updating dashboard HTML...
+[2026-07-26 11:59:53 KSA]   ↩ 13 duplicate(s) skipped
+[2026-07-26 11:59:53 KSA]   ✚ 11 new signals to inject
+[2026-07-26 11:59:53 KSA]   ✓ 11 added, 13 skipped, 592 total signals
+[2026-07-26 11:59:53 KSA] 
+  ┌─── SCAN SUMMARY — July 26, 2026 ───
+[2026-07-26 11:59:53 KSA]   │ 01. [Breakthrough] Infrastructure AI Announces Autonomous Triple-Ledger for Smart Cities
+[2026-07-26 11:59:53 KSA]   │ 02. [Research] AI Video Analytics Market Hits $8.91B: Smart City Growth Report
+[2026-07-26 11:59:53 KSA]   │ 03. [Breakthrough] Model Context Protocol Simplifies Enterprise AI Infrastructure Deployment
+[2026-07-26 11:59:53 KSA]   │ 04. [Breakthrough] Shimizu Corp Launches Full-Scale Development of AI Robots for Construction
+[2026-07-26 11:59:53 KSA]   │ 05. [Release] DroneDeploy Releases July 2026 Update with Aerial Pro Speed Boost
+[2026-07-26 11:59:53 KSA]   │ 06. [Research] Drone Inspection Market Projected to Grow from $8.43B to $35.35B by 2034
+[2026-07-26 11:59:53 KSA]   │ 07. [Research] AI in Restaurant Kitchens: Real-Time Quality Control and Safety
+[2026-07-26 11:59:53 KSA]   │ 08. [Policy] Food Safety Requires AI Upgrade: Risk Communication for Grocery Retail
+[2026-07-26 11:59:53 KSA]   │ 09. [Policy] Food Safety AI Compliance Guidance: EU Regulation Implementation Timeline
+[2026-07-26 11:59:53 KSA]   │ 10. [Policy] EU AI Omnibus Regulation enters force; August 2 transparency enforcement 32 days
+[2026-07-26 11:59:53 KSA]   │ 11. [Policy] China AI Agent regulations enforceable July 15; first dedicated regulatory categ
+[2026-07-26 11:59:53 KSA]   │ 12. [Policy] Illinois mandates third-party safety audits for covered AI systems; UK AI Bill a
+[2026-07-26 11:59:53 KSA]   │ 13. [Release] Claude Opus 5 released by Anthropic
+[2026-07-26 11:59:53 KSA]   │ 14. [Release] Gemini 3.6 Flash released by Google
+[2026-07-26 11:59:53 KSA]   │ 15. [Breakthrough] Anthropic identifies consciousness-like workspace in reasoning models
+[2026-07-26 11:59:53 KSA]   │ 16. [Security] AI Cyber Attacks Explosion in 2026: Emerging Threats and Supply Chain Vulnerabil
+[2026-07-26 11:59:53 KSA]   │ 17. [Research] 87% of Security Professionals Seeing More AI-Driven Threats But Few Feel Ready
+[2026-07-26 11:59:53 KSA]   │ 18. [Security] Biggest AI Security Vulnerabilities Discovered in 2026 Include Indirect Prompt I
+[2026-07-26 11:59:53 KSA]   │ 19. [Funding] SpaceX IPO: Largest Offering Ever at $75B, Market Cap Hits $2.1T
+[2026-07-26 11:59:53 KSA]   │ 20. [Funding] H1 2026 Venture Funding Shatters Records at $510B, Driven by AI Investment Boom
+[2026-07-26 11:59:53 KSA]   │ 21. [Funding] Anthropic Files for October 2026 IPO at $965B Valuation After $65B Series H
+[2026-07-26 11:59:53 KSA]   │ 22. [Research] AI Tracker Updates AI 2027 Predictions vs Real-Time Progress on Geopolitics and 
+[2026-07-26 11:59:53 KSA]   │ 23. [Forecast] Vanguard Projects AI Investment Drives Higher Growth Forecast for 2027
+[2026-07-26 11:59:53 KSA]   │ 24. [Research] Smart City IoT Connections Exceed 122 Million by 2027 with AI Traffic Systems
+[2026-07-26 11:59:53 KSA]   └─── 24 total signals ───
+
+[2026-07-26 11:59:53 KSA]   [Market Intel] Updating risk signals...
+[2026-07-26 12:00:07 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-26 12:00:07 KSA]   [Market Intel] Updating stock signals...
+[2026-07-26 12:00:23 KSA]   ✗ No JSON in batch 1
+[2026-07-26 12:00:37 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-07-26 12:00:40 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260726)
+[2026-07-26 12:00:40 KSA]   Sunday: running weekly opportunity vector update...
+[2026-07-26 12:00:40 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-07-26 12:00:56 KSA]   ✗ No JSON in opps response — keeping existing
+[2026-07-26 12:00:56 KSA] ═══ RESCAN COMPLETE ═══
+
