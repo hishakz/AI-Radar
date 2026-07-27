@@ -3460,3 +3460,66 @@
 [2026-07-26 12:00:56 KSA]   ✗ No JSON in opps response — keeping existing
 [2026-07-26 12:00:56 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-27 13:26:37 KSA] Manual run triggered (--now flag)
+[2026-07-27 13:26:37 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-27 13:26:37 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-27 13:26:49 KSA]     ✓ 3 signals found
+[2026-07-27 13:26:51 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-27 13:27:02 KSA]     ✓ 1 signals found
+[2026-07-27 13:27:04 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-27 13:27:16 KSA]     ✓ 3 signals found
+[2026-07-27 13:27:18 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-27 13:27:28 KSA]     ✓ 3 signals found
+[2026-07-27 13:27:30 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-27 13:27:38 KSA]     ✓ 3 signals found
+[2026-07-27 13:27:40 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-27 13:27:46 KSA]     ✓ 3 signals found
+[2026-07-27 13:27:48 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-27 13:27:56 KSA]     ✓ 3 signals found
+[2026-07-27 13:27:58 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-27 13:28:07 KSA]     ✓ 3 signals found
+[2026-07-27 13:28:09 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-27 13:28:21 KSA]     ✓ 3 signals found
+[2026-07-27 13:28:23 KSA]   Total new signals: 25
+[2026-07-27 13:28:23 KSA]   Updating dashboard HTML...
+[2026-07-27 13:28:23 KSA]   ↩ 13 duplicate(s) skipped
+[2026-07-27 13:28:23 KSA]   ✚ 12 new signals to inject
+[2026-07-27 13:28:23 KSA]   ✓ 12 added, 13 skipped, 604 total signals
+[2026-07-27 13:28:23 KSA] 
+  ┌─── SCAN SUMMARY — July 27, 2026 ───
+[2026-07-27 13:28:23 KSA]   │ 01. [Release] Abu Dhabi Municipality Expands Robotic Inspection Across Public Parks in 2026
+[2026-07-27 13:28:23 KSA]   │ 02. [Breakthrough] Percepto Launches Enhanced AI Drone Inspection Software for Infrastructure Monit
+[2026-07-27 13:28:23 KSA]   │ 03. [Research] AI Road Inspection Platforms Market Projected to Reach $2.94B by 2030 at 15.8% C
+[2026-07-27 13:28:23 KSA]   │ 04. [Funding] Drones-as-a-Service Market Reaches Tipping Point with Billions in Investment
+[2026-07-27 13:28:23 KSA]   │ 05. [Breakthrough] Inspection to Prediction: How AI Is Redefining Food Quality Control
+[2026-07-27 13:28:23 KSA]   │ 06. [Policy] AIB International Releases 2027 Consolidated Standards for Food Safety
+[2026-07-27 13:28:23 KSA]   │ 07. [Release] FSIS Expands Animal Drug Residue Testing Capabilities
+[2026-07-27 13:28:23 KSA]   │ 08. [Breakthrough] Core AI Holdings Advances AI-Powered Residential Decision Intelligence with Home
+[2026-07-27 13:28:23 KSA]   │ 09. [Policy] AI Permitting Tools Speed Up Housing Project Reviews Across Canada
+[2026-07-27 13:28:23 KSA]   │ 10. [Breakthrough] Russia Deploys Drones and AI to Inspect Housing Renovation Quality on Sakhalin
+[2026-07-27 13:28:23 KSA]   │ 11. [Policy] FCA Mills Review on AI in Retail Financial Services
+[2026-07-27 13:28:23 KSA]   │ 12. [Policy] EU AI Omnibus Regulation Enters Into Force
+[2026-07-27 13:28:23 KSA]   │ 13. [Policy] EU Cybersecurity and AI Action Plan Launched
+[2026-07-27 13:28:23 KSA]   │ 14. [Release] Claude Opus 5 Released by Anthropic
+[2026-07-27 13:28:23 KSA]   │ 15. [Release] OpenAI Launches GPT-5.6 Family to General Availability
+[2026-07-27 13:28:23 KSA]   │ 16. [Release] xAI Releases Grok 4.5 Coding Model
+[2026-07-27 13:28:23 KSA]   │ 17. [Security] Claude Cowork VM Sandbox Bypass: AI Agents Gain File-Level Access on Mac Systems
+[2026-07-27 13:28:23 KSA]   │ 18. [Security] Azure DevOps MCP Flaw Enables Hidden PR Comments to Hijack AI Review Agents
+[2026-07-27 13:28:23 KSA]   │ 19. [Security] Synthetic Identity Fraud Emerging as Threat to Machine Identity Controls
+[2026-07-27 13:28:23 KSA]   │ 20. [Release] Moonshot AI Plans Hong Kong IPO Within 6 Months After Breakthrough
+[2026-07-27 13:28:23 KSA]   │ 21. [Release] Anthropic IPO Filing Confirmed for October 2026 Debut
+[2026-07-27 13:28:23 KSA]   │ 22. [Funding] OpenAI IPO Pushed to 2027; Moonshot Kimi K3 Wipes $82B from Valuation
+[2026-07-27 13:28:23 KSA]   │ 23. [Research] AI 2027 Tracker: 19 of 53 Predictions Confirmed as of July 2026
+[2026-07-27 13:28:23 KSA]   │ 24. [Research] Smart Cities Pivot from Technology-Led to Insight-Driven by 2026
+[2026-07-27 13:28:23 KSA]   │ 25. [Research] 65% of Cities to Deploy AI Agents by 2027 for Workflow Orchestration
+[2026-07-27 13:28:23 KSA]   └─── 25 total signals ───
+
+[2026-07-27 13:28:23 KSA]   [Market Intel] Updating risk signals...
+[2026-07-27 13:28:37 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-27 13:28:37 KSA]   [Market Intel] Updating stock signals...
+[2026-07-27 13:28:53 KSA]   ✗ No JSON in batch 1
+[2026-07-27 13:29:06 KSA]   ✗ No JSON in batch 2
+[2026-07-27 13:29:06 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-07-27 13:29:06 KSA]   Today is Mon — opportunity update runs on Sunday only
+[2026-07-27 13:29:06 KSA] ═══ RESCAN COMPLETE ═══
+
