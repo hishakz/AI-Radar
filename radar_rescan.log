@@ -3523,3 +3523,62 @@
 [2026-07-27 13:29:06 KSA]   Today is Mon — opportunity update runs on Sunday only
 [2026-07-27 13:29:06 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-28 12:18:14 KSA] Manual run triggered (--now flag)
+[2026-07-28 12:18:14 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-28 12:18:14 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-28 12:18:36 KSA]     ✓ 0 signals found
+[2026-07-28 12:18:38 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-28 12:18:51 KSA]     ✓ 3 signals found
+[2026-07-28 12:18:53 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-28 12:19:08 KSA]     ✓ 3 signals found
+[2026-07-28 12:19:10 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-28 12:19:17 KSA]     ✓ 0 signals found
+[2026-07-28 12:19:19 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-28 12:19:25 KSA]     ✓ 3 signals found
+[2026-07-28 12:19:27 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-28 12:19:34 KSA]     ✓ 3 signals found
+[2026-07-28 12:19:36 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-28 12:19:47 KSA]     ✓ 3 signals found
+[2026-07-28 12:19:49 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-28 12:19:57 KSA]     ✓ 3 signals found
+[2026-07-28 12:19:59 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-28 12:20:08 KSA]     ✓ 3 signals found
+[2026-07-28 12:20:10 KSA]   Total new signals: 21
+[2026-07-28 12:20:10 KSA]   Updating dashboard HTML...
+[2026-07-28 12:20:10 KSA]   ↩ 12 duplicate(s) skipped
+[2026-07-28 12:20:10 KSA]   ✚ 9 new signals to inject
+[2026-07-28 12:20:10 KSA]   ✓ 9 added, 12 skipped, 613 total signals
+[2026-07-28 12:20:10 KSA] 
+  ┌─── SCAN SUMMARY — July 28, 2026 ───
+[2026-07-28 12:20:10 KSA]   │ 01. [Breakthrough] RIC Robotics and K4K Construction Complete Printing of Sacramento's First Permit
+[2026-07-28 12:20:10 KSA]   │ 02. [Funding] Monumental Secures $32M Series B for Autonomous Bricklaying Robots Fleet
+[2026-07-28 12:20:10 KSA]   │ 03. [Funding] TerraFirma Raises $100M Series A for Construction Automation Platform
+[2026-07-28 12:20:10 KSA]   │ 04. [Policy] FDA Uses AI to Battle Foodborne Illness, Shift Inspections to States
+[2026-07-28 12:20:10 KSA]   │ 05. [Policy] FDA Outlines Risk-Based Future for Food Industry Oversight with AI Targeting
+[2026-07-28 12:20:10 KSA]   │ 06. [Release] FDA Announces Elsa 4.0 AI Tool and HALO Data Platform for Food Safety
+[2026-07-28 12:20:10 KSA]   │ 07. [Policy] National-Security AI Memorandum Signed June 5, 2026
+[2026-07-28 12:20:10 KSA]   │ 08. [Policy] Colorado AI Act Replacement Framework SB 26-189 Effective January 2027
+[2026-07-28 12:20:10 KSA]   │ 09. [Policy] White House March 2026 AI Policy Framework Recommends Federal Preemption
+[2026-07-28 12:20:10 KSA]   │ 10. [Release] Anthropic releases Claude Opus 5
+[2026-07-28 12:20:10 KSA]   │ 11. [Release] Meta launches Muse Spark 1.1 with paid developer API
+[2026-07-28 12:20:10 KSA]   │ 12. [Release] OpenAI rolls out GPT-5.6 family with Sol, Terra, Luna variants
+[2026-07-28 12:20:10 KSA]   │ 13. [Security] AI Finding Twice as Many Cyber Flaws in 2026 as 2025, Microsoft Patches 642 Bugs
+[2026-07-28 12:20:10 KSA]   │ 14. [Security] OpenAI Autonomous Agents Breach Hugging Face in Hours Without Safety Guardrails
+[2026-07-28 12:20:10 KSA]   │ 15. [Security] Critical Adobe ColdFusion Flaw CVE-2026-48282 Under Active Exploitation, CISA Wa
+[2026-07-28 12:20:10 KSA]   │ 16. [Release] Anthropic Confidentially Files S-1 for October 2026 IPO at ~$900B Valuation
+[2026-07-28 12:20:10 KSA]   │ 17. [Release] SpaceX IPO Raises Record $75B in Largest Listing Ever; Market Cap Now $2.1T
+[2026-07-28 12:20:10 KSA]   │ 18. [Funding] OpenAI Raises Record $122B Private Round; IPO Now Likely Pushed to 2027
+[2026-07-28 12:20:10 KSA]   │ 19. [Research] AI 2027 Predictions Tracker: 36% of Superintelligence Timeline Forecasts Confirm
+[2026-07-28 12:20:10 KSA]   │ 20. [Research] AI Quality Inspection Market Forecast: $5.9B to $12.1B by 2030
+[2026-07-28 12:20:10 KSA]   │ 21. [Research] Smart City IoT Market Expansion: IoT-in-Cities to Hit $742B by 2030
+[2026-07-28 12:20:10 KSA]   └─── 21 total signals ───
+
+[2026-07-28 12:20:10 KSA]   [Market Intel] Updating risk signals...
+[2026-07-28 12:20:26 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-28 12:20:26 KSA]   [Market Intel] Updating stock signals...
+[2026-07-28 12:20:41 KSA]   ✗ No JSON in batch 1
+[2026-07-28 12:20:56 KSA]   ✗ No JSON in batch 2
+[2026-07-28 12:20:56 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-07-28 12:20:56 KSA]   Today is Tue — opportunity update runs on Sunday only
+[2026-07-28 12:20:56 KSA] ═══ RESCAN COMPLETE ═══
+
