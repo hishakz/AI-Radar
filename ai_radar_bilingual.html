@@ -725,6 +725,18 @@ const DT_ROWS=[
 // ════════════════════════════════════════════════════════════════
 const AI_SIGNALS=[
 
+  // ══ AUTO-RESCAN JULY 29, 2026 ══
+  {domains:["construction"],url:'https://www.intelligentliving.co/japan-humanoid-robots-2026/',
+   en:{t:'Shimizu Corporation announces AI-powered humanoid robots for construction sites targeting 2030',cat:'Release',d:'1 week ago AUTO',s:'Shimizu Corporation, one of Japan\'s largest general contractors, announced full-scale development of AI-powered humanoid robots for construction sites, targeting practical deployment around fiscal 2030 for tasks including painting, plastering, and site inspection.'},
+   ar:{t:'Shimizu Corporation announces AI-powered humanoid robots for construction sites targeting 2030',cat:'Release',d:'1 week ago تلقائي',s:'Shimizu Corporation, one of Japan\'s largest general contractors, announced full-scale development of AI-powered humanoid robots for construction sites, targeting practical deployment around fiscal 2030 for tasks including painting, plastering, and site inspection.'}},
+  {domains:["construction"],url:'https://help.dronedeploy.com/hc/en-us/articles/42100139139607-July-2026-Release-Notes',
+   en:{t:'DroneDeploy releases aerial dock upload reliability boost to 99.9% for construction sites',cat:'Release',d:'1 week ago AUTO',s:'DroneDeploy released July 2026 updates improving Aerial Dock upload reliability to 99.9%, with new upload infrastructure making Dock uploads more reliable and easier to troubleshoot through a new connection health panel.'},
+   ar:{t:'DroneDeploy releases aerial dock upload reliability boost to 99.9% for construction sites',cat:'Release',d:'1 week ago تلقائي',s:'DroneDeploy released July 2026 updates improving Aerial Dock upload reliability to 99.9%, with new upload infrastructure making Dock uploads more reliable and easier to troubleshoot through a new connection health panel.'}},
+  {domains:["smart-city"],url:'https://radicaldatascience.wordpress.com/2026/07/28/ai-news-briefs-bulletin-board-for-july-2026/',
+   en:{t:'AI 2040 Stress-Test Released: AI Futures Project Maps Five Scenarios for Next Decade',cat:'Research',d:'July 13, 2026 AUTO',s:'The AI Futures Project released AI 2040, a new stress-test of five scenario forecasts for how the AI race may unfold over the next decade. Published July 13, 2026, this complements the earlier AI 2027 predictions.'},
+   ar:{t:'AI 2040 Stress-Test Released: AI Futures Project Maps Five Scenarios for Next Decade',cat:'Research',d:'July 13, 2026 تلقائي',s:'The AI Futures Project released AI 2040, a new stress-test of five scenario forecasts for how the AI race may unfold over the next decade. Published July 13, 2026, this complements the earlier AI 2027 predictions.'}},
+
+
   // ══ AUTO-RESCAN JULY 28, 2026 ══
   {domains:["construction"],url:'https://www.constructionowners.com/',
    en:{t:'RIC Robotics and K4K Construction Complete Printing of Sacramento\'s First Permitted 3D Concrete-Printed Home',cat:'Breakthrough',d:'July 23, 2026 AUTO',s:'RIC Robotics and K4K Construction completed printing of Sacramento\'s first permitted 3D concrete-printed home on July 23, 2026, marking a significant milestone in automated construction technology.'},
@@ -3242,13 +3254,13 @@ let INV_STOCKS_EN = [
   { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'Latest data loading...' },
   { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'Latest data loading...' },
   { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'Latest data loading...' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'CoreWeave faces 12% drop on competition fears from Meta\'s cloud push, despite doubling revenue to $2.08B quarterly.' },
-  { ticker:'IBM', name:'IBM', signal:'watch', why:'IBM stock down 26% YTD after Q2 miss and 25% single-day crash on July 14; securities fraud investigation underway.' },
-  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'META earnings July 29; bullish analysts expect strong AI revenue from cloud compute monetization despite 9.7% YTD decline.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Tesla crashed 12% after Q2 earnings miss with operating margin collapse to 1.4% and negative free cash flow.' },
-  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'SpaceX down 48% from peak as $60B Cursor AI acquisition dilutes shares ahead of August 6 lock-up expiry.' },
-  { ticker:'OPENAI', name:'OpenAI (Pre-IPO)', signal:'ipo', why:'OpenAI confidentially filed S-1 in June; Q4 2026 IPO now uncertain after CFO pushed for 2027 listing.' },
-  { ticker:'ANTH', name:'Anthropic (Pre-IPO)', signal:'ipo', why:'Anthropic investor meetings underway for potential October IPO; could beat OpenAI to market with Claude momentum.' }
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'Shares fell amid concerns Meta\'s cloud service threatens GPU rental market; stock down 28% in one month despite $21B Meta contract.' },
+  { ticker:'IBM', name:'IBM', signal:'watch', why:'Stock rebounded after worst day on record (July 14), but faces credibility test; Q2 missed guidance amid enterprise AI spending shifts.' },
+  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'<cite index="19-1,19-8">Reports Q2 earnings today with raised capex outlook to $125-145B for AI infrastructure</cite>, testing whether massive spending drives growth.' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'<cite index="27-9,27-10">Stock fell 14.5% after earnings miss and heavier AI/robotics spending</cite>, signaling margin pressure ahead.' },
+  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'<cite index="38-3,38-5">xAI expanding data centers; Morgan Stanley warns capex could reach $120B through 2027, nearly 1.6x IPO proceeds</cite>.' },
+  { ticker:'OPENAI', name:'OpenAI (Pre-IPO)', signal:'ipo', why:'Latest data loading...' },
+  { ticker:'ANTH', name:'Anthropic (Pre-IPO)', signal:'ipo', why:'Latest data loading...' }
 ];
 // ══ INV-STOCKS-EN-END ══
 
@@ -3262,13 +3274,13 @@ let INV_STOCKS_AR = [
   { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'جارٍ تحميل البيانات...' },
   { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'جارٍ تحميل البيانات...' },
   { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'جارٍ تحميل البيانات...' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'تراجع أسهم CoreWeave بنسبة 12% بسبب مخاوف المنافسة من عملية Meta السحابية، رغم مضاعفة الإيرادات الربع سنوية إلى 2.08 مليار دولار.' },
-  { ticker:'IBM', name:'IBM', signal:'watch', why:'أسهم IBM انخفضت 26% منذ بداية السنة بعد فشل Q2 وانهيار 25% في يوم واحد في 14 يوليو؛ تحقيق احتيال أوراق مالية جاري.' },
-  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'أرباح META في 29 يوليو؛ محللون متفائلون يتوقعون إيرادات قوية من عائدات الحوسبة السحابية رغم انخفاض 9.7% منذ بداية السنة.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'تراجعت Tesla بنسبة 12% بعد فشل أرباح Q2 مع انهيار هامش التشغيل إلى 1.4% وتدفق نقدي حر سلبي.' },
-  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'SpaceX انخفضت 48% من الذروة حيث تخفف استحواذ Cursor AI بقيمة 60 مليار دولار من الأسهم قبل انتهاء الحظر في 6 أغسطس.' },
-  { ticker:'OPENAI', name:'OpenAI (ما قبل الاكتتاب)', signal:'ipo', why:'قدمت OpenAI نموذج S-1 سري في يونيو؛ طرح أسهم Q4 2026 غير مؤكد الآن بعد أن ضغطت CFO على التأجيل إلى 2027.' },
-  { ticker:'ANTH', name:'Anthropic (ما قبل الاكتتاب)', signal:'ipo', why:'اجتماعات Anthropic مع المستثمرين جارية لطرح محتمل في أكتوبر؛ قد تسبق OpenAI للسوق بزخم Claude.' }
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'انخفضت الأسهم بسبب مخاوف من أن خدمة Meta السحابية تهدد سوق تأجير GPU؛ انخفضت الأسهم 28% في شهر واحد.' },
+  { ticker:'IBM', name:'IBM', signal:'watch', why:'ارتفعت الأسهم بعد أسوأ يوم تسجيل، لكن تواجه اختبار مصداقية؛ فشل Q2 وسط تحولات الإنفاق على الذكاء الاصطناعي.' },
+  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'يعلن النتائج الربع سنوية اليوم مع رفع توقعات الإنفاق الرأسمالي 125-145B لبنية الذكاء الاصطناعي.' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'انخفضت الأسهم 14.5% بعد فشل الأرباح والإنفاق الأكبر على الذكاء الاصطناعي والروبوتات.' },
+  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'تعمل xAI على توسيع مراكز البيانات؛ تحذر Morgan Stanley بأن النفقات قد تصل إلى 120B خلال 2027.' },
+  { ticker:'OPENAI', name:'OpenAI (ما قبل الاكتتاب)', signal:'ipo', why:'جارٍ تحميل البيانات...' },
+  { ticker:'ANTH', name:'Anthropic (ما قبل الاكتتاب)', signal:'ipo', why:'جارٍ تحميل البيانات...' }
 ];
 // ══ INV-STOCKS-AR-END ══
 
@@ -3355,7 +3367,7 @@ function buildInvPanel(lang){
 
   // Staleness check — warn if investment data is >14 days older than newest signal
   // ══ INV-DATA-DATE ══
-  const invDataDate=20260726;
+  const invDataDate=20260729;
   // ══ /INV-DATA-DATE ══
   const newestNum=computeNewestDate('en'); // get the raw number via a helper
   const isStale=parseDateNum(computeNewestDate('en'))>invDataDate+14;
