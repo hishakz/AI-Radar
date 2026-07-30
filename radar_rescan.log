@@ -3639,3 +3639,63 @@
 [2026-07-29 12:25:17 KSA]   Today is Wed — opportunity update runs on Sunday only
 [2026-07-29 12:25:17 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-30 12:14:55 KSA] Manual run triggered (--now flag)
+[2026-07-30 12:14:55 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-30 12:14:55 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-30 12:15:03 KSA]     ✓ 3 signals found
+[2026-07-30 12:15:05 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-30 12:15:22 KSA]     ✓ 1 signals found
+[2026-07-30 12:15:24 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-30 12:15:32 KSA]     ✓ 0 signals found
+[2026-07-30 12:15:34 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-30 12:15:45 KSA]     ✓ 3 signals found
+[2026-07-30 12:15:47 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-30 12:15:56 KSA]     ✓ 3 signals found
+[2026-07-30 12:15:58 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-30 12:16:07 KSA]     ✓ 3 signals found
+[2026-07-30 12:16:09 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-30 12:16:16 KSA]     ✓ 3 signals found
+[2026-07-30 12:16:18 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-30 12:16:26 KSA]     ✓ 3 signals found
+[2026-07-30 12:16:28 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-30 12:16:41 KSA]     ✓ 3 signals found
+[2026-07-30 12:16:43 KSA]   Total new signals: 22
+[2026-07-30 12:16:43 KSA]   Updating dashboard HTML...
+[2026-07-30 12:16:43 KSA]   ↩ 17 duplicate(s) skipped
+[2026-07-30 12:16:43 KSA]   ✚ 5 new signals to inject
+[2026-07-30 12:16:43 KSA]   ✓ 5 added, 17 skipped, 621 total signals
+[2026-07-30 12:16:43 KSA] 
+  ┌─── SCAN SUMMARY — July 30, 2026 ───
+[2026-07-30 12:16:43 KSA]   │ 01. [Breakthrough] Energy Innovations Powering Smart Cities: AI-Driven Monitoring and Automated Res
+[2026-07-30 12:16:43 KSA]   │ 02. [Policy] Smart City Investments Shift to ROI-Driven Infrastructure and AI-Layered Service
+[2026-07-30 12:16:43 KSA]   │ 03. [Research] AI-Native Cities Deploy Dense Sensor Networks for Continuous Infrastructure Moni
+[2026-07-30 12:16:43 KSA]   │ 04. [Funding] Monumental raises $32M Series B for autonomous construction robots expansion
+[2026-07-30 12:16:43 KSA]   │ 05. [Breakthrough] Core AI Holdings Advances HomeGPT AI Residential Decision Intelligence Platform
+[2026-07-30 12:16:43 KSA]   │ 06. [Breakthrough] Prop.Vu Partners with Mila on AI System Linking Property Defect Photos to Techni
+[2026-07-30 12:16:43 KSA]   │ 07. [Release] Compass Unveils AI Assistant Tool Integrated into Home Platform
+[2026-07-30 12:16:43 KSA]   │ 08. [Policy] EU AI Omnibus Regulation Enters Into Force in July 2026
+[2026-07-30 12:16:43 KSA]   │ 09. [Policy] FTC Proposes Policy Statement on AI System Deception and Consumer Protection
+[2026-07-30 12:16:43 KSA]   │ 10. [Policy] New York NYDFS Issues Binding AI Risk Management Guidance for Insurers
+[2026-07-30 12:16:43 KSA]   │ 11. [Release] Anthropic Releases Claude Opus 5 with Top Benchmarks
+[2026-07-30 12:16:43 KSA]   │ 12. [Release] OpenAI Rolls Out GPT-5.6 Family (Sol, Terra, Luna) to General Availability
+[2026-07-30 12:16:43 KSA]   │ 13. [Release] Meta Launches Muse Spark 1.1 Agentic Model with Paid API
+[2026-07-30 12:16:43 KSA]   │ 14. [Security] Microsoft Discloses 642 Security Bugs in July, AI Tools Finding Vulnerabilities 
+[2026-07-30 12:16:43 KSA]   │ 15. [Security] Cursor IDE Contains Two Zero-Click Remote Code Execution Vulnerabilities
+[2026-07-30 12:16:43 KSA]   │ 16. [Security] Critical ChatGPT Workspace Agents Vulnerability AgentForger Disclosed by Zenity 
+[2026-07-30 12:16:43 KSA]   │ 17. [Funding] OpenAI Closes Record $122B Funding Round, Targeting 2026 IPO
+[2026-07-30 12:16:43 KSA]   │ 18. [Funding] Neko Health Raises $700M Series C for AI-Powered Preventive Health
+[2026-07-30 12:16:43 KSA]   │ 19. [Funding] Together AI Closes $800M Series C for Open-Source Model Training Platform
+[2026-07-30 12:16:43 KSA]   │ 20. [Research] AI 2027 Predictions Tracker: 19 of 53 Forecasts Confirmed as of July 2026
+[2026-07-30 12:16:43 KSA]   │ 21. [Breakthrough] NVIDIA & Linker Vision Deploy Real-Time Infrastructure AI in Kaohsiung City
+[2026-07-30 12:16:43 KSA]   │ 22. [Research] AI Road Inspection Market Reaches $1.41B in 2025, Forecast $2.94B by 2030
+[2026-07-30 12:16:43 KSA]   └─── 22 total signals ───
+
+[2026-07-30 12:16:43 KSA]   [Market Intel] Updating risk signals...
+[2026-07-30 12:16:57 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-30 12:16:57 KSA]   [Market Intel] Updating stock signals...
+[2026-07-30 12:17:12 KSA]   ✗ No JSON in batch 1
+[2026-07-30 12:17:29 KSA]   ✗ No JSON in batch 2
+[2026-07-30 12:17:29 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-07-30 12:17:29 KSA]   Today is Thu — opportunity update runs on Sunday only
+[2026-07-30 12:17:29 KSA] ═══ RESCAN COMPLETE ═══
+
