@@ -3699,3 +3699,61 @@
 [2026-07-30 12:17:29 KSA]   Today is Thu — opportunity update runs on Sunday only
 [2026-07-30 12:17:29 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-07-31 12:24:40 KSA] Manual run triggered (--now flag)
+[2026-07-31 12:24:40 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-07-31 12:24:40 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-07-31 12:24:57 KSA]     ✓ 0 signals found
+[2026-07-31 12:24:59 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-07-31 12:25:07 KSA]     ✓ 0 signals found
+[2026-07-31 12:25:09 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-07-31 12:25:18 KSA]     ✓ 2 signals found
+[2026-07-31 12:25:20 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-07-31 12:25:27 KSA]     ✓ 3 signals found
+[2026-07-31 12:25:29 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-07-31 12:25:41 KSA]     ✓ 3 signals found
+[2026-07-31 12:25:43 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-07-31 12:25:55 KSA]     ✓ 3 signals found
+[2026-07-31 12:25:57 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-07-31 12:26:05 KSA]     ✓ 3 signals found
+[2026-07-31 12:26:07 KSA]   Scanning: AI investment funding IPO 2026
+[2026-07-31 12:26:17 KSA]     ✓ 3 signals found
+[2026-07-31 12:26:19 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-07-31 12:26:27 KSA]     ✓ 3 signals found
+[2026-07-31 12:26:29 KSA]   Total new signals: 20
+[2026-07-31 12:26:29 KSA]   Updating dashboard HTML...
+[2026-07-31 12:26:29 KSA]   ↩ 16 duplicate(s) skipped
+[2026-07-31 12:26:29 KSA]   ✚ 4 new signals to inject
+[2026-07-31 12:26:30 KSA]   ✓ 4 added, 16 skipped, 625 total signals
+[2026-07-31 12:26:30 KSA] 
+  ┌─── SCAN SUMMARY — July 31, 2026 ───
+[2026-07-31 12:26:30 KSA]   │ 01. [Policy] FDA Focuses on AI Tools and State Inspection Shift via BRIDGE Project
+[2026-07-31 12:26:30 KSA]   │ 02. [Policy] FDA Uses AI to Battle Foodborne Illness as Part of Modernization Efforts
+[2026-07-31 12:26:30 KSA]   │ 03. [Research] Global Home Inspection Software Market Projected to Grow from $148.99M to $478.1
+[2026-07-31 12:26:30 KSA]   │ 04. [Research] 21% of Property Managers Already Using AI for Building Inspections, 28% Plan Ado
+[2026-07-31 12:26:30 KSA]   │ 05. [Breakthrough] Best AI Tools for Property Inspectors 2026: Computer Vision Accuracy Exceeds 90%
+[2026-07-31 12:26:30 KSA]   │ 06. [Policy] FTC AI Policy Statement Comment Period Closes Today
+[2026-07-31 12:26:30 KSA]   │ 07. [Policy] AI Legislative Update: Multiple State Bills in Final Stages
+[2026-07-31 12:26:30 KSA]   │ 08. [Policy] EU AI Omnibus Regulation Approved; August 2 Enforcement Deadline Imminent
+[2026-07-31 12:26:30 KSA]   │ 09. [Release] Claude Opus 5 Released by Anthropic
+[2026-07-31 12:26:30 KSA]   │ 10. [Release] OpenAI GPT-5.6 Pricing Cuts: 20-80% Reductions
+[2026-07-31 12:26:30 KSA]   │ 11. [Security] Anthropic Security Breach: Three Models Compromised
+[2026-07-31 12:26:30 KSA]   │ 12. [Release] Microsoft Launches AI Cybersecurity Model MAI-Cyber-1-Flash for Vulnerability De
+[2026-07-31 12:26:30 KSA]   │ 13. [Research] Software Vulnerabilities Nearly Double in 2026 as AI Accelerates Detection
+[2026-07-31 12:26:30 KSA]   │ 14. [Security] OpenAI Autonomous Agents Breach Hugging Face in Hours During Test
+[2026-07-31 12:26:30 KSA]   │ 15. [Release] Anthropic files for IPO after $65B Series H round targeting October listing
+[2026-07-31 12:26:30 KSA]   │ 16. [Funding] Neko Health and Emergent lead $930M in mega-rounds across preventive health and 
+[2026-07-31 12:26:30 KSA]   │ 17. [Funding] Baseten and Fireworks AI each raise $1.5B for enterprise AI inference infrastruc
+[2026-07-31 12:26:30 KSA]   │ 18. [Release] Phoenix AI Smart Cities Strategy Coordinates 150+ Technology Projects
+[2026-07-31 12:26:30 KSA]   │ 19. [Research] Smart City Infrastructure Shifts to ROI-Driven Deployments Mid-2025 to 2026
+[2026-07-31 12:26:30 KSA]   │ 20. [Breakthrough] Niantic and Spexi Deploy 3D Physical AI for Infrastructure Inspections at Scale
+[2026-07-31 12:26:30 KSA]   └─── 20 total signals ───
+
+[2026-07-31 12:26:30 KSA]   [Market Intel] Updating risk signals...
+[2026-07-31 12:26:43 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-07-31 12:26:43 KSA]   [Market Intel] Updating stock signals...
+[2026-07-31 12:26:58 KSA]   ✗ No JSON in batch 1
+[2026-07-31 12:27:13 KSA]   ✗ No JSON in batch 2
+[2026-07-31 12:27:13 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-07-31 12:27:13 KSA]   Today is Fri — opportunity update runs on Sunday only
+[2026-07-31 12:27:13 KSA] ═══ RESCAN COMPLETE ═══
+
