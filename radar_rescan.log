@@ -3815,3 +3815,67 @@
 [2026-08-01 11:43:34 KSA]   Today is Sat — opportunity update runs on Sunday only
 [2026-08-01 11:43:34 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-02 11:55:24 KSA] Manual run triggered (--now flag)
+[2026-08-02 11:55:24 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-02 11:55:25 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-02 11:55:42 KSA]     ✓ 3 signals found
+[2026-08-02 11:55:44 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-02 11:56:02 KSA]     ✓ 3 signals found
+[2026-08-02 11:56:04 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-02 11:56:14 KSA]     ✗ No JSON found
+[2026-08-02 11:56:16 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-02 11:56:26 KSA]     ✓ 3 signals found
+[2026-08-02 11:56:28 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-02 11:56:39 KSA]     ✓ 3 signals found
+[2026-08-02 11:56:41 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-02 11:56:48 KSA]     ✓ 3 signals found
+[2026-08-02 11:56:50 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-02 11:56:58 KSA]     ✓ 3 signals found
+[2026-08-02 11:57:00 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-02 11:57:12 KSA]     ✓ 3 signals found
+[2026-08-02 11:57:14 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-02 11:57:24 KSA]     ✓ 3 signals found
+[2026-08-02 11:57:26 KSA]   Total new signals: 24
+[2026-08-02 11:57:26 KSA]   Updating dashboard HTML...
+[2026-08-02 11:57:26 KSA]   ↩ 11 duplicate(s) skipped
+[2026-08-02 11:57:26 KSA]   ✚ 13 new signals to inject
+[2026-08-02 11:57:26 KSA]   ✓ 13 added, 11 skipped, 645 total signals
+[2026-08-02 11:57:26 KSA] 
+  ┌─── SCAN SUMMARY — August 02, 2026 ───
+[2026-08-02 11:57:26 KSA]   │ 01. [Release] Abu Dhabi expands smart inspection fleet with 27 AI-powered vehicles
+[2026-08-02 11:57:26 KSA]   │ 02. [Release] Abu Dhabi Civil Defence deploys RAAD AI command vehicle with autonomous drones
+[2026-08-02 11:57:26 KSA]   │ 03. [Policy] Smart City Infrastructure prioritizes continuous monitoring and edge AI deployme
+[2026-08-02 11:57:26 KSA]   │ 04. [Funding] TerraFirma Raises $115M Series A for Autonomous Construction Systems
+[2026-08-02 11:57:26 KSA]   │ 05. [Funding] Monumental Raises $32M Series B for Robotic Bricklaying Technology
+[2026-08-02 11:57:26 KSA]   │ 06. [Funding] Gritt Completes $32.4M Funding Round for AI-Powered Robotic Arms
+[2026-08-02 11:57:26 KSA]   │ 07. [Breakthrough] Smart QS Hackathon 2026 Launches to Drive AI Innovation in Hong Kong's Construct
+[2026-08-02 11:57:26 KSA]   │ 08. [Funding] SmartProperty Acquires AI Engineering Firm DecaSIM for Enhanced Housing Reserve 
+[2026-08-02 11:57:26 KSA]   │ 09. [Release] NanoNest Announces AI-Powered Smart Home Technology for Modular Housing Platform
+[2026-08-02 11:57:26 KSA]   │ 10. [Policy] EU Commission Starts Enforcing AI Act Rules and Transparency Requirements
+[2026-08-02 11:57:26 KSA]   │ 11. [Policy] India Publishes Comprehensive Digital India Act with Strict AI Liability Rules
+[2026-08-02 11:57:26 KSA]   │ 12. [Policy] US Senate Passes Great American Artificial Intelligence Act with State Preemptio
+[2026-08-02 11:57:26 KSA]   │ 13. [Release] Anthropic releases Claude Opus 5, new flagship model
+[2026-08-02 11:57:26 KSA]   │ 14. [Funding] Anthropic and AMD sign $5B compute capacity deal
+[2026-08-02 11:57:26 KSA]   │ 15. [Release] OpenAI GPT-5.6 Sol released
+[2026-08-02 11:57:26 KSA]   │ 16. [Security] U.S. Vulnerability Database Records 45,207 Flaws by July 28, 2026; Oracle Patche
+[2026-08-02 11:57:26 KSA]   │ 17. [Security] CVE-2025-53773: GitHub Copilot Vulnerable to Prompt Injection Remote Code Execut
+[2026-08-02 11:57:26 KSA]   │ 18. [Research] State of AI Cybersecurity 2026: Hyper-Personalized Phishing Top Threat at 50%, 8
+[2026-08-02 11:57:26 KSA]   │ 19. [Funding] K2 Space Raises $500M Series D; Thermal-Battery Antora Energy Secures $550M Seri
+[2026-08-02 11:57:26 KSA]   │ 20. [Security] OpenAI Discovers Autonomous Agents Escaped Containment
+[2026-08-02 11:57:26 KSA]   │ 21. [Release] Atomberg Technologies Converts to Public Entity, Targeting ₹1,500-2,000 Cr IPO
+[2026-08-02 11:57:26 KSA]   │ 22. [Security] Hugging Face Demands $100M Compensation Over OpenAI Autonomous Agent Cyberattack
+[2026-08-02 11:57:26 KSA]   │ 23. [Release] DeepSeek V4 Flash Officially Exits Preview at $0.14 Per Million Tokens
+[2026-08-02 11:57:26 KSA]   │ 24. [Policy] Munich Court Rules Suno AI Music Generator Violated Copyrights
+[2026-08-02 11:57:26 KSA]   └─── 24 total signals ───
+
+[2026-08-02 11:57:26 KSA]   [Market Intel] Updating risk signals...
+[2026-08-02 11:57:39 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-02 11:57:39 KSA]   [Market Intel] Updating stock signals...
+[2026-08-02 11:57:56 KSA]   ✗ No JSON in batch 1
+[2026-08-02 11:58:11 KSA]   ✗ No JSON in batch 2
+[2026-08-02 11:58:11 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-02 11:58:11 KSA]   Sunday: running weekly opportunity vector update...
+[2026-08-02 11:58:11 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-08-02 11:58:25 KSA]   ✗ No JSON in opps response — keeping existing
+[2026-08-02 11:58:25 KSA] ═══ RESCAN COMPLETE ═══
+
