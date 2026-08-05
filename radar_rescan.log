@@ -3993,3 +3993,63 @@
 [2026-08-04 12:23:32 KSA]   Today is Tue — opportunity update runs on Sunday only
 [2026-08-04 12:23:32 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-05 12:19:22 KSA] Manual run triggered (--now flag)
+[2026-08-05 12:19:22 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-05 12:19:22 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-05 12:19:34 KSA]     ✓ 3 signals found
+[2026-08-05 12:19:36 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-05 12:20:04 KSA]     ✓ 1 signals found
+[2026-08-05 12:20:06 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-05 12:20:15 KSA]     ✓ 0 signals found
+[2026-08-05 12:20:17 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-05 12:20:24 KSA]     ✓ 3 signals found
+[2026-08-05 12:20:26 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-05 12:20:37 KSA]     ✓ 3 signals found
+[2026-08-05 12:20:39 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-05 12:20:46 KSA]     ✓ 3 signals found
+[2026-08-05 12:20:48 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-05 12:20:54 KSA]     ✓ 3 signals found
+[2026-08-05 12:20:56 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-05 12:21:02 KSA]     ✓ 3 signals found
+[2026-08-05 12:21:04 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-05 12:21:14 KSA]     ✓ 3 signals found
+[2026-08-05 12:21:16 KSA]   Total new signals: 22
+[2026-08-05 12:21:16 KSA]   Updating dashboard HTML...
+[2026-08-05 12:21:16 KSA]   ↩ 11 duplicate(s) skipped
+[2026-08-05 12:21:16 KSA]   ✚ 11 new signals to inject
+[2026-08-05 12:21:16 KSA]   ✓ 11 added, 11 skipped, 665 total signals
+[2026-08-05 12:21:16 KSA] 
+  ┌─── SCAN SUMMARY — August 05, 2026 ───
+[2026-08-05 12:21:16 KSA]   │ 01. [Breakthrough] Forbes: Smart Cities Promise Finally Coming True with AI Infrastructure Monitori
+[2026-08-05 12:21:16 KSA]   │ 02. [Breakthrough] Smart Cities Hit Operational Scale: Deployments Move from Pilots to Operational 
+[2026-08-05 12:21:16 KSA]   │ 03. [Breakthrough] NVIDIA Smart City AI Agents Transform Urban Operations with Real-Time Monitoring
+[2026-08-05 12:21:16 KSA]   │ 04. [Research] SPRINT Robotics Hosts Aerial Drone Benchmarking Seminar in Houston
+[2026-08-05 12:21:16 KSA]   │ 05. [Release] Spectora Launches AI-Powered Inspection Reporting Features
+[2026-08-05 12:21:16 KSA]   │ 06. [Research] Global Home Inspection Software Market Reaches $156.75B in 2026
+[2026-08-05 12:21:16 KSA]   │ 07. [Research] 21% of Property Managers Already Adopt AI for Building Inspections
+[2026-08-05 12:21:16 KSA]   │ 08. [Policy] China Issues First Fines Under New Companion AI Rules
+[2026-08-05 12:21:16 KSA]   │ 09. [Policy] EU AI Office Issues Enforcement Notices; Market Surveillance Powers Activate
+[2026-08-05 12:21:16 KSA]   │ 10. [Policy] US Federal AI Preemption Fight Stalls in House
+[2026-08-05 12:21:16 KSA]   │ 11. [Release] DeepSeek V4-Flash 0731 Official Release
+[2026-08-05 12:21:16 KSA]   │ 12. [Release] Claude Opus 5 Release — Anthropic Flagship Model
+[2026-08-05 12:21:16 KSA]   │ 13. [Release] Gemini 3.6 Flash Launched by Google
+[2026-08-05 12:21:16 KSA]   │ 14. [Security] Critical Cursor AI Vulnerabilities Discovered: Zero-Click Remote Code Execution
+[2026-08-05 12:21:16 KSA]   │ 15. [Security] AI Security Briefing: Cloud Permission Exploits and Operational Entropy Risks
+[2026-08-05 12:21:16 KSA]   │ 16. [Research] 2026 Cybersecurity Trends: AI-Enabled Attacks and Critical Infrastructure Exposu
+[2026-08-05 12:21:16 KSA]   │ 17. [Funding] SpaceX IPO Becomes Largest in History at $75B Raised in June 2026
+[2026-08-05 12:21:16 KSA]   │ 18. [Funding] Anthropic Files Confidentially for IPO, Eyes October 2026 Listing with $65B Seri
+[2026-08-05 12:21:16 KSA]   │ 19. [Funding] OpenAI Closes Record $122B Private Round, Eyes 2027 IPO
+[2026-08-05 12:21:16 KSA]   │ 20. [Research] AI 2027 Predictions Tracker: 36% of Forecasts Confirmed by July 2026
+[2026-08-05 12:21:16 KSA]   │ 21. [Research] Smart City AI Market Projected to Reach $460B by 2034 from $50.6B in 2025
+[2026-08-05 12:21:16 KSA]   │ 22. [Breakthrough] 65% of Global Cities to Deploy AI Agents by 2027, IDC Forecasts
+[2026-08-05 12:21:16 KSA]   └─── 22 total signals ───
+
+[2026-08-05 12:21:16 KSA]   [Market Intel] Updating risk signals...
+[2026-08-05 12:21:31 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-05 12:21:31 KSA]   [Market Intel] Updating stock signals...
+[2026-08-05 12:21:45 KSA]   ✓ Batch 1: 8 stocks updated
+[2026-08-05 12:22:02 KSA]   ✗ No JSON in batch 2
+[2026-08-05 12:22:02 KSA]   ✓ Stock signals updated (8 tickers, invDataDate → 20260805)
+[2026-08-05 12:22:02 KSA]   Today is Wed — opportunity update runs on Sunday only
+[2026-08-05 12:22:02 KSA] ═══ RESCAN COMPLETE ═══
+
