@@ -4053,3 +4053,63 @@
 [2026-08-05 12:22:02 KSA]   Today is Wed — opportunity update runs on Sunday only
 [2026-08-05 12:22:02 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-06 12:22:58 KSA] Manual run triggered (--now flag)
+[2026-08-06 12:22:58 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-06 12:22:58 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-06 12:23:11 KSA]     ✓ 3 signals found
+[2026-08-06 12:23:13 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-06 12:23:22 KSA]     ✓ 3 signals found
+[2026-08-06 12:23:24 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-06 12:23:34 KSA]     ✓ 0 signals found
+[2026-08-06 12:23:36 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-06 12:23:47 KSA]     ✓ 1 signals found
+[2026-08-06 12:23:49 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-06 12:23:55 KSA]     ✓ 3 signals found
+[2026-08-06 12:23:57 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-06 12:24:14 KSA]     ✓ 3 signals found
+[2026-08-06 12:24:16 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-06 12:24:23 KSA]     ✓ 3 signals found
+[2026-08-06 12:24:25 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-06 12:24:41 KSA]     ✓ 3 signals found
+[2026-08-06 12:24:43 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-06 12:24:51 KSA]     ✓ 3 signals found
+[2026-08-06 12:24:53 KSA]   Total new signals: 22
+[2026-08-06 12:24:53 KSA]   Updating dashboard HTML...
+[2026-08-06 12:24:53 KSA]   ↩ 12 duplicate(s) skipped
+[2026-08-06 12:24:53 KSA]   ✚ 10 new signals to inject
+[2026-08-06 12:24:53 KSA]   ✓ 10 added, 12 skipped, 675 total signals
+[2026-08-06 12:24:53 KSA] 
+  ┌─── SCAN SUMMARY — August 06, 2026 ───
+[2026-08-06 12:24:53 KSA]   │ 01. [Release] Avnet and Weston Robot Launch Physical AI Autonomous Inspection Platform
+[2026-08-06 12:24:53 KSA]   │ 02. [Release] KaarbonTech Launches SMART Shot AI for Continuous Highway Infrastructure Monitor
+[2026-08-06 12:24:53 KSA]   │ 03. [Policy] EU AI Act High-Risk Provisions Become Enforceable on August 2, 2026
+[2026-08-06 12:24:53 KSA]   │ 04. [Breakthrough] Komatsu and AIM Intelligent Machines partner on autonomous excavators
+[2026-08-06 12:24:53 KSA]   │ 05. [Breakthrough] AI site inspection in construction reaches 85-95% hazard detection accuracy
+[2026-08-06 12:24:53 KSA]   │ 06. [Release] DroneDeploy expands platform with three agentic AI agents for construction
+[2026-08-06 12:24:53 KSA]   │ 07. [Release] HouseMe.ai Launches in U.S. with AI-Powered Real Estate Intelligence Platform
+[2026-08-06 12:24:53 KSA]   │ 08. [Policy] EU AI Act Phase Two Compliance Deadline: August 2, 2026
+[2026-08-06 12:24:53 KSA]   │ 09. [Release] National Security AI Memorandum Signed June 5, 2026
+[2026-08-06 12:24:53 KSA]   │ 10. [Research] Stanford HAI 2026 AI Index: 47 Countries with Active AI Legislation
+[2026-08-06 12:24:53 KSA]   │ 11. [Breakthrough] OpenAI Announces Astra Model with Math Breakthroughs
+[2026-08-06 12:24:53 KSA]   │ 12. [Release] OpenAI Cuts GPT-5.6 Prices by 80%, Boosts API Speed
+[2026-08-06 12:24:53 KSA]   │ 13. [Release] Anthropic Rolls Out Claude Code Security and Reliability Updates
+[2026-08-06 12:24:53 KSA]   │ 14. [Security] AI-Discovered Vulnerabilities Expected to Double in 2026
+[2026-08-06 12:24:53 KSA]   │ 15. [Security] OpenAI Autonomous Agents Breach Hugging Face During Test
+[2026-08-06 12:24:53 KSA]   │ 16. [Security] Critical GitHub Copilot Vulnerability Enables Remote Code Execution
+[2026-08-06 12:24:53 KSA]   │ 17. [Funding] StartEngine Funds Disclose Pre-IPO AI Share Markups Up To 194%
+[2026-08-06 12:24:53 KSA]   │ 18. [Release] Cerebras IPO in May 2026 Largest US Tech Listing Since 2020
+[2026-08-06 12:24:53 KSA]   │ 19. [Release] Anthropic Targets October 2026 IPO After Filing June 1
+[2026-08-06 12:24:53 KSA]   │ 20. [Research] AI 2027 Tracker Shows Predictions Matching Reality - 65% Smart City Integration
+[2026-08-06 12:24:53 KSA]   │ 21. [Funding] AI Capital Expenditure Forecast Revised to $1 Trillion for 2027
+[2026-08-06 12:24:53 KSA]   │ 22. [Research] IDC Forecasts 65% of Cities Will Deploy AI Agents by 2027
+[2026-08-06 12:24:53 KSA]   └─── 22 total signals ───
+
+[2026-08-06 12:24:53 KSA]   [Market Intel] Updating risk signals...
+[2026-08-06 12:25:12 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-06 12:25:12 KSA]   [Market Intel] Updating stock signals...
+[2026-08-06 12:25:27 KSA]   ✗ No JSON in batch 1
+[2026-08-06 12:25:40 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-08-06 12:25:42 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260806)
+[2026-08-06 12:25:42 KSA]   Today is Thu — opportunity update runs on Sunday only
+[2026-08-06 12:25:42 KSA] ═══ RESCAN COMPLETE ═══
+
