@@ -4113,3 +4113,62 @@
 [2026-08-06 12:25:42 KSA]   Today is Thu — opportunity update runs on Sunday only
 [2026-08-06 12:25:42 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-07 10:52:15 KSA] Manual run triggered (--now flag)
+[2026-08-07 10:52:15 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-07 10:52:16 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-07 10:52:24 KSA]     ✗ No JSON found
+[2026-08-07 10:52:26 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-07 10:52:41 KSA]     ✓ 3 signals found
+[2026-08-07 10:52:43 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-07 10:52:53 KSA]     ✓ 0 signals found
+[2026-08-07 10:52:55 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-07 10:53:03 KSA]     ✓ 3 signals found
+[2026-08-07 10:53:05 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-07 10:53:10 KSA]     ✓ 3 signals found
+[2026-08-07 10:53:12 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-07 10:53:18 KSA]     ✓ 3 signals found
+[2026-08-07 10:53:20 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-07 10:53:27 KSA]     ✓ 3 signals found
+[2026-08-07 10:53:29 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-07 10:53:35 KSA]     ✓ 3 signals found
+[2026-08-07 10:53:37 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-07 10:53:45 KSA]     ✓ 3 signals found
+[2026-08-07 10:53:47 KSA]   Total new signals: 21
+[2026-08-07 10:53:47 KSA]   Updating dashboard HTML...
+[2026-08-07 10:53:47 KSA]   ↩ 13 duplicate(s) skipped
+[2026-08-07 10:53:47 KSA]   ✚ 8 new signals to inject
+[2026-08-07 10:53:47 KSA]   ✓ 8 added, 13 skipped, 683 total signals
+[2026-08-07 10:53:47 KSA] 
+  ┌─── SCAN SUMMARY — August 07, 2026 ───
+[2026-08-07 10:53:47 KSA]   │ 01. [Funding] Procore Acquires DroneDeploy for $845M to Add Robots and Drones
+[2026-08-07 10:53:47 KSA]   │ 02. [Breakthrough] Autonomy Global Reports AI Construction Scanning Detects Underground Utilities
+[2026-08-07 10:53:47 KSA]   │ 03. [Release] Commercial UAV Expo 2026 Preview: Enterprise Drone Program Scaling
+[2026-08-07 10:53:47 KSA]   │ 04. [Release] Spectora Launches AI-Powered Inspection Reporting Features May 2026
+[2026-08-07 10:53:47 KSA]   │ 05. [Research] Home Inspection Software Market Growth: $156.75B in 2026 to $402.18B by 2034
+[2026-08-07 10:53:47 KSA]   │ 06. [Breakthrough] AI Computer Vision Detects Building Defects with Over 90% Accuracy
+[2026-08-07 10:53:47 KSA]   │ 07. [Policy] UK AI Regulation and Safety Bill Passes House of Commons with Inspection Powers
+[2026-08-07 10:53:47 KSA]   │ 08. [Policy] Singapore Updates Model AI Governance Framework with Technical Testing Standards
+[2026-08-07 10:53:47 KSA]   │ 09. [Policy] California Frontier AI Safety Act Passes Final Assembly Vote Awaiting Governor S
+[2026-08-07 10:53:47 KSA]   │ 10. [Release] Meta Releases Muse Spark 1.2 AI Model
+[2026-08-07 10:53:47 KSA]   │ 11. [Release] Anthropic Launches Claude Opus 5 Flagship Model
+[2026-08-07 10:53:47 KSA]   │ 12. [Release] Google Releases Gemini 3.6 Flash Efficiency Model
+[2026-08-07 10:53:47 KSA]   │ 13. [Security] AI Cyber Attacks Explosion in 2026: Emerging Threats Including AI-Powered Exploi
+[2026-08-07 10:53:47 KSA]   │ 14. [Security] CVE-2025-53773: Hidden Prompt Injection in GitHub Copilot Enables Remote Code Ex
+[2026-08-07 10:53:47 KSA]   │ 15. [Research] State of AI Cybersecurity 2026: 87% of Security Professionals See More AI-Driven
+[2026-08-07 10:53:47 KSA]   │ 16. [Funding] July 2026 AI Funding Surges: Nvidia Invests $5B in Safe Superintelligence
+[2026-08-07 10:53:47 KSA]   │ 17. [Funding] Private Capital Floods AI Projects in Emerging Markets, Reaches Record Highs
+[2026-08-07 10:53:47 KSA]   │ 18. [Funding] Anthropic Files for October IPO After $65B Series H at $965B Valuation
+[2026-08-07 10:53:47 KSA]   │ 19. [Release] GPT-5.5 Released with System 2 Architecture for Complex Reasoning
+[2026-08-07 10:53:47 KSA]   │ 20. [Policy] EU Digital Omnibus Delays High-Risk AI Obligations Until December 2027
+[2026-08-07 10:53:47 KSA]   │ 21. [Breakthrough] Embodied AI Boom: Vision-Language-Action Models Deployed in Logistics August 202
+[2026-08-07 10:53:47 KSA]   └─── 21 total signals ───
+
+[2026-08-07 10:53:47 KSA]   [Market Intel] Updating risk signals...
+[2026-08-07 10:54:01 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-07 10:54:01 KSA]   [Market Intel] Updating stock signals...
+[2026-08-07 10:54:16 KSA]   ✗ No JSON in batch 1
+[2026-08-07 10:54:34 KSA]   ✗ No JSON in batch 2
+[2026-08-07 10:54:34 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-07 10:54:34 KSA]   Today is Fri — opportunity update runs on Sunday only
+[2026-08-07 10:54:34 KSA] ═══ RESCAN COMPLETE ═══
+
