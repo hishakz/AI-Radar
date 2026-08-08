@@ -4172,3 +4172,63 @@
 [2026-08-07 10:54:34 KSA]   Today is Fri — opportunity update runs on Sunday only
 [2026-08-07 10:54:34 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-08 10:30:14 KSA] Manual run triggered (--now flag)
+[2026-08-08 10:30:14 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-08 10:30:14 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-08 10:30:22 KSA]     ✓ 0 signals found
+[2026-08-08 10:30:24 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-08 10:30:34 KSA]     ✓ 1 signals found
+[2026-08-08 10:30:36 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-08 10:30:57 KSA]     ✓ 3 signals found
+[2026-08-08 10:30:59 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-08 10:31:05 KSA]     ✓ 3 signals found
+[2026-08-08 10:31:07 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-08 10:31:22 KSA]     ✓ 3 signals found
+[2026-08-08 10:31:24 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-08 10:31:30 KSA]     ✓ 3 signals found
+[2026-08-08 10:31:32 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-08 10:31:37 KSA]     ✓ 3 signals found
+[2026-08-08 10:31:39 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-08 10:31:46 KSA]     ✓ 3 signals found
+[2026-08-08 10:31:48 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-08 10:31:59 KSA]     ✓ 3 signals found
+[2026-08-08 10:32:01 KSA]   Total new signals: 22
+[2026-08-08 10:32:01 KSA]   Updating dashboard HTML...
+[2026-08-08 10:32:01 KSA]   ↩ 16 duplicate(s) skipped
+[2026-08-08 10:32:01 KSA]   ✚ 6 new signals to inject
+[2026-08-08 10:32:01 KSA]   ✓ 6 added, 16 skipped, 689 total signals
+[2026-08-08 10:32:01 KSA] 
+  ┌─── SCAN SUMMARY — August 08, 2026 ───
+[2026-08-08 10:32:01 KSA]   │ 01. [Research] Drones, Robotics and the Future of Construction
+[2026-08-08 10:32:01 KSA]   │ 02. [Policy] USDA-FSIS Discusses AI and Connected Data for Food Safety Inspection
+[2026-08-08 10:32:01 KSA]   │ 03. [Policy] FDA Prioritizes AI Tools for Seafood Inspection and Compliance Detection
+[2026-08-08 10:32:01 KSA]   │ 04. [Breakthrough] National Restaurant Show 2026 Showcases Odor-Sensing Technology for Foodservice
+[2026-08-08 10:32:01 KSA]   │ 05. [Breakthrough] AI-Powered Home Inspection Business: How AI Is Revolutionizing Property Inspecti
+[2026-08-08 10:32:01 KSA]   │ 06. [Release] Spectora Launches AI-Powered Inspection Reporting Features
+[2026-08-08 10:32:01 KSA]   │ 07. [Research] Global Home Inspection Software Market Projected to Grow to $478.19M by 2035
+[2026-08-08 10:32:01 KSA]   │ 08. [Policy] EU AI Act Enforcement Begins: Transparency Rules Take Effect August 2
+[2026-08-08 10:32:01 KSA]   │ 09. [Policy] California AI Transparency Act Operative August 2: Detection Tools Required
+[2026-08-08 10:32:01 KSA]   │ 10. [Policy] Great American AI Act Stalls in House Amid Federal Preemption Battle
+[2026-08-08 10:32:01 KSA]   │ 11. [Release] Meta Releases Muse Spark 1.2
+[2026-08-08 10:32:01 KSA]   │ 12. [Release] Anthropic Claude Opus 5 Flagship Launch
+[2026-08-08 10:32:01 KSA]   │ 13. [Release] Google Launches Gemini 3.6 Flash
+[2026-08-08 10:32:01 KSA]   │ 14. [Security] CVE-2026-59726: Critical Vulnerability in Ruflo AI Agent Platform
+[2026-08-08 10:32:01 KSA]   │ 15. [Security] AI-Driven Cyber Threats Escalate: Healthcare, Energy, Tech Face Major Breaches
+[2026-08-08 10:32:01 KSA]   │ 16. [Security] Cloud Security Alert: Organizations Face Rising Attack Wave on AI Platforms
+[2026-08-08 10:32:01 KSA]   │ 17. [Funding] July 2026 AI Funding Hits $18.2B: Nvidia Invests $5B in Safe Superintelligence
+[2026-08-08 10:32:01 KSA]   │ 18. [Funding] Private Capital Floods Emerging Markets AI Projects with Record Deal Volumes in 
+[2026-08-08 10:32:01 KSA]   │ 19. [Funding] Valar Atomics Secures $1B Series B for Modular Nuclear Reactors to Power AI Data
+[2026-08-08 10:32:01 KSA]   │ 20. [Policy] Europe Enforces AI Transparency Rules as First Continent-Wide Identification Man
+[2026-08-08 10:32:01 KSA]   │ 21. [Research] AI 2027 Tracker Shows Compute Spending On Track with $600B Annual AI Investment 
+[2026-08-08 10:32:01 KSA]   │ 22. [Breakthrough] Smart Cities Embrace Pragmatic AI Integration for Operational Efficiency Rather 
+[2026-08-08 10:32:01 KSA]   └─── 22 total signals ───
+
+[2026-08-08 10:32:01 KSA]   [Market Intel] Updating risk signals...
+[2026-08-08 10:32:16 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-08 10:32:16 KSA]   [Market Intel] Updating stock signals...
+[2026-08-08 10:32:30 KSA]   ✗ No JSON in batch 1
+[2026-08-08 10:32:44 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-08-08 10:32:46 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260808)
+[2026-08-08 10:32:46 KSA]   Today is Sat — opportunity update runs on Sunday only
+[2026-08-08 10:32:46 KSA] ═══ RESCAN COMPLETE ═══
+

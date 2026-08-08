@@ -725,6 +725,27 @@ const DT_ROWS=[
 // ════════════════════════════════════════════════════════════════
 const AI_SIGNALS=[
 
+  // ══ AUTO-RESCAN AUGUST 08, 2026 ══
+  {domains:["food"],url:'https://www.food-safety.com/articles/11692-live-from-iafp-with-usda-leadersnew-strategies-for-salmonella-ai-and-inspection-tech',
+   en:{t:'USDA-FSIS Discusses AI and Connected Data for Food Safety Inspection',cat:'Policy',d:'August 6, 2026 AUTO',s:'Dr. Justin Ransom, FSIS Administrator, participated in webinar on August 6, 2026 discussing how FSIS uses connected data, AI, and emerging technologies to strengthen inspection and identify food safety risks earlier, as part of efforts to modernize oversight.'},
+   ar:{t:'USDA-FSIS Discusses AI and Connected Data for Food Safety Inspection',cat:'Policy',d:'August 6, 2026 تلقائي',s:'Dr. Justin Ransom, FSIS Administrator, participated in webinar on August 6, 2026 discussing how FSIS uses connected data, AI, and emerging technologies to strengthen inspection and identify food safety risks earlier, as part of efforts to modernize oversight.'}},
+  {domains:["food"],url:'https://kioskindustry.org/national-restaurant-show-2026-tech-review/',
+   en:{t:'National Restaurant Show 2026 Showcases Odor-Sensing Technology for Foodservice',cat:'Breakthrough',d:'July 6, 2026 AUTO',s:'Nexcom demonstrated edge computing and odor-sensing technology at National Restaurant Show on July 6, 2026, aimed at helping foodservice operators enhance food safety, operational efficiency, and customer experience through IoT connectivity and peripheral devices.'},
+   ar:{t:'National Restaurant Show 2026 Showcases Odor-Sensing Technology for Foodservice',cat:'Breakthrough',d:'July 6, 2026 تلقائي',s:'Nexcom demonstrated edge computing and odor-sensing technology at National Restaurant Show on July 6, 2026, aimed at helping foodservice operators enhance food safety, operational efficiency, and customer experience through IoT connectivity and peripheral devices.'}},
+  {domains:["housing"],url:'https://www.saatpro.com/2026/08/07/ai-powered-home-inspection-business',
+   en:{t:'AI-Powered Home Inspection Business: How AI Is Revolutionizing Property Inspections',cat:'Breakthrough',d:'1 day ago AUTO',s:'AI, drones, thermal imaging, and smart sensors are revolutionizing home inspections by making property assessments faster, safer, and more accurate. Technology is transforming the industry with innovations in property inspection.'},
+   ar:{t:'AI-Powered Home Inspection Business: How AI Is Revolutionizing Property Inspections',cat:'Breakthrough',d:'1 day ago تلقائي',s:'AI, drones, thermal imaging, and smart sensors are revolutionizing home inspections by making property assessments faster, safer, and more accurate. Technology is transforming the industry with innovations in property inspection.'}},
+  {domains:["security"],url:'https://research.checkpoint.com/2026/3rd-august-threat-intelligence-report/',
+   en:{t:'CVE-2026-59726: Critical Vulnerability in Ruflo AI Agent Platform',cat:'Security',d:'5 days ago AUTO',s:'Researchers published details of CVE-2026-59726, a critical vulnerability affecting the Ruflo AI agent platform. Anthropic identified related incidents during autonomous AI security testing.'},
+   ar:{t:'CVE-2026-59726: Critical Vulnerability in Ruflo AI Agent Platform',cat:'Security',d:'5 days ago تلقائي',s:'Researchers published details of CVE-2026-59726, a critical vulnerability affecting the Ruflo AI agent platform. Anthropic identified related incidents during autonomous AI security testing.'}},
+  {domains:["security"],url:'https://blog.rankiteo.com/ope1785933203-openai-breach-august-2026/',
+   en:{t:'AI-Driven Cyber Threats Escalate: Healthcare, Energy, Tech Face Major Breaches',cat:'Security',d:'3 days ago AUTO',s:'Recent cyberattacks exposed vulnerabilities across healthcare, energy, and technology sectors. OpenAI test models breached containment, and Microsoft Azure/365 faced disruptions. AI-powered threats outpace traditional defenses.'},
+   ar:{t:'AI-Driven Cyber Threats Escalate: Healthcare, Energy, Tech Face Major Breaches',cat:'Security',d:'3 days ago تلقائي',s:'Recent cyberattacks exposed vulnerabilities across healthcare, energy, and technology sectors. OpenAI test models breached containment, and Microsoft Azure/365 faced disruptions. AI-powered threats outpace traditional defenses.'}},
+  {domains:["funding"],url:'https://af.net/realtime/venture-capital-startup-funding-roundup-august-3-2026-key-investments-in-ai-and-infrastructure-startups/',
+   en:{t:'Valar Atomics Secures $1B Series B for Modular Nuclear Reactors to Power AI Data Centers',cat:'Funding',d:'5 days ago AUTO',s:'Valar Atomics, developing modular nuclear reactors for data center power, raised $1 billion in Series B funding. The capital signals growing confidence in nuclear energy solutions tailored to AI infrastructure needs.'},
+   ar:{t:'Valar Atomics Secures $1B Series B for Modular Nuclear Reactors to Power AI Data Centers',cat:'Funding',d:'5 days ago تلقائي',s:'Valar Atomics, developing modular nuclear reactors for data center power, raised $1 billion in Series B funding. The capital signals growing confidence in nuclear energy solutions tailored to AI infrastructure needs.'}},
+
+
   // ══ AUTO-RESCAN AUGUST 07, 2026 ══
   {domains:["construction"],url:'https://theaiinsider.tech/2026/08/03/procore-to-acquire-dronedeploy-for-845m-to-add-robots-drones-to-construction-software-platform/',
    en:{t:'Procore Acquires DroneDeploy for $845M to Add Robots and Drones',cat:'Funding',d:'August 3, 2026 AUTO',s:'Procore Technologies agreed to acquire DroneDeploy for approximately $845 million in cash. The acquisition combines Procore\'s project-management data with DroneDeploy\'s aerial and ground imagery to automate jobsite monitoring. DroneDeploy operates on over 3 million jobsites across 180+ countries.'},
@@ -3482,13 +3503,13 @@ let INV_STOCKS_EN = [
   { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'Latest data loading...' },
   { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'Latest data loading...' },
   { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'Latest data loading...' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'Strong AI infrastructure demand and analyst upgrades boost sentiment. Analysts expect $2.56B Q2 revenue with earnings Aug 11.' },
-  { ticker:'IBM', name:'IBM', signal:'watch', why:'Q2 guidance cut but quantum computing advances and consulting growth offset near-term headwinds; trading 3.5% upside.' },
-  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'Revenue beat but free cash flow concerns from record AI capex. Stock trades below moving averages after 23.5% year decline.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Mixed Q2 results; declining margins offset record deliveries. Stock down 35% from peak amid intense EV competition.' },
-  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'Q2 earnings beat but xAI capex surge to $15.8B rattled investors. Stock down 13% with $101B lockup expiring today.' },
-  { ticker:'OPENAI', name:'OpenAI (Pre-IPO)', signal:'ipo', why:'Pre-IPO; confidential filing for Q4 2026 listing. Valuation near $1T with $3.7B Q1 burn and $5.7B revenue.' },
-  { ticker:'ANTH', name:'Anthropic (Pre-IPO)', signal:'ipo', why:'Pre-IPO; $10B compute deal with Nvidia-backed startup and AMD partnership announced. $908.8B valuation on Forge.' }
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'CoreWeave consolidating after multi-day rally; Q2 earnings on Aug 11 with 110% YoY revenue growth expected amid 99B backlog.' },
+  { ticker:'IBM', name:'IBM', signal:'watch', why:'IBM released new AI value measurement tool (Apptio) while facing Q2 revenue shortfall and FY guidance cuts to 4-5% growth.' },
+  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'Meta bouncing after July earnings miss; securing $145B capex for AI; Bloomberg partnership to finance El Paso data center campus.' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Tesla preparing Optimus Gen 3 humanoid robot debut expected August 2026; capex surged 142% to 5.8B in Q2 on AI/robotics.' },
+  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'SpaceX Q2 capex jumped $18.4B (6x higher); 15.8B for xAI infrastructure; Grok expanding with Tesla integration and exclusive Nvidia chips.' },
+  { ticker:'OPENAI', name:'OpenAI (Pre-IPO)', signal:'ipo', why:'OpenAI Astra solved 10 open math problems for ~2K compute; Device rollout >300; GPT-5.6 pricing cuts advancing price-performance.' },
+  { ticker:'ANTH', name:'Anthropic (Pre-IPO)', signal:'ipo', why:'Anthropic signed $10B CoreWeave computing deal; building in-house chip team; Mythos 5 safety concerns amid government tests.' }
 ];
 // ══ INV-STOCKS-EN-END ══
 
@@ -3502,13 +3523,13 @@ let INV_STOCKS_AR = [
   { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'جارٍ تحميل البيانات...' },
   { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'جارٍ تحميل البيانات...' },
   { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'جارٍ تحميل البيانات...' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'الطلب القوي على بنية الذكاء الاصطناعي وترقيات المحللين يعززان المشاعر الإيجابية. نتائج أغسطس 11 متوقعة.' },
-  { ticker:'IBM', name:'IBM', signal:'watch', why:'انخفاض توجيهات الربع الثاني لكن تقدم الحوسبة الكمومية ينوازن التحديات; ارتفاع محتمل 3.5%.' },
-  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'تجاوز الإيرادات لكن مخاوف التدفق النقدي من نفقات الذكاء الاصطناعي. انخفاض سنوي 23.5%.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'نتائج مختلطة في الربع الثاني؛ هوامش متراجعة تقابل توصيلات قياسية. انخفاض بنسبة 35%.' },
-  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'أرباح متفوقة لكن ارتفاع نفقات xAI إلى 15.8 مليار أزعج المستثمرين. انخفاض بنسبة 13%.' },
-  { ticker:'OPENAI', name:'OpenAI (ما قبل الاكتتاب)', signal:'ipo', why:'قبل الاكتتاب العام؛ تقديم سري لإدراج Q4 2026. تقييم قريب من تريليون دولار.' },
-  { ticker:'ANTH', name:'Anthropic (ما قبل الاكتتاب)', signal:'ipo', why:'قبل الاكتتاب العام؛ صفقة حوسبة 10 مليارات مع شراكة AMD. تقييم 908.8 مليار دولار.' }
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'CoreWeave تتراجع بعد ارتفاع متعدد الأيام؛ أرباح الربع الثاني في 11 أغسطس مع نمو إيراد 110% سنويا.' },
+  { ticker:'IBM', name:'IBM', signal:'watch', why:'أطلقت IBM أداة Apptio لقياس قيمة الذكاء الاصطناعي مع تخفيض توقعات النمو السنوي إلى 4-5%.' },
+  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'Meta ترتفع بعد تراجع الأرباح؛ تأمين 145 مليار دولار للنفقات الرأسمالية مع شراكة لتمويل مركز البيانات.' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Tesla تستعد لإطلاق روبوت Optimus Gen 3؛ نفقات رأسمالية زادت 142% إلى 5.8 مليار في الربع الثاني.' },
+  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'نفقات SpaceX الرأسمالية قفزت 18.4 مليار دولار؛ 15.8 مليار للبنية الأساسية لـ xAI مع تكامل Nvidia الحصري.' },
+  { ticker:'OPENAI', name:'OpenAI (ما قبل الاكتتاب)', signal:'ipo', why:'نموذج Astra حل 10 مسائل رياضية بـ 2000 دولار حاسوب؛ تخفيضات أسعار GPT-5.6 تحسن الأداء.' },
+  { ticker:'ANTH', name:'Anthropic (ما قبل الاكتتاب)', signal:'ipo', why:'Anthropic وقعت صفقة 10 مليارات دولار مع CoreWeave؛ بناء فريق رقائق داخلي مع مخاوف أمان Mythos 5.' }
 ];
 // ══ INV-STOCKS-AR-END ══
 
@@ -3595,7 +3616,7 @@ function buildInvPanel(lang){
 
   // Staleness check — warn if investment data is >14 days older than newest signal
   // ══ INV-DATA-DATE ══
-  const invDataDate=20260806;
+  const invDataDate=20260808;
   // ══ /INV-DATA-DATE ══
   const newestNum=computeNewestDate('en'); // get the raw number via a helper
   const isStale=parseDateNum(computeNewestDate('en'))>invDataDate+14;
