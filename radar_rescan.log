@@ -4232,3 +4232,64 @@
 [2026-08-08 10:32:46 KSA]   Today is Sat — opportunity update runs on Sunday only
 [2026-08-08 10:32:46 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-09 10:33:55 KSA] Manual run triggered (--now flag)
+[2026-08-09 10:33:55 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-09 10:33:55 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-09 10:34:04 KSA]     ✓ 0 signals found
+[2026-08-09 10:34:06 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-09 10:34:16 KSA]     ✓ 3 signals found
+[2026-08-09 10:34:18 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-09 10:34:28 KSA]     ✓ 0 signals found
+[2026-08-09 10:34:30 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-09 10:34:39 KSA]     ✓ 3 signals found
+[2026-08-09 10:34:41 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-09 10:34:50 KSA]     ✓ 3 signals found
+[2026-08-09 10:34:52 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-09 10:34:58 KSA]     ✓ 3 signals found
+[2026-08-09 10:35:00 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-09 10:35:10 KSA]     ✓ 3 signals found
+[2026-08-09 10:35:12 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-09 10:35:19 KSA]     ✓ 3 signals found
+[2026-08-09 10:35:21 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-09 10:35:30 KSA]     ✓ 3 signals found
+[2026-08-09 10:35:32 KSA]   Total new signals: 21
+[2026-08-09 10:35:32 KSA]   Updating dashboard HTML...
+[2026-08-09 10:35:32 KSA]   ↩ 10 duplicate(s) skipped
+[2026-08-09 10:35:32 KSA]   ✚ 11 new signals to inject
+[2026-08-09 10:35:32 KSA]   ✓ 11 added, 10 skipped, 700 total signals
+[2026-08-09 10:35:32 KSA] 
+  ┌─── SCAN SUMMARY — August 09, 2026 ───
+[2026-08-09 10:35:32 KSA]   │ 01. [Breakthrough] AI Boosts Excavator Use with Semi-Autonomous Operations
+[2026-08-09 10:35:32 KSA]   │ 02. [Breakthrough] Bedrock Robotics Addresses Labor Shortage with Autonomous Excavators
+[2026-08-09 10:35:32 KSA]   │ 03. [Breakthrough] AI-Powered Drones Transform Construction Site Inspections
+[2026-08-09 10:35:32 KSA]   │ 04. [Breakthrough] AI-Powered Home Inspection Business Revolutionizing Property Assessments
+[2026-08-09 10:35:32 KSA]   │ 05. [Release] ASHI Launches First AI Day Conference for Home Inspectors on August 31, 2026
+[2026-08-09 10:35:32 KSA]   │ 06. [Breakthrough] Nasser Centre and Chinese Group Deploy AI Building Inspection Platform
+[2026-08-09 10:35:32 KSA]   │ 07. [Policy] White House meets with AI labs on voluntary testing guidelines
+[2026-08-09 10:35:32 KSA]   │ 08. [Policy] EU AI Act transparency obligations take effect
+[2026-08-09 10:35:32 KSA]   │ 09. [Release] SEC launches new AI task force
+[2026-08-09 10:35:32 KSA]   │ 10. [Release] Meta releases Muse Spark 1.2
+[2026-08-09 10:35:32 KSA]   │ 11. [Release] OpenAI cuts GPT-5.6 Luna API pricing by 80%
+[2026-08-09 10:35:32 KSA]   │ 12. [Release] DeepSeek V4-Flash 0731 becomes new price-performance leader
+[2026-08-09 10:35:32 KSA]   │ 13. [Security] Hugging Face breach called 'most consequential hack' since Morris Worm by former
+[2026-08-09 10:35:32 KSA]   │ 14. [Security] Critical vulnerability CVE-2026-59726 discovered in Ruflo AI agent platform
+[2026-08-09 10:35:32 KSA]   │ 15. [Research] CrowdStrike releases 2026 Threat Hunting Report showing AI embedded in modern ad
+[2026-08-09 10:35:32 KSA]   │ 16. [Funding] AI Global Funding Hits Record $510B in H1 2026, DeepSeek Seeks $71-74B Second Ro
+[2026-08-09 10:35:32 KSA]   │ 17. [Breakthrough] SpaceX $75B IPO in June Marks Largest Venture-Backed Exit Ever
+[2026-08-09 10:35:32 KSA]   │ 18. [Funding] Anthropic Files S-1 for October IPO at $965B Valuation Following $65B Series H
+[2026-08-09 10:35:32 KSA]   │ 19. [Research] AI Predictions Tracker Shows 36% Accuracy: 19 of 53 AI 2027 Forecasts Confirmed 
+[2026-08-09 10:35:32 KSA]   │ 20. [Breakthrough] Phoenix Launches First Comprehensive Smart City Strategy Coordinating 150+ AI Te
+[2026-08-09 10:35:32 KSA]   │ 21. [Research] August 2026: AI Market Shifts to Stricter Phase Demanding Real Business Value Ov
+[2026-08-09 10:35:32 KSA]   └─── 21 total signals ───
+
+[2026-08-09 10:35:32 KSA]   [Market Intel] Updating risk signals...
+[2026-08-09 10:35:47 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-09 10:35:47 KSA]   [Market Intel] Updating stock signals...
+[2026-08-09 10:36:02 KSA]   ✗ No JSON in batch 1
+[2026-08-09 10:36:17 KSA]   ✗ No JSON in batch 2
+[2026-08-09 10:36:17 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-09 10:36:17 KSA]   Sunday: running weekly opportunity vector update...
+[2026-08-09 10:36:17 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-08-09 10:36:32 KSA]   ✗ No JSON in opps response — keeping existing
+[2026-08-09 10:36:32 KSA] ═══ RESCAN COMPLETE ═══
+
