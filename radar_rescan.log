@@ -4348,3 +4348,66 @@
 [2026-08-10 11:15:53 KSA]   Today is Mon — opportunity update runs on Sunday only
 [2026-08-10 11:15:53 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-11 10:46:22 KSA] Manual run triggered (--now flag)
+[2026-08-11 10:46:22 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-11 10:46:22 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-11 10:46:45 KSA]     ✓ 3 signals found
+[2026-08-11 10:46:47 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-11 10:46:55 KSA]     ✓ 3 signals found
+[2026-08-11 10:46:57 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-11 10:47:06 KSA]     ✓ 1 signals found
+[2026-08-11 10:47:08 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-11 10:47:13 KSA]     ✓ 3 signals found
+[2026-08-11 10:47:15 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-11 10:47:22 KSA]     ✓ 3 signals found
+[2026-08-11 10:47:24 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-11 10:47:28 KSA]     ✓ 3 signals found
+[2026-08-11 10:47:30 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-11 10:47:37 KSA]     ✓ 3 signals found
+[2026-08-11 10:47:39 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-11 10:47:50 KSA]     ✓ 3 signals found
+[2026-08-11 10:47:52 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-11 10:48:04 KSA]     ✓ 3 signals found
+[2026-08-11 10:48:06 KSA]   Total new signals: 25
+[2026-08-11 10:48:06 KSA]   Updating dashboard HTML...
+[2026-08-11 10:48:06 KSA]   ↩ 17 duplicate(s) skipped
+[2026-08-11 10:48:06 KSA]   ✚ 8 new signals to inject
+[2026-08-11 10:48:06 KSA]   ✓ 8 added, 17 skipped, 712 total signals
+[2026-08-11 10:48:06 KSA] 
+  ┌─── SCAN SUMMARY — August 11, 2026 ───
+[2026-08-11 10:48:06 KSA]   │ 01. [Breakthrough] Seoul to Hold Smart Life Week 2026 with AI Robot Show for Urban Automation
+[2026-08-11 10:48:06 KSA]   │ 02. [Release] KaarbonTech Launches SMART Shot AI for Continuous Infrastructure Monitoring
+[2026-08-11 10:48:06 KSA]   │ 03. [Breakthrough] FPT Partners with NVIDIA to Revolutionize Smart City Inspections with AI Bluepri
+[2026-08-11 10:48:06 KSA]   │ 04. [Research] Virginia Tech MARIO System: Multi-Agent Robots for Construction Site Monitoring
+[2026-08-11 10:48:06 KSA]   │ 05. [Breakthrough] Bedrock Robotics: 65,000 Cubic Yards Excavated with AI-Controlled Excavators
+[2026-08-11 10:48:06 KSA]   │ 06. [Breakthrough] DroneDeploy Autonomous Ground Robots Enter Beta with 90,000 Safety Risks Identif
+[2026-08-11 10:48:06 KSA]   │ 07. [Research] USDA-FSIS Discusses AI and Emerging Technologies for Food Safety Inspection
+[2026-08-11 10:48:06 KSA]   │ 08. [Breakthrough] AI-Powered Home Inspection Business: How AI Is Revolutionizing Property Inspecti
+[2026-08-11 10:48:06 KSA]   │ 09. [Release] Spectora Launches New AI-Powered Inspection Reporting Features
+[2026-08-11 10:48:06 KSA]   │ 10. [Research] Top 10 AI Tools For Home Inspection Businesses In 2026
+[2026-08-11 10:48:06 KSA]   │ 11. [Policy] EU AI Act Enforcement and Transparency Rules Begin August 2, 2026
+[2026-08-11 10:48:06 KSA]   │ 12. [Policy] UK Appoints First Minister for AI amid New Regulatory Focus
+[2026-08-11 10:48:06 KSA]   │ 13. [Policy] California AI Regulation Requires Watermarking and Detection by August 2026
+[2026-08-11 10:48:06 KSA]   │ 14. [Release] Meta Releases Muse Glimmer Model
+[2026-08-11 10:48:06 KSA]   │ 15. [Release] ByteDance Releases Seedance 2.5 Model
+[2026-08-11 10:48:06 KSA]   │ 16. [Release] Meta Releases Muse Spark 1.2 Model
+[2026-08-11 10:48:06 KSA]   │ 17. [Security] AI Cyber Attacks Explosion in 2026: Emerging Threats Report
+[2026-08-11 10:48:06 KSA]   │ 18. [Security] AI Cyberattacks in 2026: 6 Breaches Analysis - Global Campaign Across 55 Countri
+[2026-08-11 10:48:06 KSA]   │ 19. [Security] Darktrace: 87% Security Professionals See AI-Driven Threats, Few Prepared
+[2026-08-11 10:48:06 KSA]   │ 20. [Funding] DeepSeek Eyes Second Funding Round at $71-74B Valuation Ahead of IPO
+[2026-08-11 10:48:06 KSA]   │ 21. [Funding] Moonshot AI Raises $2B at $20B+ Valuation; Seeks Additional $2B for Hong Kong IP
+[2026-08-11 10:48:06 KSA]   │ 22. [Release] SpaceX IPO Largest Ever at $75B Raise; $1.77T Valuation Makes It 6th-Most Valuab
+[2026-08-11 10:48:06 KSA]   │ 23. [Breakthrough] DARPA AI-Piloted F-16 Flight Success Marks Autonomous Combat Aviation Milestone
+[2026-08-11 10:48:06 KSA]   │ 24. [Release] Meta Launches Muse Code AI Coding Assistant with Spark 1.2 Model
+[2026-08-11 10:48:06 KSA]   │ 25. [Policy] Anthropic Appoints Tino Cuéllar as First Global Affairs Chief
+[2026-08-11 10:48:06 KSA]   └─── 25 total signals ───
+
+[2026-08-11 10:48:06 KSA]   [Market Intel] Updating risk signals...
+[2026-08-11 10:48:19 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-11 10:48:19 KSA]   [Market Intel] Updating stock signals...
+[2026-08-11 10:48:34 KSA]   ✓ Batch 1: 8 stocks updated
+[2026-08-11 10:48:50 KSA]   ✗ No JSON in batch 2
+[2026-08-11 10:48:50 KSA]   ✓ Stock signals updated (8 tickers, invDataDate → 20260811)
+[2026-08-11 10:48:50 KSA]   Today is Tue — opportunity update runs on Sunday only
+[2026-08-11 10:48:50 KSA] ═══ RESCAN COMPLETE ═══
+
