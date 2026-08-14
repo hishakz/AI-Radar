@@ -4531,3 +4531,65 @@
 [2026-08-13 11:03:28 KSA]   Today is Thu — opportunity update runs on Sunday only
 [2026-08-13 11:03:28 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-14 10:57:19 KSA] Manual run triggered (--now flag)
+[2026-08-14 10:57:19 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-14 10:57:19 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-14 10:57:30 KSA]     ✓ 3 signals found
+[2026-08-14 10:57:32 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-14 10:57:42 KSA]     ✓ 3 signals found
+[2026-08-14 10:57:44 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-14 10:57:50 KSA]     ✓ 0 signals found
+[2026-08-14 10:57:52 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-14 10:58:03 KSA]     ✓ 3 signals found
+[2026-08-14 10:58:05 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-14 10:58:15 KSA]     ✓ 3 signals found
+[2026-08-14 10:58:17 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-14 10:58:24 KSA]     ✓ 3 signals found
+[2026-08-14 10:58:26 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-14 10:58:34 KSA]     ✓ 3 signals found
+[2026-08-14 10:58:36 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-14 10:58:46 KSA]     ✓ 3 signals found
+[2026-08-14 10:58:48 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-14 10:58:56 KSA]     ✓ 3 signals found
+[2026-08-14 10:58:58 KSA]   Total new signals: 24
+[2026-08-14 10:58:58 KSA]   Updating dashboard HTML...
+[2026-08-14 10:58:58 KSA]   ↩ 20 duplicate(s) skipped
+[2026-08-14 10:58:58 KSA]   ✚ 4 new signals to inject
+[2026-08-14 10:58:58 KSA]   ✓ 4 added, 20 skipped, 731 total signals
+[2026-08-14 10:58:58 KSA] 
+  ┌─── SCAN SUMMARY — August 14, 2026 ───
+[2026-08-14 10:58:58 KSA]   │ 01. [Release] NVIDIA Halos for Robotics: Safety Architecture for Industrial Deployment
+[2026-08-14 10:58:58 KSA]   │ 02. [Breakthrough] Jobsite Robotics Usage Triples with Focus on Inspection & Monitoring
+[2026-08-14 10:58:58 KSA]   │ 03. [Release] Avnet and Weston Robot Launch AI-Powered Autonomous Inspection Platform
+[2026-08-14 10:58:58 KSA]   │ 04. [Research] BuiltWorlds Releases 2026 Top Robotics Companies List: Jobsite Usage Rises Sharp
+[2026-08-14 10:58:58 KSA]   │ 05. [Funding] Procore to Acquire DroneDeploy for $845M to Add Drones and Robots
+[2026-08-14 10:58:58 KSA]   │ 06. [Breakthrough] DroneDeploy Autonomous Ground Robots Enter Beta in 2026
+[2026-08-14 10:58:58 KSA]   │ 07. [Breakthrough] AI-Powered Home Inspection Business Revolutionizes Property Assessments
+[2026-08-14 10:58:58 KSA]   │ 08. [Release] Spectora Launches New AI-Powered Inspection Reporting Features
+[2026-08-14 10:58:58 KSA]   │ 09. [Release] ASHI Announces First AI Day Virtual Learning Event
+[2026-08-14 10:58:58 KSA]   │ 10. [Policy] EU AI Act Transparency Rules Enforced: Chatbots Must Disclose AI Status
+[2026-08-14 10:58:58 KSA]   │ 11. [Policy] EU AI Act High-Risk Compliance Delayed to December 2027 and August 2028
+[2026-08-14 10:58:58 KSA]   │ 12. [Funding] European Commission Launches AI Gigafactories Call for €30 Billion Investment
+[2026-08-14 10:58:58 KSA]   │ 13. [Release] DeepSeek-V4-Pro-0813 Released
+[2026-08-14 10:58:58 KSA]   │ 14. [Release] Grok 4.6 by SpaceXAI Launches
+[2026-08-14 10:58:58 KSA]   │ 15. [Release] ByteDance Releases Seed 2.1 Turbo
+[2026-08-14 10:58:58 KSA]   │ 16. [Security] AI Cyberattacks Breach Major Organizations with Autonomous Agents in July 2026
+[2026-08-14 10:58:58 KSA]   │ 17. [Research] AI-Discovered Cybersecurity Vulnerabilities Double in 2026: 45,207 Flaws Recorde
+[2026-08-14 10:58:58 KSA]   │ 18. [Security] GitHub Copilot Vulnerability CVE-2025-53773 Enables Remote Code Execution
+[2026-08-14 10:58:58 KSA]   │ 19. [Funding] AI Infrastructure Dominates VC Funding: $197B in Mega-Rounds
+[2026-08-14 10:58:58 KSA]   │ 20. [Release] Anthropic IPO: October Listing Under Ticker ANTH, $47B Run-Rate Revenue
+[2026-08-14 10:58:58 KSA]   │ 21. [Funding] Valar Atomics Raises $1B Series B for Modular Nuclear Reactors
+[2026-08-14 10:58:58 KSA]   │ 22. [Research] AI 2027 Tracker Updates Predictions on Research Multiplier and Security Capabili
+[2026-08-14 10:58:58 KSA]   │ 23. [Policy] Phoenix Launches First Comprehensive Smart Cities Strategy Coordinating 150+ Tec
+[2026-08-14 10:58:58 KSA]   │ 24. [Breakthrough] FPT Partners with NVIDIA on AI-Powered Smart City Infrastructure Inspection
+[2026-08-14 10:58:58 KSA]   └─── 24 total signals ───
+
+[2026-08-14 10:58:58 KSA]   [Market Intel] Updating risk signals...
+[2026-08-14 10:59:12 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-14 10:59:12 KSA]   [Market Intel] Updating stock signals...
+[2026-08-14 10:59:26 KSA]   ✗ No JSON in batch 1
+[2026-08-14 10:59:43 KSA]   ✗ No JSON in batch 2
+[2026-08-14 10:59:43 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-14 10:59:43 KSA]   Today is Fri — opportunity update runs on Sunday only
+[2026-08-14 10:59:43 KSA] ═══ RESCAN COMPLETE ═══
+
