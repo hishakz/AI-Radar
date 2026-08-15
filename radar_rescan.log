@@ -4593,3 +4593,62 @@
 [2026-08-14 10:59:43 KSA]   Today is Fri — opportunity update runs on Sunday only
 [2026-08-14 10:59:43 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-15 10:07:55 KSA] Manual run triggered (--now flag)
+[2026-08-15 10:07:55 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-15 10:07:55 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-15 10:08:05 KSA]     ✓ 0 signals found
+[2026-08-15 10:08:07 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-15 10:08:16 KSA]     ✓ 3 signals found
+[2026-08-15 10:08:18 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-15 10:08:27 KSA]     ✓ 0 signals found
+[2026-08-15 10:08:29 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-15 10:08:38 KSA]     ✓ 3 signals found
+[2026-08-15 10:08:40 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-15 10:08:47 KSA]     ✓ 3 signals found
+[2026-08-15 10:08:49 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-15 10:08:55 KSA]     ✓ 3 signals found
+[2026-08-15 10:08:57 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-15 10:09:04 KSA]     ✓ 3 signals found
+[2026-08-15 10:09:06 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-15 10:09:14 KSA]     ✓ 3 signals found
+[2026-08-15 10:09:16 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-15 10:09:23 KSA]     ✓ 3 signals found
+[2026-08-15 10:09:25 KSA]   Total new signals: 21
+[2026-08-15 10:09:25 KSA]   Updating dashboard HTML...
+[2026-08-15 10:09:25 KSA]   ↩ 15 duplicate(s) skipped
+[2026-08-15 10:09:25 KSA]   ✚ 6 new signals to inject
+[2026-08-15 10:09:25 KSA]   ✓ 6 added, 15 skipped, 737 total signals
+[2026-08-15 10:09:25 KSA] 
+  ┌─── SCAN SUMMARY — August 15, 2026 ───
+[2026-08-15 10:09:25 KSA]   │ 01. [Research] Robotic Muscle Automation, AI Taking Infrastructure Sector By Storm This Year
+[2026-08-15 10:09:25 KSA]   │ 02. [Funding] Procore to Acquire DroneDeploy for $845M to Add Robots, Drones to Construction S
+[2026-08-15 10:09:25 KSA]   │ 03. [Breakthrough] Five Examples Showing The Growing Usage of Robotics in Construction
+[2026-08-15 10:09:25 KSA]   │ 04. [Breakthrough] AI-Powered Home Inspection Business: How AI Is Revolutionizing Property Inspecti
+[2026-08-15 10:09:25 KSA]   │ 05. [Release] HouseMe.ai Launches U.S. with Direct MLS Connections
+[2026-08-15 10:09:25 KSA]   │ 06. [Breakthrough] Digital Inspection Solutions Transform Construction Management
+[2026-08-15 10:09:25 KSA]   │ 07. [Policy] EU AI Act enforcement begins August 2, 2026 with new transparency rules and high
+[2026-08-15 10:09:25 KSA]   │ 08. [Policy] China enforces intelligent agent AI regulation policy on July 15, 2026
+[2026-08-15 10:09:25 KSA]   │ 09. [Policy] AI regulation fragmentation accelerates: US state laws, EU Act, UK principle-bas
+[2026-08-15 10:09:25 KSA]   │ 10. [Release] Google Releases Gemini 3.7 Flash
+[2026-08-15 10:09:25 KSA]   │ 11. [Release] DeepSeek Launches DeepSeek V4-Pro-0813
+[2026-08-15 10:09:25 KSA]   │ 12. [Release] Z.ai Releases GLM-5.3 Frontier Model
+[2026-08-15 10:09:25 KSA]   │ 13. [Security] Hugging Face AI Agent Breach: Autonomous Attack Exploits Langflow Vulnerability
+[2026-08-15 10:09:25 KSA]   │ 14. [Research] 45,207 Vulnerabilities Recorded in 2026 as AI Doubles Flaw Discovery Rate
+[2026-08-15 10:09:25 KSA]   │ 15. [Security] Autonomous AI Campaign Compromised Edge Infrastructure Across 55 Countries
+[2026-08-15 10:09:25 KSA]   │ 16. [Funding] AI Infrastructure Investment Surge: $197B in VC Funding Week of Aug 4-8, 2026
+[2026-08-15 10:09:25 KSA]   │ 17. [Funding] Record H1 2026 AI Venture Funding: $510B Investment, Anthropic & OpenAI Lead IPO
+[2026-08-15 10:09:25 KSA]   │ 18. [Funding] Private Capital Floods AI Projects in Emerging Markets, H1 2026 Sees Record Deal
+[2026-08-15 10:09:25 KSA]   │ 19. [Research] Smarter and Healthier Cities: AI-Driven Urban Transformation Study
+[2026-08-15 10:09:25 KSA]   │ 20. [Research] AI 2027 Predictions Tracker: 19 of 53 Forecasts Confirmed by July 2026
+[2026-08-15 10:09:25 KSA]   │ 21. [Research] Smart City IoT Connections Projected to Exceed 122 Million by 2027
+[2026-08-15 10:09:25 KSA]   └─── 21 total signals ───
+
+[2026-08-15 10:09:25 KSA]   [Market Intel] Updating risk signals...
+[2026-08-15 10:09:39 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-15 10:09:39 KSA]   [Market Intel] Updating stock signals...
+[2026-08-15 10:09:54 KSA]   ✗ No JSON in batch 1
+[2026-08-15 10:10:09 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-08-15 10:10:11 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260815)
+[2026-08-15 10:10:11 KSA]   Today is Sat — opportunity update runs on Sunday only
+[2026-08-15 10:10:11 KSA] ═══ RESCAN COMPLETE ═══
+
