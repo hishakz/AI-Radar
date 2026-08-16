@@ -4652,3 +4652,67 @@
 [2026-08-15 10:10:11 KSA]   Today is Sat — opportunity update runs on Sunday only
 [2026-08-15 10:10:11 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-16 10:09:14 KSA] Manual run triggered (--now flag)
+[2026-08-16 10:09:14 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-16 10:09:14 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-16 10:09:29 KSA]     ✓ 3 signals found
+[2026-08-16 10:09:31 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-16 10:09:38 KSA]     ✓ 3 signals found
+[2026-08-16 10:09:40 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-16 10:09:50 KSA]     ✓ 0 signals found
+[2026-08-16 10:09:52 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-16 10:09:58 KSA]     ✓ 3 signals found
+[2026-08-16 10:10:00 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-16 10:10:09 KSA]     ✓ 3 signals found
+[2026-08-16 10:10:11 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-16 10:10:16 KSA]     ✓ 3 signals found
+[2026-08-16 10:10:18 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-16 10:10:24 KSA]     ✓ 3 signals found
+[2026-08-16 10:10:26 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-16 10:10:33 KSA]     ✓ 3 signals found
+[2026-08-16 10:10:35 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-16 10:10:44 KSA]     ✓ 3 signals found
+[2026-08-16 10:10:46 KSA]   Total new signals: 24
+[2026-08-16 10:10:46 KSA]   Updating dashboard HTML...
+[2026-08-16 10:10:46 KSA]   ↩ 19 duplicate(s) skipped
+[2026-08-16 10:10:46 KSA]   ✚ 5 new signals to inject
+[2026-08-16 10:10:46 KSA]   ✓ 5 added, 19 skipped, 742 total signals
+[2026-08-16 10:10:46 KSA] 
+  ┌─── SCAN SUMMARY — August 16, 2026 ───
+[2026-08-16 10:10:46 KSA]   │ 01. [Release] KaarbonTech Launches SMART Shot AI for Continuous Highway Infrastructure Monitor
+[2026-08-16 10:10:46 KSA]   │ 02. [Breakthrough] Abu Dhabi Municipality Deploys AI-Powered Robotic Dog for Continuous Public Park
+[2026-08-16 10:10:46 KSA]   │ 03. [Policy] EU AI Act Enforcement Enables High-Risk Autonomous Systems for Infrastructure Mo
+[2026-08-16 10:10:46 KSA]   │ 04. [Research] BuiltWorlds 2026 Robotics List: Jobsite Usage Rises 3-Fold with Spatial AI Advan
+[2026-08-16 10:10:46 KSA]   │ 05. [Breakthrough] DroneDeploy Launches AI Inspection Agents; Safety AI Identifies 90,000+ Risks
+[2026-08-16 10:10:46 KSA]   │ 06. [Funding] Procore Acquires DroneDeploy for $100M+ to Strengthen AI Construction Platform
+[2026-08-16 10:10:46 KSA]   │ 07. [Breakthrough] AI-Powered Home Inspection Business: How AI Is Revolutionizing Property Inspecti
+[2026-08-16 10:10:46 KSA]   │ 08. [Release] Spectora Launches AI-Powered Inspection Reporting Features for Home Inspectors
+[2026-08-16 10:10:46 KSA]   │ 09. [Research] Top 10 AI Tools For Home Inspection Businesses In 2026
+[2026-08-16 10:10:46 KSA]   │ 10. [Policy] EU AI Act enforcement begins with transparency rules on August 2, 2026
+[2026-08-16 10:10:46 KSA]   │ 11. [Policy] China enforces first AI agents regulation on July 15, 2026
+[2026-08-16 10:10:46 KSA]   │ 12. [Policy] EU delays high-risk AI system compliance deadlines; transparency rules proceed A
+[2026-08-16 10:10:46 KSA]   │ 13. [Release] Google releases Gemini 3.7 Flash, newest AI model
+[2026-08-16 10:10:46 KSA]   │ 14. [Release] Qwen releases Qwen3.8-27B model
+[2026-08-16 10:10:46 KSA]   │ 15. [Policy] OpenAI files motion in Apple trade secrets lawsuit
+[2026-08-16 10:10:46 KSA]   │ 16. [Security] AI Finding Twice as Many Cyber Flaws in 2026 as It Did in 2025
+[2026-08-16 10:10:46 KSA]   │ 17. [Security] CVE-2025-53773: Hidden Prompt Injection in GitHub Copilot Enables Remote Code Ex
+[2026-08-16 10:10:46 KSA]   │ 18. [Policy] AI Red-Teaming Becomes Fastest-Growing Cybersecurity Job in 2026
+[2026-08-16 10:10:46 KSA]   │ 19. [Funding] OpenAI Files for IPO, Targets September 2026 Listing
+[2026-08-16 10:10:46 KSA]   │ 20. [Funding] Anthropic Plans Late September or Early October IPO at ~$1T Valuation
+[2026-08-16 10:10:46 KSA]   │ 21. [Funding] Anthropic Reports Q2 2026 Revenue $10.9B, First Operating Profit $559M
+[2026-08-16 10:10:46 KSA]   │ 22. [Breakthrough] Smart Cities Market Reaches $189B: AI Deployment Shifts From Pilots to Operation
+[2026-08-16 10:10:46 KSA]   │ 23. [Research] 65% of Cities to Deploy AI Agents by 2027: IDC FutureScape Report
+[2026-08-16 10:10:46 KSA]   │ 24. [Research] AI 2027 Forecast: Superhuman AI Research and 100M H100e Compute by Year-End
+[2026-08-16 10:10:46 KSA]   └─── 24 total signals ───
+
+[2026-08-16 10:10:46 KSA]   [Market Intel] Updating risk signals...
+[2026-08-16 10:10:59 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-16 10:10:59 KSA]   [Market Intel] Updating stock signals...
+[2026-08-16 10:11:14 KSA]   ✗ No JSON in batch 1
+[2026-08-16 10:11:28 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-08-16 10:11:30 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260816)
+[2026-08-16 10:11:30 KSA]   Sunday: running weekly opportunity vector update...
+[2026-08-16 10:11:30 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-08-16 10:11:46 KSA]   ✗ No JSON in opps response — keeping existing
+[2026-08-16 10:11:46 KSA] ═══ RESCAN COMPLETE ═══
+
