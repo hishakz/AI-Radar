@@ -4716,3 +4716,63 @@
 [2026-08-16 10:11:46 KSA]   ✗ No JSON in opps response — keeping existing
 [2026-08-16 10:11:46 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-17 10:32:43 KSA] Manual run triggered (--now flag)
+[2026-08-17 10:32:43 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-17 10:32:43 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-17 10:32:56 KSA]     ✓ 1 signals found
+[2026-08-17 10:32:58 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-17 10:33:06 KSA]     ✓ 3 signals found
+[2026-08-17 10:33:08 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-17 10:33:17 KSA]     ✓ 0 signals found
+[2026-08-17 10:33:19 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-17 10:33:27 KSA]     ✓ 3 signals found
+[2026-08-17 10:33:29 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-17 10:33:46 KSA]     ✓ 3 signals found
+[2026-08-17 10:33:48 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-17 10:33:58 KSA]     ✓ 3 signals found
+[2026-08-17 10:34:00 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-17 10:34:10 KSA]     ✓ 3 signals found
+[2026-08-17 10:34:12 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-17 10:34:21 KSA]     ✓ 3 signals found
+[2026-08-17 10:34:23 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-17 10:34:35 KSA]     ✓ 3 signals found
+[2026-08-17 10:34:37 KSA]   Total new signals: 22
+[2026-08-17 10:34:37 KSA]   Updating dashboard HTML...
+[2026-08-17 10:34:37 KSA]   ↩ 13 duplicate(s) skipped
+[2026-08-17 10:34:37 KSA]   ✚ 9 new signals to inject
+[2026-08-17 10:34:37 KSA]   ✓ 9 added, 13 skipped, 751 total signals
+[2026-08-17 10:34:37 KSA] 
+  ┌─── SCAN SUMMARY — August 17, 2026 ───
+[2026-08-17 10:34:37 KSA]   │ 01. [Breakthrough] Autonomous a2z Reaches 310,000 Miles Urban Autonomous Driving in Seoul
+[2026-08-17 10:34:37 KSA]   │ 02. [Breakthrough] BuiltWorlds Releases 2026 Top Robotics Companies List Showing Jobsite Usage Rise
+[2026-08-17 10:34:37 KSA]   │ 03. [Release] DroneDeploy Launches 3 AI Agents; Safety AI Identifies 90,000+ Safety Risks
+[2026-08-17 10:34:37 KSA]   │ 04. [Release] Procore Acquires DroneDeploy to Strengthen AI Construction Strategy
+[2026-08-17 10:34:37 KSA]   │ 05. [Breakthrough] AI-Powered Home Inspection Business Revolutionizing Property Assessments
+[2026-08-17 10:34:37 KSA]   │ 06. [Release] Spectora Launches AI-Powered Inspection Reporting Features in May 2026
+[2026-08-17 10:34:37 KSA]   │ 07. [Release] ASHI Announces First AI Day Event for Home Inspectors on August 31, 2026
+[2026-08-17 10:34:37 KSA]   │ 08. [Policy] EU AI Office Issues €47 Million in First Enforcement Fines Against Three Compani
+[2026-08-17 10:34:37 KSA]   │ 09. [Policy] EU AI Act Enforcement Era Begins with Full Compliance Deadlines and Transparency
+[2026-08-17 10:34:37 KSA]   │ 10. [Policy] China's Cyberspace Administration Extends AI Content Labeling Requirements to Au
+[2026-08-17 10:34:37 KSA]   │ 11. [Release] GLM-5.3 by Z.ai Released August 14, 2026
+[2026-08-17 10:34:37 KSA]   │ 12. [Release] OpenAI Launches GPT-5.6-Cyber with 95% Advanced Security Query Response
+[2026-08-17 10:34:37 KSA]   │ 13. [Breakthrough] Gemini Reaches 1 Billion Monthly Active Users, Matching ChatGPT Milestone
+[2026-08-17 10:34:37 KSA]   │ 14. [Release] OpenAI Launches GPT-5.6-Cyber with Reduced Safeguards for Exploit Development
+[2026-08-17 10:34:37 KSA]   │ 15. [Policy] California Launches AI Cyber Defense Program with AI Cybersecurity Officers
+[2026-08-17 10:34:37 KSA]   │ 16. [Security] Critical Vulnerability Disclosed in AI Orchestration Platform Ruflo
+[2026-08-17 10:34:37 KSA]   │ 17. [Funding] Record AI Infrastructure Investment Week: $197B in VC Funding with $2.85B to Fir
+[2026-08-17 10:34:37 KSA]   │ 18. [Release] Anthropic IPO Expected October 2026 with $2 Trillion Valuation Target
+[2026-08-17 10:34:37 KSA]   │ 19. [Funding] Zenity Raises $125M Series C for AI Agent Security Infrastructure
+[2026-08-17 10:34:37 KSA]   │ 20. [Research] AI Expert Predictions for 2027: Critical Milestones Confirmed or Ahead of Schedu
+[2026-08-17 10:34:37 KSA]   │ 21. [Breakthrough] Smart City IoT Connections Surge: 122 Million Active Links Expected by 2027
+[2026-08-17 10:34:37 KSA]   │ 22. [Breakthrough] Digital Twin Technology Transforms Smart City Infrastructure Planning Through 20
+[2026-08-17 10:34:37 KSA]   └─── 22 total signals ───
+
+[2026-08-17 10:34:37 KSA]   [Market Intel] Updating risk signals...
+[2026-08-17 10:34:49 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-17 10:34:49 KSA]   [Market Intel] Updating stock signals...
+[2026-08-17 10:35:04 KSA]   ✗ No JSON in batch 1
+[2026-08-17 10:35:17 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-08-17 10:35:19 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260817)
+[2026-08-17 10:35:19 KSA]   Today is Mon — opportunity update runs on Sunday only
+[2026-08-17 10:35:19 KSA] ═══ RESCAN COMPLETE ═══
+
