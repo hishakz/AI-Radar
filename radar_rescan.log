@@ -4776,3 +4776,63 @@
 [2026-08-17 10:35:19 KSA]   Today is Mon — opportunity update runs on Sunday only
 [2026-08-17 10:35:19 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-18 10:20:29 KSA] Manual run triggered (--now flag)
+[2026-08-18 10:20:29 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-18 10:20:29 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-18 10:20:54 KSA]     ✓ 1 signals found
+[2026-08-18 10:20:56 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-18 10:21:10 KSA]     ✓ 3 signals found
+[2026-08-18 10:21:12 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-18 10:21:34 KSA]     ✓ 0 signals found
+[2026-08-18 10:21:36 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-18 10:21:48 KSA]     ✓ 3 signals found
+[2026-08-18 10:21:50 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-18 10:22:04 KSA]     ✓ 3 signals found
+[2026-08-18 10:22:06 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-18 10:22:10 KSA]     ✓ 3 signals found
+[2026-08-18 10:22:12 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-18 10:22:20 KSA]     ✓ 3 signals found
+[2026-08-18 10:22:22 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-18 10:22:29 KSA]     ✓ 3 signals found
+[2026-08-18 10:22:31 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-18 10:22:40 KSA]     ✓ 3 signals found
+[2026-08-18 10:22:42 KSA]   Total new signals: 22
+[2026-08-18 10:22:42 KSA]   Updating dashboard HTML...
+[2026-08-18 10:22:42 KSA]   ↩ 17 duplicate(s) skipped
+[2026-08-18 10:22:42 KSA]   ✚ 5 new signals to inject
+[2026-08-18 10:22:42 KSA]   ✓ 5 added, 17 skipped, 756 total signals
+[2026-08-18 10:22:42 KSA] 
+  ┌─── SCAN SUMMARY — August 18, 2026 ───
+[2026-08-18 10:22:42 KSA]   │ 01. [Research] Artificial Intelligence Transforming Urban Planning and Public Services
+[2026-08-18 10:22:42 KSA]   │ 02. [Research] BuiltWorlds 2026 Robotics Report: Jobsite Automation Usage Tripled
+[2026-08-18 10:22:42 KSA]   │ 03. [Funding] Procore Acquires DroneDeploy for $845M Strategic Deal
+[2026-08-18 10:22:42 KSA]   │ 04. [Breakthrough] DroneDeploy Autonomous Ground Robots Entering Beta 2026
+[2026-08-18 10:22:42 KSA]   │ 05. [Breakthrough] AI-Powered Home Inspection Business: How AI Is Revolutionizing Property Inspecti
+[2026-08-18 10:22:42 KSA]   │ 06. [Research] ASHI Hosts First AI Day: August 31, 2026 Virtual Learning Event
+[2026-08-18 10:22:42 KSA]   │ 07. [Research] SoftwareWorld Updates AI Home Inspection Platform Reviews
+[2026-08-18 10:22:42 KSA]   │ 08. [Policy] California lawmakers advance AI regulation bills on auditing, call centers, empl
+[2026-08-18 10:22:42 KSA]   │ 09. [Policy] EU AI Act transparency requirements enforce as of August 2, 2026
+[2026-08-18 10:22:42 KSA]   │ 10. [Policy] AI regulation shifts from debate to enforcement amid cyber incidents and pressur
+[2026-08-18 10:22:42 KSA]   │ 11. [Release] Google Releases Gemini 3.7 Flash
+[2026-08-18 10:22:42 KSA]   │ 12. [Release] Qwen Releases Qwen 3.8-27B Model
+[2026-08-18 10:22:42 KSA]   │ 13. [Release] Z.ai Releases GLM-5.3 Frontier Model
+[2026-08-18 10:22:42 KSA]   │ 14. [Security] AI Security Failures, Active Exploits, and Breaches Define the Week in August 20
+[2026-08-18 10:22:42 KSA]   │ 15. [Release] OpenAI Launches GPT-5.6-Cyber with Reduced Safeguards for Exploit Development
+[2026-08-18 10:22:42 KSA]   │ 16. [Security] Critical Ruflo AI Orchestration Platform Vulnerability Disclosed
+[2026-08-18 10:22:42 KSA]   │ 17. [Funding] OpenAI raises record $122B at $852B valuation, preparing Q4 2026 IPO
+[2026-08-18 10:22:42 KSA]   │ 18. [Funding] Anthropic confidentially files S-1 for IPO, eyes October 2026 listing
+[2026-08-18 10:22:42 KSA]   │ 19. [Funding] DeepSeek seeks second funding round at $71-74B valuation ahead of IPO
+[2026-08-18 10:22:42 KSA]   │ 20. [Breakthrough] Grok 4.6 Launches with 500K Context Window, Matching GPT-5.6 Performance
+[2026-08-18 10:22:42 KSA]   │ 21. [Policy] AI Safety Index Grades All Top Labs Below C+; Anthropic Leads at C+
+[2026-08-18 10:22:42 KSA]   │ 22. [Research] Smart Cities Cross Operational Threshold: AI Traffic Cuts Congestion 25%, Waste 
+[2026-08-18 10:22:42 KSA]   └─── 22 total signals ───
+
+[2026-08-18 10:22:42 KSA]   [Market Intel] Updating risk signals...
+[2026-08-18 10:22:56 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-18 10:22:56 KSA]   [Market Intel] Updating stock signals...
+[2026-08-18 10:23:11 KSA]   ✗ No JSON in batch 1
+[2026-08-18 10:23:24 KSA]   ✗ No JSON in batch 2
+[2026-08-18 10:23:24 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-18 10:23:24 KSA]   Today is Tue — opportunity update runs on Sunday only
+[2026-08-18 10:23:24 KSA] ═══ RESCAN COMPLETE ═══
+
