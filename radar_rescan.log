@@ -4836,3 +4836,63 @@
 [2026-08-18 10:23:24 KSA]   Today is Tue — opportunity update runs on Sunday only
 [2026-08-18 10:23:24 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-19 10:21:06 KSA] Manual run triggered (--now flag)
+[2026-08-19 10:21:06 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-19 10:21:06 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-19 10:21:11 KSA]     ✓ 2 signals found
+[2026-08-19 10:21:13 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-19 10:21:22 KSA]     ✓ 1 signals found
+[2026-08-19 10:21:24 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-19 10:21:35 KSA]     ✓ 1 signals found
+[2026-08-19 10:21:37 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-19 10:21:44 KSA]     ✓ 3 signals found
+[2026-08-19 10:21:46 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-19 10:21:52 KSA]     ✓ 3 signals found
+[2026-08-19 10:21:54 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-19 10:21:59 KSA]     ✓ 3 signals found
+[2026-08-19 10:22:01 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-19 10:22:07 KSA]     ✓ 3 signals found
+[2026-08-19 10:22:09 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-19 10:22:19 KSA]     ✓ 3 signals found
+[2026-08-19 10:22:21 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-19 10:22:28 KSA]     ✓ 3 signals found
+[2026-08-19 10:22:30 KSA]   Total new signals: 22
+[2026-08-19 10:22:30 KSA]   Updating dashboard HTML...
+[2026-08-19 10:22:30 KSA]   ↩ 17 duplicate(s) skipped
+[2026-08-19 10:22:30 KSA]   ✚ 5 new signals to inject
+[2026-08-19 10:22:30 KSA]   ✓ 5 added, 17 skipped, 761 total signals
+[2026-08-19 10:22:30 KSA] 
+  ┌─── SCAN SUMMARY — August 19, 2026 ───
+[2026-08-19 10:22:30 KSA]   │ 01. [Research] AI for Urban Planning and Intelligent Public Services Published
+[2026-08-19 10:22:30 KSA]   │ 02. [Release] Abu Dhabi Smart Inspection Robot Deployment in Public Parks 2026
+[2026-08-19 10:22:30 KSA]   │ 03. [Funding] Gravis Robotics Raises $200M Series A from SoftBank for Autonomous Heavy Equipme
+[2026-08-19 10:22:30 KSA]   │ 04. [Policy] FAO and Wageningen Researchers Review Broad Range of AI Food Safety Applications
+[2026-08-19 10:22:30 KSA]   │ 05. [Release] ASHI Launches First AI Day for Home Inspectors on August 31, 2026
+[2026-08-19 10:22:30 KSA]   │ 06. [Breakthrough] AI-Powered Home Inspection Technologies Transform Industry with Drones and Therm
+[2026-08-19 10:22:30 KSA]   │ 07. [Release] Spectora Launches AI-Powered Inspection Reporting Features in May 2026
+[2026-08-19 10:22:30 KSA]   │ 08. [Policy] EU Commission Begins Enforcing AI Act with New Transparency Requirements
+[2026-08-19 10:22:30 KSA]   │ 09. [Policy] FDA Issues First AI Medical Device Compliance Enforcement Letters in August 2026
+[2026-08-19 10:22:30 KSA]   │ 10. [Policy] Biden-Harris Administration Establishes AI Impact Assessment Requirements for Fe
+[2026-08-19 10:22:30 KSA]   │ 11. [Release] Google releases Gemini 3.7 Flash
+[2026-08-19 10:22:30 KSA]   │ 12. [Release] Qwen releases Qwen3.8-27B model
+[2026-08-19 10:22:30 KSA]   │ 13. [Release] Z.ai releases GLM-5.3 frontier model
+[2026-08-19 10:22:30 KSA]   │ 14. [Security] AI Security Failures and Exploits Define Week in August 2026
+[2026-08-19 10:22:30 KSA]   │ 15. [Release] OpenAI Launches GPT-5.6-Cyber with Reduced Safeguards for Exploit Development
+[2026-08-19 10:22:30 KSA]   │ 16. [Security] Critical Ruflo AI Orchestration Platform Vulnerability Disclosed
+[2026-08-19 10:22:30 KSA]   │ 17. [Funding] OpenAI Targeting September 2026 IPO with S-1 Prospectus Expected Soon
+[2026-08-19 10:22:30 KSA]   │ 18. [Funding] AI Infrastructure Dominance: $197B VC Investment in Week of August 4-8 with 40% 
+[2026-08-19 10:22:30 KSA]   │ 19. [Funding] Maharashtra Launches ₹500 Crore AI Startup Fund; Indian AI Startups Raise $1.067
+[2026-08-19 10:22:30 KSA]   │ 20. [Research] AI 2027 Tracker: 36% of Predictions Confirmed as of July 2026
+[2026-08-19 10:22:30 KSA]   │ 21. [Research] Global Smart City Tech Spending Hits $189B in 2025, Up 22%
+[2026-08-19 10:22:30 KSA]   │ 22. [Breakthrough] AI Vision Inspection Market to Reach $49B by 2027, Growing 23% CAGR
+[2026-08-19 10:22:30 KSA]   └─── 22 total signals ───
+
+[2026-08-19 10:22:30 KSA]   [Market Intel] Updating risk signals...
+[2026-08-19 10:22:45 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-19 10:22:45 KSA]   [Market Intel] Updating stock signals...
+[2026-08-19 10:23:01 KSA]   ✗ No JSON in batch 1
+[2026-08-19 10:23:16 KSA]   ✗ No JSON in batch 2
+[2026-08-19 10:23:16 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-19 10:23:16 KSA]   Today is Wed — opportunity update runs on Sunday only
+[2026-08-19 10:23:16 KSA] ═══ RESCAN COMPLETE ═══
+
