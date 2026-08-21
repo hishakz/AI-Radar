@@ -4957,3 +4957,63 @@
 [2026-08-20 10:26:02 KSA]   Today is Thu — opportunity update runs on Sunday only
 [2026-08-20 10:26:02 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-21 10:24:09 KSA] Manual run triggered (--now flag)
+[2026-08-21 10:24:09 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-21 10:24:09 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-21 10:24:22 KSA]     ✓ 0 signals found
+[2026-08-21 10:24:24 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-21 10:24:35 KSA]     ✓ 3 signals found
+[2026-08-21 10:24:37 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-21 10:24:47 KSA]     ✓ 3 signals found
+[2026-08-21 10:24:49 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-21 10:25:08 KSA]     ✓ 1 signals found
+[2026-08-21 10:25:10 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-21 10:25:16 KSA]     ✓ 3 signals found
+[2026-08-21 10:25:18 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-21 10:25:23 KSA]     ✓ 3 signals found
+[2026-08-21 10:25:25 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-21 10:25:31 KSA]     ✓ 3 signals found
+[2026-08-21 10:25:33 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-21 10:25:40 KSA]     ✓ 3 signals found
+[2026-08-21 10:25:42 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-21 10:25:51 KSA]     ✓ 3 signals found
+[2026-08-21 10:25:53 KSA]   Total new signals: 22
+[2026-08-21 10:25:53 KSA]   Updating dashboard HTML...
+[2026-08-21 10:25:53 KSA]   ↩ 20 duplicate(s) skipped
+[2026-08-21 10:25:53 KSA]   ✚ 2 new signals to inject
+[2026-08-21 10:25:53 KSA]   ✓ 2 added, 20 skipped, 770 total signals
+[2026-08-21 10:25:53 KSA] 
+  ┌─── SCAN SUMMARY — August 21, 2026 ───
+[2026-08-21 10:25:53 KSA]   │ 01. [Research] Builtworld Reports Construction Robotics Usage More Than Doubled to 60% in 2026
+[2026-08-21 10:25:53 KSA]   │ 02. [Breakthrough] Caterpillar Partners with Nvidia to Advance AI Integration in Construction Machi
+[2026-08-21 10:25:53 KSA]   │ 03. [Breakthrough] DroneDeploy Autonomous Ground Robots Enter Beta; Expanding Jobsite Inspection Ca
+[2026-08-21 10:25:53 KSA]   │ 04. [Breakthrough] Food Inspection Technology: AI Systems Transform Plant Operations in 2026
+[2026-08-21 10:25:53 KSA]   │ 05. [Breakthrough] AI Computer Vision Food Quality Inspection: 99%+ Accuracy at Production Speed
+[2026-08-21 10:25:53 KSA]   │ 06. [Policy] USDA Pushes AI Automation Adoption for Food Safety Modernization Initiative
+[2026-08-21 10:25:53 KSA]   │ 07. [Research] ASHI Launches First AI Day Virtual Learning Event August 31, 2026
+[2026-08-21 10:25:53 KSA]   │ 08. [Policy] EU AI Act Enforcement Begins August 2, New Transparency Rules Apply
+[2026-08-21 10:25:53 KSA]   │ 09. [Policy] FDA Issues First AI Medical Device Enforcement Letters in August 2026
+[2026-08-21 10:25:53 KSA]   │ 10. [Policy] US Federal AI Governance: Biden Executive Order on AI Impact Assessments
+[2026-08-21 10:25:53 KSA]   │ 11. [Release] OpenAI Updates GPT-5.6 in ChatGPT with Sol Improvements and Luna Expansion
+[2026-08-21 10:25:53 KSA]   │ 12. [Release] Anthropic Makes Claude Sonnet 5 Introductory Pricing Permanent
+[2026-08-21 10:25:53 KSA]   │ 13. [Release] Z.ai Releases GLM-5.3 Frontier Model
+[2026-08-21 10:25:53 KSA]   │ 14. [Security] Data breaches surge in 2026 as AI plays a growing role in cyberattacks
+[2026-08-21 10:25:53 KSA]   │ 15. [Security] AI Security Failures, Active Exploits, and Breaches Define the Week in August 20
+[2026-08-21 10:25:53 KSA]   │ 16. [Research] Top AI Security Vulnerabilities to Watch out for in 2026
+[2026-08-21 10:25:53 KSA]   │ 17. [Funding] AI Infrastructure Dominates VC Funding in August 2026
+[2026-08-21 10:25:53 KSA]   │ 18. [Funding] AI Investment Roundup August 2026: Record Funding Concentration
+[2026-08-21 10:25:53 KSA]   │ 19. [Release] Anthropic Lining Up Investor Meetings for October IPO Listing
+[2026-08-21 10:25:53 KSA]   │ 20. [Research] AI 2027 Forecast Progress Report: 65% Pace Tracked Through 2026
+[2026-08-21 10:25:53 KSA]   │ 21. [Breakthrough] FPT Launches Enhanced AI-Powered Smart City Inspection Solution with NVIDIA
+[2026-08-21 10:25:53 KSA]   │ 22. [Breakthrough] AI-Driven Infrastructure Recognition System Deployed in Taiwan Smart Cities
+[2026-08-21 10:25:53 KSA]   └─── 22 total signals ───
+
+[2026-08-21 10:25:53 KSA]   [Market Intel] Updating risk signals...
+[2026-08-21 10:26:09 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-21 10:26:09 KSA]   [Market Intel] Updating stock signals...
+[2026-08-21 10:26:23 KSA]   ✗ No JSON in batch 1
+[2026-08-21 10:26:39 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-08-21 10:26:41 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260821)
+[2026-08-21 10:26:41 KSA]   Today is Fri — opportunity update runs on Sunday only
+[2026-08-21 10:26:41 KSA] ═══ RESCAN COMPLETE ═══
+

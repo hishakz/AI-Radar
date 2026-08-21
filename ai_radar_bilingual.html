@@ -725,6 +725,15 @@ const DT_ROWS=[
 // ════════════════════════════════════════════════════════════════
 const AI_SIGNALS=[
 
+  // ══ AUTO-RESCAN AUGUST 21, 2026 ══
+  {domains:["construction"],url:'https://canada.constructconnect.com/dcn/news/technology/2026/08/growth-of-construction-robotics-usage-and-spending-is-headed-upwards',
+   en:{t:'Builtworld Reports Construction Robotics Usage More Than Doubled to 60% in 2026',cat:'Research',d:'19 hours ago AUTO',s:'According to Builtworld\'s 2026 Annual Equipment & Robotics Benchmarking Report, contractor robotics adoption jumped from 29% in 2025 to over 60% in 2026. The report highlights expansion in inspection, excavation, and drilling robotics as key growth areas in the industry.'},
+   ar:{t:'Builtworld Reports Construction Robotics Usage More Than Doubled to 60% in 2026',cat:'Research',d:'19 hours ago تلقائي',s:'According to Builtworld\'s 2026 Annual Equipment & Robotics Benchmarking Report, contractor robotics adoption jumped from 29% in 2025 to over 60% in 2026. The report highlights expansion in inspection, excavation, and drilling robotics as key growth areas in the industry.'}},
+  {domains:["security"],url:'https://www.cnbc.com/2026/08/14/data-breaches-surge-2026-ai-cyberattacks.html',
+   en:{t:'Data breaches surge in 2026 as AI plays a growing role in cyberattacks',cat:'Security',d:'1 week ago AUTO',s:'Between March 2025 and February 2026, one in four breaches was AI-enabled, up 56% from a year earlier. Over 471 million victim notices were associated with data compromises in the first half of 2026.'},
+   ar:{t:'Data breaches surge in 2026 as AI plays a growing role in cyberattacks',cat:'Security',d:'1 week ago تلقائي',s:'Between March 2025 and February 2026, one in four breaches was AI-enabled, up 56% from a year earlier. Over 471 million victim notices were associated with data compromises in the first half of 2026.'}},
+
+
   // ══ AUTO-RESCAN AUGUST 20, 2026 ══
   {domains:["smart-city"],url:'https://oxmaint.com/article/ai-vision-inspection-maintenance',
    en:{t:'AI Vision Inspection Systems Run On-Device Without Cloud for 2026 Deployments',cat:'Breakthrough',d:'April 30, 2026 AUTO',s:'The 2026 generation of AI vision models now runs directly on smartphone hardware with no cloud dependency, processing inspection images in under 2 seconds—enabling autonomous inspection monitoring without connectivity constraints.'},
@@ -3776,13 +3785,13 @@ let INV_STOCKS_EN = [
   { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'Latest data loading...' },
   { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'Latest data loading...' },
   { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'Latest data loading...' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'Q2 revenue surged 112% YoY to $2.6B; stock dropped 12% on debt and capex concerns despite strong guidance.' },
-  { ticker:'IBM', name:'IBM', signal:'watch', why:'Stock stabilizes at $232 despite July 25% plunge from Q2 revenue miss; quantum advances provide modest support.' },
-  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'Stock falls 4% amid California child safety trial ($1.4T damages risk) and $145B AI capex concerns.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Stock rises 3.5% on Cybercab Austin launch evidence (80 wireless chargers); Tesla Semi deployment confirmed.' },
-  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'Q2 xAI capex surged to $15.8B; stock volatile after IPO. Grok 4.6 release supports AI growth narrative.' },
-  { ticker:'OPENAI', name:'OpenAI (Pre-IPO)', signal:'ipo', why:'Revenue run rate exceeds $40B, annualizing from $20B; IPO delayed to 2027 amid structural changes.' },
-  { ticker:'ANTH', name:'Anthropic (Pre-IPO)', signal:'ipo', why:'Q2 revenue surged 14x to $11.5B, overtaking OpenAI; targeting $2T October IPO valuation.' }
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'CoreWeave signs multibillion-dollar AI infrastructure deal with Hudson River Trading, positioning itself as a leading GPU cloud provider amid surging enterprise demand.' },
+  { ticker:'IBM', name:'IBM', signal:'watch', why:'IBM advances quantum computing with new cryogenic systems and strengthens enterprise AI partnerships with OpenAI for hybrid cloud solutions.' },
+  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'Meta faces child safety trial setback while balancing massive AI capex; stock down 4% amid legal pressures despite strong compute opportunity.' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Tesla up 4.2% today on Cybercab development progress, though Nevada limits robotaxi permits to 10 vehicles versus requested 5,000.' },
+  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'SpaceX\'s xAI reached $100B valuation in 2.3 years (faster than any AI startup); Grok 4.6 now available via Amazon Bedrock.' },
+  { ticker:'OPENAI', name:'OpenAI (Pre-IPO)', signal:'ipo', why:'OpenAI launches ChatGPT for Teens with safety guardrails; pre-IPO company shows growth in enterprise adoption despite Musk lawsuit ongoing.' },
+  { ticker:'ANTH', name:'Anthropic (Pre-IPO)', signal:'ipo', why:'Anthropic\'s Q2 revenue surged 1,400% YoY to $11.5B; October IPO expected at $800B valuation with annualized revenue exceeding $65B.' }
 ];
 // ══ INV-STOCKS-EN-END ══
 
@@ -3796,13 +3805,13 @@ let INV_STOCKS_AR = [
   { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'جارٍ تحميل البيانات...' },
   { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'جارٍ تحميل البيانات...' },
   { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'جارٍ تحميل البيانات...' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'ارتفع إيراد الربع الثاني 112% سنوياً إلى 2.6 مليار؛ انخفضت الأسهم 12% بسبب مخاوف الديون والنفقات.' },
-  { ticker:'IBM', name:'IBM', signal:'watch', why:'تتعافى الأسهم عند 232 دولار رغم هبوط يوليو 25% من تفويت توقعات الربع الثاني.' },
-  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'انخفضت الأسهم 4% وسط محاكمة سلامة الأطفال بقيمة 1.4 تريليون دولار ومخاوف النفقات.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'ارتفعت الأسهم 3.5% على دليل إطلاق تطبيق Cybercab في أوستن و 500 شاحنة Semi.' },
-  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'ارتفعت نفقات xAI إلى 15.8 مليار دولار؛ الأسهم متقلبة بعد الإطلاق العام.' },
-  { ticker:'OPENAI', name:'OpenAI (ما قبل الاكتتاب)', signal:'ipo', why:'معدل الإيراد يتجاوز 40 مليار دولار؛ تأجيل الاكتتاب إلى 2027 وسط التغييرات الهيكلية.' },
-  { ticker:'ANTH', name:'Anthropic (ما قبل الاكتتاب)', signal:'ipo', why:'ارتفع إيراد الربع الثاني 14 مرة إلى 11.5 مليار، متجاوزاً OpenAI; استهداف اكتتاب 2 تريليون.' }
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'وقعت CoreWeave صفقة بمليارات الدولارات مع Hudson River Trading، مما يعزز مكانتها كمزود خدمات سحابية GPU رائد.' },
+  { ticker:'IBM', name:'IBM', signal:'watch', why:'IBM تتقدم في الحوسبة الكمية وتقوي شراكات الذكاء الاصطناعي مع OpenAI للحلول السحابية الهجينة.' },
+  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'Meta تواجه محاكمة السلامة بينما تتحمل نفقات ذكاء اصطناعي ضخمة؛ انخفاض السهم 4% وسط ضغوط قانونية.' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'ارتفاع Tesla 4.2٪ اليوم على تقدم Cybercab، لكن نيفادا تحد من تصاريح التاكسي الآلي إلى 10 مركبات فقط.' },
+  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'وصلت xAI التابعة لـ SpaceX لقيمة 100 مليار دولار في 2.3 سنة؛ Grok 4.6 متاح الآن عبر Amazon Bedrock.' },
+  { ticker:'OPENAI', name:'OpenAI (ما قبل الاكتتاب)', signal:'ipo', why:'OpenAI تطلق ChatGPT للمراهقين مع حماية أمان؛ شركة ما قبل الاكتتاب تظهر نموًا في تبني المؤسسات.' },
+  { ticker:'ANTH', name:'Anthropic (ما قبل الاكتتاب)', signal:'ipo', why:'ارتفع إيراد Anthropic في Q2 بمعدل 1400٪ سنويًا إلى 11.5 مليار دولار؛ اكتتاب متوقع في أكتوبر.' }
 ];
 // ══ INV-STOCKS-AR-END ══
 
@@ -3889,7 +3898,7 @@ function buildInvPanel(lang){
 
   // Staleness check — warn if investment data is >14 days older than newest signal
   // ══ INV-DATA-DATE ══
-  const invDataDate=20260820;
+  const invDataDate=20260821;
   // ══ /INV-DATA-DATE ══
   const newestNum=computeNewestDate('en'); // get the raw number via a helper
   const isStale=parseDateNum(computeNewestDate('en'))>invDataDate+14;
