@@ -5079,3 +5079,68 @@
 [2026-08-22 10:12:34 KSA]   Today is Sat — opportunity update runs on Sunday only
 [2026-08-22 10:12:34 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-23 10:11:00 KSA] Manual run triggered (--now flag)
+[2026-08-23 10:11:00 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-23 10:11:00 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-23 10:11:16 KSA]     ✓ 3 signals found
+[2026-08-23 10:11:18 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-23 10:11:26 KSA]     ✓ 3 signals found
+[2026-08-23 10:11:28 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-23 10:11:39 KSA]     ✓ 1 signals found
+[2026-08-23 10:11:41 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-23 10:11:50 KSA]     ✓ 3 signals found
+[2026-08-23 10:11:52 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-23 10:11:59 KSA]     ✓ 3 signals found
+[2026-08-23 10:12:01 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-23 10:12:06 KSA]     ✓ 3 signals found
+[2026-08-23 10:12:08 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-23 10:12:14 KSA]     ✓ 3 signals found
+[2026-08-23 10:12:16 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-23 10:12:23 KSA]     ✓ 3 signals found
+[2026-08-23 10:12:25 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-23 10:12:34 KSA]     ✓ 3 signals found
+[2026-08-23 10:12:36 KSA]   Total new signals: 25
+[2026-08-23 10:12:36 KSA]   Updating dashboard HTML...
+[2026-08-23 10:12:36 KSA]   ↩ 20 duplicate(s) skipped
+[2026-08-23 10:12:36 KSA]   ✚ 5 new signals to inject
+[2026-08-23 10:12:36 KSA]   ✓ 5 added, 20 skipped, 787 total signals
+[2026-08-23 10:12:36 KSA] 
+  ┌─── SCAN SUMMARY — August 23, 2026 ───
+[2026-08-23 10:12:36 KSA]   │ 01. [Release] KaarbonTech Launches SMART Shot AI for Continuous Infrastructure Monitoring
+[2026-08-23 10:12:36 KSA]   │ 02. [Breakthrough] Abu Dhabi Deploys AI Robotic Dogs for Smart Park Inspection
+[2026-08-23 10:12:36 KSA]   │ 03. [Release] Avnet and Weston Robot Launch AI-Powered Autonomous Inspection Platform
+[2026-08-23 10:12:36 KSA]   │ 04. [Release] Procore Acquires DroneDeploy to Expand AI Strategy in Construction
+[2026-08-23 10:12:36 KSA]   │ 05. [Research] BuiltWorlds 2026 Robotics Report Shows Three-Fold Rise in Jobsite Pilots
+[2026-08-23 10:12:36 KSA]   │ 06. [Breakthrough] DroneDeploy Launches Autonomous Ground Robots and AI Agents in 2026
+[2026-08-23 10:12:36 KSA]   │ 07. [Research] Springer Nature publishes review on AI innovations in food industry
+[2026-08-23 10:12:36 KSA]   │ 08. [Policy] Cities Turn to AI to Speed Housing Permitting With New Federal Funding
+[2026-08-23 10:12:36 KSA]   │ 09. [Breakthrough] Cities Betting on AI to Modernize Housing Permits and Reduce Development Delays
+[2026-08-23 10:12:36 KSA]   │ 10. [Funding] HUD Funds AI and Robotics Pilots for Building Automation and Permitting Systems
+[2026-08-23 10:12:36 KSA]   │ 11. [Policy] EU AI Act enforcement begins August 2: Commission starts enforcing rules and tra
+[2026-08-23 10:12:36 KSA]   │ 12. [Policy] FDA issues first AI medical device enforcement letters in August 2026
+[2026-08-23 10:12:36 KSA]   │ 13. [Policy] Biden-Harris AI Liability Executive Order: Federal agencies must conduct AI impa
+[2026-08-23 10:12:36 KSA]   │ 14. [Release] OpenAI Updates GPT-5.6 in ChatGPT with Sol Improvements and Luna Expansion
+[2026-08-23 10:12:36 KSA]   │ 15. [Release] Anthropic Makes Claude Sonnet 5 Introductory Pricing Permanent
+[2026-08-23 10:12:36 KSA]   │ 16. [Release] Claude Opus 5 Receives Inference Speed and Research Capability Updates
+[2026-08-23 10:12:36 KSA]   │ 17. [Security] Data breaches surge in 2026 as AI plays growing role in cyberattacks
+[2026-08-23 10:12:36 KSA]   │ 18. [Research] CSA Report: 50.1% of AI vulnerability alerts now have public exploits
+[2026-08-23 10:12:36 KSA]   │ 19. [Release] Samsung patches 56 Galaxy vulnerabilities in August 2026 security update
+[2026-08-23 10:12:36 KSA]   │ 20. [Funding] Anthropic IPO Expected to Exceed $2 Trillion Valuation, Targeting October Launch
+[2026-08-23 10:12:36 KSA]   │ 21. [Funding] OpenAI Targeting September 2026 IPO with S-1 Filing Within Weeks
+[2026-08-23 10:12:36 KSA]   │ 22. [Funding] Crusoe Cloud In IPO Talks with Investment Banks, According to August 2026 Report
+[2026-08-23 10:12:36 KSA]   │ 23. [Research] AI 2027 Tracker: Predictions vs Reality - Latest Progress Monitoring
+[2026-08-23 10:12:36 KSA]   │ 24. [Funding] Super Micro Computer Raises FY2027 Revenue Forecast to $65-72 Billion
+[2026-08-23 10:12:36 KSA]   │ 25. [Research] Smart City IoT Connections Projected to Exceed 122 Million Links by 2027
+[2026-08-23 10:12:36 KSA]   └─── 25 total signals ───
+
+[2026-08-23 10:12:36 KSA]   [Market Intel] Updating risk signals...
+[2026-08-23 10:12:49 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-23 10:12:49 KSA]   [Market Intel] Updating stock signals...
+[2026-08-23 10:13:04 KSA]   ✗ No JSON in batch 1
+[2026-08-23 10:13:15 KSA]   ✗ No JSON in batch 2
+[2026-08-23 10:13:15 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-23 10:13:15 KSA]   Sunday: running weekly opportunity vector update...
+[2026-08-23 10:13:15 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-08-23 10:13:30 KSA]   ✗ No JSON in opps response — keeping existing
+[2026-08-23 10:13:30 KSA] ═══ RESCAN COMPLETE ═══
+
