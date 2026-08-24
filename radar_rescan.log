@@ -5144,3 +5144,62 @@
 [2026-08-23 10:13:30 KSA]   ✗ No JSON in opps response — keeping existing
 [2026-08-23 10:13:30 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-24 10:38:12 KSA] Manual run triggered (--now flag)
+[2026-08-24 10:38:12 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-24 10:38:12 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-24 10:38:20 KSA]     ✓ 0 signals found
+[2026-08-24 10:38:22 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-24 10:38:35 KSA]     ✓ 3 signals found
+[2026-08-24 10:38:37 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-24 10:38:49 KSA]     ✓ 0 signals found
+[2026-08-24 10:38:51 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-24 10:38:57 KSA]     ✓ 3 signals found
+[2026-08-24 10:38:59 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-24 10:39:09 KSA]     ✓ 3 signals found
+[2026-08-24 10:39:11 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-24 10:39:18 KSA]     ✓ 3 signals found
+[2026-08-24 10:39:20 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-24 10:39:26 KSA]     ✓ 3 signals found
+[2026-08-24 10:39:28 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-24 10:39:35 KSA]     ✓ 3 signals found
+[2026-08-24 10:39:37 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-24 10:39:44 KSA]     ✓ 3 signals found
+[2026-08-24 10:39:46 KSA]   Total new signals: 21
+[2026-08-24 10:39:46 KSA]   Updating dashboard HTML...
+[2026-08-24 10:39:46 KSA]   ↩ 18 duplicate(s) skipped
+[2026-08-24 10:39:46 KSA]   ✚ 3 new signals to inject
+[2026-08-24 10:39:46 KSA]   ✓ 3 added, 18 skipped, 790 total signals
+[2026-08-24 10:39:46 KSA] 
+  ┌─── SCAN SUMMARY — August 24, 2026 ───
+[2026-08-24 10:39:46 KSA]   │ 01. [Breakthrough] Bedrock Robotics Launches Fully Autonomous Excavator Deployments on U.S. Infrast
+[2026-08-24 10:39:46 KSA]   │ 02. [Funding] Gravis Robotics Raises $200M Series A from SoftBank for Autonomous Equipment
+[2026-08-24 10:39:46 KSA]   │ 03. [Research] Construction Robotics Usage Doubled Year-Over-Year Among Contractors in 2026
+[2026-08-24 10:39:46 KSA]   │ 04. [Release] ASHI Hosts First AI Day for Home Inspectors on August 31, 2026
+[2026-08-24 10:39:46 KSA]   │ 05. [Release] Spectora Launches AI-Powered Inspection Reporting Features in May 2026
+[2026-08-24 10:39:46 KSA]   │ 06. [Breakthrough] AI, Drones, and Smart Sensors Revolutionizing Home Inspections in 2026
+[2026-08-24 10:39:46 KSA]   │ 07. [Policy] UK AI Regulation and Safety Bill Clears House of Commons on August 14
+[2026-08-24 10:39:46 KSA]   │ 08. [Policy] Illinois Mandates Independent Third-Party Safety Audits for Frontier AI Models
+[2026-08-24 10:39:46 KSA]   │ 09. [Security] FDA Issues First Enforcement Letters on AI Medical Device Compliance
+[2026-08-24 10:39:46 KSA]   │ 10. [Release] OpenAI Updates GPT-5.6 in ChatGPT with Sol Improvements and Luna Expansion
+[2026-08-24 10:39:46 KSA]   │ 11. [Release] Anthropic Makes Claude Sonnet 5 Introductory Pricing Permanent
+[2026-08-24 10:39:46 KSA]   │ 12. [Release] Qwen Releases Qwen3.8-27B Model
+[2026-08-24 10:39:46 KSA]   │ 13. [Research] AI Security Report 2026: AI Crosses From Assistant to Operator in Cyberattacks
+[2026-08-24 10:39:46 KSA]   │ 14. [Security] Data Breaches Surge with AI-Enabled Attacks Growing 56%
+[2026-08-24 10:39:46 KSA]   │ 15. [Research] CSA Report: 81% of Organizations Running AI Packages Have Known Vulnerabilities
+[2026-08-24 10:39:46 KSA]   │ 16. [Funding] AI Infrastructure Attracts Record $197B VC Funding in August 4-8 Week
+[2026-08-24 10:39:46 KSA]   │ 17. [Release] Anthropic Files S-1 IPO Registration at $965B Valuation with $47B Revenue Run Ra
+[2026-08-24 10:39:46 KSA]   │ 18. [Funding] Global Venture Funding Hits Record $510B in H1 2026 Driven by AI Boom
+[2026-08-24 10:39:46 KSA]   │ 19. [Research] AI 2027 Tracker: Live monitoring of AI 2027 predictions vs. reality
+[2026-08-24 10:39:46 KSA]   │ 20. [Research] Smart Cities to Deploy AI Agents Across 65% of Municipalities by 2027
+[2026-08-24 10:39:46 KSA]   │ 21. [Research] Smart City Infrastructure to Reach $402B Market by 2027
+[2026-08-24 10:39:46 KSA]   └─── 21 total signals ───
+
+[2026-08-24 10:39:46 KSA]   [Market Intel] Updating risk signals...
+[2026-08-24 10:40:00 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-24 10:40:00 KSA]   [Market Intel] Updating stock signals...
+[2026-08-24 10:40:14 KSA]   ✗ No JSON in batch 1
+[2026-08-24 10:40:29 KSA]   ✗ No JSON in batch 2
+[2026-08-24 10:40:29 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-24 10:40:29 KSA]   Today is Mon — opportunity update runs on Sunday only
+[2026-08-24 10:40:29 KSA] ═══ RESCAN COMPLETE ═══
+
