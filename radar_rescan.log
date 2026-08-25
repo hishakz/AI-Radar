@@ -5203,3 +5203,62 @@
 [2026-08-24 10:40:29 KSA]   Today is Mon — opportunity update runs on Sunday only
 [2026-08-24 10:40:29 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-25 10:25:42 KSA] Manual run triggered (--now flag)
+[2026-08-25 10:25:42 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-25 10:25:42 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-25 10:25:57 KSA]     ✓ 3 signals found
+[2026-08-25 10:25:59 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-25 10:26:13 KSA]     ✓ 3 signals found
+[2026-08-25 10:26:15 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-25 10:26:21 KSA]     ✓ 0 signals found
+[2026-08-25 10:26:23 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-25 10:26:33 KSA]     ✓ 1 signals found
+[2026-08-25 10:26:35 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-25 10:26:41 KSA]     ✓ 3 signals found
+[2026-08-25 10:26:43 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-25 10:26:53 KSA]     ✓ 3 signals found
+[2026-08-25 10:26:55 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-25 10:27:02 KSA]     ✓ 3 signals found
+[2026-08-25 10:27:04 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-25 10:27:12 KSA]     ✓ 3 signals found
+[2026-08-25 10:27:14 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-25 10:27:24 KSA]     ✓ 2 signals found
+[2026-08-25 10:27:26 KSA]   Total new signals: 21
+[2026-08-25 10:27:26 KSA]   Updating dashboard HTML...
+[2026-08-25 10:27:26 KSA]   ↩ 14 duplicate(s) skipped
+[2026-08-25 10:27:26 KSA]   ✚ 7 new signals to inject
+[2026-08-25 10:27:26 KSA]   ✓ 7 added, 14 skipped, 797 total signals
+[2026-08-25 10:27:26 KSA] 
+  ┌─── SCAN SUMMARY — August 25, 2026 ───
+[2026-08-25 10:27:26 KSA]   │ 01. [Breakthrough] Phoenix Police Drone Program Wins 2026 Public Safety Award After 12,500 Missions
+[2026-08-25 10:27:26 KSA]   │ 02. [Research] Autonomous Facade Inspection Drone Market Projected $4.63B by 2030 on Smart City
+[2026-08-25 10:27:26 KSA]   │ 03. [Research] Drone Inspection Market Reaches $31B in 2026, AI Integration Drives Smart City A
+[2026-08-25 10:27:26 KSA]   │ 04. [Breakthrough] Bedrock Robotics Launches Fully Autonomous Excavators on U.S. Infrastructure Pro
+[2026-08-25 10:27:26 KSA]   │ 05. [Funding] SoftBank Invests $200M in Gravis Robotics, Largest Construction Robotics Series 
+[2026-08-25 10:27:26 KSA]   │ 06. [Breakthrough] DroneDeploy Autonomous Ground Robots Enter Beta in 2026 with Safety AI Capabilit
+[2026-08-25 10:27:26 KSA]   │ 07. [Release] ASHI Launches First AI Day Virtual Conference for Home Inspectors
+[2026-08-25 10:27:26 KSA]   │ 08. [Policy] EU AI Act Phase Two Compliance Deadline August 2, 2026
+[2026-08-25 10:27:26 KSA]   │ 09. [Policy] White House AI Policy Framework Recommends Federal Preemption of State Laws
+[2026-08-25 10:27:26 KSA]   │ 10. [Policy] Nearly 100 Chatbot-Specific Bills Introduced Across US States in 2026
+[2026-08-25 10:27:26 KSA]   │ 11. [Release] OpenAI Announces GPT-5.6 Sol Ultrafast Mode & 20% Price Cut
+[2026-08-25 10:27:26 KSA]   │ 12. [Release] Google Gemini 3.7 Flash Powers Search AI Mode & Workspace Updates
+[2026-08-25 10:27:26 KSA]   │ 13. [Release] Anthropic Claude Academy Launches & API Tools Expand
+[2026-08-25 10:27:26 KSA]   │ 14. [Research] AI Security Report 2026: AI Transitions from Assistant to Live Attack Operator
+[2026-08-25 10:27:26 KSA]   │ 15. [Research] CSA's 2026 State of AI Security Report: 81% of Organizations Have Known Vulnerab
+[2026-08-25 10:27:26 KSA]   │ 16. [Security] Data Breaches Surge in 2026 with AI-Enabled Attacks Up 56%
+[2026-08-25 10:27:26 KSA]   │ 17. [Funding] Anthropic Targets $2 Trillion October IPO
+[2026-08-25 10:27:26 KSA]   │ 18. [Funding] DeepSeek Raises $7.4 Billion, Eyes Second Round at $71-74 Billion
+[2026-08-25 10:27:26 KSA]   │ 19. [Funding] Global AI Venture Funding Hits Record $510 Billion in H1 2026
+[2026-08-25 10:27:26 KSA]   │ 20. [Breakthrough] Utah's UFly Initiative Launches Autonomous Air Taxi Service
+[2026-08-25 10:27:26 KSA]   │ 21. [Research] AI 2027 Progress Report: Reality at Two-Thirds Pace
+[2026-08-25 10:27:26 KSA]   └─── 21 total signals ───
+
+[2026-08-25 10:27:26 KSA]   [Market Intel] Updating risk signals...
+[2026-08-25 10:27:38 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-25 10:27:38 KSA]   [Market Intel] Updating stock signals...
+[2026-08-25 10:27:56 KSA]   ✗ No JSON in batch 1
+[2026-08-25 10:28:11 KSA]   ✗ No JSON in batch 2
+[2026-08-25 10:28:11 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-25 10:28:11 KSA]   Today is Tue — opportunity update runs on Sunday only
+[2026-08-25 10:28:11 KSA] ═══ RESCAN COMPLETE ═══
+
