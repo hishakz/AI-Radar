@@ -5315,3 +5315,65 @@
 [2026-08-26 10:28:42 KSA]   Today is Wed — opportunity update runs on Sunday only
 [2026-08-26 10:28:42 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-27 20:51:11 KSA] Manual run triggered (--now flag)
+[2026-08-27 20:51:11 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-27 20:51:11 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-27 20:51:22 KSA]     ✓ 0 signals found
+[2026-08-27 20:51:24 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-27 20:51:34 KSA]     ✓ 3 signals found
+[2026-08-27 20:51:36 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-27 20:51:50 KSA]     ✓ 3 signals found
+[2026-08-27 20:51:52 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-27 20:51:59 KSA]     ✓ 3 signals found
+[2026-08-27 20:52:01 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-27 20:52:07 KSA]     ✓ 3 signals found
+[2026-08-27 20:52:09 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-27 20:52:20 KSA]     ✓ 3 signals found
+[2026-08-27 20:52:22 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-27 20:52:31 KSA]     ✓ 3 signals found
+[2026-08-27 20:52:33 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-27 20:52:43 KSA]     ✓ 3 signals found
+[2026-08-27 20:52:45 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-27 20:52:53 KSA]     ✓ 3 signals found
+[2026-08-27 20:52:55 KSA]   Total new signals: 24
+[2026-08-27 20:52:55 KSA]   Updating dashboard HTML...
+[2026-08-27 20:52:55 KSA]   ↩ 13 duplicate(s) skipped
+[2026-08-27 20:52:55 KSA]   ✚ 11 new signals to inject
+[2026-08-27 20:52:55 KSA]   ✓ 11 added, 13 skipped, 813 total signals
+[2026-08-27 20:52:55 KSA] 
+  ┌─── SCAN SUMMARY — August 27, 2026 ───
+[2026-08-27 20:52:55 KSA]   │ 01. [Research] ABC Survey: 36% of construction companies now operate drones for site monitoring
+[2026-08-27 20:52:55 KSA]   │ 02. [Breakthrough] Bedrock Robotics deploys fully autonomous excavators on critical U.S. infrastruc
+[2026-08-27 20:52:55 KSA]   │ 03. [Funding] Gravis Robotics raises record $200M Series A to expand autonomous excavator rent
+[2026-08-27 20:52:55 KSA]   │ 04. [Release] FDA Announces HALO Data Platform Integration for AI-Powered Food Inspections
+[2026-08-27 20:52:55 KSA]   │ 05. [Research] AI Compliance Paperwork Automation Emerges for Small Food Manufacturers
+[2026-08-27 20:52:55 KSA]   │ 06. [Policy] USDA Leaders to Cover AI-Enabled Inspection Strategies at IAFP Conference August
+[2026-08-27 20:52:55 KSA]   │ 07. [Release] Spectora Launches AI-Powered Inspection Reporting Features
+[2026-08-27 20:52:55 KSA]   │ 08. [Breakthrough] ASHI AI Day Event August 31 - Free Virtual Learning for Home Inspectors
+[2026-08-27 20:52:55 KSA]   │ 09. [Breakthrough] AI Revolutionizing Home Inspections with Drones and Thermal Imaging
+[2026-08-27 20:52:55 KSA]   │ 10. [Policy] EU AI Act Enforcement and Transparency Rules Begin on August 2, 2026
+[2026-08-27 20:52:55 KSA]   │ 11. [Policy] EU AI Act Annex III Deadline Extended to December 2, 2027
+[2026-08-27 20:52:55 KSA]   │ 12. [Policy] EU AI Regulatory Sandboxes Established Across Member States by August 2, 2026
+[2026-08-27 20:52:55 KSA]   │ 13. [Release] OpenAI Advances GPT-5.6 Performance with Pricing Cut & Kiro Integration
+[2026-08-27 20:52:55 KSA]   │ 14. [Release] Google Launches Ask Gemini in Google Chat for Workspace Collaboration
+[2026-08-27 20:52:55 KSA]   │ 15. [Release] Anthropic Launches Claude Academy & Claude Code Stability Updates
+[2026-08-27 20:52:55 KSA]   │ 16. [Security] CISA Orders Emergency Zimbra Patching for CVE-2026-73570 Command Injection
+[2026-08-27 20:52:55 KSA]   │ 17. [Release] Critical Patches, AI-Driven Attacks, and Data Theft Define August 2026 Week
+[2026-08-27 20:52:55 KSA]   │ 18. [Policy] Open Secure AI Alliance Founded to Protect Open-Source AI Security
+[2026-08-27 20:52:55 KSA]   │ 19. [Release] Anthropic's October IPO Timeline: Goldman Sachs, JPMorgan, Morgan Stanley as Und
+[2026-08-27 20:52:55 KSA]   │ 20. [Funding] Databricks Secures $5B Series Round; AI Infrastructure Funding Reaches $8.7B in 
+[2026-08-27 20:52:55 KSA]   │ 21. [Funding] Nvidia in Early Talks to Invest in Rebellions AI Chip Startup
+[2026-08-27 20:52:55 KSA]   │ 22. [Research] Grading AI 2027's 2025 Predictions: Progress at 65% Pace
+[2026-08-27 20:52:55 KSA]   │ 23. [Research] Smart City AI Deployment: 65% of Cities by 2027
+[2026-08-27 20:52:55 KSA]   │ 24. [Research] Smart City IoT Connectivity Surge: 122M Links Expected by 2027
+[2026-08-27 20:52:55 KSA]   └─── 24 total signals ───
+
+[2026-08-27 20:52:55 KSA]   [Market Intel] Updating risk signals...
+[2026-08-27 20:53:07 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-27 20:53:07 KSA]   [Market Intel] Updating stock signals...
+[2026-08-27 20:53:22 KSA]   ✗ No JSON in batch 1
+[2026-08-27 20:53:36 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-08-27 20:53:38 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260827)
+[2026-08-27 20:53:38 KSA]   Today is Thu — opportunity update runs on Sunday only
+[2026-08-27 20:53:38 KSA] ═══ RESCAN COMPLETE ═══
+
