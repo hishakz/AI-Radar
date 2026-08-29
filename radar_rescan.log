@@ -5433,3 +5433,63 @@
 [2026-08-28 21:59:02 KSA]   Today is Fri — opportunity update runs on Sunday only
 [2026-08-28 21:59:02 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-29 15:47:51 KSA] Manual run triggered (--now flag)
+[2026-08-29 15:47:51 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-29 15:47:51 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-29 15:48:07 KSA]     ✓ 3 signals found
+[2026-08-29 15:48:09 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-29 15:48:30 KSA]     ✓ 3 signals found
+[2026-08-29 15:48:32 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-29 15:48:43 KSA]     ✓ 0 signals found
+[2026-08-29 15:48:45 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-29 15:49:06 KSA]     ✓ 3 signals found
+[2026-08-29 15:49:08 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-29 15:49:18 KSA]     ✓ 1 signals found
+[2026-08-29 15:49:20 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-29 15:49:26 KSA]     ✓ 3 signals found
+[2026-08-29 15:49:28 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-29 15:49:36 KSA]     ✓ 3 signals found
+[2026-08-29 15:49:38 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-29 15:49:45 KSA]     ✓ 3 signals found
+[2026-08-29 15:49:47 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-29 15:49:59 KSA]     ✓ 3 signals found
+[2026-08-29 15:50:01 KSA]   Total new signals: 22
+[2026-08-29 15:50:01 KSA]   Updating dashboard HTML...
+[2026-08-29 15:50:01 KSA]   ↩ 14 duplicate(s) skipped
+[2026-08-29 15:50:01 KSA]   ✚ 8 new signals to inject
+[2026-08-29 15:50:01 KSA]   ✓ 8 added, 14 skipped, 827 total signals
+[2026-08-29 15:50:01 KSA] 
+  ┌─── SCAN SUMMARY — August 29, 2026 ───
+[2026-08-29 15:50:01 KSA]   │ 01. [Research] AI in Smart Cities: Waste Management & Environmental Monitoring Growth
+[2026-08-29 15:50:01 KSA]   │ 02. [Breakthrough] Autonomous AI Agents Enhance Manufacturing Quality Inspection with Real-Time Mon
+[2026-08-29 15:50:01 KSA]   │ 03. [Policy] UK Civil Aviation Authority Publishes Airspace Architecture for BVLOS Drone Oper
+[2026-08-29 15:50:01 KSA]   │ 04. [Funding] Gravis Robotics Secures $200M Series A from SoftBank for Autonomous Excavators
+[2026-08-29 15:50:01 KSA]   │ 05. [Breakthrough] Autonomous Excavators Move from Testing to Active Commercial Jobsites
+[2026-08-29 15:50:01 KSA]   │ 06. [Release] Procore Acquires DroneDeploy for $845M to Integrate Reality Capture with AI
+[2026-08-29 15:50:01 KSA]   │ 07. [Release] ASHI Launches First AI Day Event for Home Inspectors
+[2026-08-29 15:50:01 KSA]   │ 08. [Release] Spectora Launches AI-Powered Inspection Reporting Features
+[2026-08-29 15:50:01 KSA]   │ 09. [Research] Global Home Inspection Software Market Grows 12.5% Annually
+[2026-08-29 15:50:01 KSA]   │ 10. [Policy] FTC Seeks Comment on Personalized Pricing Enforcement Plan
+[2026-08-29 15:50:01 KSA]   │ 11. [Release] OpenAI updates GPT-5.6 in ChatGPT with improvements to Sol and Luna expansion
+[2026-08-29 15:50:01 KSA]   │ 12. [Release] Anthropic makes Claude Sonnet 5 introductory pricing permanent
+[2026-08-29 15:50:01 KSA]   │ 13. [Release] Google releases Gemini 3.5 Transcribe speech-to-text model
+[2026-08-29 15:50:01 KSA]   │ 14. [Security] New Details on Hugging Face AI Agent Attack: Hundreds of Agents Coordinated via 
+[2026-08-29 15:50:01 KSA]   │ 15. [Policy] Federal Judge Orders DOD to Cancel Anthropic Supply Chain Designation
+[2026-08-29 15:50:01 KSA]   │ 16. [Security] CISA Orders Urgent Zimbra Patch for Active Zero-Day Vulnerability
+[2026-08-29 15:50:01 KSA]   │ 17. [Funding] Anthropic lines up investor meetings for October IPO listing
+[2026-08-29 15:50:01 KSA]   │ 18. [Funding] OpenAI confidentially files S-1 with SEC at $852B valuation
+[2026-08-29 15:50:01 KSA]   │ 19. [Funding] DeepSeek raises $1.5B second round at $71B valuation targeting 2026 IPO
+[2026-08-29 15:50:01 KSA]   │ 20. [Research] Gartner Forecasts AI Security Market to Reach $4.8 Billion in 2027
+[2026-08-29 15:50:01 KSA]   │ 21. [Breakthrough] AI in Smart Cities: Infrastructure Inspection & Urban Operations Transform
+[2026-08-29 15:50:01 KSA]   │ 22. [Research] Seven Key AI Trends Shaping Rest of 2026 and 2027 Outlook
+[2026-08-29 15:50:01 KSA]   └─── 22 total signals ───
+
+[2026-08-29 15:50:01 KSA]   [Market Intel] Updating risk signals...
+[2026-08-29 15:50:16 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-29 15:50:16 KSA]   [Market Intel] Updating stock signals...
+[2026-08-29 15:50:33 KSA]   ✗ No JSON in batch 1
+[2026-08-29 15:50:40 KSA]   ✗ No JSON in batch 2
+[2026-08-29 15:50:40 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-08-29 15:50:40 KSA]   Today is Sat — opportunity update runs on Sunday only
+[2026-08-29 15:50:40 KSA] ═══ RESCAN COMPLETE ═══
+
