@@ -5493,3 +5493,57 @@
 [2026-08-29 15:50:40 KSA]   Today is Sat — opportunity update runs on Sunday only
 [2026-08-29 15:50:40 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-08-30 15:08:56 KSA] Manual run triggered (--now flag)
+[2026-08-30 15:08:56 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-08-30 15:08:56 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-08-30 15:09:05 KSA]     ✗ No JSON found
+[2026-08-30 15:09:07 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-08-30 15:09:26 KSA]     ✓ 3 signals found
+[2026-08-30 15:09:28 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-08-30 15:09:38 KSA]     ✓ 0 signals found
+[2026-08-30 15:09:40 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-08-30 15:09:51 KSA]     ✓ 1 signals found
+[2026-08-30 15:09:53 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-08-30 15:10:02 KSA]     ✓ 0 signals found
+[2026-08-30 15:10:04 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-08-30 15:10:16 KSA]     ✓ 3 signals found
+[2026-08-30 15:10:18 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-08-30 15:10:24 KSA]     ✓ 3 signals found
+[2026-08-30 15:10:26 KSA]   Scanning: AI investment funding IPO 2026
+[2026-08-30 15:10:35 KSA]     ✓ 3 signals found
+[2026-08-30 15:10:37 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-08-30 15:10:44 KSA]     ✓ 1 signals found
+[2026-08-30 15:10:46 KSA]   Total new signals: 14
+[2026-08-30 15:10:46 KSA]   Updating dashboard HTML...
+[2026-08-30 15:10:46 KSA]   ↩ 11 duplicate(s) skipped
+[2026-08-30 15:10:46 KSA]   ✚ 3 new signals to inject
+[2026-08-30 15:10:46 KSA]   ✓ 3 added, 11 skipped, 830 total signals
+[2026-08-30 15:10:46 KSA] 
+  ┌─── SCAN SUMMARY — August 30, 2026 ───
+[2026-08-30 15:10:46 KSA]   │ 01. [Breakthrough] Bedrock Robotics deploys fully autonomous excavators on active construction site
+[2026-08-30 15:10:46 KSA]   │ 02. [Funding] Gravis Robotics raises $200M Series A from SoftBank, becomes construction roboti
+[2026-08-30 15:10:46 KSA]   │ 03. [Breakthrough] DroneDeploy launches autonomous ground robots in beta for construction site insp
+[2026-08-30 15:10:46 KSA]   │ 04. [Policy] Cities Turn to AI to Speed Housing Permitting
+[2026-08-30 15:10:46 KSA]   │ 05. [Release] Claude desktop app gains built-in browser for web tasks
+[2026-08-30 15:10:46 KSA]   │ 06. [Release] Google launches Gemini 3.6 Flash and 3.5 Flash-Lite as stable production models
+[2026-08-30 15:10:46 KSA]   │ 07. [Release] OpenAI cuts GPT-5.6 Sol pricing by over 20% for three months
+[2026-08-30 15:10:46 KSA]   │ 08. [Research] AI vulnerability discovery now top emerging cybersecurity risk in Gartner survey
+[2026-08-30 15:10:46 KSA]   │ 09. [Security] CISA orders emergency patching of Zimbra vulnerability CVE-2026-73570 within 3 d
+[2026-08-30 15:10:46 KSA]   │ 10. [Security] Critical vulnerability CVE-2026-59726 discovered in AI orchestration platform Ru
+[2026-08-30 15:10:46 KSA]   │ 11. [Funding] OpenAI Targets September 2026 IPO, S-1 Filing Expected Soon
+[2026-08-30 15:10:46 KSA]   │ 12. [Funding] Anthropic IPO Expected to Exceed $2 Trillion Valuation by October 2026
+[2026-08-30 15:10:46 KSA]   │ 13. [Funding] AI Funding Dominates Global Venture Capital in Q2 2026 with $510B in H1
+[2026-08-30 15:10:46 KSA]   │ 14. [Trend] AI in Smart Cities: Generative AI for citizen services and autonomous transit tr
+[2026-08-30 15:10:46 KSA]   └─── 14 total signals ───
+
+[2026-08-30 15:10:46 KSA]   [Market Intel] Updating risk signals...
+[2026-08-30 15:11:01 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-08-30 15:11:01 KSA]   [Market Intel] Updating stock signals...
+[2026-08-30 15:11:17 KSA]   ✗ No JSON in batch 1
+[2026-08-30 15:11:35 KSA]   ✓ Batch 2: 5 stocks updated
+[2026-08-30 15:11:37 KSA]   ✓ Stock signals updated (5 tickers, invDataDate → 20260830)
+[2026-08-30 15:11:37 KSA]   Sunday: running weekly opportunity vector update...
+[2026-08-30 15:11:37 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-08-30 15:11:53 KSA]   ✗ No JSON in opps response — keeping existing
+[2026-08-30 15:11:53 KSA] ═══ RESCAN COMPLETE ═══
+
