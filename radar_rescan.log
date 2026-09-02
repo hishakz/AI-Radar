@@ -5662,3 +5662,58 @@
 [2026-09-01 14:58:36 KSA]   Today is Tue — opportunity update runs on Sunday only
 [2026-09-01 14:58:36 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-09-02 14:35:56 KSA] Manual run triggered (--now flag)
+[2026-09-02 14:35:56 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-09-02 14:35:56 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-09-02 14:36:05 KSA]     ✓ 3 signals found
+[2026-09-02 14:36:07 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-09-02 14:36:17 KSA]     ✓ 1 signals found
+[2026-09-02 14:36:19 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-09-02 14:36:31 KSA]     ✓ 0 signals found
+[2026-09-02 14:36:33 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-09-02 14:36:43 KSA]     ✓ 3 signals found
+[2026-09-02 14:36:45 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-09-02 14:36:53 KSA]     ✓ 1 signals found
+[2026-09-02 14:36:55 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-09-02 14:37:08 KSA]     ✓ 3 signals found
+[2026-09-02 14:37:10 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-09-02 14:37:19 KSA]     ✓ 3 signals found
+[2026-09-02 14:37:21 KSA]   Scanning: AI investment funding IPO 2026
+[2026-09-02 14:37:32 KSA]     ✓ 3 signals found
+[2026-09-02 14:37:34 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-09-02 14:37:39 KSA]     ✓ 0 signals found
+[2026-09-02 14:37:41 KSA]   Total new signals: 17
+[2026-09-02 14:37:41 KSA]   Updating dashboard HTML...
+[2026-09-02 14:37:41 KSA]   ↩ 9 duplicate(s) skipped
+[2026-09-02 14:37:41 KSA]   ✚ 8 new signals to inject
+[2026-09-02 14:37:41 KSA]   ✓ 8 added, 9 skipped, 849 total signals
+[2026-09-02 14:37:41 KSA] 
+  ┌─── SCAN SUMMARY — September 02, 2026 ───
+[2026-09-02 14:37:41 KSA]   │ 01. [Research] AI-Driven Digital Twin Framework Published for Smart City Photovoltaic Integrati
+[2026-09-02 14:37:41 KSA]   │ 02. [Breakthrough] AI in Smart Cities: Autonomous Waste Management and Environmental Monitoring Sys
+[2026-09-02 14:37:41 KSA]   │ 03. [Research] LLM-Based Agentic BIM Framework for Autonomous Railway Track Inspection
+[2026-09-02 14:37:41 KSA]   │ 04. [Breakthrough] BEX Asia 2026 Highlights AI and Robotics for Construction Industry
+[2026-09-02 14:37:41 KSA]   │ 05. [Policy] Cities Turn to AI to Speed Housing Permitting
+[2026-09-02 14:37:41 KSA]   │ 06. [Breakthrough] ASHI Hosts First AI Day for Home Inspectors
+[2026-09-02 14:37:41 KSA]   │ 07. [Release] Spectora Mobile App Updated with Latest AI Features
+[2026-09-02 14:37:41 KSA]   │ 08. [Policy] ASIC Makes AI Priority in Financial Services Regulatory Plan 2026–27
+[2026-09-02 14:37:41 KSA]   │ 09. [Release] Anthropic releases Claude Fable 5.1 and Mythos 5.1 with 75% cache read price cut
+[2026-09-02 14:37:41 KSA]   │ 10. [Release] Z.ai launches GLM-5.3-Flash frontier model
+[2026-09-02 14:37:41 KSA]   │ 11. [Release] Alibaba releases Qwen3.8 Flash open-source model
+[2026-09-02 14:37:41 KSA]   │ 12. [Security] Ghostjacking: AI Agents Exploiting Authorized Access Without Detection
+[2026-09-02 14:37:41 KSA]   │ 13. [Security] OpenAI Reveals Reward Hacking Led to AI Zero-Day Exploitation of Hugging Face
+[2026-09-02 14:37:41 KSA]   │ 14. [Security] Amazon Kiro Prompt Injection Vulnerability Allows Data Exfiltration
+[2026-09-02 14:37:41 KSA]   │ 15. [Funding] Wall Street and Nvidia plan $500B+ AI infrastructure funding package
+[2026-09-02 14:37:41 KSA]   │ 16. [Funding] DeepSeek closing $7.4B funding round at $74B valuation ahead of 2027 IPO
+[2026-09-02 14:37:41 KSA]   │ 17. [Release] OpenAI targets September 2026 IPO with S-1 filing expected within weeks
+[2026-09-02 14:37:41 KSA]   └─── 17 total signals ───
+
+[2026-09-02 14:37:41 KSA]   [Market Intel] Updating risk signals...
+[2026-09-02 14:37:55 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-09-02 14:37:55 KSA]   [Market Intel] Updating stock signals...
+[2026-09-02 14:38:13 KSA]   ✗ No JSON in batch 1
+[2026-09-02 14:38:29 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-09-02 14:38:31 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260902)
+[2026-09-02 14:38:31 KSA]   Today is Wed — opportunity update runs on Sunday only
+[2026-09-02 14:38:31 KSA] ═══ RESCAN COMPLETE ═══
+
