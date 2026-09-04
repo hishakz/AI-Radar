@@ -725,6 +725,30 @@ const DT_ROWS=[
 // ════════════════════════════════════════════════════════════════
 const AI_SIGNALS=[
 
+  // ══ AUTO-RESCAN SEPTEMBER 04, 2026 ══
+  {domains:["food"],url:'https://www.abbacustechnologies.com/ai-development-for-my-food-safety-inspection-service-costs-compliance-automation-timeline-and-audit-readiness/',
+   en:{t:'ISO 19011:2026 Fourth Edition Released for Auditing Management Systems',cat:'Policy',d:'2 days ago AUTO',s:'ISO published ISO 19011:2026 as the fourth edition in May 2026, providing guidelines for auditing management systems including food safety inspection systems, audit program management, and auditor competence.'},
+   ar:{t:'ISO 19011:2026 Fourth Edition Released for Auditing Management Systems',cat:'Policy',d:'2 days ago تلقائي',s:'ISO published ISO 19011:2026 as the fourth edition in May 2026, providing guidelines for auditing management systems including food safety inspection systems, audit program management, and auditor competence.'}},
+  {domains:["food"],url:'https://loman.ai/blog/ai-for-restaurant-food-safety-compliance-guide',
+   en:{t:'AI Food Safety Compliance Guide 2026: Machine Vision and Automated Monitoring',cat:'Research',d:'June 3, 2026 AUTO',s:'Loman AI published comprehensive guide on how AI improves restaurant food safety through automated monitoring, quality control, staff training, machine vision for contaminant detection, and predictive risk assessment.'},
+   ar:{t:'AI Food Safety Compliance Guide 2026: Machine Vision and Automated Monitoring',cat:'Research',d:'June 3, 2026 تلقائي',s:'Loman AI published comprehensive guide on how AI improves restaurant food safety through automated monitoring, quality control, staff training, machine vision for contaminant detection, and predictive risk assessment.'}},
+  {domains:["food"],url:'https://kanopylabs.com/blog/ai-for-food-safety-compliance-automation',
+   en:{t:'Computer Vision AI for Restaurant Hygiene Monitoring and Compliance Enforcement',cat:'Breakthrough',d:'September 04, 2026 AUTO',s:'Kanopy Labs highlights AI-powered visual inspection systems enabling automated monitoring of compliance behaviors in restaurants: handwashing frequency, PPE usage, cross-contamination risks, and sanitation procedures.'},
+   ar:{t:'Computer Vision AI for Restaurant Hygiene Monitoring and Compliance Enforcement',cat:'Breakthrough',d:'September 04, 2026 تلقائي',s:'Kanopy Labs highlights AI-powered visual inspection systems enabling automated monitoring of compliance behaviors in restaurants: handwashing frequency, PPE usage, cross-contamination risks, and sanitation procedures.'}},
+  {domains:["policy"],url:'https://cdt.org/insights/2026-state-and-federal-ai-legislation-updates/',
+   en:{t:'Connecticut AI Regulation Act with Regulatory Sandbox',cat:'Policy',d:'2 weeks ago AUTO',s:'Connecticut passed CT SB 5, the most comprehensive AI legislation in 2026, creating a regulatory sandbox, chatbot controls, and establishing a study of independent verification organizations for third-party auditors.'},
+   ar:{t:'Connecticut AI Regulation Act with Regulatory Sandbox',cat:'Policy',d:'2 weeks ago تلقائي',s:'Connecticut passed CT SB 5, the most comprehensive AI legislation in 2026, creating a regulatory sandbox, chatbot controls, and establishing a study of independent verification organizations for third-party auditors.'}},
+  {domains:["ai-models"],url:'https://local-ai-zone.github.io/blog/September_2026_AI_Model_Updates.html',
+   en:{t:'Google DeepMind releases Gemini 3.8 Flash with cyber-capable variant on September 2',cat:'Release',d:'September 2, 2026 AUTO',s:'Google released Gemini 3.8 Flash on September 2, 2026, at same introductory price as 3.7 Flash with pricing expiration date announced. Includes Fairwind-gated Gemini 3.8 Flash Cyber variant for defenders-only access.'},
+   ar:{t:'Google DeepMind releases Gemini 3.8 Flash with cyber-capable variant on September 2',cat:'Release',d:'September 2, 2026 تلقائي',s:'Google released Gemini 3.8 Flash on September 2, 2026, at same introductory price as 3.7 Flash with pricing expiration date announced. Includes Fairwind-gated Gemini 3.8 Flash Cyber variant for defenders-only access.'}},
+  {domains:["security"],url:'https://techmaniacs.com/2026/09/02/ai-security-daily-briefing-september-02-2026/',
+   en:{t:'Azure OpenAI Privilege Escalation Vulnerability CVE-2026-45499 Requires Urgent Patching',cat:'Security',d:'2 days ago AUTO',s:'Critical SSRF vulnerability CVE-2026-45499 in Azure OpenAI allows authorized attackers to escalate privileges across cloud AI environments. Immediate patch deployment recommended.'},
+   ar:{t:'Azure OpenAI Privilege Escalation Vulnerability CVE-2026-45499 Requires Urgent Patching',cat:'Security',d:'2 days ago تلقائي',s:'Critical SSRF vulnerability CVE-2026-45499 in Azure OpenAI allows authorized attackers to escalate privileges across cloud AI environments. Immediate patch deployment recommended.'}},
+  {domains:["security"],url:'https://techmaniacs.com/2026/09/02/ai-security-daily-briefing-september-02-2026/',
+   en:{t:'AI-Accelerated OT Exploit Porting Threatens Operational Technology Infrastructure',cat:'Security',d:'2 days ago AUTO',s:'AI tools enable rapid porting of OT exploits like CVE-2021-31886 across multiple WAGO PLC device variants, creating high-speed arms race between attackers and defenders.'},
+   ar:{t:'AI-Accelerated OT Exploit Porting Threatens Operational Technology Infrastructure',cat:'Security',d:'2 days ago تلقائي',s:'AI tools enable rapid porting of OT exploits like CVE-2021-31886 across multiple WAGO PLC device variants, creating high-speed arms race between attackers and defenders.'}},
+
+
   // ══ AUTO-RESCAN SEPTEMBER 03, 2026 ══
   {domains:["smart-city"],url:'https://www.stocktitan.net/news/MCRP/micropolis-robotics-becomes-a-robotics-and-physical-ai-solutions-alte0vdfox60.html',
    en:{t:'Micropolis Robotics and ADNOC: Physical AI expansion for autonomous inspection',cat:'Breakthrough',d:'August 24, 2026 AUTO',s:'Micropolis Robotics, a UAE technology company, announced expansion of physical AI portfolio with autonomous deployment for ADNOC, enabling remote inspection, surveillance and environmental monitoring across oil and gas assets.'},
@@ -4077,18 +4101,18 @@ function setDomain(domId){
 // ── STOCK SIGNALS (why text auto-updated daily; ratings are editorial) ──────
 // ══ INV-STOCKS-EN-START ══
 let INV_STOCKS_EN = [
-  { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'Latest data loading...' },
-  { ticker:'MSFT', name:'Microsoft', signal:'buy', why:'Latest data loading...' },
-  { ticker:'AVGO', name:'Broadcom', signal:'buy', why:'Latest data loading...' },
-  { ticker:'AMD', name:'Advanced Micro Devices', signal:'buy', why:'Latest data loading...' },
-  { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'Latest data loading...' },
-  { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'Latest data loading...' },
-  { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'Latest data loading...' },
-  { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'Latest data loading...' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'Neocloud stock faced selling pressure as Nvidia shelved revenue-sharing deals; analysts maintain Buy rating with 76% upside target.' },
-  { ticker:'IBM', name:'IBM', signal:'watch', why:'IBM launched K-12 AI fellowship and raised price target to $235; stock near $231 amid securities fraud investigation.' },
-  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'Meta launched Muse Voice Transcribe AI model; $18B settlement clears path for new products. Stock up 3.49% today.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Tesla prepares Cybercab launch event on September 3; Cybercab fleet hits 45 units despite execution risk concerns.' },
+  { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'NVIDIA acquires AI platform Hugging Face for $12.9B, expanding software capabilities and open-source AI support.' },
+  { ticker:'MSFT', name:'Microsoft', signal:'buy', why:'Microsoft revamps financial reporting to highlight AI, consolidating into two AI-focused segments; stock gains 3% Thursday.' },
+  { ticker:'AVGO', name:'Broadcom', signal:'buy', why:'Broadcom beat Q3 earnings but guidance disappointed; stock fell 5.7% despite strong AI chip revenue growth.' },
+  { ticker:'AMD', name:'Advanced Micro Devices', signal:'buy', why:'AMD expects Q3 revenue of $13B (41% YoY growth) despite recent stock weakness; AI opportunity remains significant.' },
+  { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'CrowdStrike unveils AI security solutions at Fal.Con 2026, gaining 14.5% over week amid strong earnings.' },
+  { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'Palo Alto beat Q4 expectations with strong results; stock fell 10% but analysts raised price targets on AI demand.' },
+  { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'Google launches WeatherNext 3 AI model and adds voice AI to Gmail/Docs; Berkshire increased Alphabet stake.' },
+  { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'AWS surged 37% YoY in Q2 with fastest growth in 18 quarters; capex raised to $220B for AI infrastructure.' },
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'Latest data loading...' },
+  { ticker:'IBM', name:'IBM', signal:'watch', why:'Latest data loading...' },
+  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'Latest data loading...' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Latest data loading...' },
   { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'Latest data loading...' },
   { ticker:'OPENAI', name:'OpenAI (Pre-IPO)', signal:'ipo', why:'Latest data loading...' },
   { ticker:'ANTH', name:'Anthropic (Pre-IPO)', signal:'ipo', why:'Latest data loading...' }
@@ -4097,18 +4121,18 @@ let INV_STOCKS_EN = [
 
 // ══ INV-STOCKS-AR-START ══
 let INV_STOCKS_AR = [
-  { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'جارٍ تحميل البيانات...' },
-  { ticker:'MSFT', name:'Microsoft', signal:'buy', why:'جارٍ تحميل البيانات...' },
-  { ticker:'AVGO', name:'Broadcom', signal:'buy', why:'جارٍ تحميل البيانات...' },
-  { ticker:'AMD', name:'Advanced Micro Devices', signal:'buy', why:'جارٍ تحميل البيانات...' },
-  { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'جارٍ تحميل البيانات...' },
-  { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'جارٍ تحميل البيانات...' },
-  { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'جارٍ تحميل البيانات...' },
-  { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'جارٍ تحميل البيانات...' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'واجهت أسهم السحابة الجديدة ضغط بيع بعد إيقاف Nvidia صفقات المشاركة بالإيرادات؛ يحافظ المحللون على تصنيف شراء.' },
-  { ticker:'IBM', name:'IBM', signal:'watch', why:'أطلقت IBM زمالة الذكاء الاصطناعي K-12 ورفعت السعر المستهدف إلى 235 دولار؛ السهم قرب 231 دولار وسط تحقيق احتيالي.' },
-  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'أطلقت Meta نموذج Muse Voice Transcribe للذكاء الاصطناعي؛ تسوية 18 مليار دولار توضح الطريق للمنتجات الجديدة. السهم ارتفع 3.49 %.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'تستعد Tesla لحدث إطلاق Cybercab في 3 سبتمبر؛ تصل أسطول Cybercab إلى 45 وحدة رغم مخاوف المخاطر التنفيذية.' },
+  { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'NVIDIA تستحوذ على منصة الذكاء الاصطناعي Hugging Face بمبلغ 12.9 مليار دولار، مما يوسع قدرات البرمجيات.' },
+  { ticker:'MSFT', name:'Microsoft', signal:'buy', why:'Microsoft تعيد هيكلة التقارير المالية لتسليط الضوء على الذكاء الاصطناعي والقطاعات الموجهة نحوه.' },
+  { ticker:'AVGO', name:'Broadcom', signal:'buy', why:'Broadcom تتفوق في أرباح Q3 لكن التوجيهات خيبت الآمال؛ انخفضت الأسهم 5.7% رغم نمو إيرادات رقائق الذكاء الاصطناعي.' },
+  { ticker:'AMD', name:'Advanced Micro Devices', signal:'buy', why:'AMD تتوقع إيرادات Q3 بقيمة 13 مليار دولار (نمو 41٪ سنويا) رغم ضعف السهم الأخير.' },
+  { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'CrowdStrike تكشف عن حلول أمان الذكاء الاصطناعي في Fal.Con 2026، مع ارتفاع 14.5٪ على مدار الأسبوع.' },
+  { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'Palo Alto تتفوق على توقعات Q4 بنتائج قوية؛ انخفضت الأسهم 10٪ لكن المحللين رفعوا أهداف الأسعار.' },
+  { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'Google تطلق نموذج WeatherNext 3 وتضيف صوت الذكاء الاصطناعي إلى Gmail و Docs.' },
+  { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'AWS ارتفعت 37٪ سنويا في Q2 بأسرع نمو منذ 18 ربع سنة؛ رفعت النفقات الرأسمالية إلى 220 مليار دولار.' },
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'جارٍ تحميل البيانات...' },
+  { ticker:'IBM', name:'IBM', signal:'watch', why:'جارٍ تحميل البيانات...' },
+  { ticker:'META', name:'Meta Platforms', signal:'watch', why:'جارٍ تحميل البيانات...' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'جارٍ تحميل البيانات...' },
   { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'جارٍ تحميل البيانات...' },
   { ticker:'OPENAI', name:'OpenAI (ما قبل الاكتتاب)', signal:'ipo', why:'جارٍ تحميل البيانات...' },
   { ticker:'ANTH', name:'Anthropic (ما قبل الاكتتاب)', signal:'ipo', why:'جارٍ تحميل البيانات...' }
@@ -4198,7 +4222,7 @@ function buildInvPanel(lang){
 
   // Staleness check — warn if investment data is >14 days older than newest signal
   // ══ INV-DATA-DATE ══
-  const invDataDate=20260903;
+  const invDataDate=20260904;
   // ══ /INV-DATA-DATE ══
   const newestNum=computeNewestDate('en'); // get the raw number via a helper
   const isStale=parseDateNum(computeNewestDate('en'))>invDataDate+14;

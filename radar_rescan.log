@@ -5774,3 +5774,66 @@
 [2026-09-03 14:37:10 KSA]   Today is Thu — opportunity update runs on Sunday only
 [2026-09-03 14:37:10 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-09-04 14:36:09 KSA] Manual run triggered (--now flag)
+[2026-09-04 14:36:09 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-09-04 14:36:09 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-09-04 14:36:16 KSA]     ✓ 1 signals found
+[2026-09-04 14:36:18 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-09-04 14:36:26 KSA]     ✓ 3 signals found
+[2026-09-04 14:36:28 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-09-04 14:36:35 KSA]     ✓ 3 signals found
+[2026-09-04 14:36:37 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-09-04 14:36:49 KSA]     ✓ 3 signals found
+[2026-09-04 14:36:51 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-09-04 14:37:00 KSA]     ✓ 3 signals found
+[2026-09-04 14:37:02 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-09-04 14:37:10 KSA]     ✓ 3 signals found
+[2026-09-04 14:37:12 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-09-04 14:37:25 KSA]     ✓ 3 signals found
+[2026-09-04 14:37:27 KSA]   Scanning: AI investment funding IPO 2026
+[2026-09-04 14:37:39 KSA]     ✓ 3 signals found
+[2026-09-04 14:37:41 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-09-04 14:37:49 KSA]     ✓ 3 signals found
+[2026-09-04 14:37:51 KSA]   Total new signals: 25
+[2026-09-04 14:37:51 KSA]   Updating dashboard HTML...
+[2026-09-04 14:37:51 KSA]   ↩ 18 duplicate(s) skipped
+[2026-09-04 14:37:51 KSA]   ✚ 7 new signals to inject
+[2026-09-04 14:37:51 KSA]   ✓ 7 added, 18 skipped, 864 total signals
+[2026-09-04 14:37:51 KSA] 
+  ┌─── SCAN SUMMARY — September 04, 2026 ───
+[2026-09-04 14:37:51 KSA]   │ 01. [Breakthrough] AI in Smart Cities: Edge Computing and Autonomous Public Transit Trends
+[2026-09-04 14:37:51 KSA]   │ 02. [Breakthrough] BEX Asia 2026 showcases AI and robotics in construction with 60% of exhibitors
+[2026-09-04 14:37:51 KSA]   │ 03. [Breakthrough] DroneDeploy autonomous ground robots entering beta in 2026 after docked drone su
+[2026-09-04 14:37:51 KSA]   │ 04. [Release] Procore acquires DroneDeploy to integrate robotics platform into construction ma
+[2026-09-04 14:37:51 KSA]   │ 05. [Policy] ISO 19011:2026 Fourth Edition Released for Auditing Management Systems
+[2026-09-04 14:37:51 KSA]   │ 06. [Research] AI Food Safety Compliance Guide 2026: Machine Vision and Automated Monitoring
+[2026-09-04 14:37:51 KSA]   │ 07. [Breakthrough] Computer Vision AI for Restaurant Hygiene Monitoring and Compliance Enforcement
+[2026-09-04 14:37:51 KSA]   │ 08. [Policy] Cities Turn to AI to Speed Housing Permitting
+[2026-09-04 14:37:51 KSA]   │ 09. [Breakthrough] AI-Powered Home Inspection Business Revolution
+[2026-09-04 14:37:51 KSA]   │ 10. [Research] Seattle CivCheck AI Achieves 87% Accuracy on Permit Completeness
+[2026-09-04 14:37:51 KSA]   │ 11. [Policy] Hawaii Enacts AI Digital Imitation Laws
+[2026-09-04 14:37:51 KSA]   │ 12. [Policy] EU AI Act Annex III Compliance Deadline Extended
+[2026-09-04 14:37:51 KSA]   │ 13. [Policy] Connecticut AI Regulation Act with Regulatory Sandbox
+[2026-09-04 14:37:51 KSA]   │ 14. [Release] OpenAI releases GPT-6 Astra with 1.05M token context and critical-cyber safeguar
+[2026-09-04 14:37:51 KSA]   │ 15. [Release] Anthropic releases Claude Fable 5.1 and Mythos 5.1 with 75% cache-read pricing c
+[2026-09-04 14:37:51 KSA]   │ 16. [Release] Google DeepMind releases Gemini 3.8 Flash with cyber-capable variant on Septembe
+[2026-09-04 14:37:51 KSA]   │ 17. [Security] Azure OpenAI Privilege Escalation Vulnerability CVE-2026-45499 Requires Urgent P
+[2026-09-04 14:37:51 KSA]   │ 18. [Security] AI-Accelerated OT Exploit Porting Threatens Operational Technology Infrastructur
+[2026-09-04 14:37:51 KSA]   │ 19. [Release] Microsoft August Patch Tuesday Records 398 CVEs, Double Previous Record, Driven 
+[2026-09-04 14:37:51 KSA]   │ 20. [Funding] SpaceX IPO Raises Record $75 Billion, Becomes Sixth-Largest U.S. Public Company
+[2026-09-04 14:37:51 KSA]   │ 21. [Funding] Anthropic Files for IPO with $965 Billion Post-Money Valuation After $65B Series
+[2026-09-04 14:37:51 KSA]   │ 22. [Funding] DeepSeek Raises $7.4 Billion in First External Funding Round, Seeks Second Round
+[2026-09-04 14:37:51 KSA]   │ 23. [Research] AI 2027 Predictions Graded: 19 of 53 Confirmed or Ahead of Schedule
+[2026-09-04 14:37:51 KSA]   │ 24. [Release] ASUS Partners with Foxconn for AI City Solutions in 2026
+[2026-09-04 14:37:51 KSA]   │ 25. [Research] Smart Cities Shift to AI-Driven Core Infrastructure ROI Focus
+[2026-09-04 14:37:51 KSA]   └─── 25 total signals ───
+
+[2026-09-04 14:37:51 KSA]   [Market Intel] Updating risk signals...
+[2026-09-04 14:38:09 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-09-04 14:38:09 KSA]   [Market Intel] Updating stock signals...
+[2026-09-04 14:38:24 KSA]   ✓ Batch 1: 8 stocks updated
+[2026-09-04 14:38:40 KSA]   ✗ No JSON in batch 2
+[2026-09-04 14:38:40 KSA]   ✓ Stock signals updated (8 tickers, invDataDate → 20260904)
+[2026-09-04 14:38:40 KSA]   Today is Fri — opportunity update runs on Sunday only
+[2026-09-04 14:38:40 KSA] ═══ RESCAN COMPLETE ═══
+
