@@ -5837,3 +5837,63 @@
 [2026-09-04 14:38:40 KSA]   Today is Fri — opportunity update runs on Sunday only
 [2026-09-04 14:38:40 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-09-05 13:51:12 KSA] Manual run triggered (--now flag)
+[2026-09-05 13:51:12 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-09-05 13:51:12 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-09-05 13:51:24 KSA]     ✓ 1 signals found
+[2026-09-05 13:51:26 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-09-05 13:51:34 KSA]     ✓ 3 signals found
+[2026-09-05 13:51:36 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-09-05 13:51:47 KSA]     ✓ 2 signals found
+[2026-09-05 13:51:49 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-09-05 13:52:01 KSA]     ✓ 3 signals found
+[2026-09-05 13:52:03 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-09-05 13:52:16 KSA]     ✓ 3 signals found
+[2026-09-05 13:52:18 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-09-05 13:52:25 KSA]     ✓ 3 signals found
+[2026-09-05 13:52:27 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-09-05 13:52:37 KSA]     ✓ 3 signals found
+[2026-09-05 13:52:39 KSA]   Scanning: AI investment funding IPO 2026
+[2026-09-05 13:52:49 KSA]     ✓ 3 signals found
+[2026-09-05 13:52:51 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-09-05 13:52:59 KSA]     ✓ 1 signals found
+[2026-09-05 13:53:01 KSA]   Total new signals: 22
+[2026-09-05 13:53:01 KSA]   Updating dashboard HTML...
+[2026-09-05 13:53:01 KSA]   ↩ 12 duplicate(s) skipped
+[2026-09-05 13:53:01 KSA]   ✚ 10 new signals to inject
+[2026-09-05 13:53:01 KSA]   ✓ 10 added, 12 skipped, 874 total signals
+[2026-09-05 13:53:01 KSA] 
+  ┌─── SCAN SUMMARY — September 05, 2026 ───
+[2026-09-05 13:53:01 KSA]   │ 01. [Release] AGIQUAD Showcases D1 Quadruped Robots at LEAP 2026 for Smart City Inspection
+[2026-09-05 13:53:01 KSA]   │ 02. [Release] DroneDeploy Launches Three AI Agents for Construction Inspection
+[2026-09-05 13:53:01 KSA]   │ 03. [Breakthrough] Global Construction Robotics Market Reaches $5.2B, Growing 33% YoY
+[2026-09-05 13:53:01 KSA]   │ 04. [Research] Virginia Tech MARIO System Enables Remote Multi-Site Construction Monitoring
+[2026-09-05 13:53:01 KSA]   │ 05. [Policy] ISO 19011:2026 Published: AI Recognized in Food Safety Audits
+[2026-09-05 13:53:01 KSA]   │ 06. [Research] Food Safety Tech Research Launches FSTR Benchmark for AI Effectiveness
+[2026-09-05 13:53:01 KSA]   │ 07. [Policy] Cities Deploy AI to Speed Housing Permitting Processes
+[2026-09-05 13:53:01 KSA]   │ 08. [Release] ASHI Marks First AI Day for Home Inspectors on August 31, 2026
+[2026-09-05 13:53:01 KSA]   │ 09. [Security] Real Estate Leaders Express Growing Concern Over AI Compliance and Data Security
+[2026-09-05 13:53:01 KSA]   │ 10. [Policy] EU AI Act Enforcement Begins with New Transparency Rules
+[2026-09-05 13:53:01 KSA]   │ 11. [Policy] California AI Transparency Act (SB 942) Becomes Operative
+[2026-09-05 13:53:01 KSA]   │ 12. [Policy] Global AI Regulation Shifts to Active Enforcement in September 2026
+[2026-09-05 13:53:01 KSA]   │ 13. [Release] OpenAI Releases GPT-6 Astra with 1.05M Context Window
+[2026-09-05 13:53:01 KSA]   │ 14. [Release] Google Releases Gemini 3.8 Flash with Cyber Variant
+[2026-09-05 13:53:01 KSA]   │ 15. [Release] Anthropic Ships Claude Fable 5.1 with 75% Cache Price Cut
+[2026-09-05 13:53:01 KSA]   │ 16. [Security] GitSpawn: AI Coding Agents Vulnerable to Malicious .git Config Execution
+[2026-09-05 13:53:01 KSA]   │ 17. [Security] Critical Azure OpenAI Privilege Escalation Vulnerability CVE-2026-45499
+[2026-09-05 13:53:01 KSA]   │ 18. [Security] Consumer AI Assistant CVE-2026-24301: Three Chained Flaws Enable OAuth Data Exfi
+[2026-09-05 13:53:01 KSA]   │ 19. [Funding] Etched Raises $700M for AI Inference Silicon in August 2026
+[2026-09-05 13:53:01 KSA]   │ 20. [Funding] AI Startup Funding Reaches $171B in September, 90% of Total Investment
+[2026-09-05 13:53:01 KSA]   │ 21. [Release] Anthropic IPO Target: September-October 2026 After $65B Series H Round
+[2026-09-05 13:53:01 KSA]   │ 22. [Research] Gartner: AI Security Market to Reach $4.8B in 2027
+[2026-09-05 13:53:01 KSA]   └─── 22 total signals ───
+
+[2026-09-05 13:53:01 KSA]   [Market Intel] Updating risk signals...
+[2026-09-05 13:53:16 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-09-05 13:53:16 KSA]   [Market Intel] Updating stock signals...
+[2026-09-05 13:53:34 KSA]   ✗ No JSON in batch 1
+[2026-09-05 13:53:52 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-09-05 13:53:54 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260905)
+[2026-09-05 13:53:54 KSA]   Today is Sat — opportunity update runs on Sunday only
+[2026-09-05 13:53:54 KSA] ═══ RESCAN COMPLETE ═══
+
