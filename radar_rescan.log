@@ -5897,3 +5897,66 @@
 [2026-09-05 13:53:54 KSA]   Today is Sat — opportunity update runs on Sunday only
 [2026-09-05 13:53:54 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-09-06 14:15:31 KSA] Manual run triggered (--now flag)
+[2026-09-06 14:15:31 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-09-06 14:15:31 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-09-06 14:15:39 KSA]     ✓ 3 signals found
+[2026-09-06 14:15:41 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-09-06 14:15:55 KSA]     ✓ 3 signals found
+[2026-09-06 14:15:57 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-09-06 14:16:11 KSA]     ✓ 2 signals found
+[2026-09-06 14:16:13 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-09-06 14:16:22 KSA]     ✓ 0 signals found
+[2026-09-06 14:16:24 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-09-06 14:16:36 KSA]     ✓ 3 signals found
+[2026-09-06 14:16:38 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-09-06 14:16:45 KSA]     ✓ 3 signals found
+[2026-09-06 14:16:47 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-09-06 14:16:58 KSA]     ✓ 3 signals found
+[2026-09-06 14:17:00 KSA]   Scanning: AI investment funding IPO 2026
+[2026-09-06 14:17:11 KSA]     ✓ 3 signals found
+[2026-09-06 14:17:13 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-09-06 14:17:21 KSA]     ✓ 3 signals found
+[2026-09-06 14:17:23 KSA]   Total new signals: 23
+[2026-09-06 14:17:23 KSA]   Updating dashboard HTML...
+[2026-09-06 14:17:23 KSA]   ↩ 15 duplicate(s) skipped
+[2026-09-06 14:17:23 KSA]   ✚ 8 new signals to inject
+[2026-09-06 14:17:23 KSA]   ✓ 8 added, 15 skipped, 882 total signals
+[2026-09-06 14:17:23 KSA] 
+  ┌─── SCAN SUMMARY — September 06, 2026 ───
+[2026-09-06 14:17:23 KSA]   │ 01. [Breakthrough] AI for Tunnel Inspection: Game-Changing Technology in 2026
+[2026-09-06 14:17:23 KSA]   │ 02. [Breakthrough] Smart City Infrastructure: Kaohsiung's Physical AI Infrastructure Recognition
+[2026-09-06 14:17:23 KSA]   │ 03. [Release] Smart City AI Deployment: Full-Stack Solutions at 2026 Summit
+[2026-09-06 14:17:23 KSA]   │ 04. [Funding] GroundedAI Raises $2M for Underground AI Data Capture Technology
+[2026-09-06 14:17:23 KSA]   │ 05. [Breakthrough] Bedrock Robotics Deploys Fully Autonomous Excavators on U.S. Infrastructure Site
+[2026-09-06 14:17:23 KSA]   │ 06. [Breakthrough] DroneDeploy Reports 160% Year-over-Year Growth in Robotics Missions Through Sept
+[2026-09-06 14:17:23 KSA]   │ 07. [Policy] ISO 19011:2026 Published for Food Safety Audit Standards
+[2026-09-06 14:17:23 KSA]   │ 08. [Research] August 2026 Food Safety News: AI and Genome Sequencing Advances
+[2026-09-06 14:17:23 KSA]   │ 09. [Policy] EU AI Act High-Risk System Inspections Begin September 2026
+[2026-09-06 14:17:23 KSA]   │ 10. [Release] PCAOB Updates AI Auditing Standards for 2026 Financial Audits
+[2026-09-06 14:17:23 KSA]   │ 11. [Policy] State AI Auditing Requirements Expand: Illinois and Washington Pass Laws
+[2026-09-06 14:17:23 KSA]   │ 12. [Release] Claude Fable 5.1 and Mythos 5.1 Released by Anthropic
+[2026-09-06 14:17:23 KSA]   │ 13. [Release] GPT-6 Astra Released by OpenAI with Cyber Safeguard Trigger
+[2026-09-06 14:17:23 KSA]   │ 14. [Release] Gemini 3.8 Flash and Muse Spark 1.3 Launch
+[2026-09-06 14:17:23 KSA]   │ 15. [Research] GPT-5.6-Cyber AI Escapes Virtual Machine Three Times Using Zero-Days
+[2026-09-06 14:17:23 KSA]   │ 16. [Security] Langflow AI Platform Exploited for Remote Code Execution; 360+ Attacks in One We
+[2026-09-06 14:17:23 KSA]   │ 17. [Breakthrough] Anthropic Mythos Preview Generates 23,019 AI Vulnerabilities from 281 Open-Sourc
+[2026-09-06 14:17:23 KSA]   │ 18. [Funding] AI Startup Funding Market Shows Split: Mega-Rounds to Giants, Tougher for Most
+[2026-09-06 14:17:23 KSA]   │ 19. [Funding] Etched Completes Major AI Chip Funding Round Amid $5.37B Market Surge
+[2026-09-06 14:17:23 KSA]   │ 20. [Policy] OpenAI IPO Timeline Uncertain Amid Revenue Growth Challenges
+[2026-09-06 14:17:23 KSA]   │ 21. [Breakthrough] Phoenix expands AI sewer pipeline inspection, doubles annual coverage to 600 mil
+[2026-09-06 14:17:23 KSA]   │ 22. [Research] 2026 AI progress tracking 65% of predicted pace, ASI timeline extended to 2028-2
+[2026-09-06 14:17:23 KSA]   │ 23. [Release] FPT enhances intelligent inspection solution for smart cities using NVIDIA Metro
+[2026-09-06 14:17:23 KSA]   └─── 23 total signals ───
+
+[2026-09-06 14:17:23 KSA]   [Market Intel] Updating risk signals...
+[2026-09-06 14:17:38 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-09-06 14:17:38 KSA]   [Market Intel] Updating stock signals...
+[2026-09-06 14:17:54 KSA]   ✗ No JSON in batch 1
+[2026-09-06 14:18:02 KSA]   ✗ No JSON in batch 2
+[2026-09-06 14:18:02 KSA]   ✗ No stock data retrieved — keeping existing
+[2026-09-06 14:18:02 KSA]   Sunday: running weekly opportunity vector update...
+[2026-09-06 14:18:02 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-09-06 14:18:19 KSA]   ✗ No JSON in opps response — keeping existing
+[2026-09-06 14:18:19 KSA] ═══ RESCAN COMPLETE ═══
+
