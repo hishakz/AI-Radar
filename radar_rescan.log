@@ -5960,3 +5960,63 @@
 [2026-09-06 14:18:19 KSA]   ✗ No JSON in opps response — keeping existing
 [2026-09-06 14:18:19 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-09-07 15:56:28 KSA] Manual run triggered (--now flag)
+[2026-09-07 15:56:28 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-09-07 15:56:28 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-09-07 15:56:32 KSA]     ✓ 1 signals found
+[2026-09-07 15:56:34 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-09-07 15:56:42 KSA]     ✓ 3 signals found
+[2026-09-07 15:56:44 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-09-07 15:56:52 KSA]     ✓ 3 signals found
+[2026-09-07 15:56:54 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-09-07 15:57:04 KSA]     ✓ 0 signals found
+[2026-09-07 15:57:06 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-09-07 15:57:14 KSA]     ✓ 3 signals found
+[2026-09-07 15:57:16 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-09-07 15:57:24 KSA]     ✓ 3 signals found
+[2026-09-07 15:57:26 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-09-07 15:57:36 KSA]     ✓ 3 signals found
+[2026-09-07 15:57:38 KSA]   Scanning: AI investment funding IPO 2026
+[2026-09-07 15:57:54 KSA]     ✓ 3 signals found
+[2026-09-07 15:57:56 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-09-07 15:58:06 KSA]     ✓ 3 signals found
+[2026-09-07 15:58:08 KSA]   Total new signals: 22
+[2026-09-07 15:58:08 KSA]   Updating dashboard HTML...
+[2026-09-07 15:58:08 KSA]   ↩ 11 duplicate(s) skipped
+[2026-09-07 15:58:08 KSA]   ✚ 11 new signals to inject
+[2026-09-07 15:58:08 KSA]   ✓ 11 added, 11 skipped, 893 total signals
+[2026-09-07 15:58:08 KSA] 
+  ┌─── SCAN SUMMARY — September 07, 2026 ───
+[2026-09-07 15:58:08 KSA]   │ 01. [Research] From Optimisation to Closed-Loop Urban Automation: AI-IoT Smart Cities Framework
+[2026-09-07 15:58:08 KSA]   │ 02. [Breakthrough] Doosan Infracore Concept-X: Fully Automated AI-Driven Site Management System
+[2026-09-07 15:58:08 KSA]   │ 03. [Breakthrough] DroneDeploy Launches Autonomous Ground Robots in Beta for 2026
+[2026-09-07 15:58:08 KSA]   │ 04. [Research] AI Construction Inspection Achieves 85-95% Accuracy in Hazard Detection
+[2026-09-07 15:58:08 KSA]   │ 05. [Policy] ISO 19011:2026 Fourth Edition Published for Food Safety Auditing Guidelines
+[2026-09-07 15:58:08 KSA]   │ 06. [Breakthrough] AI Computer Vision Monitors Real-Time Restaurant Food Safety Compliance
+[2026-09-07 15:58:08 KSA]   │ 07. [Policy] FDA Adopts Machine Learning for Risk-Based Food Inspection Scheduling
+[2026-09-07 15:58:08 KSA]   │ 08. [Policy] US Urges Looser AI Regulation at G20 Meeting While EU Pursues Stricter Controls
+[2026-09-07 15:58:08 KSA]   │ 09. [Policy] Connecticut Passes Most Comprehensive AI Law of 2026 Session with SB 5
+[2026-09-07 15:58:08 KSA]   │ 10. [Policy] Texas AG TRAIGA Complaint Mechanism for AI Violations Due by September 2026
+[2026-09-07 15:58:08 KSA]   │ 11. [Release] OpenAI Releases GPT-6 Astra with 1.05M Context and Critical Cyber Safeguard
+[2026-09-07 15:58:08 KSA]   │ 12. [Release] Anthropic Ships Claude Fable 5.1 with 75% Cache-Read Price Cut
+[2026-09-07 15:58:08 KSA]   │ 13. [Release] Google Releases Gemini 3.8 Flash and Cyber Variant on September 2
+[2026-09-07 15:58:08 KSA]   │ 14. [Research] Cybersecurity Today: AI Threats, Ransomware, Zero Trust & Security Trends
+[2026-09-07 15:58:08 KSA]   │ 15. [Security] AI Security Daily Briefing: Legal Risks, Supply Chain Threats, Agentic AI
+[2026-09-07 15:58:08 KSA]   │ 16. [Security] Shai-Hulud Worm Campaign: LiteLLM Compromise Affected 2,500+ Organizations
+[2026-09-07 15:58:08 KSA]   │ 17. [Funding] Gimlet Labs Raises $300M Series B at $3B Valuation for AI Inference Infrastructu
+[2026-09-07 15:58:08 KSA]   │ 18. [Research] Latest AI Infrastructure and Startup Funding Show Split Market in September
+[2026-09-07 15:58:08 KSA]   │ 19. [Funding] AI Chip Funding Surge: Etched, Groq, SambaNova Lead $5.37B Investment Wave
+[2026-09-07 15:58:08 KSA]   │ 20. [Breakthrough] Latest AI Advancements Show Shift From Chat Tools to Workflow Operators
+[2026-09-07 15:58:08 KSA]   │ 21. [Funding] Conveo Raises $50M Series A for AI-Powered Customer Interview Platform
+[2026-09-07 15:58:08 KSA]   │ 22. [Release] Busan World Smart City Expo September 9-11: AI-Powered Urban Innovation Showcase
+[2026-09-07 15:58:08 KSA]   └─── 22 total signals ───
+
+[2026-09-07 15:58:08 KSA]   [Market Intel] Updating risk signals...
+[2026-09-07 15:58:23 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-09-07 15:58:23 KSA]   [Market Intel] Updating stock signals...
+[2026-09-07 15:58:45 KSA]   ✗ No JSON in batch 1
+[2026-09-07 15:59:01 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-09-07 15:59:03 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260907)
+[2026-09-07 15:59:03 KSA]   Today is Mon — opportunity update runs on Sunday only
+[2026-09-07 15:59:03 KSA] ═══ RESCAN COMPLETE ═══
+
