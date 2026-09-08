@@ -6020,3 +6020,60 @@
 [2026-09-07 15:59:03 KSA]   Today is Mon — opportunity update runs on Sunday only
 [2026-09-07 15:59:03 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-09-08 14:38:17 KSA] Manual run triggered (--now flag)
+[2026-09-08 14:38:17 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-09-08 14:38:17 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-09-08 14:38:30 KSA]     ✓ 3 signals found
+[2026-09-08 14:38:32 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-09-08 14:38:41 KSA]     ✓ 3 signals found
+[2026-09-08 14:38:43 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-09-08 14:38:52 KSA]     ✓ 0 signals found
+[2026-09-08 14:38:54 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-09-08 14:39:08 KSA]     ✓ 3 signals found
+[2026-09-08 14:39:10 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-09-08 14:39:20 KSA]     ✓ 1 signals found
+[2026-09-08 14:39:22 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-09-08 14:39:31 KSA]     ✓ 3 signals found
+[2026-09-08 14:39:33 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-09-08 14:39:46 KSA]     ✓ 3 signals found
+[2026-09-08 14:39:48 KSA]   Scanning: AI investment funding IPO 2026
+[2026-09-08 14:39:58 KSA]     ✓ 3 signals found
+[2026-09-08 14:40:00 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-09-08 14:40:12 KSA]     ✓ 0 signals found
+[2026-09-08 14:40:14 KSA]   Total new signals: 19
+[2026-09-08 14:40:14 KSA]   Updating dashboard HTML...
+[2026-09-08 14:40:14 KSA]   ↩ 14 duplicate(s) skipped
+[2026-09-08 14:40:14 KSA]   ✚ 5 new signals to inject
+[2026-09-08 14:40:14 KSA]   ✓ 5 added, 14 skipped, 898 total signals
+[2026-09-08 14:40:14 KSA] 
+  ┌─── SCAN SUMMARY — September 08, 2026 ───
+[2026-09-08 14:40:14 KSA]   │ 01. [Breakthrough] AI in Drone Technology: 2026 Drone Revolution Reaches Market Maturity
+[2026-09-08 14:40:14 KSA]   │ 02. [Release] Anthropic Opens Model Hardware Standard for AI Agent Physical Device Control
+[2026-09-08 14:40:14 KSA]   │ 03. [Research] LogicMonitor Reports 96% IT Leaders Expect Observability Spending Growth Through
+[2026-09-08 14:40:14 KSA]   │ 04. [Breakthrough] Excavator Technology 2026: Smart Excavators & Autonomous Equipment
+[2026-09-08 14:40:14 KSA]   │ 05. [Breakthrough] AI Site Inspection in Construction: 3 Tools for 2026
+[2026-09-08 14:40:14 KSA]   │ 06. [Research] Construction Technology Trends 2026: AI & Robotics Transformation
+[2026-09-08 14:40:14 KSA]   │ 07. [Breakthrough] AI Site Inspection Tools Expand in Construction Industry 2026
+[2026-09-08 14:40:14 KSA]   │ 08. [Policy] Building Permitting AI Expansion Across 20+ US Cities
+[2026-09-08 14:40:14 KSA]   │ 09. [Breakthrough] Drones and AI Revolutionizing Building Envelope Inspection Methods
+[2026-09-08 14:40:14 KSA]   │ 10. [Policy] White House Meets with AI Labs on Voluntary Safety Testing Guidelines
+[2026-09-08 14:40:14 KSA]   │ 11. [Release] OpenAI Releases GPT-6 Astra with 1.05M Context Window and Enterprise Access
+[2026-09-08 14:40:14 KSA]   │ 12. [Release] Anthropic Launches Claude Fable 5.1 and Mythos 5.1 with 75% Cache Pricing Cut
+[2026-09-08 14:40:14 KSA]   │ 13. [Release] Google Releases Gemini 3.8 Flash with Fairwind-Gated Cyber Variant
+[2026-09-08 14:40:14 KSA]   │ 14. [Security] Aurora Ransomware Operators Use Cursor AI for Live Network Exploitation
+[2026-09-08 14:40:14 KSA]   │ 15. [Security] Azure OpenAI CVE-2026-45499 Privilege Escalation Vulnerability Disclosed
+[2026-09-08 14:40:14 KSA]   │ 16. [Release] Anthropic Claude AI Outage Impacts Mythos 5.1, Fable 5.1, and Opus 5
+[2026-09-08 14:40:14 KSA]   │ 17. [Release] Anthropic IPO Filing Delayed to Late September 2026
+[2026-09-08 14:40:14 KSA]   │ 18. [Funding] Etched Raises $700M for AI Inference Chip Development
+[2026-09-08 14:40:14 KSA]   │ 19. [Release] OpenAI IPO Planned for Q4 2026 Despite $14B 2026 Losses
+[2026-09-08 14:40:14 KSA]   └─── 19 total signals ───
+
+[2026-09-08 14:40:14 KSA]   [Market Intel] Updating risk signals...
+[2026-09-08 14:40:29 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-09-08 14:40:29 KSA]   [Market Intel] Updating stock signals...
+[2026-09-08 14:40:45 KSA]   ✗ No JSON in batch 1
+[2026-09-08 14:41:00 KSA]   ✓ Batch 2: 7 stocks updated
+[2026-09-08 14:41:02 KSA]   ✓ Stock signals updated (7 tickers, invDataDate → 20260908)
+[2026-09-08 14:41:02 KSA]   Today is Tue — opportunity update runs on Sunday only
+[2026-09-08 14:41:02 KSA] ═══ RESCAN COMPLETE ═══
+
