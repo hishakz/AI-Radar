@@ -6199,3 +6199,61 @@
 [2026-09-10 14:45:37 KSA]   Today is Thu — opportunity update runs on Sunday only
 [2026-09-10 14:45:37 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-09-11 14:42:29 KSA] Manual run triggered (--now flag)
+[2026-09-11 14:42:29 KSA] ═══ DAILY RESCAN STARTED ═══
+[2026-09-11 14:42:29 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-09-11 14:42:37 KSA]     ✓ 2 signals found
+[2026-09-11 14:42:39 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-09-11 14:42:53 KSA]     ✓ 3 signals found
+[2026-09-11 14:42:55 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-09-11 14:43:04 KSA]     ✓ 0 signals found
+[2026-09-11 14:43:06 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-09-11 14:43:13 KSA]     ✓ 0 signals found
+[2026-09-11 14:43:15 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-09-11 14:43:27 KSA]     ✓ 3 signals found
+[2026-09-11 14:43:29 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-09-11 14:43:35 KSA]     ✓ 3 signals found
+[2026-09-11 14:43:37 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-09-11 14:43:44 KSA]     ✓ 3 signals found
+[2026-09-11 14:43:46 KSA]   Scanning: AI investment funding IPO 2026
+[2026-09-11 14:43:52 KSA]     ✓ 3 signals found
+[2026-09-11 14:43:54 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-09-11 14:44:06 KSA]     ✓ 3 signals found
+[2026-09-11 14:44:08 KSA]   Total new signals: 20
+[2026-09-11 14:44:08 KSA]   Updating dashboard HTML...
+[2026-09-11 14:44:08 KSA]   ↩ 17 duplicate(s) skipped
+[2026-09-11 14:44:08 KSA]   ✚ 3 new signals to inject
+[2026-09-11 14:44:08 KSA]   ✓ 3 added, 17 skipped, 921 total signals
+[2026-09-11 14:44:08 KSA] 
+  ┌─── SCAN SUMMARY — September 11, 2026 ───
+[2026-09-11 14:44:08 KSA]   │ 01. [Research] AI for Smart Infrastructure Adoption Reaches Global Standard
+[2026-09-11 14:44:08 KSA]   │ 02. [Breakthrough] AI Tunnel Inspection Technology Transforms Infrastructure Assessment in 2026
+[2026-09-11 14:44:08 KSA]   │ 03. [Breakthrough] Autonomous inspection drones ending rope-access era in 2026
+[2026-09-11 14:44:08 KSA]   │ 04. [Breakthrough] Bedrock Robotics deploys fully autonomous excavators on U.S. infrastructure proj
+[2026-09-11 14:44:08 KSA]   │ 05. [Breakthrough] DroneDeploy expands autonomous ground robots beta in 2026
+[2026-09-11 14:44:08 KSA]   │ 06. [Policy] EU AI Office Launches First Wave of High-Risk System Audits Starting August 30, 
+[2026-09-11 14:44:08 KSA]   │ 07. [Policy] September 2026 Global AI Regulation Surge: 29 US States Enact Laws as EU, Brazil
+[2026-09-11 14:44:08 KSA]   │ 08. [Policy] Illinois SB 315 Requires AI Developers Over $500M Revenue to Undergo Annual Thir
+[2026-09-11 14:44:08 KSA]   │ 09. [Release] OpenAI releases GPT-6 Astra with 1.05M context window
+[2026-09-11 14:44:08 KSA]   │ 10. [Release] Anthropic releases Claude Fable 5.1 with lower cache costs
+[2026-09-11 14:44:08 KSA]   │ 11. [Release] Google releases Gemini 3.8 Flash with improved agent workflows
+[2026-09-11 14:44:08 KSA]   │ 12. [Security] Anthropic Discloses Fourth AI Model Breach of Third-Party Systems
+[2026-09-11 14:44:08 KSA]   │ 13. [Security] GitHub Copilot Vulnerability Enables Remote Code Execution via Prompt Injection
+[2026-09-11 14:44:08 KSA]   │ 14. [Research] NIST Analysis Confirms AI Agents Introduce New Security Threats Requiring Adapte
+[2026-09-11 14:44:08 KSA]   │ 15. [Funding] SpaceX IPO pullback: stock breaks offer price within 6 weeks after record $75B J
+[2026-09-11 14:44:08 KSA]   │ 16. [Funding] Anthropic meeting investors for October 2026 IPO debut under ticker ANTH
+[2026-09-11 14:44:08 KSA]   │ 17. [Funding] Global AI funding hit record $510B in H1 2026, with 80% of venture capital flowi
+[2026-09-11 14:44:08 KSA]   │ 18. [Research] AI 2027 Tracker Updated: Superhuman Coding Predictions Revised with 80% Confiden
+[2026-09-11 14:44:08 KSA]   │ 19. [Breakthrough] AI Smart Infrastructure Report: Grid-Edge Intelligence Reduces Curtailment 50%
+[2026-09-11 14:44:08 KSA]   │ 20. [Release] FPT Enhances Smart City Inspection Solution with NVIDIA AI Blueprint Integration
+[2026-09-11 14:44:08 KSA]   └─── 20 total signals ───
+
+[2026-09-11 14:44:08 KSA]   [Market Intel] Updating risk signals...
+[2026-09-11 14:44:23 KSA]   ✗ No JSON in risk response — keeping existing
+[2026-09-11 14:44:23 KSA]   [Market Intel] Updating stock signals...
+[2026-09-11 14:44:36 KSA]   ✓ Batch 1: 8 stocks updated
+[2026-09-11 14:44:52 KSA]   ✗ No JSON in batch 2
+[2026-09-11 14:44:52 KSA]   ✓ Stock signals updated (8 tickers, invDataDate → 20260911)
+[2026-09-11 14:44:52 KSA]   Today is Fri — opportunity update runs on Sunday only
+[2026-09-11 14:44:52 KSA] ═══ RESCAN COMPLETE ═══
+
