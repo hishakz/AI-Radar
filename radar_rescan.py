@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
 AI Inspection Radar — Daily Auto-Rescan  (v2, Sep 2026)
-Runs every morning at 09:30 KSA (UTC+3 = 06:30 UTC)
+Runs Monday, Wednesday and Friday at 09:30 KSA (UTC+3 = 06:30 UTC)
 
 WHAT IS AUTO-GENERATED (nothing news-like is hardcoded any more):
-  ✅ DAILY  → AI Global Signals: new items, translated to Arabic, absolute dates, pruned after RETENTION_DAYS
-  ✅ DAILY  → Market Intel: stock rating (buy/watch/caution/ipo) + "why" text, all tickers
-  ✅ DAILY  → Market Intel: 5 risk signals
-  ✅ WEEKLY → Market Intel: opportunity vectors — horizon, tickers, body (Sunday KSA)
-  ✅ WEEKLY → INSPECT cards: 4 sectors × 4 cards, bilingual (Sunday KSA)
+  ✅ EVERY RUN (Mon/Wed/Fri) → AI Global Signals: new items, translated to Arabic, absolute dates, pruned after RETENTION_DAYS
+  ✅ EVERY RUN → Market Intel: stock rating (buy/watch/caution/ipo) + "why" text, all tickers
+  ✅ EVERY RUN → Market Intel: 5 risk signals
+  ✅ WEEKLY (Monday run) → Market Intel: opportunity vectors — horizon, tickers, body
+  ✅ WEEKLY (Monday run) → INSPECT cards: 4 sectors × 4 cards, bilingual
   ✅ FIRST RUN → everything above regenerates immediately while SEED_PENDING=true in the HTML
   ❌ MANUAL → VECTORS + decision table + roadmap (NCIM's own strategic positions, not news)
 
@@ -39,11 +39,13 @@ ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "YOUR_KEY_HERE")
 DASHBOARD_PATH    = os.environ.get("DASHBOARD_PATH", "./ai_radar_bilingual.html")
 KSA_TZ            = pytz.timezone("Asia/Riyadh")
 SCAN_TIME_KSA     = "09:30"
+SCAN_TIME_UTC     = "06:30"          # 09:30 KSA
+SCAN_DAYS         = ["monday", "wednesday", "friday"]
 LOG_FILE          = "./radar_rescan.log"
 MODEL             = "claude-haiku-4-5-20251001"
 MAX_TOKENS        = 6000          # bilingual JSON needs headroom; 1000 was the root cause of stale panels
 RETENTION_DAYS    = int(os.environ.get("RETENTION_DAYS", "90"))   # signals older than this are pruned
-WEEKLY_DAY        = 6             # 6 = Sunday (Python weekday)
+WEEKLY_DAY        = 0             # 0 = Monday (Python weekday) — weekly sections run on the Monday scan
 
 _NOW         = datetime.now()
 CURRENT_YEAR = _NOW.year
@@ -258,7 +260,7 @@ def to_absolute_date(d_str, ref):
 
 # ─── MAIN SCAN ────────────────────────────────────────────────────────────────
 def run_rescan():
-    log("═══ DAILY RESCAN STARTED ═══")
+    log("═══ RESCAN STARTED ═══")
     client  = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
     now_ksa = datetime.now(KSA_TZ)
     today   = now_ksa.strftime("%B %d, %Y")
@@ -307,7 +309,7 @@ Return ONLY a valid JSON array."""
         update_inv_opps(client, today)
         update_inspect_cards(client, today, ref)
     else:
-        log("  Weekly sections (opportunities, INSPECT cards) run on Sunday KSA — skipped today")
+        log("  Weekly sections (opportunities, INSPECT cards) run on the Monday scan — skipped today")
 
     # 6. Clear the seed flag once no generated block carries a SEED tag any more
     html = _read_html()
@@ -679,8 +681,10 @@ def translate_backlog():
 
 # ─── SCHEDULER ────────────────────────────────────────────────────────────────
 def scheduled_job():
-    log(f"Scheduler triggered at {datetime.now(KSA_TZ).strftime('%H:%M KSA')}")
+    log(f"Scheduler triggered at {datetime.now(KSA_TZ).strftime('%A %H:%M KSA')}")
     run_rescan()
+    with open(".last_rescan", "w") as f:
+        f.write(datetime.now(KSA_TZ).strftime("%Y-%m-%d"))
 
 if __name__ == "__main__":
     if "--translate-backlog" in sys.argv:
@@ -689,13 +693,18 @@ if __name__ == "__main__":
         log("Manual run triggered (--now flag)")
         run_rescan()
     else:
-        log(f"Scheduler started — will rescan daily at {SCAN_TIME_KSA} KSA")
+        log(f"Scheduler started — will rescan {', '.join(d.capitalize() for d in SCAN_DAYS)} at {SCAN_TIME_KSA} KSA")
         log(f"Dashboard: {DASHBOARD_PATH}")
-        schedule.every().day.at("06:30").do(scheduled_job)
+        for day in SCAN_DAYS:
+            getattr(schedule.every(), day).at(SCAN_TIME_UTC).do(scheduled_job)
+        # Catch-up: if today is a scan day and today's scan hasn't happened yet, run it now
         last_run_file = ".last_rescan"
-        today_str = datetime.now(KSA_TZ).strftime("%Y-%m-%d")
-        if not os.path.exists(last_run_file) or open(last_run_file).read().strip() != today_str:
-            log("No scan yet today — running initial scan...")
+        now_ksa   = datetime.now(KSA_TZ)
+        today_str = now_ksa.strftime("%Y-%m-%d")
+        is_scan_day = now_ksa.strftime("%A").lower() in SCAN_DAYS
+        already_ran = os.path.exists(last_run_file) and open(last_run_file).read().strip() == today_str
+        if is_scan_day and not already_ran:
+            log("Scan day and no scan yet today — running catch-up scan...")
             run_rescan()
             with open(last_run_file, "w") as f:
                 f.write(today_str)
