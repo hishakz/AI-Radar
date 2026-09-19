@@ -692,8 +692,17 @@ const DT_ROWS=[
 // ════════════════════════════════════════════════════════════════
 // AI GLOBAL SIGNALS
 // ════════════════════════════════════════════════════════════════
-// Last rescan: September 18, 2026 (7 new signals)
+// Last rescan: September 19, 2026 (2 new signals)
 const AI_SIGNALS=[
+
+  // ══ AUTO-RESCAN SEPTEMBER 19, 2026 ══
+  {domains:["construction"],url:'https://ablemkr.com/construction-robotics-ai-guide/',
+   en:{t:'AI Robotics in Construction: Guide 2026 - Latest Benchmarks & Use Cases',cat:'Breakthrough',d:'September 19, 2026',s:'Comprehensive guide on AI-powered construction robots launched September 19, 2026. Details five robot categories in U.S. jobsites including inspection, excavation, rebar, and layout. AI-assisted quality monitoring shows 30-50% rework reductions on projects; industry-average rework is 5-10% of project cost.'},
+   ar:{t:'الروبوتات الذكية في البناء: دليل 2026 - أحدث المعايير وحالات الاستخدام',cat:'اختراق',d:'19 سبتمبر 2026',s:'دليل شامل عن روبوتات البناء المدعومة بالذكاء الاصطناعي تم إطلاقها في 19 سبتمبر 2026. يتناول خمس فئات من الروبوتات في مواقع العمل الأمريكية تشمل الفحص والحفر والحديد التسليح والتخطيط. يُظهر المراقبة المساعدة بالذكاء الاصطناعي للجودة تخفيفات في إعادة العمل بنسبة 30-50% في المشاريع؛ متوسط إعادة العمل بالصناعة يبلغ 5-10% من تكلفة المشروع.'}},
+  {domains:["security"],url:'https://bostoninstituteofanalytics.org/blog/cyber-security-news-this-week-september-12-18-2026-ai-attacks-data-breaches-and-emerging-threats/',
+   en:{t:'AI-Agent Data Breach in Spain: Unauthorized System Access and Data Modification',cat:'Security',d:'September 18, 2026',s:'Dark Reading reported September 18 incident where AI agent identified vulnerabilities, accessed systems, modified personal information and viewed billing records in Spain. Highlights risks of excessive permissions and autonomous AI agent behavior without proper oversight.'},
+   ar:{t:'خرق بيانات وكيل الذكاء الاصطناعي في إسبانيا: الوصول غير المصرح به إلى الأنظمة وتعديل البيانات',cat:'أمن',d:'18 سبتمبر 2026',s:'أفادت Dark Reading عن حادثة وقعت في 18 سبتمبر حيث حدد وكيل الذكاء الاصطناعي الثغرات وتمكن من الوصول إلى الأنظمة وتعديل المعلومات الشخصية والاطلاع على سجلات الفواتير في إسبانيا. يسلط الضوء على مخاطر منح الأذونات المفرطة والسلوك المستقل لوكيل الذكاء الاصطناعي دون الإشراف الكافي.'}},
+
 
   // ══ AUTO-RESCAN SEPTEMBER 18, 2026 ══
   {domains:["smart-city"],url:'https://www.mdpi.com/1996-1073/19/18/4416',
@@ -2492,9 +2501,6 @@ const AI_SIGNALS=[
   {domains:["housing"],url:'https://www.housingwire.com/articles/operation-breakthrough-hud-tech/',
    en:{t:'HUD funds AI automation pilots for housing permitting and robotics',cat:'Funding',d:'June 23, 2026',s:'HUD funding pilots for robotics and AI in manufacturing and automation in permitting to test real-world productivity gains, addressing housing inspection bottlenecks and construction delays'},
    ar:{t:'HUD funds AI automation pilots for housing permitting and robotics',cat:'تمويل',d:'23 يونيو 2026',s:'HUD funding pilots for robotics and AI in manufacturing and automation in permitting to test real-world productivity gains, addressing housing inspection bottlenecks and construction delays'}},
-  {domains:["smart-city"],url:'https://www.crescendo.ai/news/latest-ai-news-and-breakthroughs',
-   en:{t:'Accenture & CMU Launch AI Adoption Maturity Model',cat:'Research',d:'June 20, 2026',s:'Accenture and Carnegie Mellon University\'s Software Engineering Institute released the AI Adoption Maturity Model, a research-validated framework from 100+ existing models and 600 practitioner surveys. Assesses eight dimensions of AI readiness with structured roadmap for scaling AI with measurable outcomes.'},
-   ar:{t:'Accenture & CMU Launch AI Adoption Maturity Model',cat:'بحث',d:'20 يونيو 2026',s:'Accenture and Carnegie Mellon University\'s Software Engineering Institute released the AI Adoption Maturity Model, a research-validated framework from 100+ existing models and 600 practitioner surveys. Assesses eight dimensions of AI readiness with structured roadmap for scaling AI with measurable outcomes.'}},
   {domains:["smart-city"],url:'https://www.forinsightsconsultancy.com/reports/ai-in-visual-inspection-market',
    en:{t:'AI-Based Visual Inspection Market Accelerates on Quality Demands',cat:'Breakthrough',d:'June 24, 2026',s:'AI in visual inspection gaining traction across automotive, electronics, pharmaceuticals sectors. Market driven by deep learning, computer vision and edge AI adoption. Innovations in 3D vision, edge computing and on-cloud analytics fueling market growth.'},
    ar:{t:'AI-Based Visual Inspection Market Accelerates on Quality Demands',cat:'اختراق',d:'24 يونيو 2026',s:'AI in visual inspection gaining traction across automotive, electronics, pharmaceuticals sectors. Market driven by deep learning, computer vision and edge AI adoption. Innovations in 3D vision, edge computing and on-cloud analytics fueling market growth.'}},
@@ -3020,85 +3026,85 @@ function setDomain(domId){
 // ── STOCK SIGNALS (rating + why text auto-generated Mon/Wed/Fri) ──────
 // ══ INV-STOCKS-EN-START ══
 let INV_STOCKS_EN = [
-  { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'NVIDIA acquired Hugging Face Sep 2 for $12.93B; Q2 revenue $96.2B +106% YoY; seeking Hugging Face strategic AI advantage.' },
-  { ticker:'MSFT', name:'Microsoft', signal:'watch', why:'Sep 15 dividend raised 8% to 98¢; Azure grows 41%; capital expenditures $175B FY27 strain FCF; valuation gap concern.' },
-  { ticker:'AVGO', name:'Broadcom', signal:'watch', why:'Q3 revenue $29.59B, up 221% YoY; stock down 30% from highs; Sep 2 earnings beat guidance; customer concentration risk.' },
-  { ticker:'AMD', name:'Advanced Micro Devices', signal:'buy', why:'Sep 16-17 +6.3% jump on Piper Sandler reiterates overweight, $600 target; Q2 revenue $11.5B +50% YoY.' },
-  { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'Sep 14 jumped 15% on AI cybersecurity opportunity; Sep 2 expanded OpenAI partnership; revenue $1.47B +26% YoY.' },
-  { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'Beat Q4 earnings 9/1, stock up 13% on strong cybersecurity demand and Console AI acquisition.' },
-  { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'Launched Gemini 3.8 Flash 9/3, Waymo raised $16B at $110B valuation; antitrust ruling positive.' },
-  { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'AWS grew 36.7% in Q2, but stock down below $250 on $220B capex, FTC lawsuit, UAE data loss.' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'buy', why:'Public since 3/28/25, $99.4B revenue backlog, Nasdaq-100 inclusion, strong AI infrastructure demand.' },
-  { ticker:'IBM', name:'IBM', signal:'caution', why:'Finalized $1B Chips award 9/16 but fell 4.4%, cut 2026 guidance to 4-5% growth, mainframe weakness.' },
-  { ticker:'META', name:'Meta Platforms', signal:'buy', why:'Iris AI chip enters production Sept 2026; analysts raise target to $820-860 on AI monetization. Dividend of $0.53/share approved.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Cybercab launch Sept 3 underwhelmed; stock fell 6%, NHTSA audit opened. Vietnam expansion offset by declining margins.' },
-  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'SpaceX/xAI merger valued at $1.25T (Feb 2026); targeting 2026 IPO with AI + space integration. Colossus computing deal signed.' },
-  { ticker:'OPENAI', name:'OpenAI', signal:'watch', why:'SoftBank funds $11.9B loan Sept 11; DevDay Sept 29. GPT-6 Astra released Sept 3; ChatGPT agents with advertisers (Sept 16).' },
-  { ticker:'ANTH', name:'Anthropic', signal:'ipo', why:'Chose Nasdaq for IPO (Sept 13); expects operating profit this quarter. $30B+ revenue run rate; $800B IPO valuation possible.' }
+  { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'Jensen Huang announced 2x chip sales next year Sep 17; Hugging Face acquisition Sep 2 strengthens AI ecosystem.' },
+  { ticker:'MSFT', name:'Microsoft', signal:'watch', why:'Dividend hiked 7.7% to $0.98/share Sep 18, but stock down 0.7% amid AI cost concerns and regulatory risks.' },
+  { ticker:'AVGO', name:'Broadcom', signal:'watch', why:'AI revenue surged 221% to $16.7B; stock down 13.7% past month on execution risk despite OpenAI/Anthropic deals.' },
+  { ticker:'AMD', name:'Advanced Micro Devices', signal:'buy', why:'Piper Sandler reiterated $600 price target Sep 16; CPU/GPU demand exceeds supply; Q2 revenue up 50% YoY.' },
+  { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'BofA raised target to $260 from $230, Stephens to $280 Sep 19; stock up 121% YTD on AI security demand.' },
+  { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'Q4 beat with 34% revenue growth Sep 1; $1B net new NGS ARR; FY27 guidance $14.1–14.2B beats Street.' },
+  { ticker:'GOOG', name:'Alphabet / Google', signal:'buy', why:'Gemini 3.8 Flash launch Sep 4; €13B Finland AI data center investment 2027–28; antitrust win.' },
+  { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'AWS Bahrain/UAE outage unresolved Sep 15; capex raised to $220B; free cash flow negative $7.6B.' },
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'IPO Mar 27 2025 $40/share; Sep 17 $3.7B convertible offering; backlog $104B, high debt 14.3x.' },
+  { ticker:'IBM', name:'IBM', signal:'caution', why:'Stock fell 25% post Q2 Jul 23; guidance cut to 4–5% growth Sep 16; $1B Chips award offsets weak results.' },
+  { ticker:'META', name:'Meta Platforms', signal:'buy', why:'Luna smart glasses launch Oct, Muse hit #1 app store boosting Meta AI 60%, analyst upgrades to $886.' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'Cybercab launch Sept 3 underwhelmed, NHTSA probe ongoing, Goldman cut Q3 forecast, stock down 6% Sept 4.' },
+  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'Nasdaq IPO target at $1.25T valuation after xAI acquisition Feb 2026, Starship Flight 14 launch Sept 28.' },
+  { ticker:'OPENAI', name:'OpenAI', signal:'buy', why:'GPT-6 Astra launched Sept 3 with AGI claims, Agents API in beta, Sept 16 sponsored agent partnerships.' },
+  { ticker:'ANTH', name:'Anthropic', signal:'ipo', why:'Oct IPO at $800B valuation with $30B+ revenue run rate, 26% of R&D led by Claude as of Sept 17.' }
 ];
 // ══ INV-STOCKS-EN-END ══
 
 // ══ INV-STOCKS-AR-START ══
 let INV_STOCKS_AR = [
-  { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'استحوذت NVIDIA على Hugging Face في 2 سبتمبر مقابل 12.93 مليار دولار؛ إيرادات الربع الثاني 96.2 مليار دولار بنمو 106% سنويًا.' },
-  { ticker:'MSFT', name:'Microsoft', signal:'watch', why:'تم رفع أرباح الأسهم بنسبة 8% إلى 98 سنت في 15 سبتمبر؛ ينمو Azure بنسبة 41%؛ نفقات رأس المال 175 مليار دولار تضغط على FCF.' },
-  { ticker:'AVGO', name:'Broadcom', signal:'watch', why:'إيرادات الربع الثالث 29.59 مليار دولار، بنمو 221% سنويًا؛ السهم انخفض 30% من أعلى مستوياته؛ مخاطر التركيز على العملاء.' },
-  { ticker:'AMD', name:'Advanced Micro Devices', signal:'buy', why:'قفزة بنسبة 6.3% في 16-17 سبتمبر بعد تأكيد Piper Sandler تقييم فائق الوزن بهدف 600 دولار؛ إيرادات الربع الثاني 11.5 مليار دولار +50%.' },
-  { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'قفز بنسبة 15% في 14 سبتمبر على فرصة الأمان السيبراني للذكاء الاصطناعي؛ توسيع شراكة OpenAI في 2 سبتمبر؛ إيرادات 1.47 مليار دولار +26%.' },
-  { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'تفوقت على أرباح Q4 في 1/9، ارتفاع السهم 13% بسبب الطلب القوي على الأمان السيبراني.' },
-  { ticker:'GOOG', name:'Alphabet / Google', signal:'watch', why:'أطلقت Gemini 3.8 Flash في 9/3، جمعت Waymo 16 مليار دولار بقيمة 110 مليارات.' },
-  { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'نمت AWS بنسبة 36.7% في Q2، لكن السهم انخفض تحت 250 دولار على نفقات 220 مليار.' },
-  { ticker:'CRWV', name:'CoreWeave', signal:'buy', why:'عام منذ 28/3/25، 99.4 مليار دولار من طلبات العملاء المتراكمة، إدراج Nasdaq-100.' },
-  { ticker:'IBM', name:'IBM', signal:'caution', why:'أنهت جائزة Chips بـ 1 مليار دولار في 16/9 لكن انخفضت 4.4%، خفضت التوجيهات.' },
-  { ticker:'META', name:'Meta Platforms', signal:'buy', why:'شريحة Iris الذكية تدخل الإنتاج سبتمبر 2026؛ المحللون يرفعون الهدف إلى 820-860. موزعات أرباح 0.53 دولار موافق عليها.' },
-  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'إطلاق Cybercab 3 سبتمبر خاب الآمال؛ السهم انخفض 6%، تدقيق NHTSA فتح. التوسع في فيتنام قابله انخفاض الهوامش.' },
-  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'اندماج SpaceX/xAI بقيمة 1.25 تريليون (فبراير 2026)؛ يستهدف IPO 2026. اتفاقية Colossus الحاسوبية وقعت.' },
-  { ticker:'OPENAI', name:'OpenAI', signal:'watch', why:'SoftBank تمول 11.9 مليار قرض سبتمبر 11؛ DevDay سبتمبر 29. GPT-6 Astra صدر سبتمبر 3؛ وكلاء ChatGPT الإعلانية.' },
-  { ticker:'ANTH', name:'Anthropic', signal:'ipo', why:'اختارت Nasdaq للإدراج (سبتمبر 13)؛ تتوقع ربح تشغيلي هذا الربع. معدل إيراد 30+ مليار؛ قيمة 800 مليار IPO ممكنة.' }
+  { ticker:'NVDA', name:'NVIDIA', signal:'buy', why:'أعلن جنسن هوانج مضاعفة مبيعات الرقائق العام المقبل في 17 سبتمبر؛ استحواذ Hugging Face في 2 سبتمبر يعزز النظام البيئي للذكاء الاصطناعي.' },
+  { ticker:'MSFT', name:'Microsoft', signal:'watch', why:'رفعت توزيعات الأرباح بنسبة 7.7% إلى 0.98$ للسهم في 18 سبتمبر، لكن السهم انخفض 0.7% وسط مخاوف تكاليف الذكاء الاصطناعي والمخاطر التنظيمية.' },
+  { ticker:'AVGO', name:'Broadcom', signal:'watch', why:'ارتفع إيراد الذكاء الاصطناعي 221% إلى 16.7 مليار دولار؛ انخفض السهم 13.7% الشهر الماضي رغم عقود OpenAI و Anthropic.' },
+  { ticker:'AMD', name:'Advanced Micro Devices', signal:'buy', why:'أعادت Piper Sandler تأكيد سعر الهدف 600$ في 16 سبتمبر؛ الطلب على CPU/GPU يفوق الإمدادات؛ إيرادات Q2 ارتفعت 50% سنويًا.' },
+  { ticker:'CRWD', name:'CrowdStrike', signal:'buy', why:'رفع BofA الهدف إلى 260$ من 230$، Stephens إلى 280$ في 19 سبتمبر؛ السهم ارتفع 121% منذ بداية السنة على طلب أمن الذكاء الاصطناعي.' },
+  { ticker:'PANW', name:'Palo Alto Networks', signal:'buy', why:'أداء قوي في الربع الرابع بنمو إيرادات 34% في 1 سبتمبر؛ 1 مليار دولار من الإيرادات السنوية المتكررة الجديدة.' },
+  { ticker:'GOOG', name:'Alphabet / Google', signal:'buy', why:'إطلاق Gemini 3.8 Flash في 4 سبتمبر؛ استثمار 13 مليار يورو في مركز بيانات فنلندا للذكاء الاصطناعي.' },
+  { ticker:'AMZN', name:'Amazon / AWS', signal:'watch', why:'انقطاع خدمة AWS في البحرين والإمارات لم يُحل في 15 سبتمبر؛ رأس المال المرفوع إلى 220 مليار دولار.' },
+  { ticker:'CRWV', name:'CoreWeave', signal:'watch', why:'اكتتاب عام 27 مارس 2025 بـ 40 دولار؛ طرح 3.7 مليار دولار قابل للتحويل في 17 سبتمبر؛ نسبة دين عالية.' },
+  { ticker:'IBM', name:'IBM', signal:'caution', why:'انخفض السهم 25% بعد الربع الثاني في 23 يوليو؛ تم خفض التوجيهات إلى 4-5% في 16 سبتمبر.' },
+  { ticker:'META', name:'Meta Platforms', signal:'buy', why:'إطلاق نظارات Luna الذكية في أكتوبر، تطبيق Muse في المركز الأول مما زاد ذكاء Meta AI بنسبة 60%.' },
+  { ticker:'TSLA', name:'Tesla', signal:'caution', why:'إطلاق Cybercab في 3 سبتمبر لم يرقَ للتوقعات، تحقيق NHTSA مستمر، هبوط السهم 6% في 4 سبتمبر.' },
+  { ticker:'SPCX', name:'SpaceX / xAI', signal:'ipo', why:'هدف IPO في Nasdaq بتقييم 1.25 تريليون دولار بعد استحواذ xAI في فبراير 2026، إطلاق Starship 28 سبتمبر.' },
+  { ticker:'OPENAI', name:'OpenAI', signal:'buy', why:'إطلاق GPT-6 Astra في 3 سبتمبر مع ادعاءات AGI، واجهة برمجية للعملاء في النسخة التجريبية، شراكات في 16 سبتمبر.' },
+  { ticker:'ANTH', name:'Anthropic', signal:'ipo', why:'اكتتاب عام في أكتوبر بتقييم 800 مليار دولار، إيرادات 30 مليار دولار، 26% من أبحاث R&D بقيادة Claude في 17 سبتمبر.' }
 ];
 // ══ INV-STOCKS-AR-END ══
 
 // ── OPPORTUNITY VECTORS (body text auto-updated weekly on Sunday KSA) ───────
 // ══ INV-OPPS-EN-START ══
 let INV_OPPS_EN = [
-  { title:'AI Inference Infrastructure', horizon:'Now-6 months', tickers:["NVDA", "SMCI", "COR", "CRWS", "CBRS"], body:'Inference dominates 2026 AI infrastructure with 66% of compute workloads. Edge inference deployment expands via NVIDIA Metropolis, CoreWeave, and specialist GPU cloud providers. Hyperscalers plan $650B AI capex with inference-optimized silicon gaining adoption.' },
-  { title:'AI Cybersecurity & Vulnerability Remediation', horizon:'3-9 months', tickers:["CRWD", "CHKP", "PALO", "OKTA", "MNDY"], body:'Cloudflare launched AI Vulnerability Discovery using OpenAI\'s Daybreak models on Sept 3, 2026. CVE disclosures hit 60,475 by early September 2026 vs 48,185 in all 2025. Agentic remediation platforms with reachability analysis accelerating enterprise patch cycles.' },
-  { title:'Agentic AI Platforms & Orchestration', horizon:'Now-12 months', tickers:["MSFT", "SNOW", "DBRX", "ANTML", "SSFN"], body:'OpenAI released GPT-Live-1 voice agent API with session orchestration in September 2026. Enterprise agentic AI adoption reached 15% of workflows by Q3 2026. MCP and A2A protocols now standard in orchestration platforms managing multi-agent systems.' },
-  { title:'Smart City & AI Inspection Technology', horizon:'6-15 months', tickers:["FPT", "CSCO", "UPST", "SNPS", "IBM"], body:'FPT partnered with NVIDIA Metropolis for smart city AI inspections in 2026. Phoenix deployed AI-powered sewer inspections and completed 12,500 drone missions. Niantic-Spexi 3D physical AI infrastructure inspections automate asset monitoring at scale.' },
-  { title:'AI IPO Pipeline', horizon:'3-6 months', tickers:["CBRS", "ANTML", "DBRX", "CRWD", "KLNA"], body:'Anthropic filed S-1 at $965B with $47B annualized revenue (surpassing OpenAI in April 2026). OpenAI targets $730-850B by September 2026. Databricks valued $134B with $3.2B ARR, expecting H2 2026 IPO. SpaceX set record at $1.77T in June 2026.' },
-  { title:'AI Regulation & Compliance Vendors', horizon:'3-12 months', tickers:["VANTA", "SCMR", "JIRA", "MGMT", "PRM"], body:'EU AI Act enforcement began September 2026 with inspections of resume screening, credit assessment, and healthcare triage tools. Penalties up to €35M or 7% global revenue. Compliance vendors gaining traction; 70% of enterprises require AI model transparency cards by 2026.' }
+  { title:'AI Inference Infrastructure', horizon:'Now-9 months', tickers:["NVDA", "AMD", "CBRS", "MSFT", "TSLA"], body:'Hyperscalers to spend $725B on AI infrastructure in 2026 (75% AI-specific). Inference to dominate compute spend by 2026, with AMD-Cerebras partnership unveiled for disaggregated solutions. Global data center capex rising from $800B to $1.8T annually by 2050.' },
+  { title:'AI Cybersecurity & Vulnerability Remediation', horizon:'3-6 months', tickers:["CY", "CRWD", "PANW", "ORCL", "MSFT"], body:'60,475 CVEs disclosed by September 2026 (vs 48,185 in 2025). Cloudflare launched AI Vulnerability Discovery with OpenAI Daybreak on Sept 3, 2026. Project Gold Eagle established (July 2026) to triage AI-enabled vulnerability reports at scale.' },
+  { title:'Agentic AI Platforms & Orchestration', horizon:'6-12 months', tickers:["PATH", "UiPath", "SNPS", "PLTR", "MSFT"], body:'40% of enterprise applications to feature task-specific AI agents by end 2026 (Gartner, Aug 2025). Global AI agents market surpassed $9B in early 2026. Enterprise orchestration live at EY, Salesforce, JPMorgan; EU AI Act requires human-in-loop for high-risk multi-agent systems.' },
+  { title:'Smart City & AI Inspection Technology', horizon:'Now-6 months', tickers:["ASUS", "QUALCOMM", "AMD", "NVDA", "DELB"], body:'Global smart city ICT market approaches $190B in 2026. 150+ AI projects in Phoenix; Seoul automated 2,000 hours/month via AI+RPA. FPT partnering with NVIDIA Metropolis for AI-powered inspection; Dubai Live platform launched Oct 2025.' },
+  { title:'AI IPO Pipeline', horizon:'3-6 months', tickers:["SPCX", "CBRS", "GOOG", "MSFT", "AMZN"], body:'Cerebras IPO May 14, 2026 ($48.8B valuation, +108% debut). SpaceX raised $75B (largest IPO ever). Anthropic filed S-1 at $965B; OpenAI targets Sept 2026 at $730-850B. Databricks expected H2 2026 at $62B valuation.' },
+  { title:'AI Regulation & Compliance Vendors', horizon:'Now-6 months', tickers:["ORCL", "MSFT", "CRWD", "SNPS", "RECO"], body:'Global AI governance market valued at $2.54B in 2026; EU AI Act compliance solutions market at $609M growing 37.3% CAGR. EU high-risk obligations effective Aug 2, 2026 (penalties €35M or 7% revenue). ISO 42001 certification cost $150-400K for mid-market.' }
 ];
 // ══ INV-OPPS-EN-END ══
 
 // ══ INV-OPPS-AR-START ══
 let INV_OPPS_AR = [
-  { title:'البنية التحتية للاستدلال بالذكاء الاصطناعي', horizon:'الآن-6 أشهر', tickers:["NVDA", "SMCI", "COR", "CRWS", "CBRS"], body:'الاستدلال يهيمن على البنية التحتية للذكاء الاصطناعي في 2026 بـ 66% من أحمال العمل. نشر الاستدلال على الحافة يتسع. مزودو الخدمات السحابية يخططون لنفقات 650 مليار دولار.' },
-  { title:'الأمن السيبراني بالذكاء الاصطناعي ومعالجة الثغرات', horizon:'3-9 أشهر', tickers:["CRWD", "CHKP", "PALO", "OKTA", "MNDY"], body:'أطلقت Cloudflare اكتشاف الثغرات بالذكاء الاصطناعي في سبتمبر 2026. 60,475 ثغرة في سبتمبر مقابل 48,185 في 2025 كاملاً. منصات العلاج الموكول تسرع دورات التصحيح.' },
-  { title:'منصات الذكاء الاصطناعي الوكيلي والتنسيق', horizon:'الآن-12 شهراً', tickers:["MSFT", "SNOW", "DBRX", "ANTML", "SSFN"], body:'أطلقت OpenAI وكيل صوت GPT-Live-1 في سبتمبر 2026. اعتماد وكلاء الذكاء الاصطناعي بلغ 15% من المهام. بروتوكولات MCP و A2A أصبحت معيارية في منصات التنسيق.' },
-  { title:'تقنية المدن الذكية والتفتيش بالذكاء الاصطناعي', horizon:'6-15 شهراً', tickers:["FPT", "CSCO", "UPST", "SNPS", "IBM"], body:'شاركت FPT مع NVIDIA لفحوصات المدن الذكية في 2026. فينيكس نشرت عمليات فحص الصرف الصحي بالذكاء الاصطناعي. Niantic-Spexi تأتمت فحوصات البنية التحتية بمقياس.' },
-  { title:'خط اكتتابات الذكاء الاصطناعي', horizon:'3-6 أشهر', tickers:["CBRS", "ANTML", "DBRX", "CRWD", "KLNA"], body:'قدمت Anthropic S-1 بـ 965 مليار دولار مع 47 مليار إيراد سنوي. OpenAI تستهدف 730-850 مليار بحلول سبتمبر. Databricks بـ 134 مليار دولار متوقعة في النصف الثاني 2026.' },
-  { title:'موردو الامتثال لتنظيمات الذكاء الاصطناعي', horizon:'3-12 شهراً', tickers:["VANTA", "SCMR", "JIRA", "MGMT", "PRM"], body:'بدأ تطبيق قانون الذكاء الاصطناعي للاتحاد الأوروبي في سبتمبر 2026. العقوبات تصل إلى 35 مليون يورو أو 7% من الإيرادات. 70% من المؤسسات تطلب بطاقات شفافية الذكاء الاصطناعي.' }
+  { title:'البنية التحتية للاستدلال بالذكاء الاصطناعي', horizon:'الآن-9 أشهر', tickers:["NVDA", "AMD", "CBRS", "MSFT", "TSLA"], body:'ستنفق الشركات الكبرى 725 مليار دولار على البنية التحتية للذكاء الاصطناعي في 2026 (75% مخصصة للذكاء الاصطناعي). تطبيقات الاستدلال ستسيطر على نفقات الحوسبة بحلول 2026، مع شراكة AMD-Cerebras الجديدة. تصعيد نفقات مراكز البيانات من 800 مليار إلى 1.8 تريليون دولار سنوياً بحلول 2050.' },
+  { title:'الأمن السيبراني بالذكاء الاصطناعي ومعالجة الثغرات', horizon:'3-6 أشهر', tickers:["CY", "CRWD", "PANW", "ORCL", "MSFT"], body:'تم الإفصاح عن 60,475 ثغرة أمنية بحلول سبتمبر 2026 (مقابل 48,185 في 2025). أطلقت Cloudflare خدمة اكتشاف الثغرات بالذكاء الاصطناعي في 3 سبتمبر 2026. تم إنشاء مشروع Gold Eagle (يوليو 2026) لتصنيف تقارير الثغرات الموجهة بالذكاء الاصطناعي على نطاق واسع.' },
+  { title:'منصات الذكاء الاصطناعي الوكيلي والتنسيق', horizon:'6-12 شهراً', tickers:["PATH", "UiPath", "SNPS", "PLTR", "MSFT"], body:'40% من تطبيقات المؤسسات ستتضمن وكلاء ذكاء اصطناعي متخصصين بنهاية 2026. سوق وكلاء الذكاء الاصطناعي العالمي تجاوز 9 مليارات دولار في أوائل 2026. تطبيقات التنسيق النشطة في EY و Salesforce و JPMorgan؛ قانون الذكاء الاصطناعي بالاتحاد الأوروبي يتطلب تدخل بشري للأنظمة متعددة الوكلاء عالية المخاطر.' },
+  { title:'تقنية المدن الذكية والتفتيش بالذكاء الاصطناعي', horizon:'الآن-6 أشهر', tickers:["ASUS", "QUALCOMM", "AMD", "NVDA", "DELB"], body:'سوق تكنولوجيا المدن الذكية العالمي يقترب من 190 مليار دولار في 2026. 150+ مشروع ذكاء اصطناعي في فينيكس؛ أتمتة سيول 2,000 ساعة/شهر عبر الذكاء الاصطناعي+RPA. شراكة FPT مع NVIDIA لفحص مدعوم بالذكاء الاصطناعي؛ منصة Dubai Live تم إطلاقها أكتوبر 2025.' },
+  { title:'خط اكتتابات الذكاء الاصطناعي', horizon:'3-6 أشهر', tickers:["SPCX", "CBRS", "GOOG", "MSFT", "AMZN"], body:'طرح Cerebras العام في 14 مايو 2026 (تقييم 48.8 مليار دولار، ارتفاع 108%). جمعت SpaceX 75 مليار دولار (أكبر طرح عام على الإطلاق). قدمت Anthropic S-1 بتقييم 965 مليار دولار؛ تستهدف OpenAI سبتمبر 2026 بـ 730-850 مليار دولار. متوقع Databricks في النصف الثاني 2026 بتقييم 62 مليار دولار.' },
+  { title:'موردو الامتثال لتنظيمات الذكاء الاصطناعي', horizon:'الآن-6 أشهر', tickers:["ORCL", "MSFT", "CRWD", "SNPS", "RECO"], body:'سوق حوكمة الذكاء الاصطناعي العالمي بقيمة 2.54 مليار دولار في 2026؛ سوق حلول الامتثال لقانون الذكاء الاصطناعي بالاتحاد الأوروبي بـ 609 مليون دولار بنمو 37.3%. التزامات المخاطر العالية بالاتحاد الأوروبي سارية من 2 أغسطس 2026 (غرامات 35 مليون يورو أو 7% من الإيرادات). تكلفة ISO 42001 للشركات المتوسطة 150-400 ألف دولار.' }
 ];
 // ══ INV-OPPS-AR-END ══
 
 // ── RISK SIGNALS (auto-generated Mon/Wed/Fri) ───────────────────────────────────────
 // ══ INV-RISKS-EN-START ══
 let INV_RISKS_EN = [
-  { icon:'⚖️', title:'EU AI Act High-Risk Audits Begin September', body:'EU AI Office begins first scheduled compliance inspections in September 2026 across 24 national authorities. Focuses on resume screening, credit assessment, and healthcare AI systems.' },
-  { icon:'💰', title:'Massive AI Pricing Collapse Squeezes Margins', body:'OpenAI cut Luna prices 80% to $0.20/token, others followed. Anthropic cut 67%, pushing GPT-4-level costs down 500x to $0.06/token, compressing revenue models.' },
-  { icon:'🏗️', title:'CapEx-to-Revenue Gap Hits Telecom Bubble Levels', body:'AI capex growing 46% faster than revenues—exceeding 2001 telecom cycle. Hyperscalers invested $600-750B in 2026 with ROI still unproven, valuations at 25x EV/EBITDA.' },
-  { icon:'🌐', title:'US-China AI Competition Fractures Supply Chains', body:'Section 232 semiconductor restrictions expected July 2026; chip export controls intensifying. Taiwan, Korea semiconductor hubs face supply concentration risk.' },
-  { icon:'⚠️', title:'37 Lawsuits Against OpenAI Pile Up', body:'Edelson PC filed 37 total cases against OpenAI by September 2026 for harm/product liability. Anthropic paid $1.5B copyright settlement; Microsoft fighting NYT fair-use case.' }
+  { icon:'⚠️', title:'Safety Warnings Trigger Market Repricing', body:'Anthropic CEO called for AI development slowdown Sept 14; Nasdaq 100 fell 2%+ pre-market. Industry safety concerns clash with growth expectations.' },
+  { icon:'💰', title:'Margin Compression from $2T Capex Wave', body:'Hyperscalers capex-to-revenue reached 22% vs 11-16% historical norm. Depreciation burden may equal $5 companies\' combined annual net income by 2030.' },
+  { icon:'🔪', title:'Aggressive Price Competition Eroding Margins', body:'OpenAI cut ChatGPT prices 80%; Google cut entry-level from $7.99 to $4.99 this month. Chinese models force Western providers into pricing race.' },
+  { icon:'🏛️', title:'EU AI Act Audits Begin; SEC Late-2026 Rules', body:'EU AI Office begins high-risk compliance audits in September 2026. SEC guidance on AI disclosure/governance due by late 2026.' },
+  { icon:'🌏', title:'Taiwan Strait Tensions Threaten Chip Supply', body:'Taiwan hosts majority of advanced semiconductor capacity. Military escalation risk between China-Taiwan could disrupt AI infrastructure globally.' }
 ];
 // ══ INV-RISKS-EN-END ══
 
 // ══ INV-RISKS-AR-START ══
 let INV_RISKS_AR = [
-  { icon:'⚖️', title:'تدقيق الاتحاد الأوروبي للأنظمة عالية الخطر في سبتمبر', body:'مكتب الاتحاد الأوروبي للذكاء الاصطناعي يبدأ عمليات التدقيق الأولى في سبتمبر عبر 24 سلطة وطنية. يركز على فحص السير الذاتية وتقييم الائتمان والأنظمة الطبية.' },
-  { icon:'💰', title:'انهيار الأسعار الهائل يضغط على الهوامش', body:'خفضت OpenAI أسعار Luna بنسبة 80% إلى 0.20 دولار/توكن. خفضت Anthropic الأسعار 67%، ما ضغط على نماذج الإيرادات بشكل كبير.' },
-  { icon:'🏗️', title:'الفجوة بين الإنفاق والإيرادات تصل مستويات فقاعة الاتصالات', body:'نمو الإنفاق على الذكاء الاصطناعي 46% أسرع من الإيرادات. استثمرت شركات النطاق الواسع 600-750 مليار دولار مع عدم إثبات العائد على الاستثمار.' },
-  { icon:'🌐', title:'المنافسة الأمريكية الصينية تفكك سلاسل الإمداد', body:'تقييد الرقائق الدقيقة متوقع في يوليو 2026. مراكز تايوان وكوريا تواجه مخاطر تركيز الإمداد وضوابط صادرات قاسية.' },
-  { icon:'⚠️', title:'37 دعوى قضائية ضد OpenAI تتراكم', body:'قدمت Edelson PC 37 دعوى قضائية ضد OpenAI بحلول سبتمبر. دفعت Anthropic تسوية بـ 1.5 مليار دولار وتقاتل Microsoft قضية النايمز بشأن الاستخدام العادل.' }
+  { icon:'⚠️', title:'تحذيرات السلامة تحفز إعادة تقييم السوق', body:'دعا الرئيس التنفيذي لأنثروبيك إلى إبطاء تطوير الذكاء الاصطناعي في 14 سبتمبر؛ انخفض ناسداك 100 بنسبة 2% قبل الفتح. تتعارض مخاوف السلامة مع توقعات النمو.' },
+  { icon:'💰', title:'ضغط الهوامش من موجة نفقات رأسمالية 2 تريليون دولار', body:'بلغت نفقات رأسمالية عمالقة الحوسبة 22% من الإيرادات مقابل 11-16% تاريخياً. قد تساوي عبء الإهلاك صافي الدخل السنوي لـ 5 شركات بحلول 2030.' },
+  { icon:'🔪', title:'المنافسة السعرية القوية تؤدي إلى تآكل الهوامش', body:'خفضت OpenAI أسعار ChatGPT بنسبة 80%؛ خفضت Google الدخول من 7.99 إلى 4.99 دولار. تفرض النماذج الصينية على المزودين الغربيين دخول سباق الأسعار.' },
+  { icon:'🏛️', title:'تدقيق قانون الذكاء الاصطناعي الأوروبي يبدأ؛ قواعس SEC في أواخر 2026', body:'مكتب الذكاء الاصطناعي الأوروبي يبدأ تدقيقات الامتثال عالية الخطورة في سبتمبر 2026. إرشادات SEC بشأن الإفصاح والحوكمة متوقعة في أواخر 2026.' },
+  { icon:'🌏', title:'التوترات في مضيق تايوان تهدد إمدادات الرقائق', body:'تستضيف تايوان غالبية القدرة على الرقائق المتقدمة. يمكن لمخاطر التصعيد العسكري بين الصين وتايوان أن تعطل البنية التحتية للذكاء الاصطناعي عالمياً.' }
 ];
 // ══ INV-RISKS-AR-END ══
 
@@ -3141,7 +3147,7 @@ function buildInvPanel(lang){
 
   // Staleness check — warn if investment data is >14 days older than newest signal
   // ══ INV-DATA-DATE ══
-  const invDataDate=20260918;
+  const invDataDate=20260919;
   // ══ /INV-DATA-DATE ══
   const newestNum=computeNewestDate('en'); // get the raw number via a helper
   const isStale=parseDateNum(computeNewestDate('en'))>invDataDate+14;
