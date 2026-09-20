@@ -6613,3 +6613,41 @@
 [2026-09-19 14:26:20 KSA]     ✗ Sector food failed — keeping previous cards for the whole tab
 [2026-09-19 14:26:20 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-09-20 14:43:40 KSA] Manual run triggered (--now flag)
+[2026-09-20 14:43:40 KSA] ═══ RESCAN STARTED ═══
+[2026-09-20 14:43:40 KSA]   SEED_PENDING=true → forcing a full regeneration of every generated section
+[2026-09-20 14:43:40 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-09-20 14:43:50 KSA]     ✓ 3 signals found
+[2026-09-20 14:43:52 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-09-20 14:44:00 KSA]     ✓ 3 signals found
+[2026-09-20 14:44:02 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-09-20 14:44:10 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-09-20 14:44:20 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-09-20 14:44:35 KSA]     ✓ 3 signals found
+[2026-09-20 14:44:37 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-09-20 14:44:43 KSA]     ✓ 3 signals found
+[2026-09-20 14:44:45 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-09-20 14:44:51 KSA]     ✓ 3 signals found
+[2026-09-20 14:44:53 KSA]   Scanning: AI investment funding IPO 2026
+[2026-09-20 14:45:03 KSA]     ✓ 3 signals found
+[2026-09-20 14:45:05 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-09-20 14:45:13 KSA]     ✓ 1 signals found
+[2026-09-20 14:45:15 KSA]   Total new signals: 19
+[2026-09-20 14:45:15 KSA]   Updating AI Global Signals...
+[2026-09-20 14:45:15 KSA]   ↩ 10 duplicate(s) skipped
+[2026-09-20 14:45:15 KSA]   ✚ 8 new signals to inject
+[2026-09-20 14:45:30 KSA]   ✓ Translated 8/8 signals to Arabic
+[2026-09-20 14:45:30 KSA]   ✓ 8 added, 10 skipped
+[2026-09-20 14:45:30 KSA]   🧹 Pruned 2 signals older than 90 days
+[2026-09-20 14:45:30 KSA]   [Market Intel] Updating risk signals...
+[2026-09-20 14:45:46 KSA]   ✓ Risk signals updated (5 items)
+[2026-09-20 14:45:46 KSA]   [Market Intel] Updating stock signals...
+[2026-09-20 14:46:23 KSA]   ✓ Stock signals updated (15 refreshed, 0 kept from previous run, invDataDate → 20260920)
+[2026-09-20 14:46:23 KSA]   [Market Intel] Updating opportunity vectors (weekly)...
+[2026-09-20 14:46:42 KSA]   ✓ Opportunity vectors updated (6 themes)
+[2026-09-20 14:46:42 KSA]   [INSPECT] Regenerating sector cards (weekly)...
+[2026-09-20 14:46:42 KSA]     Sector: city
+[2026-09-20 14:46:58 KSA]   ✗ No JSON array in response
+[2026-09-20 14:46:58 KSA]     ✗ Sector city failed — keeping previous cards for the whole tab
+[2026-09-20 14:46:58 KSA] ═══ RESCAN COMPLETE ═══
+
