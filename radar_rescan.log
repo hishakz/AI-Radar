@@ -7682,3 +7682,36 @@
 [2026-10-20 15:00:42 KSA]   Weekly sections (opportunities, INSPECT cards) run on the Monday scan — skipped today
 [2026-10-20 15:00:42 KSA] ═══ RESCAN COMPLETE ═══
 
+[2026-10-21 15:13:00 KSA] Manual run triggered (--now flag)
+[2026-10-21 15:13:00 KSA] ═══ RESCAN STARTED ═══
+[2026-10-21 15:13:00 KSA]   Scanning: smart city AI inspection continuous monitoring autonomous 2026
+[2026-10-21 15:13:07 KSA]     ✓ 3 signals found
+[2026-10-21 15:13:09 KSA]   Scanning: AI construction excavation inspection drones robots 2026
+[2026-10-21 15:13:17 KSA]     ✓ 3 signals found
+[2026-10-21 15:13:19 KSA]   Scanning: AI food safety restaurant inspection automated 2026
+[2026-10-21 15:13:24 KSA]   Scanning: AI building housing inspection smart technology 2026
+[2026-10-21 15:13:29 KSA]     ✓ 1 signals found
+[2026-10-21 15:13:31 KSA]   Scanning: AI inspection policy regulation government 2026
+[2026-10-21 15:13:38 KSA]     ✓ 3 signals found
+[2026-10-21 15:13:40 KSA]   Scanning: AI model release Anthropic OpenAI Google 2026
+[2026-10-21 15:13:46 KSA]     ✓ 3 signals found
+[2026-10-21 15:13:48 KSA]   Scanning: AI security cybersecurity vulnerability 2026
+[2026-10-21 15:13:54 KSA]     ✓ 3 signals found
+[2026-10-21 15:13:56 KSA]   Scanning: AI investment funding IPO 2026
+[2026-10-21 15:14:03 KSA]     ✓ 3 signals found
+[2026-10-21 15:14:05 KSA]   Scanning: AI predictions outlook 2027 forecast trends inspection smart city
+[2026-10-21 15:14:14 KSA]     ✓ 3 signals found
+[2026-10-21 15:14:16 KSA]   Total new signals: 22
+[2026-10-21 15:14:16 KSA]   Updating AI Global Signals...
+[2026-10-21 15:14:16 KSA]   ↩ 10 duplicate(s) skipped
+[2026-10-21 15:14:16 KSA]   ✚ 12 new signals to inject
+[2026-10-21 15:14:45 KSA]   ✓ Translated 12/12 signals to Arabic
+[2026-10-21 15:14:45 KSA]   ✓ 12 added, 10 skipped
+[2026-10-21 15:14:45 KSA]   🧹 Pruned 7 signals older than 90 days
+[2026-10-21 15:14:45 KSA]   [Market Intel] Updating risk signals...
+[2026-10-21 15:15:03 KSA]   ✓ Risk signals updated (5 items)
+[2026-10-21 15:15:03 KSA]   [Market Intel] Updating stock signals...
+[2026-10-21 15:15:46 KSA]   ✓ Stock signals updated (15 refreshed, 0 kept from previous run, invDataDate → 20261021)
+[2026-10-21 15:15:46 KSA]   Weekly sections (opportunities, INSPECT cards) run on the Monday scan — skipped today
+[2026-10-21 15:15:46 KSA] ═══ RESCAN COMPLETE ═══
+
